@@ -88,7 +88,7 @@ def build_case_request(
 ) -> CaseAnalyzeRequest:
     """Build the A-server payload using LLM routing when configured.
 
-    ROUTER_MODE=auto uses the LLM only when OPENAI_API_KEY exists.
+    ROUTER_MODE=auto uses the LLM only when GEMINI_API_KEY exists.
     ROUTER_MODE=llm forces an LLM attempt, then falls back to rules on failure.
     """
     return CaseAnalyzeRequest(
@@ -117,18 +117,22 @@ def split_prompt_to_issues(
 
 
 def split_prompt_to_issues_llm(prompt: str, *, client: Any | None = None) -> list[IssueInput]:
-    llm_client = client or _openai_client()
-    response = llm_client.responses.parse(
-        model=os.getenv("ROUTER_MODEL", "gpt-4o-mini"),
-        input=[
-            {"role": "system", "content": ROUTER_SYSTEM_PROMPT},
-            {"role": "user", "content": prompt},
-        ],
-        text_format=LLMRouteResult,
+    llm_client = client or _gemini_client()
+    response = llm_client.models.generate_content(
+        model=os.getenv("GEMINI_MODEL", "gemini-2.5-flash"),
+        contents=ROUTER_SYSTEM_PROMPT + "\n\nUser input:\n" + prompt,
+        config={
+            "response_format": {
+                "text": {
+                    "mime_type": "application/json",
+                    "schema": LLMRouteResult.model_json_schema(),
+                }
+            }
+        },
     )
-    result = response.output_parsed
-    if result is None:
-        raise ValueError("LLM returned no structured routing result")
+    if not response.text:
+        raise ValueError("Gemini returned no structured routing result")
+    result = LLMRouteResult.model_validate_json(response.text)
 
     issues: list[IssueInput] = []
     for index, routed in enumerate(result.issues, start=1):
@@ -148,10 +152,10 @@ def split_prompt_to_issues_llm(prompt: str, *, client: Any | None = None) -> lis
     return issues
 
 
-def _openai_client() -> Any:
-    from openai import OpenAI
+def _gemini_client() -> Any:
+    from google import genai
 
-    return OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+    return genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 
 
 def _llm_enabled(use_llm: bool | None) -> bool:
@@ -160,9 +164,9 @@ def _llm_enabled(use_llm: bool | None) -> bool:
     mode = os.getenv("ROUTER_MODE", "auto").strip().lower()
     if mode in {"off", "rule", "rules"}:
         return False
-    if mode in {"llm", "openai"}:
+    if mode in {"llm", "gemini"}:
         return True
-    return bool(os.getenv("OPENAI_API_KEY"))
+    return bool(os.getenv("GEMINI_API_KEY"))
 
 
 def _split_prompt_to_issues_rules(prompt: str) -> list[IssueInput]:

@@ -15,11 +15,10 @@ from server.retrieval import SearchIndex
 from server.schemas import CaseAnalyzeRequest
 
 
-class _FakeResponses:
-    def parse(self, **kwargs):
+class _FakeModels:
+    def generate_content(self, **kwargs):
         self.kwargs = kwargs
-        return SimpleNamespace(
-            output_parsed=LLMRouteResult(
+        return SimpleNamespace(text=LLMRouteResult(
                 issues=[
                     {
                         "text": "예금 통장에서 돈을 찾으려는데 출금이 거부됐어요.",
@@ -32,23 +31,22 @@ class _FakeResponses:
                         "issue_type": "원금손실설명부족",
                     },
                 ]
-            )
-        )
+            ).model_dump_json())
 
 
 class _FakeClient:
     def __init__(self) -> None:
-        self.responses = _FakeResponses()
+        self.models = _FakeModels()
 
 
-class _FailingResponses:
-    def parse(self, **kwargs):
+class _FailingModels:
+    def generate_content(self, **kwargs):
         raise RuntimeError("test failure")
 
 
 class _FailingClient:
     def __init__(self) -> None:
-        self.responses = _FailingResponses()
+        self.models = _FailingModels()
 
 
 class RouterTests(unittest.TestCase):
@@ -93,7 +91,7 @@ class RouterTests(unittest.TestCase):
         issues = split_prompt_to_issues("복합 금융 민원입니다.", use_llm=True, client=client)
 
         self.assertEqual([(issue.product, issue.issue_type) for issue in issues], [("예금", "인출제한"), ("ELS", "원금손실설명부족")])
-        self.assertEqual(client.responses.kwargs["text_format"], LLMRouteResult)
+        self.assertEqual(client.models.kwargs["config"]["response_format"]["text"]["mime_type"], "application/json")
 
     def test_llm_failure_falls_back_to_rules(self) -> None:
         issues = split_prompt_to_issues(
