@@ -6,16 +6,13 @@
 
 ```text
 server/
-├─ api/              FastAPI endpoint
-├─ schemas/          Pydantic 입력·출력 모델
-├─ agents/           5개 에이전트 호출부
-├─ retrieval/        PDF chunk, keyword/vector 검색
-├─ case_graph/       사건·사실·증빙 관계
-├─ policy/           Decision Gate, Content Scope
-└─ evaluation/       자체 민원 평가·회귀 테스트
+├─ app.py            FastAPI endpoint
+├─ schemas.py        Pydantic 입력·출력 모델
+├─ ingest.py         PDF 텍스트 추출·chunk 생성
+├─ retrieval.py      키워드 기반 최소 검색
+├─ facts.py          사실 최신성·충돌 검증
+└─ evaluation.py     자체 민원 평가
 ```
-
-실제 구현 시 이 구조를 그대로 만들 필요는 없습니다. 한 파일에 먼저 동작을 만들고, 모듈 분리는 코드가 커질 때 진행합니다.
 
 ## 처리 순서
 
@@ -31,22 +28,13 @@ request
 → compose response
 ```
 
-## API 응답 필수값
+## API
 
-각 민원 결과에는 최소한 다음을 포함합니다.
+- `GET /health`
+- `POST /api/v1/cases/analyze`
+- `GET /api/v1/cases/{case_id}`
 
-- `issue_id`
-- `product`
-- `issue_type`
-- `focal`
-- `target`
-- `facts`
-- `missing_facts`
-- `evidence_refs`
-- `decision.control`
-- `decision.risk_flags`
-- `content_scope`
-- `next_steps`
+각 민원 결과에는 `issue_id`, `product`, `issue_type`, `focal`, `target`, `facts`, `missing_facts`, `evidence_refs`, `decision`, `content_scope`, `next_steps`를 포함합니다.
 
 ## 구현 원칙
 
@@ -55,3 +43,13 @@ request
 - LLM이 만든 사실과 원문에서 추출한 사실을 구분한다.
 - 외부 제출은 사용자 확인 없이는 실행하지 않는다.
 - LangGraph, pgvector, reranker는 필요성이 확인된 뒤 추가한다.
+
+## 로컬 실행
+
+```powershell
+python -m unittest server.test_p0
+python -m server.ingest --data-dir data --output server/chunks.jsonl
+python -m uvicorn server.app:app --reload
+```
+
+`server/chunks.jsonl`은 생성 산출물이므로 커밋하지 않습니다.
