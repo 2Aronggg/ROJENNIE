@@ -43,16 +43,6 @@ class PipelineTests(unittest.TestCase):
         self.assertEqual(issue_view.masked_fields, ["phone_number", "account_number"])
         self.assertIn("개인정보 마스킹 또는 제출 범위 확인이 필요합니다.", issue_view.decision_reasons)
 
-    def test_pipeline_routes_unsupported_loan_to_hold(self) -> None:
-        result = run_analysis("대출 금리가 0.5%p 올랐는데 사전 안내 문자나 메일을 받은 적이 없어요.")
-
-        issue = result.response_view.issues[0]
-
-        self.assertEqual(result.request.issues[0].product, "공통")
-        self.assertEqual(result.request.issues[0].issue_type, "지원제외_대출")
-        self.assertEqual(issue.status, "hold")
-        self.assertTrue(issue.human_review)
-
 
 if __name__ == "__main__":
     unittest.main()

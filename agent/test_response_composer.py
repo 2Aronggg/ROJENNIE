@@ -67,12 +67,12 @@ class ResponseComposerTests(unittest.TestCase):
     def test_hold_for_unsupported_or_identity_theft(self) -> None:
         case = CaseAnalysis(
             case_id="case_hold",
-            prompt="대출 또는 명의도용",
+            prompt="보험 또는 명의도용",
             issues=[
                 IssueAnalysis(
                     issue_id="issue_001",
                     product="공통",
-                    issue_type="지원제외_대출",
+                    issue_type="지원제외_보험",
                     focal={"type": "human_review"},
                     target={"support_status": "unsupported"},
                     facts=[],

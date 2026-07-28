@@ -36,14 +36,6 @@ class RouterTests(unittest.TestCase):
         self.assertEqual(issues[0].facts[1].value, "12만원")
         self.assertEqual(issues[1].facts[1].value, "10일째")
 
-    def test_loan_is_not_sent_as_product_to_a_server(self) -> None:
-        issues = split_prompt_to_issues("대출 금리가 0.5%p 올랐는데 사전 안내 문자나 메일을 받은 적이 없어요.")
-
-        self.assertEqual(issues[0].product, "공통")
-        self.assertEqual(issues[0].issue_type, "지원제외_대출")
-        self.assertEqual(issues[0].target["support_status"], "unsupported")
-        self.assertEqual(issues[0].required_facts, ["Human Review"])
-
     def test_els_and_fund_routes_are_preserved(self) -> None:
         issues = split_prompt_to_issues(
             "ELS 조기해지 시 손실 규모 12만원에 대한 설명이 부족했어요. "

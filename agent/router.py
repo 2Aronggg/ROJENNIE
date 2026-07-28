@@ -10,7 +10,6 @@ from server.schemas import CaseAnalyzeRequest, IssueInput
 PRODUCT_KEYWORDS: tuple[tuple[str, tuple[str, ...]], ...] = (
     ("ELS", ("ELS", "지수연계")),
     ("펀드", ("펀드", "환매", "운용보수", "보수")),
-    ("대출", ("대출", "연체", "중도상환", "채권추심", "변동금리")),
     ("보험", ("보험", "보험금", "환급금")),
     ("적금", ("적금", "자동이체", "우대조건")),
     ("예금", ("예금", "정기예금", "계좌", "통장", "지급정지")),
@@ -39,9 +38,6 @@ ISSUE_RULES: tuple[tuple[str, tuple[str, ...]], ...] = (
     ("분쟁조정안내부족", ("분쟁조정", "금감원", "신청 절차")),
     ("금리인상미통지", ("금리가", "금리", "인상 안내", "사전 안내")),
     ("설명의무위반", ("상품 설명", "조건에 대한 설명", "서류만 작성", "산정 기준을 설명")),
-    ("연체이자과다", ("연체이자", "연체", "과도")),
-    ("중도상환수수료", ("중도상환수수료", "조기상환", "중도상환")),
-    ("채권추심과다", ("채권추심", "추심", "연락")),
 )
 
 SPLIT_RE = re.compile(r"(?:[.!?。]\s+)|(?:요\.\s+)|(?:니다\.\s+)|\s*(?:아 그리고|그리고 마지막으로|그런데|게다가|또|그리고)\s*")
@@ -115,8 +111,6 @@ def _classify_product(text: str) -> str | None:
 
 
 def _classify_issue_type(text: str, product: str | None) -> str:
-    if product == "대출":
-        return "지원제외_대출"
     if product == "보험":
         return "지원제외_보험"
     if product == "적금" and any(keyword in text for keyword in ("자동이체", "이체 실패", "우대조건이 깨졌", "놓쳤")):

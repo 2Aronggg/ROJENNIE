@@ -6,7 +6,7 @@ from server.schemas import IssueAnalysis
 
 
 CONTROL_PRIORITY = {"proceed": 0, "amend": 1, "ask": 2, "hold": 3}
-HIGH_RISK_ISSUES = {"명의도용", "지원제외_대출", "지원제외_보험"}
+HIGH_RISK_ISSUES = {"명의도용", "지원제외_보험"}
 HOLD_RISK_FLAGS = {"fact_conflict", "identity_theft", "unauthorized_transaction", "fraud_suspected"}
 AMEND_RISK_FLAGS = {"pii_detected", "masking_required", "scope_review_required"}
 

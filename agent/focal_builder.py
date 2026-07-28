@@ -7,7 +7,7 @@ from server.schemas import Fact, IssueInput
 
 
 SUPPORTED_PRODUCTS = {"예금", "적금", "펀드", "ELS", "공통"}
-UNSUPPORTED_PRODUCTS = {"대출", "보험"}
+UNSUPPORTED_PRODUCTS = {"보험"}
 
 INSTITUTION_KEYWORDS = (
     "국민은행",
@@ -42,7 +42,6 @@ REQUIRED_FACTS_BY_ISSUE: dict[str, list[str]] = {
     "배상비율불만": ["배상 안내일", "상품명", "제시 배상비율", "산정 근거 안내"],
     "중도해지손실": ["가입일", "해지 또는 상환 요청일", "상품명", "손실 금액"],
     "분쟁조정안내부족": ["민원 접수일", "상품명", "금융회사 답변", "분쟁조정 안내 여부"],
-    "지원제외_대출": ["Human Review"],
     "지원제외_보험": ["Human Review"],
 }
 

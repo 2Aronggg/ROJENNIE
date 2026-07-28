@@ -36,15 +36,15 @@ class FocalBuilderTests(unittest.TestCase):
     def test_unsupported_product_is_kept_out_of_a_product_route(self) -> None:
         issue = build_issue_input(
             issue_id="issue_001",
-            product="대출",
-            issue_type="지원제외_대출",
-            text="대출 금리가 0.5%p 올랐는데 사전 안내를 못 받았어요.",
-            raw_product="대출",
+            product="보험",
+            issue_type="지원제외_보험",
+            text="보험금 지급이 거절됐는데 사전 안내를 못 받았어요.",
+            raw_product="보험",
         )
 
         self.assertEqual(issue.product, "공통")
         self.assertEqual(issue.focal["type"], "human_review")
-        self.assertEqual(issue.focal["unsupported_product"], "대출")
+        self.assertEqual(issue.focal["unsupported_product"], "보험")
         self.assertEqual(issue.target["support_status"], "unsupported")
         self.assertEqual(issue.required_facts, ["Human Review"])
 

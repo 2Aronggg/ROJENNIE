@@ -15,7 +15,7 @@ from .schemas import DocumentChunk
 
 PDF_DIRS = {
     "공통규정": ("law", ["공통"]),
-    "예금 상품 설명서": ("product_manual", ["예금"]),
+    "예금 상품 설명서": ("product_manual", ["예금", "적금"]),
     "펀드 상품 설명서": ("product_manual", ["펀드"]),
 }
 DATE_RE = re.compile(r"(?<!\d)(20\d{2})[.\-/](\d{1,2})[.\-/](\d{1,2})(?!\d)")

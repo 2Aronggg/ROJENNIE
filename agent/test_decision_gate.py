@@ -59,7 +59,7 @@ class DecisionGateTests(unittest.TestCase):
         decision = apply_decision_gate(
             _issue(
                 product="공통",
-                issue_type="지원제외_대출",
+                issue_type="지원제외_보험",
                 target={"support_status": "unsupported"},
                 decision=Decision(control="ask", risk_flags=["evidence_insufficient"]),
             )
