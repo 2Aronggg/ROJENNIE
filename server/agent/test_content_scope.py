@@ -2,9 +2,9 @@ from __future__ import annotations
 
 import unittest
 
-from agent.content_scope import apply_content_scope
-from agent.decision_gate import apply_decision_gate
-from agent.focal_builder import build_issue_input
+from server.agent.content_scope import apply_content_scope
+from server.agent.decision_gate import apply_decision_gate
+from server.agent.focal_builder import build_issue_input
 from server.schemas import Decision, FactResolution, IssueAnalysis
 
 

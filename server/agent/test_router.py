@@ -4,7 +4,7 @@ import unittest
 
 from fastapi.testclient import TestClient
 
-from agent.router import build_case_request, split_prompt_to_issues
+from server.agent.router import build_case_request, split_prompt_to_issues
 from server import app as app_module
 from server.retrieval import SearchIndex
 from server.schemas import CaseAnalyzeRequest

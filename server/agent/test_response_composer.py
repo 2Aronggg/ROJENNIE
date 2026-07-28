@@ -3,7 +3,7 @@ from __future__ import annotations
 from datetime import date
 import unittest
 
-from agent.response_composer import compose_case_response
+from server.agent.response_composer import compose_case_response
 from server.schemas import CaseAnalysis, Decision, EvidenceRef, Fact, FactResolution, IssueAnalysis
 
 

@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import unittest
 
-from agent.pipeline import PipelineResult, run_analysis
+from server.agent.pipeline import PipelineResult, run_analysis
 from server import app as app_module
 from server.retrieval import SearchIndex
 

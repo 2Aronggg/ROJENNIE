@@ -7,7 +7,7 @@
 | 담당 | 소유 파일 | 책임 |
 |---|---|---|
 | A: 데이터·서버 | `data/`, `server/`, `docs/todo/A_DATA_SERVER.md` | 문서 인덱싱, RAG, 공통 schema, API, 사실 검증 |
-| B: 에이전트·클라이언트 | `agent/`, `client/`, `docs/todo/B_AGENT_CLIENT.md` | 에이전트 규칙, 결정 게이트, 답변, UI |
+| B: 에이전트·클라이언트 | `server/agent/`, `client/`, `docs/todo/B_AGENT_CLIENT.md` | 에이전트 규칙, 결정 게이트, 답변, UI |
 | 통합 담당 | `README.md`, `docs/PRD.md`, `docs/TODO.md` | 초기 구조 반영과 최종 통합만 담당 |
 
 ### Git 규칙

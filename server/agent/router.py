@@ -3,7 +3,7 @@ from __future__ import annotations
 import re
 from datetime import date
 
-from agent.focal_builder import build_issue_input
+from server.agent.focal_builder import build_issue_input
 from server.schemas import CaseAnalyzeRequest, IssueInput
 
 

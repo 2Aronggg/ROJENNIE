@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import unittest
 
-from agent.decision_gate import apply_decision_gate
+from server.agent.decision_gate import apply_decision_gate
 from server.schemas import Decision, FactResolution, IssueAnalysis
 
 

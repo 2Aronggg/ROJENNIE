@@ -4,7 +4,7 @@ from typing import Any
 
 from pydantic import BaseModel, Field
 
-from agent.decision_gate import apply_decision_gate
+from server.agent.decision_gate import apply_decision_gate
 from server.schemas import CaseAnalysis, EvidenceRef, Fact, IssueAnalysis
 
 

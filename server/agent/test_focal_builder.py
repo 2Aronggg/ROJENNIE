@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import unittest
 
-from agent.focal_builder import build_issue_input
+from server.agent.focal_builder import build_issue_input
 
 
 class FocalBuilderTests(unittest.TestCase):

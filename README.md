@@ -33,7 +33,7 @@
 client/          사용자 화면과 API 연동 규칙
 server/          API·오케스트레이션·RAG 구현 규칙
 docs/            PRD와 작업 목록
-agent/           에이전트가 읽는 공통·단계별 규칙
+server/agent/    에이전트가 읽는 공통·단계별 규칙
 data/            규정·상품 문서·민원 시나리오
 ```
 

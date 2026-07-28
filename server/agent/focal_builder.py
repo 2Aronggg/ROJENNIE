@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import re
 
-from agent.content_scope import apply_content_scope
+from server.agent.content_scope import apply_content_scope
 from server.schemas import Fact, IssueInput
 
 
