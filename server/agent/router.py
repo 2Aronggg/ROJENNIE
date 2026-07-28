@@ -160,6 +160,8 @@ def _llm_enabled(use_llm: bool | None) -> bool:
     mode = os.getenv("ROUTER_MODE", "auto").strip().lower()
     if mode in {"off", "rule", "rules"}:
         return False
+    if mode in {"llm", "openai"}:
+        return True
     return bool(os.getenv("OPENAI_API_KEY"))
 
 
