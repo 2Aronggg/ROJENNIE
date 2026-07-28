@@ -1,10 +1,44 @@
 from __future__ import annotations
 
+import logging
+import os
 import re
 from datetime import date
+from typing import Any, Literal
+
+from pydantic import BaseModel
 
 from server.agent.focal_builder import build_issue_input
 from server.schemas import CaseAnalyzeRequest, IssueInput
+
+
+LOGGER = logging.getLogger(__name__)
+RouteProduct = Literal["예금", "적금", "펀드", "ELS", "보험", "공통"]
+
+
+class LLMRouteIssue(BaseModel):
+    text: str
+    product: RouteProduct
+    issue_type: str
+
+
+class LLMRouteResult(BaseModel):
+    issues: list[LLMRouteIssue]
+
+
+ROUTER_SYSTEM_PROMPT = """당신은 금융 소비자 민원 Issue Splitter다.
+사용자 문장을 독립적으로 처리해야 하는 민원 이슈 목록으로 분해한다.
+
+규칙:
+- 허용 상품은 예금, 적금, 펀드, ELS, 보험, 공통뿐이다.
+- 상품과 쟁점이 다르고 필요한 규정·증빙·해결 조치가 다를 때만 분리한다.
+- 같은 사건의 원인과 결과는 하나의 이슈로 유지한다.
+- issue_type은 짧은 한국어 식별자로 작성한다. 법적 결론을 단정하지 않는다.
+- text는 사용자의 원문에서 해당 이슈를 설명하는 부분을 최대한 그대로 사용한다.
+- 상품이 불명확하면 공통으로 분류한다.
+- 금융 규정, 사실, 금액, 날짜를 새로 만들지 않는다.
+- 분리할 수 없으면 issues 하나로 반환한다.
+"""
 
 
 PRODUCT_KEYWORDS: tuple[tuple[str, tuple[str, ...]], ...] = (
@@ -49,24 +83,102 @@ def build_case_request(
     case_id: str | None = None,
     session_id: str | None = None,
     as_of: date | None = None,
+    use_llm: bool | None = None,
+    client: Any | None = None,
 ) -> CaseAnalyzeRequest:
-    """Build the A-server analyze payload with explicit issues.
+    """Build the A-server payload using LLM routing when configured.
 
-    B must not call A with an empty ``issues`` list because A will fall back to
-    ``미분류`` and lexical retrieval becomes weak.
+    ROUTER_MODE=auto uses the LLM only when OPENAI_API_KEY exists.
+    ROUTER_MODE=llm forces an LLM attempt, then falls back to rules on failure.
     """
     return CaseAnalyzeRequest(
         case_id=case_id,
         session_id=session_id,
         prompt=prompt,
         as_of=as_of,
-        issues=split_prompt_to_issues(prompt),
+        issues=split_prompt_to_issues(prompt, use_llm=use_llm, client=client),
     )
 
 
-def split_prompt_to_issues(prompt: str) -> list[IssueInput]:
+def split_prompt_to_issues(
+    prompt: str,
+    *,
+    use_llm: bool | None = None,
+    client: Any | None = None,
+) -> list[IssueInput]:
+    if _llm_enabled(use_llm):
+        try:
+            issues = split_prompt_to_issues_llm(prompt, client=client)
+            if issues:
+                return issues
+        except Exception as exc:
+            LOGGER.warning("LLM routing failed; using rule fallback: %s", exc)
+    return _split_prompt_to_issues_rules(prompt)
+
+
+def split_prompt_to_issues_llm(prompt: str, *, client: Any | None = None) -> list[IssueInput]:
+    llm_client = client or _openai_client()
+    response = llm_client.responses.parse(
+        model=os.getenv("ROUTER_MODEL", "gpt-4o-mini"),
+        input=[
+            {"role": "system", "content": ROUTER_SYSTEM_PROMPT},
+            {"role": "user", "content": prompt},
+        ],
+        text_format=LLMRouteResult,
+    )
+    result = response.output_parsed
+    if result is None:
+        raise ValueError("LLM returned no structured routing result")
+
+    issues: list[IssueInput] = []
+    for index, routed in enumerate(result.issues, start=1):
+        text = routed.text.strip()
+        issue_type = routed.issue_type.strip() or "미분류"
+        if not text:
+            continue
+        issues.append(
+            build_issue_input(
+                issue_id=f"issue_{index:03d}",
+                product=routed.product,
+                issue_type=issue_type,
+                text=text,
+                raw_product=routed.product,
+            )
+        )
+    return issues
+
+
+def _openai_client() -> Any:
+    from openai import OpenAI
+
+    return OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+
+
+def _llm_enabled(use_llm: bool | None) -> bool:
+    if use_llm is not None:
+        return use_llm
+    mode = os.getenv("ROUTER_MODE", "auto").strip().lower()
+    if mode in {"off", "rule", "rules"}:
+        return False
+    return bool(os.getenv("OPENAI_API_KEY"))
+
+
+def _split_prompt_to_issues_rules(prompt: str) -> list[IssueInput]:
     spans = _issue_spans(prompt)
     return [_build_issue(index, span) for index, span in enumerate(spans, start=1)]
+
+
+def _build_issue(index: int, text: str) -> IssueInput:
+    raw_product = _classify_product(text)
+    issue_type = _classify_issue_type(text, raw_product)
+    raw_product = raw_product or _infer_product_from_issue(issue_type)
+    return build_issue_input(
+        issue_id=f"issue_{index:03d}",
+        product=raw_product or "공통",
+        issue_type=issue_type,
+        text=text,
+        raw_product=raw_product,
+    )
 
 
 def _issue_spans(prompt: str) -> list[str]:
@@ -85,19 +197,6 @@ def _issue_spans(prompt: str) -> list[str]:
     if current:
         spans.append(current)
     return spans
-
-
-def _build_issue(index: int, text: str) -> IssueInput:
-    raw_product = _classify_product(text)
-    issue_type = _classify_issue_type(text, raw_product)
-    raw_product = raw_product or _infer_product_from_issue(issue_type)
-    return build_issue_input(
-        issue_id=f"issue_{index:03d}",
-        product=raw_product or "공통",
-        issue_type=issue_type,
-        text=text,
-        raw_product=raw_product,
-    )
 
 
 def _has_new_issue_signal(text: str) -> bool:
@@ -158,4 +257,3 @@ def _infer_product_from_issue(issue_type: str) -> str | None:
     if issue_type in {"배상비율불만", "분쟁조정안내부족", "상환금과소지급", "중도해지손실", "원금손실설명부족"}:
         return "ELS"
     return None
-

@@ -53,3 +53,13 @@ python -m uvicorn server.app:app --reload
 ```
 
 `server/chunks.jsonl`은 생성 산출물이므로 커밋하지 않습니다.
+## LLM router
+
+server/agent/router.py uses structured LLM output when OPENAI_API_KEY is set. It falls back to the deterministic rule router when the key, SDK, network, or response is unavailable.
+
+Environment variables:
+OPENAI_API_KEY=...
+ROUTER_MODE=auto
+ROUTER_MODEL=gpt-4o-mini
+
+Use ROUTER_MODE=rule to force the deterministic fallback during tests.
