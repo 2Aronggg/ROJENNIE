@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from datetime import date
+from datetime import date, datetime
 from typing import Any, Literal
 
 from pydantic import BaseModel, Field
@@ -28,6 +28,7 @@ class EvidenceRef(BaseModel):
     score: float
     snippet: str
     effective_from: date | None = None
+    match_type: Literal["full_text", "vector", "hybrid"] = "full_text"
 
 
 class DocumentChunk(BaseModel):
@@ -44,6 +45,7 @@ class DocumentChunk(BaseModel):
     page: int
     section: str | None = None
     text: str
+    embedding: list[float] | None = None
 
 
 class IssueInput(BaseModel):
@@ -90,8 +92,52 @@ class IssueAnalysis(BaseModel):
     next_steps: list[str] = Field(default_factory=list)
 
 
+class LogicNode(BaseModel):
+    node_id: str
+    node_type: str
+    label: str
+    attributes: dict[str, Any] = Field(default_factory=dict)
+
+
+class LogicEdge(BaseModel):
+    source: str
+    target: str
+    relation: str
+
+
+class LogicGraph(BaseModel):
+    nodes: list[LogicNode] = Field(default_factory=list)
+    edges: list[LogicEdge] = Field(default_factory=list)
+
 class CaseAnalysis(BaseModel):
     case_id: str
     session_id: str | None = None
     prompt: str
     issues: list[IssueAnalysis]
+    logic_graph: LogicGraph = Field(default_factory=LogicGraph)
+    regulation_notices: list[str] = Field(default_factory=list)
+
+class ReviewRequest(BaseModel):
+    reviewer_id: str = "human"
+    control: Control | None = None
+    issue_decisions: dict[str, Decision] = Field(default_factory=dict)
+    fact_updates: dict[str, list[Fact]] = Field(default_factory=dict)
+    note: str = Field(default="", max_length=2000)
+
+
+class ReviewResponse(BaseModel):
+    review_id: str
+    case_id: str
+    applied: bool
+    reviewer_id: str
+    note: str = ""
+    analysis: CaseAnalysis
+
+
+class AuditEvent(BaseModel):
+    event_id: str
+    case_id: str
+    event_type: str
+    actor: str
+    created_at: datetime
+    payload: dict[str, Any] = Field(default_factory=dict)

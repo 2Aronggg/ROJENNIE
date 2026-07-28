@@ -4,6 +4,7 @@ import logging
 import os
 import re
 from datetime import date
+from pathlib import Path
 from typing import Any, Literal
 
 from pydantic import BaseModel
@@ -119,15 +120,11 @@ def split_prompt_to_issues(
 def split_prompt_to_issues_llm(prompt: str, *, client: Any | None = None) -> list[IssueInput]:
     llm_client = client or _gemini_client()
     response = llm_client.models.generate_content(
-        model=os.getenv("GEMINI_MODEL", "gemini-2.5-flash"),
+        model=os.getenv("GEMINI_MODEL", "gemini-3.5-flash"),
         contents=ROUTER_SYSTEM_PROMPT + "\n\nUser input:\n" + prompt,
         config={
-            "response_format": {
-                "text": {
-                    "mime_type": "application/json",
-                    "schema": LLMRouteResult.model_json_schema(),
-                }
-            }
+            "response_mime_type": "application/json",
+            "response_schema": LLMRouteResult.model_json_schema(),
         },
     )
     if not response.text:
@@ -152,21 +149,53 @@ def split_prompt_to_issues_llm(prompt: str, *, client: Any | None = None) -> lis
     return issues
 
 
+def _load_dotenv() -> None:
+    env_path = Path(__file__).resolve().parents[2] / ".env"
+    try:
+        lines = env_path.read_text(encoding="utf-8").splitlines()
+    except OSError:
+        return
+
+    for line in lines:
+        line = line.strip()
+        if not line or line.startswith("#"):
+            continue
+        if line.startswith("export "):
+            line = line[7:].lstrip()
+        key, separator, value = line.partition("=")
+        if not separator or not re.fullmatch(r"[A-Za-z_][A-Za-z0-9_]*", key.strip()):
+            continue
+        key = key.strip()
+        value = value.strip()
+        if len(value) >= 2 and value[0] == value[-1] and value[0] in {"'", '"'}:
+            value = value[1:-1]
+        os.environ.setdefault(key, value)
+
+
+def _gemini_api_key() -> str | None:
+    _load_dotenv()
+    return next(
+        (os.getenv(name) for name in ("GEMINI_API_KEY", "GOOGLE_API_KEY", "GOOGLE_GENAI_KEY") if os.getenv(name)),
+        None,
+    )
+
+
 def _gemini_client() -> Any:
     from google import genai
 
-    return genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
+    return genai.Client(api_key=_gemini_api_key())
 
 
 def _llm_enabled(use_llm: bool | None) -> bool:
     if use_llm is not None:
         return use_llm
+    _load_dotenv()
     mode = os.getenv("ROUTER_MODE", "auto").strip().lower()
     if mode in {"off", "rule", "rules"}:
         return False
     if mode in {"llm", "gemini"}:
         return True
-    return bool(os.getenv("GEMINI_API_KEY"))
+    return bool(_gemini_api_key())
 
 
 def _split_prompt_to_issues_rules(prompt: str) -> list[IssueInput]:

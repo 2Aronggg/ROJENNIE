@@ -56,11 +56,12 @@ python -m uvicorn server.app:app --reload
 
 ## LLM router
 
-server/agent/router.py uses structured LLM output when GEMINI_API_KEY is set. It falls back to the deterministic rule router when the key, SDK, network, or response is unavailable.
+server/agent/router.py uses structured LLM output when a supported Gemini API key is set. It falls back to the deterministic rule router when the key, SDK, network, or response is unavailable.
 
 Environment variables:
 GEMINI_API_KEY=...
+Supported key aliases: GOOGLE_API_KEY, GOOGLE_GENAI_KEY.
 ROUTER_MODE=auto
-GEMINI_MODEL=gemini-2.5-flash
+GEMINI_MODEL=gemini-3.5-flash
 
 Use ROUTER_MODE=rule to force the deterministic fallback during tests.

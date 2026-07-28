@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from datetime import date
+from typing import Any
 
 from pydantic import BaseModel
 
@@ -22,9 +23,11 @@ def run_analysis(
     case_id: str | None = None,
     session_id: str | None = None,
     as_of: date | None = None,
+    use_llm: bool | None = None,
+    router_client: Any | None = None,
 ) -> PipelineResult:
     """Run the B→A→B analysis path without starting an HTTP server."""
-    request = build_case_request(prompt, case_id=case_id, session_id=session_id, as_of=as_of)
+    request = build_case_request(prompt, case_id=case_id, session_id=session_id, as_of=as_of, use_llm=use_llm, client=router_client)
     analysis = server_app.analyze_case(request)
     response_view = compose_case_response(analysis)
     return PipelineResult(request=request, analysis=analysis, response_view=response_view)

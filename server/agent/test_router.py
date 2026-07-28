@@ -91,7 +91,7 @@ class RouterTests(unittest.TestCase):
         issues = split_prompt_to_issues("복합 금융 민원입니다.", use_llm=True, client=client)
 
         self.assertEqual([(issue.product, issue.issue_type) for issue in issues], [("예금", "인출제한"), ("ELS", "원금손실설명부족")])
-        self.assertEqual(client.models.kwargs["config"]["response_format"]["text"]["mime_type"], "application/json")
+        self.assertEqual(client.models.kwargs["config"]["response_mime_type"], "application/json")
 
     def test_llm_failure_falls_back_to_rules(self) -> None:
         issues = split_prompt_to_issues(

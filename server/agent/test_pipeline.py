@@ -18,6 +18,7 @@ class PipelineTests(unittest.TestCase):
             "그런데 적금 우대금리 문의했는데 콜센터에서 계속 확인 중이라고만 해요, 10일째요.",
             case_id="case_pipeline",
             session_id="session_pipeline",
+            use_llm=False,
         )
 
         self.assertIsInstance(result, PipelineResult)
@@ -33,6 +34,7 @@ class PipelineTests(unittest.TestCase):
         result = run_analysis(
             "예금 계좌 123-456-789012에서 인출이 거부됐고 연락처는 010-1234-5678입니다.",
             case_id="case_masked",
+            use_llm=False,
         )
 
         issue_request = result.request.issues[0]
