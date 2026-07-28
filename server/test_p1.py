@@ -51,7 +51,7 @@ class RetrievalP1Tests(unittest.TestCase):
             pdf = data_dir / "rule.pdf"
             pdf.write_bytes(b"one")
             before = document_manifest(data_dir)
-            pdf.write_bytes(b"two")
+            pdf.write_bytes(b"two bytes changed")
             after = document_manifest(data_dir)
             self.assertEqual(changed_documents(after, before), ["rule.pdf"])
 

@@ -70,6 +70,7 @@ class EvidenceItem(BaseModel):
     page: int
     section: str | None = None
     score: float
+    match_type: str = "full_text"
     snippet: str
     effective_from: str | None = None
 
@@ -186,6 +187,7 @@ def _evidence_item(ref: EvidenceRef) -> EvidenceItem:
         page=ref.page,
         section=ref.section,
         score=ref.score,
+        match_type=ref.match_type,
         snippet=ref.snippet,
         effective_from=ref.effective_from.isoformat() if ref.effective_from else None,
     )

@@ -65,3 +65,11 @@ ROUTER_MODE=auto
 GEMINI_MODEL=gemini-3.5-flash
 
 Use ROUTER_MODE=rule to force the deterministic fallback during tests.
+
+## P1 server capabilities
+
+- Loads server/chunks.jsonl when it is newer than the source PDFs; otherwise builds the index from PDFs.
+- Applies product and effective-date filters, with optional embedding scores combined with full-text scores.
+- Returns logic_graph and regulation_notices in case analysis responses.
+- Supports POST /api/v1/cases/{case_id}/review and GET /api/v1/cases/{case_id}/audit.
+- The current supplied chunks have no embeddings, so their default match type is full_text.
