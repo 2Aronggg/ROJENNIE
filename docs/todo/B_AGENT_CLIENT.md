@@ -1,10 +1,10 @@
 # B TODO: 에이전트·클라이언트
-ㅎㅎㅎ
+
 브랜치: `feat/agent-client`
 
 ## P0
 
-- [ ] Issue Splitter 프롬프트와 JSON 출력 검증
+- [o] Issue Splitter 프롬프트와 JSON 출력 검증
 - [ ] Focal Builder의 focal·target·missing facts·evidence refs 추출 구현
 - [ ] Logic Verification의 `supported / unsupported / unknown / conflict` 출력 구현
 - [ ] `proceed / amend / ask / hold` Decision Gate 구현
