@@ -17,7 +17,7 @@ from .agents.rag_query import build_rag_query
 from .agents.report_composer import DECISION_LABELS, compose_issue_report
 from .agents.decision_gate import apply_decision_gate, assess_risk
 from .agents.question_builder import expected_interest_question
-from .agents.router import build_case_request
+from .agents.router import _load_dotenv, build_case_request
 from .agents.facts import missing_facts, resolve_facts
 from .finance.mock_data import MockBankClient
 from .agents.logic_graph import build_logic_graph
@@ -34,9 +34,11 @@ from .schemas import (
     ReviewResponse,
     ReviewQueueItem,
 )
+from .supabase_store import SupabaseStore
 
 
 ROOT = Path(__file__).resolve().parents[1]
+_load_dotenv()
 DATA_DIR = ROOT / "data"
 app = FastAPI(title="Financial Consumer Protection Agent API", version="0.1.0")
 CORS_ORIGINS = [
@@ -65,6 +67,7 @@ _DICTIONARY: list[dict[str, object]] | None = None
 MOCK_BANK_CLIENT = MockBankClient()
 FINANCE_MCP_CLIENT = FinanceMCPClient()
 CUSTOMER_DATA_RESOLVER = MockCustomerDataResolver(FINANCE_MCP_CLIENT)
+SUPABASE_STORE = SupabaseStore()
 
 
 def get_index() -> SearchIndex:
@@ -307,6 +310,10 @@ def get_admin_cases(
 def get_admin_case(case_id: str) -> dict[str, object]:
     case = CASE_STORE.get(case_id)
     if case is None:
+        case = SUPABASE_STORE.get_case(case_id)
+        if case is not None:
+            CASE_STORE[case_id] = case
+    if case is None:
         raise HTTPException(status_code=404, detail="case not found")
     return {
         "case": case.model_dump(mode="json"),
@@ -510,16 +517,16 @@ def _mock_issue_view(issue: IssueInput, customer_data: dict[str, object] | None)
     }
 
 def _record_audit(case_id: str, event_type: str, actor: str, payload: dict) -> None:
-    AUDIT_LOG.append(
-        AuditEvent(
-            event_id=f"audit_{uuid4().hex[:12]}",
-            case_id=case_id,
-            event_type=event_type,
-            actor=actor,
-            created_at=datetime.now(timezone.utc),
-            payload=payload,
-        )
+    event = AuditEvent(
+        event_id=f"audit_{uuid4().hex[:12]}",
+        case_id=case_id,
+        event_type=event_type,
+        actor=actor,
+        created_at=datetime.now(timezone.utc),
+        payload=payload,
     )
+    AUDIT_LOG.append(event)
+    SUPABASE_STORE.save_audit(event)
 
 
 def _audit_issues(result: CaseAnalysis) -> list[dict[str, object]]:
@@ -577,6 +584,7 @@ def analyze_case(request: CaseAnalyzeRequest) -> CaseAnalysis:
     )
     result = result.model_copy(update={"logic_graph": build_logic_graph(result)})
     CASE_STORE[case_id] = result
+    SUPABASE_STORE.save_case(result)
     _record_audit(case_id, "case.analyzed", "system", {"issues": _audit_issues(result)})
     return result
 
@@ -584,6 +592,10 @@ def analyze_case(request: CaseAnalyzeRequest) -> CaseAnalysis:
 @app.get("/api/v1/cases/{case_id}", response_model=CaseAnalysis)
 def get_case(case_id: str) -> CaseAnalysis:
     result = CASE_STORE.get(case_id)
+    if result is None:
+        result = SUPABASE_STORE.get_case(case_id)
+        if result is not None:
+            CASE_STORE[case_id] = result
     if result is None:
         raise HTTPException(status_code=404, detail="case not found")
     return result
@@ -611,6 +623,10 @@ def get_review_queue() -> list[ReviewQueueItem]:
 @app.post("/api/v1/cases/{case_id}/review", response_model=ReviewResponse)
 def review_case(case_id: str, review: ReviewRequest) -> ReviewResponse:
     current = CASE_STORE.get(case_id)
+    if current is None:
+        current = SUPABASE_STORE.get_case(case_id)
+        if current is not None:
+            CASE_STORE[case_id] = current
     if current is None:
         raise HTTPException(status_code=404, detail="case not found")
 
@@ -651,6 +667,7 @@ def review_case(case_id: str, review: ReviewRequest) -> ReviewResponse:
     updated = current.model_copy(update={"issues": updated_issues})
     updated = updated.model_copy(update={"logic_graph": build_logic_graph(updated)})
     CASE_STORE[case_id] = updated
+    SUPABASE_STORE.save_case(updated)
     response = ReviewResponse(
         review_id=f"review_{uuid4().hex[:12]}",
         case_id=case_id,
@@ -660,6 +677,7 @@ def review_case(case_id: str, review: ReviewRequest) -> ReviewResponse:
         analysis=updated,
     )
     REVIEW_STORE.setdefault(case_id, []).append(response)
+    SUPABASE_STORE.save_review(response)
     _record_audit(
         case_id,
         "human_review.applied",
@@ -684,5 +702,9 @@ def review_case(case_id: str, review: ReviewRequest) -> ReviewResponse:
 @app.get("/api/v1/cases/{case_id}/audit", response_model=list[AuditEvent])
 def get_case_audit(case_id: str) -> list[AuditEvent]:
     if case_id not in CASE_STORE:
-        raise HTTPException(status_code=404, detail="case not found")
-    return [event for event in AUDIT_LOG if event.case_id == case_id]
+        case = SUPABASE_STORE.get_case(case_id)
+        if case is None:
+            raise HTTPException(status_code=404, detail="case not found")
+        CASE_STORE[case_id] = case
+    events = [event for event in AUDIT_LOG if event.case_id == case_id]
+    return events or SUPABASE_STORE.list_audits(case_id)

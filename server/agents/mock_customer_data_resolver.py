@@ -72,6 +72,7 @@ class MockCustomerDataResolver:
             self._fact("기본금리", account.get("base_rate"), account_ref),
             self._fact("우대금리", account.get("preferential_rate"), account_ref),
             self._fact("실제 적용 금리", account.get("applied_rate"), account_ref),
+            self._fact("기존 금리", self._previous_rate(account), f"{account_ref}/rate-history"),
         ]
         if account["product_type"] == "deposit":
             facts.extend(
@@ -124,6 +125,13 @@ class MockCustomerDataResolver:
     def _account_for_issue(issue: IssueInput, accounts: list[dict[str, Any]]) -> dict[str, Any] | None:
         product_type = {"예금": "deposit", "적금": "installment_savings", "대출": "loan"}.get(issue.product)
         return next((account for account in accounts if account["product_type"] == product_type), None)
+
+    @staticmethod
+    def _previous_rate(account: dict[str, Any]) -> Any:
+        """금리 변경 전 금리는 이력에만 있어 그대로 두면 미확인 사실로 남는다."""
+        history = account.get("rate_change_history") or []
+        latest = max(history, key=lambda item: str(item.get("changed_at", "")), default=None)
+        return latest.get("previous_rate") if latest else None
 
     @staticmethod
     def _fact(field: str, value: Any, source_ref: str) -> Fact:

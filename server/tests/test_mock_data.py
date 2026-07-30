@@ -7,6 +7,7 @@ from pathlib import Path
 from fastapi.testclient import TestClient
 
 from server import app as app_module
+from server.agents.facts import missing_facts, resolve_facts
 from server.agents.mock_customer_data_resolver import MockCustomerDataResolver
 from server.agents.pipeline import run_analysis
 from server.agents.router import build_case_request
@@ -66,6 +67,9 @@ class MockDataTests(unittest.TestCase):
         self.assertEqual(next(fact.value for fact in facts if fact.field == "상환방식"), "원리금균등상환")
         self.assertEqual(next(fact.value for fact in facts if fact.field == "금리 기준"), "MOR 6개월")
         self.assertEqual(next(fact.value for fact in facts if fact.field == "안내 수신 여부"), False)
+        # 변경 전 금리는 이력에만 있으므로 별도 사실로 풀려야 재질문이 생기지 않는다.
+        self.assertEqual(next(fact.value for fact in facts if fact.field == "기존 금리"), 0.047)
+        self.assertNotIn("기존 금리", missing_facts(issue.required_facts, resolve_facts(facts)))
 
     def test_demo_prompt_uses_mock_facts_and_expected_decisions(self) -> None:
         app_module._INDEX = SearchIndex.from_data_dir(

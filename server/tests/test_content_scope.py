@@ -57,7 +57,7 @@ class ContentScopeTests(unittest.TestCase):
             product=issue_input.product,
             issue_type=issue_input.issue_type,
             focal=issue_input.focal,
-            target={"support_status": "supported", "is_unclear": False},
+            target={"is_unclear": False},
             facts=issue_input.facts,
             missing_facts=[],
             fact_resolution=FactResolution(),
