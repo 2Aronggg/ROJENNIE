@@ -1,8 +1,6 @@
 import React, {useCallback, useEffect, useMemo, useReducer, useRef, useState} from "react";
 import {createRoot} from "react-dom/client";
 import {
-  addEdge,
-  applyEdgeChanges,
   applyNodeChanges,
   Background,
   Controls,
@@ -597,7 +595,7 @@ function selectedNodePath(nodes, selectedNodeId) {
 
 function buildFlowGraph(session) {
   if (!(session.analysis.issues || []).length) return {nodes: [], edges: []};
-  const graphNodes = [{id: "root", type: "flowNode", data: {kind: "root", title: "복합 금융 문의"}, position: {x: 0, y: 0}}];
+  const graphNodes = [{id: "root", type: "flowNode", data: {kind: "root", title: "복합 금융 문의"}, position: {x: 0, y: 0}, draggable: false}];
   const graphEdges = [];
   const relations = [{id: "root", parent: null}];
   const allNodes = session.analysis.issues || [];
@@ -1118,7 +1116,7 @@ function AdminPage({history}) {
   </main>;
 }
 
-function MyPage({history, onNavigate}) {
+function MyPage({history, onNavigate, onOpenCase}) {
   const [profile, setProfile] = useState({customer: null, products: {deposits: [], savings: [], loans: []}});
   const [financial, setFinancial] = useState({deposits: [], savings: [], loans: [], loading: true});
   const [storedCases, setStoredCases] = useState([]);
@@ -1167,7 +1165,8 @@ function MyPage({history, onNavigate}) {
       <div className="panel complaint-history"><div className="card-head"><div><h2>민원 목록</h2><p>최근 접수 순으로 확인합니다.</p></div><strong>{records.length}건</strong></div>
         {records.length === 0 ? <div className="empty-state">아직 접수한 민원이 없습니다.<button type="button" onClick={function() { onNavigate("chat"); }}>민원 작성하기</button></div> : <div className="history-list">{records.map(function(record) {
           const status = caseStatus(record.analysis);
-          return <article className="history-item" key={record.case_id}><div className="history-item-head"><span>{formatDate(record.created_at)}</span><b className={status}>{CASE_STATUS_LABEL[status]}</b></div><strong>{record.prompt || "복합 금융 문의"}</strong><div className="history-issues">{(record.analysis?.issues || []).map(function(issue) { const issueStatus = issue.decision?.control || "ask"; return <span key={issue.issue_id}>{issue.product} · {issue.issue_type} <em className={issueStatus}>{CASE_STATUS_LABEL[issueStatus]}</em></span>; })}</div><small>{record.case_id}</small></article>;
+          const issues = record.analysis?.issues || [];
+          return <article className="history-item" key={record.case_id}><div className="history-item-head"><span>{formatDate(record.created_at)}</span><b className={status}>{CASE_STATUS_LABEL[status]}</b></div><strong>{record.prompt || "복합 금융 문의"}</strong><div className="history-issues">{issues.map(function(issue) { const issueStatus = issue.decision?.control || "ask"; return <span key={issue.issue_id}>{issue.product} · {issue.issue_type} <em className={issueStatus}>{CASE_STATUS_LABEL[issueStatus]}</em></span>; })}</div><div className="history-actions"><button className="history-action" type="button" disabled={issues.length === 0} onClick={function() { onOpenCase(record, issues[0]?.issue_id); }}>분석 리포트 보기</button><button className="history-action" type="button" onClick={function() { onOpenCase(record); }}>민원 트리</button></div><small>{record.case_id}</small></article>;
         })}</div>}
       </div>
       <div className="panel finance-status"><div className="card-head"><div><h2>내 금융 상황</h2><p>가상 금융 데이터 연결 기준</p></div><span className="connected-dot">연결됨</span></div>{financial.loading ? <div className="empty-state compact">금융 정보를 불러오는 중입니다.</div> : <div className="finance-groups">
@@ -1271,20 +1270,13 @@ function App() {
         return {...node, position: positions.current[node.id] || previous?.position || node.position};
       });
     });
-    setFlowEdges(function(current) {
-      const nodeIds = new Set(graph.nodes.map(function(node) { return node.id; }));
-      const automaticIds = new Set(graph.edges.map(function(edge) { return edge.id; }));
-      const manual = current.filter(function(edge) { return !automaticIds.has(edge.id) && nodeIds.has(edge.source) && nodeIds.has(edge.target); });
-      return [...graph.edges, ...manual];
-    });
+    setFlowEdges(graph.edges);
   }, [graph]);
 
   const onNodesChange = useCallback(function(changes) {
     changes.forEach(function(change) { if (change.type === "position" && change.position) positions.current[change.id] = change.position; });
     setFlowNodes(function(nodes) { return applyNodeChanges(changes, nodes); });
   }, []);
-  const onEdgesChange = useCallback(function(changes) { setFlowEdges(function(edges) { return applyEdgeChanges(changes, edges); }); }, []);
-  const onConnect = useCallback(function(params) { setFlowEdges(function(edges) { return addEdge({...params, type: "smoothstep", markerEnd: {type: MarkerType.ArrowClosed, color: "#c8b88f"}}, edges); }); }, []);
   const onNodeClick = useCallback(function(_, node) {
     if (node.data.kind === "issue") dispatch({type: "SELECT_ISSUE", issueId: node.data.issueId});
     if (node.data.kind === "fact") dispatch({type: "SELECT_NODE", issueId: node.data.issueId, nodeId: node.data.nodeId});
@@ -1318,11 +1310,17 @@ function App() {
     dispatch({type: "CLOSE_DRAWER"});
   }
 
+  function openCase(record, focusIssueId) {
+    dispatch({type: "RESET", analysis: record.analysis});
+    if (focusIssueId) dispatch({type: "OPEN_ISSUE_REPORT", issueId: focusIssueId});
+    navigate("chat");
+  }
+
   return <div className="app">
     <header className="topbar"><div className="brand"><img src="/images.png" alt="KB" /><div><strong>KB Key Buddy</strong><span>금융 소비자 보호 에이전트</span></div></div><PageNav page={page} onNavigate={navigate} /><div className="case-id">{session.analysis.case_id !== "new_case" ? session.analysis.case_id : "내 금융"}</div></header>
-    {page === "admin" ? <AdminPage history={history} /> : page === "mypage" ? <MyPage history={history} onNavigate={navigate} /> : page === "reports" ? <GeneratedComplaintsPage history={history} onNavigate={navigate} /> : <>
+    {page === "admin" ? <AdminPage history={history} /> : page === "mypage" ? <MyPage history={history} onNavigate={navigate} onOpenCase={openCase} /> : page === "reports" ? <GeneratedComplaintsPage history={history} onNavigate={navigate} /> : <>
       <main className="workspace">
-         <section className="panel case-panel"><div className="section-head"><div><h2>민원 흐름 트리</h2><p>노드를 드래그하고, 화면을 이동하거나 확대·축소할 수 있습니다.</p></div><StatusSummary session={session} reviewQueue={reviewQueue} /></div><div className="flow-shell">{flowNodes.length === 0 && <div className="flow-empty"><strong>아직 분석된 민원이 없습니다.</strong><span>오른쪽 입력창에 문의를 작성해 주세요.</span></div>}<ReactFlow nodes={flowNodes} edges={flowEdges} nodeTypes={nodeTypes} onNodesChange={onNodesChange} onEdgesChange={onEdgesChange} onConnect={onConnect} onNodeClick={onNodeClick} onNodeDoubleClick={onNodeDoubleClick} fitView fitViewOptions={{padding: .18}} minZoom={.2} maxZoom={2} panOnDrag zoomOnScroll nodesConnectable selectionOnDrag><MiniMap pannable zoomable /><Controls /><Background gap={22} size={1} color="#eadfca" /></ReactFlow></div></section>
+         <section className="panel case-panel"><div className="section-head"><div><h2>민원 흐름 트리</h2><p>노드를 드래그하고, 화면을 이동하거나 확대·축소할 수 있습니다.</p></div><StatusSummary session={session} reviewQueue={reviewQueue} /></div><div className="flow-shell">{flowNodes.length === 0 && <div className="flow-empty"><strong>아직 분석된 민원이 없습니다.</strong><span>오른쪽 입력창에 문의를 작성해 주세요.</span></div>}<ReactFlow nodes={flowNodes} edges={flowEdges} nodeTypes={nodeTypes} onNodesChange={onNodesChange} onNodeClick={onNodeClick} onNodeDoubleClick={onNodeDoubleClick} fitView fitViewOptions={{padding: .18}} minZoom={.2} maxZoom={2} panOnDrag zoomOnScroll nodesConnectable={false} defaultEdgeOptions={{selectable: false, focusable: false}} selectionOnDrag><MiniMap pannable zoomable /><Controls /><Background gap={22} size={1} color="#eadfca" /></ReactFlow></div></section>
          <ChatPanel issue={selectedIssue} state={selectedState} index={selectedIssueIndex < 0 ? 0 : selectedIssueIndex} draft={draft} setDraft={setDraft} dispatch={dispatch} onAnalyze={analyze} reviewQueue={reviewQueue} />
       </main>
       <DetailDrawer node={selectedNode} onClose={function() { dispatch({type: "CLOSE_DRAWER"}); }} onEdit={editAnswer} />
