@@ -21,6 +21,11 @@ def _tokens(text: str) -> set[str]:
     return {token.lower() for token in TOKEN_RE.findall(text)}
 
 
+def _text_key(text: str) -> str:
+    """상품설명서마다 반복되는 정형 문구는 doc_id가 달라도 같은 근거다."""
+    return " ".join(text.split())
+
+
 def _cosine(left: list[float], right: list[float]) -> float:
     if not left or not right or len(left) != len(right):
         return 0.0
@@ -209,21 +214,30 @@ class SearchIndex:
             ranked.append((score, chunk.chunk_id, chunk, match_type))
 
         ranked.sort(key=lambda item: (-item[0], item[1]))
-        return [
-            EvidenceRef(
-                doc_id=chunk.doc_id,
-                chunk_id=chunk.chunk_id,
-                path=chunk.path,
-                page=chunk.page,
-                section=chunk.section,
-                score=round(score, 4),
-                snippet=chunk.text[:280],
-                effective_from=chunk.effective_from,
-                effective_to=chunk.effective_to,
-                match_type=match_type,
+        results: list[EvidenceRef] = []
+        seen: set[str] = set()
+        for score, _, chunk, match_type in ranked:
+            key = _text_key(chunk.text)
+            if key in seen:
+                continue
+            seen.add(key)
+            results.append(
+                EvidenceRef(
+                    doc_id=chunk.doc_id,
+                    chunk_id=chunk.chunk_id,
+                    path=chunk.path,
+                    page=chunk.page,
+                    section=chunk.section,
+                    score=round(score, 4),
+                    snippet=chunk.text[:280],
+                    effective_from=chunk.effective_from,
+                    effective_to=chunk.effective_to,
+                    match_type=match_type,
+                )
             )
-            for score, _, chunk, match_type in ranked[:top_k]
-        ]
+            if len(results) >= top_k:
+                break
+        return results
 
     def search_many(
         self,
@@ -267,7 +281,15 @@ class SearchIndex:
             score = 0.7 * evidence.score + 0.3 * (rrf / max_rrf)
             fused.append((score, evidence))
         fused.sort(key=lambda item: (-item[0], item[1].chunk_id))
-        return [
-            evidence.model_copy(update={"score": round(score, 4)})
-            for score, evidence in fused[:top_k]
-        ]
+        # 질의마다 같은 문구의 다른 사본이 1위로 뽑힐 수 있어 융합 후 한 번 더 거른다.
+        results: list[EvidenceRef] = []
+        seen: set[str] = set()
+        for score, evidence in fused:
+            key = _text_key(evidence.snippet)
+            if key in seen:
+                continue
+            seen.add(key)
+            results.append(evidence.model_copy(update={"score": round(score, 4)}))
+            if len(results) >= top_k:
+                break
+        return results
