@@ -829,12 +829,293 @@ function PageNav({page, onNavigate}) {
     <button className={page === "mypage" ? "active" : ""} type="button" onClick={function() { onNavigate("mypage"); }}>마이 페이지</button>
     <button className={page === "chat" ? "active" : ""} type="button" onClick={function() { onNavigate("chat"); }}>민원 상담</button>
     <button className={page === "reports" ? "active" : ""} type="button" onClick={function() { onNavigate("reports"); }}>생성된 민원</button>
+    <button className={page === "admin" ? "active" : ""} type="button" onClick={function() { onNavigate("admin"); }}>관리자</button>
   </nav>;
 }
 
 function formatDate(value) {
   const date = new Date(value);
   return Number.isNaN(date.getTime()) ? "날짜 미확인" : date.toLocaleString("ko-KR", {dateStyle: "medium", timeStyle: "short"});
+}
+
+const ADMIN_CONTROL_LABEL = {proceed: "진행 가능", ask: "확인 필요", amend: "보완 필요", hold: "검토 대기"};
+const ADMIN_STATUS_LABEL = {current: "현행", expired: "만료", scheduled: "시행 예정", unknown: "시점 미상"};
+
+async function adminJson(path) {
+  const response = await fetch(API_BASE + path);
+  if (!response.ok) throw new Error("HTTP " + response.status);
+  return response.json();
+}
+
+function localAdminCases(history) {
+  return history.flatMap(function(record) {
+    return (record.analysis?.issues || []).map(function(issue) {
+      return {
+        case_id: record.case_id,
+        created_at: record.created_at,
+        prompt: record.prompt,
+        issue_id: issue.issue_id,
+        product: issue.product,
+        issue_type: issue.issue_type,
+        control: issue.decision?.control || "ask",
+        risk_level: issue.risk_level || "미측정",
+        human_review_required: Boolean(issue.human_review_required),
+        evidence_count: (issue.evidence_refs || []).length,
+        generated_by: issue.report?.generated_by || "fallback",
+      };
+    });
+  });
+}
+
+function localAdminOverview(cases) {
+  const controls = cases.reduce(function(result, item) {
+    result[item.control] = (result[item.control] || 0) + 1;
+    return result;
+  }, {});
+  return {
+    documents: {total: 0, chunks: 0, current: 0, expired: 0, unknown: 0, scheduled: 0},
+    cases: {
+      total: new Set(cases.map(function(item) { return item.case_id; })).size,
+      issues: cases.length,
+      controls,
+      human_review: cases.filter(function(item) { return item.human_review_required; }).length,
+      no_evidence: cases.filter(function(item) { return item.evidence_count === 0; }).length,
+      fallback: cases.filter(function(item) { return item.generated_by === "fallback"; }).length,
+    },
+    corpus: {},
+    telemetry: {available: false, message: "서버 연결 전에는 실행 지표를 계산하지 않습니다."},
+  };
+}
+
+function AdminKpi({label: title, value, tone = ""}) {
+  return <article className={"admin-kpi " + tone}><span>{title}</span><strong>{value}</strong></article>;
+}
+
+function AdminDashboard({overview, onTab}) {
+  const documents = overview?.documents || {};
+  const cases = overview?.cases || {};
+  const controls = cases.controls || {};
+  const telemetry = overview?.telemetry || {};
+  return <div className="admin-content">
+    <div className="admin-kpi-grid">
+      <AdminKpi label="전체 문서" value={documents.total ?? 0} />
+      <AdminKpi label="전체 청크" value={(documents.chunks ?? 0).toLocaleString("ko-KR")} />
+      <AdminKpi label="검토 대기" value={cases.human_review ?? 0} tone="danger" />
+      <AdminKpi label="근거 없음" value={cases.no_evidence ?? 0} tone={cases.no_evidence ? "danger" : ""} />
+      <AdminKpi label="확인 필요" value={controls.ask ?? 0} />
+      <AdminKpi label="보완 필요" value={controls.amend ?? 0} />
+      <AdminKpi label="진행 가능" value={controls.proceed ?? 0} tone="safe" />
+      <AdminKpi label="LLM fallback" value={cases.fallback ?? 0} />
+    </div>
+    <div className="admin-two-column">
+      <section className="panel admin-card">
+        <div className="admin-card-head"><div><h2>문서 상태</h2><p>시행일 메타데이터 기준</p></div><button type="button" onClick={function() { onTab("knowledge"); }}>문서 보기</button></div>
+        <div className="admin-status-list">
+          <div><span>현행</span><strong>{documents.current ?? 0}</strong></div>
+          <div><span>만료</span><strong>{documents.expired ?? 0}</strong></div>
+          <div><span>시점 미상</span><strong className={documents.unknown ? "text-danger" : ""}>{documents.unknown ?? 0}</strong></div>
+          <div><span>시행 예정</span><strong>{documents.scheduled ?? 0}</strong></div>
+        </div>
+      </section>
+      <section className="panel admin-card">
+        <div className="admin-card-head"><div><h2>민원 결정 현황</h2><p>현재 메모리 저장소 기준</p></div><button type="button" onClick={function() { onTab("cases"); }}>검토 열기</button></div>
+        <div className="admin-status-list">
+          <div><span>전체 민원 쟁점</span><strong>{cases.issues ?? 0}</strong></div>
+          <div><span>진행 가능</span><strong>{controls.proceed ?? 0}</strong></div>
+          <div><span>확인 필요</span><strong>{controls.ask ?? 0}</strong></div>
+          <div><span>검토 대기</span><strong className="text-danger">{controls.hold ?? 0}</strong></div>
+        </div>
+      </section>
+    </div>
+    <section className="panel admin-card admin-note-card">
+      <div className="admin-card-head"><div><h2>수집·색인 상태</h2><p>자동 크롤러가 아니라 현재 로컬 corpus 생성 결과를 표시합니다.</p></div><button type="button" onClick={function() { onTab("knowledge"); }}>색인 확인</button></div>
+      <div className="admin-corpus-summary">{Object.entries(overview?.corpus?.corpora || {}).map(function(entry) { return <span key={entry[0]}>{entry[0]} <b>{Number(entry[1]).toLocaleString("ko-KR")}</b></span>; })}</div>
+      <p className="admin-muted">처리시간·토큰·API 비용은 아직 수집하지 않으며, 화면에 임의의 수치를 표시하지 않습니다.</p>
+      {telemetry.message && <p className="admin-muted">{telemetry.message}</p>}
+    </section>
+  </div>;
+}
+
+function AdminKnowledge({documents, selectedDocument, query, setQuery, onSelect, onRefresh, loading}) {
+  const [corpus, setCorpus] = useState("");
+  const [status, setStatus] = useState("");
+  const needle = query.trim().toLowerCase();
+  const filtered = documents.filter(function(item) {
+    const searchable = [item.path, item.doc_id, item.doc_type, ...(item.products || [])].join(" ").toLowerCase();
+    return (!needle || searchable.includes(needle)) && (!corpus || item.corpus === corpus) && (!status || item.effective_status === status);
+  });
+  return <div className="admin-content">
+    <section className="panel admin-card">
+      <div className="admin-card-head"><div><h2>지식 문서</h2><p>원문을 보존하고 corpus·시행일·색인 상태를 확인합니다.</p></div><button className="admin-outline-button" type="button" onClick={onRefresh}>새로고침</button></div>
+      <div className="admin-filters">
+        <input value={query} onChange={function(event) { setQuery(event.target.value); }} placeholder="문서명·경로·문서 유형 검색" />
+        <select value={corpus} onChange={function(event) { setCorpus(event.target.value); }}><option value="">전체 corpus</option><option value="regulations">규정</option><option value="products">상품</option><option value="cases">사례</option><option value="glossary">사전</option></select>
+        <select value={status} onChange={function(event) { setStatus(event.target.value); }}><option value="">전체 상태</option><option value="current">현행</option><option value="expired">만료</option><option value="unknown">시점 미상</option><option value="scheduled">시행 예정</option></select>
+      </div>
+      <div className="admin-table-wrap"><table className="admin-table"><thead><tr><th>문서</th><th>유형</th><th>상품</th><th>시행일</th><th>청크</th><th>상태</th></tr></thead><tbody>
+        {loading && <tr><td colSpan="6" className="admin-table-empty">불러오는 중입니다.</td></tr>}
+        {!loading && filtered.length === 0 && <tr><td colSpan="6" className="admin-table-empty">문서가 없습니다.</td></tr>}
+        {!loading && filtered.map(function(item) { return <tr className={selectedDocument?.doc_id === item.doc_id ? "selected" : ""} key={item.doc_id} onClick={function() { onSelect(item.doc_id); }}>
+          <td><strong>{item.path}</strong><small>{item.doc_id}</small></td>
+          <td>{item.doc_type}<small>{item.corpus}</small></td>
+          <td>{(item.products || []).join(", ") || "공통"}</td>
+          <td>{item.effective_from || "미상"}<small>{item.effective_to ? " ~ " + item.effective_to : ""}</small></td>
+          <td>{item.chunk_count}</td>
+          <td><b className={"admin-status " + item.effective_status}>{ADMIN_STATUS_LABEL[item.effective_status] || item.effective_status}</b></td>
+        </tr>; })}
+      </tbody></table></div>
+    </section>
+    {selectedDocument && <aside className="panel admin-card admin-document-detail">
+      <div className="admin-card-head"><div><h2>문서 상세</h2><p>{selectedDocument.path}</p></div><button className="admin-close-button" type="button" onClick={function() { onSelect(null); }}>닫기</button></div>
+      <div className="admin-meta-grid"><span>문서 ID</span><strong>{selectedDocument.doc_id}</strong><span>문서 유형</span><strong>{selectedDocument.doc_type}</strong><span>상품</span><strong>{(selectedDocument.products || []).join(", ")}</strong><span>시행 기간</span><strong>{selectedDocument.effective_from || "미상"} ~ {selectedDocument.effective_to || "현재/미상"}</strong><span>청크 수</span><strong>{selectedDocument.chunk_count}</strong></div>
+      <h3 className="admin-subheading">파싱된 청크</h3>
+      <div className="admin-chunk-list">{(selectedDocument.chunks || []).map(function(chunk) { return <article key={chunk.chunk_id}><div><b>{chunk.section || "섹션 없음"}</b><span>p.{chunk.page} · {chunk.chunk_id}</span></div><p>{chunk.text}</p></article>; })}</div>
+    </aside>}
+  </div>;
+}
+
+function AdminSearch() {
+  const [query, setQuery] = useState("");
+  const [product, setProduct] = useState("");
+  const [asOf, setAsOf] = useState("");
+  const [results, setResults] = useState([]);
+  const [meta, setMeta] = useState(null);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
+
+  async function submit(event) {
+    event.preventDefault();
+    if (!query.trim()) return;
+    setLoading(true);
+    setError("");
+    try {
+      const params = new URLSearchParams({q: query, top_k: "10"});
+      if (product) params.set("product", product);
+      if (asOf) params.set("as_of", asOf);
+      const response = await adminJson("/api/v1/admin/search?" + params.toString());
+      setResults(response.results || []);
+      setMeta(response);
+    } catch (_) {
+      setResults([]);
+      setError("서버에 연결할 수 없습니다.");
+    } finally {
+      setLoading(false);
+    }
+  }
+
+  return <div className="admin-content">
+    <section className="panel admin-card">
+      <div className="admin-card-head"><div><h2>검색 테스트</h2><p>사건일과 상품을 지정해 실제 운영 검색 결과를 확인합니다.</p></div></div>
+      <form className="admin-search-form" onSubmit={submit}><textarea value={query} onChange={function(event) { setQuery(event.target.value); }} placeholder="예: 2024년에 가입한 적금을 중도해지하면 금리가 어떻게 되나요?" /><div className="admin-search-fields"><select value={product} onChange={function(event) { setProduct(event.target.value); }}><option value="">상품 전체</option><option value="예금">예금</option><option value="적금">적금</option><option value="대출">대출</option></select><input type="date" value={asOf} onChange={function(event) { setAsOf(event.target.value); }} /><button className="primary-action" type="submit" disabled={loading}>{loading ? "검색 중" : "검색"}</button></div></form>
+      {error && <p className="admin-error">{error}</p>}
+    </section>
+    <section className="panel admin-card">
+      <div className="admin-card-head"><div><h2>검색 결과</h2><p>{meta ? "기준일 " + meta.as_of + " · " + meta.index_source : "검색어를 입력하면 후보 근거가 표시됩니다."}</p></div><span>{results.length}건</span></div>
+      <div className="admin-search-results">{results.length === 0 ? <p className="admin-table-empty">검색 결과가 없습니다.</p> : results.map(function(ref, index) { return <article className="admin-result-card" key={ref.chunk_id}><div className="admin-result-head"><b>#{index + 1}</b><strong>{ref.section || ref.doc_id}</strong><span>{ref.score}</span></div><p>{ref.snippet}</p><div className="admin-result-meta"><span>{ref.path}</span><span>p.{ref.page}</span><span>{ref.match_type}</span><span>{ref.effective_from || "시행일 미상"}{ref.effective_to ? " ~ " + ref.effective_to : ""}</span></div></article>; })}</div>
+    </section>
+  </div>;
+}
+
+function AdminCases({cases, history, onSelect, selectedCase, loading}) {
+  const [control, setControl] = useState("");
+  const rows = cases.length ? cases : localAdminCases(history);
+  const filtered = rows.filter(function(item) { return !control || item.control === control; });
+  return <div className="admin-content">
+    <section className="panel admin-card">
+      <div className="admin-card-head"><div><h2>민원·답변 검토</h2><p>마스킹된 민원, 근거, 정책 게이트 결과를 확인합니다.</p></div><select value={control} onChange={function(event) { setControl(event.target.value); }}><option value="">전체 상태</option><option value="proceed">진행 가능</option><option value="ask">확인 필요</option><option value="amend">보완 필요</option><option value="hold">검토 대기</option></select></div>
+      <div className="admin-table-wrap"><table className="admin-table"><thead><tr><th>민원</th><th>상품</th><th>결정</th><th>위험도</th><th>근거</th><th>생성</th></tr></thead><tbody>
+        {loading && <tr><td colSpan="6" className="admin-table-empty">불러오는 중입니다.</td></tr>}
+        {!loading && filtered.length === 0 && <tr><td colSpan="6" className="admin-table-empty">검토할 민원이 없습니다.</td></tr>}
+        {!loading && filtered.map(function(item) { return <tr className={selectedCase?.case_id === item.case_id ? "selected" : ""} key={item.case_id + item.issue_id} onClick={function() { onSelect(item.case_id); }}><td><strong>{item.issue_type}</strong><small>{item.case_id} · {item.issue_id}</small></td><td>{item.product}</td><td><b className={"admin-status " + item.control}>{ADMIN_CONTROL_LABEL[item.control]}</b></td><td>{item.risk_level || "미측정"}</td><td>{item.evidence_count}건</td><td>{item.created_at ? formatDate(item.created_at) : "미상"}</td></tr>; })}
+      </tbody></table></div>
+    </section>
+    {selectedCase && <aside className="panel admin-card admin-case-detail">
+      <div className="admin-card-head"><div><h2>민원 상세</h2><p>{selectedCase.case_id}</p></div><button className="admin-close-button" type="button" onClick={function() { onSelect(null); }}>닫기</button></div>
+      <p className="admin-prompt">{selectedCase.case?.prompt || selectedCase.prompt || "마스킹된 질문이 없습니다."}</p>
+      {(selectedCase.case?.issues || []).map(function(issue) { return <article className="admin-issue-detail" key={issue.issue_id}><div className="admin-result-head"><strong>{issue.product} · {issue.issue_type}</strong><b className={"admin-status " + issue.decision?.control}>{ADMIN_CONTROL_LABEL[issue.decision?.control] || issue.decision?.control}</b></div><p><b>판단 이유:</b> {issue.report?.reasoning || issue.logic_verification?.summary || "기록 없음"}</p><p><b>근거:</b> {issue.evidence_refs?.length || 0}건 · <b>생성:</b> {issue.report?.generated_by || "미측정"}</p>{issue.evidence_refs?.slice(0, 3).map(function(ref) { return <div className="admin-evidence-line" key={ref.chunk_id}><span>{ref.section || ref.doc_id}</span><small>{ref.path} · p.{ref.page} · {ref.score}</small></div>; })}</article>; })}
+      {(selectedCase.audit || []).length > 0 && <><h3 className="admin-subheading">감사 이벤트</h3><div className="admin-audit-list">{selectedCase.audit.map(function(event) { return <div key={event.event_id}><b>{event.event_type}</b><span>{formatDate(event.created_at)} · {event.actor}</span></div>; })}</div></>}
+    </aside>}
+  </div>;
+}
+
+function AdminAudit({audit}) {
+  return <div className="admin-content"><section className="panel admin-card"><div className="admin-card-head"><div><h2>실행 기록·감사 로그</h2><p>원문 개인정보 없이 시스템 이벤트만 표시합니다.</p></div><span>{audit.length}건</span></div><div className="admin-audit-list admin-audit-table">{audit.length === 0 ? <p className="admin-table-empty">기록이 없습니다. 민원을 분석하면 이벤트가 쌓입니다.</p> : audit.map(function(event) { return <article key={event.event_id}><div><b>{event.event_type}</b><span>{event.case_id}</span></div><div><span>{event.actor}</span><small>{formatDate(event.created_at)}</small></div><pre>{JSON.stringify(event.payload || {}, null, 2)}</pre></article>; })}</div></section></div>;
+}
+
+function AdminPage({history}) {
+  const [tab, setTab] = useState("dashboard");
+  const [overview, setOverview] = useState(null);
+  const [documents, setDocuments] = useState([]);
+  const [documentQuery, setDocumentQuery] = useState("");
+  const [selectedDocument, setSelectedDocument] = useState(null);
+  const [cases, setCases] = useState([]);
+  const [selectedCase, setSelectedCase] = useState(null);
+  const [audit, setAudit] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  const refresh = useCallback(async function() {
+    setLoading(true);
+    const localCases = localAdminCases(history);
+    const values = await Promise.all([
+      adminJson("/api/v1/admin/overview").catch(function() { return localAdminOverview(localCases); }),
+      adminJson("/api/v1/admin/documents").catch(function() { return []; }),
+      adminJson("/api/v1/admin/cases").catch(function() { return localCases; }),
+      adminJson("/api/v1/admin/audit").catch(function() { return []; }),
+    ]);
+    setOverview(values[0]);
+    setDocuments(values[1]);
+    setCases(values[2]);
+    setAudit(values[3]);
+    setLoading(false);
+  }, [history]);
+
+  useEffect(function() { refresh(); }, [refresh]);
+
+  async function selectDocument(docId) {
+    if (!docId) {
+      setSelectedDocument(null);
+      return;
+    }
+    try {
+      setSelectedDocument(await adminJson("/api/v1/admin/documents/" + encodeURIComponent(docId)));
+    } catch (_) {
+      setSelectedDocument(null);
+    }
+  }
+
+  async function selectCase(caseId) {
+    if (!caseId) {
+      setSelectedCase(null);
+      return;
+    }
+    try {
+      setSelectedCase(await adminJson("/api/v1/admin/cases/" + encodeURIComponent(caseId)));
+    } catch (_) {
+      const local = history.find(function(record) { return record.case_id === caseId; });
+      setSelectedCase(local ? {case_id: caseId, case: local.analysis, prompt: local.prompt} : null);
+    }
+  }
+
+  const tabs = [
+    ["dashboard", "대시보드"],
+    ["knowledge", "지식 문서"],
+    ["search", "검색 테스트"],
+    ["cases", "민원 검토"],
+    ["audit", "실행·감사"],
+  ];
+  return <main className="page-shell admin-page">
+    <div className="page-title"><div><span className="eyebrow">ADMIN CONSOLE</span><h1>관리자 화면</h1><p>문서·검색·민원 근거를 점검하는 운영 콘솔입니다.</p></div><span className="admin-readonly-badge">현재 데모 · 읽기 중심</span></div>
+    <div className="admin-shell">
+      <aside className="panel admin-sidebar">{tabs.map(function(item) { return <button className={tab === item[0] ? "active" : ""} type="button" key={item[0]} onClick={function() { setTab(item[0]); }}>{item[1]}</button>; })}<div className="admin-sidebar-note">문서 삭제·프롬프트 배포·권한 변경은 아직 연결하지 않았습니다.</div></aside>
+      <div className="admin-main">
+        {tab === "dashboard" && <AdminDashboard overview={overview || localAdminOverview(localAdminCases(history))} onTab={setTab} />}
+        {tab === "knowledge" && <AdminKnowledge documents={documents} selectedDocument={selectedDocument} query={documentQuery} setQuery={setDocumentQuery} onSelect={selectDocument} onRefresh={refresh} loading={loading} />}
+        {tab === "search" && <AdminSearch />}
+        {tab === "cases" && <AdminCases cases={cases} history={history} onSelect={selectCase} selectedCase={selectedCase} loading={loading} />}
+        {tab === "audit" && <AdminAudit audit={audit} />}
+      </div>
+    </div>
+  </main>;
 }
 
 function MyPage({history, onNavigate}) {
@@ -1014,7 +1295,7 @@ function App() {
 
   return <div className="app">
     <header className="topbar"><div className="brand"><img src="/images.png" alt="KB" /><div><strong>KB Key Buddy</strong><span>금융 소비자 보호 에이전트</span></div></div><PageNav page={page} onNavigate={navigate} /><div className="case-id">{session.analysis.case_id !== "new_case" ? session.analysis.case_id : "내 금융"}</div></header>
-    {page === "mypage" ? <MyPage history={history} onNavigate={navigate} /> : page === "reports" ? <GeneratedComplaintsPage history={history} onNavigate={navigate} /> : <>
+    {page === "admin" ? <AdminPage history={history} /> : page === "mypage" ? <MyPage history={history} onNavigate={navigate} /> : page === "reports" ? <GeneratedComplaintsPage history={history} onNavigate={navigate} /> : <>
       <main className="workspace">
          <section className="panel case-panel"><div className="section-head"><div><h2>민원 흐름 트리</h2><p>노드를 드래그하고, 화면을 이동하거나 확대·축소할 수 있습니다.</p></div><StatusSummary session={session} reviewQueue={reviewQueue} /></div><div className="flow-shell">{flowNodes.length === 0 && <div className="flow-empty"><strong>아직 분석된 민원이 없습니다.</strong><span>오른쪽 입력창에 문의를 작성해 주세요.</span></div>}<ReactFlow nodes={flowNodes} edges={flowEdges} nodeTypes={nodeTypes} onNodesChange={onNodesChange} onEdgesChange={onEdgesChange} onConnect={onConnect} onNodeClick={onNodeClick} onNodeDoubleClick={onNodeDoubleClick} fitView fitViewOptions={{padding: .18}} minZoom={.2} maxZoom={2} panOnDrag zoomOnScroll nodesConnectable selectionOnDrag><MiniMap pannable zoomable /><Controls /><Background gap={22} size={1} color="#eadfca" /></ReactFlow></div></section>
          <ChatPanel issue={selectedIssue} state={selectedState} index={selectedIssueIndex < 0 ? 0 : selectedIssueIndex} draft={draft} setDraft={setDraft} dispatch={dispatch} onAnalyze={analyze} reviewQueue={reviewQueue} />

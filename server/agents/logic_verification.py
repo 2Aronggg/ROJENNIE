@@ -7,7 +7,8 @@ from typing import Any
 
 from pydantic import BaseModel, Field
 
-from server.agents.router import _gemini_client, _llm_enabled
+from server.agents.router import _llm_enabled
+from server.policy.gateway import LLMPolicyGateway
 from server.schemas import IssueAnalysis, LogicVerification
 
 
@@ -44,13 +45,10 @@ def verify_issue_logic(
 
     try:
         context = issue.model_dump(mode="json", exclude={"logic_verification", "report"})
-        response = (client or _gemini_client()).models.generate_content(
-            model=os.getenv("GEMINI_MODEL", "gemini-3.5-flash"),
+        response = LLMPolicyGateway(client=client).generate_json(
+            stage="logic_verification",
             contents=LOGIC_PROMPT + "\n\n분석 데이터:\n" + json.dumps(context, ensure_ascii=False),
-            config={
-                "response_mime_type": "application/json",
-                "response_schema": LLMLogicDraft.model_json_schema(),
-            },
+            response_schema=LLMLogicDraft.model_json_schema(),
         )
         if not response.text:
             raise ValueError("Gemini returned no logic verification")

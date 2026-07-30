@@ -100,10 +100,16 @@ class MockCustomerDataResolver:
             facts.extend(
                 [
                     self._fact("대출원금", account.get("principal"), account_ref),
+                    self._fact("대출 실행일", account.get("executed_at", account.get("opened_at")), account_ref),
                     self._fact("현재잔액", account.get("outstanding_balance"), account_ref),
                     self._fact("금리유형", account.get("rate_type"), account_ref),
+                    self._fact("금리 기준", account.get("rate_index"), account_ref),
+                    self._fact("금리 재산정 주기", account.get("rate_reset_cycle_months"), account_ref),
+                    self._fact("다음 금리 재산정일", account.get("next_rate_reset_at"), account_ref),
                     self._fact("상환방식", account.get("repayment_method"), account_ref),
                     self._fact("월상환액", account.get("monthly_payment"), account_ref),
+                    self._fact("최근 상환일", account.get("last_payment_at"), account_ref),
+                    self._fact("다음 상환일", account.get("next_payment_at"), account_ref),
                     self._fact("중도상환수수료율", account.get("early_repayment_fee_rate"), account_ref),
                     self._fact("연체 여부", account.get("delinquency_status"), account_ref),
                     self._fact("상환 내역", account.get("repayments", []), f"{account_ref}/repayments"),

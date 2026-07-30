@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+from collections import Counter, defaultdict
 from datetime import date, datetime, timezone
 import json
 import os
@@ -81,6 +82,242 @@ def get_dictionary() -> list[dict[str, object]]:
         except (OSError, json.JSONDecodeError):
             _DICTIONARY = []
     return _DICTIONARY
+
+
+def _admin_corpus(chunk: object) -> str:
+    doc_type = str(getattr(chunk, "doc_type", ""))
+    path = str(getattr(chunk, "path", "")).split(":", 1)[-1].replace("\\", "/")
+    if doc_type == "glossary" or path.startswith("dictionary/"):
+        return "glossary"
+    if doc_type == "case" or path.startswith("cases/"):
+        return "cases"
+    if doc_type == "law" or path.startswith(("regulations/", "공통규정/")):
+        return "regulations"
+    if path.startswith("products/"):
+        return "products"
+    return "other"
+
+
+def _admin_date_status(effective_from: date | None, effective_to: date | None) -> str:
+    today = date.today()
+    if effective_from and effective_from > today:
+        return "scheduled"
+    if effective_to and effective_to < today:
+        return "expired"
+    if effective_from:
+        return "current"
+    return "unknown"
+
+
+def _admin_document_rows() -> list[dict[str, object]]:
+    grouped: dict[str, list[object]] = defaultdict(list)
+    for chunk in get_index().chunks:
+        grouped[chunk.doc_id].append(chunk)
+
+    rows: list[dict[str, object]] = []
+    for doc_id, chunks in grouped.items():
+        first = chunks[0]
+        effective_from = first.effective_from
+        effective_to = first.effective_to
+        embedded = sum(1 for chunk in chunks if chunk.embedding)
+        rows.append(
+            {
+                "doc_id": doc_id,
+                "path": first.path,
+                "doc_type": first.doc_type,
+                "corpus": _admin_corpus(first),
+                "products": sorted({product for chunk in chunks for product in chunk.product}),
+                "source": first.source,
+                "published_at": first.published_at,
+                "effective_from": effective_from,
+                "effective_to": effective_to,
+                "effective_status": _admin_date_status(effective_from, effective_to),
+                "chunk_count": len(chunks),
+                "page_count": len({chunk.page for chunk in chunks}),
+                "embedding_count": embedded,
+                "index_status": "ready",
+            }
+        )
+    return sorted(rows, key=lambda row: (str(row["corpus"]), str(row["path"])))
+
+
+def _admin_case_rows() -> list[dict[str, object]]:
+    rows: list[dict[str, object]] = []
+    for case in CASE_STORE.values():
+        case_events = [event for event in AUDIT_LOG if event.case_id == case.case_id]
+        created_at = min((event.created_at for event in case_events), default=None)
+        for issue in case.issues:
+            rows.append(
+                {
+                    "case_id": case.case_id,
+                    "created_at": created_at,
+                    "prompt": case.prompt,
+                    "issue_id": issue.issue_id,
+                    "product": issue.product,
+                    "issue_type": issue.issue_type,
+                    "control": issue.decision.control,
+                    "risk_level": issue.risk_level,
+                    "human_review_required": issue.human_review_required,
+                    "evidence_count": len(issue.evidence_refs),
+                    "generated_by": issue.report.generated_by,
+                }
+            )
+    return sorted(rows, key=lambda row: str(row["created_at"] or ""), reverse=True)
+
+
+@app.get("/api/v1/admin/overview")
+def get_admin_overview() -> dict[str, object]:
+    documents = _admin_document_rows()
+    cases = _admin_case_rows()
+    controls = Counter(str(row["control"]) for row in cases)
+    effective = Counter(str(row["effective_status"]) for row in documents)
+    manifest_path = DATA_DIR / "corpus" / "manifest.json"
+    manifest: dict[str, object] = {}
+    try:
+        manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        pass
+    return {
+        "documents": {
+            "total": len(documents),
+            "chunks": sum(int(row["chunk_count"]) for row in documents),
+            "current": effective["current"],
+            "expired": effective["expired"],
+            "unknown": effective["unknown"],
+            "scheduled": effective["scheduled"],
+        },
+        "cases": {
+            "total": len({str(row["case_id"]) for row in cases}),
+            "issues": len(cases),
+            "controls": dict(controls),
+            "human_review": sum(1 for row in cases if row["human_review_required"]),
+            "no_evidence": sum(1 for row in cases if row["evidence_count"] == 0),
+            "fallback": sum(1 for row in cases if row["generated_by"] == "fallback"),
+        },
+        "corpus": manifest,
+        "telemetry": {
+            "available": False,
+            "message": "실행 단계별 처리시간·토큰·비용 수집은 아직 연결되지 않았습니다.",
+        },
+    }
+
+
+@app.get("/api/v1/admin/documents")
+def get_admin_documents(
+    q: str = "",
+    corpus: str = "",
+    product: str = "",
+    status: str = "",
+) -> list[dict[str, object]]:
+    needle = q.strip().lower()
+    rows = _admin_document_rows()
+    if needle:
+        rows = [
+            row for row in rows
+            if needle in str(row["path"]).lower()
+            or needle in str(row["doc_id"]).lower()
+            or needle in str(row["doc_type"]).lower()
+        ]
+    if corpus:
+        rows = [row for row in rows if row["corpus"] == corpus]
+    if product:
+        rows = [row for row in rows if product in row["products"]]
+    if status:
+        rows = [row for row in rows if row["effective_status"] == status]
+    return rows
+
+
+@app.get("/api/v1/admin/documents/{doc_id}")
+def get_admin_document(doc_id: str, limit: int = 100) -> dict[str, object]:
+    chunks = [chunk for chunk in get_index().chunks if chunk.doc_id == doc_id]
+    if not chunks:
+        raise HTTPException(status_code=404, detail="document not found")
+    limit = min(max(limit, 1), 300)
+    first = chunks[0]
+    return {
+        "doc_id": doc_id,
+        "path": first.path,
+        "doc_type": first.doc_type,
+        "corpus": _admin_corpus(first),
+        "products": sorted({product for chunk in chunks for product in chunk.product}),
+        "source": first.source,
+        "published_at": first.published_at,
+        "effective_from": first.effective_from,
+        "effective_to": first.effective_to,
+        "effective_status": _admin_date_status(first.effective_from, first.effective_to),
+        "chunk_count": len(chunks),
+        "chunks": [
+            {
+                "chunk_id": chunk.chunk_id,
+                "page": chunk.page,
+                "section": chunk.section,
+                "effective_from": chunk.effective_from,
+                "effective_to": chunk.effective_to,
+                "text": chunk.text,
+            }
+            for chunk in chunks[:limit]
+        ],
+    }
+
+
+@app.get("/api/v1/admin/search")
+def admin_search(
+    q: str = "",
+    product: str = "",
+    as_of: date | None = None,
+    top_k: int = 10,
+) -> dict[str, object]:
+    query = q.strip()
+    top_k = min(max(top_k, 1), 30)
+    if not query:
+        return {"query": "", "as_of": as_of or date.today(), "results": []}
+    results = get_index().search(
+        query,
+        product=product or None,
+        as_of=as_of or date.today(),
+        top_k=top_k,
+    )
+    return {
+        "query": query,
+        "product": product or None,
+        "as_of": as_of or date.today(),
+        "index_source": get_index().source,
+        "results": [result.model_dump(mode="json") for result in results],
+    }
+
+
+@app.get("/api/v1/admin/cases")
+def get_admin_cases(
+    control: str = "",
+    product: str = "",
+    review_only: bool = False,
+) -> list[dict[str, object]]:
+    rows = _admin_case_rows()
+    if control:
+        rows = [row for row in rows if row["control"] == control]
+    if product:
+        rows = [row for row in rows if row["product"] == product]
+    if review_only:
+        rows = [row for row in rows if row["human_review_required"]]
+    return rows
+
+
+@app.get("/api/v1/admin/cases/{case_id}")
+def get_admin_case(case_id: str) -> dict[str, object]:
+    case = CASE_STORE.get(case_id)
+    if case is None:
+        raise HTTPException(status_code=404, detail="case not found")
+    return {
+        "case": case.model_dump(mode="json"),
+        "audit": [event.model_dump(mode="json") for event in AUDIT_LOG if event.case_id == case_id],
+        "reviews": [review.model_dump(mode="json") for review in REVIEW_STORE.get(case_id, [])],
+    }
+
+
+@app.get("/api/v1/admin/audit")
+def get_admin_audit(limit: int = 100) -> list[dict[str, object]]:
+    limit = min(max(limit, 1), 500)
+    return [event.model_dump(mode="json") for event in AUDIT_LOG[-limit:]][::-1]
 
 
 @app.get("/dictionary/search")

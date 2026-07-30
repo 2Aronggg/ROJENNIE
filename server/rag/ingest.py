@@ -30,6 +30,11 @@ PDF_DIRS = {
 DATE_RE = re.compile(r"(?<!\d)(20\d{2})[.\-/](\d{1,2})[.\-/](\d{1,2})(?!\d)")
 FILENAME_DATE_RE = re.compile(r"(20\d{6})")
 EFFECTIVE_RE = re.compile(r"\[시행\s*(20\d{2})\.\s*(\d{1,2})\.\s*(\d{1,2})\.\]")
+VALIDITY_RE = re.compile(
+    r"(?:유효기간|유효 기간)\s*[:：]\s*"
+    r"(20\d{2})\s*[.\-/]\s*(\d{1,2})\s*[.\-/]\s*(\d{1,2})\s*\.?\s*[~～-]\s*"
+    r"(20\d{2})\s*[.\-/]\s*(\d{1,2})\s*[.\-/]\s*(\d{1,2})"
+)
 SECTION_RE = re.compile(r"제\s*\d+조(?:의\d+)?(?:\([^\n)]{1,80}\))?")
 
 
@@ -53,6 +58,19 @@ def _date_from_text(text: str, pattern: re.Pattern[str] = DATE_RE) -> date | Non
     return _to_date(*match.groups()) if match else None
 
 
+def _clean_text(text: str) -> str:
+    text = re.sub(r"[\x00-\x08\x0b\x0c\x0e-\x1f\x7f]", " ", text)
+    return re.sub(r"\s+", " ", text).strip()
+
+
+def _validity_period(text: str) -> tuple[date | None, date | None]:
+    match = VALIDITY_RE.search(_clean_text(text))
+    if not match:
+        return None, None
+    values = match.groups()
+    return _to_date(*values[:3]), _to_date(*values[3:])
+
+
 def _doc_id(relative_path: Path) -> str:
     return hashlib.sha1(relative_path.as_posix().encode("utf-8")).hexdigest()[:12]
 
@@ -68,7 +86,7 @@ def _metadata(pdf_path: Path, data_dir: Path) -> tuple[str, str, list[str], str,
 
 
 def _chunks(text: str, max_chars: int = 1400) -> Iterable[str]:
-    text = re.sub(r"\s+", " ", text).strip()
+    text = _clean_text(text)
     if not text:
         return
     words = text.split(" ")
@@ -88,19 +106,22 @@ def _chunks(text: str, max_chars: int = 1400) -> Iterable[str]:
 def extract_pdf_chunks(pdf_path: Path, data_dir: Path, max_chars: int = 1400) -> list[DocumentChunk]:
     doc_id, doc_type, products, source, published_at = _metadata(pdf_path, data_dir)
     reader = PdfReader(str(pdf_path))
-    pages = [(page.extract_text() or "") for page in reader.pages]
+    pages = [_clean_text(page.extract_text() or "") for page in reader.pages]
     document_text = "\n".join(pages)
 
     # 파일명에 날짜가 없으면 본문 날짜를 보조값으로 사용한다.
     published_at = published_at or _date_from_text(document_text)
 
-    # 법령의 시행일은 문서 전체에 적용한다. 종료일은 원문에서 확인하지 못하면 추정하지 않는다.
+    # 법령의 시행일은 문서 전체에 적용한다. 상품설명서는 원문 유효기간을 사용한다.
     effective_from = None
+    effective_to = None
     for page_text in pages:
         candidate = _date_from_text(page_text, EFFECTIVE_RE)
         if candidate:
             effective_from = candidate
             break
+    if effective_from is None and doc_type == "product_manual":
+        effective_from, effective_to = _validity_period(document_text)
 
     chunks: list[DocumentChunk] = []
     for page_number, text in enumerate(pages, start=1):
@@ -117,6 +138,7 @@ def extract_pdf_chunks(pdf_path: Path, data_dir: Path, max_chars: int = 1400) ->
                     source="local",
                     published_at=published_at,
                     effective_from=effective_from,
+                    effective_to=effective_to,
                     page=page_number,
                     section=section,
                     text=chunk_text,

@@ -7,7 +7,8 @@ from typing import Any
 
 from pydantic import BaseModel, Field
 
-from server.agents.router import _gemini_client, _llm_enabled
+from server.agents.router import _llm_enabled
+from server.policy.gateway import LLMPolicyGateway
 from server.schemas import IssueInput
 
 
@@ -52,8 +53,8 @@ def build_rag_query(
         return fallback
 
     try:
-        response = (client or _gemini_client()).models.generate_content(
-            model=os.getenv("GEMINI_MODEL", "gemini-3.5-flash"),
+        response = LLMPolicyGateway(client=client).generate_json(
+            stage="rag_query",
             contents=RAG_QUERY_PROMPT + "\n\n민원:\n" + json.dumps(
                 {
                     "product": issue.product,
@@ -62,10 +63,7 @@ def build_rag_query(
                 },
                 ensure_ascii=False,
             ),
-            config={
-                "response_mime_type": "application/json",
-                "response_schema": RAGQueryDraft.model_json_schema(),
-            },
+            response_schema=RAGQueryDraft.model_json_schema(),
         )
         if not response.text:
             raise ValueError("Gemini returned no RAG query")

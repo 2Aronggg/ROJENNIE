@@ -4,7 +4,7 @@ from tempfile import TemporaryDirectory
 import json
 import unittest
 
-from server.rag.ingest import _api_effective_to_by_path
+from server.rag.ingest import _api_effective_to_by_path, _clean_text, _validity_period
 
 
 class IngestDateTests(unittest.TestCase):
@@ -22,6 +22,16 @@ class IngestDateTests(unittest.TestCase):
 
         self.assertEqual(effective_to[paths[0]], date(2024, 12, 31))
         self.assertIsNone(effective_to[paths[1]])
+
+    def test_product_validity_period_accepts_trailing_dot(self) -> None:
+        effective_from, effective_to = _validity_period(
+            "준법감시인 심의필 (유효기간: 2026.01.01.~2027.12.31)"
+        )
+        self.assertEqual(effective_from, date(2026, 1, 1))
+        self.assertEqual(effective_to, date(2027, 12, 31))
+
+    def test_pdf_control_characters_are_removed(self) -> None:
+        self.assertEqual(_clean_text("금리\x00 3.3%\n"), "금리 3.3%")
 
 
 if __name__ == "__main__":

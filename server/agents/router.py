@@ -10,6 +10,7 @@ from typing import Any, Literal
 from pydantic import BaseModel, Field
 
 from server.agents.focal_builder import build_issue_input
+from server.policy.gateway import LLMPolicyGateway
 from server.schemas import CaseAnalyzeRequest, IssueInput
 
 
@@ -130,16 +131,12 @@ def split_prompt_to_issues(
 
 
 def split_prompt_to_issues_llm(prompt: str, *, client: Any | None = None) -> list[IssueInput]:
-    llm_client = client or _gemini_client()
-    response = llm_client.models.generate_content(
-        model=os.getenv("GEMINI_MODEL", "gemini-3.5-flash"),
+    response = LLMPolicyGateway(client=client).generate_json(
+        stage="issue_splitter",
         contents=ROUTER_SYSTEM_PROMPT
         + "\n\nReturn structured focal, target, required_facts, and a confidence from 0 to 1 for every issue. Keep them grounded in the user input.\n\nUser input:\n"
         + prompt,
-        config={
-            "response_mime_type": "application/json",
-            "response_schema": LLMRouteResult.model_json_schema(),
-        },
+        response_schema=LLMRouteResult.model_json_schema(),
     )
     if not response.text:
         raise ValueError("Gemini returned no structured routing result")

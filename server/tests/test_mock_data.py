@@ -42,8 +42,12 @@ class MockDataTests(unittest.TestCase):
         loans = client.get("/mock/customers/CUST-001/loans")
         self.assertEqual(loans.status_code, 200)
         self.assertEqual(loans.json()[0]["account_id"], "LOAN-001")
+        self.assertEqual(loans.json()[0]["product_name"], "KB 직장인든든 신용대출")
+        self.assertEqual(loans.json()[0]["executed_at"], "2025-03-15")
+        self.assertEqual(loans.json()[0]["rate_index"], "MOR 6개월")
         self.assertEqual(loans.json()[0]["outstanding_balance"], 24_180_000)
         self.assertEqual(client.get("/mock/accounts/LOAN-001/repayments").json()[0]["amount"], 565_000)
+        self.assertEqual(client.get("/mock/accounts/LOAN-001/notice-history").json(), [])
 
     def test_loan_is_resolved_into_case_facts(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
@@ -60,6 +64,7 @@ class MockDataTests(unittest.TestCase):
         self.assertEqual(loan["product_type"], "loan")
         self.assertEqual(next(fact.value for fact in facts if fact.field == "현재잔액"), 24_180_000)
         self.assertEqual(next(fact.value for fact in facts if fact.field == "상환방식"), "원리금균등상환")
+        self.assertEqual(next(fact.value for fact in facts if fact.field == "금리 기준"), "MOR 6개월")
         self.assertEqual(next(fact.value for fact in facts if fact.field == "안내 수신 여부"), False)
 
     def test_demo_prompt_uses_mock_facts_and_expected_decisions(self) -> None:

@@ -1,8 +1,19 @@
 # KB Key Buddy
 
-금융 소비자의 복합 민원을 이해하고, 사용자의 **내 금융정보**, 약관·상품설명서·사례 RAG, 법령 MCP를 함께 확인해 처리 결과와 후속 절차를 안내하는 금융 소비자 보호 에이전트입니다.
+금융 소비자의 복합 민원을 이해하고, 사용자의 **내 금융정보**, 약관·상품설명서·사례 RAG, Finance MCP를 함께 확인해 처리 결과와 후속 절차를 안내하는 금융 소비자 보호 에이전트입니다.
 
-대출은 구현 범위에서 제외합니다. 현재 MVP는 `data/`에 있는 예금·적금·ELS 문서와 가상 금융정보를 대상으로 합니다.
+현재 MVP는 예금·적금·대출을 지원하며, 실제 은행 내부 시스템 대신 로컬 Mock Bank와 Finance MCP를 사용합니다.
+
+현재 코드 기준 아키텍처는 [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md), 구현 과정과 시행착오는 [docs/IMPLEMENTATION_HISTORY.md](docs/IMPLEMENTATION_HISTORY.md)를 참고하세요.
+
+### 저장소 구성
+
+- `server/finance/mock_bank.sqlite3`: 데모용 가상 고객·계약·거래·상환·금리·안내 이력을 저장하는 로컬 SQLite 파일입니다.
+- 위 데이터는 실제 고객이나 실제 은행 내부 데이터가 아니며, 현재 가상 고객 `CUST-001`에 연결됩니다.
+- `Finance MCP`는 이 SQLite를 직접 노출하지 않고 읽기 전용 금융 Tool로 감쌉니다.
+- 로컬 단일 프로세스 데모라면 SQLite로 충분하지만, 실제 배포를 전제로 하면 `Supabase` 연결이 필요합니다. 다중 사용자 로그인, 서버 재시작 후 민원·검토·감사 로그 보존, 여러 인스턴스 간 공유를 담당하게 합니다.
+- 첫 단계에서는 민원·리포트·검토·감사 로그와 사용자 정보만 Supabase로 옮기고, 가상 금융 원장과 RAG 원천 문서·corpus는 기존 저장 방식을 유지할 수 있습니다.
+- Supabase로 이전하더라도 RAG 원천 문서·corpus는 별도 관리하고, 에이전트가 사용하는 Finance MCP Tool 계약은 유지합니다.
 
 ## 핵심 구조
 
@@ -16,18 +27,18 @@ Case Builder Agent
  ├─ Focal Builder
  └─ 필수 사실 추출
         ↓
-FastAPI MCP Client
+FastAPI 오케스트레이터
         ↓
 Finance MCP Server
  ├─ 내 금융정보 조회
  ├─ 거래·금리·안내 이력 조회
- ├─ RAG 근거 검색
+ ├─ 대출·상환 정보 조회
  └─ 이자 계산
         ↓
 Evidence & Decision Agent
  ├─ 사용자 진술·내 금융정보 대조
  ├─ RAG 후보 관련성 검증
- ├─ 선택적 법령 MCP 조회
+ ├─ 시점 기반 규정·약관 RAG
  └─ Logic Verification
         ↓
 Deterministic Policy Gate
@@ -73,19 +84,21 @@ calculate_interest(principal, rate, days, tax_rate)
 
 ## 데이터
 
-- 금융 규정·약관·상품설명서: `data/`의 RAG 원천 문서
+- 금융 규정·약관·상품설명서·판례: `data/`의 RAG 원천 문서
 - 민원 JSON·CSV: Issue Splitter 평가와 회귀 테스트용
 - 가상 고객·계약·거래: 서버 Mock 데이터
-- 대출 데이터와 대출 처리 경로: 없음
+- 대출 계약·상환·금리·안내 이력: 서버 Mock 데이터와 Finance MCP
 
 ## 디렉터리
 
 ```text
 client/             React Flow 화면과 API 연동
 server/             FastAPI, 파이프라인, Mock 데이터, MCP 연결
-server/agents/       에이전트가 읽는 규칙 문서와 구현 모듈
+server/agents/       Case Builder·RAG·검증·결정·응답 모듈
+server/policy/       LLM 호출 정책 게이트
+server/mcp/finance/  읽기 전용 금융 Tool 서버·클라이언트
 data/               RAG 원천 문서와 평가 데이터
-docs/               PRD와 작업 문서
+docs/               PRD·현재 아키텍처·구현 이력
 ```
 
 ## 실행

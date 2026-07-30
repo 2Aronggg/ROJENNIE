@@ -108,6 +108,25 @@ Logic Verification
 
 Finance MCP가 RAG 데이터를 대신 저장하지 않습니다. Finance MCP는 내 금융정보·계산 Tool이고, RAG는 `retrieval.py`가 `data/`에서 직접 검색합니다.
 
+## 금융 데이터 저장소
+
+현재 `server/finance/mock_bank.sqlite3`가 가상 금융 데이터의 저장소입니다. 실제 은행 내부 DB나 실제 고객정보가 아닙니다.
+
+`MockBankClient
+  → server/finance/mock_bank.sqlite3
+  → FinanceMCPClient
+  → Evidence & Decision Agent`
+
+현재 기본 고객은 `CUST-001`이며 예금 `DEP-001`, 적금 `SAV-001`, 대출 `LOAN-001`을 가집니다. SQLite에는 고객, 상품·계약, 거래내역, 대출 상환내역, 금리 변경 이력, 안내 이력이 저장됩니다. `mock_data.py`의 가상 데이터를 기준으로 시작할 때 초기값을 보장하므로, 데모 데이터 수정은 이 파일에서 합니다.
+
+로컬 단일 프로세스 데모에서는 SQLite로 충분하지만, 실제 배포에서는 Supabase를 앱 상태 저장소로 연결해야 합니다. 우선 민원·리포트·검토·감사 로그와 사용자 정보를 Supabase에 저장하고, 가상 금융 원장은 당분간 SQLite 읽기 전용으로 유지할 수 있습니다.
+
+- 여러 사용자의 민원·리포트·검토 결과를 서버 재시작 후에도 보존해야 할 때
+- 관리자와 상담원이 같은 사례를 공유해야 할 때
+- 원격 배포와 로그인·권한 관리가 필요할 때
+
+Supabase로 바꿀 때도 에이전트는 Finance MCP Tool만 호출하고, RAG 문서와 corpus는 별도 저장소로 유지합니다. 즉 DB 교체가 에이전트 로직 변경으로 번지지 않도록 현재 MCP 계약을 유지합니다. 배포 전에는 이 저장소 연결과 인증을 구현해야 합니다.
+
 ## Corpus
 
 `data/corpus/`는 목적별 검색 단위입니다.
@@ -170,6 +189,8 @@ python -m server.mcp.finance.finance_server
 ## LLM
 
 `GEMINI_API_KEY`가 있으면 구조화된 LLM 출력을 사용하고, 키·SDK·네트워크·응답 오류가 있으면 결정적 fallback으로 전환합니다. LLM은 고객 ID, 검증 사실, 이자 계산 결과를 임의 생성하지 않습니다.
+
+모든 LLM 호출은 server/policy/gateway.py를 통과합니다. Gateway는 허용된 단계인지 확인하고, 이름·계좌번호·카드번호·전화번호·이메일을 마스킹한 뒤 호출하며, JSON 응답 형식과 호출 감사 정보를 검증합니다. Gateway 자체는 추가 LLM이나 외부 정책 서버를 호출하지 않습니다.
 
 ## 제외
 

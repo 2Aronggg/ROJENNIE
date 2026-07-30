@@ -7,7 +7,8 @@ from typing import Any
 
 from pydantic import BaseModel, Field
 
-from server.agents.router import _gemini_client, _llm_enabled
+from server.agents.router import _llm_enabled
+from server.policy.gateway import LLMPolicyGateway
 from server.schemas import IssueAnalysis, IssueReport
 
 
@@ -56,18 +57,15 @@ def compose_issue_report(
 
     try:
         context = issue.model_dump(mode="json", exclude={"report"})
-        response = (client or _gemini_client()).models.generate_content(
-            model=os.getenv("GEMINI_MODEL", "gemini-3.5-flash"),
+        response = LLMPolicyGateway(client=client).generate_json(
+            stage="report_composer",
             contents=REPORT_SYSTEM_PROMPT
             + "\n\n현재 결정 상태: "
             + DECISION_LABELS.get(issue.decision.control, issue.decision.control)
             + "\n\nReturn JSON fields complaint_content, issue, processing_result, consumer_cautions, used_evidence_chunk_ids, reasoning, and follow_up_actions. Ground processing_result in the supplied RAG evidence, and use only supplied chunk_id values."
             + "\n\n분석 데이터:\n"
             + json.dumps(context, ensure_ascii=False),
-            config={
-                "response_mime_type": "application/json",
-                "response_schema": LLMReportDraft.model_json_schema(),
-            },
+            response_schema=LLMReportDraft.model_json_schema(),
         )
         if not response.text:
             raise ValueError("Gemini returned no report result")

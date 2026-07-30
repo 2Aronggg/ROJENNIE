@@ -60,15 +60,22 @@ LOAN = {
     "product_type": "loan",
     "product_name": "KB 직장인든든 신용대출",
     "opened_at": "2025-03-15",
+    "executed_at": "2025-03-15",
     "maturity_at": "2030-03-15",
+    "loan_purpose": "생활안정자금",
     "principal": 30_000_000,
     "outstanding_balance": 24_180_000,
     "base_rate": 0.052,
     "preferential_rate": 0.003,
     "applied_rate": 0.049,
     "rate_type": "variable",
+    "rate_index": "MOR 6개월",
+    "rate_reset_cycle_months": 6,
+    "next_rate_reset_at": "2026-07-15",
     "repayment_method": "원리금균등상환",
     "monthly_payment": 565_000,
+    "last_payment_at": "2026-07-15",
+    "next_payment_at": "2026-08-15",
     "early_repayment_fee_rate": 0.005,
     "delinquency_status": "정상",
     "status": "active",
@@ -169,12 +176,12 @@ class MockBankClient:
                 """
             )
             connection.execute(
-                "INSERT OR IGNORE INTO customers(customer_id, payload) VALUES (?, ?)",
+                "INSERT OR REPLACE INTO customers(customer_id, payload) VALUES (?, ?)",
                 (CUSTOMER["customer_id"], _dump(CUSTOMER)),
             )
             for account in (DEPOSIT, SAVINGS, LOAN):
                 connection.execute(
-                    "INSERT OR IGNORE INTO accounts(account_id, customer_id, product_type, payload) VALUES (?, ?, ?, ?)",
+                    "INSERT OR REPLACE INTO accounts(account_id, customer_id, product_type, payload) VALUES (?, ?, ?, ?)",
                     (
                         account["account_id"],
                         account["customer_id"],
@@ -184,18 +191,18 @@ class MockBankClient:
                 )
             for transaction in (*TRANSACTIONS, *LOAN_REPAYMENTS):
                 connection.execute(
-                    "INSERT OR IGNORE INTO transactions(transaction_id, account_id, payload) VALUES (?, ?, ?)",
+                    "INSERT OR REPLACE INTO transactions(transaction_id, account_id, payload) VALUES (?, ?, ?)",
                     (transaction["transaction_id"], transaction["account_id"], _dump(transaction)),
                 )
 
             for history in LOAN_RATE_HISTORY:
                 connection.execute(
-                    "INSERT OR IGNORE INTO rate_history(history_id, account_id, payload) VALUES (?, ?, ?)",
+                    "INSERT OR REPLACE INTO rate_history(history_id, account_id, payload) VALUES (?, ?, ?)",
                     (history["history_id"], history["account_id"], _dump(history)),
                 )
             for notice in LOAN_NOTICE_HISTORY:
                 connection.execute(
-                    "INSERT OR IGNORE INTO notice_history(notice_id, account_id, payload) VALUES (?, ?, ?)",
+                    "INSERT OR REPLACE INTO notice_history(notice_id, account_id, payload) VALUES (?, ?, ?)",
                     (notice["notice_id"], notice["account_id"], _dump(notice)),
                 )
 
