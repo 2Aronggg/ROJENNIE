@@ -1,6 +1,7 @@
 .env
 .venv/
 server/*.sqlite3
+server/**/*.sqlite3
 __pycache__/
 *.py[cod]
 client/node_modules/

@@ -4,7 +4,6 @@
   "base_url": "https://fine.fss.or.kr/fine/fnctip/fncDicary/list.do",
   "generated_files": [
     "fine_financial_glossary.csv",
-    "fine_financial_glossary.json",
-    "fine_financial_glossary.sqlite3"
+    "fine_financial_glossary.json"
   ]
 }

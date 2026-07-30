@@ -7,7 +7,7 @@
 | 담당 | 담당 파일 | 책임 |
 |---|---|---|
 | A: 데이터·서버·MCP | `data/`, `server/`, `docs/todo/A_DATA_SERVER.md` | Mock 금융정보, RAG, Finance MCP, FastAPI, API·Tool 계약 |
-| B: 에이전트·클라이언트 | `server/agent/`, `client/`, `docs/todo/B_AGENT_CLIENT.md` | 3개 에이전트, Policy Gate 연동, React Flow, 채팅·리포트 UI |
+| B: 에이전트·클라이언트 | `server/agents/`, `client/`, `docs/todo/B_AGENT_CLIENT.md` | 3개 에이전트, Policy Gate 연동, React Flow, 채팅·리포트 UI |
 | 공동 | `README.md`, `docs/PRD.md`, `docs/TODO.md` | 구조 확정 후 한 명이 통합 수정 |
 
 ### Git 규칙

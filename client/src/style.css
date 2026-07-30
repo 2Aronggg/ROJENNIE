@@ -66,6 +66,8 @@ button:focus-visible, input:focus-visible, textarea:focus-visible { outline: 3px
 .flow-issue-head b { display: grid; place-items: center; width: 26px; height: 26px; border-radius: 8px; color: #79520a; background: var(--gold-soft); }
 .flow-status { padding: 4px 8px; border-radius: 999px; color: #79520a; background: var(--gold-soft); font-size: 10px; font-weight: 800; }
 .issue-node.ask .flow-status { color: var(--red); background: var(--red-soft); }
+.flow-meta { display: flex; flex-wrap: wrap; gap: 4px 8px; margin-top: 9px; color: var(--muted); font-size: 10px; }
+.flow-meta b { color: var(--red); }
 .flow-node > strong { display: block; line-height: 1.4; font-size: 13px; }
 .flow-node > span { display: block; margin-top: 5px; color: var(--muted); font-size: 11px; }
 .fact-node { width: 230px; background: var(--node); }
@@ -82,6 +84,10 @@ button:focus-visible, input:focus-visible, textarea:focus-visible { outline: 3px
 .chat-head h2 { margin: 0; font-size: 15px; line-height: 1.35; }
 .chat-head p { margin: 5px 0 0; color: var(--muted); font-size: 11px; line-height: 1.4; }
 .chat-label { color: var(--muted); font-size: 11px; }
+.workflow-meta, .workflow-report-meta { display: flex; flex-wrap: wrap; gap: 6px 10px; color: var(--muted); font-size: 10px; }
+.workflow-meta { padding: 9px 16px; border-bottom: 1px solid var(--line); background: rgba(255, 248, 226, .32); }
+.workflow-meta b, .workflow-report-meta > strong { color: var(--red); }
+.workflow-meta small { width: 100%; color: var(--muted); }
 .chat-messages { flex: 1; min-height: 0; overflow-y: auto; padding: 14px; display: grid; align-content: start; gap: 10px; }
 .empty-chat { display: grid; align-content: center; justify-items: center; gap: 8px; height: 100%; padding: 20px; color: var(--muted); text-align: center; }
 .empty-chat strong { color: var(--text); font-size: 14px; }
@@ -130,6 +136,8 @@ button:focus-visible, input:focus-visible, textarea:focus-visible { outline: 3px
 .report-decision strong { padding: 5px 9px; border-radius: 999px; color: var(--green); background: var(--green-soft); font-size: 11px; }
 .report-decision strong.ask, .report-decision strong.hold { color: var(--red); background: var(--red-soft); }
 .report-decision strong.amend { color: var(--orange); background: var(--orange-soft); }
+.workflow-report-meta { padding: 10px 0; border-bottom: 1px solid var(--line); }
+.workflow-report-meta b { color: var(--text); }
 .report-copy, .report-empty { margin: 0; color: var(--muted); font-size: 11px; line-height: 1.5; }
 .report-main h3:not(:first-child) { margin-top: 18px; }
 .report-subheading { display: block; margin: 14px 0 6px; font-size: 12px; }

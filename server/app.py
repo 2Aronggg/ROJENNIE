@@ -9,18 +9,18 @@ from uuid import uuid4
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 
-from .agent.mock_customer_data_resolver import MockCustomerDataResolver
-from .agent.logic_verification import verify_issue_logic
-from .agent.rag_query import build_rag_query
-from .agent.report_composer import DECISION_LABELS, compose_issue_report
-from .agent.decision_gate import apply_decision_gate
-from .agent.question_builder import expected_interest_question
-from .agent.router import build_case_request
-from .facts import missing_facts, resolve_facts
-from .mock_data import MockBankClient
-from .logic_graph import build_logic_graph
-from .finance_mcp.client import FinanceMCPClient
-from .retrieval import SearchIndex
+from .agents.mock_customer_data_resolver import MockCustomerDataResolver
+from .agents.logic_verification import verify_issue_logic
+from .agents.rag_query import build_rag_query
+from .agents.report_composer import DECISION_LABELS, compose_issue_report
+from .agents.decision_gate import apply_decision_gate, assess_risk
+from .agents.question_builder import expected_interest_question
+from .agents.router import build_case_request
+from .agents.facts import missing_facts, resolve_facts
+from .finance.mock_data import MockBankClient
+from .agents.logic_graph import build_logic_graph
+from .mcp.finance.client import FinanceMCPClient
+from .rag.retrieval import SearchIndex
 from .schemas import (
     AuditEvent,
     CaseAnalysis,
@@ -30,6 +30,7 @@ from .schemas import (
     IssueInput,
     ReviewRequest,
     ReviewResponse,
+    ReviewQueueItem,
 )
 
 
@@ -55,7 +56,7 @@ CASE_STORE: dict[str, CaseAnalysis] = {}
 REVIEW_STORE: dict[str, list[ReviewResponse]] = {}
 AUDIT_LOG: list[AuditEvent] = []
 CHUNKS_PATH = DATA_DIR / "corpus" / "all.jsonl"
-LEGACY_CHUNKS_PATH = ROOT / "server" / "chunks.jsonl"
+FALLBACK_CHUNKS_PATH = ROOT / "server" / "rag" / "chunks.jsonl"
 DICTIONARY_PATH = DATA_DIR / "dictionary" / "fine_financial_glossary.json"
 _INDEX: SearchIndex | None = None
 _DICTIONARY: list[dict[str, object]] | None = None
@@ -67,7 +68,7 @@ CUSTOMER_DATA_RESOLVER = MockCustomerDataResolver(FINANCE_MCP_CLIENT)
 def get_index() -> SearchIndex:
     global _INDEX
     if _INDEX is None:
-        index_path = CHUNKS_PATH if CHUNKS_PATH.exists() else LEGACY_CHUNKS_PATH
+        index_path = CHUNKS_PATH if CHUNKS_PATH.exists() else FALLBACK_CHUNKS_PATH
         _INDEX = SearchIndex.from_data_dir(DATA_DIR, chunks_path=index_path)
     return _INDEX
 
@@ -203,6 +204,12 @@ def _analyze_issue(
         risk_flags.append("customer_data_unavailable")
 
     control = "ask" if missing or resolution.conflicts or not evidence else "proceed"
+    risk_level, risk_reasons = assess_risk(
+        issue_type=issue.issue_type,
+        target=issue.target,
+        routing_confidence=issue.routing_confidence,
+        risk_flags=risk_flags,
+    )
     if "안내 금액" in missing:
         next_steps = [expected_interest_question(facts)]
     elif evidence:
@@ -218,6 +225,8 @@ def _analyze_issue(
         issue_id=issue.issue_id,
         product=issue.product,
         issue_type=issue.issue_type,
+        routing_confidence=issue.routing_confidence,
+        routing_method=issue.routing_method,
         focal=focal,
         target=issue.target,
         mock_data=mock_view,
@@ -227,12 +236,20 @@ def _analyze_issue(
         retrieval_query=rag_query.text,
         evidence_refs=evidence,
         decision=Decision(control=control, risk_flags=risk_flags),
+        risk_level=risk_level,
+        risk_reasons=risk_reasons,
         content_scope={"mode": "summary", "requires_user_confirmation": False},
         next_steps=next_steps,
     )
     result = result.model_copy(update={"logic_verification": verify_issue_logic(result, use_llm=use_llm_logic)})
     gate = apply_decision_gate(result)
-    result = result.model_copy(update={"decision": Decision(control=gate.control, risk_flags=result.decision.risk_flags)})
+    result = result.model_copy(
+        update={
+            "decision": Decision(control=gate.control, risk_flags=result.decision.risk_flags),
+            "human_review_required": gate.human_review,
+            "risk_level": "critical" if gate.control == "hold" else result.risk_level,
+        }
+    )
     return result.model_copy(update={"report": compose_issue_report(result, use_llm=use_llm_report)})
 
 
@@ -273,6 +290,11 @@ def _audit_issues(result: CaseAnalysis) -> list[dict[str, object]]:
             "issue_id": issue.issue_id,
             "control": issue.decision.control,
             "risk_flags": issue.decision.risk_flags,
+            "risk_level": issue.risk_level,
+            "risk_reasons": issue.risk_reasons,
+            "routing_confidence": issue.routing_confidence,
+            "routing_method": issue.routing_method,
+            "human_review_required": issue.human_review_required,
             "evidence_refs": [ref.chunk_id for ref in issue.evidence_refs],
         }
         for issue in result.issues
@@ -327,6 +349,26 @@ def get_case(case_id: str) -> CaseAnalysis:
         raise HTTPException(status_code=404, detail="case not found")
     return result
 
+
+@app.get("/api/v1/reviews/queue", response_model=list[ReviewQueueItem])
+def get_review_queue() -> list[ReviewQueueItem]:
+    return [
+        ReviewQueueItem(
+            case_id=case.case_id,
+            issue_id=issue.issue_id,
+            product=issue.product,
+            issue_type=issue.issue_type,
+            control=issue.decision.control,
+            risk_level=issue.risk_level,
+            risk_reasons=issue.risk_reasons,
+            routing_confidence=issue.routing_confidence,
+            routing_method=issue.routing_method,
+        )
+        for case in CASE_STORE.values()
+        for issue in case.issues
+        if issue.human_review_required or issue.decision.control == "hold"
+    ]
+
 @app.post("/api/v1/cases/{case_id}/review", response_model=ReviewResponse)
 def review_case(case_id: str, review: ReviewRequest) -> ReviewResponse:
     current = CASE_STORE.get(case_id)
@@ -347,6 +389,7 @@ def review_case(case_id: str, review: ReviewRequest) -> ReviewResponse:
             decision = Decision(control=review.control, risk_flags=issue.decision.risk_flags)
         if decision is not None:
             updates["decision"] = decision
+            updates["human_review_required"] = decision.control == "hold"
         if issue.issue_id in review.fact_updates:
             facts = review.fact_updates[issue.issue_id]
             resolution = resolve_facts(facts)

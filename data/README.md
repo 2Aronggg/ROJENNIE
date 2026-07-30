@@ -15,11 +15,6 @@ data/
 ├─ complaints/                          # 통합 상담·라벨링 데이터
 │  └─ aihub_25_finance_consulting/
 ├─ dictionary/                           # 금융 용어 사전
-├─ exports/                              # 목적별 CSV 조회·검수용 export
-│  ├─ regulations.csv
-│  ├─ products.csv
-│  ├─ cases.csv
-│  └─ glossary.csv
 ├─ corpus/                               # 런타임 RAG corpus
 │  ├─ regulations.jsonl
 │  ├─ products.jsonl
@@ -41,8 +36,8 @@ data/
 ## 생성·갱신
 
 ```powershell
-\.venv\Scripts\python.exe -m server.ingest --data-dir data --output server/chunks.jsonl
-\.venv\Scripts\python.exe -m server.build_corpus --data-dir data --chunks server/chunks.jsonl --output-dir data/corpus
+\.venv\Scripts\python.exe -m server.rag.ingest --data-dir data --output server/rag/chunks.jsonl
+\.venv\Scripts\python.exe -m server.rag.build_corpus --data-dir data --chunks server/rag/chunks.jsonl --output-dir data/corpus
 ```
 
-`server/chunks.jsonl`은 원천 PDF·법령 API의 중간 산출물이고, 서버 런타임 검색은 `data/corpus/all.jsonl`을 사용합니다. corpus에는 현재 임베딩을 생성하지 않고 기존 full-text 검색과 선택적 vector 필드를 사용할 수 있게 보관합니다.
+`server/rag/chunks.jsonl`은 원천 PDF·법령 API의 중간 산출물이고, 서버 런타임 검색은 `data/corpus/all.jsonl`을 사용합니다. corpus에는 현재 임베딩을 생성하지 않고 기존 full-text 검색과 선택적 vector 필드를 사용할 수 있게 보관합니다. 별도 CSV export는 유지하지 않습니다.

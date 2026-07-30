@@ -2,7 +2,7 @@
 
 담당 브랜치: `feat/agent-client`
 
-담당 범위는 세 개의 에이전트, Decision Gate 연동, React Flow와 상담 UI다. `data/`, `server/mock_data.py`, `server/retrieval.py`, `server/finance_mcp/`는 수정하지 않고 A의 계약을 사용한다.
+담당 범위는 세 개의 에이전트, Decision Gate 연동, React Flow와 상담 UI다. `data/`, `server/finance/mock_data.py`, `server/rag/retrieval.py`, `server/mcp/finance/`는 수정하지 않고 A의 계약을 사용한다.
 
 ## P0: 에이전트 구조
 

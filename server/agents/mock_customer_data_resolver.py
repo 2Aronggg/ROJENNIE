@@ -1,0 +1,124 @@
+from __future__ import annotations
+
+from typing import Any
+
+from server.schemas import Fact, IssueInput
+
+
+DEFAULT_CUSTOMER_ID = "CUST-001"
+
+
+class MockCustomerDataResolver:
+    """Resolve the demo customer context through bank-like read methods."""
+
+    def __init__(self, client: Any) -> None:
+        self.client = client
+
+    def resolve(self, customer_id: str | None = None) -> dict[str, Any] | None:
+        customer_id = customer_id or DEFAULT_CUSTOMER_ID
+        customer = self.client.get_customer(customer_id)
+        if customer is None:
+            return None
+
+        access_granted = customer.get("authenticated") is True and customer.get("consent_status") == "granted"
+        if not access_granted:
+            return {
+                "customer": customer,
+                "products": {"deposits": [], "savings": [], "loans": []},
+                "accounts": [],
+                "access_granted": False,
+                "source_apis": [],
+            }
+        products = self.client.get_products(customer_id)
+        accounts = [
+            *(self.client.get_deposits(customer_id)),
+            *(self.client.get_savings(customer_id)),
+            *(self.client.get_loans(customer_id)),
+        ]
+        for account in accounts:
+            account["transactions"] = self.client.get_transactions(account["account_id"])
+            if account["product_type"] == "loan":
+                account["repayments"] = self.client.get_repayments(account["account_id"])
+        source = self.client.source_ref if hasattr(self.client, "source_ref") else lambda tool: f"/mock/{tool}"
+        return {
+            "customer": customer,
+            "products": products,
+            "access_granted": True,
+            "accounts": accounts,
+            "source_apis": [
+                source("get_my_profile"),
+                source("get_my_products"),
+                source("get_my_deposits"),
+                source("get_my_savings"),
+                source("get_my_loans"),
+            ],
+        }
+
+    def facts_for_issue(self, issue: IssueInput, context: dict[str, Any] | None) -> list[Fact]:
+        if not context:
+            return []
+        account = self._account_for_issue(issue, context["accounts"])
+        if not account:
+            return []
+
+        account_id = account["account_id"]
+        account_ref = self.client.source_ref("get_my_account") if hasattr(self.client, "source_ref") else f"/mock/accounts/{account_id}"
+        facts = [
+            self._fact("customer_id", context["customer"]["customer_id"], self.client.source_ref("get_my_profile") if hasattr(self.client, "source_ref") else "/mock/customers"),
+            self._fact("account_id", account_id, account_ref),
+            self._fact("상품명", account["product_name"], account_ref),
+            self._fact("가입일", account["opened_at"], account_ref),
+            self._fact("만기일", account["maturity_at"], account_ref),
+            self._fact("기본금리", account.get("base_rate"), account_ref),
+            self._fact("우대금리", account.get("preferential_rate"), account_ref),
+            self._fact("실제 적용 금리", account.get("applied_rate"), account_ref),
+        ]
+        if account["product_type"] == "deposit":
+            facts.extend(
+                [
+                    self._fact("거래일", account["maturity_at"], account_ref),
+                    self._fact("실제 지급 금액", account["net_interest"], account_ref),
+                    self._fact("세전 이자", account["gross_interest"], account_ref),
+                    self._fact("세금", account["tax"], account_ref),
+                    self._fact("가입금액", account["principal"], account_ref),
+                ]
+            )
+        elif account["product_type"] == "installment_savings":
+            conditions = account.get("preferential_conditions", [])
+            failed_condition = next((item for item in conditions if item.get("status") == "failed"), None)
+            facts.extend(
+                [
+                    self._fact("우대금리 조건", conditions, account_ref),
+                    self._fact("우대조건 상태", failed_condition.get("status") if failed_condition else "충족", account_ref),
+                    self._fact("자동이체 실패일", failed_condition.get("failed_at") if failed_condition else None, account_ref),
+                    self._fact("금리 변경 이력", account.get("rate_change_history", []), f"{account_ref}/rate-history"),
+                    self._fact("안내 이력", account.get("notice_history", []), f"{account_ref}/notice-history"),
+                    self._fact("안내 수신 여부", bool(account.get("notice_history")), f"{account_ref}/notice-history"),
+                ]
+            )
+        else:
+            facts.extend(
+                [
+                    self._fact("대출원금", account.get("principal"), account_ref),
+                    self._fact("현재잔액", account.get("outstanding_balance"), account_ref),
+                    self._fact("금리유형", account.get("rate_type"), account_ref),
+                    self._fact("상환방식", account.get("repayment_method"), account_ref),
+                    self._fact("월상환액", account.get("monthly_payment"), account_ref),
+                    self._fact("중도상환수수료율", account.get("early_repayment_fee_rate"), account_ref),
+                    self._fact("연체 여부", account.get("delinquency_status"), account_ref),
+                    self._fact("상환 내역", account.get("repayments", []), f"{account_ref}/repayments"),
+                    self._fact("금리 변경 이력", account.get("rate_change_history", []), f"{account_ref}/rate-history"),
+                    self._fact("안내 이력", account.get("notice_history", []), f"{account_ref}/notice-history"),
+                    self._fact("안내 수신 여부", bool(account.get("notice_history")), f"{account_ref}/notice-history"),
+                ]
+            )
+        return [fact for fact in facts if fact.value is not None]
+
+    @staticmethod
+    def _account_for_issue(issue: IssueInput, accounts: list[dict[str, Any]]) -> dict[str, Any] | None:
+        product_type = {"예금": "deposit", "적금": "installment_savings", "대출": "loan"}.get(issue.product)
+        return next((account for account in accounts if account["product_type"] == product_type), None)
+
+    @staticmethod
+    def _fact(field: str, value: Any, source_ref: str) -> Fact:
+        return Fact(field=field, value=value, source_ref=source_ref, confidence=1.0)

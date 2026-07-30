@@ -7,6 +7,8 @@ from pydantic import BaseModel, Field
 
 
 Control = Literal["proceed", "amend", "ask", "hold"]
+RoutingMethod = Literal["llm", "rules", "manual"]
+RiskLevel = Literal["low", "medium", "high", "critical"]
 
 
 class Fact(BaseModel):
@@ -28,6 +30,7 @@ class EvidenceRef(BaseModel):
     score: float
     snippet: str
     effective_from: date | None = None
+    effective_to: date | None = None
     match_type: Literal["full_text", "vector", "hybrid"] = "full_text"
 
 
@@ -58,6 +61,8 @@ class IssueInput(BaseModel):
     mock_data: dict[str, Any] = Field(default_factory=dict)
     facts: list[Fact] = Field(default_factory=list)
     required_facts: list[str] = Field(default_factory=list)
+    routing_confidence: float | None = Field(default=None, ge=0.0, le=1.0)
+    routing_method: RoutingMethod = "manual"
 
 
 class CaseAnalyzeRequest(BaseModel):
@@ -102,6 +107,8 @@ class IssueAnalysis(BaseModel):
     issue_id: str
     product: str
     issue_type: str
+    routing_confidence: float | None = Field(default=None, ge=0.0, le=1.0)
+    routing_method: RoutingMethod = "manual"
     focal: dict[str, Any] = Field(default_factory=dict)
     target: dict[str, Any] = Field(default_factory=dict)
     mock_data: dict[str, Any] = Field(default_factory=dict)
@@ -111,6 +118,9 @@ class IssueAnalysis(BaseModel):
     retrieval_query: str = ""
     evidence_refs: list[EvidenceRef] = Field(default_factory=list)
     decision: Decision
+    risk_level: RiskLevel = "low"
+    risk_reasons: list[str] = Field(default_factory=list)
+    human_review_required: bool = False
     logic_verification: LogicVerification = Field(default_factory=LogicVerification)
     report: IssueReport = Field(default_factory=IssueReport)
     content_scope: dict[str, Any] = Field(default_factory=dict)
@@ -166,3 +176,15 @@ class AuditEvent(BaseModel):
     actor: str
     created_at: datetime
     payload: dict[str, Any] = Field(default_factory=dict)
+
+
+class ReviewQueueItem(BaseModel):
+    case_id: str
+    issue_id: str
+    product: str
+    issue_type: str
+    control: Control
+    risk_level: RiskLevel
+    risk_reasons: list[str] = Field(default_factory=list)
+    routing_confidence: float | None = None
+    routing_method: RoutingMethod

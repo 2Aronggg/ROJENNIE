@@ -2,7 +2,7 @@
 
 담당 브랜치: `feat/data-server`
 
-담당 범위는 가상 금융정보, RAG, FastAPI, Finance MCP와 B가 사용할 API·Tool 계약이다. `server/agent/`의 에이전트 프롬프트와 `client/` 화면은 수정하지 않는다.
+담당 범위는 가상 금융정보, RAG, FastAPI, Finance MCP와 B가 사용할 API·Tool 계약이다. `server/agents/`의 에이전트 프롬프트와 `client/` 화면은 수정하지 않는다.
 
 ## P0: 데이터·기존 서버
 
@@ -23,7 +23,7 @@
 
 ## P1: Finance MCP
 
-- [x] `server/finance_mcp/finance_server.py` 생성
+- [x] `server/mcp/finance/finance_server.py` 생성
 - [x] `get_my_profile` Tool 구현
 - [x] `get_my_products` Tool 구현
 - [x] `get_my_deposits`, `get_my_savings`, `get_my_loans` Tool 구현
@@ -32,7 +32,7 @@
 - [x] `get_my_rate_history` Tool 구현
 - [x] `get_my_notice_history` Tool 구현
 - [x] `calculate_interest` 결정적 Tool 구현
-- [x] `server/finance_mcp/client.py`에서 Tool 호출 구현
+- [x] `server/mcp/finance/client.py`에서 Tool 호출 구현
 - [x] MCP stdio 왕복 테스트 작성
 - [x] MCP Tool이 쓰기 작업을 수행하지 않는지 테스트
 - [ ] Tool 결과에 `trace_id`와 `evidence_id` 연결
@@ -78,5 +78,5 @@
 ## 검증 명령
 
 ```powershell
-python -m unittest server.test_p1 server.test_mock_data server.agent.test_focal_builder server.agent.test_rag_query
+python -m unittest server.tests.test_p1 server.tests.test_mock_data server.tests.test_focal_builder server.tests.test_rag_query
 ```

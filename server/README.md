@@ -34,24 +34,33 @@ MCP는 에이전트가 아닙니다. Finance MCP는 `mock_data.py`의 읽기 전
 server/
 ├─ app.py                         FastAPI API
 ├─ schemas.py                     API·case schema
-├─ mock_data.py                   합성 고객·계약·거래 데이터
-├─ logic_graph.py                 민원 트리와 사실 관계
-├─ retrieval.py                   RAG 검색 구현
-├─ finance_mcp/                    Finance MCP 연결 계층
+├─ agents/                        민원 분석 에이전트
+│  ├─ pipeline.py                 전체 오케스트레이션
+│  ├─ rules/                      Agent가 따라야 할 규칙 문서
+│  ├─ router.py                   Case Builder 라우팅
+│  ├─ focal_builder.py            Focal Builder
+│  ├─ facts.py                    사실 충돌·누락 처리
+│  ├─ logic_graph.py              민원 트리와 사실 관계
+│  ├─ rag_query.py                RAG 질의 생성
+│  ├─ logic_verification.py       근거·사실 검증
+│  ├─ decision_gate.py            결정 상태 계산
+│  ├─ question_builder.py         확인된 사실 기반 질문 구성
+│  ├─ response_composer.py        최종 답변 구성
+│  ├─ report_composer.py          리포트 구성
+│  └─ mock_customer_data_resolver.py  내 금융정보 연결
+├─ rag/                           금융 문서 ingest·corpus·검색
+│  ├─ ingest.py
+│  ├─ build_corpus.py
+│  ├─ retrieval.py
+│  └─ chunks.jsonl                생성된 중간 청크
+├─ finance/                       가상 고객·계약·거래 데이터
+│  ├─ mock_data.py
+│  └─ mock_bank.sqlite3
+├─ mcp/finance/                   Finance MCP 연결 계층
 │  ├─ finance_server.py            Finance MCP Server
 │  └─ client.py                    MCP Tool 호출 클라이언트
-└─ agent/
-   ├─ pipeline.py                 전체 오케스트레이션
-   ├─ rules/                      Agent가 따라야 할 규칙 문서
-   ├─ router.py                   Case Builder 라우팅
-   ├─ focal_builder.py            Focal Builder
-   ├─ rag_query.py                RAG 질의 생성
-   ├─ logic_verification.py       근거·사실 검증
-   ├─ decision_gate.py            결정 상태 계산
-   ├─ question_builder.py         확인된 사실 기반 질문 구성
-   ├─ response_composer.py        최종 답변 구성
-   ├─ report_composer.py          리포트 구성
-   └─ mock_customer_data_resolver.py  내 금융정보 연결
+├─ scripts/                       데이터 수집·변환 스크립트
+└─ tests/                         서버·에이전트 테스트
 ```
 
 ## Finance MCP Tools
@@ -86,9 +95,9 @@ MCP Tool은 모두 읽기 전용입니다. 민원 제출, 이메일 전송, 계�
 ## RAG와 MCP의 관계
 
 ```text
-retrieval.py.search(query)
+rag/retrieval.py.search(query)
         ↓
-retrieval.py가 data/ 문서 검색
+rag/retrieval.py가 data/ 문서 검색
         ↓
 evidence_id·문서명·페이지·조항·인용문 반환
         ↓
@@ -116,8 +125,8 @@ Finance MCP가 RAG 데이터를 대신 저장하지 않습니다. Finance MCP는
 corpus를 다시 만들 때:
 
 ```powershell
-python -m server.ingest --data-dir data --output server/chunks.jsonl
-python -m server.build_corpus --data-dir data --chunks server/chunks.jsonl --output-dir data/corpus
+python -m server.rag.ingest --data-dir data --output server/rag/chunks.jsonl
+python -m server.rag.build_corpus --data-dir data --chunks server/rag/chunks.jsonl --output-dir data/corpus
 ```
 
 RAG는 한 개의 긴 검색어만 사용하지 않고, Case Builder 쟁점·상품·원문에서 만든 focused query들을 각각 검색한 뒤 IDF 기반 후보 점수와 RRF로 합칩니다. 용어 사전은 설명용 corpus라 판단 근거 검색에서 제외합니다. `similarity_score`, `search_method`, 내부 chunk ID는 기본 응답에 노출하지 않습니다.
@@ -153,7 +162,7 @@ python -m uvicorn server.app:app --reload
 MCP를 별도 프로세스로 실행하는 경우:
 
 ```powershell
-python -m server.finance_mcp.finance_server
+python -m server.mcp.finance.finance_server
 ```
 
 기본 개발 모드는 `inprocess`이며, 실제 MCP stdio 왕복이 필요하면 `FINANCE_MCP_TRANSPORT=stdio`를 설정합니다. 데이터 접근과 MCP Tool의 입출력 계약은 분리해 유지합니다.

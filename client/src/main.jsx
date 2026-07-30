@@ -56,6 +56,8 @@ const DEMO_ANALYSIS = {
 const EMPTY_ANALYSIS = {case_id: "new_case", issues: []};
 const HISTORY_KEY = "kb-key-buddy-case-history";
 const CASE_STATUS_LABEL = {proceed: "승인", ask: "확인중", amend: "보완 필요", hold: "검토 대기"};
+const RISK_LABEL = {low: "낮음", medium: "주의", high: "높음", critical: "긴급"};
+const ROUTING_LABEL = {llm: "LLM 분류", rules: "규칙 보완", manual: "수동 분류"};
 const TERM_DICTIONARY = {
   우대금리: "기본금리에 특정 조건을 충족했을 때 추가로 적용되는 금리입니다.",
   분쟁조정: "금융회사와 소비자 사이의 다툼을 정식 기관 절차로 조정받는 과정입니다.",
@@ -92,6 +94,14 @@ function caseStatus(analysis) {
   if (controls.includes("ask")) return "ask";
   if (controls.includes("amend")) return "amend";
   return "proceed";
+}
+
+function riskLabel(level) {
+  return RISK_LABEL[level] || "미측정";
+}
+
+function confidenceText(value) {
+  return typeof value === "number" ? Math.round(value * 100) + "%" : "미측정";
 }
 
 function completedIssues(history) {
@@ -596,7 +606,7 @@ function buildFlowGraph(session) {
     const issueId = "issue:" + issue.issue_id;
     const state = session.states[issue.issue_id];
     const control = state.decision || issue.decision?.control || "ask";
-    graphNodes.push({id: issueId, type: "flowNode", data: {kind: "issue", issueId: issue.issue_id, letter: issueLetter(index), title: issue.issue_type, product: issue.product, focal: issue.focal?.type, control, controlLabel: label(control)}, position: {x: 0, y: 0}, selected: issue.issue_id === session.selectedIssueId && !session.selectedNodeId});
+    graphNodes.push({id: issueId, type: "flowNode", data: {kind: "issue", issueId: issue.issue_id, letter: issueLetter(index), title: issue.issue_type, product: issue.product, focal: issue.focal?.type, control, controlLabel: label(control), routingMethod: issue.routing_method, routingConfidence: issue.routing_confidence, riskLevel: issue.risk_level, riskReasons: issue.risk_reasons || [], reviewRequired: issue.human_review_required || control === "hold"}, position: {x: 0, y: 0}, selected: issue.issue_id === session.selectedIssueId && !session.selectedNodeId});
     relations.push({id: issueId, parent: "root"});
     (state.nodes || []).filter(function(domainNode) { return domainNode.type !== "evidence"; }).forEach(function(domainNode) {
       const id = "fact:" + domainNode.node_id;
@@ -642,13 +652,14 @@ function FlowNode({data, selected}) {
     return <div className={"flow-node root-node" + (selected ? " selected" : "")}><Handle type="source" position={Position.Right} /><strong>{data.title}</strong><span>민원별 분석 트리</span></div>;
   }
   if (data.kind === "issue") {
-    return <div className={("flow-node issue-node " + data.control + (selected ? " selected" : ""))}>
+    return <div className={("flow-node issue-node " + data.control + (data.reviewRequired ? " review" : "") + (selected ? " selected" : ""))}>
       <Handle type="target" position={Position.Left} />
       <Handle type="source" position={Position.Right} />
       <div className="flow-issue-head"><b>{data.letter}</b><span className="flow-status">{data.controlLabel}</span></div>
       <strong>{data.title}</strong>
       <span>focal: {data.focal || "미확인"}</span>
-      <span>product: {data.product}</span>
+       <span>product: {data.product}</span>
+       <div className="flow-meta"><span>위험도 {riskLabel(data.riskLevel)}</span><span>분류 {ROUTING_LABEL[data.routingMethod] || "미측정"} · {confidenceText(data.routingConfidence)}</span>{data.reviewRequired && <b>상담원 검토</b>}</div>
     </div>;
   }
   return <div className={("flow-node fact-node " + data.nodeType + (data.path ? " path" : "") + (selected ? " selected" : ""))} title={data.summary}>
@@ -662,10 +673,11 @@ function FlowNode({data, selected}) {
 
 const nodeTypes = {flowNode: FlowNode};
 
-function StatusSummary({session}) {
+function StatusSummary({session, reviewQueue = []}) {
   const counts = {proceed: 0, ask: 0, amend: 0, hold: 0};
   (session.analysis.issues || []).forEach(function(issue) { counts[session.states[issue.issue_id].decision || issue.decision?.control || "ask"] += 1; });
-  return <div className="summary">{Object.keys(counts).map(function(control) { return <span key={control}><b>{counts[control]}</b> {label(control)}</span>; })}</div>;
+  const reviewCount = (session.analysis.issues || []).filter(function(issue) { return issue.human_review_required || (session.states[issue.issue_id].decision || issue.decision?.control) === "hold"; }).length;
+  return <div className="summary">{Object.keys(counts).map(function(control) { return <span key={control}><b>{counts[control]}</b> {label(control)}</span>; })}<span><b>{reviewCount}</b> 검토 대기</span>{reviewQueue.length > 0 && <span><b>{reviewQueue.length}</b> 전체 검토함</span>}</div>;
 }
 
 function Intake({onAnalyze}) {
@@ -692,7 +704,7 @@ function Intake({onAnalyze}) {
   </section>;
 }
 
-function ChatPanel({issue, state, index, draft, setDraft, dispatch, onAnalyze}) {
+function ChatPanel({issue, state, index, draft, setDraft, dispatch, onAnalyze, reviewQueue = []}) {
   useEffect(function() { setDraft(""); }, [issue?.issue_id, state?.phase, setDraft]);
   if (!issue || !state) return <aside className="panel chat-panel"><div className="chat-content"><div className="empty-chat"><strong>상담을 시작하세요</strong><span>아래 입력창에 금융 문의를 작성하면 민원별 트리가 생성됩니다.</span></div></div><Intake onAnalyze={onAnalyze} /></aside>;
   const choices = state.phase === "expected_basis" ? ["가입 원금으로 확인", "예상 이자로 확인"] : state.phase === "tax_basis" ? ["세전 금액", "세후 금액", "잘 모르겠어요"] : [];
@@ -704,7 +716,8 @@ function ChatPanel({issue, state, index, draft, setDraft, dispatch, onAnalyze}) 
   }
   return <aside className="panel chat-panel">
     <div className="chat-content">
-      <div className="chat-head"><div><span className="chat-label">현재 상담 · 섹션 {issueLetter(index)}</span><h2>{issue.issue_type}</h2><p>답변에 따라 왼쪽 트리에 사실·분기·계산 노드가 추가됩니다.</p></div><span className={"status " + state.decision}>{label(state.decision)}</span></div>
+       <div className="chat-head"><div><span className="chat-label">현재 상담 · 섹션 {issueLetter(index)}</span><h2>{issue.issue_type}</h2><p>답변에 따라 왼쪽 트리에 사실·분기·계산 노드가 추가됩니다.</p></div><span className={"status " + state.decision}>{label(state.decision)}</span></div>
+       <div className="workflow-meta"><span>분류 {ROUTING_LABEL[issue.routing_method] || "미측정"}</span><span>신뢰도 {confidenceText(issue.routing_confidence)}</span><span>위험도 {riskLabel(issue.risk_level)}</span>{issue.human_review_required && <b>상담원 검토 필요</b>}{reviewQueue.length > 0 && <small>전체 검토 대기 {reviewQueue.length}건</small>}</div>
       <div className="chat-messages">{state.messages.map(function(message, index) { return <div className={"message " + message.role} key={index}>{message.text}</div>; })}</div>
       {choices.length > 0 && <div className="chat-options" aria-label="분기 선택">{choices.map(function(choice) { return <button className="chat-option" key={choice} type="button" onClick={function() { dispatch({type: state.phase === "expected_basis" ? "EXPECTED_BASIS" : "TAX_BASIS", choice}); }}>{choice}</button>; })}</div>}
       {inputEnabled ? <form className="chat-composer" onSubmit={submit}><input value={draft} onChange={function(event) { setDraft(event.target.value); }} autoComplete="off" placeholder="답변을 입력하세요" /><button className="chat-send" type="submit">전송</button></form> : <div className="chat-composer"><button className="chat-send" type="button" disabled>상담 기록 생성됨</button></div>}
@@ -757,7 +770,8 @@ function IssueReportDrawer({issue, state, index, onClose}) {
         <div><span className="chat-label">섹션 {issueLetter(index)} · 판단 리포트</span><h2>{issue.issue_type}</h2><p className="report-type">민원 유형: {issue.product} · {report.issue || issue.issue_type}</p></div>
         <button className="drawer-close" type="button" onClick={onClose}>닫기</button>
       </div>
-      <div className="report-decision"><span>현재 판단</span><strong className={decision}>{report.current_decision}</strong></div>
+       <div className="report-decision"><span>현재 판단</span><strong className={decision}>{report.current_decision}</strong></div>
+       <div className="workflow-report-meta"><span>위험도 <b>{riskLabel(issue.risk_level)}</b></span><span>분류 신뢰도 <b>{confidenceText(issue.routing_confidence)}</b></span><span>분류 방식 <b>{ROUTING_LABEL[issue.routing_method] || "미측정"}</b></span>{issue.human_review_required && <strong>상담원 검토 필요</strong>}</div>
       <div className="drawer-section report-main">
         <h3>민원내용</h3>
         <p className="report-copy report-reasoning">{report.complaint_content || issue.text}</p>
@@ -795,8 +809,11 @@ function IssueReportDrawer({issue, state, index, onClose}) {
               {expanded && <div className="candidate-detail">
                 <div><span>문서</span><strong>{ref.path || ref.doc_id}</strong></div>
                 <div><span>페이지</span><strong>p.{ref.page}</strong></div>
-                {ref.section && <div><span>조항</span><strong>{ref.section}</strong></div>}
-                <p>{ref.snippet}</p>
+                 {ref.section && <div><span>조항</span><strong>{ref.section}</strong></div>}
+                 {ref.effective_from && <div><span>시행 시작</span><strong>{ref.effective_from}</strong></div>}
+                 {ref.effective_to && <div><span>시행 종료</span><strong>{ref.effective_to}</strong></div>}
+                 {ref.source_url && <div><span>원문 링크</span><strong>{ref.source_url}</strong></div>}
+                 <p>{ref.snippet}</p>
               </div>}
             </li>;
           })}
@@ -906,6 +923,7 @@ function App() {
   const [draft, setDraft] = useState("");
   const [page, setPage] = useState(function() { return window.location.hash.slice(1) || "chat"; });
   const [history, setHistory] = useState(readCaseHistory);
+  const [reviewQueue, setReviewQueue] = useState([]);
   const [flowNodes, setFlowNodes] = useState([]);
   const [flowEdges, setFlowEdges] = useState([]);
   const positions = useRef({});
@@ -916,6 +934,18 @@ function App() {
   const selectedNode = selectedIssue && session.drawerNodeId ? selectedState.nodes.find(function(node) { return node.node_id === session.drawerNodeId; }) : null;
   const reportIssue = session.drawerIssueId ? getIssue(session, session.drawerIssueId) : null;
   const reportState = reportIssue ? session.states[reportIssue.issue_id] : null;
+
+  const refreshReviewQueue = useCallback(async function() {
+    if (DEMO_ONLY) return;
+    try {
+      const response = await fetch(API_BASE + "/api/v1/reviews/queue");
+      if (response.ok) setReviewQueue(await response.json());
+    } catch (_) {
+      setReviewQueue([]);
+    }
+  }, []);
+
+  useEffect(function() { refreshReviewQueue(); }, [refreshReviewQueue]);
 
   useEffect(function() {
     const onHashChange = function() { setPage(window.location.hash.slice(1) || "chat"); };
@@ -970,6 +1000,7 @@ function App() {
       const analysis = await response.json();
       dispatch({type: "RESET", analysis});
       setHistory(rememberCase(analysis, prompt));
+      refreshReviewQueue();
       return {notice: "분석 결과를 표시했습니다."};
     } catch (error) {
       return {notice: "서버에 연결할 수 없습니다. 데모 결과를 유지합니다."};
@@ -985,8 +1016,8 @@ function App() {
     <header className="topbar"><div className="brand"><img src="/images.png" alt="KB" /><div><strong>KB Key Buddy</strong><span>금융 소비자 보호 에이전트</span></div></div><PageNav page={page} onNavigate={navigate} /><div className="case-id">{session.analysis.case_id !== "new_case" ? session.analysis.case_id : "내 금융"}</div></header>
     {page === "mypage" ? <MyPage history={history} onNavigate={navigate} /> : page === "reports" ? <GeneratedComplaintsPage history={history} onNavigate={navigate} /> : <>
       <main className="workspace">
-        <section className="panel case-panel"><div className="section-head"><div><h2>민원 흐름 트리</h2><p>노드를 드래그하고, 화면을 이동하거나 확대·축소할 수 있습니다.</p></div><StatusSummary session={session} /></div><div className="flow-shell">{flowNodes.length === 0 && <div className="flow-empty"><strong>아직 분석된 민원이 없습니다.</strong><span>오른쪽 입력창에 문의를 작성해 주세요.</span></div>}<ReactFlow nodes={flowNodes} edges={flowEdges} nodeTypes={nodeTypes} onNodesChange={onNodesChange} onEdgesChange={onEdgesChange} onConnect={onConnect} onNodeClick={onNodeClick} onNodeDoubleClick={onNodeDoubleClick} fitView fitViewOptions={{padding: .18}} minZoom={.2} maxZoom={2} panOnDrag zoomOnScroll nodesConnectable selectionOnDrag><MiniMap pannable zoomable /><Controls /><Background gap={22} size={1} color="#eadfca" /></ReactFlow></div></section>
-        <ChatPanel issue={selectedIssue} state={selectedState} index={selectedIssueIndex < 0 ? 0 : selectedIssueIndex} draft={draft} setDraft={setDraft} dispatch={dispatch} onAnalyze={analyze} />
+         <section className="panel case-panel"><div className="section-head"><div><h2>민원 흐름 트리</h2><p>노드를 드래그하고, 화면을 이동하거나 확대·축소할 수 있습니다.</p></div><StatusSummary session={session} reviewQueue={reviewQueue} /></div><div className="flow-shell">{flowNodes.length === 0 && <div className="flow-empty"><strong>아직 분석된 민원이 없습니다.</strong><span>오른쪽 입력창에 문의를 작성해 주세요.</span></div>}<ReactFlow nodes={flowNodes} edges={flowEdges} nodeTypes={nodeTypes} onNodesChange={onNodesChange} onEdgesChange={onEdgesChange} onConnect={onConnect} onNodeClick={onNodeClick} onNodeDoubleClick={onNodeDoubleClick} fitView fitViewOptions={{padding: .18}} minZoom={.2} maxZoom={2} panOnDrag zoomOnScroll nodesConnectable selectionOnDrag><MiniMap pannable zoomable /><Controls /><Background gap={22} size={1} color="#eadfca" /></ReactFlow></div></section>
+         <ChatPanel issue={selectedIssue} state={selectedState} index={selectedIssueIndex < 0 ? 0 : selectedIssueIndex} draft={draft} setDraft={setDraft} dispatch={dispatch} onAnalyze={analyze} reviewQueue={reviewQueue} />
       </main>
       <DetailDrawer node={selectedNode} onClose={function() { dispatch({type: "CLOSE_DRAWER"}); }} onEdit={editAnswer} />
       <IssueReportDrawer issue={reportIssue} state={reportState} index={reportIssue ? (session.analysis.issues || []).findIndex(function(issue) { return issue.issue_id === reportIssue.issue_id; }) : 0} onClose={function() { dispatch({type: "CLOSE_DRAWER"}); }} />

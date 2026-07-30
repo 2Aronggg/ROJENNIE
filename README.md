@@ -83,7 +83,7 @@ calculate_interest(principal, rate, days, tax_rate)
 ```text
 client/             React Flow 화면과 API 연동
 server/             FastAPI, 파이프라인, Mock 데이터, MCP 연결
-server/agent/       에이전트가 읽는 규칙 문서와 구현 모듈
+server/agents/       에이전트가 읽는 규칙 문서와 구현 모듈
 data/               RAG 원천 문서와 평가 데이터
 docs/               PRD와 작업 문서
 ```
