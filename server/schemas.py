@@ -150,7 +150,6 @@ class CaseAnalysis(BaseModel):
     prompt: str
     issues: list[IssueAnalysis]
     logic_graph: LogicGraph = Field(default_factory=LogicGraph)
-    regulation_notices: list[str] = Field(default_factory=list)
 
 class ReviewRequest(BaseModel):
     reviewer_id: str = "human"

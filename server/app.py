@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from collections import Counter, defaultdict
+from concurrent.futures import ThreadPoolExecutor
 from datetime import date, datetime, timezone
 import json
 import os
@@ -552,28 +553,29 @@ def analyze_case(request: CaseAnalyzeRequest) -> CaseAnalysis:
         )
         issues = routed_request.issues or [_fallback_issue(request)]
     customer_data = CUSTOMER_DATA_RESOLVER.resolve(request.customer_id)
+    get_index()  # 워커 스레드 경쟁 전에 인덱스를 1회만 빌드
+    use_llm = None if not request.issues else False
+    with ThreadPoolExecutor(max_workers=min(len(issues), 4)) as pool:
+        analyzed = list(
+            pool.map(
+                lambda issue: _analyze_issue(
+                    issue,
+                    request,
+                    customer_data,
+                    use_llm_report=use_llm,
+                    use_llm_rag=use_llm,
+                    use_llm_logic=use_llm,
+                ),
+                issues,
+            )
+        )
     result = CaseAnalysis(
         case_id=case_id,
         session_id=request.session_id,
         prompt=request.prompt,
-        issues=[
-            _analyze_issue(
-                issue,
-                request,
-                customer_data,
-                use_llm_report=None if not request.issues else False,
-                use_llm_rag=None if not request.issues else False,
-                use_llm_logic=None if not request.issues else False,
-            )
-            for issue in issues
-        ],
+        issues=analyzed,
     )
-    result = result.model_copy(
-        update={
-            "logic_graph": build_logic_graph(result),
-            "regulation_notices": get_index().date_notices(request.as_of or date.today()),
-        }
-    )
+    result = result.model_copy(update={"logic_graph": build_logic_graph(result)})
     CASE_STORE[case_id] = result
     _record_audit(case_id, "case.analyzed", "system", {"issues": _audit_issues(result)})
     return result

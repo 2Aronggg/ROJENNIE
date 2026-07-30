@@ -14,12 +14,12 @@ class P0Tests(unittest.TestCase):
     def test_fact_conflict_keeps_latest(self) -> None:
         result = resolve_facts(
             [
-                Fact(field="amount", value=100, recorded_date=date(2026, 1, 1)),
-                Fact(field="amount", value=120, recorded_date=date(2026, 1, 2)),
+                Fact(field="실제 지급 금액", value=100, recorded_date=date(2026, 1, 1)),
+                Fact(field="실제 지급 금액", value=120, recorded_date=date(2026, 1, 2)),
             ]
         )
-        self.assertEqual(result.latest["amount"].value, 120)
-        self.assertIn("amount", result.conflicts)
+        self.assertEqual(result.latest["실제 지급 금액"].value, 120)
+        self.assertIn("실제 지급 금액", result.conflicts)
 
     def test_search_returns_product_evidence(self) -> None:
         index = SearchIndex(

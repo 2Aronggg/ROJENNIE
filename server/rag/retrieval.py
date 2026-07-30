@@ -271,12 +271,3 @@ class SearchIndex:
             evidence.model_copy(update={"score": round(score, 4)})
             for score, evidence in fused[:top_k]
         ]
-
-    def date_notices(self, as_of: date) -> list[str]:
-        notices: set[str] = set()
-        for chunk in self.chunks:
-            if chunk.effective_from and chunk.effective_from > as_of:
-                notices.add(f"future_effective:{chunk.doc_id}:{chunk.effective_from.isoformat()}")
-            if chunk.effective_to and chunk.effective_to < as_of:
-                notices.add(f"expired:{chunk.doc_id}:{chunk.effective_to.isoformat()}")
-        return sorted(notices)
