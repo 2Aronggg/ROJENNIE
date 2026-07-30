@@ -76,12 +76,33 @@ class MockDataTests(unittest.TestCase):
         self.assertEqual([issue.issue_type for issue in result.analysis.issues], ["거래오류", "금리변경미통지"])
         self.assertEqual([issue.decision.control for issue in result.analysis.issues], ["ask", "proceed"])
         self.assertIn("안내 금액", result.analysis.issues[0].missing_facts)
-        self.assertIn("예상하신 이자 금액은 얼마인가요?", result.analysis.issues[0].next_steps)
+        expected_question = "현재 확인된 정보는 실제 입금액은 279,180원, 가입금액은 10,000,000원, 적용금리는 연 3.3%입니다. 얼마로 예상하셨나요?"
+        self.assertIn(expected_question, result.analysis.issues[0].next_steps)
+        self.assertEqual(result.response_view.issues[0].missing_questions[0].question, expected_question)
         self.assertEqual(
             next(fact.value for fact in result.analysis.issues[0].facts if fact.field == "실제 지급 금액"),
             279180,
         )
         self.assertEqual(result.analysis.issues[1].mock_data["account"]["rate_change_history"], [])
+
+    def test_missing_expected_amount_uses_mcp_facts_first(self) -> None:
+        app_module._INDEX = SearchIndex.from_data_dir(
+            app_module.DATA_DIR,
+            chunks_path=app_module.CHUNKS_PATH,
+        )
+        result = run_analysis(
+            "예금 만기 이자 금액이 예상과 다릅니다.",
+            case_id="case_known_facts_first",
+            use_llm=False,
+        )
+
+        issue = result.analysis.issues[0]
+        self.assertIn("안내 금액", issue.missing_facts)
+        self.assertIn("실제 지급 금액", {fact.field for fact in issue.facts})
+        self.assertIn("가입금액", {fact.field for fact in issue.facts})
+        self.assertIn("실제 적용 금리", {fact.field for fact in issue.facts})
+        self.assertIn("실제 입금액은 279,180원", issue.next_steps[0])
+        self.assertNotIn("실제로 입금된 세후 이자는 얼마였나요?", issue.next_steps[0])
 
 
 if __name__ == "__main__":

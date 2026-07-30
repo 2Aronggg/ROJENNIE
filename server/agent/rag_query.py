@@ -20,6 +20,7 @@ class RAGQueryDraft(BaseModel):
 
 class RAGQuery(BaseModel):
     text: str
+    variants: list[str] = Field(default_factory=list)
     generated_by: str = "fallback"
 
 
@@ -41,8 +42,10 @@ def build_rag_query(
     use_llm: bool | None = None,
     client: Any | None = None,
 ) -> RAGQuery:
+    fallback_variants = _query_variants(issue, [])
     fallback = RAGQuery(
-        text=f"{issue.product} {issue.issue_type} {issue.text}",
+        text=fallback_variants[0],
+        variants=fallback_variants,
         generated_by="fallback",
     )
     if not _llm_enabled(use_llm):
@@ -72,8 +75,16 @@ def build_rag_query(
             raise ValueError("Gemini returned no RAG terms")
         return RAGQuery(
             text=" ".join([issue.product, *terms]),
+            variants=_query_variants(issue, terms),
             generated_by="llm",
         )
     except Exception as exc:
         LOGGER.warning("LLM RAG query generation failed; using lexical query: %s", exc)
         return fallback
+
+
+def _query_variants(issue: IssueInput, terms: list[str]) -> list[str]:
+    focused = " ".join([issue.product, issue.issue_type, *terms, issue.text]).strip()
+    term_query = " ".join([issue.product, *terms, issue.text]).strip()
+    variants = [focused, term_query, issue.text.strip()]
+    return list(dict.fromkeys(query for query in variants if query))[:3]

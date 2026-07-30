@@ -32,14 +32,14 @@ B: feat/agent-client
 - MCP는 새 데이터를 보관하지 않고 기존 함수와 RAG를 Tool로 노출한다.
 - 브라우저는 MCP를 직접 호출하지 않고 FastAPI만 호출한다.
 - 고객 ID는 LLM이 추측하지 않고 서버 세션에서 연결한다.
-- 대출은 구현하지 않는다.
+- 예금·적금·대출을 정식 지원한다.
 
 ## 통합 체크리스트
 
 - [ ] `customer_ref`와 조회 동의 상태가 API에 포함됨
 - [ ] `get_my_products` 결과가 issue별 account에 연결됨
 - [ ] 사용자가 이미 입력한 사실을 재질문하지 않음
-- [ ] `search_evidence`가 기존 RAG를 호출하고 구조화된 결과를 반환함
+- [x] 로컬 `retrieval.py`가 기존 RAG를 호출하고 구조화된 결과를 반환함
 - [ ] RAG 후보가 Logic Verification 이후에만 처리 결과에 반영됨
 - [ ] 근거 후보가 별도 트리가 아니라 리포트 판단 근거에 표시됨
 - [ ] 근거 상세 클릭 시 문서명·페이지·조항·인용문이 표시됨
@@ -67,7 +67,7 @@ B: feat/agent-client
 
 - [ ] 사용자가 내 금융정보 조회 동의 후 문의를 입력할 수 있음
 - [ ] Case Builder가 복합 문의를 issue별 Case로 변환함
-- [ ] Finance MCP가 내 금융정보·RAG·계산 Tool을 제공함
+- [x] Finance MCP가 내 금융정보·계산 Tool을 제공함
 - [ ] Evidence & Decision Agent가 MCP 결과와 사용자 진술을 함께 검증함
 - [ ] Response Agent가 세 가지 리포트 섹션을 생성함
 - [ ] React Flow에서 민원 분기와 사용자 답변 노드를 확인할 수 있음

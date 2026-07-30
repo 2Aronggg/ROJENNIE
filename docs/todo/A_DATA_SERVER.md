@@ -23,16 +23,20 @@
 
 ## P1: Finance MCP
 
-- [ ] `server/mcp_finance.py` 생성
-- [ ] `get_my_profile` Tool 구현
-- [ ] `get_my_products` Tool 구현
-- [ ] `get_my_transactions` Tool 구현
-- [ ] `get_my_rate_history` Tool 구현
-- [ ] `get_my_notice_history` Tool 구현
-- [ ] `search_evidence` Tool이 기존 `retrieval.py`를 호출하도록 연결
-- [ ] `get_evidence` Tool 구현
-- [ ] `calculate_interest` 결정적 Tool 구현
-- [ ] `server/mcp_client.py`에서 Tool 목록 조회·호출 구현
+- [x] `server/finance_mcp/finance_server.py` 생성
+- [x] `get_my_profile` Tool 구현
+- [x] `get_my_products` Tool 구현
+- [x] `get_my_deposits`, `get_my_savings`, `get_my_loans` Tool 구현
+- [x] `get_my_transactions` Tool 구현
+- [x] `get_my_repayments` Tool 구현
+- [x] `get_my_rate_history` Tool 구현
+- [x] `get_my_notice_history` Tool 구현
+- [x] `calculate_interest` 결정적 Tool 구현
+- [x] `server/finance_mcp/client.py`에서 Tool 호출 구현
+- [x] MCP stdio 왕복 테스트 작성
+- [x] MCP Tool이 쓰기 작업을 수행하지 않는지 테스트
+- [ ] Tool 결과에 `trace_id`와 `evidence_id` 연결
+- [ ] MCP 실패·타임아웃 시 안전한 오류 응답
 - [ ] Tool 결과에 `trace_id`와 `evidence_id` 연결
 - [ ] MCP 실패·타임아웃 시 안전한 오류 응답
 - [ ] MCP Inspector 또는 최소 호출 테스트 작성
@@ -43,7 +47,7 @@
 - [x] Vector Search와 Full-Text Search 결합
 - [x] 사건 그래프에 날짜·금액·문서·답변 관계 저장
 - [x] `POST /api/v1/cases/{case_id}/review`
-- [ ] `search_evidence` 반환 형식 확정
+- [x] 로컬 `retrieval.py` 검색 결과 반환 형식 확정
 - [ ] 검색 점수·검색 방식·내부 chunk ID를 기본 응답에서 제거
 - [ ] 사건일보다 늦게 시행된 문서 차단
 - [ ] RAG 후보와 확인된 근거를 구분
@@ -62,7 +66,7 @@
 
 ## 데이터 추가 기준
 
-현재 예금·적금·ELS MVP에 필수 데이터는 더 추가하지 않는다. 다음은 기능 확장 시에만 진행한다.
+현재 예금·적금·대출 MVP에 필수 데이터는 더 추가하지 않는다. 다음은 기능 확장 시에만 진행한다.
 
 - [ ] 공식 금융 분쟁조정·민원 사례 원문
 - [ ] 공식 민원 절차·제출 서류 정보

@@ -2,7 +2,7 @@
 
 `FINANCE_MCP_TRANSPORT=inprocess` keeps local development fast while still
 using the same tool registry.  Set it to `stdio` to exercise the real MCP
-protocol and spawn ``python -m server.mcp_finance`` for each tool call.
+protocol and spawn ``python -m server.finance_mcp.finance_server`` for each tool call.
 """
 
 from __future__ import annotations
@@ -35,7 +35,7 @@ class FinanceMCPClient:
         if name.startswith("get_my_"):
             args.setdefault("customer_ref", self.customer_ref)
         if self.transport == "inprocess":
-            from server.mcp_finance import call_finance_tool
+            from server.finance_mcp.finance_server import call_finance_tool
 
             return call_finance_tool(name, args)
         return asyncio.run(self._call_stdio(name, args))
@@ -99,7 +99,7 @@ class FinanceMCPClient:
         env["PYTHONPATH"] = str(root) + os.pathsep + env.get("PYTHONPATH", "")
         params = StdioServerParameters(
             command=sys.executable,
-            args=["-m", "server.mcp_finance"],
+            args=["-m", "server.finance_mcp.finance_server"],
             env=env,
         )
         async with stdio_client(params) as (read_stream, write_stream):

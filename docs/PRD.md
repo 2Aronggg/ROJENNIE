@@ -6,7 +6,7 @@ KB Key Buddy는 금융 앱 안에서 사용자가 입력한 복합 금융 문의
 
 실제 은행 내부 시스템은 연동하지 않는다. 로그인한 데모 사용자의 가상 고객·계약·거래 데이터를 DB 또는 Mock 데이터에 저장하고, 앱에서는 실제 내부 API처럼 조회한다.
 
-대출은 구현 범위에서 제외한다. MVP의 상품 범위는 현재 `data/`에 있는 예금·적금·ELS 문서와 가상 금융정보다.
+예금·적금·대출을 지원한다. MVP는 `data/`의 금융 규정·약관·상품설명서·사례와 로그인한 데모 사용자의 가상 금융정보를 연결한다.
 
 ## 2. 해결하려는 문제
 
@@ -18,7 +18,7 @@ KB Key Buddy는 금융 앱 안에서 사용자가 입력한 복합 금융 문의
 
 ## 3. 목표 사용자
 
-- 예금·적금·ELS의 이자, 금리, 우대조건, 안내 여부를 확인하려는 고객
+- 예금·적금·대출의 이자, 금리, 우대조건, 상환·안내 여부를 확인하려는 고객
 - 금융회사 답변을 받았지만 계약 조건과 실제 거래내역을 비교하고 싶은 고객
 - 민원 제출 전 필요한 사실·서류·후속 절차를 정리하려는 고객
 
@@ -31,8 +31,7 @@ KB Key Buddy는 금융 앱 안에서 사용자가 입력한 복합 금융 문의
 - 민원별 focal·target·필수 사실 추출
 - Mock 고객·계약·거래·금리·안내 이력 조회
 - 약관·상품설명서·규정·사례 RAG 검색
-- Finance MCP를 통한 금융정보·RAG·계산 Tool 호출
-- 선택적 법령 MCP를 통한 법령·판례 조회 및 인용 검증
+- Finance MCP를 통한 금융정보·계산 Tool 호출
 - 계약 조건과 실제 지급액의 계산 비교
 - 민원별 `proceed / ask / amend / hold` 결정
 - `민원내용 / 처리결과 / 소비자 유의사항` 리포트
@@ -42,7 +41,6 @@ KB Key Buddy는 금융 앱 안에서 사용자가 입력한 복합 금융 문의
 ### 제외
 
 - 금융회사 내부 시스템의 실제 연동
-- 대출 민원 처리
 - 금융회사·금융감독기관에 민원 자동 제출
 - 계좌·계약 변경 또는 금융거래 실행
 - 확인되지 않은 환급액·배상액·승소 가능성 확정
@@ -55,9 +53,8 @@ KB Key Buddy는 금융 앱 안에서 사용자가 입력한 복합 금융 문의
 #### 사용자 입력
 
 ```text
-예금 만기 이자로 30만원을 예상했지만 실제로는 279,180원만 입금됐습니다.
-가입금액은 1,000만원이고 적용금리는 3.3%였습니다.
-또 적금은 자동이체 조건을 충족하지 못해 우대금리가 빠졌는데 관련 안내를 받지 못했습니다.
+예금 만기 이자가 예상과 다르고, 적금은 자동이체 조건을 충족하지 못해
+우대금리가 빠졌는데 관련 안내를 받지 못했습니다.
 계약 조건과 약관, 거래내역을 함께 확인해주세요.
 ```
 
@@ -69,6 +66,9 @@ Finance MCP가 다음 Tool을 읽기 전용으로 호출한다.
 
 ```text
 get_my_products()
+get_my_deposits()
+get_my_savings()
+get_my_loans()
 get_my_transactions("DEP-001")
 get_my_rate_history("SAV-001")
 get_my_notice_history("SAV-001")
@@ -85,13 +85,22 @@ get_my_notice_history("SAV-001")
 
 #### 3) Evidence & Decision
 
-`search_evidence` MCP Tool이 기존 RAG에서 약관·상품설명서·규정 후보를 검색한다. 검색 결과는 문서명·페이지·조항·짧은 인용문이 있는 구조화된 근거로 반환한다.
+로컬 `retrieval.py`가 약관·상품설명서·규정 후보를 검색한다. 검색 결과는 문서명·페이지·조항·짧은 인용문이 있는 구조화된 근거로 반환한다.
 
 계약·거래 데이터와 사용자 진술을 비교하고, 이자 계산 Tool 결과와 근거자료를 Logic Verification에 전달한다.
 
+예금 민원에서 사용자가 실제 지급액·가입금액·적용금리를 기억하지 못해도, Finance MCP에 연결된 내 금융정보가 있으면 먼저 다음처럼 알려준다.
+
+```text
+현재 확인된 정보는 실제 입금액은 279,180원, 가입금액은 10,000,000원,
+적용금리는 연 3.3%입니다. 얼마로 예상하셨나요?
+```
+
+이후 사용자가 예상 이자를 입력하면 실제 지급액을 다시 묻지 않고, MCP에서 확인된 금액을 기준으로 차이 금액을 계산한다. 금융정보가 없거나 조회 동의가 없을 때만 실제 지급액·가입금액·금리를 사용자에게 질문한다.
+
 #### 4) 결정
 
-사용자가 예상 이자·실제 지급액·가입금액·적용금리를 이미 입력했으므로 같은 내용을 다시 질문하지 않는다. 예치기간처럼 정말 없는 값만 `ask`로 질문한다.
+사용자가 예상 이자만 입력하고 실제 지급액·가입금액·적용금리를 기억하지 못해도, Finance MCP에서 확인된 사실을 먼저 보여준다. 사용자 입력 또는 MCP에 있는 사실은 다시 질문하지 않고, 예치기간처럼 양쪽에 없는 값만 `ask`로 질문한다.
 
 충분한 사실과 근거가 있으면 리포트를 생성한다. 사용자가 제공한 사실과 거래내역이 충돌하면 `hold` 또는 `ask`를 선택한다.
 
@@ -116,7 +125,14 @@ RAG 후보자료는 별도 노드로 만들지 않고 `판단 근거` 영역에 
 예금 이자가 예상보다 적게 들어왔어요.
 ```
 
-내 금융정보와 문의에 예상 금액·실제 지급액이 모두 없으면 챗봇이 필요한 질문을 한다.
+내 금융정보가 연결되어 있으면 먼저 확인된 실제 지급액·가입금액·적용금리를 알려주고 예상 금액을 질문한다.
+
+```text
+현재 확인된 정보는 실제 입금액은 279,180원, 가입금액은 10,000,000원,
+적용금리는 연 3.3%입니다. 얼마로 예상하셨나요?
+```
+
+내 금융정보가 없거나 조회 동의가 없으면 그때만 챗봇이 필요한 질문을 한다.
 
 ```text
 실제로 입금된 이자는 얼마였나요?
@@ -138,32 +154,35 @@ RAG 후보자료는 별도 노드로 만들지 않고 `판단 근거` 영역에 
 Case Builder Agent
  ├─ Issue Splitter
  ├─ Focal Builder
- └─ 필수 사실 추출
-        ↓
-FastAPI MCP Client
-        ↓
-Finance MCP Server
- ├─ My Info Tools
- ├─ Evidence/RAG Tools
- └─ Calculator Tool
+ ├─ 필수 사실 추출
+ └─ 예금·적금·대출 상품 연결
         ↓
 Evidence & Decision Agent
- ├─ 사용자 진술·내 금융정보 대조
- ├─ 근거 후보 관련성 검증
- ├─ 선택적 Korean Law MCP
+ ├─ 금융 계약·거래 데이터 조회
+ ├─ 대출 금리·상환내역 조회
+ ├─ 규정·약관·판례 RAG
+ ├─ 검색 결과 관련성 검증
  └─ Logic Verification
         ↓
 Deterministic Policy Gate
+ ├─ 승인 (proceed)
+ ├─ 확인중 (ask)
+ ├─ 보완 필요 (amend)
+ └─ 검토 대기 (hold)
         ↓
 Response Agent
+ ├─ 민원내용
+ ├─ 처리결과
+ ├─ 소비자 유의사항
+ └─ 제출 서류·후속 절차
 ```
 
 ### 실제 에이전트는 3개
 
 | 에이전트 | 역할 |
 |---|---|
-| Case Builder Agent | Issue Splitter, Focal Builder, 필수 사실 추출을 묶어 구조화된 민원 Case 생성 |
-| Evidence & Decision Agent | MCP로 내 금융정보·RAG 근거를 조회하고 사실관계를 검증 |
+| Case Builder Agent | Issue Splitter, Focal Builder, 필수 사실 추출, 예금·적금·대출 상품 연결을 묶어 구조화된 민원 Case 생성 |
+| Evidence & Decision Agent | Finance MCP로 계약·거래·상환·금리·안내 이력을 조회하고 로컬 RAG 근거와 함께 사실관계를 검증 |
 | Response Agent | 검증 결과를 민원내용·처리결과·유의사항·절차로 작성 |
 
 MCP Tool, 이자 계산, My Info Resolver, Logic Graph, Policy Gate는 에이전트가 아니라 도구·일반 모듈이다.
@@ -175,19 +194,19 @@ MCP Tool, 이자 계산, My Info Resolver, Logic Graph, Policy Gate는 에이전
 | Tool | 설명 |
 |---|---|
 | `get_my_profile` | 현재 사용자와 조회 동의 상태 |
-| `get_my_products` | 현재 사용자의 예금·적금·ELS |
+| `get_my_products` | 현재 사용자의 예금·적금·대출 |
+| `get_my_deposits` | 예금 계약 상세 |
+| `get_my_savings` | 적금 계약 상세 |
+| `get_my_loans` | 대출 계약·잔액·상환조건 |
 | `get_my_transactions` | 계좌 거래내역 |
+| `get_my_repayments` | 대출 상환내역 |
 | `get_my_rate_history` | 금리·우대조건 변경 이력 |
 | `get_my_notice_history` | 안내 발송·수신 이력 |
-| `search_evidence` | 기존 RAG에서 근거 후보 검색 |
-| `get_evidence` | 근거 문서 상세 조회 |
 | `calculate_interest` | 이자·세금 계산 |
 
 ### RAG와 MCP의 관계
 
 ```text
-MCP search_evidence 호출
-        ↓
 retrieval.py가 data/ 문서 검색
         ↓
 근거 후보 반환
@@ -199,11 +218,7 @@ Logic Verification
 Policy Gate와 Response Agent
 ```
 
-MCP는 RAG 원문이나 임베딩을 대신 저장하지 않는다. 검색 기능을 표준 Tool로 노출할 뿐이다.
-
-### 외부 법령 MCP
-
-법령·판례 원문과 인용 검증이 필요할 때만 Korean Law MCP를 보조 근거로 사용한다. 상품 약관·상품설명서·금융 사례는 기존 RAG를 우선한다.
+Finance MCP는 RAG 원문·임베딩·검색을 담당하지 않는다. 금융 계약·거래·상환·금리·안내 이력과 결정적 계산만 읽기 전용 Tool로 제공하고, RAG는 서버의 `retrieval.py`가 `data/`를 직접 검색한다.
 
 ## 8. 데이터 구조
 
@@ -237,6 +252,20 @@ MCP는 RAG 원문이나 임베딩을 대신 저장하지 않는다. 검색 기�
 
 `customer_ref`는 내부 고객 ID를 그대로 클라이언트에 노출하지 않는 세션 참조다. `my_info_refs`에는 필요한 계좌·상품만 연결한다.
 
+대출 이슈의 최소 확인 사실은 다음과 같다.
+
+```json
+{
+  "product": "loan",
+  "my_info_refs": ["LOAN-001"],
+  "verified_facts": [
+    "대출상품명", "대출원금", "실행일", "만기일", "적용금리",
+    "금리유형", "현재잔액", "상환방식", "상환내역",
+    "금리변경이력", "금리안내이력", "연체여부"
+  ]
+}
+```
+
 ## 9. 리포트 계약
 
 모든 민원은 다음 순서로 작성한다.
@@ -261,6 +290,19 @@ MCP는 RAG 원문이나 임베딩을 대신 저장하지 않는다. 검색 기�
 
 MCP Tool 호출은 브라우저가 아니라 FastAPI가 수행한다.
 
+Finance MCP가 제공하는 가상 금융 조회는 다음 API와 같은 범위를 가진다.
+
+```text
+GET /mock/customers/{customer_id}/products
+GET /mock/customers/{customer_id}/deposits
+GET /mock/customers/{customer_id}/savings
+GET /mock/customers/{customer_id}/loans
+GET /mock/accounts/{account_id}/transactions
+GET /mock/accounts/{account_id}/repayments
+GET /mock/accounts/{account_id}/rate-history
+GET /mock/accounts/{account_id}/notice-history
+```
+
 ## 11. 비기능 요구사항
 
 - 개인정보는 최소 조회·최소 표시한다.
@@ -276,7 +318,7 @@ MCP Tool 호출은 브라우저가 아니라 FastAPI가 수행한다.
 
 - `complex_issue_75.json`의 하위 민원 수·상품·쟁점 일치율
 - 사용자 입력 사실과 My Info 조회 사실의 재질문 방지율
-- `search_evidence` 결과의 문서·페이지·조항 연결률
+- 로컬 RAG 결과의 문서·페이지·조항 연결률
 - 사건일과 시행일이 다른 문서의 차단 여부
 - RAG 후보가 Logic Verification을 거치지 않고 판단에 사용되지 않는지
 - 금액 계산 오류와 세금·금리·기간 필드의 출처 구분

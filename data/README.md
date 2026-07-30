@@ -2,26 +2,47 @@
 
 ```text
 data/
-├─ regulations/       # 법령·감독규정·공통 약관
-├─ products/          # 예금·적금·펀드·ELS 상품 문서
-│  ├─ deposit/
-│  └─ fund/
-├─ cases/             # 공개 분쟁조정·판례·처리결과
-├─ complaints/        # 비식별 실제 상담·민원 표현
-├─ dictionary/        # 금융 용어 사전
-└─ evaluation/        # 자체 제작 민원 테스트셋
+├─ regulations/                         # 법령·공통 규정·법령 API 원문
+│  └─ law_api/
+├─ products/                            # 상품 약관·설명서·금리표
+│  ├─ deposit/                          # 예금
+│  ├─ savings/                          # 적금
+│  ├─ loan/                             # 대출
+│  ├─ rates/                            # 지급금리·금리 조견표
+│  ├─ fund/                             # 펀드·ELS
+│  └─ isa/                              # ISA
+├─ cases/                                # 판례·분쟁조정 사례 원문
+├─ complaints/                          # 통합 상담·라벨링 데이터
+│  └─ aihub_25_finance_consulting/
+├─ dictionary/                           # 금융 용어 사전
+├─ exports/                              # 목적별 CSV 조회·검수용 export
+│  ├─ regulations.csv
+│  ├─ products.csv
+│  ├─ cases.csv
+│  └─ glossary.csv
+├─ corpus/                               # 런타임 RAG corpus
+│  ├─ regulations.jsonl
+│  ├─ products.jsonl
+│  ├─ cases.jsonl
+│  ├─ glossary.jsonl
+│  └─ all.jsonl
+└─ evaluation/                           # 민원 테스트셋
 ```
 
-## 사용 원칙
+## RAG 사용 범위
 
-- `regulations/`, `products/`, `cases/`는 RAG 판단 근거입니다.
-- `complaints/`는 문의 분해와 상담 흐름 개선용이며, 법적 판단 근거가 아닙니다.
-- `evaluation/`은 재현 가능한 회귀 테스트용이므로 실제 데이터로 교체하지 않습니다.
-- `dictionary/`는 어려운 금융 용어를 쉽게 설명할 때 별도로 조회합니다.
-- 대출 데이터와 실제 고객 개인정보는 저장하지 않습니다.
+- `corpus/regulations.jsonl`, `corpus/products.jsonl`, `corpus/cases.jsonl`이 판단 근거입니다.
+- 규정·상품·판례는 목적별로 분리하되 `corpus/all.jsonl`로 합쳐 서버 검색기가 읽습니다.
+- `complaints/`의 상담 JSON은 Issue Splitter·질문 흐름 개선용이며 RAG 근거로 사용하지 않습니다.
+- `cases/`의 HWP는 `cases/cases.csv`로 추출해 판례 corpus에 포함합니다.
+- `corpus/glossary.jsonl`과 `dictionary/`는 금융 용어를 쉬운 말로 설명하는 용도이며 판단 근거로 확정하지 않습니다.
+- `evaluation/`은 회귀 테스트용입니다.
 
-## 문서 메타데이터
+## 생성·갱신
 
-PDF를 추가할 때는 파일명 또는 별도 메타데이터로 다음 정보를 확인할 수 있어야 합니다.
+```powershell
+\.venv\Scripts\python.exe -m server.ingest --data-dir data --output server/chunks.jsonl
+\.venv\Scripts\python.exe -m server.build_corpus --data-dir data --chunks server/chunks.jsonl --output-dir data/corpus
+```
 
-`source`, `published_at`, `effective_from`, `effective_to`, `product`, `issue_type`
+`server/chunks.jsonl`은 원천 PDF·법령 API의 중간 산출물이고, 서버 런타임 검색은 `data/corpus/all.jsonl`을 사용합니다. corpus에는 현재 임베딩을 생성하지 않고 기존 full-text 검색과 선택적 vector 필드를 사용할 수 있게 보관합니다.

@@ -19,7 +19,7 @@ const API_BASE = import.meta.env.VITE_API_BASE || window.API_BASE || "http://loc
 const DEMO_ONLY = new URLSearchParams(window.location.search).get("demo") === "1";
 const CONTROL_LABEL = {proceed: "진행 중", ask: "리포트 생성됨", amend: "보완 필요", hold: "검토 대기"};
 const DECISION_LABEL = {proceed: "진행", ask: "추가 확인 필요", amend: "보완 필요", hold: "검토 대기"};
-const NODE_LABEL = {user_answer: "사용자 진술", decision: "사용자 선택", derived: "계산 결과", evidence: "근거 자료"};
+const NODE_LABEL = {user_answer: "사용자 진술", verified_fact: "내 금융정보", decision: "사용자 선택", derived: "계산 결과", evidence: "근거 자료"};
 
 const DEMO_ANALYSIS = {
   case_id: "demo_case",
@@ -30,12 +30,12 @@ const DEMO_ANALYSIS = {
       issue_type: "예금 만기 이자 금액 불일치",
       focal: {type: "예금 거래내역"},
       target: {subject: "금융회사"},
-      facts: [{field: "실제 지급 금액", value: 279180}, {field: "적용 금리", value: "연 3.3%"}],
+      facts: [{field: "실제 지급 금액", value: 279180}, {field: "가입금액", value: 10000000}, {field: "실제 적용 금리", value: .033}],
       missing_facts: ["안내 금액"],
       evidence_refs: [{doc_id: "demo-deposit-terms", page: 8, section: "이자 계산 및 지급", score: .92, snippet: "약정 금리와 실제 지급 시 세금 공제를 반영하여 이자를 계산합니다."}],
       decision: {control: "ask", risk_flags: ["missing_facts"]},
-      mock_data: {available: false, account: null},
-      next_steps: ["예상하신 이자 금액은 얼마인가요?"],
+      mock_data: {available: true, account: {principal: 10000000, applied_rate: .033, net_interest: 279180}},
+      next_steps: ["현재 확인된 정보는 실제 입금액은 279,180원, 가입금액은 10,000,000원, 적용금리는 연 3.3%입니다. 얼마로 예상하셨나요?"],
     },
     {
       issue_id: "issue_2",
@@ -125,6 +125,45 @@ function won(value) {
   return typeof value === "number" && Number.isFinite(value) ? new Intl.NumberFormat("ko-KR").format(value) + "원" : String(value ?? "미확인");
 }
 
+function factValue(issue, field) {
+  const facts = issue?.facts || [];
+  for (let index = facts.length - 1; index >= 0; index -= 1) {
+    if (facts[index]?.field === field) return facts[index].value;
+  }
+  return null;
+}
+
+function knownAmount(issue, field, accountField) {
+  const account = issue?.mock_data?.account || {};
+  const value = factValue(issue, field) ?? account[accountField];
+  if (typeof value === "number" && Number.isFinite(value)) return value;
+  return parseAmount(value);
+}
+
+function knownRate(issue) {
+  const account = issue?.mock_data?.account || {};
+  const value = factValue(issue, "실제 적용 금리") ?? account.applied_rate;
+  if (typeof value === "number" && Number.isFinite(value)) return value <= 1 ? value * 100 : value;
+  return parseRate(value);
+}
+
+function rateText(value) {
+  if (typeof value === "number" && Number.isFinite(value)) return "연 " + value + "%";
+  const text = String(value ?? "미확인");
+  return text.startsWith("연 ") ? text : "연 " + text;
+}
+
+function expectedQuestion(issue) {
+  const details = [];
+  const actual = knownAmount(issue, "실제 지급 금액", "net_interest");
+  const principal = knownAmount(issue, "가입금액", "principal");
+  const rate = knownRate(issue);
+  if (actual != null) details.push("실제 입금액은 " + won(actual));
+  if (principal != null) details.push("가입금액은 " + won(principal));
+  if (rate != null) details.push("적용금리는 " + rateText(rate));
+  return details.length ? "현재 확인된 정보는 " + details.join(", ") + "입니다. 얼마로 예상하셨나요?" : "만기 때 받을 것으로 예상하신 이자 금액은 얼마인가요?";
+}
+
 function valueText(value) {
   if (Array.isArray(value)) return value.length ? value.map(valueText).join(", ") : "없음";
   if (value && typeof value === "object") return Object.entries(value).map(function(entry) { return entry[0] + ": " + valueText(entry[1]); }).join(", ");
@@ -154,7 +193,7 @@ function initialPhase(issue) {
 function initialQuestion(issue) {
   if (issue.decision?.control === "ask" && issue.target?.is_unclear) return "처리할 금융회사는 어디인가요?";
   const missing = issue.missing_facts || [];
-  if (missing.includes("안내 금액")) return "만기 때 받을 것으로 예상하신 이자 금액은 얼마인가요?";
+  if (missing.includes("안내 금액")) return expectedQuestion(issue);
   if (missing.includes("실제 지급 금액")) return "실제로 입금된 세후 이자는 얼마였나요?";
   return issue.next_steps?.[0] || "이 섹션의 확인이 완료되었습니다.";
 }
@@ -166,7 +205,7 @@ function createState(issue) {
     phase: initialPhase(issue),
     decision: issue.decision?.control || "ask",
     expectedInterest: null,
-    actualInterest: null,
+    actualInterest: knownAmount(issue, "실제 지급 금액", "net_interest"),
     pendingAmount: null,
     pendingAmountNodeId: null,
     answerParentId: null,
@@ -175,9 +214,9 @@ function createState(issue) {
     expectedNodeId: null,
     actualNodeId: null,
     calculationNodeId: null,
-    principal: null,
-    rate: null,
-    days: null,
+    principal: knownAmount(issue, "가입금액", "principal"),
+    rate: knownRate(issue),
+    days: issue.mock_data?.available ? 365 : null,
     taxBasis: null,
     mockAccount: issue.mock_data?.available ? issue.mock_data.account : null,
   };
@@ -235,6 +274,37 @@ function addUserFact(session, issue, data) {
   });
 }
 
+function continueAfterExpected(session, issue, state, parentId) {
+  const actualAmount = knownAmount(issue, "실제 지급 금액", "net_interest");
+  if (actualAmount == null) {
+    state.phase = "actual";
+    addMessage(state, "assistant", "실제로 입금된 세후 이자는 얼마였나요?");
+    return;
+  }
+  const actual = addNode(session, issue, {
+    type: "verified_fact",
+    title: "실제 지급 이자: " + won(actualAmount),
+    content: "내 금융정보에서 확인된 실제 입금액입니다.",
+    source: "내 금융정보",
+    parent_id: parentId,
+    details: {"값": won(actualAmount), "출처": "Finance MCP 금융정보 조회"},
+  });
+  state.actualInterest = actualAmount;
+  state.actualNodeId = actual.node_id;
+  const difference = state.expectedInterest - actualAmount;
+  const derived = addNode(session, issue, {
+    type: "derived",
+    title: "차이 금액: " + won(Math.abs(difference)) + (difference >= 0 ? " 부족" : " 초과"),
+    content: "사용자 예상 이자와 내 금융정보의 실제 지급 이자 차이입니다.",
+    source: "계산 결과",
+    parent_id: actual.node_id,
+    details: {"노드 유형": "Derived Fact", "산식": won(state.expectedInterest) + " - " + won(actualAmount), "결과": won(Math.abs(difference)) + (difference >= 0 ? " 부족" : " 초과")},
+  });
+  state.taxParentId = derived.node_id;
+  state.phase = "tax_basis";
+  addMessage(state, "assistant", "내 금융정보에서 실제 지급 이자 " + won(actualAmount) + "을 확인했습니다. 예상하신 금액은 세전인가요, 세후인가요?");
+}
+
 function parseAmount(value) {
   const text = String(value).replace(/[，,\s]/g, "").replace(/원/g, "");
   if (!text || /모르|없/.test(text)) return null;
@@ -270,7 +340,7 @@ function handleExpected(session, issue, state, raw) {
     addMessage(state, "assistant", "금액을 확인하지 못했습니다. ‘20만 원’처럼 입력해주세요.");
     return;
   }
-  const conversation = [{role: "AI", text: "만기 때 받을 것으로 예상하신 이자 금액은 얼마인가요?"}, {role: "사용자", text: raw}];
+  const conversation = [{role: "AI", text: expectedQuestion(issue)}, {role: "사용자", text: raw}];
   state.pendingAmount = amount;
   if (amount >= 1000000) {
     const pending = addNode(session, issue, {
@@ -297,8 +367,7 @@ function handleExpected(session, issue, state, raw) {
   });
   state.expectedInterest = amount;
   state.expectedNodeId = expected.node_id;
-  state.phase = "actual";
-  addMessage(state, "assistant", "실제로 입금된 세후 이자는 얼마였나요?");
+  continueAfterExpected(session, issue, state, expected.node_id);
 }
 
 function chooseExpectedBasis(session, issue, state, choice) {
@@ -335,8 +404,7 @@ function chooseExpectedBasis(session, issue, state, choice) {
     });
     state.expectedInterest = amount;
     state.expectedNodeId = expected.node_id;
-    state.phase = "actual";
-    addMessage(state, "assistant", "예상 이자로 확인했습니다. 실제로 입금된 세후 이자는 얼마였나요?");
+    continueAfterExpected(session, issue, state, expected.node_id);
   }
 }
 
@@ -427,10 +495,10 @@ function chooseTaxBasis(session, issue, state, choice) {
   }
   const path = addNode(session, issue, {type: "derived", title: choice === "세전 금액" ? "세금 공제 검토 필요" : "금리·기간·우대조건 검증 필요", content: choice === "세전 금액" ? "세전 예상액과 실제 세후 지급액의 세금 공제 여부를 검토합니다." : "세금만으로 차이가 설명되지 않을 수 있어 계약조건을 검증합니다.", source: "검증 경로", parent_id: decision.node_id, details: {"예상 금액 기준": choice, "다음 단계": "계약조건 확인"}});
   state.inputParentId = path.node_id;
-  if (state.mockAccount) {
-    state.principal = state.mockAccount.principal;
-    state.rate = state.mockAccount.applied_rate ? state.mockAccount.applied_rate * 100 : null;
-    state.days = 365;
+  if (state.mockAccount || (state.principal != null && state.rate != null)) {
+    state.principal = state.principal ?? state.mockAccount?.principal;
+    state.rate = state.rate ?? (state.mockAccount?.applied_rate ? state.mockAccount.applied_rate * 100 : null);
+    state.days = state.days ?? 365;
     calculateContract(session, issue, state);
   } else {
     state.phase = "principal";

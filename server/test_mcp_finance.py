@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import unittest
 
-from server.mcp_client import FinanceMCPClient
+from server.finance_mcp.client import FinanceMCPClient
 
 
 class FinanceMCPTests(unittest.TestCase):

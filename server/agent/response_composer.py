@@ -5,6 +5,7 @@ from typing import Any
 from pydantic import BaseModel, Field
 
 from server.agent.decision_gate import apply_decision_gate
+from server.agent.question_builder import expected_interest_question
 from server.schemas import CaseAnalysis, EvidenceRef, Fact, IssueAnalysis
 
 
@@ -133,7 +134,7 @@ def compose_issue_response(issue: IssueAnalysis) -> IssueResponseView:
         status_description=_status_description(issue, status),
         summary=_summary(issue),
         confirmed_facts=_confirmed_facts(issue.facts),
-        missing_questions=_missing_questions(issue.missing_facts),
+        missing_questions=_missing_questions(issue),
         evidence=[_evidence_item(ref) for ref in issue.evidence_refs],
         next_steps=_next_steps(issue, status),
         documents_to_prepare=_documents_to_prepare(issue),
@@ -171,7 +172,8 @@ def _confirmed_facts(facts: list[Fact]) -> list[str]:
     return [f"{_field_label(fact.field)}: {fact.value}" for fact in facts if fact.field in visible_fields]
 
 
-def _missing_questions(missing_facts: list[str]) -> list[QuestionItem]:
+def _missing_questions(issue: IssueAnalysis) -> list[QuestionItem]:
+    missing_facts = issue.missing_facts
     question_by_field = {
         "안내 금액": "예상하신 이자 금액은 얼마인가요?",
         "금리 변경 이력": "금리 변경 안내를 받은 날짜나 메시지가 있나요?",
@@ -182,7 +184,7 @@ def _missing_questions(missing_facts: list[str]) -> list[QuestionItem]:
     return [
         QuestionItem(
             field=field,
-            question=question_by_field.get(field, f"{field}을(를) 알려주세요."),
+            question=expected_interest_question(issue.facts) if field == "안내 금액" else question_by_field.get(field, f"{field}을(를) 알려주세요."),
             reason="검색 근거와 사실관계를 같은 민원에 연결하기 위해 필요합니다.",
         )
         for field in missing_facts[:3]

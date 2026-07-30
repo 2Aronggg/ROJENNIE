@@ -16,6 +16,10 @@ from .schemas import DocumentChunk
 PDF_DIRS = {
     "regulations": ("law", ["공통"]),
     "products/deposit": ("product_manual", ["예금", "적금"]),
+    "products/savings": ("product_manual", ["적금"]),
+    "products/loan": ("product_manual", ["대출"]),
+    "products/rates": ("rate_table", ["예금", "적금"]),
+    "products/isa": ("product_manual", ["ISA"]),
     "products/fund": ("product_manual", ["펀드"]),
     "cases": ("case", ["공통"]),
     "complaints": ("complaint", ["공통"]),

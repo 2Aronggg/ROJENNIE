@@ -99,10 +99,10 @@ DERIVED_FACT    결정적 계산으로 산출한 사실
 
 ```json
 {
-  "field": "actual_interest",
-  "reason": "실제 입금된 세후 이자 금액이 필요합니다.",
-  "question": "실제로 입금된 세후 이자는 얼마였나요?"
+  "field": "expected_interest",
+  "reason": "사용자가 예상한 이자 금액이 필요합니다.",
+  "question": "현재 확인된 실제 지급액·가입금액·적용금리를 먼저 안내하고, 얼마로 예상했는지 질문합니다."
 }
 ```
 
-`status=ask`일 때만 채우며, 이미 사용자 진술이나 My Info에 있는 값은 RequiredInput으로 만들지 않는다.
+`status=ask`일 때만 채우며, 이미 사용자 진술이나 My Info에 있는 값은 RequiredInput으로 만들지 않는다. My Info에 실제 지급액·가입금액·적용금리가 있으면 해당 사실을 재질문하지 않는다.

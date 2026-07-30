@@ -14,11 +14,12 @@ from .agent.logic_verification import verify_issue_logic
 from .agent.rag_query import build_rag_query
 from .agent.report_composer import DECISION_LABELS, compose_issue_report
 from .agent.decision_gate import apply_decision_gate
+from .agent.question_builder import expected_interest_question
 from .agent.router import build_case_request
 from .facts import missing_facts, resolve_facts
 from .mock_data import MockBankClient
 from .logic_graph import build_logic_graph
-from .mcp_client import FinanceMCPClient
+from .finance_mcp.client import FinanceMCPClient
 from .retrieval import SearchIndex
 from .schemas import (
     AuditEvent,
@@ -53,7 +54,8 @@ app.add_middleware(
 CASE_STORE: dict[str, CaseAnalysis] = {}
 REVIEW_STORE: dict[str, list[ReviewResponse]] = {}
 AUDIT_LOG: list[AuditEvent] = []
-CHUNKS_PATH = ROOT / 'server' / 'chunks.jsonl'
+CHUNKS_PATH = DATA_DIR / "corpus" / "all.jsonl"
+LEGACY_CHUNKS_PATH = ROOT / "server" / "chunks.jsonl"
 DICTIONARY_PATH = DATA_DIR / "dictionary" / "fine_financial_glossary.json"
 _INDEX: SearchIndex | None = None
 _DICTIONARY: list[dict[str, object]] | None = None
@@ -65,7 +67,8 @@ CUSTOMER_DATA_RESOLVER = MockCustomerDataResolver(FINANCE_MCP_CLIENT)
 def get_index() -> SearchIndex:
     global _INDEX
     if _INDEX is None:
-        _INDEX = SearchIndex.from_data_dir(DATA_DIR, chunks_path=CHUNKS_PATH)
+        index_path = CHUNKS_PATH if CHUNKS_PATH.exists() else LEGACY_CHUNKS_PATH
+        _INDEX = SearchIndex.from_data_dir(DATA_DIR, chunks_path=index_path)
     return _INDEX
 
 
@@ -183,7 +186,11 @@ def _analyze_issue(
             missing.append("가상 계약 데이터")
 
     rag_query = build_rag_query(issue, use_llm=use_llm_rag)
-    evidence = get_index().search(rag_query.text, product=issue.product, as_of=request.as_of or date.today())
+    evidence = get_index().search_many(
+        rag_query.variants or [rag_query.text],
+        product=issue.product,
+        as_of=request.as_of or date.today(),
+    )
 
     risk_flags: list[str] = []
     if missing:
@@ -195,10 +202,9 @@ def _analyze_issue(
     if (customer_data is None or customer_data.get("access_granted") is False) and issue.product in {"예금", "적금", "대출"}:
         risk_flags.append("customer_data_unavailable")
 
-    # ponytail: lexical baseline; B's agent layer can replace this with the final policy gate.
     control = "ask" if missing or resolution.conflicts or not evidence else "proceed"
     if "안내 금액" in missing:
-        next_steps = ["예상하신 이자 금액은 얼마인가요?"]
+        next_steps = [expected_interest_question(facts)]
     elif evidence:
         next_steps = ["근거 문서와 가상 계약·거래 사실을 함께 확인하세요."]
     else:

@@ -39,16 +39,18 @@ class MockCustomerDataResolver:
             account["transactions"] = self.client.get_transactions(account["account_id"])
             if account["product_type"] == "loan":
                 account["repayments"] = self.client.get_repayments(account["account_id"])
+        source = self.client.source_ref if hasattr(self.client, "source_ref") else lambda tool: f"/mock/{tool}"
         return {
             "customer": customer,
             "products": products,
             "access_granted": True,
             "accounts": accounts,
             "source_apis": [
-                f"/mock/customers/{customer_id}/products",
-                f"/mock/customers/{customer_id}/deposits",
-                f"/mock/customers/{customer_id}/savings",
-                f"/mock/customers/{customer_id}/loans",
+                source("get_my_profile"),
+                source("get_my_products"),
+                source("get_my_deposits"),
+                source("get_my_savings"),
+                source("get_my_loans"),
             ],
         }
 

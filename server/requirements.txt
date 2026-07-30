@@ -1,6 +1,7 @@
 fastapi>=0.110
 pydantic>=2.0
 pypdf>=5.0
+olefile>=0.47
 uvicorn>=0.30
 google-genai>=1.0
 mcp>=1.0,<2
