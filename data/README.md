@@ -1,48 +1,48 @@
-# RAG 데이터 안내
+# 금융 소비자 보호 데이터
 
-## 현재 보유 데이터
-
-| 경로 | 내용 | 수량 |
-|---|---|---:|
-| `공통규정/` | 금융소비자보호법, 은행법, 은행법 시행령, 자본시장법 | 4 PDF |
-| `예금 상품 설명서/` | 예금·적금 약관 및 상품설명서 | 12 PDF |
-| `펀드 상품 설명서/` | 펀드·ELS 투자설명서 | 10 PDF |
-| `자체제작 민원/single_issue_75.json` | 단일 민원 | 75건 |
-| `자체제작 민원/complex_issue_75.json` | 복합 민원 및 하위 민원 정답 | 75건 |
-| `자체제작 민원/all_150.csv` | 단일·복합 민원 통합본 | 150건 |
-
-## RAG에 넣을 문서와 넣지 않을 데이터
-
-- PDF는 법령·약관·상품설명서 RAG 원문이다.
-- JSON과 CSV는 검색 근거가 아니라 Issue Splitter 평가·회귀 테스트 데이터다.
-- `complex_issue_75.json`의 `ground_truth_subissues`는 분해 평가에 사용한다.
-- 자체 제작 민원 문장을 법령의 근거로 사용하지 않는다.
-
-## 필수 메타데이터
-
-각 chunk는 최소한 다음 정보를 가져야 한다.
-
-```json
-{
-  "doc_id": "unique-id",
-  "chunk_id": "unique-id-page-12",
-  "path": "data/공통규정/example.pdf",
-  "doc_type": "law|terms|product_manual|case",
-  "product": ["공통"],
-  "issue_types": ["설명의무위반"],
-  "source": "official-source",
-  "published_at": null,
-  "effective_from": null,
-  "effective_to": null,
-  "page": 12,
-  "section": "제X조",
-  "text": "..."
-}
+```text
+data/
+├─ regulations/                         # 법령·공통 규정·법령 API 원문
+│  └─ law_api/
+├─ products/                            # 상품 약관·설명서·금리표
+│  ├─ deposit/                          # 예금
+│  ├─ savings/                          # 적금
+│  ├─ loan/                             # 대출
+│  ├─ rates/                            # 지급금리·금리 조견표
+│  ├─ fund/                             # 펀드·ELS
+│  └─ isa/                              # ISA
+├─ cases/                                # 판례·분쟁조정 사례 원문
+├─ complaints/                          # 통합 상담·라벨링 데이터
+│  └─ aihub_25_finance_consulting/
+├─ dictionary/                           # 금융 용어 사전
+├─ exports/                              # 목적별 CSV 조회·검수용 export
+│  ├─ regulations.csv
+│  ├─ products.csv
+│  ├─ cases.csv
+│  └─ glossary.csv
+├─ corpus/                               # 런타임 RAG corpus
+│  ├─ regulations.jsonl
+│  ├─ products.jsonl
+│  ├─ cases.jsonl
+│  ├─ glossary.jsonl
+│  └─ all.jsonl
+└─ evaluation/                           # 민원 테스트셋
 ```
 
-## 주의사항
+## RAG 사용 범위
 
-- 파일명만 보고 현행 법령으로 판단하지 않는다.
-- 계약일·사건일·문서 작성일에 유효한 규정인지 확인한다.
-- 현재 보험 문서와 공식 분쟁조정 사례 원문은 없다.
-- 시행일이 미래인 문서는 해당 시행일 전 사건에 적용하지 않는다.
+- `corpus/regulations.jsonl`, `corpus/products.jsonl`, `corpus/cases.jsonl`이 판단 근거입니다.
+- 규정·상품·판례는 목적별로 분리하되 `corpus/all.jsonl`로 합쳐 서버 검색기가 읽습니다.
+- `complaints/`의 상담 JSON은 Issue Splitter·질문 흐름 개선용이며 RAG 근거로 사용하지 않습니다.
+- `cases/`의 HWP는 `cases/cases.csv`로 추출해 판례 corpus에 포함합니다.
+- `corpus/glossary.jsonl`과 `dictionary/`는 금융 용어를 쉬운 말로 설명하는 용도이며 판단 근거로 확정하지 않습니다.
+- `evaluation/`은 회귀 테스트용입니다.
+
+## 생성·갱신
+
+```powershell
+\.venv\Scripts\python.exe -m server.ingest --data-dir data --output server/chunks.jsonl
+\.venv\Scripts\python.exe -m server.build_corpus --data-dir data --chunks server/chunks.jsonl --output-dir data/corpus
+```
+
+`server/chunks.jsonl`은 원천 PDF·법령 API의 중간 산출물이고, 서버 런타임 검색은 `data/corpus/all.jsonl`을 사용합니다. corpus에는 현재 임베딩을 생성하지 않고 기존 full-text 검색과 선택적 vector 필드를 사용할 수 있게 보관합니다.

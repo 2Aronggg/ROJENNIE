@@ -1,0 +1,29 @@
+{
+  "generated_at": "2026-07-30T14:24:33.115940+00:00",
+  "embedding_status": "not_generated",
+  "retrieval": "full_text_with_optional_vector_score",
+  "corpora": {
+    "regulations": 63610,
+    "products": 846,
+    "cases": 12,
+    "glossary": 538
+  },
+  "documents": {
+    "regulations": 138,
+    "products": 127,
+    "cases": 12,
+    "glossary": 1
+  },
+  "total_chunks": 65006,
+  "authoritative_for_decision": [
+    "regulations",
+    "products",
+    "cases"
+  ],
+  "display_only": [
+    "glossary"
+  ],
+  "excluded": [
+    "complaints"
+  ]
+}

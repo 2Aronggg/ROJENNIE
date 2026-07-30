@@ -1,0 +1,527 @@
+[
+  {
+    "id": "single_001",
+    "type": "single",
+    "product": "예금",
+    "issue_type": "계약해지_지연",
+    "text": "정기예금 계좌를 해지하려는데 영업점에서 시스템 점검 이유로 3일째 처리가 안 되고 있어요."
+  },
+  {
+    "id": "single_002",
+    "type": "single",
+    "product": "예금",
+    "issue_type": "계약해지_지연",
+    "text": "예금 계좌 해지 신청했는데 본인확인 서류 미비 때문에 5일 동안 미뤄지고 있습니다."
+  },
+  {
+    "id": "single_003",
+    "type": "single",
+    "product": "예금",
+    "issue_type": "계약해지_지연",
+    "text": "계좌 해지하러 갔더니 전산 오류라며 오늘 처리를 안 해줬어요. 벌써 3일째예요."
+  },
+  {
+    "id": "single_004",
+    "type": "single",
+    "product": "예금",
+    "issue_type": "금리적용오류",
+    "text": "정기예금 우대금리를 0.3% 받기로 안내받았는데 실제로는 그보다 낮게 적용됐어요."
+  },
+  {
+    "id": "single_005",
+    "type": "single",
+    "product": "예금",
+    "issue_type": "금리적용오류",
+    "text": "예금 가입할 때 1.2% 금리라고 들었는데 만기 때 확인하니 다르게 계산돼 있었어요."
+  },
+  {
+    "id": "single_006",
+    "type": "single",
+    "product": "예금",
+    "issue_type": "금리적용오류",
+    "text": "예금 상품설명서에는 1.5% 우대금리라고 나와 있는데 실제 지급된 이자는 달라요."
+  },
+  {
+    "id": "single_007",
+    "type": "single",
+    "product": "예금",
+    "issue_type": "인출제한",
+    "text": "제 명의 예금 계좌인데 인출이 갑자기 제한돼서 15만원을 못 찾고 있어요."
+  },
+  {
+    "id": "single_008",
+    "type": "single",
+    "product": "예금",
+    "issue_type": "인출제한",
+    "text": "정상 거래 중이던 계좌가 이유 설명도 없이 지급정지돼서 30만원이 묶여 있어요."
+  },
+  {
+    "id": "single_009",
+    "type": "single",
+    "product": "예금",
+    "issue_type": "인출제한",
+    "text": "예금 계좌에서 12만원을 인출하려는데 시스템에서 계속 거부돼요."
+  },
+  {
+    "id": "single_010",
+    "type": "single",
+    "product": "예금",
+    "issue_type": "거래오류",
+    "text": "이번 만기 예금 이자를 계산해보니 약관과 300000원 정도 차이가 나요."
+  },
+  {
+    "id": "single_011",
+    "type": "single",
+    "product": "예금",
+    "issue_type": "거래오류",
+    "text": "예금 거래내역서상 이자 금액이 제가 계산한 것과 200000원 차이가 있어요."
+  },
+  {
+    "id": "single_012",
+    "type": "single",
+    "product": "예금",
+    "issue_type": "거래오류",
+    "text": "정기예금 만기 지급액이 안내받은 금액보다 30000원 적게 들어왔어요."
+  },
+  {
+    "id": "single_013",
+    "type": "single",
+    "product": "예금",
+    "issue_type": "명의도용",
+    "text": "제 명의로 모르는 예금 계좌가 개설된 걸 발견했어요. 신청한 적이 없습니다."
+  },
+  {
+    "id": "single_014",
+    "type": "single",
+    "product": "예금",
+    "issue_type": "명의도용",
+    "text": "저도 모르는 사이에 제 명의 예금 계좌가 만들어져 있었어요."
+  },
+  {
+    "id": "single_015",
+    "type": "single",
+    "product": "예금",
+    "issue_type": "명의도용",
+    "text": "본인인증 없이 제 명의 예금계좌가 개설됐다는 통지를 받았어요."
+  },
+  {
+    "id": "single_016",
+    "type": "single",
+    "product": "적금",
+    "issue_type": "만기지급거절",
+    "text": "적금 만기가 5일 지났는데 아직 지급을 안 해주고 있어요."
+  },
+  {
+    "id": "single_017",
+    "type": "single",
+    "product": "적금",
+    "issue_type": "만기지급거절",
+    "text": "적금 만기일이 지났는데도 지급 처리가 5일째 안 되고 있습니다."
+  },
+  {
+    "id": "single_018",
+    "type": "single",
+    "product": "적금",
+    "issue_type": "만기지급거절",
+    "text": "만기된 적금을 찾으러 갔는데 본점 승인 대기 때문에 지급을 미루고 있어요."
+  },
+  {
+    "id": "single_019",
+    "type": "single",
+    "product": "적금",
+    "issue_type": "우대금리설명부족",
+    "text": "적금 가입할 때 우대금리 0.8% 조건을 제대로 설명 안 해줬어요."
+  },
+  {
+    "id": "single_020",
+    "type": "single",
+    "product": "적금",
+    "issue_type": "우대금리설명부족",
+    "text": "우대금리 1.2%를 받으려면 어떤 조건이 필요한지 안내를 못 받았어요."
+  },
+  {
+    "id": "single_021",
+    "type": "single",
+    "product": "적금",
+    "issue_type": "우대금리설명부족",
+    "text": "적금 우대조건 0.5%가 있다는 걸 만기 때가 돼서야 알았어요."
+  },
+  {
+    "id": "single_022",
+    "type": "single",
+    "product": "적금",
+    "issue_type": "중도해지위약금",
+    "text": "적금을 중도해지했는데 위약금이 예상보다 120000원 더 나왔어요."
+  },
+  {
+    "id": "single_023",
+    "type": "single",
+    "product": "적금",
+    "issue_type": "중도해지위약금",
+    "text": "급하게 적금을 해지했더니 계약서에 없던 수수료가 30000원 붙었어요."
+  },
+  {
+    "id": "single_024",
+    "type": "single",
+    "product": "적금",
+    "issue_type": "중도해지위약금",
+    "text": "중도해지 시 위약금 50000원이 청구됐는데 계약 내용과 달라요."
+  },
+  {
+    "id": "single_025",
+    "type": "single",
+    "product": "적금",
+    "issue_type": "자동이체누락안내",
+    "text": "자동이체가 14일 실패해서 우대금리가 빠졌는데 사전 안내를 못 받았어요."
+  },
+  {
+    "id": "single_026",
+    "type": "single",
+    "product": "적금",
+    "issue_type": "자동이체누락안내",
+    "text": "이체 실패로 우대조건이 깨졌다는 걸 만기 때가 돼서야 알게 됐어요."
+  },
+  {
+    "id": "single_027",
+    "type": "single",
+    "product": "적금",
+    "issue_type": "자동이체누락안내",
+    "text": "자동이체 실패 안내를 못 받아서 우대금리 0.5%를 놓쳤어요."
+  },
+  {
+    "id": "single_028",
+    "type": "single",
+    "product": "적금",
+    "issue_type": "민원처리지연",
+    "text": "적금 관련 문의를 넣었는데 14일째 답변이 없어요."
+  },
+  {
+    "id": "single_029",
+    "type": "single",
+    "product": "적금",
+    "issue_type": "민원처리지연",
+    "text": "적금 우대금리 문의했는데 콜센터에서 계속 확인 중이라고만 해요, 10일째요."
+  },
+  {
+    "id": "single_030",
+    "type": "single",
+    "product": "적금",
+    "issue_type": "민원처리지연",
+    "text": "적금 관련 민원을 제기했는데 처리 상태를 알 수가 없어요, 14일 지났어요."
+  },
+  {
+    "id": "single_031",
+    "type": "single",
+    "product": "대출",
+    "issue_type": "금리인상미통지",
+    "text": "대출 금리가 0.5%p 올랐는데 사전 안내 문자나 메일을 받은 적이 없어요."
+  },
+  {
+    "id": "single_032",
+    "type": "single",
+    "product": "대출",
+    "issue_type": "금리인상미통지",
+    "text": "변동금리 대출인데 0.3%p 인상 안내를 사전에 못 받았어요."
+  },
+  {
+    "id": "single_033",
+    "type": "single",
+    "product": "대출",
+    "issue_type": "금리인상미통지",
+    "text": "대출 금리가 갑자기 1.0%p 오른 걸 이번 달 청구서 보고 알았어요."
+  },
+  {
+    "id": "single_034",
+    "type": "single",
+    "product": "대출",
+    "issue_type": "설명의무위반",
+    "text": "대출 상품 설명을 제대로 못 듣고 계약서에 서명부터 했어요."
+  },
+  {
+    "id": "single_035",
+    "type": "single",
+    "product": "대출",
+    "issue_type": "설명의무위반",
+    "text": "대출 조건에 대한 설명 없이 빠르게 서류만 작성하고 끝났어요."
+  },
+  {
+    "id": "single_036",
+    "type": "single",
+    "product": "대출",
+    "issue_type": "설명의무위반",
+    "text": "대출 금리 산정 기준을 설명받은 적이 없어요."
+  },
+  {
+    "id": "single_037",
+    "type": "single",
+    "product": "대출",
+    "issue_type": "연체이자과다",
+    "text": "며칠 연체했다고 연체이자가 150000원이나 붙었어요, 너무 과도한 것 같아요."
+  },
+  {
+    "id": "single_038",
+    "type": "single",
+    "product": "대출",
+    "issue_type": "연체이자과다",
+    "text": "연체 5일 만에 이자가 50000원 넘게 부과됐어요."
+  },
+  {
+    "id": "single_039",
+    "type": "single",
+    "product": "대출",
+    "issue_type": "연체이자과다",
+    "text": "연체이자 계산이 약관과 다르게 120000원 더 붙은 것 같아요."
+  },
+  {
+    "id": "single_040",
+    "type": "single",
+    "product": "대출",
+    "issue_type": "중도상환수수료",
+    "text": "중도상환수수료가 계약 당시 안내받은 것보다 80000원 더 청구됐어요."
+  },
+  {
+    "id": "single_041",
+    "type": "single",
+    "product": "대출",
+    "issue_type": "중도상환수수료",
+    "text": "대출을 조기상환했는데 수수료가 200000원 예상보다 많이 나왔어요."
+  },
+  {
+    "id": "single_042",
+    "type": "single",
+    "product": "대출",
+    "issue_type": "중도상환수수료",
+    "text": "중도상환수수료 산정 기준이 계약서 내용과 200000원 정도 차이가 나요."
+  },
+  {
+    "id": "single_043",
+    "type": "single",
+    "product": "대출",
+    "issue_type": "채권추심과다",
+    "text": "연체된 지 며칠 안 됐는데 추심 연락이 하루에 여러 번 와요."
+  },
+  {
+    "id": "single_044",
+    "type": "single",
+    "product": "대출",
+    "issue_type": "채권추심과다",
+    "text": "대출 연체 관련 추심 전화가 너무 잦고 부담스러워요."
+  },
+  {
+    "id": "single_045",
+    "type": "single",
+    "product": "대출",
+    "issue_type": "채권추심과다",
+    "text": "연체 초기인데도 채권추심 연락 방식이 지나친 것 같아요."
+  },
+  {
+    "id": "single_046",
+    "type": "single",
+    "product": "펀드",
+    "issue_type": "위험설명부족",
+    "text": "펀드 가입할 때 원금손실 위험에 대한 설명을 제대로 못 들었어요."
+  },
+  {
+    "id": "single_047",
+    "type": "single",
+    "product": "펀드",
+    "issue_type": "위험설명부족",
+    "text": "펀드 위험등급이 높다는 걸 가입 후에야 알게 됐어요."
+  },
+  {
+    "id": "single_048",
+    "type": "single",
+    "product": "펀드",
+    "issue_type": "위험설명부족",
+    "text": "펀드 상품의 손실 가능성을 충분히 설명받지 못하고 가입했어요."
+  },
+  {
+    "id": "single_049",
+    "type": "single",
+    "product": "펀드",
+    "issue_type": "환매지연",
+    "text": "펀드 환매를 신청했는데 10일째 처리가 안 되고 있어요."
+  },
+  {
+    "id": "single_050",
+    "type": "single",
+    "product": "펀드",
+    "issue_type": "환매지연",
+    "text": "환매 신청 후 예상보다 14일 더 지연되고 있습니다."
+  },
+  {
+    "id": "single_051",
+    "type": "single",
+    "product": "펀드",
+    "issue_type": "환매지연",
+    "text": "펀드 환매금이 안내받은 날짜보다 5일 늦게 들어왔어요."
+  },
+  {
+    "id": "single_052",
+    "type": "single",
+    "product": "펀드",
+    "issue_type": "수수료미고지",
+    "text": "펀드에서 설명받지 못한 수수료 120000원이 빠져나갔어요."
+  },
+  {
+    "id": "single_053",
+    "type": "single",
+    "product": "펀드",
+    "issue_type": "수수료미고지",
+    "text": "가입 시 안내받지 못한 보수가 50000원 차감돼 있었어요."
+  },
+  {
+    "id": "single_054",
+    "type": "single",
+    "product": "펀드",
+    "issue_type": "수수료미고지",
+    "text": "펀드 운용보수 외에 추가로 30000원이 빠져나간 이유를 모르겠어요."
+  },
+  {
+    "id": "single_055",
+    "type": "single",
+    "product": "펀드",
+    "issue_type": "해지절차복잡",
+    "text": "펀드를 해지하려는데 절차가 너무 복잡하고 안내가 부족해요."
+  },
+  {
+    "id": "single_056",
+    "type": "single",
+    "product": "펀드",
+    "issue_type": "해지절차복잡",
+    "text": "펀드 해지 신청 방법을 문의했는데 명확한 답을 못 받았어요."
+  },
+  {
+    "id": "single_057",
+    "type": "single",
+    "product": "펀드",
+    "issue_type": "해지절차복잡",
+    "text": "펀드 계좌 해지를 요청했는데 처리 절차 안내가 불충분해요."
+  },
+  {
+    "id": "single_058",
+    "type": "single",
+    "product": "펀드",
+    "issue_type": "손실민원부실",
+    "text": "펀드 손실 관련해서 문의했는데 답변이 형식적이고 부실해요."
+  },
+  {
+    "id": "single_059",
+    "type": "single",
+    "product": "펀드",
+    "issue_type": "손실민원부실",
+    "text": "펀드 손실 원인을 물었는데 명확한 설명을 못 들었어요."
+  },
+  {
+    "id": "single_060",
+    "type": "single",
+    "product": "펀드",
+    "issue_type": "손실민원부실",
+    "text": "펀드 손실에 대한 민원 답변이 원론적인 얘기뿐이었어요."
+  },
+  {
+    "id": "single_061",
+    "type": "single",
+    "product": "ELS",
+    "issue_type": "원금손실설명부족",
+    "text": "ELS 가입할 때 원금손실 가능성에 대한 설명을 제대로 못 들었어요."
+  },
+  {
+    "id": "single_062",
+    "type": "single",
+    "product": "ELS",
+    "issue_type": "원금손실설명부족",
+    "text": "ELS가 예금처럼 안전하다고 들었는데 실제론 원금손실 위험이 컸어요."
+  },
+  {
+    "id": "single_063",
+    "type": "single",
+    "product": "ELS",
+    "issue_type": "원금손실설명부족",
+    "text": "ELS 기초자산 하락 시 손실 구조를 충분히 설명받지 못했어요."
+  },
+  {
+    "id": "single_064",
+    "type": "single",
+    "product": "ELS",
+    "issue_type": "상환금과소지급",
+    "text": "ELS 만기 상환금이 예상보다 12만원 적게 나왔어요."
+  },
+  {
+    "id": "single_065",
+    "type": "single",
+    "product": "ELS",
+    "issue_type": "상환금과소지급",
+    "text": "ELS 조기상환 조건을 충족한 줄 알았는데 상환금이 5만원 부족해요."
+  },
+  {
+    "id": "single_066",
+    "type": "single",
+    "product": "ELS",
+    "issue_type": "상환금과소지급",
+    "text": "ELS 만기 정산 금액이 안내받은 것과 3만원 차이가 나요."
+  },
+  {
+    "id": "single_067",
+    "type": "single",
+    "product": "ELS",
+    "issue_type": "배상비율불만",
+    "text": "ELS 배상 비율이 0.5%라고 안내받았는데 산정 기준을 이해할 수가 없어요."
+  },
+  {
+    "id": "single_068",
+    "type": "single",
+    "product": "ELS",
+    "issue_type": "배상비율불만",
+    "text": "배상비율 0.5%가 어떻게 계산된 건지 설명을 못 들었어요."
+  },
+  {
+    "id": "single_069",
+    "type": "single",
+    "product": "ELS",
+    "issue_type": "배상비율불만",
+    "text": "ELS 배상 협상에서 제시된 1.0%가 부당하게 낮다고 생각해요."
+  },
+  {
+    "id": "single_070",
+    "type": "single",
+    "product": "ELS",
+    "issue_type": "중도해지손실",
+    "text": "ELS를 중도 해지하려는데 손실이 50만원이나 발생한다고 해요."
+  },
+  {
+    "id": "single_071",
+    "type": "single",
+    "product": "ELS",
+    "issue_type": "중도해지손실",
+    "text": "ELS 중도상환을 요청했더니 50만원 손실을 감수해야 한다고 합니다."
+  },
+  {
+    "id": "single_072",
+    "type": "single",
+    "product": "ELS",
+    "issue_type": "중도해지손실",
+    "text": "ELS 조기해지 시 손실 규모 12만원에 대한 설명이 부족했어요."
+  },
+  {
+    "id": "single_073",
+    "type": "single",
+    "product": "ELS",
+    "issue_type": "분쟁조정안내부족",
+    "text": "ELS 관련 분쟁조정 신청 절차를 안내받지 못했어요."
+  },
+  {
+    "id": "single_074",
+    "type": "single",
+    "product": "ELS",
+    "issue_type": "분쟁조정안내부족",
+    "text": "ELS 손실 관련해서 금감원 분쟁조정을 어떻게 신청하는지 몰라요."
+  },
+  {
+    "id": "single_075",
+    "type": "single",
+    "product": "ELS",
+    "issue_type": "분쟁조정안내부족",
+    "text": "ELS 민원을 제기했는데 분쟁조정 제도에 대한 안내가 없었어요."
+  }
+]
