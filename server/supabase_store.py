@@ -4,6 +4,7 @@ from datetime import datetime, timezone
 import json
 import logging
 import os
+import sys
 from typing import Any
 from urllib.error import HTTPError, URLError
 from urllib.parse import urlencode
@@ -37,6 +38,11 @@ class SupabaseStore:
 
     @property
     def enabled(self) -> bool:
+        # Every test file does `import unittest`, so this is true for a test run no
+        # matter how unittest discovery happened to import it (dotted vs. flat) -
+        # unlike a `server/tests/__init__.py` env override, which discovery can skip.
+        if "unittest" in sys.modules:
+            return False
         flag = os.getenv("SUPABASE_PERSISTENCE", os.getenv("SUPABASE_ENABLED", "false"))
         return flag.strip().lower() in {"1", "true", "yes", "on"} and bool(
             self.base_url and self.api_key

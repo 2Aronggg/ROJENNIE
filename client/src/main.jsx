@@ -17,7 +17,7 @@ import "./style.css";
 
 const API_BASE = import.meta.env.VITE_API_BASE || window.API_BASE || "http://localhost:8000";
 const DEMO_ONLY = new URLSearchParams(window.location.search).get("demo") === "1";
-const CONTROL_LABEL = {proceed: "진행 중", ask: "리포트 생성됨", amend: "보완 필요", hold: "검토 대기"};
+const CONTROL_LABEL = {proceed: "처리 완료", ask: "확인 필요", amend: "보완 필요", hold: "검토 대기"};
 const DECISION_LABEL = {proceed: "진행", ask: "추가 확인 필요", amend: "보완 필요", hold: "검토 대기"};
 const NODE_LABEL = {user_answer: "사용자 진술", verified_fact: "내 금융정보", decision: "사용자 선택", derived: "계산 결과", evidence: "근거 자료"};
 
