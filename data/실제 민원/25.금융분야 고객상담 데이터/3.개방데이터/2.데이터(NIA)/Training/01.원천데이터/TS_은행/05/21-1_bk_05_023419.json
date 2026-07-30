@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_023419",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1272,
+        "consulting_content": "고객은 신규 계좌가 한도 계좌로 표시된 이유와 한도 금액, 출금, 이체 한도, 대출 가능 여부, 카드 입출금 기능 및 일반 체크카드와 차이점을 문의하였고 상담사는 한도 계좌는 거래 금액이 제한되는 계좌이며 각 매체별 일일 한도와 자동이체 가능함을 안내하고, 대출은 별도 담당자와 상담 필요, 일반 계좌 전환 시 신분증, 소득 증빙 서류 제출 후 2~3일 심사, 한도 해제는 심사 완료 즉시 적용된다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

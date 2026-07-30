@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_031879",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 890,
+        "consulting_content": "고객은 자동이체가 안 되는 문제를 문의하고 계좌 번호와 비밀번호를 제공하였고 상담사는 자동이체가 해당 날짜에 해지된 것을 확인하고 타 금융기관으로 이전된 사실을 안내한 뒤 모바일, 인터넷 뱅킹을 이용한 재설정 방법을 설명하고 영상, 매뉴얼 링크를 문자로 발송하겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

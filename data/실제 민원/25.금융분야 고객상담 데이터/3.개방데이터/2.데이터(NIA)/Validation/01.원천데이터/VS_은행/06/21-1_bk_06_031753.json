@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_031753",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 971,
+        "consulting_content": "고객은 대출 연체 3회로 이자 납입 및 해지 통보를 요청했으며 연장과 이자율, 상환 일정 변경 가능 여부를 문의하였고, 상담사는 연체 상황을 확인하고 이자, 원금 연체 차이와 연장 승인 절차를 안내하며 신용 상황에 따른 이자율 조정 및 상환 일정 조정을 별도 안내하겠다고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

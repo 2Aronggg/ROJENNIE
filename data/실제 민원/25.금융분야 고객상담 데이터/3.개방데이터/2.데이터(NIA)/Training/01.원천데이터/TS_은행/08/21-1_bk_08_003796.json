@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_003796",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1012,
+        "consulting_content": "고객은 마이너스 통장 연장을 문의했으나 상담사는 만기 경과 시 연장이 불가하고 해지를 안내했으며, 스마트폰 사용이 어려워 지점 방문과 위임장 필요성을 설명하고, 위임장 양식을 홈페이지, 문자로 제공한다는 안내를 하였다. 또한 재신청 절차와 필요 서류를 알려 주었다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

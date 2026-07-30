@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_027780",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 2107,
+        "consulting_content": "고객은 대출 연장을 신청하고 필요한 서류와 절차를 문의했으며, 상담사는 연장 가능 여부를 확인하고 비대면 및 영업점 방문 제출 방법, 필요 서류와 연장 금리, 상환 일정은 신용 등급, 잔액에 따라 개별 안내된다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

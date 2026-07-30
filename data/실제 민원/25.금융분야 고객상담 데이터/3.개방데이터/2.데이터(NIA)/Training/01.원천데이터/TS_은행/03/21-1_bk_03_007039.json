@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_007039",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1057,
+        "consulting_content": "고객은 자동이체 등록 문자 수신 후 해지를 원하였다. 상담원은 본인 확인 절차 후 자동이체 해지는 전화 상담이 불가하고 모바일 앱, 인터넷뱅킹에서 직접 처리해야 함을 안내하였다. 앱에서 ‘이체, 자동이체’ 메뉴 진입 후 해당 건 선택, 해지 버튼을 누르면 해지가 완료되고 잔액은 계좌에 그대로 남아 있음을 설명하였다. 잔액 조회와 앱 초기 이용 방법도 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

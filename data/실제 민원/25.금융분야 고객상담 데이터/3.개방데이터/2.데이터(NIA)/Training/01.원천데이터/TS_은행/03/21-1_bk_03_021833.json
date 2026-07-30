@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_021833",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1285,
+        "consulting_content": "고객은 기존 보험료 자동이체 재등록을 원하고 모바일로는 신청이 안 된다고 문의했으며, 필요한 서류와 절차를 물었고 상담사는 영업점 방문 또는 기관 전화 등록만 가능하고 신분증, 통장, 납부자 번호 등 서류가 필요하다고 안내했으며, 앱으로는 처리할 수 없음을 알렸다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

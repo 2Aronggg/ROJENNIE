@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_030304",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1597,
+        "consulting_content": "고객은 ●월 ●●●일에 발생한 송금 내역이 타행 송금인지 직접 이체인지 확인을 요청했고 상담사는 거래를 조회해 스마트폰 뱅킹으로 직접 이체된 것임을 안내하였다. 고객은 메모와 거래 시각을 확인하고 추가 문의 없이 상황을 파악했으며, 이후 거래 알림 설정 방법과 일일 이체 한도 200만원으로 변경 요청을 하였고 상담사는 앱 설정 안내와 한도 변경을 접수해 문자로 안내하겠다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

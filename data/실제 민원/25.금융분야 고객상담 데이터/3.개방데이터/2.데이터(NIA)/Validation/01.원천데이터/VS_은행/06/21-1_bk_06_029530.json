@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_029530",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 995,
+        "consulting_content": "고객은 비상금 대출 이자 산정과 최근 입금액 자동 상환 여부를 문의하였고 상담사는 계좌와 대출 정보를 조회하여 이자는 월별 일수 차이로 변동되고 입금액이 일부만 적용돼 이자가 늘어났음을 안내하였으며 상환 계획 변경 옵션은 별도 안내 후 추가 문의 없음을 확인하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

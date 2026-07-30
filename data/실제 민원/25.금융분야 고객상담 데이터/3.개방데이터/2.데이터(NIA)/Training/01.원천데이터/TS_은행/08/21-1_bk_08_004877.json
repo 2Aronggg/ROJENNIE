@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_004877",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1084,
+        "consulting_content": "고객은 마이너스 통장 대출 연장 절차와 필요 서류, 앱 사용 방법, 조기 상환 수수료 및 연장, 상환 비교 시뮬레이션을 요청했으며, 상담사는 대출 만기, 잔액 확인 후 비대면 앱으로 연장 신청 가능하고 사진 업로드 방법을 안내하며, 금리 변동과 수수료 정책을 설명하고, 시뮬레이션 결과를 이메일로 전송하겠다고 응답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

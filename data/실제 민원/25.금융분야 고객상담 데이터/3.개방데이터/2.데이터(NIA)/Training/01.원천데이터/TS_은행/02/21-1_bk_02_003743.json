@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_003743",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1158,
+        "consulting_content": "고객은 중계 서비스 신청을 위해 은행 계좌, 번호, 성명, 연락처 등 정보를 제공하고 거래 기간, 금액을 확인했으며 서류를 문의했으며, 상담사는 정보를 확인하고 신분증 사본, 거래내역서 제출을 안내하며, 중계 요청을 진행하고 처리 소요 1~2일을 안내하고 담당 부서로 연결하겠다고 말했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_026427",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1535,
+        "consulting_content": "고객은 자동 이체 해지를 요청하고 계좌, 생년월일, 비밀번호 등 본인 확인 정보를 제공하였고 상담사는 에이알에스 연결, 정보 확인 후 자동 이체 금액을 확인하고, 전화 해지는 불가하므로 모바일 앱 경로를 문자로 보내고, 앱 설치, 로그인 후 해지하거나 영업점 방문을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

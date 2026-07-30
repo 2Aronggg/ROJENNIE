@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_023550",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 692,
+        "consulting_content": "고객은 대출금 납입을 위해 가상계좌 발급을 요청하고 문자 발송을 선택했으며 입금 기한과 조기 상환 수수료를 문의하였고 상담사는 금액을 안내하고 가상계좌를 SMS로 발송했으며, 입금 기한은 영업 종료 전까지이며 연체 위험을 알리고, 조기 상환 수수료는 원금의 1% 이하임을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

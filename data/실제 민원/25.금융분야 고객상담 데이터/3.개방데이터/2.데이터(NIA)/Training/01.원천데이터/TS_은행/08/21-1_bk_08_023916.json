@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_023916",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 794,
+        "consulting_content": "고객은 전세자금 대출 연장 시 배우자 인증 절차와 금리, 상환 일정 변동을 문의했고 서류 제출 기한을 물었으며, 상담사는 서류 접수 후 검토 완료 시 비대면 인증 URL을 발송하고 인증 유효기간을 안내하며, 금리는 기존과 동일하고 상환 일정은 재조정되지만 이자 총액이 증가할 수 있다고 설명하고, 서류는 가능한 빨리 제출하면 최대 3영업일 내에 인증 URL을 받을 수 있다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_022226",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1159,
+        "consulting_content": "고객은 대출 연장을 온라인으로 신청하고 주소 입력이 필요함을 알렸고 상담사는 주소 입력을 안내하였다. 고객은 이자율 변동 여부를 물었고 상담사는 사유 없으면 기존 금리 유지된다고 답변하였다. 고객은 연장 처리 소요 시간을 물었고 상담사는 영업일 1~2일 내 처리되고 문자로 결과를 안내한다는 정보를 제공하였다. 고객은 휴대폰 번호 확인을 요청했으며 상담사는 번호가 그대로이며 필요 시 변경 가능하다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

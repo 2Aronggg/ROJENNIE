@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_021187",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 751,
+        "consulting_content": "고객은 마이너스 통장 연장 여부와 차량 금액 입금 상황을 확인하고자 연락했으며, 상담사는 입금액과 연장 가능성을 시스템에서 확인 중이라고 안내하고, 계좌번호, 비밀번호 등 정보를 재입력하도록 요청한 뒤 연결 오류를 점검하고 로그 검토 후 결과를 전화로 알려주겠다고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

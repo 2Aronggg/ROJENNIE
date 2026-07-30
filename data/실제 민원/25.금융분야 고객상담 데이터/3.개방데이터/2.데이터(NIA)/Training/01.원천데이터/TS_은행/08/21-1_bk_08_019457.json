@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_019457",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 756,
+        "consulting_content": "고객은 전세 대출 만기 후 처리 방법을 문의했고 상담사는 임대인이 지정 계좌에 상환하면 지점이 처리하고 차액을 고객에게 입금한다며, 연장 시 필요 서류와 제출 방법을 안내하고, 금리는 연 3.5%로 동일 적용되며 조기 상환 위약금은 남은 원금의 1%라고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

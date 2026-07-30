@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_029416",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1482,
+        "consulting_content": "고객은 대출 연장을 위해 모바일 앱으로 신청했으며 문자 미수신을 문의하였고 상담사는 신청이 접수된 것을 확인하고 처리에 2~3시간 소요, 2시간 이내 결과를 문자, 전화로 안내하겠다고 약속했으며 연장 기간은 최대 180일, 수수료는 연장 금액의 1%임을 설명하고, 기존 신청이 완료되지 않을 경우 취소 후 재신청이 필요함을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

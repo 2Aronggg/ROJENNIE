@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_003790",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 904,
+        "consulting_content": "고객은 옛날 통합 전 통장을 조회하고 잔액 확인을 원해 계좌 번호를 제공했으며, 상담사는 시스템 확인 결과 계좌가 해지, 휴면, 이관 상태라 확인이 안 된다고 안내하고, 휴면 계좌 복구를 위해 신분증을 지참해 영업점을 방문하도록, 필요 시 위임장 제출도 가능하다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

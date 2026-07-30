@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_007296",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 930,
+        "consulting_content": "고객은 최근 계좌에서 발생한 미확인 출금 내역의 목적지를 문의하였다. 상담원은 계좌번호, 본인인증, 비밀번호 확인 절차를 진행하였다. 출금이 청약 주택청약저축 자동이체에 의한 것임을 확인하였다. 고객에게 다른 자동이체는 없으며 최근 비밀번호 변경 사실을 확인하였다. 보안 강화를 위해 스마트폰 인증을 설정하고 인증을 완료하였다. 로그인 기록에 이상 징후가 없음을 안내하였다. 최종적으로 출금 건은 정상 자동이체로 판단되어"
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

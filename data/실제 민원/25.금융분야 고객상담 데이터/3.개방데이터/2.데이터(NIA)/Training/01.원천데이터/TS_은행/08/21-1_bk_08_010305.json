@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_010305",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 890,
+        "consulting_content": "고객은 소상공인 대출 연장을 문의하고 인증 번호 입력을 시도했으며 연장 조건, 필요 서류, 금리, 상환 방식, 이번 달 상환액을 물었고 상담사는 인증을 완료하고 연장은 남은 원리금, 신용 등급에 따라 소득 증빙, 사업자 등록증이 필요하고 변동 금리, 자동 이체로 상환되며 상세 금액은 인터넷뱅킹에서 확인 가능하고 연체 방지를 위해 자동 이체 설정 확인과 상담을 권고하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

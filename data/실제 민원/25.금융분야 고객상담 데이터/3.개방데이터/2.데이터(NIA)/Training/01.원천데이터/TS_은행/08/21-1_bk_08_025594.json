@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_025594",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1086,
+        "consulting_content": "고객은 대출 연장 신청과 모바일, 지점 이용 가능 여부, 필요한 서류, 수수료, 이자 변동을 문의하였고 상담사는 연장은 모바일 앱 또는 지점 방문으로 가능하고 서류를 문자로 발송, 이자율은 기존과 동일, 수수료는 없으며 전자서명 후 1~2영업일 내 처리된다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

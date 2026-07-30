@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_021544",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1046,
+        "consulting_content": "고객은 전세자금 대출 연장을 원한다며 연장 절차와 서류, 이자율을 문의하였고 상담사는 연장 안내 문자를 사전 발송하고 만기 전 지점 방문, 서류 제출을 안내하며, 연장 시 기존 이자율이 유지된다고 설명하고 필요한 서류와 추가 요청 가능성을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

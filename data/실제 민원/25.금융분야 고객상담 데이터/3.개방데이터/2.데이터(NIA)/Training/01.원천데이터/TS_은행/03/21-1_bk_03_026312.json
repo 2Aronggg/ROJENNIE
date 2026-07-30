@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_026312",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1667,
+        "consulting_content": "고객은 자동이체 금액이 부족해 입금을 못한 상황을 설명하고, 계좌 정보 확인을 위해 본인 인증을 진행하였고, 상담사는 계좌 비밀번호 등 인증을 요청한 뒤 잔액 부족을 확인하고, 연결된 계좌에 입금하면 지정일에 자동이체가 처리된다고 안내했으며, 추후 일정 변경, 취소와 알림 설정 방법, 연체료 부과 시점을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

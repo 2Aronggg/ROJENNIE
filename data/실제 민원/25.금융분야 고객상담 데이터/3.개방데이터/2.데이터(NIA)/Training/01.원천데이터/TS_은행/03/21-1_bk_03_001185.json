@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_001185",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1378,
+        "consulting_content": "고객은 타행 자동이체를 ★★은행 계좌로 일괄 변경하고 싶다고 요청하였고 상담사는 전화로는 처리 불가하므로 인터넷뱅킹, 모바일 앱에서 자동이체 관리 화면으로 이동해 해지, 신규 등록 방법과 인증 절차를 안내하였으며, 알림 설정까지 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

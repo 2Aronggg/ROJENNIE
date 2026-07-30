@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_024911",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1462,
+        "consulting_content": "고객은 거래내역과 금액 불일치를 확인하고자 본인 확인 절차)와 계좌 정보를 제공하였고 상담사는 시스템 조회를 진행해 해당 일자 이체 내역과 금액을 안내하고, 가상계좌 입금 사실을 설명하며 상세 번호는 보안상 제공하지 못한다는 안내를 하였으며 추가 문의가 없음을 확인하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

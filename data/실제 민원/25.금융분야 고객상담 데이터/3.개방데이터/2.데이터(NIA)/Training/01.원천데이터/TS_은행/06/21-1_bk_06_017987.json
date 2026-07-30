@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_017987",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1215,
+        "consulting_content": "고객은 OTP 잔금 대출 조회와 마이너스 대출 사용 가능 금액을 문의했으며, 계좌 번호와 비밀번호 등 인증 절차를 진행하기 위해 정보를 제공하였고, 상담사는 마이너스 통장 연동 상품임을 설명하고, 계좌 인증 방법, 모바일 캡처, 비밀번호 입력, OTP 입력 절차를 안내하며 현재 대출 잔액 및 지급 가능 잔액을 알려주고, 통장 미보유 시 발급 방법을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

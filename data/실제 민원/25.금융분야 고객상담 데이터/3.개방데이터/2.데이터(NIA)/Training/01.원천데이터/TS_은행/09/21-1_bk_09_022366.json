@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_022366",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1272,
+        "consulting_content": "고객은 특정 외화 환전을 원하고 금액과 사용 목적을 알려주었으며, 해당 통화 보유 여부와 환율, 수수료, 가까운 지점 위치 및 필요 서류를 문의하였고 상담사는 실시간 환율 안내와 수수료 설명을 제공하고, 요청 통화가 없는 지점임을 알려주어 대체 지점 및 영업시간, 교통, 주차 정보를 안내하며, 방문 시 신분증 사본과 환전 금액을 지참하도록 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

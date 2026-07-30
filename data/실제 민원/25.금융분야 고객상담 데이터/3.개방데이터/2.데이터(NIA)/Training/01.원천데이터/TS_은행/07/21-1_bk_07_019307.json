@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_019307",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1059,
+        "consulting_content": "고객은 우대 금리 실적 충족 여부와 금리 인하 시점을 문의하였고 상담사는 계좌 확인 후 실적이 충족돼 다음 영업일부터 새로운 금리가 적용되며 모바일 뱅킹에서 확인 가능하고, 연말 포인트 적립, 무이자 할부 등 추가 혜택도 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

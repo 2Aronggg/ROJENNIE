@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_002213",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1399,
+        "consulting_content": "고객은 기존 은행에서 받던 입출금을 ★★은행으로 옮기고 자동이체를 변경하고 싶어했다. 상담사는 연금은 기관에서 직접 지급되며 자동이체만 은행에서 변경하면 된다고 안내하고, 온라인 또는 영업점 방문을 통한 절차, 필요 서류, 비용 및 처리 시간을 설명했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

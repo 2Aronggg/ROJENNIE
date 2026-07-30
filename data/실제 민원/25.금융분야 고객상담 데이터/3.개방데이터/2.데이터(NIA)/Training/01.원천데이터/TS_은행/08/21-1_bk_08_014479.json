@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_014479",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1528,
+        "consulting_content": "고객은 신용 대출 연장을 시도했으나 화면 오류로 진행이 멈추었다고 하였고 상담사는 오류 확인 후 계좌, 비밀번호 인증을 요청하고 연장 승인 금액, 필요 상환액, 한도를 안내하여 고객은 이를 확인, 동의하였다.●●●●●●●●●●●●"
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

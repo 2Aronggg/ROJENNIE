@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_000078",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1337,
+        "consulting_content": "고객은 은행 영업점 방문 전 한도 설정 방법과 필요한 서류에 대해 문의하고, 전화로도 한도 설정 완료 확인이 되는지, 제출할 서류에 대해 대체 서류가 있는지 문의하였다. 상담사는 온라인 뱅킹이나 모바일 앱을 통한 한도 설정, 온라인과 팩스로 서류 제출, 전화상담을 통한 한도 설정 진행 상황의 확인, 필요 서류에 대한 대체 서류, 영업점 방문 없이 절차를 완료하고 통보 받을 수 있다는 점을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

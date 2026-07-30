@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_003223",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 2118,
+        "consulting_content": "고객은 마이너스 통장 대출 연장 신청 현황과 절차를 확인하고 약정서 작성 링크를 요청했으며, 서류 미제출 및 결제 오류로 진행이 지연되고 있음을 알렸다. 상담사는 현재 연장 신청 중이며 고객 확인서, 약정서 제출이 필요함을 안내하고, 문자로 링크를 발송해 작성 후 전송하면 심사가 진행되어 1~2일 내 결과를 문자로 알려드리겠다고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

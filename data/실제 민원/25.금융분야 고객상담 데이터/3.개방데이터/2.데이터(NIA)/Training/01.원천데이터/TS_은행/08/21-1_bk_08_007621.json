@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_007621",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1235,
+        "consulting_content": "고객은 현재 이용 중인 사업자 대출의 연장을 문의하였다. 상담원은 연장 심사는 만기 전 서류 제출이 필요하며, 사업자 등록증, 매출증명서, 기존 계약서 사본을 모바일 앱이나 이메일로 전송하도록 안내하였다. 서류를 오늘 접수하면 내일 오전에 결과를 알려줄 수 있도록 노력한다는 점을 강조하였다. 연장 시 현재 금리는 유지되지만 신용도, 시장 상황에 따라 변동 가능하다고 설명하였다. 또한 운전자금, 설비자금 등 다른 사업자 대출 상품이 존재함을 알려주었다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

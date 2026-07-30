@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_019458",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 577,
+        "consulting_content": "고객은 에너지 생활비 지원금의 종합소득세 신고 방법과 기한, 필요 서류, 거래내역 확인 방법을 문의하였고 상담사는 해당 금액은 사업소득이며 거래내역을 인터넷뱅킹, 모바일 앱에서 PDF로 발급받아 세무대리인에게 전달하고, 신고 기한은 다음 해 5월 말, 필요 서류는 지급 확인서, 거래내역 명세서, 기존 소득 서류라고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

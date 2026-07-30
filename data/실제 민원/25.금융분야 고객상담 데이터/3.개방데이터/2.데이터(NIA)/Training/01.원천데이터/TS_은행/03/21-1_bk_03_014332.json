@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_014332",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1491,
+        "consulting_content": "고객은 대출 상환을 위해 만기되지 않은 적금을 인출하고자 했으며 인출 수수료와 자동이체 변경 방법을 문의하였고 상담사는 적금 인출이 제한된 사유와 0.5% 수수료, 영업일 처리 기간을 안내하고, 모바일 앱 및 전화로 자동이체를 즉시 변경하는 절차를 설명하고 담당 부서로 연결해 주겠다고 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

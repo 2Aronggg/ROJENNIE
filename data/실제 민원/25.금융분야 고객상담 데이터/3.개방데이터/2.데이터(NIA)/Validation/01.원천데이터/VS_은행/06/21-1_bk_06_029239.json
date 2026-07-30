@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_029239",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1093,
+        "consulting_content": "고객은 계약 연장으로 인한 대출금 상환을 위해 가상 계좌 번호를 몰라 문의하고 입금이 안 된 상황을 설명했으며, 가상 계좌 발급 및 실시간 계좌이체 방법을 요청하였다. 상담사는 가상 계좌를 발급하고 번호를 문자로 전송했으며, 입력 오류 시 화면 새로 고침 및 앱 업데이트를 안내하고, 실시간 계좌이체 절차와 오늘이 마지막 납부일임을 확인시켜 주었다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

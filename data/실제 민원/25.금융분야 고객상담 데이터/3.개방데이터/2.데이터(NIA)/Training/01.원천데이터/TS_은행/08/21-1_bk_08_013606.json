@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_013606",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1086,
+        "consulting_content": "고객은 본인 확인을 위해 계좌와 비밀번호를 입력하고 대출 연장을 요청하였고 상담사는 대출 잔액 5천만 원, 상환 기간 24개월을 안내한 뒤 연장에 신분증 사본, 최근 급여 내역서 제출 필요와 기준 금리 4.5%, 신용 등급에 따라 0.3% 변동 가능함을 설명하였다. 또한 문자 알림 및 지점 연결을 제안하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

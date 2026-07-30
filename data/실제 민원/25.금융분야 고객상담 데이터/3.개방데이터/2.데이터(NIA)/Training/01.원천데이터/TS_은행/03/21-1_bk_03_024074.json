@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_024074",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1754,
+        "consulting_content": "고객은 매월 정액 적립식 적금 출금 계좌가 타 은행인 점을 확인하고 출금, 입금 절차와 필요한 서류를 문의했으며, 계좌 번호와 비밀번호를 제공하였다. 상담사는 적금 현황을 조회하고, 타 은행 입금 가능, 이자 적용 차이를 안내하며, 이번 달 직접 이체를 권고하고, 대출 상담은 전담팀으로 연결하고 계좌 통합은 온라인 신청 가능하다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

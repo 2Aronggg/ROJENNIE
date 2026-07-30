@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_028035",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1375,
+        "consulting_content": "고객은 코루나 환전을 요청하고 백만원 정도를 원했으며, 환전 가능 여부와 최대 한도, 영업시간을 문의하였고, 상담사는 재고가 없던 초기 지점 상황을 안내하고 인근 지점에 일부 보유 중임을 확인해 위치와 영업시간을 문자로 전송했으며, 하루 최대 5,000달러, 한 번에 2,000달러 제한을 안내하고 금요일 오후 3시 방문 예약을 확정하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

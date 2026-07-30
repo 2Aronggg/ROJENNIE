@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_026159",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 957,
+        "consulting_content": "고객은 착오 송금으로 금액을 잘못 보냈다고 알렸고 상담사는 거래 수정이 불가함을 안내하고, 상대 은행을 통해 반환 절차가 진행되며 3~5일 소요된다고 설명하였다. 고객은 반환 시기와 거절 시 조치, 필요 서류 제출 방법을 문의했으며 상담사는 반환 승인 시 2~3일 내 입금, 거절 시 법적 절차 안내와 신분증, 거래내역서 제출을 요청하고, 온라인 또는 지점 방문으로 서류 제출 가능하고 진행 상황을 문자, 전화로 안내하겠다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

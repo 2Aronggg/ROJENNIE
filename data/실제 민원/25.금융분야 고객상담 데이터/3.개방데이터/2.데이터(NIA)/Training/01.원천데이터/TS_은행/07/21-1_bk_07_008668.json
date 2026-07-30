@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_008668",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 2274,
+        "consulting_content": "고객은 현재 타 은행 대출 중 이자 마이너스 적용으로 카드 혜택 가능 여부를 문의하였다. 상담사는 카드 종류와 무관하게 자동이체 계좌를 해당 은행 입출금 계좌에 등록하면 기준 금액 충족 시 혜택이 적용된다고 안내하였다. 자동이체 일정, 금액 확인 방법, 변경 절차, 실패 시 처리 방안도 설명하였다. 또한 결제 금액 1% 기본 포인트 적립과 주유, 대중교통, 온라인 쇼핑 카테고리에서 추가 0.5% 가산 적립이 제공된다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_014897",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 2593,
+        "consulting_content": "고객은 적금 계약 내용, 예상 이자와 만기, 환전 절차, 대출 상환 일정 및 이자 차감 여부를 문의하였고 상담사는 계약, 만기 확인 후 대출 부서 연결 및 인증, 상환 절차 안내, 방문 예약 지원 등을 제공하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

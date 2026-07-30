@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_015563",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1535,
+        "consulting_content": "고객은 대출 금리 감면을 문의하고 계좌, 본인 정보를 제공하였고 상담사는 조건을 안내하고 현재 이번 달 납입이 확인되지 않아 혜택이 적용되지 않으며, 지정일 입금 시 적용될 것이라 설명하였고, 추가 대출에도 동일 조건 적용 가능하나 심사 필요함을 안내하고, 적용 시점, 필요 서류, 유지 조건을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

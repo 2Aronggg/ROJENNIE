@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_023848",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1216,
+        "consulting_content": "고객은 이자 납부일 확인과 계좌, 비밀번호 입력으로 본인 확인을 하였고 상담사는 대출 잔액 및 연도 정보를 제공하였다. 고객은 전액 상환 가능 여부와 위약금 여부를 문의했으며 상담사는 위약금 없고 남은 이자만 정산된다고 안내하였다. 고객은 오늘 즉시 전액 상환을 원한다는 의사를 밝히고 준비가 되었다고 전했으며 상담사는 계좌 비밀번호, 인증을 통해 오늘 상환을 처리하고 확인 메일을 발송하겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

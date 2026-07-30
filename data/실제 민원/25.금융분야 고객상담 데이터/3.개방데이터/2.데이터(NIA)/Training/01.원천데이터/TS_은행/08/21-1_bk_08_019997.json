@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_019997",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 885,
+        "consulting_content": "고객은 전세 대출 연장을 원해 연장 시기와 서류, 금리 변동을 문의하였고 상담사는 연장은 만기 전 문자 후 심사 진행이며, 필요 서류와 신청 방법, 금리 변동 가능성을 안내하고, 준비 후 신청하도록 권고하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

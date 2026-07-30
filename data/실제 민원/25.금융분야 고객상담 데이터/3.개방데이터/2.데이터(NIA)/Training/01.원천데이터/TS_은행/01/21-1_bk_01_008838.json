@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_008838",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1318,
+        "consulting_content": "고객은 입금자명, 금액, 일자를 제시하여 입금 내역 확인을 요청하였다. 상담원은 해당 기간의 입금을 조회하여 입금이 정상 처리되었음을 확인하고 영수증을 문자로 발송하였다. 고객은 자동 이체 설정을 문의하여 매월 10만원을 저축통장으로 이체하고자 하였다. 상담원은 다음 달 1일부터 시작되는 자동 이체를 신청하고, 이체 진행 시 문자 알림을 설정하였다. 고객은 추가 문의가 없음을 확인하고 통화를 종료하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

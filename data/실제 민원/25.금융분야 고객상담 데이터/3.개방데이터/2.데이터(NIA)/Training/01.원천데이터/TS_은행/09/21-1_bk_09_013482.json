@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_013482",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "20~29세",
+        "consulting_client": "신규고객",
+        "consulting_client_type": null,
+        "source_length": 758,
+        "consulting_content": "고객은 호주달러 현금 환전을 원하고 수수료와 한도, 서류, 예약 방법을 문의하였고 상담사는 수수료는 없으며 현찰 환율 적용, 하루 1,000달러 한도, 신분증만 필요하고 사전 예약은 앱, 전화로 가능하다고 안내하고 예약을 완료하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

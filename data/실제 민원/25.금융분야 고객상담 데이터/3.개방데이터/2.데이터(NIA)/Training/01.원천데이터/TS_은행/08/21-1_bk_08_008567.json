@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_008567",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 983,
+        "consulting_content": "고객은 가계 일반 자금 대출 만기 안내 메일을 받고 전화로 연장 신청 절차와 필요 서류를 문의하였다. 상담사는 본인 확인을 진행한 뒤 해당 대출은 비상금 대출로 앱을 통해서만 연장 가능하다고 안내하였다. 고객 요청에 따라 연장 희망 일자를 확인해 신청을 진행했고, 연장 완료 및 새로운 만기일을 문자와 이메일로 안내하였다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_015827",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 874,
+        "consulting_content": "고객은 IRP 자동이체 해지를 요청하고 스마트폰뱅킹에 로그인해 절차를 수행했으며, 상담사는 해지 방법을 안내하고 해지가 완료되면 문자, 이메일 확인이 발송된다고 안내하였고, 남은 잔액은 계좌에 그대로 유지된다고 설명하였으며, 다른 계좌로 자동이체를 옮기려면 새로 등록하면 된다고 추가 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_006185",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1453,
+        "consulting_content": "고객은 기존 대출 일부 금액을 상환하고 남은 잔액 및 연장 가능 여부를 문의하였다. 상담원은 현재 잔액을 ●●●원으로 안내하고, 입력 금액이 잔액 이하이면 전액 상환이 가능하다고 설명하였다. 확인 문자와 영수증이 발송되었다고 보고하였다. 또한 대출 연장은 남은 기간 ●●개월이며, 종료 1개월 전부터 신청 가능하므로 이번 달 말까지 신청할 것을 안내하였다. 연장 신청을 위해 최근 3개월 급여내역을 이메일로 제출하도록 요청하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

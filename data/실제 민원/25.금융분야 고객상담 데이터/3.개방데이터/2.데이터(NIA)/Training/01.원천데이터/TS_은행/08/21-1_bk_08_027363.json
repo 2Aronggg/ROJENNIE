@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_027363",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 944,
+        "consulting_content": "고객은 대출 연장 신청을 위해 계좌번호, 성명, 생년월일, 비밀번호를 제공하고 주민등록등초본 제출을 문의했으며, 서류 검증이 1~2 영업일 소요될 수 있다고 안내받았다. 고객은 주소 입력 방법을 물었고, 상담사는 가계 주소가 아니라 집 주소로 입력하도록 안내하고, 주소 변경은 인터넷뱅킹, 모바일 앱으로 가능하다고 설명하였다. 고객은 서류를 즉시 제출하겠다고 답하고, 상담사는 제출 지연 시 연장 신청이 중단될 수 있음을 알렸다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

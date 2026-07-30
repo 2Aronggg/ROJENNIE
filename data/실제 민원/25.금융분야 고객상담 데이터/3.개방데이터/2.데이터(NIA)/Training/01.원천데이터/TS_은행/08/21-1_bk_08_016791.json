@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_016791",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1396,
+        "consulting_content": "고객은 대출 연장에 필요한 서류와 방문 시점을 문의하였고 상담사는 서류 목록과 방문 일자를 안내하였다. 고객은 이미 제출한 서류가 있음을 확인하였고 상담사는 추가 제출이 필요 없다고 답변하였다. 고객은 승인 소요 시간과 이자율 변동 시 통보 방법을 물었고 상담사는 영업일 기준 며칠 이내 처리되며 문자, 이메일로 안내된다고 설명하였다. 고객은 조기 상환 절차와 비용을 문의하였고 상담사는 위약금 없이 서류 제출만으로 즉시 처리된다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

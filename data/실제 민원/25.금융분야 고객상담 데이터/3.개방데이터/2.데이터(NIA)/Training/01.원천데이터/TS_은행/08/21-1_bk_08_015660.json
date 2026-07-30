@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_015660",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 845,
+        "consulting_content": "고객은 대출 연장 모바일 신청 중 “O OO O OO” 오류가 발생해 재시도를 했고 상담사는 계좌, 비밀번호 확인 후 오류는 승인 대기 중이라며 앱 최신 버전 여부를 점검하고, 구버전이면 업데이트를 권고하며, 지속 시 웹사이트 연장 절차를 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

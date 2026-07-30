@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_026360",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 921,
+        "consulting_content": "고객은 대출 연장 가능 여부와 절차, 추가 비용, 안내 메시지 발송 시점 및 재발송 방법, 연장 신청 마감일 등을 문의하였고 상담사는 전화상 연장은 불가하므로 메시지와 링크를 통해 온라인으로 서류 제출, 인증 후 연장 가능하다고 안내하고, 추가 이자, 수수료는 조건에 따라 달라지며, 메시지는 영업 종료 전 발송되고 받지 못하면 재연락 요청, 신청은 만기 일주일 전까지 가능하다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

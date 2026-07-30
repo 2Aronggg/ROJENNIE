@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_001004",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1597,
+        "consulting_content": "고객은 실시간 환율, 매입 한도, 수수료율, 외화 계좌 입금, 고정환율 계약, 추가 매입, 통화 교환 및 인출 절차 등을 질문했고, 상담사는 환율 적용 방식, 매입 수수료, 외화 계좌 자동 입금, 고정환율 옵션, 모바일 매입 절차, ATM 인출 방식에 대해 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

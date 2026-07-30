@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_011316",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 872,
+        "consulting_content": "고객은 사용하지 않은 기존 계좌 해지와 거래 내역에 있는 ★★카드 자동이체 중단을 요청하였고, 상담사는 자동이체 확인 사실을 안내하고, 해지 절차와 3일 소요를 설명하며, 자동이체 중단 및 신규 적금 계좌 개설 안내와 ★★카드사 연결을 제안하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

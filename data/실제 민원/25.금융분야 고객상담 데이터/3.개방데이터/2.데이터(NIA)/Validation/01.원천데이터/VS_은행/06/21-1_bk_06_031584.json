@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_031584",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1123,
+        "consulting_content": "고객은 대출 상환을 위한 일시 가상계좌와 입금 안내를 요청했고 상담사는 계좌번호와 비밀번호를 받아 가상계좌를 발급, 입금 마감 시각을 안내하였다. 고객은 입금 완료 알림 방법을 물었고 상담사는 문자, 카카오톡, 온라인뱅킹으로 확인 가능하다고 답변하였다. 또한 고객은 자동이체 설정을 원했으며 상담사는 매월 지정일 자동이체 가능함을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

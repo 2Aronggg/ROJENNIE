@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_019321",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 977,
+        "consulting_content": "고객은 모바일 비대면 계좌 개설로 이체 한도 제한을 겪고 해지 및 한도 상향을 문의했으며, 상담사는 비대면 계좌는 일일 ●●원 한도이며 영업점 방문, 소득증명서 등 서류 제출 후 심사 후 증액 가능하고, 앱에서는 일시적 상향이 불가하다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

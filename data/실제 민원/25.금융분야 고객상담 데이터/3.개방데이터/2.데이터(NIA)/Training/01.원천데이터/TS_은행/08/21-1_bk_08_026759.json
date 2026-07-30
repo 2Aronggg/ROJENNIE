@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_026759",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1846,
+        "consulting_content": "고객은 대출 연장을 신청했으나 잔액 부족으로 연장이 지연된다고 문의하고, 타 은행 계좌 사용 가능 여부와 입금 절차, 이자율 및 연장 가능 최대 금액을 물었으며, 상담사는 잔액을 입금하면 연장이 가능하고 입금 확인 즉시 연장 처리 및 문자 통보, 현재 이자율 6.5%와 최대 연장 금액은 대출 잔액의 120%임을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

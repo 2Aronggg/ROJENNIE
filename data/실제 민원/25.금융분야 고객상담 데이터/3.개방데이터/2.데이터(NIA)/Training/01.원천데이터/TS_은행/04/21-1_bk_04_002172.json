@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_002172",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1588,
+        "consulting_content": "고객은 적금 만기 입금에 대한 세금, 자동 재가입 여부, 다른 계좌 이체, 입금 활용 방법, 신규 적금 조건 및 금리 변동 관리 등을 문의했고 상담원은 적금 만기 입금시 세금은 원천징수된다는 점, 재가입 옵션 확인, 계좌 변경 절차, 대출 및 투자 연계, 금리와 위험 관리, 알림 신청 방법 등에 대해 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

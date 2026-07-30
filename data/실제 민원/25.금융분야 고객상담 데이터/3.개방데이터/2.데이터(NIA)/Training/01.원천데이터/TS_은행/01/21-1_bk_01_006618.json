@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_006618",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1213,
+        "consulting_content": "고객은 계좌이체 처리 여부, 보안 상태, 이체 한도 및 알림 설정을 문의하였으며, 상담사는 거래 내역 조회 후 이체가 정상 처리되었음을 확인하였고, 보안 인증, OTP 상태와 한도 변경 및 알림 설정 방법을 안내하고 상담을 종료하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

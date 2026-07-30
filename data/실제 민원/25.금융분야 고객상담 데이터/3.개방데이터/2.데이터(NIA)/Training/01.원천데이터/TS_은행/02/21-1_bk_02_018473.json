@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_018473",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1244,
+        "consulting_content": "고객은 타행 자금 반환 신청 후 가압류된 계좌로 송금된 사실을 확인하고 반환 시점과 필요한 서류를 문의하였고 상담사는 거래 고유 번호 확인이 어려움을 알린 뒤, 가압류 해제 전까지는 반환이 불가하고 해제 후 신분증 사본, 가압류 해제 증명서, 거래 영수증 등을 우편으로 제출하면 절차를 진행할 수 있다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

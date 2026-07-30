@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_005746",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1248,
+        "consulting_content": "고객은 정부지원금 적립 현황 및 최근 입금 시점 확인을 문의하였다. 상담원은 현재 적립된 금액과 최근 입금액을 확인하고, 입금은 영업일 기준 1~2일 이내 처리된다고 안내하였다. 거래 내역은 인터넷뱅킹, 모바일 앱에서 실시간 조회 가능하다고 설명하였다. 앱 설정 메뉴에서 입, 출금 알림을 활성화할 수 있으며, 방법을 안내하였다. 비밀번호 재설정은 로그인 화면의 ‘비밀번호 찾기’ 절차를 따르도록 안내하였다. 추가 문의 사항이 없음을 확인하고 상담을 종료하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

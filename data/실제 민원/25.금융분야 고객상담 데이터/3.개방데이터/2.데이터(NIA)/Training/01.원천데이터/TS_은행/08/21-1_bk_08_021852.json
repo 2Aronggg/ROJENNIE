@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_021852",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1011,
+        "consulting_content": "고객은 ★★은행 대출 연장을 신청하고 계좌, 비밀번호 등 본인 확인을 요청했으며, 상담사는 대출이 연장 가능하고 이자율 유지, 연장 횟수 제한이 없으며, 추가 비용 발생 시 문자, 이메일로 즉시 통보한다는 답변을 제공하였다.고객은 ★★은행 대출 연장을 신청하고 계좌, 비밀번호 등 본인 확인을 요청했으며, 상담사는 대출이 연장 가능하고 이자율 유지, 연장 횟수 제한이 없으며, 추가 비용 발생 시 문자, 이메일로 즉시 통보한다는 답변을 제공하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

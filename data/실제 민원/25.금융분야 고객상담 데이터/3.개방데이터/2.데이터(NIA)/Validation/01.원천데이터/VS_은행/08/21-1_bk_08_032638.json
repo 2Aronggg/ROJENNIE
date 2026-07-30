@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_032638",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1155,
+        "consulting_content": "고객은 전세 대출 연장을 원하고 서류, 한도, 처리 기간, 금리 변동 여부를 문의했으며, 상담사는 영업점 방문, 온라인 신청 가능, 계약서, 전입증명서, 기존 대출 서류 제출 필요, 심사 후 2~3일 내 결과 통보와 금리는 심사 결과에 따라 변동될 수 있음을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_029009",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1196,
+        "consulting_content": "고객은 대출 원리금 상환을 위해 가상계좌 번호 확인과 입금 정보를 요청하였고 상담사는 ARS 연결, 계좌 번호, 샵 버튼 입력, 비밀번호 입력을 안내하고, 주택담보대출임을 확인해 계좌, 금액을 문자로 보내겠다고 안내하였다. 또한 입금 마감 시간과 연체, 추가 수수료, 입금 확인 시점, 현금, 이체 가능 여부 및 ARS 보안성을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

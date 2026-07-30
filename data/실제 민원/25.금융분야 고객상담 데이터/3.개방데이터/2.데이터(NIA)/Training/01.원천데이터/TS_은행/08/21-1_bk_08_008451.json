@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_008451",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1329,
+        "consulting_content": "고객은 대출 연장 약정서 작성 중 비대면 오류가 발생해 원격 지원을 요청하였다. 상담사는 시스템에 접속시켜 약정서 화면을 열고 대출 번호, 연장 기간을 입력하도록 안내하였다. 고객은 담보 평가서와 신용 서류를 업로드하고 금리 변동에 동의하였다. 상담사는 연장 신청이 완료되면 문자로 안내하고, 적용 금리는 실적에 따라 변동될 수 있음을 전달하였다. 또한 고객은 대출 증액 절차와 필요 서류를 문의하였으며, 추후 준비가 되면 연락하겠다고 답하였다. 상담은 종료하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

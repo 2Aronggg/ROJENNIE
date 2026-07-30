@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_000767",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1691,
+        "consulting_content": "고객은 대출 이자 계산과 납부일, 조기 상환, 마이너스 통장 연계 등을 문의했고, 상담원은 일일 이자율 적용 방식, 납부일 연기에 따른 이자 차이, 조기 상환 수수료와 절감 효과, 마이너스 통장 이자와 대출 이자 비교, 납부일 변경 방법 및 금리 인하 절차 등을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

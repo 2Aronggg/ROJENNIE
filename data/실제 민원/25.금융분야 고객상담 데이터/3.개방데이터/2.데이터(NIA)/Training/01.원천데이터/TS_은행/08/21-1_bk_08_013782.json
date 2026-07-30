@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_013782",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1527,
+        "consulting_content": "고객은 대출 만기 연장을 문의하고 절차와 서류 안내를 요청하였고 상담사는 자동 ●월 연장, 비용 없음, 기존 이자율, 상환 방식 유지 등을 설명하였다. 고객은 연장 완료 후 계약서와 안내 문자, 이메일 발송을 확인하였고 상담사는 추가 문의가 없음을 확인하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

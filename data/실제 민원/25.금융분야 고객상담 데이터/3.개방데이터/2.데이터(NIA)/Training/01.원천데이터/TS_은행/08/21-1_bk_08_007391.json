@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_007391",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1159,
+        "consulting_content": "고객은 ●월 OOO 만기 대출 연장을 원하고 계약서 작성을 다음 주에 할 예정이라 문의하였다. 상담사는 연장에 필요한 서류가 연장 신청서, 기존 계약서 사본, 신용조회동의서이며 신용조회는 자동으로 진행된다고 안내하였다. 온라인으로 연장 신청서를 작성 가능하고 제출 후 1~2일 내에 승인 결과를 통보받을 수 있다고 설명하였다. 승인 거절 시 소득, 재산 증빙 서류를 추가 제출하거나 다른 상품을 제안받을 수 있다고 안내하였다. 기존 혜택은 연장 계약 확정 시 유지되며 금리 우대, 포인트 적립 옵션 등 추가 혜택이 있음을 알려주었다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

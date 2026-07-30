@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_009798",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1217,
+        "consulting_content": "고객은 ★★은행에 가입된 보험료 자동이체를 등록하려 하였으며, 앱에서 납부자 번호와 지점 정보를 입력 후 ‘등록 불가’ 오류가 발생하였다. 상담사는 앱 등록이 어려울 경우 영업점 방문이 필요하다고 안내하였다. 방문 시 지로 용지, 보험 계약서의 지점 정보, 신분증을 지참하도록 설명하였다. 가장 가까운 ○○지점의 영업시간은 09시~18시이며 전화번호는 02-1234-5678이라고 전달하였다. 전화 상담만으로는 등록이 어려우며, 서류를 팩스로 보내는 방법이 일부 지점에서 가능하다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

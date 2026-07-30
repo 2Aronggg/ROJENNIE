@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_011477",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1077,
+        "consulting_content": "고객은 자동이체 적금이 일정일 이후 입금되지 않아 확인을 요청하였고 상담사는 해당 적금이 이월 납입 상태이며 열두 번의 납입 횟수를 모두 채워 추가 납입이 불가하며 만기까지 약 6개월 남았음을 안내하고, 중도 해지 시 불이익이 발생한다는 점을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

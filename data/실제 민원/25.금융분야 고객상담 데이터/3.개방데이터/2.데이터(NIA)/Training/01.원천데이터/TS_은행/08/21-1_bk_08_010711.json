@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_010711",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 696,
+        "consulting_content": "고객은 가계 일반 자금 대출 만기 연장에 대해 문의했다. 본인 확인 절차 후, 해당 상품이 **'비상금 대출'**이며 ●월 ●●●일에 만료됨을 확인했다. 상담사는 연장 신청은 만기일 ●● ●일 전부터 **★★ 앱**을 통해 가능하며, 신청 접수 후 영업일 기준 며칠 이내에 문자로 결과가 통보된다고 안내했다. 고객은 연장 시점과 방법을 확인하고 상담을 마쳤다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

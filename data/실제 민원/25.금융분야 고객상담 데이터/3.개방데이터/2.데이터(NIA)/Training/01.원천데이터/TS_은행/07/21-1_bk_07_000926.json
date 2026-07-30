@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_000926",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1147,
+        "consulting_content": "고객은 마이너스 통장 대출과 연계된 카드 실적 충족 시 금리 감면 혜택, 카드 사용 실적 확인 방법에 대해 문의했고, 상담원은 마이너스 통장 연계 카드 금리 감면 혜택에 대한 조건과 절차, 카드 사용 실적 확인 방법과 금리 적용 방법에 대해서 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

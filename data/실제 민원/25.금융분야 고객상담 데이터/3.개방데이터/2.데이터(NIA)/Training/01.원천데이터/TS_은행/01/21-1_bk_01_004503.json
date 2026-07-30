@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_004503",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 972,
+        "consulting_content": "고객은 출처를 모르는 거래 내역과 금액을 확인하고, 승인되지 않은 경우 취소, 환불 절차와 향후 미승인 거래 방지를 위한 보안 옵션 설정 방법을 문의하였고, 상담사는 거래 상세와 정산 단계 안내, 은행 이의신청 방법 및 OTP, 알림, 비밀번호 변경 등 보안 강화 옵션을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

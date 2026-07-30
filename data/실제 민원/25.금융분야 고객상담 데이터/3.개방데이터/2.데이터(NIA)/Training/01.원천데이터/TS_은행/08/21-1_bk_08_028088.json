@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_028088",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1292,
+        "consulting_content": "고객은 대출 연장을 요청하고 적금 연계를 원했으며 상담사는 연장이 불가함을 안내하였다. 고객은 계좌, 생년월일, 비밀번호 등 본인 확인 정보를 제공했고 상담사는 확인하였다. 고객은 방문 일정, 필요 서류를 물었고 상담사는 가까운 지점 방문, 신분증, 거래내역, 대출 계약서 사본 제출을 요구하며 서류 제출 후 3~5영업일 내 결과를 통보한다는 안내를 하였다. 고객은 온라인 연장 가능 여부와 금리를 문의했으며 상담사는 온라인 신청은 불가하지만 모바일 앱으로 사전 문의 가능하고 금리는 기준 금리와 신용등급에 따라 변동된다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

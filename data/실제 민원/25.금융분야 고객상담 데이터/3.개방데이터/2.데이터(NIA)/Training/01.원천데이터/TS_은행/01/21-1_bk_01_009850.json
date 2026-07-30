@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_009850",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1598,
+        "consulting_content": "고객은 만기된 적금 계좌의 입출금 내역 조회를 요청하였다. 상담원은 ARS 인터넷, 스마트폰 조회 가능성을 안내하고, 해당 입금이 다른 은행 계좌에서 자동 이체된 것임을 확인하였다. 고객은 오래된 내역까지 조회가 안 된다고 언급하였다. 입금 중 현금 입금 부분과 자동 이체 계좌를 설명하고, 자동 이체 계좌는 현재 사용 중임을 확인하였다. 이자는 만기일 다음 영업일에 입금되며 세금은 원천징수 처리된다고 안내하였다. 고객에게 금리 변동 문자 알림 및 월별 PDF 거래 내역 수신 설정을 제안하고, 설정을 완료하였다. 또한 향후 적금, 예금 상품 안내와 맞춤 재무 설계 상담 예약을 제안하여 다음 주 상담 예약을 확정하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

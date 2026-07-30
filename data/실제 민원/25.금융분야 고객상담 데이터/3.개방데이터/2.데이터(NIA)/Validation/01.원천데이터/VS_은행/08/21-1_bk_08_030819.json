@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_030819",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1069,
+        "consulting_content": "고객은 대출 연장을 문의하고 금리, 수수료를 물었으며, 연장 신청 절차와 앱 내 입력 방법을 요청하였다. 상담사는 연장 금리는 기존과 동일하고 수수료는 0.5%임을 안내하고, 앱 버전 확인 및 화면 이동 방법을 설명한 뒤 연장 신청을 접수하고 영업일 1~2일 내 문자 안내를 약속하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

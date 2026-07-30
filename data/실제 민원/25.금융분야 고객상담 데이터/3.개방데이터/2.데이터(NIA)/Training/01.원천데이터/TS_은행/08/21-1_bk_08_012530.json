@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_012530",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 2203,
+        "consulting_content": "고객은 대출 만기 연장 진행 상황과 서류, 금리 여부를 문의하고 급한 연락을 요청하였고 상담사는 보안 확인 후 시스템 조회 결과 연장 신청이 접수되었으며, 담당자 부재로 추후 전화 안내와 금리, 상환 일정은 담당자가 안내할 것이라고 전달하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_024563",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 2198,
+        "consulting_content": "고객은 입금 일자, 금액, 계좌, 예금주 확인과 중계요청 서류 안내를 요청하였고 상담사는 입금 내역을 조회, 계좌 확인 후 절차와 필요 서류를 안내하고, 보안 인증 및 담당자 연결을 진행하겠다고 응답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

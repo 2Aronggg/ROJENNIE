@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_006995",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 735,
+        "consulting_content": "고객은 통장에서 본인 명의가 아닌 금액이 빠져나가는 문제를 발견하고 해당 통장을 해지하고자 요청하였다. 상담사는 통장해지는 예금주 본인이 신분증 지참 후 영업점 방문으로 해지 및 금액 반환이 가능하다고 설명 하였으며, 해지 절차가 다소 복잡할 수 있음을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

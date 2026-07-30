@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_020707",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 0,
+        "consulting_content": "고객은 대출의 분할 상환 가능 여부와 절차, 조건을 문의하였고 상담사는 분할 상환이 가능하며 이자율 동일, 자동이체 및 모바일 납부 가능, 일정 변경은 영업일 3일 전 신청 필요하다고 안내하였다. 또한 고객은 입금이 계좌에 반영되지 않아 확인을 요청하였고 상담사는 영업일 기준 1~2일 지연될 수 있으며 현재 연체 없음을 확인하고 처리 절차를 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

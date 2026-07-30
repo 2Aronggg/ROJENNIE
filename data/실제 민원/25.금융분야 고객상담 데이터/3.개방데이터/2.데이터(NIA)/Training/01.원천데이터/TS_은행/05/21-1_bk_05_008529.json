@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_008529",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1676,
+        "consulting_content": "고객은 다른 은행으로 이체가 안 된다고 문의하였다. 상담사는 고객 계좌가 금융거래 한도 계좌이며 일일 이체 한도 초과가 원인이라고 설명하였다. 한도 해제를 위해서는 사용 목적 서류를 관리지점에 팩스로 송부하고, 필요 시 재직증명서, 원천징수영수증 등을 제출해야 한다고 안내하였다. 서류 접수 후 2~3영업일 내에 결과가 통보되며, 자동이체 3건 등록으로도 한도 조정이 가능하다고 추가 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

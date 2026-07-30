@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_012655",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 755,
+        "consulting_content": "고객은 대출 연장 여부와 다음 이자 납부일을 확인하고자 본인 확인 절차를 진행하였고 상담사는 계좌, 비밀번호, 휴대폰 인증을 요구한 뒤 연장된 대출 잔액과 자동 출금 일자를 안내하였으며, 중도 해지 시 위약금이 적용될 수 있음을 설명하고, 연장 내역을 문자, 이메일로 제공하겠다고 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

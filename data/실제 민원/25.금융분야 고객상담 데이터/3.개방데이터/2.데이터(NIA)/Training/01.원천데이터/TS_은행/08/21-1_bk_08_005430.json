@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_005430",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1802,
+        "consulting_content": "고객은 기존 신용대출의 만기가 지나 연장 및 사업자대출로 전환을 원하고, 필요한 서류 제출 방법과 일정, 담보,보증인 여부, 금리,상환 방식 등에 대해 문의하였다. 상담원은 최근 3개월 급여,매출 증빙,세금 신고서,전표,사업자등록증 등 5가지 서류를 지정 이메일에 고객명 사업자대출_서류 형식으로 보내라고 안내하고, 연체 없을 경우 전환 절차가 가능하며 심사 후 결과는 며칠 내에 통보한다는 점과,담보 제공 시 금리 인하와 원리금 균등 상환 선택이 가능함을 알려주었다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

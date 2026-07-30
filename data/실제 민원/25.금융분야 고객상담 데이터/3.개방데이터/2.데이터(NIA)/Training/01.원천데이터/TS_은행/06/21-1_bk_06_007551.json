@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_007551",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1553,
+        "consulting_content": "고객은 마이너스 대출 계좌의 이용액, 이자 납부일, 잔액 확인 방법을 문의하였다. 상담원은 대출 개설일과 이자 납부일이 매월 세 번째 영업일임을 안내하였다. 입출금 발생액에 대해 사용 기간만큼 이자가 계산되며, 현재 사용액,"
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

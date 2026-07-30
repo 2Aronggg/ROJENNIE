@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_028867",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 994,
+        "consulting_content": "고객은 이체 한도가 낮아 이체가 안 된다고 문의했으며 상담사는 계좌 한도 확인 후 한도 제한 해제를 위해 재직증명서, 공과금 영수증 등 서류 제출을 안내하고, 모바일 앱에서 ‘설정→한도 관리→해제 신청’ 절차와 영업점 방문을 권유하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

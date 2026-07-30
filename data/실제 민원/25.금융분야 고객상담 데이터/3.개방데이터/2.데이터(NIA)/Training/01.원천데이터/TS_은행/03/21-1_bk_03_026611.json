@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_026611",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 970,
+        "consulting_content": "고객은 이전에 설정한 자동 충전 해지를 원한다며 은행과 카드사 연계 문제를 설명하였고 상담사는 자동 이체는 은행 앱이나 지점, 휴게소 창구에서 해지 가능하며 수수료 없이 즉시 적용된다고 안내하였다. 고객은 해지 절차를 온라인으로 진행하고 싶다고 요청하였고 상담사는 온라인 진행 방법을 안내하고 추가 문의 시 언제든 연락하라고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

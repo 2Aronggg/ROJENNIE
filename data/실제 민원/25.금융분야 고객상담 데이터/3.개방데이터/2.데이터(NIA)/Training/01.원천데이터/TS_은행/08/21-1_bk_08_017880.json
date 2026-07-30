@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_017880",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1231,
+        "consulting_content": "고객은 대출 연장을 위해 지점 변경 여부와 연장 절차를 문의했으며, 본인 확인을 위해 계좌번호, 주민등록번호, 비밀번호 등을 제공하였다. 상담사는 지점 통합 상황을 확인하고 연장 시 금리는 기존과 동일함을 안내하며, 담당 지점에서 연락 및 문자 안내를 해드리겠다고 약속하고 접수를 완료하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

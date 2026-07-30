@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_011286",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1200,
+        "consulting_content": "고객은 스위스 프랑 환전을 원하고 금액, 재고, 지점, 절차, 수수료, 한도 등을 문의하였고 상담사는 보유량 확인, ◆◆지점 재고 존재, 신분증 지참 및 방문 안내, 월 ●원 한도와 0.5% 수수료 등을 설명하고 즉시 환전 가능함을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

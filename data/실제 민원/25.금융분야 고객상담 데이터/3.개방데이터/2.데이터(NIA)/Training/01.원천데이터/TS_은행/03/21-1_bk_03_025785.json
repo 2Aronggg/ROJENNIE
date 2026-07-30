@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_025785",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1460,
+        "consulting_content": "고객은 가까운 지점 위치 문의를 했고 상담사는 안내를 제시했으며, 고객은 아파트 관리비 자동이체 등록을 원해 인터넷뱅킹 절차와 인증 방법을 물었고, 상담사는 메뉴 선택, 계좌 입력, 주민등록번호, 휴대폰 인증, 오류 시 캐시 삭제 등을 단계별로 안내하고, 등록 완료 문자와 해지 방법도 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

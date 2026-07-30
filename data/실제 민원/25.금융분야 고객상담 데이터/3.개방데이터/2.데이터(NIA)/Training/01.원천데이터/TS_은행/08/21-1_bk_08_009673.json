@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_009673",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1910,
+        "consulting_content": "고객은 현재 이용 중인 일반 전세 대출 보증보험의 연장을 문의했고, 필요서류 및 접수방법, 승인까지 소요기간, 보증료, 연장 후 금리 변동, 조기 상환 및 신규 대출 옵션 등을 문의했고, 상담원은 연장 시 기존 계약서, 보험증권, 최근 3개월 소득증빙을 제출해야 하며, 지점 방문, 팩스, 모바일 업로드 중 선택 가능하다고 안내했다. 승인까지 소요 기간과, 보증료는 연장 기간, 연장 후 금리 변동 가능성, 조기 상환 및 신규 대출 전환 옵션 및 금리 우대 등을 안내했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

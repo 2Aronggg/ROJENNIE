@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_023355",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 860,
+        "consulting_content": "고객은 대출 연장 신청을 위해 본인 확인 및 동의를 요청했고 상담사는 음성 안내에 따라 동의를 받고 계좌번호, 비밀번호 등 정보를 확인한 뒤, 배우자 정보 제공을 받아 연장 절차는 잔액, 금리 검토 후 3일 이내 계약서 발송이며, 담당 상담원과 연결해 상세 안내를 하겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

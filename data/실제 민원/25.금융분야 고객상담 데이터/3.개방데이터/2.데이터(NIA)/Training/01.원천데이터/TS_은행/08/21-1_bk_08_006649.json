@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_006649",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1792,
+        "consulting_content": "고객은 대출 만기 연장 안내를 받고 신청 절차와 서류 제출 방법을 문의했다. 상담사는 비대면 연장 가능 여부, 서류 제출 방법, 앱 내 연장 신청 절차를 설명하고 심사 기간과 금리 적용 기준을 안내했다. 이어 고객이 조기 상환 및 대출 전환 가능 여부를 묻자 수수료와 절차를 설명하며, 이메일로 상담 내용을 발송하기로 했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

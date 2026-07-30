@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_021514",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1144,
+        "consulting_content": "고객은 ★★은행 가상계좌 입금 여부와 계좌 존재 확인을 요청하고, 업체와 연락이 안 된 상황이라 은행에 확인을 요청했으며, 상담사는 가상계좌 발급, 입금 현황을 내부 관련 부서에 확인하고 1~2영업일 내에 결과를 전화, 문자로 안내하겠다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_002846",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1449,
+        "consulting_content": "고객은 가상 계좌에 잘못 송금한 사실을 확인하고, 계좌 존재 여부와 잔액, 환불 절차, 손해 최소화 방안, 이용 시 주의사항, 연동 서비스 영향 등을 문의하였다. 상담원은 신원 확인 후 가상 계좌 조회 결과를 안내하고, 환불 신청 방법과 필요 서류, 환불이 어려울 경우 손해배상 절차, 실수 방지를 위한 팁, 자동이체, 모바일 결제에 미치는 영향 등을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

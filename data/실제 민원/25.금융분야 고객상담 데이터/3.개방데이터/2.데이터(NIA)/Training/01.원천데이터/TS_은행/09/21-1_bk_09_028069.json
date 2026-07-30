@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_028069",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1095,
+        "consulting_content": "고객은 약 ●●●원을 엔화로 환전하고 현장 방문을 원했으며 개인사업자임을 알렸고, 상담사는 현장 방문 시 재고 변동 가능성을 안내하고 등급별 우대 환율 적용 및 신분증, 주소증명 서류 지참을 요청했으며, 외화 예약 서비스가 가능한 ○○ 지점에 전화 예약을 제안하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

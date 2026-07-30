@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_014685",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1348,
+        "consulting_content": "고객은 대출, 마이너스 통장 만기 연장 여부와 현재 금리, 추가 수수료, 자동 연장 여부를 문의하였고 상담사는 금리 4.5%와 수수료 5천~1만원을 안내하고, 자동 연장은 되지 않으며 약정서는 모바일 앱 연장신청 메뉴에서 전자 서명으로 작성해야 한다고 설명하였다. 또한 영업점 예약 방법은 전화 또는 앱 예약 메뉴 이용이라고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

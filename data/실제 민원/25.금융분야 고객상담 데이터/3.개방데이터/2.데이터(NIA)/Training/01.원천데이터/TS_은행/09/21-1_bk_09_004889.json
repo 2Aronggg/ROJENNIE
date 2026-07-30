@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_004889",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1189,
+        "consulting_content": "고객은 인도네시아 루피아 환전을 원하고 금액, 서류, 지점 영업시간 등을 문의했으며 대출 여부도 확인하고자 하였고 상담사는 환율, 재고를 조회 후 신분증 지참 및 사전 전화 확인, 예약을 권고하고, 영업시간, 주차 안내와 대출 검토 진행을 약속하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

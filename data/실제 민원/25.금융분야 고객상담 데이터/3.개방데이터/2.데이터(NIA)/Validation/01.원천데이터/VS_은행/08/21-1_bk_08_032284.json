@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_032284",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 978,
+        "consulting_content": "고객은 마이너스 대출 연장을 요청하고 본인 확인 절차를 거쳐 계좌와 개인정보를 제공했으며, 어플 사용이 어려워 전화 연장을 원했다. 상담사는 대출 현황을 확인하고 비대면 전화 녹취를 통해 연장을 진행할 수 있음을 안내하고, 연장 시 기존 금리 유지 여부는 연장 날짜에 따라 변동될 수 있고 상환 일정이 조정된다고 설명했으며, 연장 완료 후 문자 통보와 취소 방법을 안내했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_031031",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 900,
+        "consulting_content": "고객은 원래 납부일보다 앞서 ●월 ●일에 원금, 이자를 포함한 가상계좌 입금을 요청했고 상담사는 해당 가상계좌 번호와 입금 마감 시간을 문자로 안내하며 수수료 없고 입금 오류 시 재입금 가능함을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

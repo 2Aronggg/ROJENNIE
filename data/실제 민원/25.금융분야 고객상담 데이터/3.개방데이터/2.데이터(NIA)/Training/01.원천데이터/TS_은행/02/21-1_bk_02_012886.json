@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_012886",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1662,
+        "consulting_content": "고객은 송금 대상 입력 오류로 타행 오픈뱅킹 계좌에 금액이 이체된 사실을 알리고 반환 청구 절차를 문의하였고 상담사는 거래를 조회하고, 오픈뱅킹 오류 시 반환은 송금한 은행에 직접 문의해야 함을 안내하였다 그리고 필요한 서류와 7일 이내 신청 요령을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

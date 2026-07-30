@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_026690",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 964,
+        "consulting_content": "고객은 환전 시 필요한 신분증 종류와 사본 사용 여부를 물었고 상담사는 주민등록증, 운전면허증, 여권 실물을 제시해야 하며 사본은 인정되지 않는다 안내하였다. 고객은 수령 일자 연기, 지점 변경 및 성함 수정 가능 여부를 문의했으며 상담사는 앱에서 변경, 수정 가능하고 실물 신분증을 지참하면 된다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

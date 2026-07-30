@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_015379",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1759,
+        "consulting_content": "고객은 외화 통장에 잔액이 있는지 확인하고 달러 현찰 예약 및 수수료 차이를 문의하였고 상담사는 잔액 유무에 따라 현찰 직접 구매 또는 예약 가능함을 안내하고, 온라인 예약 절차와 수수료, 우대율 적용 방법을 설명하였으며, 영업점 이용 안내와 신분증, 휴대전화 인증 필요성을 전달하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_010651",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 2042,
+        "consulting_content": "고객은 대출 원금 상환이 처리되지 않은 것과 이자 미납 상황을 확인하고자 하였고 상담사는 시스템 조회 후 원금은 상환 완료, 이자는 별도 납부 필요함을 안내하였다. 고객은 이자만 별도 납부 의사를 밝히고 자동이체 설정 방법을 문의하였고 상담사는 인터넷뱅킹, 앱에서 자동이체 설정 절차를 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

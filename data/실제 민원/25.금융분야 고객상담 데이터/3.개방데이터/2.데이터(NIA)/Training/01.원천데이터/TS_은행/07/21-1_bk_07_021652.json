@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_021652",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1141,
+        "consulting_content": "고객은 주택담보대출 급여이체 일자 변경과 이자율, 상환방식, 조기상환 위약금 등을 문의하였고 상담사는 급여이체 일자는 다음달부터 적용될 것이라 안내하고, 연이자율 3.5%, 원리금균등상환임을 설명하며, 조기상환 시 잔액의 2% 위약금이 발생한다는 정보를 제공하고, 잔액 및 상환표를 문자로 발송하겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

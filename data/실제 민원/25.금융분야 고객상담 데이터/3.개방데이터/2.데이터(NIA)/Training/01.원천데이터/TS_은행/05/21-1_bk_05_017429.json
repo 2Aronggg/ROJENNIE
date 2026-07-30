@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_017429",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1228,
+        "consulting_content": "고객은 결혼 장려금 통장 개설을 시도했으나 한도 제한 계좌 오류가 발생했다고 알렸고 상담사는 비대면 개설이 제한되어 영업점 방문이 필요하고 신분증, 주민등록등본, 급여명세서 등 서류를 준비하라고 안내하였으며, 오류 코드와 재시도 시점도 전달하였고 고객은 서류를 준비해 방문하겠다고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

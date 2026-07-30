@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_016318",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 926,
+        "consulting_content": "고객은 오늘 대출 원리금 납부를 위해 가상 계좌 번호와 입금 마감 시간을 문의하였고 상담사는 신원 확인 후 일회성 가상 계좌를 발급하고 입금은 밤 11시 이전까지 정확히 해야 하며, 미입금 시 회수되고 재발급이 필요함을 안내하였다.온라인 뱅킹을 통해 직접 생성하실 수 있다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

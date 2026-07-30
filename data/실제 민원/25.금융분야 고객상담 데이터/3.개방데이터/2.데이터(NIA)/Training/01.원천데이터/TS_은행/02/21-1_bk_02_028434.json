@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_028434",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 2149,
+        "consulting_content": "고객은 착오 송금 반환 진행 상황과 필요한 서류를 문의하고, 거래 일자, 고유번호, 수취인 정보를 제공하였고, 상담사는 정보를 확인하고 반환 의사 미확인, 추가 확인 중임을 안내하며, 처리 일정과 결과 통보 방법 및 모바일 앱 조회 방법을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

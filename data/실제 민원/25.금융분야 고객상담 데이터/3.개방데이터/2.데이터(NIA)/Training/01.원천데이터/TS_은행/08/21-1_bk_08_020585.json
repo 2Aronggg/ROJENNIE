@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_020585",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 976,
+        "consulting_content": "고객은 마이너스 통장 연장을 문의하고 계좌, 본인 정보를 제공했으며 연장 시 비용 여부와 신청 기한을 물었고, 상담사는 연장은 수수료 없이 기존 금리, 조건으로 가능하고 모바일 앱에서 즉시 신청, 심사 가능하며 연장 후 상환 일정은 기존 유지, 새 만기 반영이라고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

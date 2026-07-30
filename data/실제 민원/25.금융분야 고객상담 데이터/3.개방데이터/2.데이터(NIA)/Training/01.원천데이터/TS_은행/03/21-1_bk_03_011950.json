@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_011950",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1158,
+        "consulting_content": "고객은 자동이체 해지를 요청하고 계좌, 비밀번호 확인을 마쳤으나, 상담사는 텔레뱅킹 미가입으로 전화 해지가 불가함을 안내하고 인터넷뱅킹, 앱 해지 절차를 문자로 보내드리겠다고 제안하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

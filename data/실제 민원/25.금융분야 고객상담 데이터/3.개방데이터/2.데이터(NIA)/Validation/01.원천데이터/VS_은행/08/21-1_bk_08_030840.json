@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_030840",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 840,
+        "consulting_content": "고객은 마이너스 통장 연장 시 인지세 여부와 필요한 서류를 문의하였고 상담사는 연장에는 인지세가 부과되지 않으며 추가 서류는 없고, 대출 상황을 조회해 1~2일 내에 결과를 문자로 안내하겠다고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

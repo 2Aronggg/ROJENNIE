@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_027573",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1057,
+        "consulting_content": "고객은 전세자금 대출 진행 상황, 필요 서류, 청약 적금 감면 조건, 모바일 앱 신청 절차, 처리 기간을 문의하였고 상담사는 대출 현황과 서류 목록, 감면 최소 납입액, 모바일 실명 인증 후 사진 첨부 방식, 영업일 기준 소요 일수를 각각 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

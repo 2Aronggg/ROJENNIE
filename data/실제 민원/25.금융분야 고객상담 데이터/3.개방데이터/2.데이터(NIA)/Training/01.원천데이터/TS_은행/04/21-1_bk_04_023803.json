@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_023803",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1113,
+        "consulting_content": "고객은 입출금 계좌 해지를 요청했으며, 결혼 장려금 신청을 위해 새 계좌가 필요하고 한도 계좌는 하나만 보유 가능하다고 안내받았다. 상담사는 해지 절차는 영업일 3~5일 소요되고, 해지 후 장려금은 자동 이체되지 않아 신분증, 기존 계좌 정보로 재지급 신청이 필요함을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

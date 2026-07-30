@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_000578",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1206,
+        "consulting_content": "고객은 계좌에 예상치 못한 입금이 발생해 입금자 정보 확인과 중계요청 절차를 문의했다. 상담사는 중계요청의 단계별 진행 과정, 원송금 계좌 확인 방법, 검증 기간, 수수료 여부, 재송금 확인서 발송 방식, 지연 시 안내 절차 등에 대해 설명했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

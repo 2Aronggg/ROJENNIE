@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_029902",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 2044,
+        "consulting_content": "고객은 달러 환전을 원하고 모바일 앱 기록 확인 및 절차와 수수료 우대 적용을 문의하였고 상담사는 시스템 기록 확인, 인터넷뱅킹, 모바일 환전 방법, 등급별 우대율 및 기본 0.00% 수수료와 추가 할인, 영업점 등록, 신분증 제출 절차, 영업시간 및 부분 수령 가능 등을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

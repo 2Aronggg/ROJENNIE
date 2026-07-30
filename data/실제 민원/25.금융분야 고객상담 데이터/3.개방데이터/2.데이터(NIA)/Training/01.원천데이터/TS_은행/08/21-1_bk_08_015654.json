@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_015654",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1218,
+        "consulting_content": "고객은 대출 연장 및 신속 채무 조정 중인 건에 대해 상세 내용과 필요한 서류, 이자 변동, 결제 일정을 문의하였고 상담사는 연체 건을 확인하고, 연장 신청에 필요한 서류와 이자 변동 가능성을 안내하며, 연장 여부 확인 후 전화, 문자로 안내드리겠다고 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

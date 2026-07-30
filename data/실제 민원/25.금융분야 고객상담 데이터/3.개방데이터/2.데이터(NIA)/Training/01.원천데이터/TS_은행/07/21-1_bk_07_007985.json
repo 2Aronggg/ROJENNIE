@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_007985",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 2453,
+        "consulting_content": "고객은 대출 상환 자동이체 금액이 급여 입금 부족으로 미충족 처리되어 이자 증가와 금리 적용 차이를 문의하였다. 상담사는 미충족 원인과 가산 이자 적용을 설명하고, 자동이체 금액 조정을 1~2일 내 처리하도록 안내하였다. 또한 남은 원금, 상환 기간을 확인하고, 월 상환 금액 유지와 조기 상환 시 수수료, 이자 절감 계산을 추후 제공하겠다고 제안하였다. 최종적으로 변경 비밀번호 확인 후 자동이체 금액을 원하는 수준으로 수정 요청을 접수하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

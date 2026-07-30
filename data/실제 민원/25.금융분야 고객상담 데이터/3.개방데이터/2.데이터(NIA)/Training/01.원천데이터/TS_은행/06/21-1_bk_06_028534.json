@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_028534",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 806,
+        "consulting_content": "고객은 대출 상환 계좌와 매월 출금액을 확인하고 연체, 조기상환 조건을 문의하였고 상담사는 계좌 번호 끝자리와 출금액을 안내하고 자동이체 일정은 변동 가능함을 설명했으며 연체 시 이자, 연체료 부과와 알림 문자 안내, 조기상환 시 수수료가 일부 면제될 수 있음을 알려주고 금액 조회를 약속하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

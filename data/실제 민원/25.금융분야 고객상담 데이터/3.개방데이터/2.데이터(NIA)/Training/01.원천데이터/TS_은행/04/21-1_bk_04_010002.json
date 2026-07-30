@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_010002",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "80세이상",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 2086,
+        "consulting_content": "고객은 고정 금리 정기예금의 일부 해지를 원하고 계좌 번호 확인이 어려워 안내를 요청하였고 상담사는 계좌, 신분 확인 후 영업점 방문 또는 모바일 신청 가능, 500만원 이하 부분 인출 가능, 조기 해지 수수료와 이자 차감을 설명하고 필요한 서류와 절차를 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

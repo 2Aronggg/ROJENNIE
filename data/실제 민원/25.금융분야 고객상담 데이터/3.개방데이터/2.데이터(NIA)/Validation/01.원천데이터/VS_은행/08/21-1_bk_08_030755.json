@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_030755",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1634,
+        "consulting_content": "고객은 개인사업자 대출 진행 상황 확인을 위해 본인 확인 정보를 제공하였고 상담사는 성명, 생년월일, 계좌정보를 확인 후 현재 일반시설자금 대출이 비대면 약정까지 정상 처리되고 만기 연장이 예정됨을 안내하였다. 고객은 연장 금리 동일, 상환일 변동 없음, 연장 절차 자동 및 서류 불필요를 확인하고자 하였고 상담사는 금리, 상환 방식, 자동 연장, 알림 절차를 설명하였다. 고객은 추가 문의 없다고 답변하였고 상담사는 상담 종료를 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

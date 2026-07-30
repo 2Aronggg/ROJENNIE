@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_020411",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 972,
+        "consulting_content": "고객은 신혼부부 대출 연장을 위해 필요한 서류와 일정 문의를 하였고 상담사는 연장 가능 날짜와 신분증, 가족관계증명서, 소득증명서, 주민등록등본 등 3개월 이내 발급 서류를 안내하고 문자로 상세 정보를 보내겠다고 하였다. 고객은 이자 티켓 발급 및 금리 변동 안내를 요청하였고 상담사는 티켓 발급 절차와 금리 변동 시 문자, 이메일 안내 및 상담원 통화를 제공한다는 내용으로 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

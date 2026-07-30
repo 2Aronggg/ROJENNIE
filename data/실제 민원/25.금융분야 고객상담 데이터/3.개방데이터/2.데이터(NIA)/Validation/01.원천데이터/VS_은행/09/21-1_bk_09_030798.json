@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_030798",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 969,
+        "consulting_content": "고객은 새벽 인터넷 앱으로 환전 신청을 취소하고자 했고 상담사는 해당 채널에서는 취소가 불가능하므로 수령지 주소를 수정, 재등록하고 추후 출금할 수 있다고 안내했으며, 수수료는 없고 환율 차이만 발생할 수 있다고 설명하였다. 또한 고객은 향후 24시간 이내 취소 확인 및 창구 수령을 권고받았다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_025082",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1299,
+        "consulting_content": "고객은 대출 연장을 요청하고 계좌 번호와 개인정보를 제공했으며 필요한 서류와 심사 절차를 문의하였고, 상담사는 계좌 확인 후 연장 가능 여부를 검토하고 주민등록증, 급여내역, 계약서가 필요함을 안내하며 영업일 1~2일 내 결과를 문자, 전화로 통보하겠다고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

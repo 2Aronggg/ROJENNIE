@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_020281",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1073,
+        "consulting_content": "고객은 친구가 잘못 송금한 건에 대해 반환 청구를 신청하고 싶다고 요청하였고 상담사는 잘못 송금 은행 정보를 확인한 뒤 OOO 번호로 전화해 반환 청구를 접수하도록 안내하고, 처리 기간은 영업일 3~5일이며 비용은 무료, 별도 서류는 필요 없다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_016452",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1566,
+        "consulting_content": "고객은 출금 내역 확인을 요청하고 본인 확인 절차를 거쳐 계좌와 비밀번호를 제공하였고 상담사는 자동 이체 사실을 확인하고 수취인 기관에 문의하도록 안내하였으며, 수수료는 없고 실시간 알림, 이체 한도 설정 등 보안 옵션을 활성화하도록 권고하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_031789",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1095,
+        "consulting_content": "고객은 모바일로 대출 연장 서류를 접수하고 차액 접수 여부와 진행 상황을 문의하였고 상담사는 계좌 연결, 서류 검증을 진행해 모두 정상임을 안내하고, 영업점에서 심사 후 연락, 추가 서류 필요 시 안내드리겠다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_008996",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1484,
+        "consulting_content": "고객은 자신이 가입한 예금과 적금의 잔액을 확인하고 이자율과 만기일, 자동 재투자 설정 방법을 문의하였다. 상담사는 고객의 적금 잔액과 이자율, 남은 기간을 안내하고 중도 해지 시 위약금과 자동 재투자 절차를 설명하였다. 또한 자동 재투자 설정을 진행해 주고 향후 관련 알림을 문자로 받을 수 있도록 설정을 완료하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_026797",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 919,
+        "consulting_content": "고객은 어머니 적금 만기일에 해지를 원하고 조기 해지 시 이자 손실과 온라인 해지 가능 여부 등을 문의하였고 상담사는 해당 날짜에 방문하면 원금, 이자 수령이 가능하고 조기 해지는 남은 기간 비례 손실이 발생한다며 온라인 해지는 불가, 지점 방문 시 신분증, 통장 사본, 영수증 발행을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

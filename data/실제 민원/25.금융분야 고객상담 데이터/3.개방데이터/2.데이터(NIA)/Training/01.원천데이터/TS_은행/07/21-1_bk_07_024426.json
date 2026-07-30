@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_024426",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1561,
+        "consulting_content": "고객은 주택담보대출 우대 금리 적용 기준과 사용 금액, 다른 우대 옵션, 조기상환 위약금 여부를 문의하였고 상담사는 현재 카드 사용액이 기준 미충족임을 안내하고, 급여, 자동이체, 예금 유지 등으로 우대 가능함을 설명하며, 조기상환 시 계약서에 명시된 위약금이 적용될 수 있음을 알려주었다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_029178",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1824,
+        "consulting_content": "고객은 모바일 앱으로 연장 신청을 했지만 연체와 한도 감액 미처리로 연장이 되지 않아 확인을 요청하였고 상담사는 계좌, 비밀번호, 신분 확인 후 연체 상태와 한도 조정을 조회하고, 연체 해소 전에는 연장이 불가함을 안내하며, 연체 해결 후 재신청 가능하고 필요 시 재연락 및 우대 혜택 안내를 제공하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_022555",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1764,
+        "consulting_content": "고객은 마이너스 통장 이자 자동 차감 내역 조회와 차감 일자 지정 가능 여부를 문의하고 계좌, 본인 확인 정보를 제공하였고 상담사는 계좌, 비밀번호 확인 후 현재 자동 차감은 지정되지 않았으며, 일자 지정은 전화 상담을 통해서만 가능하고 앱에서는 설정할 수 없다고 안내했으며, URL을 문자로 발송하고 상담을 종료하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

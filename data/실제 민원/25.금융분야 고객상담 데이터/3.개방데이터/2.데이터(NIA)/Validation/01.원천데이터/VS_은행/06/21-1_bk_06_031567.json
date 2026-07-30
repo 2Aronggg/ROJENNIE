@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_031567",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1045,
+        "consulting_content": "고객은 연체 이자 정산을 문의하고 계좌 인증을 진행하였고 상담사는 연체 금액과 가상 계좌 정보를 안내하며 일시불, 분할 납부 선택지를 제시하였다. 고객은 분할 납부 조건과 자동 이체 설정을 요청하였고 상담사는 매월 자동 이체 방식과 비밀번호 입력 절차를 설명하였다. 고객은 아파트론 대출 요건 및 통장 사본 발급 방법을 문의하였고 상담사는 기본 요건, 예상 금리와 온라인, 유선 발급 절차를 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

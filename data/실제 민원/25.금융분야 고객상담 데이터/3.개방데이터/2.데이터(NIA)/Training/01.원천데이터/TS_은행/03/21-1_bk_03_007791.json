@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_007791",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1179,
+        "consulting_content": "고객은 〇월에 자동이체된 보험료 해지를 원했으며, 상담원은 자동이체는 기관에서 직접 해지해야 함을 안내하고 보험사 고객센터 번호를 제공하였다. 이어 인터넷뱅킹, 앱에서 해지 절차를 설명하였다. 또한 고객은 기존 주택담보대출 상환 일정과 조기상환 수수료, 절차를 문의했으며, 상담원은 잔액 1억2천만원, 금리 3.5% 고정, 매월 말일 원리금 균등 상환임을 알려주었다. 조기상환 수수료는 1년 이내 1%, 1년 이상 0.5%이며, 인터넷뱅킹에서 신청 방법을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

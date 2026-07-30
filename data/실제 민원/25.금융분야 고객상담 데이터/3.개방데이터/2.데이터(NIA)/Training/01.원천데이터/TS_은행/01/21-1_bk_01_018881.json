@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_018881",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1114,
+        "consulting_content": "고객은 소득 공제 증명 서류와 거래 내역서 발급을 요청하였고 상담사는 ARS 연결 후 사번, 삼번 절차와 이메일 전송 방법을 안내하였다. 고객은 메일 수신을 원했으며 상담사는 24시간 이내 수신 확인을 약속하였다.ccccccccccccc"
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

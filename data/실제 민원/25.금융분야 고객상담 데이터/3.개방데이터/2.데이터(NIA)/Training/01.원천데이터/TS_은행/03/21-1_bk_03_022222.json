@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_022222",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "신규고객",
+        "consulting_client_type": null,
+        "source_length": 1326,
+        "consulting_content": "고객은 가입일, 자동이체일 동일 여부와 자동이체 실패 시 처리, 복리 적금 이자 계산 방식 등을 문의하였고 상담사는 자동이체가 실패하면 다음 영업일에 재처리되며 잔액 부족 시 보류되고 계약은 유지된다고 안내하고, 복리 적금은 고정 금리, 복리 방식임을 설명했으며, 추후 다른 상품 상담도 가능하다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

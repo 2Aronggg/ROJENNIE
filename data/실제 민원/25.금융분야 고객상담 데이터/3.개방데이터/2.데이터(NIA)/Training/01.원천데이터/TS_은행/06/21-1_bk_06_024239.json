@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_024239",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1120,
+        "consulting_content": "고객은 담보 대출 가상 계좌 발급을 요청하고 계좌번호, 이름, 생년월일 등 본인 확인을 진행했으며, OTP 인증 후 발급 절차가 시작되었다고 알렸다. 상담사는 계좌 발급은 승인 후 1~2영업일 내이며, 입금 후 원리금 자동 반영, 수수료는 없고 타은행 송금 시 비용이 발생할 수 있음을 안내하고, 취소는 발급 전 전화 요청 가능하다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

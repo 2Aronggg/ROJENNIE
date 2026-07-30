@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_025323",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1602,
+        "consulting_content": "고객은 ★★은행으로 송금한 내역과 금액, 날짜, 계좌 정보를 제공하며 중계 절차와 추가 입금, 잔액 변동 확인을 요청하였고 상담사는 상세 정보를 확인하고 시스템 조회 후 담당 부서와 연결해 결과를 전화로 알려주겠으며, 필요 시 예, 대출 상품 안내도 제공하겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

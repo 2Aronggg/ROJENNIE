@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_020133",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1169,
+        "consulting_content": "고객은 어제 다른 은행에서 가상계좌로 입금한 내역을 확인하고 싶다며 계좌번호, 예금주, 비밀번호 등 본인 확인 정보를 제공하였다. 상담사는 시스템 조회를 진행했으나 해당 입금 건을 즉시 확인하지 못한다는 안내와 함께 영업시간 내 1~2시간 이내에 결과를 연락드리겠다고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

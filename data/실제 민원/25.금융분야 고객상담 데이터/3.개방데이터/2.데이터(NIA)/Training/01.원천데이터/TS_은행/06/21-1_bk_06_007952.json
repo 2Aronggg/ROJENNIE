@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_007952",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1172,
+        "consulting_content": "고객은 대출 원금 상환 문자 수신 후 본인 확인 절차를 진행하였다. 상담사는 ARS 연결 후 계좌번호, 비밀번호, 생년월일 등 인증 정보를 받아 확인하였다. 자동이체 미등록을 확인하고 신규 자동이체를 매월 말일로 설정하여 납부일 전, 당일 문자 알림을 신청하도록 안내하였다. 고객은 문자 수신 설정을 요청하고 휴대폰 번호를 제공하여 알림 서비스를 활성화하였다. 대출 연장은 남은 원리금, 상환 일정에 따라 가능하며, 연장 신청을 위해 필요한 서류는 온라인 뱅킹 업로드 또는 영업점 방문으로 제출할 수 있음을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_018693",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1280,
+        "consulting_content": "고객은 담보 대출 조건 확인 및 완납 여부를 문의하고 계좌, 비밀번호 등 본인 확인 정보를 제공했으며, 상담사는 조회 결과 대출과 적금이 모두 해지되어 현재 이용 가능한 대출 상품이 없음을 안내하고, 재신청 시 필요한 서류와 절차를 설명한 뒤 금리 변동 알림 서비스 등록을 진행하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

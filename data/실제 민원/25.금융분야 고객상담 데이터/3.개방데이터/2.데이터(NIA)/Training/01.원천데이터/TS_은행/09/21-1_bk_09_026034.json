@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_026034",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1506,
+        "consulting_content": "고객은 부부 공동 명의 외화 계좌에 루블화를 환전, 입금하려 했고 상담사는 현재 루블 환전이 정부 규제로 전면 중단돼 영업점 방문이 필요하다고 안내했으며, 달러, 유로는 정상 환전 가능하고 수수료는 0.2%, 최소 1만원이라고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

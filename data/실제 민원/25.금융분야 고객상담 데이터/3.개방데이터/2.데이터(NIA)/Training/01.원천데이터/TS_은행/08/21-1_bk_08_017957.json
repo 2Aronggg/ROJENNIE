@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_017957",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 995,
+        "consulting_content": "고객은 계좌 번호와 비밀번호 입력 후 이체 한도 초과 이체를 원했으며 외국인 등록증, 여권을 지참해 지점 방문을 문의했고, 상담사는 현재 온라인 이체 한도는 ○○원이며 한도 상향은 온라인, 지점 방문 가능, 지점 방문 시 서류, 통장, 도장이 필요함을 안내하고 해외 송금 한도, 수수료는 홈페이지 참고라고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_010911",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1129,
+        "consulting_content": "고객은 거래내역을 이메일로 받으려 했으나 이메일 등록이 안돼 있어 계좌주 변경이 필요하다고 안내받고, 본인 직접 전화나 인터넷뱅킹을 통한 변경이 불가능하자 팩스로 받기를 선택하여 ARS 연결을 요청했고, 상담사는 ARS 연결 및 발송 절차를 안내하고 진행했으며, 팩스 발송은 영업시간 기준 30분 이내에 이루어질 것이라고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

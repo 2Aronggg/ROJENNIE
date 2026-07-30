@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_025395",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 897,
+        "consulting_content": "고객은 환전을 원하고 금액을 제시했으며, 인근 지점 가능 여부와 영업시간을 문의하였고, 상담사는 현재 지점에 재고가 없음을 알리고 가까운 ◆◆◆◆지점을 안내하고 전화 재확인 및 신분증 지참을 권고했으며, 영업시간, 대기 상황, 수수료, 환율을 설명하고, 추가 서비스 제안을 했으나 고객은 환전만 원한다는 답변을 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

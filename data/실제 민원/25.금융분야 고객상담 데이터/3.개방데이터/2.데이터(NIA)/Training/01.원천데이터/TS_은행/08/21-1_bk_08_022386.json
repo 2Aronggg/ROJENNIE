@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_022386",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1144,
+        "consulting_content": "고객은 전세 대출 만기 연장을 문의하고 본인 확인을 위해 계좌번호, 성명, 생년월일, 비밀번호를 제공하였고 상담사는 확인 후 연장 가능 상품임을 안내하였다. 고객은 추가 대출이 필요 없으며 모바일 연장 신청 시 수수료가 없고 공인인증서 또는 휴대폰 본인인증으로 가능하다고 물었고 상담사는 해당 방법과 계약서 사진 업로드 절차를 설명하였다. 고객은 연장 승인 후 1~2영업일 내에 대출 금액이 재조정된다고 확인하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_019683",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 2057,
+        "consulting_content": "고객은 ★★은행을 통해 어제 입금했으나 금액이 시스템에 표시되지 않고 사라졌다가 다시 나타난 상황을 확인하고자 했고, 상담사는 입금 내역 조회와 시스템 점검 필요성을 안내하며, 일반적인 입금 처리 시간과 온라인, 앱 확인 방법, 필요 시 방문, 추가 증빙 절차를 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

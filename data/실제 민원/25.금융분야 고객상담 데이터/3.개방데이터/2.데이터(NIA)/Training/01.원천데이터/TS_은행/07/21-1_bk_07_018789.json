@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_018789",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1138,
+        "consulting_content": "고객은 대출 연장과 급여이체 할인 미적용을 문의했으며 계좌, 본인 확인 절차를 진행하였고, 상담사는 할인 누락을 확인하고 즉시 수정해 다음 급여이체일 또는 2영업일 이내 적용될 것이라고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_023002",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1378,
+        "consulting_content": "고객은 신혼부부 전세자금 대출 연장을 문의하고 연기 가능 시점과 필요 서류, 영업점 예약 방법을 물었으며, 자동이체 재설정 및 대환 절차도 확인하고 동시에 진행 가능 여부를 질문하였다. 상담사는 연장은 만기일 이후, 30일 이내 신청 가능하고 신분증, 급여내역, 계약서 제출 필요, 예약은 전화, 앱으로 가능하다고 안내했으며, 대환 시 자동이체 재설정은 영업점 방문 또는 모바일로 진행하고 연장, 대환은 별도 심사이며 금리 유지가 원칙이지만 변동 가능성을 사전 확인하라고 안내하고 추가 문의는 전화, 앱, 영업점으로 연락하라 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

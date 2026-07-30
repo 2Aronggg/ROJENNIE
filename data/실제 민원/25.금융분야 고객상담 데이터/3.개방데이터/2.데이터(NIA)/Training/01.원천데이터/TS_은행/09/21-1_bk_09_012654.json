@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_012654",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1384,
+        "consulting_content": "고객은 달러 환전 신청서 날짜 누락으로 PC에서 날짜 수정 방법을 문의하였고 상담사는 외환 메뉴 → 환전 내역 조회 → 수령점 변경 등록에서 캘린더로 날짜를 선택, 저장하면 즉시 적용된다고 안내하였다. 고객은 환율은 신청 시점 실시간 환율이 유지되고 수수료는 거래액의 0.2%, 최소 5,000원임을 물었고 상담사는 이를 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

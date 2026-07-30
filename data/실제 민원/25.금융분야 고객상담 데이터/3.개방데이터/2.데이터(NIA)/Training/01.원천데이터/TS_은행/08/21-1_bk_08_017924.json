@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_017924",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 844,
+        "consulting_content": "고객은 연장 문의와 본인 확인을 위해 이름을 제공했으며 상담사는 대출이 진행 중이고 연장은 ●월 ●일부터 모바일로 가능하다고 안내. 고객은 연장 신청 시 연락, 서류, 이자, 수수료 여부를 물었고 상담사는 문자, 앱 알림이 오고 어플에 등록돼 있으면 서류 없이 가능하며 이자율, 수수료는 변동 없다고 답변. 고객은 상환 일정 조정과 계좌, 자동이체 확인을 약속했으며 상담사는 앱에서 일정 조정 가능하고 문제 시 대체 방법을 안내하겠다고 말했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

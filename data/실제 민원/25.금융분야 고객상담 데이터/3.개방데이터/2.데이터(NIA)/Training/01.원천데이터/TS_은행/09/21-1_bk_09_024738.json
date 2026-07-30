@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_024738",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1031,
+        "consulting_content": "고객은 외화 달러 환전 신청 및 적용 환율, 수수료, 신분증, 수령 시기, 수령 장소, 계좌 확인 등을 문의하였고 상담사는 실시간 환율 적용, 수수료는 금액에 포함, 주민등록증, 여권 제시, 영업일 기준 수령 가능, 지정 터미널에서 수령 안내, 계좌 번호, 비밀번호 확인 후 700달러 신청을 확인해 주었다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

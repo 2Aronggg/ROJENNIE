@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_030892",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1438,
+        "consulting_content": "고객은 입금 내역 확인을 요청하고 계좌, 본인 확인 정보를 제공했으며 비밀번호 입력 및 최근 비밀번호 변경 여부를 문의하였고, 상담사는 신원 확인 후 입금 금액과 일자를 안내하고 해외 송금 가능 여부와 수수료를 설명했으며 발송 서비스는 제공되지 않음과 영업시간 안내 등을 전달하고 상담을 종료하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

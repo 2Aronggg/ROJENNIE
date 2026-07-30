@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_019519",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 605,
+        "consulting_content": "고객은 ◆◆◆ 동으로 환전하고자 인근 ◆◆◆◆지점의 영업시간, 위치를 확인했으며, 환전 금액을 ●●●원 정도로 제시하고 거래 은행이 달라도 가능한지 문의하였고, 상담사는 해당 지점에 현금 보유와 영업시간 및 신분증, 통장 지참 필요, 수수료 적용 가능, 타은행 이용 가능함을 안내하고, 최신 환율은 모바일 앱에서 확인하고 주말 영업은 제한적이니 사전 전화 확인을 권유하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

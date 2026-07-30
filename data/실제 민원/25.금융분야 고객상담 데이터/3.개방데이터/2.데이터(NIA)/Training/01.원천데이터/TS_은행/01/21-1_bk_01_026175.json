@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_026175",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 787,
+        "consulting_content": "고객은 입출금 알림만 설정한 상태에서 교통카드 후불 결제 알림이 문자로 오는지 확인하고자 하였고 상담사는 상세 교통카드 내역 조회는 제한됨을 안내하며, 입금 내역 확인을 위해 계좌, 비밀번호 확인 절차가 필요하다고 설명하였다. 또한 교통카드 결제 알림은 입출금 알림과 별도이며 모바일 앱에서 옵션을 켜면 실시간 문자 알림이 전송된다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

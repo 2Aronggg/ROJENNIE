@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_023480",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1621,
+        "consulting_content": "고객은 적금 자동이체가 한도 초과로 중단된 것을 확인하고 금액을 40,000원으로 20일에 변경하고 싶다고 요청하였고 상담사는 월 한도 100,000원 이하로 조정해야 함을 안내하고, 모바일 앱 또는 전화로 금액, 시작일 수정이 가능함을 설명한 뒤 즉시 변경을 진행해 다음 달부터 적용될 것이라고 알려주었다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

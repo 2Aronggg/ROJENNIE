@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_012289",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1230,
+        "consulting_content": "고객은 대출 연장 신청 중 입금일 오류로 연장이 안 된 상황이라 재연장을 요청하였고 상담사는 자동 연장은 불가함을 안내하고 이자, 수수료 및 이메일 알림 등록 절차를 설명하여 연장 절차를 완료하였다.■■■■■■■■■■■■"
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_025457",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 639,
+        "consulting_content": "고객은 외화 환전을 신청하고 다른 사람에게 수령이 가능한지 문의했으며, 앱 화면 오류도 언급하였다. 상담사는 앱 재시작, 업데이트를 권고하고, 선물하기 옵션으로 수령인 등록 가능함을 안내한 뒤, 달러 500달러 환전 및 수령점 등록 절차, 신분증, 여권 제시 필요와 영업시간, 수수료 안내를 제공하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

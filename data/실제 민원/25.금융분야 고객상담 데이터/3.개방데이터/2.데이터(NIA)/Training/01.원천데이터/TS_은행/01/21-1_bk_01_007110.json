@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_007110",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1575,
+        "consulting_content": "고객은 체크카드 결제 시 잔액 부족 표시에 대해 문의하였다. 상담사는 계좌 확인 결과 현재 잔액은 충분하나 일시적 가용한도 초과로 승인 대기 상태이며 자동 취소될 수 있음을 설명하였다. 가맹점 연락처를 문자로 전송하였다. 고객은 자동 이체 설정 방법과 알림 설정 절차를 문의하였고, 상담사는 모바일 앱 메뉴에서 자동 이체 추가 및 알림 설정 방법을 안내하였다. 비밀번호 입력 오류 시 음성 인증, OTP 활용 가능함을 제시하고, 일회용 비밀번호를 문자로 발송하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

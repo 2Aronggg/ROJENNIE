@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_009640",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 977,
+        "consulting_content": "고객은 청약통장을 담보로 한 마이너스 통장 대출의 만기 연장 여부를 문의하였다. 상담사는 만기일 이후 일정일에 시스템이 자동 연장 여부를 판단하며, 그 전까지는 확인이 불가하다고 설명하였다. 자동 연장이 불가능할 경우 대출 관리 지점에 연락해 상환 또는 별도 연장 신청이 필요하며, 신분증, 계약서 사본이 요구된다고 안내하였다. 연장 시 기존 이자율이 유지되는 조건이며, 정책 변경 시 별도 통보가 이루어진다고 전달하였다. 고객은 연장 의사를 사전에 표시할 수 있으나 최종 연장은 시스템 판단에 따라 자동으로 이루어진다고 확인하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

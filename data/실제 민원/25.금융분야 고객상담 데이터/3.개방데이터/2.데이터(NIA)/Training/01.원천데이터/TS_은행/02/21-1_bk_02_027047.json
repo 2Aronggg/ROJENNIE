@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_027047",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1569,
+        "consulting_content": "고객은 ★★은행 계좌 입금 내역 확인 및 화면 미표시 문제를 문의하였고 상담사는 계좌 번호, 입금액, 시간을 확인하고 거래가 정상 처리됐음을 안내하였으며, 중계 요청 및 수수료 안내, 고객센터 번호 제공, 알림 서비스 신청 방법을 설명하였다. 고객은 알림 서비스 이용 의사를 밝혔고 상담사는 설정 방법을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_009051",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1043,
+        "consulting_content": "고객은 OO은행 부산역 인근 지점의 정확한 위치와 영업 여부를 문의했고, 상담사는 해당 지점은 통합되어 부산역 인근 다른 지점이 운영 중이며 위치, 출구 기준 안내, 영업시간, 주차 가능 여부, ATM 이용 가능 여부를 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

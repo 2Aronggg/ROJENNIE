@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_031700",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1414,
+        "consulting_content": "고객은 ★★카드 결제 출금 계좌와 자동이체 현황 확인을 요청하고 계좌 정보를 제공하였고 상담사는 해당 계좌가 ★★은행 OOO OO ●● O OO OO에 연결돼 자동이체가 정상 진행될 것이라고 안내하였다. 고객은 비밀번호 변경으로 재등록 방법을 물었고 상담사는 고객센터 전화 후 비밀번호 재입력으로 재등록 가능하다고 설명하였다. 고객은 온라인 뱅킹에서 자동이체 내역 확인 방법과 수수료 여부를 문의했으며 상담사는 앱 메뉴 이용 방법과 수수료는 부과되지 않고 연체 시만 발생한다는 정보를 제공하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

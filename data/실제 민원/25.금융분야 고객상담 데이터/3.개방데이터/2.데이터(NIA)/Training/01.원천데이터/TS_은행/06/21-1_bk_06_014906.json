@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_014906",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 875,
+        "consulting_content": "고객은 대출 상환을 위한 가상 계좌 번호 제공을 요청하였고 상담사는 계좌 번호와 입금 안내를 전달하였다. 고객은 성명, 생년월일, 통장 비밀번호를 제공하였고 상담사는 가상 계좌 입금 방법과 카카오톡, 문자 알림 옵션을 안내하였다. 고객은 입금 마감 시간과 자동이행 계좌 잔액 처리 방법을 문의하였고 상담사는 마감은 당일 오후 6시이며 잔액은 출금 후 진행하도록 설명하였다. 고객은 영수증 발송 여부를 확인하였고 상담사는 입금 확인 시 문자와 이메일로 영수증을 제공한다는 점을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

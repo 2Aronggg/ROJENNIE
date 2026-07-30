@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_008150",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1346,
+        "consulting_content": "고객은 착오 송금 반환을 요청하였으며, 은행은 반환 신청을 접수하였다. 고객은 계좌번호와 연락처를 제공하고 인증 절차를 완료하였다. 은행은 반환 청구가 정상 등록되었으며, 수취 은행 확인 후 2~3 영업일 이내 처리되고 진행 상황은 문자로 안내될 것임을 알렸다. 반환 과정에서 발생할 수 있는 수수료는 수취 은행이 부과할 수 있음을 설명하였다. 향후 착오 방지를 위해 이체 전 계좌와 금액을 재확인할 것을 권고하였다. 고객은 추가 문의 없음을 확인하고 상담을 종료하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

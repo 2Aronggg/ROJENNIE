@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_015806",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1690,
+        "consulting_content": "고객은 기존 대출 연장을 원한다며 본인 확인을 위해 이름, 생년월일, 계좌, 비밀번호를 제공하였고 상담사는 확인 후 연장 가능 여부와 절차를 안내하였다. 고객은 모바일 앱으로 약정서 작성, 서명, 이자율 유지 및 상환 일정 조정을 요청하였고 상담사는 앱 이용 방법, 동일 이자율 적용, 일정 재조정 가능 및 완료 시 문자, 이메일 발송을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_008450",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1750,
+        "consulting_content": "고객은 송금 시 금액을 잘못 입력해 일부 금액만 이체되는 착오송금이 발생하여 해당 금액을 조회하고 반환받는 방법을 문의하였고, 상담사는 본인 확인 후 자금 반환 신청이 가능하며 ARS, 모바일 OTP 등 대체 인증을 통해 반환 절차를 진행할 수 있고, 반환은 영업일 기준 1~2일 내 완료되며 문자 알림으로 안내된다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

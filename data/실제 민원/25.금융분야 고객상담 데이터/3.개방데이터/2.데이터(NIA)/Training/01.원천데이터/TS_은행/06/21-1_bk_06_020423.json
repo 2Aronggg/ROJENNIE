@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_020423",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1241,
+        "consulting_content": "고객은 가상계좌 번호와 입금 안내를 문자로 받기를 요청하고, 입금 마감 시간을 확인하며, 약관에 동의하였다. 상담사는 계좌 번호와 오늘 밤 23시까지의 마감 시각을 안내하고, 문자, 알림톡 발송 옵션을 제시하며, 입금 절차와 연체 시 발생할 수 있는 비용을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

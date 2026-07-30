@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_001955",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1369,
+        "consulting_content": "고객은 은행 계좌에서 발생한 무단 출금을 신고하고 비밀번호 유출 여부와 재설정 방법을 문의하였고, 상담원은 계좌 잠금 조치 및 비밀번호 재설정 안내, 비밀번호 재설정 안내, 분실 및 사고 신고 절차를 설명하며 신고 접수를 진행하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

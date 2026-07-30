@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_015006",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 901,
+        "consulting_content": "고객은 정기예금 만기일과 금리 확인을 요청하였고 상담사는 만기일까지 금리가 적용되고 이후 재예치가 유리함을 안내하였다. 고객은 만기 전 해지 시 불이익을 물었고 상담사는 이자 차감 및 수수료 가능성을 설명하였다. 고객은 자동 해지 여부와 지점 방문 필요성을 확인하였고 상담사는 자동 해지 등록 시 자동 입금, 미등록 시 유지된다고 답하였다. 고객은 가까운 지점 방문 가능 여부와 모바일 앱 연장 신청 가능성을 문의하였고 상담사는 가까운 지점에서도 업무 가능하나 앱 연장은 제한돼 전화, 방문을 권고하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

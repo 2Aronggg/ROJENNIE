@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_025327",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 847,
+        "consulting_content": "고객은 전세 대금 연장을 신청하고 남은 6개월 계약을 12개월 연장하고자 하며 전입세대 확인서 발급 및 이자율 변동 여부를 문의하였고, 상담사는 전입세대 확인서는 현재 주소 기준으로 발급 가능하고 필요한 서류와 절차를 안내하며, 묵시적 갱신 설명 및 연장 심사 시 이자 변동 및 추가 비용 여부는 추후 심사 결과에 따라 안내될 것이라고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

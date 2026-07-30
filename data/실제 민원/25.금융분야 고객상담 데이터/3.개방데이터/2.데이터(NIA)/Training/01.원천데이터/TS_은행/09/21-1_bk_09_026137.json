@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_026137",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1214,
+        "consulting_content": "고객은 모바일 앱으로 신청한 환전 내역 조회와 방문 일정, 수령점 변경을 요청했으며, 한도와 수수료 문의도 하였다. 상담사는 ‘내역 조회’ 메뉴와 ‘수령 일자 및 수령점 등록’ 절차를 안내하고, 하루 최대 1천만 원, 수수료 0.2%를 설명했으며, 신분증 지참 및 마스크 착용 등 방문 시 유의사항을 전달하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

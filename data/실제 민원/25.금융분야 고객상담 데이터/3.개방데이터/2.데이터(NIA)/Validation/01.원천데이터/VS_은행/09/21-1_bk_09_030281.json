@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_030281",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1075,
+        "consulting_content": "고객은 현금 구입 및 금액, 권종 확인을 요청했고 상담사는 재고 현황과 변동 가능성을 안내하며, 계좌 담당 지점 확인을 약속하고 연락처를 받아 추후 확인하겠다고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

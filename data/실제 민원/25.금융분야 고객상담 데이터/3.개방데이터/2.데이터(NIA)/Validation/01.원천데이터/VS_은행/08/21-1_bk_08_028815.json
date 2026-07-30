@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_028815",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1053,
+        "consulting_content": "고객은 연장 신청을 하지 않았고 모바일에서 오류가 발생해 '연결이 실패했다'라는 메시지를 확인했으며, 방문 시간이 없어 온라인, 앱 신청을 원했고, 정보 등록을 위해 휴대폰 번호, 주민등록번호 입력 및 사진 인증을 요구받았다. 고객은 사진을 찍었으나 인증 미완료임을 확인했고, 상담사는 문자로 인증 코드를 발송하고 입력 후 정보 업데이트를 완료하도록 안내했으며, 자동 연장이 된 경우 기존 옵션을 취소하고 직접 연장을 신청하는 방법을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

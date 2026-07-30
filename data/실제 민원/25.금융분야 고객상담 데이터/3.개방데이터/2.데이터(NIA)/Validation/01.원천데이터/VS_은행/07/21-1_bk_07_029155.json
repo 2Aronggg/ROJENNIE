@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_029155",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1269,
+        "consulting_content": "고객은 우대 금리 적용을 위해 적금 납부 상황을 확인하고자 계좌 정보를 제공하였고 상담사는 입출금계좌를 조회하여 적금 입금 여부를 실시간으로 점검하고, 이번 달 부수거래 충족을 위해 지정일 전 입금을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

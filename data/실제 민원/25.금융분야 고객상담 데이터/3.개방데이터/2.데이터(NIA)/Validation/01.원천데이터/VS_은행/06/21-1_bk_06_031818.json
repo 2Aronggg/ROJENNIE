@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_031818",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 868,
+        "consulting_content": "고객은 대출 이자 출금 지연과 계좌 번호 미확인, 통장 개설 방법, 자동이체 여부, 비밀번호 제공 거부, 연장, 감면 혜택 안내를 요청하였고 상담사는 계좌 정보 요구, 입금 절차와 자동이체 설명, 비밀번호 대신 다른 인증 제시, 연장, 감면 옵션 안내와 입금 지연 시 재연락을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

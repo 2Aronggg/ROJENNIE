@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_021485",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1670,
+        "consulting_content": "고객은 자동이체 등록을 요청하고 계좌, 비밀번호, 본인확인 정보를 제공했으며, 상담사는 등록 절차와 필요 서류, 현재 설정 현황, 한도 해제는 지점 방문 권고, 출금일 확인은 어려움, 자동이체 취소, 변경 방법을 모바일, 영업점 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

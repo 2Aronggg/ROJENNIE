@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_030037",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 924,
+        "consulting_content": "고객은 계좌 번호와 비밀번호를 제공하고 입금 내역 확인을 요청하였고 상담사는 입금일과 금액을 조회해 문자, 이메일 전달 여부를 안내하고, 입금이 반영되지 않은 경우 영업일 기준 1~2일 지연될 수 있음을 알려주었다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

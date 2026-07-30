@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_007645",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1194,
+        "consulting_content": "고객은 매월 자동이체로 적금 납입을 신청했으나 이번 달 이체가 누락됐다고 문의하였다. 상담원은 자동이체 내역을 조회하고, 해당 날짜에 이체가 되지 않은 것을 확인하였다. 계좌 잔액 충분함을 확인하고, 시스템 점검으로 인한 오류 가능성을 제시하였다. 점검으로 인한 지연으로 금액은 다음 영업일 오후 5시까지 이체될 예정이라고 안내하였다. 자동이체 재신청 방법과 수동 이체 절차를 안내하였다. 고객은 안내를 이해했으며 추가 문의는 없다고 회신하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

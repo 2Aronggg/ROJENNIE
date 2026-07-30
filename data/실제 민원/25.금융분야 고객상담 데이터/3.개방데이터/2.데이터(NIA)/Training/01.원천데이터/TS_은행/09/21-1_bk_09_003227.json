@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_003227",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1268,
+        "consulting_content": "고객은 미국 달러 환전을 오늘 신청하고 금액, 한도, 수수료, 가능 시간 등을 문의하였고 상담사는 현재 환율과 0.2% 수수료, 오후 4시까지 실시간 승인 가능, 사이버 한도는 ●●원, 공인증서 500달러, 영업일 9시~18시, 지점 방문 시 신분증, 신청서 제출 후 현금 수령 및 영수증 발급 등을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

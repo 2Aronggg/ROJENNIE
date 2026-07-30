@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_023207",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1114,
+        "consulting_content": "고객은 계좌에서 알 수 없는 출금 내역을 확인하고 상세 설명을 요청했으며, 추가로 대출 관련 비용과 상환 일정 조정을 문의하였다. 상담사는 출금이 대출 할인, 휴대폰 결제, 인지세 수납 등 대출 관련임을 안내하고, 대출 담당 부서와 연결해 상세 상담 및 상환 방식 조정을 도와주겠다고 제안했으며, 고객의 연결 요청에 따라 연결을 진행한다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

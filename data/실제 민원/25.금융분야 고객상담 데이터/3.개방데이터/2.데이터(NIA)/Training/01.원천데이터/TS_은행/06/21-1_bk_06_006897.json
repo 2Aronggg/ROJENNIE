@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_006897",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1459,
+        "consulting_content": "고객은 대출 이자 미납 여부와 상환 일정 변경을 문의하며 적금 상품 가입 조건도 함께 확인했다. 상담사는 가상계좌 정보와 입금 기한을 안내하고 상환일을 15일로 조정했다. 이어 이메일 등록과 모바일 앱을 통한 적금 신청 방법을 안내했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

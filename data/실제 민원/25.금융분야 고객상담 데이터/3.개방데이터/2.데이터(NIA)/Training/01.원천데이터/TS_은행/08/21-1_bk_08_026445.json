@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_026445",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1195,
+        "consulting_content": "고객은 대출 연장을 전화로 신청하고 싶다고 요청했으며, 문자 미수신 및 만기일 확인을 문의하였다. 상담사는 신분 확인 후 홈페이지, 링크 신청 가능, 신분증 지참 방문 및 약정서 서명 안내하고, 연장 승인 후 1~2일 내 계좌 반영 및 문자, 모바일뱅킹 확인 가능하다고 안내했으며, 두시 전 연락 요청에 맞춰 전화드리겠다고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_019057",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1166,
+        "consulting_content": "고객은 입금 출처 확인을 요청하고, ★★은행명, 계좌, 본인정보, 비밀번호 등을 제공했으며, 입금 일시, 금액을 알려주었다. 상담사는 은행명 확인 후 ARS 연결, 본인 확인, 비밀번호 재입력 요청, 입금 내역을 조회해 ★★카드 환불 건임을 안내하고, 카드사 문의 필요성을 설명한 뒤 결과를 문자로 전송하겠다고 제안하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_028401",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1131,
+        "consulting_content": "고객은 대출 만기 연장을 문의하고 서류 제출 방법과 결과 시점을 물었으며, 상담사는 사업자 대출 연장은 서류 제출이 선행되어야 함을 안내하고, 필요한 서류를 문자로 전송해 영업점 방문 또는 비대면 제출을 권유했으며, 서류 검토는 3~5영업일 소요, 추가 비용, 이자 변동 없음을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

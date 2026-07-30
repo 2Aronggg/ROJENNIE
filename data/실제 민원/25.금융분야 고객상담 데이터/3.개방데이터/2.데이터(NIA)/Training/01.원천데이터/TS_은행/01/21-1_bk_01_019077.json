@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_019077",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1346,
+        "consulting_content": "고객은 예상치 못한 입금 내역 확인을 요청하였고 상담사는 계좌, 생년월일, 비밀번호 확인 후 입금이 법원 송달료임을 안내하였다. 고객은 반환 방법을 물었고 상담사는 법원, 송금기관에 문의해야 한다고 답변하였다. 고객은 중계 연결을 원했으나 직접 은행에 문의하기로 하였고 상담사는 필요 시 중계 연결을 도와줄 수 있음을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_030705",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 766,
+        "consulting_content": "고객은 환전 금액 조회와 수령 장소를 확인하고자 하였고 상담사는 예약된 환전이 엔화, 미화이며, 다른 통화는 별도 신청 필요함을 안내하고, 지점 운영시간, 필요 서류를 알려주었다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

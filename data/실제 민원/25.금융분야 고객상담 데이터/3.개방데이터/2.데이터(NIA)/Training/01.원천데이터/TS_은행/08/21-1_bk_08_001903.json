@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_001903",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1964,
+        "consulting_content": "고객은 대출 연장 절차와 필요 서류, 신청 후 결과 통보 시점, 연장 거절 시 대안, 재조정 대출과 유예 기간의 조건 및 비용, 그리고 모바일 앱을 통한 비대면 신청 방법을 문의했다. 상담사는 상세 안내를 제공하고, 각 옵션의 장단점과 주의사항을 설명했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

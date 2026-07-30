@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_001792",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1242,
+        "consulting_content": "고객은 한도 제한 계좌 해지를 원해 필요한 서류와 절차를 문의했고, 상담사는 계좌 사용 용도 확인 후 필요 서류 종류, 팩스 제출 시 소요 시간, 고객 등록정보 재확인, 모바일 앱 자동 이체 설정 방법, 거래 내역 보관 및 이체 방법 등을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

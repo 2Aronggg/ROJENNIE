@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_016994",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 780,
+        "consulting_content": "고객은 100달러 환전을 요청하고 최종 결제 금액, 필요 서류, 절차, 입금 한도와 취소 정책을 문의하였고 상담사는 기준 환율 적용, 수수료와 최소 요금 안내, 추가 서류 없음, 가상계좌 이용 방법과 개인정보 동의 절차를 설명하고, 입금 한도와 취소 절차를 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

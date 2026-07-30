@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_001509",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1239,
+        "consulting_content": "고객은 입출금 통장과 주택청약 통장 해지를 문의했다. 상담사는 잔액 정산 후 청약 해지 필요성을 설명하고, 해지 절차와 비대면 신청 요건, 필요 서류 및 처리 기간을 안내했다. 또한 이자 지급 방식, 수수료 발생 조건, 신용 영향 여부, 재청약 가능 여부와 연락 절차를 설명했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

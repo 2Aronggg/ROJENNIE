@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_003753",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1423,
+        "consulting_content": "고객은 입금 일자와 금액, 메모를 제공하고 입금 확인 문자를 문의하였고 상담사는 입금 내역을 조회해 1,200,000원, 2025‑05‑03 입금과 ‘복지사업’ 메모를 확인하고 사회복지 법인 계좌로 정상 처리됐음을 안내하였으며 최종 확인 결과를 전달하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

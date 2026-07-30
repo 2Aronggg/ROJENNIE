@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_032236",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1497,
+        "consulting_content": "고객은 대출 연장 문의와 계좌, 성명, 생년월일, 비밀번호 제공을 하였고 상담사는 연장 절차를 모바일 앱으로 비대면 신청 가능함을 안내하고 신청 페이지 링크와 서류 제출 방법을 설명하였다. 고객은 결과를 문자와 이메일로 받기를 원했으며 상담사는 등록된 연락처, 이메일로 결과를 발송하고 연장 시 이자율 변동 및 연체 비용 유의사항을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

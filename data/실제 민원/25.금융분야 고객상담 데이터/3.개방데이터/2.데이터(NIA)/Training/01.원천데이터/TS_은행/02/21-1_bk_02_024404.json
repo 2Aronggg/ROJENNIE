@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_024404",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1025,
+        "consulting_content": "고객은 입금 일자, 금액, 계좌 정보를 제공하고 중계 서비스와 입금 취소를 요청하였고 상담사는 입금 내역을 확인한 뒤 O 단계에서 추가 서류 필요와 절차를 안내하며, 취소는 입금 후 일정 시간 내에 고객센터 재연락 또는 모바일 앱 신청으로 가능하다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

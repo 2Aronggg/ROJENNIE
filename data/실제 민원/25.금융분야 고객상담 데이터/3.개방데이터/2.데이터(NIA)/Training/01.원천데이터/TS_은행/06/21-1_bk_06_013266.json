@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_013266",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1514,
+        "consulting_content": "고객은 주택 담보 대출 상환을 위한 가상 계좌와 입금 방법을 문의하였고 상담사는 연체 대출 두 건을 확인하고 가상 계좌와 금액을 문자로 발송하며 입금 절차, 마감 시간, 연체 시 비용을 안내하였다. 고객은 입금 확인 메시지 전송 방법을 물었고 상담사는 현재 전화번호로 회신하거나 ‘입금 완료’ 문자 전송을 요청하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

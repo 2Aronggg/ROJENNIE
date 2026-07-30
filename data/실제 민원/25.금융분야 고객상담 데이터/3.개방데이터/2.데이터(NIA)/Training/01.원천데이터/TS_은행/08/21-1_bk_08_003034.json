@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_003034",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1468,
+        "consulting_content": "고객은 대출 만기 잔액, 상환 일정 확인과 연체 이자, 연장 조건을 문의했으며, 휴대폰 번호 분실, 변경을 요청하고 오늘 중 답변을 원하였다. 상담사는 계좌, 신분 확인 절차를 안내하고, 연체 30일 초과 시 심사 필요, 완납 후 7일 이내 연장은 수수료 없이 가능함을 설명하며, 새로운 번호를 등록하고 즉시 연락, 문자 인증을 진행하겠다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

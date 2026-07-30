@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_016290",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 933,
+        "consulting_content": "고객은 만기 전 저축 계좌의 일부 금액을 인출하고자 조건을 문의하였고 상담사는 계약 기간 중 일정 금액까지 최소 ●●원 잔액을 유지하면 분할 인출이 가능하며, 모바일 어플, 인터넷뱅킹 등으로 신청하면 실시간으로 입금되고 이자율은 변동되지 않아 계좌는 그대로 유지된다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

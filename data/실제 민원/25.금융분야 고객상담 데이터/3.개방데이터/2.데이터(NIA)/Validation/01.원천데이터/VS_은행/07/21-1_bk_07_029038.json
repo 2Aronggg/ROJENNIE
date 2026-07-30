@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_029038",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 713,
+        "consulting_content": "고객은 대출 금리 자동 감면 여부와 청년, 보험 적금 포함 여부 등을 문의하였고 상담사는 원화 적금을 월 ●●원 이상 납입하면 ★★은행 계좌에서 자동 반영돼 서류 없이 대출 실행일 기준 최근 3개월 실적이면 즉시 적용된다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

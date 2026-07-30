@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_024172",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1174,
+        "consulting_content": "고객은 출장소와 여러 지점에서 한도액 및 계좌 연계 여부를 확인하고 실적 조회와 서비스 안내를 요청하였고 상담사는 계좌가 어느 지점에도 연결되지 않았으며 한도액은 변동 가능함을 안내하고, 실적 확인은 시스템에 반영돼 별도 제한 없음을 알려주며, 향후 신규 서비스는 문자, 이메일로 안내해 드리겠다고 응답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

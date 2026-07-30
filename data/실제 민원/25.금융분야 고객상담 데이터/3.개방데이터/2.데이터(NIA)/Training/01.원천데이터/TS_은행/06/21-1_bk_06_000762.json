@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_000762",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1410,
+        "consulting_content": "고객은 대출의 미납 여부와 현재 적용 이율을 확인하고, 자동이체 설정 방법, 상환 옵션, 조기 상환 및 재조정 절차와 비용 등에 대해 문의하였다. 상담사는 계좌 확인 후 미납이 없음을 안내하고, 이율 고정 및 변동 통보 방식, 자동이체와 온라인, 방문 납부 장단점, 설정 절차와 변경, 해지 방법, 조기 상환 수수료와 리파이낸싱 절차를 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

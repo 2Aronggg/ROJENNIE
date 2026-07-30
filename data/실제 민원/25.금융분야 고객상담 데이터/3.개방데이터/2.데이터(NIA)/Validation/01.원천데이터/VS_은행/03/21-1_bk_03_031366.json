@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_031366",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 859,
+        "consulting_content": "고객은 어제 적금 가입 후 두 번 출금된 금액 확인을 요청하고 계좌, 비밀번호 등 본인 확인 정보를 제공하였고 상담사는 계좌 조회 결과 중복 출금이 시스템 오류로 판단돼 환불 절차를 제안하고 고객은 환불 진행 및 문자 알림 서비스 신청을 요청하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

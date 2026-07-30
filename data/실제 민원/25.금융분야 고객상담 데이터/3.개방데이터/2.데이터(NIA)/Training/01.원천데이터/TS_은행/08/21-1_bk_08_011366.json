@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_011366",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 826,
+        "consulting_content": "고객은 주택담보 대출 연장 확인을 요청하였고 상담사는 대출 정보 확인 후 본인 인증, ARS, SMS 절차를 안내하였다. 고객은 인증을 마치고 연장 완료와 변경된 금리, 월 상환액을 문자로 받겠다고 하였으며 상담사는 연장 완료와 상세 안내를 제공하였다. 고객은 추가 문의 없음을 밝히고 상담사는 적금, 카드 등 기타 서비스 안내를 제안하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

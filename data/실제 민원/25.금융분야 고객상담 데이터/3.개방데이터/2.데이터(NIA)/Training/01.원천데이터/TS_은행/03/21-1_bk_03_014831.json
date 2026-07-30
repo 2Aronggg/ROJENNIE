@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_014831",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "80세이상",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 879,
+        "consulting_content": "고객은 할머니 명의 자동이체 해지를 원했으며, 상담사는 스마트폰, 인터넷뱅킹 미가입으로 영업점 방문 후 신분증 제시와 서명만으로 해지 가능하다고 안내하고, 보안카드 없이도 처리된다고 설명하였다. 또한 향후 인터넷뱅킹 신청은 영업점에서 서류 제출로 가능하다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

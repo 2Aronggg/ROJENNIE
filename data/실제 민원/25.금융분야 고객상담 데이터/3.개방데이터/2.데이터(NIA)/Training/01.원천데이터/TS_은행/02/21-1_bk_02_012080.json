@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_012080",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1407,
+        "consulting_content": "고객은 다른 영업점에서 보관 중인 카드의 미수 취소 처리와 연락처 확인 가능 여부, 카드 번호가 지워진 상태에서 계좌 정보로 조회 및 중계를 할 수 있는지, 카드 분실 신고 및 재발급 진행 방법을 문의했고, 상담사는 은행과 카드사의 업무가 분리돼 있어 계좌 정보만으로는 카드 상태나 등록 번호 확인이 어렵다고 설명하며, 카드사 고객센터로 직접 문의할 것을 안내하고, 주민등록번호와 휴대폰 인증을 통해 분실 신고, 재발급 및 미수 취소 절차를 진행해 결과를 문자와 이메일로 안내하겠다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

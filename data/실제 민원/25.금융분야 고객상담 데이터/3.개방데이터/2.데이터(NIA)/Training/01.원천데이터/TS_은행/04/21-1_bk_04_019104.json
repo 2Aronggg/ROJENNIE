@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_019104",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1114,
+        "consulting_content": "고객은 적금 만기 후 자동 입금 여부와 계좌 확인 방법을 문의했으며, 계좌 번호를 몰라 앱 확인도 어려움을 표시하였다. 상담사는 본인 인증이 필요하다고 안내하고, 모바일 앱 확인 방법을 제시했으나 진행이 어려운 경우 가까운 지점 방문을 권유하고, 신분증, 계약서, 거래내역서 제출을 안내하였다. 고객은 지점 방문으로 처리하겠다고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

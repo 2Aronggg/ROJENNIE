@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_016730",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1096,
+        "consulting_content": "고객은 대출 이자 감면을 위한 적금 조건과 가입 서류, 신청 절차 등을 문의하였고 상담사는 별도 전용 적금은 없으며 월 ●●원 이상 일반 적금 및 급여이체 유지가 우대 조건이며, 필요한 서류는 신분증, 소득증명, 대출계약서 사본이고 온라인 신청 시 3~5일 내 심사 완료, 추가 혜택으로 카드 포인트, 급여이체 우대가 있다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

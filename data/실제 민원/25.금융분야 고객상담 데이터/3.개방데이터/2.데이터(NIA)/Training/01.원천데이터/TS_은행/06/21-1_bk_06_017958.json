@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_017958",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1311,
+        "consulting_content": "고객은 어제 앱에서 비상금 대출을 신청하고 입금 시기를 물었고 상담사는 대출이 마이너스 통장을 통해 이용되는 형태이며 직접 입금이 없다고 안내하였다. 고객은 대출 이용 및 송금 가능 여부를 확인하고 싶어했으며 상담사는 기존 입출금 절차와 자동 차감 방식을 설명하고, 월별 상환 금액 및 자동이체 설정, 연체 시 비용 등을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

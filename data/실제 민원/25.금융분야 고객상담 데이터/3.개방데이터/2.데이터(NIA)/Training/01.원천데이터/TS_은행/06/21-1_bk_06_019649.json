@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_019649",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1895,
+        "consulting_content": "고객은 현재 적용 금리와 전 납입일 확인, 가상계좌 정보 재요청, 두 차례 상환 후 원금, 이자 확인, 이자 감소 여부와 총 상환액 계산, 6개월 상환 일정 조정을 요청하였고 상담사는 가상계좌 생성, 입금 안내, 원금 증가, 이자 감소 설명, 남은 원금, 이자 안내, 새로운 자동이체 계획을 제시하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

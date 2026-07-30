@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_026381",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 843,
+        "consulting_content": "고객은 자동이체 취소를 요청하고 계좌, 본인 확인을 진행했으며, 앱에서 해지를 시도했지만 '해지 요청이 처리되지 않았다' 오류가 발생했다고 하였다. 상담사는 자동이체가 아직 등록돼 있음을 확인하고, 해지는 영업일 기준 1일 이내 반영되며 앱 경로 문자로 안내하고, 오류 발생 시 재처리 요청을 진행해 1~2영업일 내에 완료될 것이라고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

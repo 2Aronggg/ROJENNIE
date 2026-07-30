@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_001536",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1438,
+        "consulting_content": "고객은 마이너스통장 만기 연장 안내를 받으며 마이너스통장 연장 절차 진행 단계, 연장 승인 완료 후 이자율 변동 여부, 모바일 앱을 통한 마이너스통장 만기 연장 신청방법, 새로운 대출 상환일정 적용일, 추가 서류 여부 등을 문의했고, 상담사는 대출 연장 절차 및 연장 시 필요한 서류와 제출방법, 연장 승인 후 이자율 변동 여부, 모바일 앱을 통해 마이너스통장 만기 연장 신청방법 등을 안내했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

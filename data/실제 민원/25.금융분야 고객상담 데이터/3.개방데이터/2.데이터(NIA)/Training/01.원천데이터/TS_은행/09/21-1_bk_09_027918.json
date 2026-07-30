@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_027918",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 817,
+        "consulting_content": "고객은 페소 환전 가능 여부와 금액 범위, 다른 통화 제공, ★★은행과 차이, 주차 시설, 영업시간, 수수료, 신분증, 거래내역서 준비를 문의하였고 상담사는 지점 보유 외화와 금액 확인, 환전 가능 시간, 수수료 0.5% 적용, 필요 서류 안내 및 주차장 위치를 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_019923",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1321,
+        "consulting_content": "고객은 인터넷 송금 한도와 해지 방법을 문의하였고, 상담사는 계좌번호 입력을 안내하며 하루 이체 한도는 ○○원이라고 설명했다. 또한 고객 계좌가 금융거래한도계좌로 설정되어 있어 앱에서는 해지가 불가능함을 안내하고, 가까운 지점을 방문해 신분증과 계좌 정보를 제시하면 한도 해지가 가능하다고 설명했다. 상담사는 절차 진행 시 필요 서류와 처리 소요 시간, 담당자 연결 방법까지 추가로 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

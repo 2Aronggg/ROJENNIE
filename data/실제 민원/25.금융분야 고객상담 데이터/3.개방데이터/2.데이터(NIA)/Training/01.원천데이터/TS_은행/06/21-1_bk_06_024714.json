@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_024714",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1281,
+        "consulting_content": "고객은 대출 원리금 상환 금액과 매월 원금, 이자 구성 내역을 문의하였고 상담사는 현재 총 상환액과 원금, 이자 비율을 안내하고, 변동 금리와 고정 금리 차이를 설명하였다. 고객은 조기 상환 위약금 2%와 신청 절차, 자동 이체 설정 방법을 요청하였고 상담사는 위약금율, 신청 방법 및 자동 이체 신청 방법을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

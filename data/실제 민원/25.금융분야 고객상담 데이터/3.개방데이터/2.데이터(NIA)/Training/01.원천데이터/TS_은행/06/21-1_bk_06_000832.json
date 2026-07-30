@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_000832",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1298,
+        "consulting_content": "고객은 대출 이자 납입 방법과 자동이체 현황 확인, 직접 납입 및 가상계좌 발급 절차, 납입일 연체 시 처리 방식, 조기 상환 가능 여부와 수수료 등에 대해 문의하였다. 상담사는 고객의 자동이체가 정상적으로 진행되고 있음을 안내하며, 필요 시 가상계좌 발급 및 조기 상환 방법에 대해 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_003102",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1599,
+        "consulting_content": "고객은 아파트 관리비 자동이체 해지 여부를 확인하고자 계좌, 비밀번호, 성함을 제공해 본인 확인을 진행했으며, 상담사는 조회 결과 해지가 아직 처리되지 않았음을 안내하고, 해지를 위해 영업점 방문 또는 전화 신청 절차와 필요 서류, 해지 후 출금 가능성에 대해 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

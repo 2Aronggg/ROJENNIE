@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_012771",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1272,
+        "consulting_content": "고객은 해지 요청 후 바로 적용되나요? 이전에 빠져나간 금액은 환불 받을 수 있나요?적금에서 매월 일정 금액이 자동 출금되는 현상을 문의하였고 상담사는 해당 출금이 ★★페이 서비스 이용에 따른 자동이체이며, 상세 확인 및 차단을 위해 ★★페이 고객센터로 연락하도록 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

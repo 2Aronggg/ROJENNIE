@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_010910",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1253,
+        "consulting_content": "고객은 아버지에게 송금하려다 이체 한도 초과 문제를 제기하고 해지를 원했으며, 상담사는 해당 계좌가 한도 계좌임을 설명하고 모바일 OTP로는 증액이 불가하므로 영업점 방문해 서류 제출 후 심사, 해제 절차를 진행해야 하며, 영업점 송금 시 수수료와 30~60분 소요될 수 있음을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

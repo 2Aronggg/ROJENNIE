@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_023280",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1496,
+        "consulting_content": "고객은 만기된 적금을 연장, 재가입 방법을 문의하였고 상담사는 자동 해지, 재가입 절차와 동일 조건 재가입은 만기일에 전화 신청해야 함을 안내하였다. 고객은 입금 시점, 한도, 연결 번호를 물었고 상담사는 영업일 기준 자동 입금, 잔액 확인 가능, 현재 한도와 전용 번호를 문자로 제공한다는 설명을 하였다. 고객은 추가 프로모션 여부를 확인했으며 상담사는 기존 우대 금리 유지와 신규 프로모션 적용을 문자로 안내하겠다고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

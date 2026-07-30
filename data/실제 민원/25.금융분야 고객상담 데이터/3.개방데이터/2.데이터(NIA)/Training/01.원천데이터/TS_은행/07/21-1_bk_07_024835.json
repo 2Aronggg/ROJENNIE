@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_024835",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1149,
+        "consulting_content": "고객은 급여 부수거래 감면 여부와 자동이체, 조기상환을 문의하였고 상담사는 계좌, 현재 대출에 감면이 적용됨을 안내하고, 자동이체 설정 방법과 조기상환 시 수수료 없음, 이자 재계산 혜택을 설명하여 설정을 완료하였으며, 모든 인증 및 절차가 완료됐다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

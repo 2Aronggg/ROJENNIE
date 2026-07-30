@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_027388",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1134,
+        "consulting_content": "고객은 배당금 입금 내역을 세무 신고용으로 팩스 또는 이메일로 받고 싶다고 요청했으며, 상담사는 PC에서 PDF로 변환해 이메일 전송이 가능하다고 안내하고, 고객이 제공한 이메일 주소로 거래내역을 전송하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

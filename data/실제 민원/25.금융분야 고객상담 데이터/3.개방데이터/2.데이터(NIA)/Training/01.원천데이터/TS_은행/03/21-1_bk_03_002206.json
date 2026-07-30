@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_002206",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1950,
+        "consulting_content": "고객은 청년 도약 적금 가입과 입금, 인출 일정에 대해 확인을 요청했고, 상담사는 가입 일자, 자동 이체 일정, 인출 방법 및 수수료, 한도 등을 안내했다. 또한 대리인 통화 절차와 보안 인증 방법, 향후 제출 서류와 주의사항도 설명하며 상담을 마무리했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

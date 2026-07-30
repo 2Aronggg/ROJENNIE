@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_000864",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1221,
+        "consulting_content": "고객이 본인이 소유하고 있는 통장의 일일 이체 한도 초과로 한도 상향 방법과 승인 거절 시 대안을 문의하였고, 상담사는 영업점 방문, 모바일 뱅킹 앱 신청, 또는 수수료가 발생하는 인터넷 뱅킹 대량 이체 서비스를 이용하는 방법을 단계별로 설명하고, 대량이체시의 수수료와 잔액 불충분시 자동이체 설정 방법에 대해서도 안내했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

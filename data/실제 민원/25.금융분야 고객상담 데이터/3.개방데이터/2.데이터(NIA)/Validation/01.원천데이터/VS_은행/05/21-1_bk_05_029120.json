@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_029120",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1155,
+        "consulting_content": "고객은 이체 한도 해제를 요청했으며 상담사는 계좌는 일일 한도가 고정돼 있어 앱으로는 해지 불가하고, 급여 명세표, 재직증명서 중 하나를 지점에 제출하거나 팩스로 보내야 한다고 안내하고, 팩스 번호와 절차를 문자로 제공하겠다고 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

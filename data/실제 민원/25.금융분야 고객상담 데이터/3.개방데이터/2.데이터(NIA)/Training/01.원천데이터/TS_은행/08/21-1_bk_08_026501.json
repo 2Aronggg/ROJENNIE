@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_026501",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1557,
+        "consulting_content": "고객은 전세 대출 갱신 시기와 금리 변동을 문의하였고 상담사는 만기 전까지 기존 조건 유지와 금리는 변동형이며 다음 변동은 ○월 말이라고 안내하였다. 고객은 연장 절차에 서류 제출이 필요한지 물었고 상담사는 지점 방문, 서류 직접 작성, 제출이 필요하나 이메일 전송도 가능하다고 설명하였다. 고객은 서류가 준비됐으며 이메일 전송을 선택했고 상담사는 이메일 주소 확인 후 전송하면 연장 절차를 진행하겠다고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

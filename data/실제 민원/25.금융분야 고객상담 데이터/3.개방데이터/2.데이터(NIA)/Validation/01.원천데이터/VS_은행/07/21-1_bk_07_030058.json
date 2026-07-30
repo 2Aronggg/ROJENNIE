@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_030058",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1398,
+        "consulting_content": "고객은 전세자금 대출과 고정 금리, 필요 서류 및 원리금균등분할상환 방식을 문의하였고 상담사는 전세자금 대출 한도, 조건, 서류와 고정, 변동 금리 차이, 원리금균등분할상환 설명 후 선택을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

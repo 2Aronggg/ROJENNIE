@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_025690",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1395,
+        "consulting_content": "고객은 주택담보대출 조기상환 시 이자와 수수료 여부를 문의했으며, 상담사는 전일까지 발생한 이자만 납부하면 추가 이자는 없고, 조기상환 수수료는 남은 원금의 1%이며 세금은 없다고 안내하고, 최종 상환 금액과 온라인, 전화 이체 결제 방법을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_019608",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1744,
+        "consulting_content": "금액은 오늘 결제일이며, 총 납부하실 금액은 ● ●●● ●●● ●●● ●원입니다. 이 금액을 확인해 주시기 바랍니다. 연락처 휴대폰 번호가 확인되었다. 발송을 도와드리겠다. 고객님께서는 원 단위까지 정확한 금액을 현금으로 당일 밤 11시 ●●●분까지 입금해 주셔야 합니다. 입금 확인 후 바로 처리해 드리겠다. 계좌에 잔고가 있을 경우 이중 출금 우려가 있으니 잔고를 비워 주시기 바랍니다. 발송해 드리는 가상 계좌는 일회성이며, 추후 이용 시 금액과 계좌 번호를 꼭 재확인하시기 바랍니다. 또한 보안 주의사항을 안내드리겠다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_002811",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "신규고객",
+        "consulting_client_type": null,
+        "source_length": 1024,
+        "consulting_content": "고객은 계좌 이체 한도 확인, 스마트폰 앱과 PC 간 한도 차이 여부, 한도 초과 시 처리 방식, 일시적 한도 증액 방법, 자동화기기 이용 절차, 한도 조정 방법과 필요 서류를 문의했으며, 상담사는 고객이 문의한 계좌 이체 한도, 한도 증액 방법에 대해 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

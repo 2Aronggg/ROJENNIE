@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_009378",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1217,
+        "consulting_content": "고객은 기존 직장인 대출 시 적용받던 이자, 급여 혜택이 현재 사업자 전환으로 중단된 상황이라 급여 입금일 변경 및 실적 인정 기준을 문의하였다. 상담원은 급여일 변경은 온라인 뱅킹, 모바일 앱에서 신청 가능하며, 타인으로부터 일정 금액 이상 입금이 급여일과 일치해야 실적으로 인정된다고 안내하였다. 또한 청년저축 계좌와 사업소득 기준 적용 여부를 설명했으나 구체적인 판단은 제공되지 않았다고 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

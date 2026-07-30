@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_012781",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1738,
+        "consulting_content": "고객은 본인 계좌에서 자동 인출이 발생했다고 주장하고 거래 일자와 금액을 제시하였고 상담사는 인출 내역을 조회하고, 해당 거래가 체크카드 사용으로 확인돼 카드사에 문의하도록 안내하였으며, 자동이체 설정 여부를 확인해 정기결제 하나가 존재함을 알려 해지 절차는 서비스 제공사에 직접 연락하도록 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

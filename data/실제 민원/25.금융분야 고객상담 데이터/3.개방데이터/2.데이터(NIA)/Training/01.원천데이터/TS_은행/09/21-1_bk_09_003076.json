@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_003076",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 849,
+        "consulting_content": "고객은 ◆만 달러를 약 ●●●●원 어치 환전하고 싶다고 요청했고 상담사는 지점에 재고가 있음을 확인하고 신분증, 현금 지참 후 방문하라고 안내하였다. 고객은 비대면 우대율 여부와 다른 통화의 우대율을 물었고 상담사는 ◆만 달러는 우대율이 없고 미국 달러, 유로만 적용된다고 답변하였다. 또한 오늘 환율은 1달러당 1,200원이며, 카드 사용 시 수수료가 발생하고 영업시간 외 모바일 신청은 가능하지만 현금 수령은 영업시간 내에만 가능하다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

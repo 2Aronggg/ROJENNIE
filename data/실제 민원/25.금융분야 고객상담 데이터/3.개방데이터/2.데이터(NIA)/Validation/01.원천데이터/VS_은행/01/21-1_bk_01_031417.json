@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_031417",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "80세이상",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1291,
+        "consulting_content": "고객은 정기예금 통장 분실을 알리고 재발급 및 인터넷뱅킹 오류 해결을 요청하였고, 상담사는 영업점 방문 또는 온라인 재발급 안내와 계좌 확인을 위해 인증 절차를 진행하였다. 고객은 비밀번호 입력 후 잔액 조회와 조기해지 위약금 문의를 하였고, 상담사는 현재 잔액과 위약금이 이자액의 약 20%임을 안내하였다. 고객은 다른 계좌 잔액 확인을 요청하였고 상담사는 계좌 번호 제공 시 즉시 확인 가능하다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

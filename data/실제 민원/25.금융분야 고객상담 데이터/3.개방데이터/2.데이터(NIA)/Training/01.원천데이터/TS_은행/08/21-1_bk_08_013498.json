@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_013498",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1042,
+        "consulting_content": "고객은 전세자금 대출 연장 신청 상태 확인을 요청하고 모바일로 절차를 진행했으며 계좌, 인증 정보를 제공하였고 상담사는 이를 확인한 뒤 서류 검토 중이며 추가 서류는 없고 심사 기간은 영업일 이틀, 승인 시 연락드릴 것이라고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

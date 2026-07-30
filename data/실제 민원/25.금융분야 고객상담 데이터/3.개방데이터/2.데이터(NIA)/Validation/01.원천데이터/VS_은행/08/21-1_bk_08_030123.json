@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_030123",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 805,
+        "consulting_content": "고객은 전세 대출 오류와 서류 제출 상황을 확인하고 추가 서류 제출 기한을 문의했으며, 계좌 번호와 비밀번호를 제공하였다. 상담사는 대출 신청이 서류 검토 단계임을 안내하고, 추가 서류는 영업일 3~5일 내 제출하면 심사 기간이 단축된다고 설명했으며, 심사 결과는 지점에서 통보될 예정이라고 안내하고 고객센터 전화번호를 알려주었다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

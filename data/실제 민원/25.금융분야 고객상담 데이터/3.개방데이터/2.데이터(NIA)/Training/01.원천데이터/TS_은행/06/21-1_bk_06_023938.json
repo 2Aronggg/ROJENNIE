@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_023938",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 889,
+        "consulting_content": "고객은 대출 이자 연체를 알리고 즉시 상환을 원했으며 본인 확인 및 계좌 정보를 제공하였다. 상담사는 직접 출금은 불가하므로 수수료 없이 가상 계좌를 발급하고 입금 시점과 실시간 확인을 안내했으며, 입금 후 연체 이자 정산 및 남은 원금, 이자와 상환 일정 정보를 문자로 제공하겠다고 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

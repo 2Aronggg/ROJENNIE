@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_015423",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 811,
+        "consulting_content": "고객은 지난 6개월 이자 내역 및 대출 수수료 확인을 요청하였고 상담사는 이자는 정상 납부 중이며 다음 달 자동 이체될 예정이라고 안내하였고, 조기 상환 시 계약서에 명시된 수수료가 적용될 수 있음을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

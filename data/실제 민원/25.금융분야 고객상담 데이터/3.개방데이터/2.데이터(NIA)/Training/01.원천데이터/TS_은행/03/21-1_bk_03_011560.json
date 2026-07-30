@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_011560",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1075,
+        "consulting_content": "고객은 타행 원화 자동이체를 오픈뱅킹으로 신청했으나 오류가 발생해 일자 변경을 요청하였고, 상담사는 오류 확인 후 시스템 점검 중임을 안내하고, 오픈뱅킹 앱에서 기존 자동이체 해지 후 재등록 방법과 동일 금액, 일자 지정 가능함을 설명하며, 매월 말일로 변경해 주고 수수료는 없으며 보안 인증 확인을 권고하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

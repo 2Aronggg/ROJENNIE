@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_023155",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1055,
+        "consulting_content": "고객은 결제 거절 후 금액이 옛 계좌로 입금된 것 같아 확인을 원했으며, 본인 인증 없이 조회와 전화 연결을 요청했지만 상담사는 계좌, 비밀번호 확인 후 본인 인증이 필요하고, 직접 전화 연결은 제공하지 않으며, 인증 후 거래 조회, 정정 절차를 진행하고 영업일 1~2일 내 처리된다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_024417",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1885,
+        "consulting_content": "고객은 아동 복지 기부금 3건의 입금 여부와 금액, 입금자명을 확인하고자 은행명, 계좌, 일자, 금액을 제공했으며, 영수증 이메일 발송 및 행사 자료 제공을 요청하였고, 상담사는 제공된 정보를 토대로 거래를 조회해 입금 사실을 확인하고, 영수증을 기존 이메일로 발송하며 내일 행사 자료를 첨부해 보내겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

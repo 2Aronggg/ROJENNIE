@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_011476",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1305,
+        "consulting_content": "고객은 통장 대출 상환 자동이체 내역을 확인하고 시작일, 주기, 수수료를 문의하였고 상담사는 계좌, 신분 확인 후 해당 금액이 자동이체로 출금된 사실을 안내하고, 매월 동일일에 실행되며 수수료는 없다고 설명하였다. 고객은 추가 연락을 요청하였고 상담사는 확인 후 전화로 결과를 알려드리겠다고 약속하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

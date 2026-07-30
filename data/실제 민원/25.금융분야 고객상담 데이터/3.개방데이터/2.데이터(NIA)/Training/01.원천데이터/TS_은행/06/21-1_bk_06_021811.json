@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_021811",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 934,
+        "consulting_content": "고객은 대출 이자 납입 내역 확인과 납입일 연기 방법, 입금 방법 및 영수증 이메일 발송을 요청하였고 상담사는 계좌, 마이너스 통장, 변동금리형 대출 이자 납입일이 매월 10일임을 안내하고, 모바일 뱅킹에서 연기 신청 및 입금 절차, 영수증 이메일 전송, 앱에서 대출 관리 확인 방법을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

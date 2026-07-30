@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_031968",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1268,
+        "consulting_content": "고객은 대출 원금과 이자를 이미 상환했음에도 추가 이자 납부 안내를 받아 확인을 요청하였고, 상담사는 계좌, 생년월일 등 시스템을 조회해 모든 이자가 정상적으로 상환된 것으로 확인되어 추가 납부가 필요 없으며 해당 안내는 무시해도 된다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

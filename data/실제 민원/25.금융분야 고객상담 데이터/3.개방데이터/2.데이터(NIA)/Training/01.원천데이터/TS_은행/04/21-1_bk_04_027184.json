@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_027184",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 892,
+        "consulting_content": "고객은 어머니 예금을 대리인인 자신이 인출하려고 위임장 작성 및 신분증, 인감증명서 등 서류 준비를 문의했으며, 상담사는 본인 방문이 원칙이며 위임장 양식 사용, 주민등록증 사본, 인감증명서 제출을 안내하고, 전화로는 확인이 제한돼 각 은행별로 직접 상담, 방문이 필요하다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

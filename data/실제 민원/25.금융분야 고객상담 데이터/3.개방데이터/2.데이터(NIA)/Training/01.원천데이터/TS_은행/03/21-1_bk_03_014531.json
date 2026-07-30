@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_014531",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1302,
+        "consulting_content": "고객은 적금 자동이체가 잔액 부족으로 실패해 수수료가 발생한 사실을 문의하였고 상담사는 잔액 부족이 원인이며 수수료는 별도 청구되고 다음 이체는 예정일에 정상 처리될 것임을 안내하고, 잔액 알림 및 모바일 앱에서 일정 확인, 수정 방법을 제시하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

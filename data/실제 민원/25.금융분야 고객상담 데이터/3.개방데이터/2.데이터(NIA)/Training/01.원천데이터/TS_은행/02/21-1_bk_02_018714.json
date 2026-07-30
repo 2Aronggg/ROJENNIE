@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_018714",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 619,
+        "consulting_content": "고객은 본인 확인을 위해 계좌번호, 성명, 생년월일, 비밀번호를 제공하고, 어제 1시 반에 입금된 금액과 입금자 정보를 문의했으며, 사기 의심 시 조치를 요청하였다고 하였고 상담사는 신원 확인 후 입금 내역을 조회하고 입금자 정보는 현재 검토 중이며 확인되는 대로 안내하고, 사기 의심 시 즉시 거래 취소 및 보안 절차를 진행하겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

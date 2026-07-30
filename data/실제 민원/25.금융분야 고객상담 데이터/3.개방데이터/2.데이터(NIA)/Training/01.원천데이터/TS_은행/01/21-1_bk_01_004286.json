@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_004286",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1361,
+        "consulting_content": "고객은 인터넷뱅킹 인출 내역과 잔액 확인을 요청했고 상담사는 현재 잔액과 인출액을 안내하였다. 고객은 통장 페이지 손상, 재발행 절차를 물었고 상담사는 영업점 방문 또는 모바일 앱 신청 방법을 설명하였다. 또한 급여 이체 정상 여부와 모바일 신청 가능 여부를 확인했으며 상담사는 정상 처리와 앱 이용 방법을 안내하였다. 마지막으로 FAQ 확인 위치를 알려주었다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_030004",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1406,
+        "consulting_content": "고객은 대출 상환 및 연장 현황 확인과 자동이체 설정을 요청하였고 상담사는 계좌, 신분 확인 후 비대면 접수와 연장 진행 상황을 안내하고, 현재 상환 완료, 연장 대기 중임을 알려 주었으며, 자동이체는 매월 납부일에 별도 신청 없이 전화로 등록 가능하다고 설명하고 신청 절차를 진행하였다. 또한 상담사는 연장 시 기존 금리 외 추가 금리가 만기 이후 다음 결제 주기에 적용된다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

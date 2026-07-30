@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_015013",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1175,
+        "consulting_content": "고객은 자동이체 금액이 한도 초과로 처리되지 않아 금액 변경을 요청하였고 상담사는 해당 상품의 분기당 입금 한도를 설명하고 자동이체 금액을 한도 이하인 ●●●원으로 조정해 정상 처리 및 확인 문자를 발송하겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

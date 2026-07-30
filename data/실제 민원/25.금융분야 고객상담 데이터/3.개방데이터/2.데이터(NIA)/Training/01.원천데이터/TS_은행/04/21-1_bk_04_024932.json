@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_024932",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1252,
+        "consulting_content": "고객은 만기된 저축통장의 정부 매칭 입금 여부 확인 절차와 미매칭 시 환수, 재신청 방법을 문의하였고 상담사는 신분증, 계좌 확인 후 실시간 조회 가능함을 안내하고, 매칭이 없을 경우 환수는 없으며 재납입, 재신청 절차를 별도 안내해 주겠으며 확인 결과는 문자로 전달한다는 답변을 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

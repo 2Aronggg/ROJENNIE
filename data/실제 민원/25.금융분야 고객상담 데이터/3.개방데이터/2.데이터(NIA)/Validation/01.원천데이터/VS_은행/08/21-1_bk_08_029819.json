@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_029819",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 815,
+        "consulting_content": "고객은 마이너스 통장 만기 연장을 요청하고 계좌번호, 비밀번호로 본인 확인을 하였고, 상담사는 연장 가능 여부를 확인 후 현재 원금과 기존 금리 적용, 매월 말 자동 이체를 안내하였다. 고객은 잔액 확인과 연장 마감일 및 계약서 이메일 발송을 물었으며, 상담사는 잔액 확인 중임을 알리고 마감일과 이메일 발송을 안내하였다. 고객은 이메일 주소 확인을 요청했고, 상담사는 확인 후 추가 문의 시 연락을 권고하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

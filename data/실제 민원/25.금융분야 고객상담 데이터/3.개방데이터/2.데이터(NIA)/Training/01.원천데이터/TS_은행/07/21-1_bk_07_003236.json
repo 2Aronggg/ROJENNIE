@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_003236",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1427,
+        "consulting_content": "고객은 주택담보대출 실적 충족을 위해 적금 자동이체가 미충족된 상황을 문의하였고 상담사는 시스템 조회 결과 입금이 아직 처리되지 않아 실적이 미충족이며, 지정일 입금 완료 시 자동으로 충족될 것이라고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

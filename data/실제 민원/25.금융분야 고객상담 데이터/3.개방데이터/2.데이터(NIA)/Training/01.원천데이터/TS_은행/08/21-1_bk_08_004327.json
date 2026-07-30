@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_004327",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 862,
+        "consulting_content": "고객은 대출 만기 연장을 요청했으며, 상담사는 연장 불가와 대환 대출을 권유하고 금융센터 연결을 시도했으며, 오후 3시 이후 연락 요청을 받아 예약하고, 상환 일정 조정 및 필요한 서류 안내를 제공하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

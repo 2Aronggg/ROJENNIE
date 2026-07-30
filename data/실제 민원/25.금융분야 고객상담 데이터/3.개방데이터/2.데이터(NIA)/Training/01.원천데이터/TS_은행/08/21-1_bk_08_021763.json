@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_021763",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 905,
+        "consulting_content": "고객은 전세 대출 연장을 원하고 보증금, 조건 변경이 없다고 답했으며 금리, 상환 방식 안내를 요청하였다. 상담사는 신원 확인 후 모바일 앱으로 연장 신청 가능일과 필요 서류 안내하고, 신청 시 2~3일 내 심사 결과를 문자, 이메일로 통보한다는 내용으로 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

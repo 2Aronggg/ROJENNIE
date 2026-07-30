@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_024997",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1363,
+        "consulting_content": "고객은 대출금 만기 도래 처리 절차와 연장, 일시 상환 방법을 문의하였고 상담사는 연장은 재무제표, 매출 증빙 제출 후 3~5일 심사, 연장 시 금리 옵션을 안내하고, 일시 상환은 등록 계좌 이체로 수수료 없이 종료된다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

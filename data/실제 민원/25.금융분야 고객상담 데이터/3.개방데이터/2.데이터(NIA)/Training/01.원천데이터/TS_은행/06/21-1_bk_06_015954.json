@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_015954",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 982,
+        "consulting_content": "고객은 신혼부부 전세자금 대출의 첫 이자 납입액이 예상 금액보다 높게 나온 이유를 문의했다. 상담사는 본인 확인 후, 대출 이자는 월말 잔액에 대해 '일수'로 계산되기 때문에, 고객이 단순하게 월로 나누어 계산한 방식과 차이가 발생한다고 설명했다. 정확한 계산을 위해 해당 월의 일수를 적용하는 계산법을 안내함으로써 고객의 궁금증을 해소했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

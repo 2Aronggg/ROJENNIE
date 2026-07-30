@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_010212",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1113,
+        "consulting_content": "고객은 착오 송금 반환 청구 회신이 없어 접수일과 계좌 번호를 알려주었고 상담사는 조회 후 5영업일 이내 회신, 2~3일 입금 안내와 금액을 확인하였다. 고객은 신분증 사본을 이메일로 제출하겠다고 하였으며 상담사는 파일 크기와 주소를 안내하고 문자 연락을 약속하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

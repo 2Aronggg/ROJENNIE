@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_012946",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 714,
+        "consulting_content": "고객은 자동 적금 이체 날짜 변경과 해지 필요 여부, 적용 시점을 문의하였고 상담사는 변경은 다음 달부터 적용되며 해지는 필요 없다고 안내하였다. 고객은 현재 이자율, 만기와 알림 채널 선택을 요청하였고 상담사는 이자율은 기존대로 유지되고 만기는 계약대로이며 알림은 앱에서 설정 가능하다고 안내하였다. 고객은 자동이체 실패 시 재시도 정책을 물었고 상담사는 3회 재시도 후 초과 시 별도 문자와 은행 연락이 필요하다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_012250",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 883,
+        "consulting_content": "고객은 대출 이자 납부를 위해 금액과 가상계좌를 요청하였고 상담사는 대출 종류상 가상계좌 발행이 불가함을 안내하고 자동이체 설정 방법을 설명하였다. 고객은 자동이체 절차와 필요 금액을 확인하고 입금 후 확인 전화와 문자 제공을 요청하였으며 상담사는 모바일, 인터넷 뱅킹에서 자동이체 등록 방법과 입금 확인 시 안내 전화를 드리겠다고 답하였다. 또한 현재 이자율은 고정이며 정책 변화 시 사전 안내한다는 점을 추가로 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

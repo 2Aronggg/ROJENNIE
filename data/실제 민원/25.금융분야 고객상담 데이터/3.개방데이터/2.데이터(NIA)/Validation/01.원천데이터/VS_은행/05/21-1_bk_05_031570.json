@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_031570",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1202,
+        "consulting_content": "고객은 이체 한도 증액을 요청하고 계좌번호, 예금주, 생년월일 등을 제공했으며, 오늘 오후 3시에 ●●●원 이체를 예약하고 싶다고 하였고 상담사는 현재 일일 한도가 ●●원임을 안내하고, 남은 한도 내에서 금액을 나누어 이체하거나 추가 서류 제출, 지점 방문을 통해 한도 확대가 가능하다고 설명한 뒤, 고객이 제시한 시간에 이체 예약을 진행하고 완료 후 문자로 안내하겠다고 응답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

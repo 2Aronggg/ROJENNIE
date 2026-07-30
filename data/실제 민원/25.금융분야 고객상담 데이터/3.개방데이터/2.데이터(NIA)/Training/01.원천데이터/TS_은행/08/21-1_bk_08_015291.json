@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_015291",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1121,
+        "consulting_content": "고객은 마이너스 연장 신청 중 ‘연장 한도 초과’ 오류가 발생했다고 문의하였고, 상담사는 고객의 계좌 확인, 비밀번호 인증, 연장 한도 검증 등 절차를 진행한 뒤 오류로 인한 기존 신청을 취소하고 재신청을 안내하여 연장 승인을 완료하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

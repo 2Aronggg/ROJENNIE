@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_019033",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1572,
+        "consulting_content": "고객은 전 직장의 착오 송금으로 입금된 금액을 반환하고 압류 해제를 원했으며, 필요한 서류와 절차를 문의하였고 상담사는 압류 계좌에서는 출금이 불가함을 안내하고, 상대방에 회수 요청 및 압류 해제 신청서, 신분증, 압류 사유 증명서 제출을 권고하며, 처리 기간은 신속히 검토 후 통보한다는 답변을 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

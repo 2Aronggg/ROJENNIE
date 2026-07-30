@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_002281",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 2043,
+        "consulting_content": "고객은 해외 여행을 위해 원화를 외화로 환전하려는 계획을 가지고, 여러 통화와 환율 확인 방법, 비대면 예약 가능 지점, 환전 한도와 수수료, 그리고 공항 환전과 영수증 발급 절차를 문의하였다. 상담원은 환전 가능한 통화, 실시간 환율 조회 방법, 비대면 예약 가능한 지점과 절차, 한도 및 수수료 정책, 공항 환전 시 적용 환율, 영수증 이메일 발송 및 재발급 방법에 대해 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

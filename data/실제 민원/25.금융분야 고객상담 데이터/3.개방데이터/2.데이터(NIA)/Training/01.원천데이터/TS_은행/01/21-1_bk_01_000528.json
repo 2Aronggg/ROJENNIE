@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_000528",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 830,
+        "consulting_content": "고객은 계좌 입금 내역 확인을 요청하고 성명, 생년월일, 비밀번호를 제공하였고 상담사는 신원 확인 후 거래 조회를 진행해 두 건의 입금 일시, 금액을 안내하였으며 추가 문의 없음을 확인하고 필요 시 추가 안내를 제안하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

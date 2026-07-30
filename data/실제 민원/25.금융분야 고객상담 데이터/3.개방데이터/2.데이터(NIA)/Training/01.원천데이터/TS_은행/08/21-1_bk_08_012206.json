@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_012206",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 851,
+        "consulting_content": "고객은 대출 연장을 신청하고 이미 제출한 서류가 있다고 알렸고 상담사는 접수된 서류를 모두 확인했으며 추가 서류는 필요 없다고 안내하였다. 고객은 진행 상황과 다음 절차를 문의하였고 상담사는 영업점에서 최종 승인 후 문자로 결과를 안내드릴 예정이라고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

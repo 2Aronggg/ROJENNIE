@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_013138",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1145,
+        "consulting_content": "고객은 대출 금리 감면을 위해 ★★카드 실적을 문의하였고 상담사는 실적은 ★★은행 계좌에서 ★★카드 대금이 매월 금액 이상 출금될 때만 인정되고, 타 카드, 기업 카드 여부는 무관하다고 안내하였다. 실적은 출금일 기준 다음 영업일에 반영되고, 우대 금리는 확인 후 다음 결제 주기에 적용되며, 12개월 유지 필요하고 미달 시 일반 금리로 전환된다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

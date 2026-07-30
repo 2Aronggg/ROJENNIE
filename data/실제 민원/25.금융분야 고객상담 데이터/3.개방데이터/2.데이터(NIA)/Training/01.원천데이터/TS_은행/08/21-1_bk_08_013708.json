@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_013708",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 849,
+        "consulting_content": "고객은 전세자금 대출 연장 시 배우자, 자녀 명의와 주소 이전 여부, 필요한 서류를 문의하였고 상담사는 가족관계증명서와 3개월 급여명세서, 재직증명서가 필요하고, 자동 연장은 모바일로 방문 없이 가능하며 수수료가 없다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

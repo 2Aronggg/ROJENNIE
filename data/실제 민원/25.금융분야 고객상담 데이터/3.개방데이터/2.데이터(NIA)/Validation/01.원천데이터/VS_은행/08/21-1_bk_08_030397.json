@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_030397",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1163,
+        "consulting_content": "고객은 대출 연장 신청 현황을 확인하고 10% 상환 필요 여부를 물었고 상담사는 연장 신청이 접수됐으며 만기 전 10% 금액을 상환해야 연장이 가능하다고 안내하였다. 고객은 상환 방법과 자동이체 신청 절차를 문의했으며 상담사는 모바일, 인터넷뱅킹 상환 방법과 자동이체 설정 방법을 설명하고, 신분증, 소득증빙 서류는 앱, 웹 업로드 가능하다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

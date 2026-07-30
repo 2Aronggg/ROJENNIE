@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_028466",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1370,
+        "consulting_content": "고객은 주택담보대출 연장 가능 여부를 문의했으며 계좌번호를 제공하지 못해 본인 확인을 요구받고 성명, 생년월일을 제시하였다. 상담사는 연장은 불가하고 현재 남은 원금, 이자를 안내하며, 전액 상환 시 금액과 원금 1% 수준의 위약금을 설명하고 이메일로 상세 내용을 송부하겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_012293",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1346,
+        "consulting_content": "고객은 전세 대출 연장을 위해 본인 확인 정보를 제공하고 서류 제출 방법을 물었고 상담사는 제공된 정보로 본인 확인을 완료하였다. 고객은 보증금, 임대인 변동이 없음을 확인하였고 상담사는 주민등록증, 전세 계약서, 급여 명세서가 필요하다고 안내하였다. 고객은 카카오톡 바로가기 버튼으로 서류를 업로드하겠다고 하였고 상담사는 문자와 카카오톡으로 제출 안내와 2~3영업일 내 결과 통보를 알려주었다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

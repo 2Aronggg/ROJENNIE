@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_022319",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 787,
+        "consulting_content": "고객은 전세자금 대출 연체 여부와 차월 상환 방안을 문의하였고 상담사는 고객 정보를 확인 후 현재 미납이 없으며 연체 시 이자, 연체료 부과와 재조정 가능성을 안내하고, 자동 이체 설정을 진행해 완료하였으며 이를 고객에게 알렸다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

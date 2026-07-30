@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_027190",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1070,
+        "consulting_content": "고객은 관리비 자동이체 신청을 원했고 상담사는 전화로는 신청이 불가하므로 스마트뱅킹 앱 이용 방법을 안내하고, 주소, 아파트명을 제공하도록 요청하였다. 고객은 고지서에서 ‘OOO동 1234번지’와 ‘골드클래스’를 알려주었고 상담사는 해당 아파트가 지원 대상임을 확인한 뒤 앱에서 ‘공과금 관리 → 자동이체 신청’ 및 ‘이체, 송금 → 자동이체 관리 → 새 자동이체 등록’ 절차와 승인 흐름을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

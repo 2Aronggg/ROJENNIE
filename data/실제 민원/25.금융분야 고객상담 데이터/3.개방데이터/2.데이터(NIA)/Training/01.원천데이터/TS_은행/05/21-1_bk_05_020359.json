@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_020359",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 743,
+        "consulting_content": "고객은 이체한도 증액이 안돼서 원본, 사본 서류 제출 및 팩스, 방문 절차를 문의했으며, 상담사는 계좌가 한도계좌라 서류 제출 필요와 팩스 1~2일 소요, 영업점 방문 안내와 앱에서 한도 확인, 변경 방법을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

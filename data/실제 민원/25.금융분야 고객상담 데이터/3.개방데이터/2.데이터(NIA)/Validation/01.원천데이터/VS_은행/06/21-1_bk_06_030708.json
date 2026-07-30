@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_030708",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1315,
+        "consulting_content": "고객은 대출 만기 금액을 건별로 확인하고 연체 해소 금액 및 조기 상환 위약금과 현재 이자율을 문의하였고 상담사는 각 대출의 잔액, 연체 해소 금액을 음성으로 안내하고, 위약금은 남은 원금의 1% 정도이며 변동형 금리임을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

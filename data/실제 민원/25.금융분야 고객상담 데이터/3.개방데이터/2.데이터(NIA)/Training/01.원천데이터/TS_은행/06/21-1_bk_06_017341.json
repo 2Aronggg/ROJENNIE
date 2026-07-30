@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_017341",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1188,
+        "consulting_content": "고객은 대출 이자 상환을 위해 가상계좌와 금액 정보를 요청하고 본인확인 및 비밀번호 입력 등 절차를 이행하였다. 이에 상담사는 계좌와 금액을 문자로 전달하고 입금 안내를 제공하였으며, 이후 대출 연장 가능 여부와 서류, 절차를 설명하고 연장 신청 접수를 약속하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

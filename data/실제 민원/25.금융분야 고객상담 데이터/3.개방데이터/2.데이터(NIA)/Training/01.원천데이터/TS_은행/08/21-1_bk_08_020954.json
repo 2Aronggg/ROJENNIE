@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_020954",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1198,
+        "consulting_content": "고객은 대출 연장을 원했으나 주민등록번호 입력 오류와 계좌 확인 문제를 제기했고, 상담사는 정확한 입력을 요청하고 현재 잔액, 감액액을 안내하며 추가 입금 금액을 알려주었다. 또한 연장 전 고객 확인서 제출 절차와 필요한 서류, 문자 발송 안내를 제공하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_007848",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1302,
+        "consulting_content": "고객은 적금 자동 이체가 잔액 부족으로 중단된 상황을 문의하였다. 상담원은 계좌와 자동 이체 금액과 월 입금 한도 초과 사실을 확인하였다. 이번 달 납입은 고객이 모바일 앱 등으로 직접 입금해야 한다고 안내하였다. 다음 달에는 한도 내에서 자동 이체가 정상적으로 진행될 것이라고 설명하였다. 한도 초과 해소를 위해서는 영업점 직접 입금이나 다른 계좌 이체가 가능하다고 안내하였다. 자동 이체 알림 설정은 모바일 앱에서 직접 할 수 있다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

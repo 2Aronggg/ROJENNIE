@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_004525",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 862,
+        "consulting_content": "고객은 청년 도약 계좌 자동이체 회차가 영문으로 표시되는지 문의하고 일자 변경을 요청했으며 수수료 면제와 지원금 신청 기간을 물었고, 상담사는 회차 표시는 무시해도 된다고 안내하고 자동이체 일자를 20일로 변경해 다음 달 적용, 연 소득 4,800만원 이하, 19~34세 대상 수수료 면제와 12월 말까지 지원금 신청 가능함을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

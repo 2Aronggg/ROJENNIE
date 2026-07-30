@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_022220",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 931,
+        "consulting_content": "고객은 자동이체 오류와 한도 확인, 옛 계좌 처리 및 카드사 문의 준비 사항을 요청하였고 상담사는 현재 월 500만원 한도와 옛 계좌 폐쇄 사실을 안내하고, 카드 자동이체는 은행에서 확인 불가하므로 카드 번호, 거래내역, 오류 화면을 준비해 카드사에 문의할 것을 권고했으며, 결과를 문자로 알려줄 것을 약속하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

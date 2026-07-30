@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_008640",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1679,
+        "consulting_content": "고객은 대출 만기 연장을 원한다는 문의를 하였다. 상담원은 계좌번호와 비밀번호를 받아 계약서와 최근 3개월 급여통장 내역을 사진으로 제출하도록 안내하였다. 고객은 카카오톡으로 파일을 전송하였고, 서류 검토 결과 계약서 서명란이 비어 있어 전자 서명을 추가하도록 요청하였다. 고객이 서명을 완료하고 재전송하자 연장 신청이 완료되었으며, 승인 결과는 영업일 1~2일 이내 문자로 안내될 예정이라고 설명하였다. 연장 금리는 기존 금리와 동일하나 변동 가능성이 있음을 고지하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_017875",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1528,
+        "consulting_content": "고객은 잘못 송금한 자금 반환을 청구하고 진행 상황 및 입금 시점을 문의하였고 상담사는 계좌, 신분 확인 후 반환 요청이 검토 단계에 있음을 안내하고, 내부 절차와 예상 소요 시간은 상황에 따라 다르며 결과는 문자로 통보될 것이라고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

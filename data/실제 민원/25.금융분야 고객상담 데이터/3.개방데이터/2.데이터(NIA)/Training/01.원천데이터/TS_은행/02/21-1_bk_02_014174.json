@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_014174",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1527,
+        "consulting_content": "고객은 송금 반환 등록을 요청하고 계좌, 성명, 생년월일, 비밀번호, 거래 일자, 금액 등을 제공하였고 상담사는 신원 확인 후 반환 접수를 정상적으로 등록하고 처리 기간 및 취소 불가 사유 등을 안내하였다. 추가 문의 사항이 있으면 언제든 알려달라고 했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

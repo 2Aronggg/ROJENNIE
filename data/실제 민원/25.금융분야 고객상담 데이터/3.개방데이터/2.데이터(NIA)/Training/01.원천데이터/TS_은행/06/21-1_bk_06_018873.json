@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_018873",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 878,
+        "consulting_content": "고객은 대출 상환을 위해 가상 계좌 발급을 요청하고 계좌번호, 성명, 생년월일, 비밀번호를 제공하였고 상담사는 제공 정보를 확인하고 주거래 계좌를 검증한 뒤 일회성 가상 계좌와 입금 마감 시간, 금액 단위를 안내하며 입금 확인 후 문자 통보를 약속하고 추가 문의 여부를 확인하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

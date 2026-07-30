@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_001117",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 916,
+        "consulting_content": "고객은 적금 만기 시 자동 재예치 여부, 만기 후 입금 처리 시점, 신규 청년 정책형 적금 존재 여부 등에 대해 문의하였고, 상담사는 자동, 수동 재예치 방식, 만기 시 입금 처리 절차, 고객이 직접 해지 또는 재예치 가능하다는 점, 그리고 청년 정책형 적금의 존재 및 가입 방법에 대해 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

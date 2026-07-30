@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_023362",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1960,
+        "consulting_content": "고객은 주주 명부 일자를 오늘 날짜로 해야 하는지와 추가 서류, 지점, 담당자 정보를 확인하고자 하였고 상담사는 오늘 날짜 사용 시 자동 검증, 신속 승인 가능하지만 최신 정보만 반영하면 충분하다고 안내하고, 추가 서류는 없으며 지점, 법인, 담당자 정보를 기록에 반영하겠다고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_029193",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 754,
+        "consulting_content": "고객은 청약저축 통장 해지를 요청하고, 온라인 개설 사실과 수수료, 처리 기간 등을 문의하였고 상담사는 전화 해지는 불가하므로 앱, PC 또는 영업점 방문을 안내하고, 수수료는 없으며 온라인은 1~2일, 방문 시 즉시 처리된다고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

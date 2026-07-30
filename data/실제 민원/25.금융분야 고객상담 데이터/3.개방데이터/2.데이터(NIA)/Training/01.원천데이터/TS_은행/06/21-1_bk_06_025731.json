@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_025731",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1008,
+        "consulting_content": "고객은 ★★은행 문의와 개인사업자 대출 이자 납입 상황을 확인하고자 계좌, 생년월일 등 본인 정보를 제공했으며, 남은 금액을 즉시 납부하겠다고 답했고, 대출 상환 일정과 연체 이자율을 문의하였다. 상담사는 계좌 확인 후 현재 ●월●●만 납부하면 된다고 안내하고, 연체 시 별도 이자가 부과되며 상환 일정은 계약서대로 진행된다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

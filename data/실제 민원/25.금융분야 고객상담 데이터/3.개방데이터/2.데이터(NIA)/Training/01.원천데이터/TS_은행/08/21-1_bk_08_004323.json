@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_004323",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1028,
+        "consulting_content": "고객은 전세대출 갱신을 위해 방문 필요 여부와 제출 서류를 문의하였고 상담사는 방문 필요와 임대차 계약서 및 입출금통장 번호 확인을 요청하였다. 고객은 본인 확인 정보를 제공하고 서류를 문자로 받겠다고 동의했으며, 상담사는 갱신 심사 기간과 기존 금리 유지, 연체 이력 없을 경우 별도 심사 없음을 안내하고 자동 원리금 인출 방식을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_027398",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 2180,
+        "consulting_content": "고객은 대출 연체와 자동이체 미이행으로 지급정지된 금액을 확인하고 상환 방법을 문의하였고 상담사는 연체 금액 ●●●원을 안내하고 자동이체 처리 지연 이유를 설명한 뒤 일시불, 3개월, 6개월 분할 상환 옵션을 제시하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

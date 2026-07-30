@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_017607",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 978,
+        "consulting_content": "고객은 대출 연장을 원하고 문자, 앱 알림을 받지 못해 연장 절차를 몰라 화면 오류까지 발생했다고 하였고, 상담사는 고객의 성명, 생년월일, 계좌 비밀번호를 확인한 뒤 대출 관리 메뉴에서 연장 신청 방법을 안내했으나 진행이 안 된다고 답변하여 재확인 후 연락드리겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

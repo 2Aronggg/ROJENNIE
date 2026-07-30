@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_001471",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1523,
+        "consulting_content": "고객은 소액 달러 환전을 신청했지만 지점 검색이 안 되어 불편을 호소했고, 우대 환율 적용 여부와 다른 지점으로 변경 절차, 오류 처리 방법, 방문 시 필요 서류와 추가 혜택, 예약 상태와 취소 여부 등에 대해 문의하였다. 상담원은 시스템 확인, 모바일 뱅킹을 통한 신청 변경 방법, 우대 조건 확인, 오류 시 재시도 및 연락 안내, 방문 시 서류와 프로모션 정보, 예약 미확정 시 자동 취소되지 않음 등을 차례로 설명 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

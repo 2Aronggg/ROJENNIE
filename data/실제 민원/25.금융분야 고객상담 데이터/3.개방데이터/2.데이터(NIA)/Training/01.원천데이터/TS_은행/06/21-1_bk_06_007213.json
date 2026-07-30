@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_007213",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 730,
+        "consulting_content": "고객은 사업자 대표자 대출 이자 전액 납부를 위해 가상 계좌 발급을 요청하였다. 상담원은 성명, 생년월일, 계좌 비밀번호를 입력받아 담보 대출 이자 납부용 일회성 가상 계좌를 생성하였다. 생성된 가상 계좌 번호와 입금 기한을 고객이 제공한 휴대폰 번호로 문자 전송하였다. 입금은 당일 23시 30분까지 원 단위 정확히 입금하도록 안내하고, 입금 확인 시 자동 확인 메시지와 영수증을 별도 문자로 발송한다는 절차를 설명하였다. 추가 대출, 연장 문의는 추후 상담 가능하다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

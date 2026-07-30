@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_028969",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1330,
+        "consulting_content": "고객은 연체로 카드가 정지된 상황을 알리고 계좌, 본인 정보를 제공했으며, 연체 대출 및 납부 금액을 확인하고 모바일 앱으로 즉시 결제하겠다고 요청했다. 상담사는 계좌 확인, 본인 인증을 진행하고 연체 대출, 금액을 안내한 뒤 모바일 앱 결제 절차와 납부 후 자동 해제 과정을 설명하며, 결제 완료 시 카드 정지 해제가 진행될 것임을 알려 주었다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

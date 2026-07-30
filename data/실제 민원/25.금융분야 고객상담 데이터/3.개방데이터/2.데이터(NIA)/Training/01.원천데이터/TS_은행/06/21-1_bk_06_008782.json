@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_008782",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1348,
+        "consulting_content": "고객은 개인사업자 대출의 이자만 납부하는 기간과 종료 시점, 이후 상환 방식을 문의하였다. 상담사는 본인 확인 후 이자 납부 기간 종료 시점과 잔액을 안내하고, 이후 원금, 이자 병행 상환 전환 일정과 월 납부 금액을 설명하였다. 또한 납부일 변경을 처리하고, 조기상환 가능 및 위약금 없음을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

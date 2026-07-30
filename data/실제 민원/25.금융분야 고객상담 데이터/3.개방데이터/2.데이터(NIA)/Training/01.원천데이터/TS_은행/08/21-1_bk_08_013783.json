@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_013783",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 2138,
+        "consulting_content": "고객은 대출 만기 연장을 문의하고 계좌 번호, 비밀번호 등 본인 확인 정보를 제공하였고 상담사는 계좌 확인 후 연장 가능 여부와 절차, 필요 서류, 신용조회 동의, 비대면 신청 방법을 안내하였으며, 연장 수수료는 없고 이자율 유지, 최대 12개월 연장 가능 중 6개월 연장을 요청하여 모바일 계약서 전송 및 동의 절차를 진행하도록 안내하였으며, 조기 상환 시 위약금 없음을 추가로 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

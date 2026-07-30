@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_031779",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1120,
+        "consulting_content": "고객은 대출 연장을 신청하면서 급여이체, 카드 사용 확인이 안돼 계좌, 생년월일 등을 제공했고 처리 기간 1~2일과 신분증 사본, 급여입금 확인서 제출을 요구받았으며, 금리 감면은 자동 적용되고 연장 상태는 온라인, 앱에서 조회 가능하다고 안내받았다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

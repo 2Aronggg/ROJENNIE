@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_012083",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1409,
+        "consulting_content": "고객은 가상계좌로 잘못 이체된 금액 환급을 요청하였고 상담사는 계좌 확인을 위해 본인 인증을 요구하고, 가상계좌 제공업체에 문의해야 함을 안내하며 환불은 3~5영업일 내 처리되고 조회는 홈페이지, 전화로 가능하다고 설명하고, 재발 방지를 위해 계좌, 금액 재검증과 알림 서비스 활용을 권고하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

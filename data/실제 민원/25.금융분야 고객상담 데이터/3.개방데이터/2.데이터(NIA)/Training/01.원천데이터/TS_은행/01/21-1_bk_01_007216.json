@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_007216",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1316,
+        "consulting_content": "고객은 거래내역을 작년부터 올해까지 지정 기간으로 조회하고 파일을 이메일, 문자로 받기를 요청하였다. 상담사는 조회 기간을 설정하고, 앱 미설치 시 다운로드 후 로그인 방법을 안내하였다. 파일 전송 전 등록 이메일을 확인하고, 압축 후 문자에 첨부해 전송하였다. 대출 신청은 현재 심사 중이며 결과는 동일 이메일로 통보될 것이라고 안내하고 신용카드 사용 내역은 별도 파일로 추가 전송하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

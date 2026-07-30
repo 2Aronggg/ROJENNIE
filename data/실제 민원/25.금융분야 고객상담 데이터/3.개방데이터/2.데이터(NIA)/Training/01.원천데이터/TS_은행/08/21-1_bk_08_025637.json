@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_025637",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 858,
+        "consulting_content": "고객은 대출 연장을 무료로 신청했으며 연장 진행 상황과 추가 수수료, 필요 서류 제출 방법을 문의하였고 상담사는 내부 심사 3~5일 소요와 연 0.2% 수수료, 신분증, 거래내역서 이메일 제출 가능 및 1일 내 검토 후 결과 통보, 매일 오전 10시 문자 업데이트를 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

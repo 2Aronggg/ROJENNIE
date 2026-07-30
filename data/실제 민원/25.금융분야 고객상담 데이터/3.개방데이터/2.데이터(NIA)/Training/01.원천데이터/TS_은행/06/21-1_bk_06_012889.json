@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_012889",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 641,
+        "consulting_content": "고객은 대출 이자 조기 상환을 원하고 즉시 출금을 요청하였고 상담사는 조기 상환 시 수수료와 즉시 출금 불가를 안내하고 가상계좌 발급 및 입금 방법을 제공하였으며, 입금 완료 후 영수증을 문자로 발송한다는 안내를 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

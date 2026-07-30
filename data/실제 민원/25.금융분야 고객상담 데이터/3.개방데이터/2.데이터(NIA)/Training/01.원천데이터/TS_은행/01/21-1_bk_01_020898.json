@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_020898",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1024,
+        "consulting_content": "고객은 특정 기간, 이름으로 거래내역 조회와 거래없음 증명서 발급을 요청하였고 상담사는 모바일, 인터넷뱅킹 조회 방법을 안내하고, 증명서는 영업점 방문 시 신분증, 통장 사본을 제출하면 발급 가능하나 비대면, 이메일 전송은 불가하고 우편 발송은 가능하다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

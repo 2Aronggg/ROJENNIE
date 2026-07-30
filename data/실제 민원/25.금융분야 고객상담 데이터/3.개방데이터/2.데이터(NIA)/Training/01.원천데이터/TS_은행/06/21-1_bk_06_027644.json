@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_027644",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 2158,
+        "consulting_content": "고객은 계좌 지급정지로 대출금 가상계좌 입금을 요청했고 상담사는 본인 확인, 계좌, 비밀번호 재입력, ARS 연결, 가상계좌 정보를 문자로 발송하고 입금 시 영업일 1~2시간 내 반영될 것임을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

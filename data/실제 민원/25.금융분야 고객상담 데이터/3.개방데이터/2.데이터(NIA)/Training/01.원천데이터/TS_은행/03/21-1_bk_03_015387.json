@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_015387",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1010,
+        "consulting_content": "고객은 아파트 관리비 자동이체 해지를 위해 직접 방문이 가능한지와 대리인 방문 시 서류를 문의하였고 상담사는 예금주 직접 방문 필요와 신분증, 위임장 제출 안내, 앱, 브라우저 해지 방법 및 위약금 없음 등을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

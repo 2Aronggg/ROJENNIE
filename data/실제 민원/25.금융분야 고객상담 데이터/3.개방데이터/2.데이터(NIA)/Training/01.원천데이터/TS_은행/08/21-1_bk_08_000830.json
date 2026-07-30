@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_000830",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1353,
+        "consulting_content": "고객은 일반 원금 대출 만기 연장 절차와 서류, 추가 이자 계산 방식, 승인 소요 시간, 신용점수 영향, 연장 금액 확인 방법 등을 문의하였고, 상담사는 만기대출 연장 비대면 신청 절차, 서류 전송 방식, 자동 승인 및 일정표 안내, 자동이체 유지 여부까지 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

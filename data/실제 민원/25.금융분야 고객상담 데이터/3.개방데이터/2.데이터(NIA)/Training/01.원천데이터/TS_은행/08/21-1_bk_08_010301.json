@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_010301",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1286,
+        "consulting_content": "고객은 보증서 사진을 활용한 대출 연장을 신청하고 서류 제출 방법, 마감일, 파일 형식 등을 문의하였고 상담사는 문자 안내에 따라 ★★ 어플에서 사진을 JPG, PNG로 업로드하고 연장 신청을 접수하면 마감일은 ●월 ●일이며, 완료 시 이메일, 문자, 앱으로 확인서를 발송한다는 절차를 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

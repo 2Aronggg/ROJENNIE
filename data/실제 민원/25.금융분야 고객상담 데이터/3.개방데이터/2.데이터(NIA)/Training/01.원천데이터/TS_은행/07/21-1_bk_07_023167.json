@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_023167",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1439,
+        "consulting_content": "고객은 대출 연계 계좌가 미충족 표시되는 이유와 필요한 서류, 오류 해결 시점 및 대출 진행 영향 등을 문의하였고 상담사는 최신 서류 미제출, 시스템 연동 오류가 원인이라 설명하고, 오류 복구는 영업일 1~2일 소요되며 복구 전에는 온라인 ‘대출 한도 조정’ 신청으로 임시 대출 이용이 가능하다고 안내했으며, 추가로 연락처, 이메일 최신화도 권고하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

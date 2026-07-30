@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_017072",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1022,
+        "consulting_content": "고객은 마이너스 대출 연장을 요청하고 계좌 번호, 비밀번호 등 본인 확인 정보를 제공하였고 상담사는 본인 확인서 작성을 위한 문자 링크 전송 및 입력, 전자 서명 절차를 안내하였으며, 전자 서명 완료 시 연장이 승인되고 기존 금리 유지, 만기일 연장 및 추가 이자 비용은 화면, 문자로 확인 가능하다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

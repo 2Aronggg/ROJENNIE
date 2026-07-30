@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_004079",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1434,
+        "consulting_content": "고객은 계좌 확인과 금융거래 한도 제한 해제를 요청하였고, 대출금 상환을 위한 서류가 부족함을 알렸으며, 상담사는 계좌 조회를 진행하고 비대면 해제가 어려우므로 신분증과 대출 관련 증빙 서류를 지점에 방문해 제출하도록 안내하였고, 서류 미비 시 심사 지연 및 해제 불가 가능성을 설명하고 방문 예약을 권유하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

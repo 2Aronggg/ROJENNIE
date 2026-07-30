@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_028489",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 931,
+        "consulting_content": "고객은 여행 환전을 위해 약 ●●●원 규모의 특정 통화를 요청했고 상담사는 해당 통화는 일부 지역 지점에만 재고가 있어 현장 방문 시 재고 확인 후 거래 가능하다고 안내했으며, 여권, 주민등록증 지참과 영업시간 내 방문을 권고하고 수수료는 1~2% 수준이라고 설명하였다. 고객은 보험 상품 문의를 했고 상담사는 제휴 보험사 정보를 제공한다는 답변을 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

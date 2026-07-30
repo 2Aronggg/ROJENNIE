@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_014784",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1036,
+        "consulting_content": "고객은 청약 통장의 자동이체를 중단하고 싶다고 요청하였고 상담사는 자동이체는 전화로 처리하기 어렵다며 가까운 영업점 방문을 권하고 신분증, 통장 사본 지참을 안내하였으며, 일시 정지 옵션도 제시하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

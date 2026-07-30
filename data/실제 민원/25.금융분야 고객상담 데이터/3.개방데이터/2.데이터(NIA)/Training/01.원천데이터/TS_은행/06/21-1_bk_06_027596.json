@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_027596",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1328,
+        "consulting_content": "고객은 보이스피싱으로 발생한 대출을 즉시 전액 상환하고자 하였고 상담사는 가상계좌를 발급해 입금 방법, 총액, 입금 마감시간을 안내하고, 입금 확인 시 문자 영수증을 발송한다는 절차를 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

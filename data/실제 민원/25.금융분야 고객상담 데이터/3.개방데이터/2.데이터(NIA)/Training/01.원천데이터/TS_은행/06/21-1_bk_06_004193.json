@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_004193",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 984,
+        "consulting_content": "고객은 대출 납부 일정과 금액을 문의하고 계좌, 비밀번호를 제공했으며, 상담사는 매월 정해진 일에 원리금이 납부돼야 함을 안내하고 현재 이자만 미납된 금액을 문자로 알려주며 가상계좌 입금을 권유했으며, 최근 출금은 마이너스통장 대출 이자 납부로 확인됐다고 설명하고 다음 납부일 알림을 약속하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

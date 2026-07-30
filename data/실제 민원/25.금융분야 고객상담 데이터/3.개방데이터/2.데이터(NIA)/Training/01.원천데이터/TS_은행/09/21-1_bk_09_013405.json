@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_013405",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1250,
+        "consulting_content": "고객은 달러 현찰 구매를 원하고 금액, 계좌 정보를 제공하여 본인 확인을 요청하였고 상담사는 실시간 환율과 고객 등급에 따른 우대율을 안내하고, 최종 적용 환율과 준비 서류 및 현찰, 카드 이용 가능 방법을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

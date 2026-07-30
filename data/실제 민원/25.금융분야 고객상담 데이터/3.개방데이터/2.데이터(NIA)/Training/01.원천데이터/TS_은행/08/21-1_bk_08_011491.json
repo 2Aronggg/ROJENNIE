@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_011491",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1808,
+        "consulting_content": "고객은 사업자 대출 연장을 문의하고 담당자 연결 및 신청 절차와 서류, 인증 방법을 물었고 상담사는 성함 확인 후 앱, 카톡 링크를 통한 서류 촬영, 공동인증 안내하고 필요 서류와 심사 기간을 설명하였다.ㅌㅌㅌㅌㅌㅌㅌㅌㅌㅌ"
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

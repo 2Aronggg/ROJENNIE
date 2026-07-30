@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_028135",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 889,
+        "consulting_content": "고객은 아파트 관리비 자동이체 해지를 요청했고 상담사는 인터넷뱅킹, 모바일앱, 이메일 양식 등 해지 방법을 안내하고, 본인 확인을 위해 최근 납부액을 물은 뒤 문자로 단계별 절차와 인증코드가 포함된 URL을 보내겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_029213",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1199,
+        "consulting_content": "고객은 다른 은행으로 이체하려다 한도 제한이 걸려 한도 변경을 요청했고, 상담사는 계좌가 금융거래 한도 제한 계좌임을 확인하고 신분증, 급여입금증명서 제출을 안내한 뒤, 비대면 한도 해제 절차를 설명하고 즉시 해제 요청을 진행하겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

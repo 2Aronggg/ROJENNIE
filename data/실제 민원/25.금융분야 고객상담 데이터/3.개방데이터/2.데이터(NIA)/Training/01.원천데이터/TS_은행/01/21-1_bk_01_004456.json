@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_004456",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 708,
+        "consulting_content": "고객은 ●●원 거래의 출처와 결제 흐름을 문의하였고 상담사는 시스템 조회 결과 일부 지급정지가 해제되어 오늘 인출된 것으로 확인됐으며, 해외 결제는 승인 후 카드사 매입 시점에 실제 인출된다고 설명하고, 이미 출금 완료되어 추가 청구가 없음을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

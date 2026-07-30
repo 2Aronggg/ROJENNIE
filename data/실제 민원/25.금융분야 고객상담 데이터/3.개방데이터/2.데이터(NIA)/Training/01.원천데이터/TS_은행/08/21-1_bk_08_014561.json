@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_014561",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 746,
+        "consulting_content": "고객은 대출 연장을 위해 금리와 절차를 문의하였고 상담사는 금리는 지점에서 확인 가능하며 연장 신청은 비대면 또는 지점 방문으로 가능하고, 문자 발송 및 서류 제출이 필요하다고 안내하였다.●●●●●●●●●●●●●●●●"
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

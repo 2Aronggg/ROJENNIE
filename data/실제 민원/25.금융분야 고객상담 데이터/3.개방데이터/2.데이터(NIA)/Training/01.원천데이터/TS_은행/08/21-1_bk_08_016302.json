@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_016302",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1622,
+        "consulting_content": "고객은 대출 연장을 검토하며 계좌, 신분증, 동의 등 본인 확인 절차와 서류 제출을 요청했고, 상담사는 계좌 확인, 공구 확인, 금리, 승인 대기 상황을 안내하고, 서류 전송, 동의 절차 후 연장 신청이 완료될 것이라고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

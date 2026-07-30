@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_029226",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 798,
+        "consulting_content": "고객은 대출 기간 미정과 연체 이자, 기간, 조기 상환 위약금 및 상환 일정에 대해 문의하였고 상담사는 대출이 약정서대로 진행 중이며 연체 이자는 연 5%, 일일 가산, 30일 초과 시 조치 필요, 조기 상환 시 남은 원금의 2% 위약금이 발생하지만 계약서 명시 시점과 사전 협의로 면제 가능함을 안내하고, 상환은 매월 15일 자동 이체이며 변동 시 문자, 이메일로 안내한다는 정보를 제공하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

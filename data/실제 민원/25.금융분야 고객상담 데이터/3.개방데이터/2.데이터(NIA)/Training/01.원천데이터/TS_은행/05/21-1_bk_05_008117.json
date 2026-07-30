@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_008117",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1375,
+        "consulting_content": "고객은 비밀 저축예금 계좌의 일일 이체 한도를 상향하고 싶다고 요청하였다. 상담사는 해당 계좌가 한도 제한 계좌이며 하루 ●●원까지만 이체 가능하고, 한도 증액에는 실물 OTP가 필요하다고 안내하였다. 또한 급여 통장 전환 후 3회 입금 실적이 있으면 한도 해제 심사가 가능하다고 설명하였다. 고객은 급여 통장 변경과 OTP 재발급을 동시에 진행하고자 하여 평일 10시부터 16시까지 영업점 방문을 예약하고, 신분증, 최근 3개월 급여 입금 확인서, 자동이체 계약서를 준비하도록 안내받았다. 사전 전화 예약을 하면 대기 시간을 최소화할 수 있다고 추가로 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

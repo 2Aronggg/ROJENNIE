@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_007430",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1560,
+        "consulting_content": "고객은 1년간 매월 100만원을 저축하고 싶다며 적금 상품의 금리와 가입 절차를 문의했다. 상담사는 연 2.3% 금리의 1년 만기 적금을 안내하며, 스마트폰 앱에서 상품 선택 후 납입 금액과 기간을 입력해 신청할 수 있다고 설명했다. 또한 신청 완료 시 확인 알림이 전송되며, 자동이체 설정을 통해 매월 지정일에 100만원이 자동 출금된다고 덧붙였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

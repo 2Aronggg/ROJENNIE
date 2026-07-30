@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_007998",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 931,
+        "consulting_content": "고객은 아파트 관리비 자동이체 등록을 문의하였다. 상담사는 전화로는 등록이 어려우며 인터넷, 모바일뱅킹을 이용해 신청하도록 안내하였다. 고객은 앱 버전이 최신임을 확인했고, 상담사는 문자 링크를 보내 설정 화면에서 관리비 항목과 납부일, 금액을 확인하도록 하였다. 정액 금액은 시스템에 자동 입력되며 변동 시 다음 달에 수정 가능함을 설명하였다. 인증번호 6자리를 입력하여 자동이체가 활성화되었고 매월 말일에 출금된다고 안내하였다. 추가로 카드 결제 알림 설정 방법을 알려주었으며, 고객은 기타 문의가 없다고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

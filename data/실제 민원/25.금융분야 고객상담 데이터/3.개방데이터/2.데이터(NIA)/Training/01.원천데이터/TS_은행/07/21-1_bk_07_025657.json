@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_025657",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 848,
+        "consulting_content": "고객은 주택담보대출 금리 고정 여부와 등기, 급여이체가 전환에 미치는 영향, 적금 가입 시 금리 우대 가능성 및 전환에 필요한 서류를 문의하였고, 상담사는 금리 고정 확인과 서류 검토 후 현재는 감면 조건이 적용되지 않음을 안내하고, 재검토 결과를 이메일로 송부하겠다고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

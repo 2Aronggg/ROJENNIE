@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_012241",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 886,
+        "consulting_content": "고객은 대출 이자 낮추기를 위해 적금, 카드, 급여 이체 실적을 문의했고 상담사는 실적 요건과 자동이체 설정 시 다음 달부터 최대 0.5% 감면 적용, 6개월 유지 필요라고 안내하였다. 또한 고객은 자동이체 신청 가능 여부와 조기 상환 위약금 면제 프로모션을 물었고 상담사는 전화 신청 가능 및 현재 위약금 면제 경우가 있을 수 있다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

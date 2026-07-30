@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_010236",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1822,
+        "consulting_content": "고객은 착오 송금 알림 문자와 링크를 눌러 반환 신청을 진행했으나 취소하고 사기 위험을 우려하였다. 상담사는 계좌, 생년월일, 비밀번호 확인 후 반환 거부 절차를 진행하여 해당 신청을 취소하고 금액이 계좌에 유지되도록 하였으며, 향후 송금 전 수신자 확인 및 의심 문자 클릭 금지를 권고하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_026708",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 759,
+        "consulting_content": "고객은 대출 연장 서류 제출 경로와 계좌 확인이 어려워 문자 안내를 요청하였고 상담사는 계좌 확인을 위해 번호를 물어 문자로 안내를 발송하고, 처리 기간은 영업일 이틀이며, 앱 오류 시 이메일, 팩스로도 서류를 보낼 수 있다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

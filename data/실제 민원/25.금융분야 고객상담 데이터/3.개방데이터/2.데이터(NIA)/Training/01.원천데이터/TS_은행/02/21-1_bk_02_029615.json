@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_029615",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1603,
+        "consulting_content": "고객은 타은행에서 들어온 입금 내역 확인을 요청하고 계좌, 금액, 일자를 제공했으며, 중계 통화와 거래 내역서 사본을 요구하였다. 상담사는 제공된 정보를 바탕으로 시스템 조회를 진행하고, 중계 통화를 연결하며, 연결 불가 시 문자, 이메일 안내를 제시하고 사본 전송 방법을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

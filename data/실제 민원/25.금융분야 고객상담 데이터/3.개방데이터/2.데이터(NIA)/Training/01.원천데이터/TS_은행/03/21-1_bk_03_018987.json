@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_018987",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1257,
+        "consulting_content": "고객은 매월 정해진 일에 적금 자동이체가 제한돼 변경을 요청하고 어플 이용 방법 및 중도 해지 절차와 서류 안내를 물었으며, 상담사는 계좌, 비밀번호 입력을 안내하고 현재 한도와 상품 특성을 설명한 뒤 월 적금으로 변경 방법을 안내하고, 중도 해지는 영업점 방문 또는 모바일 뱅킹으로 신청하고 신분증, 통장 사본이 필요함을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

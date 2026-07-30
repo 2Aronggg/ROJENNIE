@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_015820",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 924,
+        "consulting_content": "고객은 전세자금 대출 자동 연장 여부를 확인하고 서류 제출을 요청하였고 상담사는 계약서 검토 결과 자동 연장이 아니며 서류를 지점에 제출해야 한다고 안내하였으며, 서류는 문자로 발송 가능하고 승인 시 문자, 이메일로 통보되며 수수료는 없고 연체 이자만 정산하면 된다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

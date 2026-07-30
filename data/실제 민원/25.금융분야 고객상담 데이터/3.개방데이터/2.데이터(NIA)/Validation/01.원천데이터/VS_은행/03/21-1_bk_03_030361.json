@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_030361",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 973,
+        "consulting_content": "고객은 어머니 통장에서 다른 은행으로 자동이체를 신청하려고 하였고 상담사는 인터넷, 폰뱅킹 미가입 상황을 확인한 뒤 영업점 방문을 권유하며 신분증, 통장 사본, 수취인 정보 등을 준비하도록 안내하였고, 자동이체 수수료는 건당 500원이며 5회 이상이면 면제된다고 설명하고, 앱 설치 오류 시 전자금융팀 연결을 안내했으며, 영업점 신청 시 다음 영업일에 이체가 처리된다고 알려주었다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

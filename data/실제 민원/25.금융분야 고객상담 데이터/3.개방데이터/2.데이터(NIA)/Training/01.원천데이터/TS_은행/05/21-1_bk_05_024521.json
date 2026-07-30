@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_024521",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1735,
+        "consulting_content": "고객은 스마트뱅킹 이체한도 조회를 요청하고 연결 문제를 호소했으며, 상담사는 계좌 정보를 조회해 현재 일일 ●●원 한도임을 안내하고, 한도계좌는 입금은 가능하지만 설정된 한도 초과 이체가 제한된다고 설명하였다. 고객은 한도 조정 방법과 일반계좌와의 차이를 문의했으며, 상담사는 어플 ‘한도 관리’ 메뉴를 통한 조정 방법과 한도계좌와 일반계좌의 차이를 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

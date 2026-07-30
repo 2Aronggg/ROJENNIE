@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_000958",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1168,
+        "consulting_content": "고객은 주택청약 통장 자동이체 실패 원인, 출금 시점, 재시도 횟수 및 수수료 여부, 자동이체 상태 확인 방법, 이자율 적용 조건, 계좌 변경 절차, 입금 확인 방법 등을 문의하였다. 상담사는 잔액 부족으로 인한 실패 사유, 새벽 출금 처리 시간, 최대 재시도 횟수, 수수료 정책, 모바일 앱을 통한 상태 및 내역 확인, 계좌 변경 절차 등을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

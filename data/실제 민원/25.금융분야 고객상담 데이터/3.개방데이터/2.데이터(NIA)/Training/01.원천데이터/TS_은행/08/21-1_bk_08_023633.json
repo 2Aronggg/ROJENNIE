@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_023633",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 841,
+        "consulting_content": "고객은 대출 만기 연장을 요청했으나 비밀번호 오류로 본인 확인이 안 된다고 알렸고 상담사는 계좌, 생년월일, 비밀번호 확인을 시도했으나 여러 차례 틀림을 안내하고, 비밀번호 재설정을 위한 인증 문자 발송 및 입력을 요청하였다. 고객은 문자 인증 후 비밀번호를 재설정하겠다고 답했으며, 상담사는 비밀번호 재설정 완료 시 연장 가능 여부와 서류 안내를 제공하겠다고 밝혔다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

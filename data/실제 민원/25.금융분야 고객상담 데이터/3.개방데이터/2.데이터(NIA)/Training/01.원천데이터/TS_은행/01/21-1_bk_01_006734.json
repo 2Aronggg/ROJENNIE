@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_006734",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 949,
+        "consulting_content": "고객은 과거 특정 일자의 거래내역 조회 및 수령 방법, 우편 발송 가능 여부, 온라인 조회 방법을 문의하였으며, 상담사는 오래된 거래내역은 전자 발송이 불가하며, 우편으로 무료 발송 가능함을 안내하였고, 온라인 조회 가능 기간과 거래내역 보관 방법을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

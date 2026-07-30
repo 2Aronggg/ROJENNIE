@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_019200",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1192,
+        "consulting_content": "고객은 인공이자 납부 일정과 가상계좌 번호, 입금 방법을 문의했으며, 고객 번호, 연락처 확인을 요청하고 입금 기한을 정확히 알고 싶다고 하였고, 상담사는 대출 상품 확인 후 가상계좌 번호와 입금 방법, 입금 기한 및 확인 문자 발송 절차를 안내하고, 고객 정보 확인 및 보안 절차를 진행하였으며, 추가 문의 없음을 확인하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

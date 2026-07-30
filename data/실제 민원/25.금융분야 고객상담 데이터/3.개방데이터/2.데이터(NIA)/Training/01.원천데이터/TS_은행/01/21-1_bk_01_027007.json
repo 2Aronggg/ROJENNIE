@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_027007",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 907,
+        "consulting_content": "고객은 연금 증서 번호와 계좌 정보를 제공하고 잔액, 연금 입금액 확인 및 수수료율 안내를 요청하였고 상담사는 잔액, 연금 금액을 알려주고 연 0.5% 수수료를 설명하며 약관을 이메일로 전달 가능하다고 안내하였다.★★★★"
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

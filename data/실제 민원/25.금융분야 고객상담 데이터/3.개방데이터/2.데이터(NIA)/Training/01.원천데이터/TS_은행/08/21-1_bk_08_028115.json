@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_028115",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1505,
+        "consulting_content": "고객은 마이너스 통장 대출 만기 연장을 문의하였고 상담사는 연장이 불가함을 안내하였다. 고객은 대출 금리 조정 및 대환 옵션을 원했으며 상담사는 금리 조정 상품과 심사 절차 및 필요 서류를 설명하였다. 고객은 서류를 준비해 지점에 제출하겠다고 하였고 상담사는 지점 연결을 진행하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

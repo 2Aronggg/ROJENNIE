@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_015468",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 828,
+        "consulting_content": "고객은 한도 계좌로 이체가 안 되어 한도 해제를 시도했으나 대상이 아니라고 확인하고 서류 제출 및 영업점 방문을 요구하였고 상담사는 계좌가 한도 계좌임을 설명하고 해지는 지점 방문이 필요하며 거래 내역서, 사업자등록증, 신분증 사본을 준비하도록 안내하고 팩스 접수 가능하지만 원본 확인을 위해 방문을 권고하며 전화 또는 모바일 앱으로 방문 예약 방법을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

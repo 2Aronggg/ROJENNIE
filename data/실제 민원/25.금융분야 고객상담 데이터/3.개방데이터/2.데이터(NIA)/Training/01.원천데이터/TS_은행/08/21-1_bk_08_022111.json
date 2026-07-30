@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_022111",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1054,
+        "consulting_content": "고객은 금리 인하와 상환 여유를 위해 주택담보대출 연장을 요청했으며, 기존 대출 금액 확인과 계좌 비밀번호 입력을 요구받았지만 비밀번호 오류로 확인이 어려워 비밀번호 재설정을 안내받고, 재설정 후 재연락하면 대출 연장 가능 여부를 안내받기로 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

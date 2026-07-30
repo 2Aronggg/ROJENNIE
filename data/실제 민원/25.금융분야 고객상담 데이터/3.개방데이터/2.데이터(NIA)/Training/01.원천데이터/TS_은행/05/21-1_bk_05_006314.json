@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_006314",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1523,
+        "consulting_content": "고객은 비대면 개설 입출금 통장의 금융거래 한도 제한 해제를 요청하였다. 상담원은 한도 제한은 목적 증명이 필요함을 안내하고, 급여 증명서,자동이체 영수증, ,카드 대금 명세서 등 서류를 제출해야 한다고 설명하였다. 서류는 모바일 뱅킹 앱에서 사진을 업로드하여 접수 번호를 발급받고, 검증 및 한도 해제를안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

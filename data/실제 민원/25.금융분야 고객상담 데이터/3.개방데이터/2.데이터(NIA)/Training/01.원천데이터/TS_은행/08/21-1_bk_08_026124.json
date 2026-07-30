@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_026124",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1532,
+        "consulting_content": "고객은 대출 상품 연장을 시도했으나 앱에서 스크래핑 단계 오류가 발생해 진행이 안 된다고 문의하였고 상담사는 계좌, 인적 정보를 확인하고 오류 원인을 파악 중이며, 공동인증서 발급, 사용 여부를 검토하고 추후 연락해 안내하겠다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

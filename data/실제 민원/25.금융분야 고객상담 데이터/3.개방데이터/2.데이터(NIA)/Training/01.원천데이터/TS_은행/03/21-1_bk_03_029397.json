@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_029397",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "신규고객",
+        "consulting_client_type": null,
+        "source_length": 1157,
+        "consulting_content": "고객은 자동이체 해지를 요청하고 계좌, 이름, 생년월일 등 정보를 제공해 확인을 요구했으며, 상담사는 카드사에 문의해야 하며 은행에서는 해당 자동이체를 확인하거나 해지할 수 없다고 안내하고, 관리비 자동이체는 없고 신용카드 자동이체는 카드사 처리임을 알려주었다. 또한 이메일로 상세 내역을 보내고 진행 상황을 문자로 안내하겠다고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

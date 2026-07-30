@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_002694",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 772,
+        "consulting_content": "고객은 전세 대출 연장 승인을 확인하고 신분증 지참 및 영업점 방문을 요구했으며, 다른 지점 방문 가능 여부와 추가 서류, 이자율 변동을 문의하였고, 상담사는 원래 대출 지점 방문을 원칙으로 하되 필요 시 다른 지점 상담 가능함을 안내하고, 신분증, 최근 3개월 급여내역서, 임대차 계약서 사본이 필요하다고 설명했으며, 이자율은 기존과 동일하고 변동 시 사전 안내한다는 답변을 제공하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

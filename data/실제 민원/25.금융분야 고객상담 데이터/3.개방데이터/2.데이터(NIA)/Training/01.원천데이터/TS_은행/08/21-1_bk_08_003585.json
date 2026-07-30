@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_003585",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1537,
+        "consulting_content": "고객은 전세 대출 연장과 조기 상환 가능 여부, 위약금 및 절차를 문의하고 계좌, 신분 확인을 제공하였고 상담사는 연장은 해당 은행에 직접 문의해야 함을 안내하고, 현재 대출은 하나이며 만기일에 자동 문자만 발송된다고 확인하였으며, 조기 상환 시 남은 원금 기준 약 % 위약금이 부과되고 신청은 창구 방문 또는 온라인으로 서류 제출 후 1~2일 내 처리된다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_015516",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 949,
+        "consulting_content": "고객은 연체 대출 조회와 상환 일정 안내를 요청하고 계좌, 생년월일, 비밀번호 등 본인 확인 정보를 제공했으며, 담당자와 협의 후 연체 금액, 상환 계획, 이자, 할인 혜택을 전화로 안내받겠다고 동의하였다. 상담사는 고객 정보를 확인하고 현재 연체 대출을 조회한 뒤, 담당자 확인이 필요함을 알리고 추후 지정 번호로 상세 안내 및 연락을 약속하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

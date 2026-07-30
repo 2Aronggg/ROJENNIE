@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_003652",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1340,
+        "consulting_content": "고객은 연체 대출 상환을 위해 가상계좌 발급 및 입금 절차를 문의하고, 본인 확인 정보와 계좌번호를 제공하였으며 전체 금액을 오늘 입금하겠다고 요청하였다. 상담사는 대출 잔액, 연체액을 안내하고 연장 정책이 없음을 설명한 뒤 가상계좌를 생성해 문자로 발송하고, 오늘 입금 시 연체 해소와 입금 확인 알림을 제공한다는 안내를 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

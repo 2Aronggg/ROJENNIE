@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_017732",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1126,
+        "consulting_content": "고객은 자동이체 정지를 요청하였고 상담사는 성명, 생년월일 확인 및 비밀번호 오류 안내 후, 전화 상담으로는 해지가 불가하므로 스마트폰 앱을 통해 직접 해지하도록 안내하고, 해지 절차 안내 문자를 발송하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

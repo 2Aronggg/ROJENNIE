@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_020757",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 795,
+        "consulting_content": "고객은 아이 보험료 자동이체를 남편 명의 계좌로 신청하고자 하였고 상담사는 예금주, 계좌 확인을 요청하였다. 고객은 정보를 제공하고 자녀가 아니라고 답변했으며 상담사는 모바일 앱 등록 절차를 안내하였다. 고객은 앱에서 등록을 완료하고 상담사는 첫 이체 확인 및 알림 설정을 권고하였다. 고객은 지역 공제 자동이체 가능 여부를 문의하고 SMS 코드를 받았으나 전화 음성 서비스는 이용 불가라며, 상담사는 지점 방문을 권유하고 모바일 앱 보안 인증을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

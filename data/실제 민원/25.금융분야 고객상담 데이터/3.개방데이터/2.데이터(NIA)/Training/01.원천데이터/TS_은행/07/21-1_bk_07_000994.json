@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_000994",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1466,
+        "consulting_content": "고객은 급여이체 유실적 감면이 적용되지 않는 이유와 감면 신청 방법과 미적용 예방 방법에 대해서 문의하였고, 상담사는 유실적 금리 감면 적용 방법 및 추가 거래 요건, 시스템 오류 가능 여부, 유식적 금리 감면 미적용 예방 조치 등의 질문에 안내했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

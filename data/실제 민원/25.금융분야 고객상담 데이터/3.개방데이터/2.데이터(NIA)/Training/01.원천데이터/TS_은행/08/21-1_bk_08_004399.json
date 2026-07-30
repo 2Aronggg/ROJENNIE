@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_004399",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 764,
+        "consulting_content": "고객은 기업 운전 자금 만기 연장을 위해 필요한 서류를 문의하였고 상담사는 본인확인 어려움을 이유로 일반 대출 연장 서류를 문자로 송부하고, 추가로 재무제표, 매출 증빙을 요구하였다. 고객은 서류 제출 마감일과 팩스 처리 시간을 물었고 상담사는 이번 달 말까지 제출하고 팩스 접수 후 영업일 기준 이틀 이내 검토 후 결과를 전화로 안내한다는 답변을 제공하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

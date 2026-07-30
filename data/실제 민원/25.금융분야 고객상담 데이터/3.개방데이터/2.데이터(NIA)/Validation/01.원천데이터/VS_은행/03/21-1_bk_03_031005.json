@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_031005",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 921,
+        "consulting_content": "고객은 자동이체가 잔액 부족으로 실패하고 추가 이체가 안 된다고 문의했으며, 처리 진행 상황과 예방 방법을 물었고, 상담사는 잔액 부족이 원인임을 안내하고, 담당 부서가 잔액 확인, 이체 재설정을 오늘 검토 후 내일 문자로 결과를 알려드리겠으며, 자동이체 알림 서비스 신청과 잔액 유지 권고 등 예방 방안을 제시하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

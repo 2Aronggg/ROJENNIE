@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_003646",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 748,
+        "consulting_content": "고객은입금가능일을문의하고자동이체일자변경을요청하였고상담사는계좌, 생년월일확인후자동이체일정과납입인정기간을안내하고조건을문자제로제공하겠다고설명한뒤새로운일자를알려달라며변경을진행하겠다고응답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_031517",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 756,
+        "consulting_content": "고객은 신용대출 연장을 원하고 앱 미설치라 전화 진행을 요청했으며, 성명, 생년월일, 계좌번호, 비밀번호를 제공해 본인 확인을 시도했지만 비밀번호 오류가 발생해 재입력 후 확인이 완료되었다고 하였고, 상담사는 앱 메뉴 안내와 전화 본인 확인 절차를 설명하고, 담당 부서에 연락 요청을 전달해 약 5분 내에 다시 연락드리겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

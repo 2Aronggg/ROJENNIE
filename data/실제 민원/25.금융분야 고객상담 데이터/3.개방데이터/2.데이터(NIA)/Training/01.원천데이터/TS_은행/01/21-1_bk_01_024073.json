@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_024073",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 984,
+        "consulting_content": "고객은 대출 신청 중 실수로 이체가 발생해 취소와 입금 계좌 확인을 요청하였고 상담사는 은행 계좌와 앱 로그인 정보를 확인하고, 해당 대출은 현재 승인되지 않았으며 신청이 취소되었음을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

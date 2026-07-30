@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_019010",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 634,
+        "consulting_content": "고객은 대출 연장을 위해 서류에 대한 안내를 요청했고 상담사는 계좌 비밀번호를 받아 연장 만기일과 기본 서류 발급 일자를 안내하고, 심사과정에서 요구될 수 있는 소득증명서, 급여명세서 등 추가 서류를 준비하도록 문자로 송부하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

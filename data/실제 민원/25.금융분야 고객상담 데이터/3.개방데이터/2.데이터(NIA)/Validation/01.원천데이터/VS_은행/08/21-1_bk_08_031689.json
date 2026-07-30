@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_031689",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1611,
+        "consulting_content": "고객은 전세 대출 연장을 요청하고 서류 제출 상황을 확인하였으며, 계좌, 본인 정보를 제공해 본인 확인을 진행하였고, 상담사는 연장 신청이 접수, 담당자 승인 절차 중임을 안내하고 인감 증명서 발행 및 조건 변경 진행 상황을 설명한 뒤, 오후 2시 이후 전화 연락을 요청한 고객의 요청에 따라 재연락 일정을 잡아 주겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

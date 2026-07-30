@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_002946",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1734,
+        "consulting_content": "고객은 연체 대출금의 가상계좌와 정확한 금액, 이자, 수수료 계산 방식, 다른 계좌 사용 절차, 입금 기한 초과 시 비용, 상환 옵션 등에 대해 질문하고, 상담원은 통장 잔고 부족시 대처 방법 및 고객의 연체 상황에 맞춘 일시상환, 분할상환, 연장상환 옵션에 대해 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

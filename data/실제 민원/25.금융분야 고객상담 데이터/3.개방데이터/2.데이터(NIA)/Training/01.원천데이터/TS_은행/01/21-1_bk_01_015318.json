@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_015318",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1089,
+        "consulting_content": "고객은 환급 입금 금액과 환급일을 문의하였고 상담사는 계좌, 신원 확인하여 시스템 조회를 진행하였고 거래 기록을 검토한 결과 고객님의 계좌에 ●월 ●일에 ●●원 입금 내역이 확인되었으며, 관련 상세 정보를 안내하였고 이후 추가로 확인이 필요한 부분이 있다면 언제든 연락 주실것을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

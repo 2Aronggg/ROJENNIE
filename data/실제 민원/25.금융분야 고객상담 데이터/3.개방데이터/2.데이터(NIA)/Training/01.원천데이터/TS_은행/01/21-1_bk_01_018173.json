@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_018173",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1281,
+        "consulting_content": "고객은 재형저축, ★★은행 계좌에서 여러 건의 무단 출금과 카드 사기를 의심해 추가 정보를 제공하고 대리인 지정 절차를 문의하였고, 상담사는 비정상 출금을 감지해 일시적 출금 제한을 걸고, 최근 3개월 거래내역, 가맹점, 수취인 정보를 조회해 사기 여부를 판단 중이며, OTP 등록 여부와 로그인 기록을 점검하고, 대리인 양식을 이메일로 발송하겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

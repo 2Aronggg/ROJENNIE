@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_009892",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1713,
+        "consulting_content": "고객은 아파트 관리비 자동이체가 설정되어 있었으나 출금일에 잔액 부족으로 이체가 실패한 상황이었다. 은행 확인 결과 해당 월에 출금 시도가 있었으나 입금이 확인되지 않아 연체로 처리되었고 재출금 요청이 접수되었다. 고객에게는 재출금 예정 안내와 함께 연체 시 가산금 발생 가능성 및 자동이체 알림 설정 방법이 안내되었다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

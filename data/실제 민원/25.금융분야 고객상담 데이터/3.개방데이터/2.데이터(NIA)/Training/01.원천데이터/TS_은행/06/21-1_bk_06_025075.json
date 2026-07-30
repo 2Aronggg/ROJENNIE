@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_025075",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 686,
+        "consulting_content": "고객은 대출 이자 납부 확인을 요청하고 계좌 번호를 모른다고 하였고 상담사는 휴대폰 앱, 인터넷뱅킹 등으로 계좌 확인 방법을 안내하고, 신분증 지참 방문도 제안하였다. 고객은 성명, 생년월일을 제공하고 비밀번호를 입력했으며, 상담사는 대출 건 두 건 모두 납부 완료이며 미납이 없음을 확인해 주었다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

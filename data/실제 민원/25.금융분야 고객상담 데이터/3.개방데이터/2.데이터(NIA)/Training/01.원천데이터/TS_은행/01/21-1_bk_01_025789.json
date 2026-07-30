@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_025789",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 977,
+        "consulting_content": "고객은 이체가 안 되는 이유를 문의하고 계좌, 비밀번호를 제공했으며 해외 카드 결제 정지와 보안 인증 강화 방법을 물었고, 상담사는 잔액, 한도, 보안 검증 가능성을 설명하고 계좌 확인 절차를 진행한 뒤 해외 결제는 카드사에 문의하도록 안내하며 앱 비밀번호 재설정, 2단계 인증, 거래 알림 등 보안 강화 방법을 제시하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

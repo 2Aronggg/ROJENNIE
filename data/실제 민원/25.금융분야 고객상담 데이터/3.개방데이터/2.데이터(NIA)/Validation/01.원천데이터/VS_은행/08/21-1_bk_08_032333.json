@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_032333",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 898,
+        "consulting_content": "고객은 전세자금 대출 만기 연장을 원하고 현재 만기와 문자상의 차이를 문의했으며, 연장 심사 소요 기간, 필요 서류, 제출 방법, 금리 변동 여부, 상환 일정 적용 시점을 물었다. 상담사는 대출 만기 차이는 시스템 반영 시점 차이이며, 연장 심사는 영업일 3~5일 소요되고 신분증 사본, 급여 내역, 전세 계약서가 필요하고 전용 업로드 페이지로 제출 가능하다고 안내했으며, 금리는 동일하게 유지되고 승인 후 다음 달부터 새로운 상환 일정이 적용된다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

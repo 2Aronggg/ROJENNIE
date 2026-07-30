@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_015184",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1018,
+        "consulting_content": "고객은 대출 이자 감면을 위해 예적금 가입 필요 여부와 기존 계약 만료 확인, 해지, 재가입 절차와 서류 등을 문의하였고 상담사는 기존 예적금이 만료되면 최소 금액, 납입 주기 충족 새로 가입하면 감면을 유지할 수 있으며, 모바일 앱 신청, 계좌 인증, 비밀번호 재설정 방법을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

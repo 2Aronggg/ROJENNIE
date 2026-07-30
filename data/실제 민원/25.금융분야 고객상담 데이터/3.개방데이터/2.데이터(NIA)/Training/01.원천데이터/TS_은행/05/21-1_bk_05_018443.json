@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_018443",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 751,
+        "consulting_content": "고객은 일일 송금 한도 50만원 초과 금액 사용 가능 시점을 문의하였고 상담사는 한도 해제를 위해 신분증, 직장 확인 서류를 영업점 방문 또는 팩스로 제출해야 한다고 안내하였으며, 고객은 팩스 제출을 원한다고 답하고, 상담사는 절차와 서류 내용을 설명하고 통화 끊김에 대해 사과하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

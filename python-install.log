@@ -1,0 +1,237 @@
+[8E54:6ADC][2026-07-30T18:13:14]i001: Burn v3.14.0.5722, Windows v10.0 (Build 26200: Service Pack 0), path: C:\Users\achim\AppData\Local\Temp\{623B526B-155E-4ED0-B482-7B9998E6FB41}\.cr\python-3.12.5-amd64.exe
+[8E54:6ADC][2026-07-30T18:13:14]i000: Initializing string variable 'ActionLikeInstalling' to value 'Installing'
+[8E54:6ADC][2026-07-30T18:13:14]i000: Initializing string variable 'ActionLikeInstallation' to value 'Setup'
+[8E54:6ADC][2026-07-30T18:13:14]i000: Initializing string variable 'ShortVersion' to value '3.12'
+[8E54:6ADC][2026-07-30T18:13:14]i000: Initializing numeric variable 'ShortVersionNoDot' to value '312'
+[8E54:6ADC][2026-07-30T18:13:14]i000: Initializing string variable 'WinVer' to value '3.12'
+[8E54:6ADC][2026-07-30T18:13:14]i000: Initializing numeric variable 'WinVerNoDot' to value '312'
+[8E54:6ADC][2026-07-30T18:13:14]i000: Initializing numeric variable 'InstallAllUsers' to value '0'
+[8E54:6ADC][2026-07-30T18:13:14]i000: Initializing numeric variable 'InstallLauncherAllUsers' to value '-1'
+[8E54:6ADC][2026-07-30T18:13:14]i000: Initializing string variable 'TargetDir' to value ''
+[8E54:6ADC][2026-07-30T18:13:14]i000: Initializing string variable 'DefaultAllUsersTargetDir' to value '[ProgramFiles64Folder]Python[WinVerNoDot]'
+[8E54:6ADC][2026-07-30T18:13:14]i000: Initializing string variable 'TargetPlatform' to value 'x64'
+[8E54:6ADC][2026-07-30T18:13:14]i000: Initializing string variable 'DefaultJustForMeTargetDir' to value '[LocalAppDataFolder]Programs\Python\Python[WinVerNoDot]'
+[8E54:6ADC][2026-07-30T18:13:14]i000: Initializing string variable 'OptionalFeaturesRegistryKey' to value 'Software\Python\PythonCore\[WinVer]\InstalledFeatures'
+[8E54:6ADC][2026-07-30T18:13:14]i000: Initializing string variable 'TargetDirRegistryKey' to value 'Software\Python\PythonCore\[WinVer]\InstallPath'
+[8E54:6ADC][2026-07-30T18:13:14]i000: Initializing string variable 'DefaultCustomTargetDir' to value ''
+[8E54:6ADC][2026-07-30T18:13:14]i000: Initializing string variable 'InstallAllUsersState' to value 'enabled'
+[8E54:6ADC][2026-07-30T18:13:14]i000: Initializing string variable 'InstallLauncherAllUsersState' to value 'enabled'
+[8E54:6ADC][2026-07-30T18:13:14]i000: Initializing string variable 'CustomInstallLauncherAllUsersState' to value '[InstallLauncherAllUsersState]'
+[8E54:6ADC][2026-07-30T18:13:14]i000: Initializing string variable 'TargetDirState' to value 'enabled'
+[8E54:6ADC][2026-07-30T18:13:14]i000: Initializing string variable 'CustomBrowseButtonState' to value 'enabled'
+[8E54:6ADC][2026-07-30T18:13:14]i000: Initializing numeric variable 'Include_core' to value '1'
+[8E54:6ADC][2026-07-30T18:13:14]i000: Initializing numeric variable 'Include_exe' to value '1'
+[8E54:6ADC][2026-07-30T18:13:14]i000: Initializing numeric variable 'Include_dev' to value '1'
+[8E54:6ADC][2026-07-30T18:13:14]i000: Initializing numeric variable 'Include_lib' to value '1'
+[8E54:6ADC][2026-07-30T18:13:14]i000: Initializing numeric variable 'Include_test' to value '1'
+[8E54:6ADC][2026-07-30T18:13:14]i000: Initializing numeric variable 'Include_doc' to value '1'
+[8E54:6ADC][2026-07-30T18:13:14]i000: Initializing numeric variable 'Include_tools' to value '0'
+[8E54:6ADC][2026-07-30T18:13:14]i000: Initializing numeric variable 'Include_tcltk' to value '1'
+[8E54:6ADC][2026-07-30T18:13:14]i000: Initializing numeric variable 'Include_pip' to value '1'
+[8E54:6ADC][2026-07-30T18:13:14]i000: Initializing numeric variable 'Include_launcher' to value '-1'
+[8E54:6ADC][2026-07-30T18:13:14]i000: Initializing string variable 'Include_launcherState' to value 'enabled'
+[8E54:6ADC][2026-07-30T18:13:14]i000: Initializing numeric variable 'Include_symbols' to value '0'
+[8E54:6ADC][2026-07-30T18:13:14]i000: Initializing numeric variable 'Include_debug' to value '0'
+[8E54:6ADC][2026-07-30T18:13:14]i000: Initializing numeric variable 'LauncherOnly' to value '0'
+[8E54:6ADC][2026-07-30T18:13:14]i000: Initializing numeric variable 'BlockedLauncher' to value '0'
+[8E54:6ADC][2026-07-30T18:13:14]i000: Initializing numeric variable 'DetectedLauncher' to value '0'
+[8E54:6ADC][2026-07-30T18:13:14]i000: Initializing numeric variable 'DetectedOldLauncher' to value '0'
+[8E54:6ADC][2026-07-30T18:13:14]i000: Initializing numeric variable 'AssociateFiles' to value '-1'
+[8E54:6ADC][2026-07-30T18:13:14]i000: Initializing numeric variable 'Shortcuts' to value '1'
+[8E54:6ADC][2026-07-30T18:13:14]i000: Initializing numeric variable 'PrependPath' to value '0'
+[8E54:6ADC][2026-07-30T18:13:14]i000: Initializing numeric variable 'AppendPath' to value '0'
+[8E54:6ADC][2026-07-30T18:13:14]i000: Initializing numeric variable 'CompileAll' to value '0'
+[8E54:6ADC][2026-07-30T18:13:14]i000: Initializing numeric variable 'SimpleInstall' to value '0'
+[8E54:6ADC][2026-07-30T18:13:14]i000: Initializing string variable 'SimpleInstallDescription' to value ''
+[8E54:6ADC][2026-07-30T18:13:14]i009: Command Line: '-burn.clean.room=C:\Users\achim\ROJENNIE\python-3.12.5-amd64.exe -burn.filehandle.attached=784 -burn.filehandle.self=524 /quiet InstallAllUsers=0 TargetDir=C:\Users\achim\AppData\Local\Programs\Python\Python312 PrependPath=1 Include_pip=1 Include_launcher=1 SimpleInstall=1 /log C:\Users\achim\ROJENNIE\python-install.log'
+[8E54:6ADC][2026-07-30T18:13:14]i000: Setting string variable 'WixBundleOriginalSource' to value 'C:\Users\achim\ROJENNIE\python-3.12.5-amd64.exe'
+[8E54:6ADC][2026-07-30T18:13:14]i000: Setting string variable 'WixBundleOriginalSourceFolder' to value 'C:\Users\achim\ROJENNIE\'
+[8E54:6ADC][2026-07-30T18:13:14]i000: Setting string variable 'WixBundleLog' to value 'C:\Users\achim\ROJENNIE\python-install.log'
+[8E54:6ADC][2026-07-30T18:13:15]i000: Setting string variable 'WixBundleName' to value 'Python 3.12.5 (64-bit)'
+[8E54:6ADC][2026-07-30T18:13:15]i000: Setting string variable 'WixBundleManufacturer' to value 'Python Software Foundation'
+[8E54:6ADC][2026-07-30T18:13:15]i000: Setting numeric variable 'CRTInstalled' to value 1
+[8E54:9684][2026-07-30T18:13:15]i000: Did not find C:\Users\achim\ROJENNIE\unattend.xml
+[8E54:9684][2026-07-30T18:13:15]i000: Setting numeric variable 'InstallAllUsers' to value 0
+[8E54:9684][2026-07-30T18:13:15]i000: Setting string variable 'TargetDir' to value 'C:\Users\achim\AppData\Local\Programs\Python\Python312'
+[8E54:9684][2026-07-30T18:13:15]i000: Setting numeric variable 'PrependPath' to value 1
+[8E54:9684][2026-07-30T18:13:15]i000: Setting numeric variable 'Include_pip' to value 1
+[8E54:9684][2026-07-30T18:13:15]i000: Setting numeric variable 'Include_launcher' to value 1
+[8E54:9684][2026-07-30T18:13:15]i000: Setting numeric variable 'SimpleInstall' to value 1
+[8E54:9684][2026-07-30T18:13:16]i000: Setting string variable 'ActionLikeInstalling' to value 'Installing'
+[8E54:9684][2026-07-30T18:13:16]i000: Setting string variable 'ActionLikeInstallation' to value 'Setup'
+[8E54:9684][2026-07-30T18:13:16]i000: Setting version variable 'WixBundleFileVersion' to value '3.12.5150.0'
+[8E54:9684][2026-07-30T18:13:16]i000: Target OS is Windows 10 or later
+[8E54:6ADC][2026-07-30T18:13:16]i100: Detect begin, 52 packages
+[8E54:6ADC][2026-07-30T18:13:16]i107: Detected forward compatible bundle: {b6ce88eb-2ce3-4d91-8efc-425ae1f48caf}, type: Upgrade, scope: PerUser, version: 3.12.10150.0, enabled: No
+[8E54:6ADC][2026-07-30T18:13:16]i102: Detected related bundle: {b6ce88eb-2ce3-4d91-8efc-425ae1f48caf}, type: Upgrade, scope: PerUser, version: 3.12.10150.0, operation: Downgrade
+[8E54:6ADC][2026-07-30T18:13:16]i103: Detected related package: {9D09C9EF-A57C-422A-B79A-CC922079653A}, scope: PerUser, version: 3.12.10150.0, language: 0 operation: Downgrade
+[8E54:6ADC][2026-07-30T18:13:16]i103: Detected related package: {9D09C9EF-A57C-422A-B79A-CC922079653A}, scope: PerUser, version: 3.12.10150.0, language: 0 operation: Downgrade
+[8E54:6ADC][2026-07-30T18:13:16]i103: Detected related package: {0158093D-F809-455B-9429-6D16A4B5D118}, scope: PerUser, version: 3.12.10150.0, language: 0 operation: Downgrade
+[8E54:6ADC][2026-07-30T18:13:16]i103: Detected related package: {0158093D-F809-455B-9429-6D16A4B5D118}, scope: PerUser, version: 3.12.10150.0, language: 0 operation: Downgrade
+[8E54:6ADC][2026-07-30T18:13:16]i103: Detected related package: {EF4A3D60-9A53-4697-A18D-D3353F8554E6}, scope: PerUser, version: 3.12.10150.0, language: 0 operation: Downgrade
+[8E54:6ADC][2026-07-30T18:13:16]i103: Detected related package: {EF4A3D60-9A53-4697-A18D-D3353F8554E6}, scope: PerUser, version: 3.12.10150.0, language: 0 operation: Downgrade
+[8E54:6ADC][2026-07-30T18:13:16]i103: Detected related package: {DE12B597-D4BF-4B1B-BF5F-C5CE41AFBDFC}, scope: PerUser, version: 3.12.10150.0, language: 0 operation: Downgrade
+[8E54:6ADC][2026-07-30T18:13:16]i103: Detected related package: {DE12B597-D4BF-4B1B-BF5F-C5CE41AFBDFC}, scope: PerUser, version: 3.12.10150.0, language: 0 operation: Downgrade
+[8E54:6ADC][2026-07-30T18:13:16]i103: Detected related package: {01F171AF-1F21-435E-BEE4-FCC4360C896C}, scope: PerUser, version: 3.12.10150.0, language: 0 operation: Downgrade
+[8E54:6ADC][2026-07-30T18:13:16]i103: Detected related package: {01F171AF-1F21-435E-BEE4-FCC4360C896C}, scope: PerUser, version: 3.12.10150.0, language: 0 operation: Downgrade
+[8E54:6ADC][2026-07-30T18:13:16]i103: Detected related package: {18DF3488-2245-432B-A023-3AA05C2A00C8}, scope: PerUser, version: 3.12.10150.0, language: 0 operation: Downgrade
+[8E54:6ADC][2026-07-30T18:13:16]i103: Detected related package: {18DF3488-2245-432B-A023-3AA05C2A00C8}, scope: PerUser, version: 3.12.10150.0, language: 0 operation: Downgrade
+[8E54:6ADC][2026-07-30T18:13:16]i103: Detected related package: {75485683-EF03-41E6-BF21-D1491694548C}, scope: PerUser, version: 3.12.10150.0, language: 0 operation: Downgrade
+[8E54:6ADC][2026-07-30T18:13:16]i103: Detected related package: {75485683-EF03-41E6-BF21-D1491694548C}, scope: PerUser, version: 3.12.10150.0, language: 0 operation: Downgrade
+[8E54:6ADC][2026-07-30T18:13:16]i103: Detected related package: {665A0435-D5D5-4A49-9DE0-FBC23C5425ED}, scope: PerMachine, version: 3.12.10150.0, language: 0 operation: Downgrade
+[8E54:6ADC][2026-07-30T18:13:16]i000: Detected existing launcher install
+[8E54:6ADC][2026-07-30T18:13:16]i000: Setting numeric variable 'DetectedLauncher' to value 1
+[8E54:6ADC][2026-07-30T18:13:16]e000: Higher version launcher has been detected.
+[8E54:6ADC][2026-07-30T18:13:16]e000: Launcher will not be installed
+[8E54:6ADC][2026-07-30T18:13:16]i000: Setting numeric variable 'BlockedLauncher' to value 1
+[8E54:6ADC][2026-07-30T18:13:16]i103: Detected related package: {665A0435-D5D5-4A49-9DE0-FBC23C5425ED}, scope: PerMachine, version: 3.12.10150.0, language: 0 operation: Downgrade
+[8E54:6ADC][2026-07-30T18:13:16]i103: Detected related package: {CD0A1663-DC2D-41BD-89AF-E1089E841822}, scope: PerUser, version: 3.12.10150.0, language: 0 operation: Downgrade
+[8E54:6ADC][2026-07-30T18:13:16]i103: Detected related package: {CD0A1663-DC2D-41BD-89AF-E1089E841822}, scope: PerUser, version: 3.12.10150.0, language: 0 operation: Downgrade
+[8E54:6ADC][2026-07-30T18:13:16]i103: Detected related package: {4A285122-D2B5-4C35-A279-CE9BD2CA15A0}, scope: PerUser, version: 3.12.10150.0, language: 0 operation: Downgrade
+[8E54:6ADC][2026-07-30T18:13:16]i103: Detected related package: {4A285122-D2B5-4C35-A279-CE9BD2CA15A0}, scope: PerUser, version: 3.12.10150.0, language: 0 operation: Downgrade
+[8E54:6ADC][2026-07-30T18:13:16]i101: Detected package: ucrt_AllUsers, state: Absent, cached: None
+[8E54:6ADC][2026-07-30T18:13:16]i101: Detected package: ucrt_JustForMe, state: Absent, cached: None
+[8E54:6ADC][2026-07-30T18:13:16]i101: Detected package: core_AllUsers, state: Obsolete, cached: None
+[8E54:6ADC][2026-07-30T18:13:16]i101: Detected package: core_AllUsers_pdb, state: Absent, cached: None
+[8E54:6ADC][2026-07-30T18:13:16]i101: Detected package: core_AllUsers_d, state: Absent, cached: None
+[8E54:6ADC][2026-07-30T18:13:16]i101: Detected package: core_JustForMe, state: Obsolete, cached: None
+[8E54:6ADC][2026-07-30T18:13:16]i101: Detected package: core_JustForMe_pdb, state: Absent, cached: None
+[8E54:6ADC][2026-07-30T18:13:16]i101: Detected package: core_JustForMe_d, state: Absent, cached: None
+[8E54:6ADC][2026-07-30T18:13:16]i101: Detected package: exe_AllUsers, state: Obsolete, cached: None
+[8E54:6ADC][2026-07-30T18:13:16]i104: Detected package: exe_AllUsers, feature: DefaultFeature, state: Absent
+[8E54:6ADC][2026-07-30T18:13:16]i104: Detected package: exe_AllUsers, feature: Shortcuts, state: Absent
+[8E54:6ADC][2026-07-30T18:13:16]i101: Detected package: exe_AllUsers_pdb, state: Absent, cached: None
+[8E54:6ADC][2026-07-30T18:13:16]i101: Detected package: exe_AllUsers_d, state: Absent, cached: None
+[8E54:6ADC][2026-07-30T18:13:16]i101: Detected package: exe_JustForMe, state: Obsolete, cached: None
+[8E54:6ADC][2026-07-30T18:13:16]i104: Detected package: exe_JustForMe, feature: DefaultFeature, state: Absent
+[8E54:6ADC][2026-07-30T18:13:16]i104: Detected package: exe_JustForMe, feature: Shortcuts, state: Absent
+[8E54:6ADC][2026-07-30T18:13:16]i101: Detected package: exe_JustForMe_pdb, state: Absent, cached: None
+[8E54:6ADC][2026-07-30T18:13:16]i101: Detected package: exe_JustForMe_d, state: Absent, cached: None
+[8E54:6ADC][2026-07-30T18:13:16]i101: Detected package: dev_AllUsers, state: Obsolete, cached: None
+[8E54:6ADC][2026-07-30T18:13:16]i101: Detected package: dev_AllUsers_d, state: Absent, cached: None
+[8E54:6ADC][2026-07-30T18:13:16]i101: Detected package: dev_JustForMe, state: Obsolete, cached: None
+[8E54:6ADC][2026-07-30T18:13:16]i101: Detected package: dev_JustForMe_d, state: Absent, cached: None
+[8E54:6ADC][2026-07-30T18:13:16]i101: Detected package: lib_AllUsers, state: Obsolete, cached: None
+[8E54:6ADC][2026-07-30T18:13:16]i101: Detected package: lib_AllUsers_pdb, state: Absent, cached: None
+[8E54:6ADC][2026-07-30T18:13:16]i101: Detected package: lib_AllUsers_d, state: Absent, cached: None
+[8E54:6ADC][2026-07-30T18:13:16]i101: Detected package: lib_JustForMe, state: Obsolete, cached: None
+[8E54:6ADC][2026-07-30T18:13:16]i101: Detected package: lib_JustForMe_pdb, state: Absent, cached: None
+[8E54:6ADC][2026-07-30T18:13:16]i101: Detected package: lib_JustForMe_d, state: Absent, cached: None
+[8E54:6ADC][2026-07-30T18:13:16]i101: Detected package: test_AllUsers, state: Obsolete, cached: None
+[8E54:6ADC][2026-07-30T18:13:16]i101: Detected package: test_AllUsers_pdb, state: Absent, cached: None
+[8E54:6ADC][2026-07-30T18:13:16]i101: Detected package: test_AllUsers_d, state: Absent, cached: None
+[8E54:6ADC][2026-07-30T18:13:16]i101: Detected package: test_JustForMe, state: Obsolete, cached: None
+[8E54:6ADC][2026-07-30T18:13:16]i101: Detected package: test_JustForMe_pdb, state: Absent, cached: None
+[8E54:6ADC][2026-07-30T18:13:16]i101: Detected package: test_JustForMe_d, state: Absent, cached: None
+[8E54:6ADC][2026-07-30T18:13:16]i101: Detected package: doc_AllUsers, state: Obsolete, cached: None
+[8E54:6ADC][2026-07-30T18:13:16]i104: Detected package: doc_AllUsers, feature: DefaultFeature, state: Absent
+[8E54:6ADC][2026-07-30T18:13:16]i104: Detected package: doc_AllUsers, feature: Shortcuts, state: Absent
+[8E54:6ADC][2026-07-30T18:13:16]i101: Detected package: doc_JustForMe, state: Obsolete, cached: None
+[8E54:6ADC][2026-07-30T18:13:16]i104: Detected package: doc_JustForMe, feature: DefaultFeature, state: Absent
+[8E54:6ADC][2026-07-30T18:13:16]i104: Detected package: doc_JustForMe, feature: Shortcuts, state: Absent
+[8E54:6ADC][2026-07-30T18:13:16]i101: Detected package: tcltk_AllUsers, state: Obsolete, cached: None
+[8E54:6ADC][2026-07-30T18:13:16]i104: Detected package: tcltk_AllUsers, feature: DefaultFeature, state: Absent
+[8E54:6ADC][2026-07-30T18:13:16]i104: Detected package: tcltk_AllUsers, feature: AssociateFiles, state: Absent
+[8E54:6ADC][2026-07-30T18:13:16]i104: Detected package: tcltk_AllUsers, feature: Shortcuts, state: Absent
+[8E54:6ADC][2026-07-30T18:13:16]i101: Detected package: tcltk_AllUsers_pdb, state: Absent, cached: None
+[8E54:6ADC][2026-07-30T18:13:16]i104: Detected package: tcltk_AllUsers_pdb, feature: Symbols, state: Absent
+[8E54:6ADC][2026-07-30T18:13:16]i101: Detected package: tcltk_AllUsers_d, state: Absent, cached: None
+[8E54:6ADC][2026-07-30T18:13:16]i104: Detected package: tcltk_AllUsers_d, feature: DebugBinaries, state: Absent
+[8E54:6ADC][2026-07-30T18:13:16]i101: Detected package: tcltk_JustForMe, state: Obsolete, cached: None
+[8E54:6ADC][2026-07-30T18:13:16]i104: Detected package: tcltk_JustForMe, feature: DefaultFeature, state: Absent
+[8E54:6ADC][2026-07-30T18:13:16]i104: Detected package: tcltk_JustForMe, feature: AssociateFiles, state: Absent
+[8E54:6ADC][2026-07-30T18:13:16]i104: Detected package: tcltk_JustForMe, feature: Shortcuts, state: Absent
+[8E54:6ADC][2026-07-30T18:13:16]i101: Detected package: tcltk_JustForMe_pdb, state: Absent, cached: None
+[8E54:6ADC][2026-07-30T18:13:16]i104: Detected package: tcltk_JustForMe_pdb, feature: Symbols, state: Absent
+[8E54:6ADC][2026-07-30T18:13:16]i101: Detected package: tcltk_JustForMe_d, state: Absent, cached: None
+[8E54:6ADC][2026-07-30T18:13:16]i104: Detected package: tcltk_JustForMe_d, feature: DebugBinaries, state: Absent
+[8E54:6ADC][2026-07-30T18:13:16]i101: Detected package: launcher_AllUsers, state: Obsolete, cached: None
+[8E54:6ADC][2026-07-30T18:13:16]i104: Detected package: launcher_AllUsers, feature: DefaultFeature, state: Absent
+[8E54:6ADC][2026-07-30T18:13:16]i104: Detected package: launcher_AllUsers, feature: AssociateFiles, state: Absent
+[8E54:6ADC][2026-07-30T18:13:16]i101: Detected package: launcher_JustForMe, state: Obsolete, cached: None
+[8E54:6ADC][2026-07-30T18:13:16]i104: Detected package: launcher_JustForMe, feature: DefaultFeature, state: Absent
+[8E54:6ADC][2026-07-30T18:13:16]i104: Detected package: launcher_JustForMe, feature: AssociateFiles, state: Absent
+[8E54:6ADC][2026-07-30T18:13:16]i101: Detected package: pip_AllUsers, state: Obsolete, cached: None
+[8E54:6ADC][2026-07-30T18:13:16]i101: Detected package: pip_JustForMe, state: Obsolete, cached: None
+[8E54:6ADC][2026-07-30T18:13:16]i101: Detected package: path_AllUsers, state: Obsolete, cached: None
+[8E54:6ADC][2026-07-30T18:13:16]i101: Detected package: path_JustForMe, state: Obsolete, cached: None
+[8E54:6ADC][2026-07-30T18:13:16]i101: Detected package: appendpath_AllUsers, state: Absent, cached: None
+[8E54:6ADC][2026-07-30T18:13:16]i101: Detected package: appendpath_JustForMe, state: Absent, cached: None
+[8E54:6ADC][2026-07-30T18:13:16]i101: Detected package: compileall_AllUsers, state: Absent, cached: None
+[8E54:6ADC][2026-07-30T18:13:16]i101: Detected package: compileallO_AllUsers, state: Absent, cached: None
+[8E54:6ADC][2026-07-30T18:13:16]i101: Detected package: compileallOO_AllUsers, state: Absent, cached: None
+[8E54:6ADC][2026-07-30T18:13:16]i101: Detected package: compileall_JustForMe, state: Absent, cached: None
+[8E54:6ADC][2026-07-30T18:13:16]i101: Detected package: compileallO_JustForMe, state: Absent, cached: None
+[8E54:6ADC][2026-07-30T18:13:16]i101: Detected package: compileallOO_JustForMe, state: Absent, cached: None
+[8E54:6ADC][2026-07-30T18:13:16]i000: Setting numeric variable 'Include_launcher' to value 0
+[8E54:6ADC][2026-07-30T18:13:16]i000: Setting numeric variable 'InstallLauncherAllUsers' to value 0
+[8E54:6ADC][2026-07-30T18:13:16]i000: Setting string variable 'InstallLauncherAllUsersState' to value 'disable'
+[8E54:6ADC][2026-07-30T18:13:16]i000: Setting string variable 'Include_launcherState' to value 'disable'
+[8E54:6ADC][2026-07-30T18:13:16]i199: Detect complete, result: 0x0
+[8E54:9684][2026-07-30T18:13:16]i000: Setting string variable 'ActionLikeInstalling' to value 'Installing'
+[8E54:9684][2026-07-30T18:13:16]i000: Setting string variable 'ActionLikeInstallation' to value 'Setup'
+[8E54:9684][2026-07-30T18:13:16]e000: Error 0x80070666: Cannot install a product when a newer version is installed.
+[8E54:6ADC][2026-07-30T18:13:16]i500: Shutting down, exit code: 0x666
+[8E54:6ADC][2026-07-30T18:13:16]i410: Variable: ActionLikeInstallation = Setup
+[8E54:6ADC][2026-07-30T18:13:16]i410: Variable: ActionLikeInstalling = Installing
+[8E54:6ADC][2026-07-30T18:13:16]i410: Variable: AppendPath = 0
+[8E54:6ADC][2026-07-30T18:13:16]i410: Variable: AssociateFiles = -1
+[8E54:6ADC][2026-07-30T18:13:16]i410: Variable: BlockedLauncher = 1
+[8E54:6ADC][2026-07-30T18:13:16]i410: Variable: CompileAll = 0
+[8E54:6ADC][2026-07-30T18:13:16]i410: Variable: CRTInstalled = 1
+[8E54:6ADC][2026-07-30T18:13:16]i410: Variable: CustomBrowseButtonState = enabled
+[8E54:6ADC][2026-07-30T18:13:16]i410: Variable: CustomInstallLauncherAllUsersState = disable
+[8E54:6ADC][2026-07-30T18:13:16]i410: Variable: DefaultAllUsersTargetDir = C:\Program Files\Python312
+[8E54:6ADC][2026-07-30T18:13:16]i410: Variable: DefaultCustomTargetDir = 
+[8E54:6ADC][2026-07-30T18:13:16]i410: Variable: DefaultJustForMeTargetDir = C:\Users\achim\AppData\Local\Programs\Python\Python312
+[8E54:6ADC][2026-07-30T18:13:16]i410: Variable: DetectedLauncher = 1
+[8E54:6ADC][2026-07-30T18:13:16]i410: Variable: DetectedOldLauncher = 0
+[8E54:6ADC][2026-07-30T18:13:16]i410: Variable: Include_core = 1
+[8E54:6ADC][2026-07-30T18:13:16]i410: Variable: Include_debug = 0
+[8E54:6ADC][2026-07-30T18:13:16]i410: Variable: Include_dev = 1
+[8E54:6ADC][2026-07-30T18:13:16]i410: Variable: Include_doc = 1
+[8E54:6ADC][2026-07-30T18:13:16]i410: Variable: Include_exe = 1
+[8E54:6ADC][2026-07-30T18:13:16]i410: Variable: Include_launcher = 0
+[8E54:6ADC][2026-07-30T18:13:16]i410: Variable: Include_launcherState = disable
+[8E54:6ADC][2026-07-30T18:13:16]i410: Variable: Include_lib = 1
+[8E54:6ADC][2026-07-30T18:13:16]i410: Variable: Include_pip = 1
+[8E54:6ADC][2026-07-30T18:13:16]i410: Variable: Include_symbols = 0
+[8E54:6ADC][2026-07-30T18:13:16]i410: Variable: Include_tcltk = 1
+[8E54:6ADC][2026-07-30T18:13:16]i410: Variable: Include_test = 1
+[8E54:6ADC][2026-07-30T18:13:16]i410: Variable: Include_tools = 0
+[8E54:6ADC][2026-07-30T18:13:16]i410: Variable: InstallAllUsers = 0
+[8E54:6ADC][2026-07-30T18:13:16]i410: Variable: InstallAllUsersState = enabled
+[8E54:6ADC][2026-07-30T18:13:16]i410: Variable: InstallLauncherAllUsers = 0
+[8E54:6ADC][2026-07-30T18:13:16]i410: Variable: InstallLauncherAllUsersState = disable
+[8E54:6ADC][2026-07-30T18:13:16]i410: Variable: LauncherOnly = 0
+[8E54:6ADC][2026-07-30T18:13:16]i410: Variable: LocalAppDataFolder = C:\Users\achim\AppData\Local\
+[8E54:6ADC][2026-07-30T18:13:16]i410: Variable: OptionalFeaturesRegistryKey = Software\Python\PythonCore\3.12\InstalledFeatures
+[8E54:6ADC][2026-07-30T18:13:16]i410: Variable: PrependPath = 1
+[8E54:6ADC][2026-07-30T18:13:16]i410: Variable: ProgramFiles64Folder = C:\Program Files\
+[8E54:6ADC][2026-07-30T18:13:16]i410: Variable: Shortcuts = 1
+[8E54:6ADC][2026-07-30T18:13:16]i410: Variable: ShortVersion = 3.12
+[8E54:6ADC][2026-07-30T18:13:16]i410: Variable: ShortVersionNoDot = 312
+[8E54:6ADC][2026-07-30T18:13:16]i410: Variable: SimpleInstall = 1
+[8E54:6ADC][2026-07-30T18:13:16]i410: Variable: SimpleInstallDescription = 
+[8E54:6ADC][2026-07-30T18:13:16]i410: Variable: TargetDir = C:\Users\achim\AppData\Local\Programs\Python\Python312
+[8E54:6ADC][2026-07-30T18:13:16]i410: Variable: TargetDirRegistryKey = Software\Python\PythonCore\3.12\InstallPath
+[8E54:6ADC][2026-07-30T18:13:16]i410: Variable: TargetDirState = enabled
+[8E54:6ADC][2026-07-30T18:13:16]i410: Variable: TargetPlatform = x64
+[8E54:6ADC][2026-07-30T18:13:16]i410: Variable: WinVer = 3.12
+[8E54:6ADC][2026-07-30T18:13:16]i410: Variable: WinVerNoDot = 312
+[8E54:6ADC][2026-07-30T18:13:16]i410: Variable: WixBundleAction = 5
+[8E54:6ADC][2026-07-30T18:13:16]i410: Variable: WixBundleElevated = 0
+[8E54:6ADC][2026-07-30T18:13:16]i410: Variable: WixBundleFileVersion = 3.12.5150.0
+[8E54:6ADC][2026-07-30T18:13:16]i410: Variable: WixBundleInstalled = 0
+[8E54:6ADC][2026-07-30T18:13:16]i410: Variable: WixBundleLog = C:\Users\achim\ROJENNIE\python-install.log
+[8E54:6ADC][2026-07-30T18:13:16]i410: Variable: WixBundleManufacturer = Python Software Foundation
+[8E54:6ADC][2026-07-30T18:13:16]i410: Variable: WixBundleName = Python 3.12.5 (64-bit)
+[8E54:6ADC][2026-07-30T18:13:16]i410: Variable: WixBundleOriginalSource = C:\Users\achim\ROJENNIE\python-3.12.5-amd64.exe
+[8E54:6ADC][2026-07-30T18:13:16]i410: Variable: WixBundleOriginalSourceFolder = C:\Users\achim\ROJENNIE\
+[8E54:6ADC][2026-07-30T18:13:16]i410: Variable: WixBundleProviderKey = CPython-3.12
+[8E54:6ADC][2026-07-30T18:13:16]i410: Variable: WixBundleSourceProcessFolder = C:\Users\achim\ROJENNIE\
+[8E54:6ADC][2026-07-30T18:13:16]i410: Variable: WixBundleSourceProcessPath = C:\Users\achim\ROJENNIE\python-3.12.5-amd64.exe
+[8E54:6ADC][2026-07-30T18:13:16]i410: Variable: WixBundleTag = 
+[8E54:6ADC][2026-07-30T18:13:16]i410: Variable: WixBundleUILevel = 2
+[8E54:6ADC][2026-07-30T18:13:16]i410: Variable: WixBundleVersion = 3.12.5150.0
+[8E54:6ADC][2026-07-30T18:13:16]i007: Exit code: 0x666, restarting: No

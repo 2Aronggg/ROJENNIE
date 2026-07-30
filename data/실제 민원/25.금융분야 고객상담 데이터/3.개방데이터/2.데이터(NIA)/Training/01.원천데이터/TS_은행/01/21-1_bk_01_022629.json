@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_022629",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 867,
+        "consulting_content": "고객은 재가입 장려금으로 추정되는 미확인 입금을 확인하고 출처와 사용 방법을 문의하였고 상담사는 해당 금액이 재가입 장려금이며 일정 기간 내 사용해야 함을 안내하고, 금리 변동 현황과 해지 시 필요 서류를 설명한 뒤 추가 확인 후 전화 회신을 약속하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

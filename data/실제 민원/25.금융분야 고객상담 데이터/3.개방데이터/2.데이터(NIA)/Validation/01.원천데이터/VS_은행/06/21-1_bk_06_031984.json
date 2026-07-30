@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_031984",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1086,
+        "consulting_content": "고객은 자동차 대출 월납입금을 가상 계좌로 입금하고 싶다고 요청하였고 상담사는 계좌, 성명, 생년월일, 비밀번호 등 본인 확인을 진행하였다. 상담사는 대출 잔액을 조회 후 가상 계좌 번호와 정확한 입금 금액, 입금 마감 시간 등을 문자로 안내하고 입금자 정보를 요청하였다. 고객은 추가 문의가 없다고 답하고 상담사는 안내를 마무리하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

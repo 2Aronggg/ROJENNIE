@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_004093",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 904,
+        "consulting_content": "고객은 주택청약 해지를 원해 필요한 서류와 절차를 물었고, 상담사는 주민등록증 사본, 인감증명서 등 서류와 청약팀 연결 필요성을 안내했으며, 콜백을 약속하고, 수수료 5%와 30일 이내 환불 기준을 설명한 뒤 서류와 신청서 제출 시 처리된다고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

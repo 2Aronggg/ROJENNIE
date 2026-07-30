@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_016184",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1664,
+        "consulting_content": "고객은 대만달러 환전을 위해 금액과 지점을 문의하고 직접 방문을 원했으며, 일일 한도와 대출 금리도 물었고, 상담사는 비대면 환전 불가와 해당 지점 재고 확인, 영업시간, 필요 서류, 예약 안내, 공항 환전 수수료 경고, 대출 금리는 신용도, 상품에 따라 다름을 설명하고, 일일 환전 한도는 신분증, 거래실적에 따라 다르며 초과 시 추가 서류, 승인 필요함을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

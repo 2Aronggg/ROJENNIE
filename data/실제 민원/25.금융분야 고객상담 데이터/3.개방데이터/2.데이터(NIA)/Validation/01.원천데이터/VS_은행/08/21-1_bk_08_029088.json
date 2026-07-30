@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_029088",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 884,
+        "consulting_content": "고객은 대출 연장 및 서류 내용, 계좌 확인, 비밀번호 입력, 제출 방법, 모바일 대체 여부, 마감일, 담당자 확인, 추가 비용 등을 문의하였고 상담사는 계좌 번호와 생년월일을 요청하고, 서류 검토, 추가 자료 요청, 모바일 링크를 통한 제출 안내, 2~3일 내 검토 결과 문자 통보, 연장 수수료는 약정에 따라 알림톡에 안내한다는 답변을 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

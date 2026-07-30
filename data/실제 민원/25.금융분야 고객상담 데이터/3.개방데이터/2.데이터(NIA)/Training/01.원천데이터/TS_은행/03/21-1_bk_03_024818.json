@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_024818",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1425,
+        "consulting_content": "고객은 자녀 명의 통장의 자동이체 중단 이유를 문의하고 계좌, 비밀번호, 생년월일 등 정보를 제공했으며 재등록 방법을 물었고, 상담사는 자동이체가 해지된 상태이며 전화, 모바일 앱으로는 재등록이 불가하고, 주민등록증, 인감증명서, 출생증명서를 지참해 영업점 방문이 필요하다고 안내하고, 안내 내용을 문자로 발송하겠다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

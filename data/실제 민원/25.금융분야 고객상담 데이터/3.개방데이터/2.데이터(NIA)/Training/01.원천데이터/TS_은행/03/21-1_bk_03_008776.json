@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_008776",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1390,
+        "consulting_content": "고객은 아파트 관리비 자동이체 설정을 요청하였다. 상담원은 모바일 앱, 인터넷뱅킹에서 아파트명을 조회하고 계좌와 금액, 납부일을 확인한 뒤 자동이체 신청을 시스템에 입력하였다. 신청 완료 후 확인 메일을 발송하고, 메일 내 링크 클릭 및 확인 버튼을 눌러 최종 승인을 진행하였다. 자동이체가 정상 등록되어 다음 달부터 지정일에 이체가 이루어지게 되었다. 취소, 변경은 모바일 앱 또는 인터넷뱅킹의 자동이체 관리 메뉴에서 가능하다고 안내하였다. 추가로 대출 한도 조회 등 다른 서비스 안내도 제공하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

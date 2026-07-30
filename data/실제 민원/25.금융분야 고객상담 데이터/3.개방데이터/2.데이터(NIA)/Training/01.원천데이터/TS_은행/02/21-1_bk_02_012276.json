@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_012276",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 880,
+        "consulting_content": "고객은 오늘 잘못 송금한 건에 대해 자금 반환 청구 결과와 은행에서 수취인에게 실제로 연락을 했는지 여부를 문의했고, 상담사는 거래 금액과 송금인 정보를 조회하여 반환 청구가 진행 중이며 일정 기간 수취인에게 연락을 시도한 뒤 문자로 결과를 통지하겠다고 안내하였다. 또한 반환 승인 시 원금이 자동 복구되고 수수료는 부과되지 않으며, 향후 송금 시 수취인 정보와 금액을 재확인해 착오 송금을 예방할 것을 권장하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

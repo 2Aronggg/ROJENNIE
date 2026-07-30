@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_010089",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 864,
+        "consulting_content": "고객은 무통장 입금 후 영수증이 출력, 수신되지 않아 확인을 요청했으며, 상담을 통해 ●●●원이 정상 입금된 사실을 확인했다. 고객은 영수증 미수령으로 불편을 겪고 있었고, 상담사는 영수증을 문자 또는 이메일로 발송하겠다고 안내한 뒤 추가 문의 여부를 확인했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

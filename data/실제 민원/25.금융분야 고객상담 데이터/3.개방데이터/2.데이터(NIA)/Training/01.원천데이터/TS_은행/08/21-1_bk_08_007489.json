@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_007489",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1229,
+        "consulting_content": "고객은 기존 만기 대출을 연장하고자 하며 연장 시 금액 차이를 확인하고 이자율 변동 여부를 문의하였다. 상담사는 고객의 계좌번호, 성명, 생년월일, 휴대폰 번호, 비밀번호를 확인하고 ARS 인증 절차를 진행하였다. 확인 결과 연장 후 대출 한도는 기존보다 감액되어 ●●●원이며 적용 이자율은 변동 없음을 안내하였다. 연장 신청이 완료되면 등록된 연락처로 문자와 이메일을 통해 처리 결과를 통보하고, 추가 확인이 필요 시 즉시 연락하겠다고 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

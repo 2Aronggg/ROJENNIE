@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_004435",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1543,
+        "consulting_content": "고객은 대출 연장 시 감액이 발생하고 자동 출금이 안 된 상황을 문의했으며, 연장 비용을 나눠 낼 수 있는지와 수수료 및 조건 변동을 물었고, 입금 후 바로 연장 처리를 요청하였다. 상담사는 계좌 확인 후 자동 감액 연장 절차와 잔액 충족 시 즉시 처리될 예정임을 안내하고, 나눠 납부는 모바일 전용 상품에만 가능하다고 설명했으며, 수수료는 연장 금액 비율에 따라 달라지고 기존 금리, 상환 일정은 유지된다고 안내하였다. 또한 인터넷, 모바일 뱅킹으로 신청 가능하고, 입금 확인 시 문자로 완료 통보하겠다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

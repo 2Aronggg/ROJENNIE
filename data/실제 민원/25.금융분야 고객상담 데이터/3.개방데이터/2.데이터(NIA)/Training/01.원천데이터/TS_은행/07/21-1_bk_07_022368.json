@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_022368",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1046,
+        "consulting_content": "고객은 대출 이자 오류를 문의하였고 상담사는 급여 이체 미충족으로 감면 적용이 안돼 금리가 다르다고 안내하였다. 고객은 급여 이체 은행 변경 및 다른 감면 방법을 물었고 상담사는 회사에 급여 이체 요청 및 카드, 적금 실적으로 추가 감면 가능함을 설명하였다. 고객은 조기 상환 수수료가 없음을 확인하고 문자 알림을 요청하였으며 상담사는 설정을 완료하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

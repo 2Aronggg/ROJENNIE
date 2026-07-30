@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_000878",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1280,
+        "consulting_content": "고객은 대출 상환과 관련해 원금, 이자, 가상계좌 번호를 문의했고, 상담원은 상세 정보를 제공했다. 상담원은 상환일, 남은 원금, 조기 상환 수수료, 수수료 면제 절차, 대출 연장 방법과 이자율 변동 가능성 등을 설명하고, 전체 상환 계획표를 문자로 전송하겠다고 안내했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

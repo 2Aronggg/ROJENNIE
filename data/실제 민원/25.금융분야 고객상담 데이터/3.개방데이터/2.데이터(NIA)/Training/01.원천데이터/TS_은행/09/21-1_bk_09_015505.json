@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_015505",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1182,
+        "consulting_content": "고객은 환전 신청을 했으나 입금이 아직 안 된 상태라 취소 가능 여부와 입금 기한, 방법을 문의하였고 상담사는 입금이 확인될 때까지 환전이 보류되며, 입금 기한 내 미입금 시 자동 취소된다고 안내하고, 입금 방법은 계좌 이체 외에도 모바일 앱, 웹사이트 이용 가능함을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

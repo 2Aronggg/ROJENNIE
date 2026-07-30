@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_005595",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1182,
+        "consulting_content": "고객은 마이너스 통장 대출 연장 관련 문자를 받고 연장 절차와 승인 여부와 고객은 연장 승인 시 서류 제출 여부, 서명 전 확인 사항, 거절 시 대처 방법 등을 추가로 문의하였다.상담사는 약정서 작성 절차와 모바일 앱을 통한 서명 방법을 안내하였으며, 연장 승인이 제한될 수 있음을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

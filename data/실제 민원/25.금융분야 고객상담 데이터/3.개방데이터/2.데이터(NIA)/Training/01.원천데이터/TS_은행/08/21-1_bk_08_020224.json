@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_020224",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "80세이상",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 2105,
+        "consulting_content": "고객은 마이너스 통장의 남은 한도와 계좌 번호 제공 방법, 본인 확인 절차, 대출 연장 불가 및 새로운 상품 안내, 서면 자료 요청, 자동 연장 여부, 계약 해지 방법 및 온라인 해지 절차, 연 이자율 문의 등을 연속으로 제시하였고 상담사는 일반 계좌 번호 사용 안내, 조회 진행, 연장 불가와 신규 대출 안내, 서류 발송, 자동 연장 설명, 해지 절차와 문자, 앱 안내, 이자율 적용 방식 설명 등 각각의 요청에 대해 안내하고 필요한 절차를 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

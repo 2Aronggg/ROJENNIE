@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_025139",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1370,
+        "consulting_content": "고객은 대출 연체 금액, 이자, 상환 계획과 가상계좌 입금 방법을 문의하였고 상담사는 연체 일일이자 0.03%, 최소 연체료 5,000원, 일시 상환 절차와 가상계좌 번호, 입금 마감시간을 안내하였다. 고객은 카드 한도, 해외 결제 수수료와 한도 증액 방법을 물었고 상담사는 현재 한도, 수수료와 모바일 앱, 전화 신청 절차를 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

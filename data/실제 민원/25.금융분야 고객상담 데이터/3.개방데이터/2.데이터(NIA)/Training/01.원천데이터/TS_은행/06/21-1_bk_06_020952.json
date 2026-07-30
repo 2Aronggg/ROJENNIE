@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_020952",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1053,
+        "consulting_content": "고객은 대출 일시 상환 후 매월 상환액을 문의했고, 상담사는 본인확인, 계좌, 비밀번호 입력을 요청하며 정보를 조회했다. 고객은 분할 상환 조정 신청 의사를 밝히고, 상담사는 원금 균등 분할 상환 중이라 조정 신청 후 재연락 필요, 금액은 추후 확인 가능하다고 안내하였다. 고객은 재연락 시점을 물었고, 상담사는 10분 후 연락하라고 답했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

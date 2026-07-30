@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_022186",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1015,
+        "consulting_content": "고객은 이혼 지원 후 대출 모바일 연장을 시도했으나 휴대폰 번호 불일치로 인증 전화가 오지 않아 화면이 멈춘 상황을 호소했고, 상담사는 번호 확인, 본인 인증을 진행하고 로그인 재시도 또는 연장 재신청을 안내하며 현재 잔액 및 연장 가능 금액 조회를 약속하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_010126",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1101,
+        "consulting_content": "고객은 대출 만기일 확인과 자동 연장 시 이자율 문의를 하였고 상담사는 만기일은 ●●년 ●●월 ●일로 확인되었고 이 날짜에 맞춰 상환 계획을 세우실 수 있습으며 자동 연장되어 현재 만기일이 연장된 것으로 확인되었다고 안내하였다. 또한 자동 연장 시 이자율은 기존 대출 계약에 명시된 조건대로 동일하게 유지되며, 별도의 변동이 없다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

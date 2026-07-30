@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_000866",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1044,
+        "consulting_content": "고객은 최근 캠페인 입금액, 연금 만기 연계 혜택, 입금 내역 확인, 캐시백 이벤트 여부, 향후 추가 혜택 등에 대해 문의했고, 상담사는 계좌 조회 후 각각의 입금 내역과 자동 적용되는 혜택을 안내했다. 또한 상담사는 캐시백 안내와 향후 연금 만기와 연계된 이벤트를 안내 예정임을 설명했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

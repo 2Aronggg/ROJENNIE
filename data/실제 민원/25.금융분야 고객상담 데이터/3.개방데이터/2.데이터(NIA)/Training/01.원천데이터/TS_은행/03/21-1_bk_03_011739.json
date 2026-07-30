@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_011739",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 930,
+        "consulting_content": "고객은 카카오톡 자동이체 알림을 받고 등록 여부 확인을 요청하였고 상담사는 계좌, 신분 확인 후 등록 여부를 조회하였다. 고객은 해당 보험사의 자동이체가 본인 것이 아니라고 밝히고 차단을 요청하였고 상담사는 차단 신청을 진행하였다. 고객은 추가 문의가 없다고 하였고 상담사는 보험사 문의를 권유하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

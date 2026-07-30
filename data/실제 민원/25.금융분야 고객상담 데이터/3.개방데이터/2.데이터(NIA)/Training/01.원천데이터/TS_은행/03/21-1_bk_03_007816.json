@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_007816",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1143,
+        "consulting_content": "고객은 자동이체 해지를 원하였다. 상담사는 유선으로는 텔레뱅킹 가입 여부를 확인하고, ARS 미가입 시 유선 해지가 불가함을 안내하였다. 고객이 스마트폰 사용 가능함을 확인한 뒤, 상담사는 모바일 앱을 통해 로그인 후 자동이체 관리 메뉴에서 해지 절차를 진행하도록 권유하였다. 고객은 비밀번호 찾기 절차로 인증코드를 입력해 새 비밀번호를 설정하고, 앱에서 자동이체 해지를 완료하였다. 상담사는 해지 완료를 시스템으로 확인하고, 추가 문의가 없음을 확인하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

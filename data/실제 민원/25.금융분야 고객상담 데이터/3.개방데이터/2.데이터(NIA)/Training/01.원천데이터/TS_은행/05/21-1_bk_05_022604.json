@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_022604",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 923,
+        "consulting_content": "고객은 급여 통장 이체 한도 제한 해제를 위해 재직증명서 등 서류 제출을 원했으며, 상담사는 재직증명서, 건강보험 확인서, 급여 명세서 중 재직증명서만 있으면 된다고 안내하고, 팩스 또는 방문으로 서류를 보내면 영업점에서 2~3일 검토 후 결과를 문자로 알려줄 것이라고 설명하였다. 제한은 검토 완료 전까지 유지된다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

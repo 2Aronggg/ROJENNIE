@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_019012",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 909,
+        "consulting_content": "고객은 적금 만기 지급 방식이 은행 방문이 필요한지 물었고 상담사는 계좌를 조회해 자동 이체가 설정되어 있음을 안내하였다. 고객은 계좌 정보를 제공하고 확인을 기다렸으며 상담사는 계좌 정상 확인과 만기일 및 주말 처리 일정, 입금 후 문자 안내를 설명하였다. 고객은 일정에 동의하고 추가 문의 없음을 밝혔고 상담사는 재투자 및 신규 상품 안내를 제안하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

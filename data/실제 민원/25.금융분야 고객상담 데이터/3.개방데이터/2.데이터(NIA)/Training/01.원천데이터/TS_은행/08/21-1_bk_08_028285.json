@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_028285",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1241,
+        "consulting_content": "고객은 마이너스 통장 연장 취소를 요청하고 절차와 이유를 물었고 상담사는 연장이 이미 확정돼 즉시 취소가 불가능함을 안내하고, 청약 철회 제한 규정과 추가 대출, 금리 안내를 제공했으며, 상세 자료를 문자로 송부하겠다고 약속하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

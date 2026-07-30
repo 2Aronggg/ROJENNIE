@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_019888",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 887,
+        "consulting_content": "고객은 자녀 적금 통장의 잔액, 거래내역 확인과 비밀번호 재입력을 요청했으며, 해지 절차와 위약금 안내를 요구하였고 상담사는 계좌 조회 중임을 알리고 비밀번호 오류 시 방문을 안내하며, 비밀번호 확인 후 정확한 정보 제공과 해지 시 위약금은 계약조건에 따라 서면으로 안내한다는 답변을 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

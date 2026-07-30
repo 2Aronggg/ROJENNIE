@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_005378",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1641,
+        "consulting_content": "고객은 대출 이자 자동이체가 누락돼 확인을 요청하였다. 상담사는 대출 잔액 약 1천만원, 원리금 1천5백만원을 안내하고 자동이체 설정을 위해 비밀번호 오류를 재설정하였다. 비밀번호 재설정을 위해 보안 질문 답변을 확인하고 재설정을 완료하였다. 자동이체 일자는 매월 ●●●일로 지정되었으며, 이후 자동으로 이자 납입이 이루어질 것이라 안내하였다. 고객은 대출 연장을 문의하였으며, 신분증 사본, 최근 3개월 급여 내역서, 대출 계약서 사본이 필요하다고 안내하였다. 고객은 이번 주 금요일 오후에 영업점 방문 예약을 잡기로 하였다. 방문 전 전화 예약 확인을 요청하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

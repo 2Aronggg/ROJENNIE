@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_029291",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1957,
+        "consulting_content": "고객은 ●●●원 적금과 청약 연계 및 금액 내역을 조회하고자 했고 상담사는 신원 확인 후 문자, 비밀번호 인증을 진행하였다. 고객은 청약 통장 보유 여부와 입, 해지 상황을 물었으며 상담사는 통장은 현재 없고 만기 해지됐으며 최근 입금이 없고 유지는 가능하다고 안내하였다. 고객은 해지 후 입금 절차를 요청했고 상담사는 지정 계좌로 입금이 완료됐음을 확인하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

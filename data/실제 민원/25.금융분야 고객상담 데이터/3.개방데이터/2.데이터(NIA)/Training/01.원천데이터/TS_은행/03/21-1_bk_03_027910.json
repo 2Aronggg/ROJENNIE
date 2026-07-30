@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_027910",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1515,
+        "consulting_content": "고객은 매월 빠져나가는 자동 이체 내역 확인과 해지를 요청하였고 상담사는 계좌, 생년월일, 비밀번호 확인 후 해당 이체를 조회해 업체 정보를 알려 주었으며, 전화 해지는 불가하므로 신분증 지참 후 영업점 방문을 안내하고, 차단 신청 및 인터넷뱅킹 해지 방법도 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_030434",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 780,
+        "consulting_content": "고객은 대출금 만기 연장을 문의하고 홈페이지에서 연장 신청을 하겠다고 하였고, 상담사는 계좌 확인, 비밀번호 입력을 안내한 뒤 연장 신청은 청년 주택 임차보증금 이자 지원 사업 홈페이지에서 진행하고, 필요 서류는 신분증, 계약서 사본이며 2~3일 내 영업점에서 처리된다고 안내하고, 추후 문의 시 OO은행 고객센터 전화번호로 연락하라고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

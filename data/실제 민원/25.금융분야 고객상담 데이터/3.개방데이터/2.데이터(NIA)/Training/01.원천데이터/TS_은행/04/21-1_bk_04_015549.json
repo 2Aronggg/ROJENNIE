@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_015549",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 944,
+        "consulting_content": "고객은 적금 만기 통보를 놓쳐 금액 확인 및 자동 이체 여부를 문의하고, 새로운 적금 가입 예약을 요청하였다. 상담사는 만기 원금, 이자, 세후 금액을 안내하고, 자동 이체가 본인 인증 계좌로 이루어짐을 설명하며, 원하는 상품 가입 예약을 진행하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

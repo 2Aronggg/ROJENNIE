@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_013374",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1704,
+        "consulting_content": "고객은 사업자 계좌의 일일 이체 한도가 낮아 상향을 원한다며 온라인 신청 방법과 필요 서류를 문의하였고 상담사는 일일 한도는 계좌 유형에 따라 자동 설정되며 한도 증액은 온라인 뱅킹 ‘한도 관리’ 메뉴 또는 영업점 방문으로 신청 가능하고, 매출증명서, 거래내역서, 사업자등록증 등 제출을 요구하며 검토는 영업일 기준 2~3일 소요된다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

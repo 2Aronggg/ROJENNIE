@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_015755",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1202,
+        "consulting_content": "고객은 대출 한도 조정을 위해 서류 확인 및 팩스 전송 상황을 설명하였고 상담사는 영업점에 전달하고 1~2일 내 심사 결과 안내 및 추가 서류 요청 시 문자 안내를 제공하였으며, 처리 지연은 없고 주말, 공휴일에 연장될 수 있음을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

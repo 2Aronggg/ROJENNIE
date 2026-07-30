@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_004583",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1415,
+        "consulting_content": "고객은 연체 중인 대출의 신용 등급 영향과 적금 통장의 연계 여부를 문의하였고 상담사는 본인 확인 절차를 진행한 뒤 연체 금액 500,000원을 안내하고, 정확한 연체 일자 및 상환 방안을 추후 연락드리겠다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

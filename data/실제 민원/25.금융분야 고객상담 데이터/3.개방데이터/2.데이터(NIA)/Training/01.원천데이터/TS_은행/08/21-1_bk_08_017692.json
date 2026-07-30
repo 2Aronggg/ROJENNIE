@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_017692",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1452,
+        "consulting_content": "고객은 마이너스 통장 연장을 요청하고 계좌, 생년월일, 비밀번호 등 본인 확인 정보를 제공하였고 상담사는 확인 후 연장 신청이 접수되었으나 한도, 금리 승인이 대기 중임을 안내하고, 앱에서 승인 결과와 연 5,000원 수수료, 금리 0.3%p 상승을 확인하도록 권고했으며, 신용 조회는 한 번 발생했으나 점수에 큰 영향 없음을 알려주고, 추가 문의가 없음을 확인한 뒤 연장 절차를 최종 완료하고 결과를 문자, 앱 알림으로 전달하겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

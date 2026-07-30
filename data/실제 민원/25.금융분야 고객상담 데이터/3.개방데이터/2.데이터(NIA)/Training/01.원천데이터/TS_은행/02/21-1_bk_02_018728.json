@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_018728",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1743,
+        "consulting_content": "고객은 청약통장에 잘못 입금된 금액의 출금을 요청했으며, 상담사는 입금이 타행에서 이체된 것을 확인하고 즉시 취소는 불가함을 안내하고, 타행 환자금 반환 청구 절차와 처리 기간을 설명한 뒤 문자 안내 수신을 원한다는 고객 요청에 따라 SMS 등록을 진행하겠다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

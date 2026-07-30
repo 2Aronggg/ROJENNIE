@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_017603",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 902,
+        "consulting_content": "고객은 카드 결제 상세와 처리 방법을 문의했으며 상담사는 거래 내역을 확인해 주었다. 고객은 출금이 부분 출금임을 확인하고 상담사는 다음 영업일 입금 시 자동 차감될 것이라 안내했다. 고객은 지연 시 알림 방법을 물었고 상담사는 앱, 문자 알림을 제공한다며 답변했다. 고객은 다른 결제 내역을 확인 요청했으며 상담사는 이상 없음을 알려 주었다. 고객은 자동이체 일시 중지를 요청했고 상담사는 모바일, 전화로 즉시 일시 중지 처리하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_031463",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1458,
+        "consulting_content": "고객은 모바일에서 아파트 담보 대출 우대 금리 확인 방법을 문의하고, 상품명을 알려주며 정보를 기다렸고, 상담사는 시스템 조회 후 부수거래 0.6%, 급여이체 0.3%, 적금, 카드 결제 각각 0.1% 등 세 가지 우대 금리를 안내하고, 카드 결제 금액이 일정액 이상일 때 0.1% 적용 및 은행 계좌 자동 출금 조건을 설명했으며, 대출 상환 방식에 대해 물어본 고객에게 원리금 균등, 원금만 상환 두 방식과 조기 상환 위약금 여부를 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

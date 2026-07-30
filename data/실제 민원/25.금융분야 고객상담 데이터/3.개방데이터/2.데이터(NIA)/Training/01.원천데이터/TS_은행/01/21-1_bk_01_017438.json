@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_017438",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1314,
+        "consulting_content": "고객은 연금, 캐시백 혜택 조회와 과거 기록 확인을 요청하였고 상담사는 계좌, 비밀번호 입력 안내, 조회 기간 지정 후 데이터베이스 검색을 진행하여 해당 연금이 정상 적립됨을 확인하고, 추가 서비스 안내 및 진행 절차를 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

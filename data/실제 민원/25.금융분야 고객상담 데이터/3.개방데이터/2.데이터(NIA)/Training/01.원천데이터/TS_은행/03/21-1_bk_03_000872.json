@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_000872",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 2482,
+        "consulting_content": "고객은 자동이체 취소를 원하며 절차, 서류, 앱 이용 방법, 이자율 및 수수료 영향, 해지 확인 방법 등을 문의하였고, 상담사는 스마트폰 앱의 이체 자동이체 관리 메뉴를 통한 해지 절차와 오류 발생 시 대응 방법, 전화 대리 취소 절차 및 확인 방식, 해지 후 동일 금액 이체 방법과 잔액 유지 방식, 재등록 절차와 조건, 신용점수 영향 여부, 보안 조치, 다른 자동이체 병행 사용 시 주의사항, 잔액 저축을 위한 추천 상품까지 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

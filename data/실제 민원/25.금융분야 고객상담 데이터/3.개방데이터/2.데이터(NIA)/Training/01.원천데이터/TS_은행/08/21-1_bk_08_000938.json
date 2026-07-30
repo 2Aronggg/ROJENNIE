@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_000938",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1036,
+        "consulting_content": "고객은 전세 대출 연장을 원하고 필요한 서류와 절차를 문의했으며, 연장 가능 기간과 월 입금 요건을 확인하고자 하였고 상담사는 필요한 서류 안내, 연장 신청 방법 및 심사 절차를 설명하고, 연장 심사 진행과 결과 안내를 약속하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

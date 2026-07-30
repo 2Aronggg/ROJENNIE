@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_023746",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1114,
+        "consulting_content": "고객은 대출 이자 금액을 문의하고 성명, 생년월일, 전화, 계좌 정보를 제공해 인증을 진행하였고 상담사는 계좌 확인 후 현재 금리 연동 이자율과 변동 시 월 상환액 변동 가능성을 안내하고, 조기 상환 시 위약금 조건을 설명한 뒤 문자로 상담 내용을 송부하겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

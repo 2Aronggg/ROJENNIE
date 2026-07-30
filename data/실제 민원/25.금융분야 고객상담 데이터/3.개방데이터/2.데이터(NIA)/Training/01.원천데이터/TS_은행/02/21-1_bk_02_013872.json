@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_013872",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1778,
+        "consulting_content": "고객은 공단에 잘못 송금한 금액과 계좌 정보를 알려 정정 및 환불 절차를 문의하였고 상담사는 계좌, 예금주, 송금액을 확인하고 조회를 진행하며, 재송금, 환불 방법과 필요 서류를 안내하고 담당자 연결을 시도하겠다고 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_016311",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 803,
+        "consulting_content": "고객은 사업자 통장의 이체 한도 초과 문제를 제기하고 한도 해제 및 조정을 요청하였고 상담사는 앱 설정 확인, 한도 상향 요청 가능 안내와 함께 영업점 방문 또는 서류 팩스로 해지, 심사 절차를 안내하였으며, 필요한 서류는 없다고 확인하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

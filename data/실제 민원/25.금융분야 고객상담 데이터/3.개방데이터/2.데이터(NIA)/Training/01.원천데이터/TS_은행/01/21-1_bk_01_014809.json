@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_014809",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 2066,
+        "consulting_content": "고객은 출금 내역 차이를 확인하고자 계좌 번호와 생년월일을 제공하였고 상담사는 해당 보험료 자동 출금 내역을 확인해 주었다. 고객은 앱 데이터 소실 문제를 제기하였고 상담사는 앱 재설치 및 재로그인 안내를 제공하였다. 고객은 앱 데이터 소실 문제를 제기하였고 상담사는 앱 재설치 및 재로그인 안내를 제공하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

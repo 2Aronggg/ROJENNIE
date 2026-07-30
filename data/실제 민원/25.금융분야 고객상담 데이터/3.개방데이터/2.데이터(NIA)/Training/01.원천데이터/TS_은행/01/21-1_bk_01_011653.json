@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_011653",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "80세이상",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1881,
+        "consulting_content": "고객은 본인 명의 휴대폰이 없어 인터넷뱅킹 신규 가입이 어려워 대리인 이용이나 다른 통신사 번호 사용을 문의하였고 상담사는 본인 휴대폰 인증이 필요하며, 인증이 안 될 경우 영업점 방문을 권유하고 대리인 진행은 불가하다고 안내하였다. 또한 고객은 앱에서 잔액 및 거래내역 조회 방법을 물었고 상담사는 로그인 후 계좌조회, 거래내역 메뉴 이용 방법을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

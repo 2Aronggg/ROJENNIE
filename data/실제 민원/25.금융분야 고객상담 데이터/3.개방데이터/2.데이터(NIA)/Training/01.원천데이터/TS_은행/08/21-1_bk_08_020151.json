@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_020151",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 971,
+        "consulting_content": "고객은 연장 신청 시기와 자격, 금리 유지 여부, 필요 서류 등을 문의하였고 상담사는 만기 후 신청 가능 일자를 안내하고 기존 금리는 유지되며 수수료는 없다고 답변했으며, 신분증, 소득증빙 서류가 필요하고 인증문자를 발송해 확인 후 연장 신청이 완료된다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

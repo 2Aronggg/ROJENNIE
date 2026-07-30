@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_001138",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 935,
+        "consulting_content": "고객은 은행을 직접 방문하고 싶으며, 필요한 서류와 방문 시간, 보유 유로 출금 절차와 최소 금액, 수수료, 다른 통화 전환 방법 등을 문의했다. 상담원은 신분증과 통장 지참, 실시간 잔액 확인, 환전 절차와 환율 확인 방법, 전화 상담 가능성 등을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

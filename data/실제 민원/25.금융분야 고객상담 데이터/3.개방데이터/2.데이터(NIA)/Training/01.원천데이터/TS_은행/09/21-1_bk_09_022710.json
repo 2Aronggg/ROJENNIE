@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_022710",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 870,
+        "consulting_content": "고객은 원화를 바트로 환전하고자 금액을 제시했으며, 상담사는 현재 환율 및 보유량을 안내하고, 인터넷뱅킹, 앱 예약이 가능하나 사용 중이 아니라고 확인 후 현금 직접 방문 시 우대 환율 적용과 신분증 제시 절차를 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

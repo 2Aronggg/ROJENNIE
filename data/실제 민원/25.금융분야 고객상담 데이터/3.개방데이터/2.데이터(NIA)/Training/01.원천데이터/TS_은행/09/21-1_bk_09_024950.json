@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_024950",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 790,
+        "consulting_content": "고객은 바트화 환전을 원하고 계좌가 없어 확인이 필요하다고 하였으며, 약 ●●●원을 환전하고 싶다고 답했다. 상담사는 체크카드 쿠폰이 없음을 알리고, ★★ 어플을 통한 외화 환전 신청과 가까운 영업점 방문 시 신분증 지참 및 영업시간 확인을 안내했으며, 수수료는 금액에 따라 차등 적용되고 체크카드, 인터넷뱅킹 이용 실적에 따라 최대 ●●●% 우대가 가능하다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

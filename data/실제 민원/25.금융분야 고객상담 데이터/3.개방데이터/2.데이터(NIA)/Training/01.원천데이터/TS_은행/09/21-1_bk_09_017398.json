@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_017398",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1474,
+        "consulting_content": "고객은 달러 외환 구매와 현재 환율, 수수료, 신청 절차를 문의하고, 카드 결제와 현장 방문 차이 및 당일 처리 여부를 확인하고자 하였고 상담사는 실시간 환율 안내, 온라인 신청 단계와 버튼 설명, 우대 수수료 적용 및 최종 결제 금액 제시와 함께 방문 시 필요 서류, 사전 예약, 시간 지정 방법을 안내하고, 최종 확인 메일 발송 및 진행 상황 확인 방법을 알려주었다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

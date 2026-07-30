@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_006176",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1574,
+        "consulting_content": "고객은 일일 출금 한도 초과 메시지로 송금이 불가함을 문의하였다. 상담원은 계좌 해당 계좌가 한도 계좌이며 현재 한도가 표시된다고 안내하였다. 한도 증액은 앱에서 한도 해제 신청을 해야 하며, 최대 신청 한도액과 신용도와 실적에 따라 결정되고,급히 필요할 경우 전화로 임시 한도증액을 요청할 수 있다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

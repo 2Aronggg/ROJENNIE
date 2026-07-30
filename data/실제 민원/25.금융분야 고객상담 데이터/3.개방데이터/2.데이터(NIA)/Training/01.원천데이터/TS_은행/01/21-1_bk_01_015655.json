@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_015655",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1292,
+        "consulting_content": "고객은 타행에서 발생한 예상치 못한 출금 내역과 동일 현상 여부를 문의하고 계좌, 비밀번호를 제공하여 조회를 요청하였고 상담사는 입력 정보를 확인 후 자동이체로 적금 계좌에서 차감된 사실을 확인하고 수수료가 없으며 현재 설정을 유지하면 동일하게 처리된다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

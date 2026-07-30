@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_003263",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 724,
+        "consulting_content": "고객은 대출 연장을 원하고 급여이체 내역을 앱에서 확인해 스크린샷을 보내겠다고 하였고 상담사는 연장 신청 URL을 제공하고, 연장 수수료 발생 가능성을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

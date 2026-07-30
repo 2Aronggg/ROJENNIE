@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_023143",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 2459,
+        "consulting_content": "고객은 대출 연장을 신청했지만 출금이 되지 않아 언제 상환되는지 문의하였고 상담사는 자동 출금이 되지 않으며 직접 상환해야 함을 안내하고, 모바일 앱, 가상계좌, 영업점 방문 중 선택 가능하다고 설명하였다. 고객은 영업점 방문이 어려워 가상계좌 정보를 요청했으며 상담사는 담당자 연결을 진행해 주겠다고 약속하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

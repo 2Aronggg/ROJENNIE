@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_022331",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 2088,
+        "consulting_content": "고객은 체크카드 자동출금이 안 되고 비밀번호 오류와 금액 조회를 요청했으며, 상담사는 계좌, 생년월일, 비밀번호 확인 절차를 진행하고 비밀번호 3회 오류 시 방문이 필요하다고 안내한 뒤 오늘 오후 2시 영업점 방문 예약을 잡아 문자로 안내하겠다고 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

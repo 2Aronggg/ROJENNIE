@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_005801",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1195,
+        "consulting_content": "고객은 보유 달러를 원화로 환전하고자 하며, 필요한 서류와 절차를 문의하였다. 상담사는 신분증, 통장 지참 후 지점 방문 시 지폐 상태 확인 후 환전이 가능하고, 수수료는 환율에 포함되며 등급에 따라 최대 ●●●% 우대가 적용될 수 있다고 안내하였다. 환전 완료 시 영업시간 내 통장에 즉시 입금되며, 알림 서비스는 모바일뱅킹 ‘환전 알림’ 설정을 통해 문자, 푸시로 제공된다고 설명하였다. 일일 환전 한도는 등급에 따라 정해지고 남은 한도 내에서 여러 차례 요청이 가능하며, 추가 비용은 기본 수수료와 환율 우대 외에는 없다고 전하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

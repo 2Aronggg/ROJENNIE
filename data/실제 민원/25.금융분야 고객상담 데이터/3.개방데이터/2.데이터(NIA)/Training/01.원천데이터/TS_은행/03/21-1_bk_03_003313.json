@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_003313",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 831,
+        "consulting_content": "고객은 IRP 자동 출금 일시 정지 및 정기 적금 전환 가능 여부와 해지 절차를 문의하였고 상담사는 스마트폰 앱, 전화로 자동이체 해지 가능하고 해지 후 ‘자동이체 내역’에서 상태 확인 및 직접 입금 필요함을 안내하였으며, IRP 상세 절차는 전담팀에 문의해야 함을 알려 주었다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

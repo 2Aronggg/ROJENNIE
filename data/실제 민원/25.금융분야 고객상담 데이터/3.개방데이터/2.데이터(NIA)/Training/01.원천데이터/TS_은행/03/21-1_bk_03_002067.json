@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_002067",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1516,
+        "consulting_content": "고객은 자동이체 문자 2통 수신으로 중복 등록 여부와 자금 출금 흐름을 문의했다. 확인 결과 수취인 코드가 다른 별도 자동이체 2건이었고, 중복 위험이 있어 고객 요청에 따라 첫 번째 건을 즉시 해지했다. 이후 해지/변경 절차, 정상 처리 확인 방법, 수수료 없음, 일일 한도, 이체일 변경 가능 시점, 실패 알림 및 알림 설정 경로를 안내했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

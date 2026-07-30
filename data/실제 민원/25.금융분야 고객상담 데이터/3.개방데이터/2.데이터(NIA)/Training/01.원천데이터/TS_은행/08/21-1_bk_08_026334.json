@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_026334",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1572,
+        "consulting_content": "고객은 전세 대출 연장을 요청하고 주민등록번호와 성명, 생년월일을 제공하였고 상담사는 본인 확인을 위해 추가 인증 방법을 안내하였다. 고객은 인증을 완료하고 연장 가능 여부를 확인하였고 상담사는 기존 조건 유지와 변동 사항 없음을 확인하였다. 고객은 필요한 서류 목록을 문의하였고 상담사는 전세 계약서, 신분증, 기존 대출 계약서, 급여 내역서 등 4가지 서류와 제출 방법을 안내하였다. 고객은 서류 준비 후 제출 의사를 밝히었고 상담사는 서류 심사 기간은 평균 3일이며 결과는 문자, 이메일로 통보한다는 점을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

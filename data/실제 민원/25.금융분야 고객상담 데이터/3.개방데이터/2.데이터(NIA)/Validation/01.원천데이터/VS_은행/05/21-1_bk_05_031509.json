@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_031509",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "20~29세",
+        "consulting_client": "신규고객",
+        "consulting_client_type": null,
+        "source_length": 950,
+        "consulting_content": "고객은 한도 해지를 시도했지만 실패했고 상담사는 신분증, 거래 목적 증빙 서류를 지참해 영업점 방문을 권유하였다. 고객은 방문 가능 여부, 준비 서류, 온라인 해제와 소요 시간을 물었고 상담사는 신분증, 증빙 서류와 3개월 거래내역서, 계좌 사본을 요구하며, 온라인은 불가하고 방문 후 1~2주 소요될 수 있음을 안내하고, 예약은 편리한 시간에 사전 예약 가능하다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

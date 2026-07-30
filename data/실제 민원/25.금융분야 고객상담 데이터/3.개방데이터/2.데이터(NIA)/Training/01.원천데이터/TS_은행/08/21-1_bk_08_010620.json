@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_010620",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1473,
+        "consulting_content": "고객은 대출 연장을 요청하고 계좌번호, 생년월일, 비밀번호 입력 방법을 확인하였으며, 연장 수수료, 이자율, 기간 설정과 이메일 확인, 조기 상환 시 연장 취소 여부를 문의하였고 상담사는 계좌번호 직접 입력 가능, 생년월일 입력 형식 안내, 비밀번호 재입력 안내, 수수료 0.5%, 이자율 4.2% 유지, 3개월 연장 가능, 이메일 주소 확인, 조기 상환 시 연장 자동 취소를 설명하고 상담을 종료하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

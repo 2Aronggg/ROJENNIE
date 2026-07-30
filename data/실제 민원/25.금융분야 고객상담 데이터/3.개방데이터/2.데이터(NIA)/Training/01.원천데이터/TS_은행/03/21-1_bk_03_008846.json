@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_008846",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "80세이상",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1197,
+        "consulting_content": "고객은 ★★은행 자동이체를 설정했으나 중도 적금 해지 후에도 동일 계좌에서 금액이 출금된 상황을 문의하였다. 상담사는 계좌 삭제로 출금이 어려울 수 있음을 설명하고, 본인확인 후 거래내역 조회 및 자동이체 해지를 진행하겠다고 안내하였다. 고객은 신분증, 통장 사본을 지참해 은행 방문을 약속했으며, 해지 완료 시 문자, 이메일로 통보하고, 출금 환불 여부는 기업 정책에 따라 확인 후 알려주겠다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

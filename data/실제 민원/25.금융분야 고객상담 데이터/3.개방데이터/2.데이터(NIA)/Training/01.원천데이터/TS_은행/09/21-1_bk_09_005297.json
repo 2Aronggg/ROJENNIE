@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_005297",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1531,
+        "consulting_content": "고객은 환전 시 현금을 전달했으나 계좌에서 동일 금액이 출금된 오류를 신고하였다. 상담원은 거래 번호와 시간 등을 확인하고 현금이 입금되지 않았음을 확인하였다. 분실, 오류 처리팀에 연결하여 신분증 사본, 거래 내역 스크린샷, 현금 영수증을 제출하도록 안내하였다. 서류를 확인한 뒤 환불 금액을 고객 계좌로 입금하는 절차를 시작하였으며, 영업시간 내 1~2시간 내 처리될 것이라고 안내하였다. 입금 완료 시 문자로 통보하고 추가 문의가 없음을 확인하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

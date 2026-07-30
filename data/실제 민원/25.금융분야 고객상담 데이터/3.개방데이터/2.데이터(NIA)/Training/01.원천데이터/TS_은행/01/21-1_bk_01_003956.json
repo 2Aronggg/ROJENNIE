@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_003956",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1012,
+        "consulting_content": "고객은 ★★은행 통장에 '환급 정기 보험'이라는 입금 내역이 들어와 이유와 입금 시기를 문의하였고 상담사는 입금은 영업일 기준 3일 이내이며 경우에 따라 지연될 수 있다고 안내하고, 송금처 확인을 위해 ▲▲ 고객센터에 중계 요청을 권유했으며, 현재 별도 서류 제출은 필요 없다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

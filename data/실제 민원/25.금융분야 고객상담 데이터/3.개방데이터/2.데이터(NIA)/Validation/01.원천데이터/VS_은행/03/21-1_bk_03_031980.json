@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_031980",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1902,
+        "consulting_content": "고객은 자동이체 등록 오류와 계좌 입력 어려움을 문의했으며, 상담사는 계좌, 비밀번호, 휴대폰 인증 절차를 안내하고 본인 확인을 완료한 뒤 자동이체가 등록돼 있으나 이체 지연 가능성을 설명하고, 정확한 현황 확인을 위해 카드사 문의를 권고하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

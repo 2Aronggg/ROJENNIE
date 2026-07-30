@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_010504",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 957,
+        "consulting_content": "고객은 연금 계좌 출금 제한 및 한도 확인을 요청하였고 상담사는 일반계좌는 일일 한도 내에서 제한이 없으며 현재 한도는 ○○억이라고 안내하였다. 고객은 카드 비밀번호 설정 문의와 한도 증액 방법, 연금 계좌 출금 시 법령 제한을 물었고 상담사는 카드사에 문의 필요와 전화번호 제공, 온라인, 모바일 앱 또는 영업점 방문으로 한도 증액 신청 가능, 사전 규정 확인이 필요함을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

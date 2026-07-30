@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_026230",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1339,
+        "consulting_content": "고객은 현금 1,200만원으로 ◆◆ 화폐 환전을 원하고, 강남역 인근 지점 방문 및 택배 서비스 가능 여부를 문의하였고 상담사는 해당 지점 외환창구 운영시간과 매입 가능 통화, 수수료 0.2%, 환율 1,300원을 안내하고, 개인은 신분증, 거주지 서류, 법인은 사업자등록증, 대표자 신분증 필요함을 설명했으며, 루블은 매입 제한이라 안내하고, 해외 송금은 담당 부서 연결을 제안하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

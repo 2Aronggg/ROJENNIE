@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_027350",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "신규고객",
+        "consulting_client_type": null,
+        "source_length": 1042,
+        "consulting_content": "고객은 자동이체 및 납입 회차 확인을 요청하고, 입금 내역과 이체일을 문의했으며 추가 적금 상품 안내를 원하였다. 상담사는 계좌 확인 후 자동이체가 정상이며 다음 이체일을 안내하고, 회차 표시 오류는 지점에 확인 후 연락하겠다고 답변했으며 현재 적금, 예금 상품과 금리를 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

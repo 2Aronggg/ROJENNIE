@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_002957",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1214,
+        "consulting_content": "고객은 주택청약통장 해지와 자동이체 금액 포함 여부를 문의했고, 상담원은 고객의 거래 내역을 조회해 자동이체 금액이 해지 금액에 포함됐음을 확인했다. 상담원은 고객이 문의한 잔액 반환 절차와 일정, 해지 확인서 발급, 재가입 방법, 수수료 여부 및 다른 은행의 유사 절차 등에 대해 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

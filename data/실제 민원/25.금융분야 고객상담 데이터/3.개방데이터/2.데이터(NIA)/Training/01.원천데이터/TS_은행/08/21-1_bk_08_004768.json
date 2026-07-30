@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_004768",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 785,
+        "consulting_content": "고객은 전세금 안심 대출 연장 시 주택 가격 인정 비율 하향에 대한 절차와 필요 서류, 공시지가 적용 방식을 문의하였고 상담사는 주택 평가, 근저당 차감, 신용 검토 등 연장 심사 과정을 설명하고 서류를 문자로 발송하겠다고 안내했으며, 알림 서비스 설정을 요청받아 설정 완료하였다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

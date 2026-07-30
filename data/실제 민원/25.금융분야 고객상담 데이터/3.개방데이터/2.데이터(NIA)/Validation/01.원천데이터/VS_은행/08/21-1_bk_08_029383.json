@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_029383",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1300,
+        "consulting_content": "고객은 모바일 앱에서 신용대출 만기 연장 메뉴를 찾지 못해 문의하였고 상담사는 화면 오른쪽 하단 메뉴 아이콘을 눌러 ‘대출, 대출 관리, 연장’ 순으로 이동하도록 안내하였으며, 연장 신청 시 수수료가 없고 승인 후 1~2일 내에 적용된다고 설명하고, 24시간 이내 취소 가능 및 연락처 확인 방법을 알려주었다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

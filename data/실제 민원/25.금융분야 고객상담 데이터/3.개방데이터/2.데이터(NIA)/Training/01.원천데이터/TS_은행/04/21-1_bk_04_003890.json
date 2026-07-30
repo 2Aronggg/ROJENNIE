@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_003890",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 819,
+        "consulting_content": "고객은 주택청약 적금 해지를 원하고 방문 필요 여부, 앱 이용 인증 절차, 위약금 발생 여부, 입금 확인, 문자, 이메일 안내 등을 문의하였고 상담사는 앱으로 신청 가능, 휴대폰 본인 인증, 위약금은 계약에 따라 차등, 입금 확인, 문자 전송 시 개인정보 암호화, 해지 절차와 서류를 이메일로 송부 가능하다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

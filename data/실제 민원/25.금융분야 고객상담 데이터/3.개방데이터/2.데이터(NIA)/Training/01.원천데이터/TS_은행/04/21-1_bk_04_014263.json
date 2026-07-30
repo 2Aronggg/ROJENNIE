@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_014263",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1509,
+        "consulting_content": "고객의 주택청약 종합저축 해지 가능 여부를 확인한 후 모바일 어플을 통한 해지 절차를 단계별로 안내하였다. 설정 아이콘 선택, 청약 관리 진입, 전체 계좌 조회, 해지 대상 계좌 선택, 해지 예상 조회 및 해지 완료 버튼 누르는 순서까지 설명하였다. 해지 후 납입 회차와 가입 기간이 모두 소멸되며 남은 금액은 지정 계좌로 입금되고 영업일 기준 1~2일 내 반영된다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

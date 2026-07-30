@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_006411",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1494,
+        "consulting_content": "고객의 자동이체 내역을 조회한 결과 통신 요금 자동이체는 확인되지 않고, ★★은행, ★★카드 오픈뱅킹 자동이체만 등록되어 있음을 안내하였다. 고객이 휴대폰 요금 자동이체 해지를 요청하여 해지 처리 후 확인 문자가 발송될 것임을 설명하였다. 이어서 고객이 제공한 새 OO은행 계좌로 자동이체 등록을 진행하였으며, 출금일도 고객 요청에 따라 ■■일로 변경하였다. 또한 자동이체 알림 서비스를 활성화하여 출금 하루 전에 문자 안내가 발송되도록 설정하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

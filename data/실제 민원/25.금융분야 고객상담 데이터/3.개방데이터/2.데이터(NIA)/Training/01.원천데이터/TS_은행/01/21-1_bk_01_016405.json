@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_016405",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 738,
+        "consulting_content": "고객은 카드 할부 금액 입금증 및 거래내역서 발급을 요청하였고 상담사는 해당 서류는 인터넷뱅킹, 모바일앱에서 직접 출력해야 함을 안내하고, 문자로 안내를 보내겠다고 제안하였다.OO은행 모바일 앱에서 PDF 저장 오류가 발생할 경우, 먼저 스마트폰 저장 공간이 충분한지 확인해 주세요."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

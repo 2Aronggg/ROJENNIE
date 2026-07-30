@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_019693",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 983,
+        "consulting_content": "고객은 대출 만기 도래 문자 수신 후 전화해 계좌와 본인 확인을 진행하였고 상담사는 마이너스 통장 대출 만기일과 연장 대상임을 안내하고, 연장 시 신용조회, 금리 변동 시 문자 통보, 필요 서류와 연장 신청 마감일 및 연장 미신청 시 정상 상환 절차를 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

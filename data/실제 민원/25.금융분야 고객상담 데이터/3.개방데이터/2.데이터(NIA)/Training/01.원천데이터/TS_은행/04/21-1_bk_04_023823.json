@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_023823",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 910,
+        "consulting_content": "고객은 주택청약 종합 저축 통장을 해지하고 싶다고 요청했고 상담사는 해지 시 가입 기간, 납입 회차 소멸을 안내한 뒤 인터넷뱅킹을 통한 해지 절차와 완료 후 메일 발송을 설명하였다. 고객은 재가입 제한이 궁금해 했고 상담사는 동일 명의 재가입은 6개월 이후 가능하고 서류, 소득 확인 절차는 기존과 동일하며 누적 회차는 초기화된다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_027998",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1340,
+        "consulting_content": "고객은 계좌를 옮긴 후에도 수수료 감면 혜택 적용 여부와 자동이체 대상 및 추가 비용 산정을 문의하였고 상담사는 기존 조건이 유지되고 통신 요금 모두 적용 가능하며 영점일 프로 차이는 약 ●●●원, 이자 산출은 대출 잔액 기준임을 안내하고 절차 완료를 확인하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

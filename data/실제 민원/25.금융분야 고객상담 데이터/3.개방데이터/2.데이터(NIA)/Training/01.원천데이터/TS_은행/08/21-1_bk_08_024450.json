@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_024450",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 883,
+        "consulting_content": "고객은 전세 대출 5천만원을 1년 연장하고자 하며 필요한 서류와 수수료를 문의했고, 상담사는 계좌, 신분 확인 후 기존 전세 계약서 사본, 최신 소득증명서, 주민등록증 사본을 제출 기한은 만기 2주 전이며, 연장 수수료는 연장 금액의 0.5%임을 안내하고 비밀번호 재등록 URL을 문자로 보내겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_016454",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1435,
+        "consulting_content": "고객은 주택 담보 대출 5천만 원 20년 고정금리와 해외 송금 1천만 원을 요청하였고 상담사는 고정금리 연 3.8%, 월 상환액 30만원, 서류 제출, 심사 절차를 안내하였으며, 미국 송금은 환전 후 8,500달러, 수수료 5만원, 1~2일 도착 예정임을 알려주었다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_004648",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1189,
+        "consulting_content": "고객은 이체 한도 초과로 송금이 안 된다고 문의하였고 상담사는 고객의 일일 이체 한도가 ●●원이며 초과 시 자동 거부된다고 안내하고, 잔액은 ATM에서 추가 ●●원까지 출금 가능하다고 설명하였다. 고객은 이를 확인하고 향후 한도 초과 시 알림 설정을 권고받았으며, 추가 문의 없음을 확인하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_031397",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1216,
+        "consulting_content": "고객은 타은행에서 본인 계좌로 입금된 금액을 확인하고 상대방과 통화를 요청했으며, 상담사는 입금 내역 확인 후 상대방과 연결해 주고, 피싱, 사기 예방을 위한 주의사항을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

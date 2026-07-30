@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_021977",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1452,
+        "consulting_content": "고객은 대출 연장을 신청하며 완납증명서 사용 가능 여부와 제출 방법을 문의하였고 상담사는 서류 검토, 연이자율 변동 없음, 연장은 영업일 5일 이내 완료, 이메일, 모바일 업로드를 권장하고 서류 지연 시 승인 지연을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

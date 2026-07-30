@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_022334",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1331,
+        "consulting_content": "고객은 대출 만기일이 없다는 문자에 대해 확인을 요청하고, 사업자 번호와 계좌 정보 등 본인 확인을 시도했으며, 연장 절차를 문의하였다. 상담사는 계좌, 비밀번호 확인 후, 온라인 연장은 불가하고 지점 방문, 팩스로 급여내역서와 사업자등록증을 제출하면 2~3일 내 승인된다고 안내하고, 담당자 부재 시 추후 연락을 약속하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

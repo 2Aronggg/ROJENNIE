@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_025071",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 670,
+        "consulting_content": "고객은 마이너스 통장 만기 연장 안내 문자를 받고 연장 대상 여부와 절차를 문의했으며 온라인 연장을 원했다. 상담사는 문자 내용을 확인하고 연장 가능 여부와 필요한 서류를 시스템에서 조회해 온라인 연장 방법을 안내하겠다고 답변했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

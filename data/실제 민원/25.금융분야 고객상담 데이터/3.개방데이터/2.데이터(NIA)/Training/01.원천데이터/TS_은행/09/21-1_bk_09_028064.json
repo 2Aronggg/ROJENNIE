@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_028064",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1309,
+        "consulting_content": "고객은 달러 권종 및 한도 확인과 필요한 서류, 방문 지점 확인을 요청하였고 상담사는 해당 지점의 권종 보유 현황을 조회하고 한백달러 권종 한도, 조건을 안내하며, 신분증 지참 등 절차를 설명하고 추가 문의 시 연락을 권유하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

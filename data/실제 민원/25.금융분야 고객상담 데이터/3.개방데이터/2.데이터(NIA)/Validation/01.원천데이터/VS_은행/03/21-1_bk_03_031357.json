@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_031357",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1795,
+        "consulting_content": "고객은 텔레뱅킹으로 설정한 자동이체 해지를 요청하였고 상담사는 자동이체가 등록돼 있음을 확인하고 해지 방법을 안내하였다. 고객은 ARS 입력 오류를 겪었으며 상담사는 텔레뱅킹 채널에서는 해지가 불가능하다고 안내하고 스마트폰 앱에서 해지하는 절차를 설명하였다. 고객은 앱에서 자동이체 관리 메뉴를 열어 해지 옵션을 선택하고 확인 버튼을 눌러 해지를 완료하였고 상담사는 해지 완료를 확인하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

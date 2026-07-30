@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_033247",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1504,
+        "consulting_content": "고객은 자동이체 해지를 원해 앱에서 절차를 진행했으나 연결 오류가 발생해 업데이트 후 재시도하도록 안내받았고, 해결되지 않을 경우 전화 연결을 요청했으며, 상담사는 문자 안내 전송, 단계별 해지 방법 안내, 오류 시 앱 재시작, 업데이트 권고와 전화 연결 지원, 해지 시 수수료 없음을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

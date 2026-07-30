@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_028050",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1107,
+        "consulting_content": "고객은 대출 연장 문자 수신 후 계좌 번호를 제시하지 못하고 모바일 뱅킹으로 확인을 시도했으며, 성명, 생년월일을 알려 사업자 계좌임을 확인받았다. 상담사는 서류 제출이 필요하다고 안내하고, 지점 방문, 팩스, 링크 전송 중 선택 가능하다고 설명했으며, 적용 이자율은 연 5.5%이고 서류 도착 후 영업일 기준 1~2일 내에 결과를 문자로 알려주겠다고 답했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

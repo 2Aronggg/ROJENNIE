@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_018089",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1034,
+        "consulting_content": "고객은 휴면 예금 통장 해지를 문의하고 계좌 번호와 비밀번호 인증을 요청했으며, 상담사는 계좌 조회를 위해 번호와 인증을 요구하고, 재활성화에 필요한 신분증, 주소증 서류와 온라인 제출 방법을 안내했으며, 진행 상황을 휴대폰 문자로 알리겠다고 확인하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

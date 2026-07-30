@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_016003",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1344,
+        "consulting_content": "고객은 마이너스 통장 연장과 남은 금액 확인, 연장 수수료 및 조기 상환 가능 여부 등을 문의하였고 상담사는 계좌, 비밀번호 확인 후 연장 절차를 진행하고 새로운 한도와 0.5% 수수료, 앱 확인 방법, 조기 상환 방법 및 연장 횟수 등을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

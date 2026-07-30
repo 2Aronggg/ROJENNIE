@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_001514",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1059,
+        "consulting_content": "고객은 디딤돌 대출의 거치 기간 중 이자 금액이 달라진 이유를 문의했고, 상담사는 납부일 차이에 따른 일일 이자 계산으로 금액이 변동될 수 있음을 설명했다. 또한 상담사는 고객이 문의한 금리 변동 여부, 다음 납부일 변경 방법, 조기 상환 시 수수료, 그리고 이자 차이 발생의 구체적 원인에 대해 안내했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

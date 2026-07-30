@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_027211",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1543,
+        "consulting_content": "고객은 입출금 내역 조회와 출금 한도 제한 해제를 요청했고 상담사는 계좌, 비밀번호 입력을 안내하고, 한도는 영업점, 모바일 앱 이용 시 확대 가능함을 설명했으며, 분실 해제는 가까운 지점 방문을 권유하고, 해지는 앱 이용이 필요하고 서류 제출, 방문 절차를 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

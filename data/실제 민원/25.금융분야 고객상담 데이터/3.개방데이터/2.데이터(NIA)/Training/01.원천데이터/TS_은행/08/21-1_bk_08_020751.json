@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_020751",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 2390,
+        "consulting_content": "고객은 비상금 대출 연장 방법과 수수료, 이자 차이를 문의하였고 상담사는 연장은 만기 전 앱에서 신청 가능하고 수수료는 대출액 비율, 이자율은 기존과 동일하다고 안내하였다. 고객은 계좌, 비밀번호를 제공해 연장 신청을 진행했으며 상담사는 승인 후 일정표를 문자, 이메일로 발송하고 확인 문자를 곧 전송할 것이라고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

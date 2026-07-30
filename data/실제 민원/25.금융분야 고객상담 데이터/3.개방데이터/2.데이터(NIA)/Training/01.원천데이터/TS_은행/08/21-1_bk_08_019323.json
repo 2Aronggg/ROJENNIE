@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_019323",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 847,
+        "consulting_content": "고객은 마이너스 통장 연장을 요청하며 필요한 서류와 앱 업로드 방법을 문의했고 상담사는 급여명세서, 세금 신고서 제출을 안내하고, 현재 심사 진행 중임을 알린 뒤 담당자 연결 및 전화 메모 전달을 약속하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

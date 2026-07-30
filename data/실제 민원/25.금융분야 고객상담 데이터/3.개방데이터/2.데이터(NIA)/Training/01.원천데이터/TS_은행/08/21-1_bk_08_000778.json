@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_000778",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1482,
+        "consulting_content": "고객은 마이너스 통장 연장을 원해 신원 확인 후 한도와 금리, 필요 서류, 처리 시간, 카드 혜택 등에 대해 질문하고 답변을 받았다. 상담원은 연장 절차와 조건을 안내하고, 즉시 신청을 진행해 완료 후 확인서를 보내겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

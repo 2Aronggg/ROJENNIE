@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_000963",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1099,
+        "consulting_content": "고객은 전세 대출 이자 감면을 위해 기존 카드와 새로 발급받은 카드를 동시에 사용할 수 있는지, 카드 종류와 연회비 차액, 한도 통합 여부, 포인트 처리 등에 대해 문의했고, 상담사는 두 카드가 동일 한도에 포함되며 카드 종류와 연계 계좌만 충족하면 감면이 가능하고, 연회비는 별도 부담, 혜택 판단 기준과 포인트 소멸 가능성에 대해서 설명했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

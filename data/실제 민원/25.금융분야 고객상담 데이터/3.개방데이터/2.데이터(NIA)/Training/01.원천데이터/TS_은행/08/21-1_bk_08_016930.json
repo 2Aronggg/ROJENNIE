@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_016930",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1370,
+        "consulting_content": "고객은 전세자금 대출 연장을 위해 서류와 절차를 문의하였고 상담사는 필요한 서류 목록과 방문 지점을 안내하고, 개명 정보 반영 절차와 담당자 연결을 약속하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

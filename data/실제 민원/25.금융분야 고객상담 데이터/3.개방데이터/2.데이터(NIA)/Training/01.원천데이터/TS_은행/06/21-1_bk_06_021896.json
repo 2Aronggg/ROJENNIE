@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_021896",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1333,
+        "consulting_content": "고객은 대출금 납부와 관련해 입금 확인 및 자동이체 일자 등을 문의했으며, 계좌번호를 기억하지 못해 SMS 인증을 요청하고 성명, 생년월일, 비밀번호를 제공하였다. 상담사는 인증번호를 발송하고 본인 확인을 진행한 뒤 입금 일자와 자동이체 설정 일자를 안내하고, 추가 수수료가 없음을 알렸다. 또한 잔액 유지 시 오늘 인출이 이루어질 것임을 알려주고, 필요 서류는 이메일로 송부하겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

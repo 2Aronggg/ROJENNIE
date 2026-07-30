@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_025612",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 808,
+        "consulting_content": "고객은 자동이체 출금 내역을 확인하고 차단을 요청했으며, 상담사는 해당 거래가 체크카드 출금임을 안내하고, 온라인, 모바일에서 자동이체 제한 설정 방법을 설명한 뒤, 전화 연결을 통해 안내해 주겠다고 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_000313",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1514,
+        "consulting_content": "고객은 자동이체 신청 절차와 필요 서류, 비밀번호 오류 해결 방법, 이체 한도와 수수료 확인 방법 등을 문의했고, 상담사는 텔레뱅킹 가입 확인, 본인 확인 서류, 비밀번호 재설정 절차, 앱 및 인터넷 뱅킹 이용 방법, 한도,수수료 안내, 신청 완료 확인 및 재시도 방법, 영업점 방문 시 준비 서류 등을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

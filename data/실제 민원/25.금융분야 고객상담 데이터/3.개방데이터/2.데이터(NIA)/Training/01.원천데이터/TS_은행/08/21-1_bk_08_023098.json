@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_023098",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1503,
+        "consulting_content": "고객은 대출 연장 신청 절차와 필요 서류, 수수료, 조기 상환 방법, 알림 서비스 및 재조정 옵션을 문의하였고 상담사는 연장 가능 금액과 일정, 연장 수수료 비율 및 청구 시점, 조기 상환 신청 방법과 위약금, 만기 일주일 전 알림 제공, 금리 재조정 등 옵션을 안내하고 연도 변경 확인을 직접 진행하도록 요청하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

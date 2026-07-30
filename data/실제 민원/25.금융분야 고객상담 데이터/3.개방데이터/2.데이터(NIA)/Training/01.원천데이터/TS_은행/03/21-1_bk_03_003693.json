@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_003693",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1399,
+        "consulting_content": "고객은 입금, 출금이 안 된 상황을 설명하고 계좌, 거래일자를 제공했으며, 상담사는 계좌 확인, 거래 조회를 진행하고 잔액 부족으로 출금이 안 됐음을 안내한 뒤, 온라인 입금 또는 은행 방문을 통해 추가 입금 후 출금이 가능하도록 절차를 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

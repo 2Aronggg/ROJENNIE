@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_030070",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1311,
+        "consulting_content": "고객은 한도 해지를 시도했으나 앱에서 ‘해지 대상이 아닙니다’ 메시지가 나와 방문을 요구받았고, 상담사는 앱 메뉴로는 제한이 있어 재직증명서, 신분증, 급여 입금 확인서 제출 후 영업점 방문 또는 전화, 이메일 서류 제출을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

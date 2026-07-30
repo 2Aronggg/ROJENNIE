@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_031874",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1491,
+        "consulting_content": "고객은 아파트 관리비 자동이체 해지를 요청했고 상담사는 계좌, 비밀번호 등 시스템을 검토하여 등록이 없음을 안내하였다. 고객은 자동해지 원인과 카드 등록 여부를 문의했으며 상담사는 잔고 부족, 계좌 변경 등 이유를 설명하고, 재등록 절차는 새 계좌 정보 제공과 날짜 지정이 필요함을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_031527",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1071,
+        "consulting_content": "고객은 이용하려는 국가 통화와 백프로 우대 옵션 사용 여부를 문의하였고 상담사는 인터넷뱅킹, ★★카드 이용 시 환전은 은행에서 진행되고, 해외 전용 카드로는 현찰 교환 또는 현지 ATM 인출이 가능함을 안내하였으며, 우대 충전 옵션은 해외에서만 사용 가능하고 국내 인출은 제한된다는 점과 수수료, 우대 비율을 설명하였다. 또한 하루 한도와 영업점 방문 절차 등을 안내하고, 추가 문의 시 언제든 연락하라고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

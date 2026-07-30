@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_002481",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1371,
+        "consulting_content": "고객은 전세 대출 연장을 원해 절차, 필요 서류, 연장 가능한 최대 기간, 금리 변동 여부, 대리인 신청 제한 등에 대해 문의했고, 상담원은 서류 준비 방법, 연장 가능한 기간의 한계, 고정, 변동 금리 적용 차이, 본인 직접 연락 필요성, 승인 소요 시간 및 추가 비용 등을 안내했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

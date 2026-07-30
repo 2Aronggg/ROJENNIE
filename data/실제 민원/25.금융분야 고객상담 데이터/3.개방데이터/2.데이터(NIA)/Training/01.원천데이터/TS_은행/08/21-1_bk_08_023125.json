@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_023125",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 2347,
+        "consulting_content": "고객은 사업자 대출 연장을 원한다며 계좌, 생년월일 인증 및 필요한 서류 확인을 요청하였고 상담사는 본인 확인 절차 후 연장 신청을 접수하고 비대면 심사, 승인 진행 중이며, 기존 금리 유지와 서류 자동 발송을 안내하고, 취소는 영업시간 내 전화 또는 온라인으로 가능하다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

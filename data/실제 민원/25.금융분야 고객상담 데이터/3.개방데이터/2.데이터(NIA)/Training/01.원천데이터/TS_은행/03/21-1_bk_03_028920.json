@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_028920",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1606,
+        "consulting_content": "고객은 우대 이율 적용 조건을 문의했으며 상담사는 자동이체 등록 시에만 적용되고 일회성 송금은 제외된다고 안내하고, 공과금, 관리비 자동이체 여부와 출금일을 물었을 때 자동이체 설정 방법과 출금일은 사무소 확인이 필요함을 설명하였다. 또한 자동이체 전환 절차와 필요 서류를 질문한 고객에게는 기관에 요청하고 온라인으로 신분증, 통장 사본 제출이면 충분하다고 안내했으며, 자동이체 해지 시 우대 이율은 다음 달부터 적용되지 않으며 기존 적금 만기 전까지는 유지된다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_024432",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 846,
+        "consulting_content": "고객은 디딤돌 대출 시 청년 청약 통장 금리 할인 여부를 확인하고 청약 통장 해지를 요청했으며 서류를 이메일로 받기를 원했으며, 상담사는 계좌, 생년월일 확인 후 금리 할인 없음을 안내하고 해지 가능 및 해지 후에도 대출이 유지됨을 설명한 뒤 이메일 발송 동의 시 서류를 전송하겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

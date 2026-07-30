@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_019607",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 969,
+        "consulting_content": "고객은 마이너스 통장 연장을 요청했으나 진행되지 않아 본인 확인 정보와 비밀번호를 제공했고, 연장 불가능을 확인받았다. 고객은 재신청 가능 여부를 물었고, 상담사는 연장은 불가하므로 기존 대출 정산 후 신분증 사본, 최근 3개월 급여 내역 제출과 1~2일 소요되는 재신청 절차를 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

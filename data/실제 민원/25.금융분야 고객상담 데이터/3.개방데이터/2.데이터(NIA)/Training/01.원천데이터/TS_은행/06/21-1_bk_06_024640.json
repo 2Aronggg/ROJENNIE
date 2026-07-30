@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_024640",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1170,
+        "consulting_content": "고객은 지난 달 자금 관련 전화를 확인하고 구체적인 절차와 서비스 내용을 문의했으며, 본인 확인을 위해 계좌번호, 생년월일, 비밀번호를 제공하였다. 상담사는 확인 절차 진행, 서비스 설명, 가상계좌 및 금액 안내, 입금 확인 시점과 다른 결제 방법을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_026294",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1146,
+        "consulting_content": "고객은 매월 자동이체 내역이 무엇인지 문의하였고 상담사는 해당 이체가 주택청약 통장으로 설정된 것임을 확인하고, 해지 방법은 전화, 모바일뱅킹을 통해 가능하다고 안내하였으며, 추가로 신규 적금 상품 안내를 제안하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

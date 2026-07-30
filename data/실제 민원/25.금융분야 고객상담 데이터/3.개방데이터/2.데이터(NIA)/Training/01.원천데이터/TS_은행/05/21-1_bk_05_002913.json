@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_002913",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1279,
+        "consulting_content": "고객은 계좌 한도 제한 해제와 다른 은행 이체, 현금 인출, 영업점 이체, 긴급 한도 상향 등을 문의했고, 상담사는 필요 서류 및 서류 준비 기간, 영업점 방문 절차, 한도 제한 적용 범위, 긴급 한도 해제 방법, 처리 후 확인 방법 등에 대해 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

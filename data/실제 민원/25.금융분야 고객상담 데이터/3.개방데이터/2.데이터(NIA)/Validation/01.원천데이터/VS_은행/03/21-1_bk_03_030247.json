@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_030247",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 927,
+        "consulting_content": "고객은 IRP 퇴직연금 자동이체가 안 되는 것을 확인하고 계좌 변경을 요청하였고 상담사는 자동이체 현황을 확인하고, 변경은 모바일 뱅킹에서 직접 해야 하며 문자 안내를 제공하겠다고 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

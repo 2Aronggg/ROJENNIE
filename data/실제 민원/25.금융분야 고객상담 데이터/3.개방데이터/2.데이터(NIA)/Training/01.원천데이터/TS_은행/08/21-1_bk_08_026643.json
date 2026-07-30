@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_026643",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1808,
+        "consulting_content": "고객은 대출 연장을 위해 사업자등록증 등 서류는 준비했으나 최근 소득 증명서가 발급되지 않아 대체 서류와 제출 방법을 문의하였고, 상담사는 비대면 연장 가능, 팩스 제출 안내, 대체 서류로 3개월 급여명세서, 매출증빙 가능, 서명, 연장 절차 소요 시간 등을 설명하고, 담당 지점 연결을 시도하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

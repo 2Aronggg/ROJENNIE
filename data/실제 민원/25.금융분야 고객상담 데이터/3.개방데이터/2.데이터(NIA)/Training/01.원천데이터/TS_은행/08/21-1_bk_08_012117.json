@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_012117",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1370,
+        "consulting_content": "고객은 대출 만기 연장 및 이자 납입 절차를 문의하고, 입력 오류와 화면 미표시 문제를 제시하였고 상담사는 계좌, 인증 정보를 확인한 뒤 서류 제출 및 연장 절차 안내, 오류 해결을 위한 입력 방법 재설명, 이자 납입 방법 및 상환 방식 선택 가능함을 설명하고, 추가 확인 후 연락드리겠다고 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

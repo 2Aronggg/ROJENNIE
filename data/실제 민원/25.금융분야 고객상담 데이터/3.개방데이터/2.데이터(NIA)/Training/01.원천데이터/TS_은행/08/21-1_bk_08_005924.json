@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_005924",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1529,
+        "consulting_content": "고객은 마이너스 대출 연장 가능 여부 및 전화 신청 절차를 문의했다. 상담사는 본인 확인 절차 후 해당 대출이 연장 대상이며 연장이 가능함을 확인하고 전화로 연장 신청이 가능하도록 담당 부서에 접수를 완료했으며 당일 중에 연락이 갈 예정임을 안내했다. 추가로 전화를 통한 연장을 위해 최근 거래 내역 화면을 문자 첨부 파일로 제출하도록 요청했으며 연장에 따른 별도 수수료는 없다고 설명했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

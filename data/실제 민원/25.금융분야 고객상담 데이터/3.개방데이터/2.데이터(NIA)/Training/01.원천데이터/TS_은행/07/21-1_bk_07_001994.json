@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_001994",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1859,
+        "consulting_content": "고객은 대출 이자율 감면 조건과 카드 사용 실적 기준, 최근 문자 내용 확인, 현재 진행 중인 프로모션 여부, 다른 대출에 대한 적용 가능성, 고정 금리 대출 감면 절차 등을 문의했으며, 상담원은 이자율 감면 혜택 사용액 기준, 월별 실적 검증, 연말 프로모션 조건, 대출별 적용 방법 및 신청 서류 등에 대해 안내했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

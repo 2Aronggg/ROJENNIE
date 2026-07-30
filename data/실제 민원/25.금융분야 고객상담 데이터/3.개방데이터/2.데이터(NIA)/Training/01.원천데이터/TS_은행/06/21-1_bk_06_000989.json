@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_000989",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1643,
+        "consulting_content": "고객은 대출 금리와 이자 납부 방식 변경에 대해 묻고 가상계좌 사용법, 이자 선납 절차와 할인 혜택, 시스템 오류 시 대처 방법, 비밀번호 오류 및 재설정 방법, 가상계좌 발송 확인 절차와 대체 입금 방법을 차례로 문의하였다. 상담사는 금리 전환, 가상계좌 입력 방법, 선납 할인, 오류 처리 절차, 비밀번호 재설정 절차, 발송 확인 및 재전송 방안을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

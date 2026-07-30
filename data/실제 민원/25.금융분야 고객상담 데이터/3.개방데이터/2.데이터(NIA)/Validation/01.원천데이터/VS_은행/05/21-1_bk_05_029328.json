@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_029328",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1089,
+        "consulting_content": "고객은 500만원 이체를 시도했으나 한도 초과 및 대상자 아님 오류가 발생했다고 알렸고 상담사는 시스템 점검 가능성을 안내하고 OTP 재발급 절차를 문자로 제공하며, 계좌, 비밀번호 입력을 요청하고, 한도 해제를 위해 신분증, 거래내역 등 서류 제출을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

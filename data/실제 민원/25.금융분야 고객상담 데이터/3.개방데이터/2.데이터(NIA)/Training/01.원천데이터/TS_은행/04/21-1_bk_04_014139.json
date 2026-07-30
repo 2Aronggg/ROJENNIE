@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_014139",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1345,
+        "consulting_content": "고객은 여러 계좌 동시 해지 가능 여부와 잔액 정리, 자동이체 처리 절차를 문의하였다. 상담사는 각 계좌별 본인 확인 절차 후 영업점에서 일괄 해지 가능하며, 잔액 및 미결제 내역을 먼저 정리해야 함을 안내하였다. 또한 자동이체 설정 시 인터넷, 모바일뱅킹으로 직접 해지 가능, 영업점 방문 시 신분증과 신청서 제출로 완료 가능하다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

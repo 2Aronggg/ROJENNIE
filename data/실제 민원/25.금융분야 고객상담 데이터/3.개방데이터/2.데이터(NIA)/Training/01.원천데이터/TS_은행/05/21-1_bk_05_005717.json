@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_005717",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1626,
+        "consulting_content": "고객은 급여 자동이체가 입금 명칭 오류로 한도 제한 계좌 해제 및 연회비 부담에 따른 체크카드 변경을 문의했다. 상담사는 영업점 방문 시 필요한 서류 제출과 방문전 사전 예약 방법을 안내 했으며, 연회비 면제 기준에 따라 체크카드 할인 혜택 적용 방법, 연회비 면제 반영 시점에 대해 설명했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

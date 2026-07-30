@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_014068",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1213,
+        "consulting_content": "고객은 장애인 가구임을 밝히고 계좌 번호와 입금 일시, 금액 확인을 요청하였고 상담사는 계좌 번호와 개인정보를 제공하도록 안내한 뒤 시스템 조회를 진행하였다. 고객은 조회 결과를 문자로 받기를 원하였고 상담사는 해당 결과를 등록된 휴대폰 번호로 전송하겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

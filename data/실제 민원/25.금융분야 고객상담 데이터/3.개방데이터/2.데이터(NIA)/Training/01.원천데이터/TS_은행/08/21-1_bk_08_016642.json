@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_016642",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 914,
+        "consulting_content": "고객은 딸 이름으로 대출 연장을 신청하려 했으나 본인 확인이 어려워 직접 전화와 서류 제출을 요구하였고 상담사는 대출 이용자 본인 인증 후 연장 신청 시 계약서, 신분증, 급여내역서가 필요하며, 평일 9시~18시 연락 및 이메일 안내 가능하다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

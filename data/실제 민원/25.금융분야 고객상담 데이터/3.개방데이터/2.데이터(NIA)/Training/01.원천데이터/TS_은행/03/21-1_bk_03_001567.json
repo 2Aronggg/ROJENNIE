@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_001567",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 2108,
+        "consulting_content": "고객은 주택청약통장의 비밀번호와 자동이체 재설정 방법, 타행 급여계좌에서 청약통장으로 자동이체를 설정 절차, 이체일 지정 방법을 문의했고, 상담사는 모바일 앱과 영업점 방문, 비밀번호 재설정 방법, 해당 은행 앱 이용 방법과 영업점 방문 시 준비 서류, 알림 서비스 설정, 실패 시 대처 방안을 설명했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

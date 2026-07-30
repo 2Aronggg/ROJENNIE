@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_015001",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1682,
+        "consulting_content": "고객은 대출 연장을 신청하고 남은 원금, 이자 상황과 서류 제출 방법을 문의하였고 상담사는 계좌, 비밀번호 확인 후 비대면 서류 업로드 안내와 검토 진행을 약속하였으며, 연장 승인 여부와 새로운 상환 일정은 영업일 2일 내에 문자, 전화로 통보하고 이자율은 기존과 동일하고 추가 수수료는 없다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

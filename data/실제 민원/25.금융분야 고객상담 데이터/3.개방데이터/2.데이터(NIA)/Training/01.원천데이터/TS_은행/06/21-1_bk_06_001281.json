@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_001281",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1183,
+        "consulting_content": "고객은 가상계좌 사용 시 주의 사항과 자동이체 압류 계좌 해제에 대해서 문의하였고, 상담사가 가상계좌 입금을 진행하고 싶은데 구체적인 절차와 입금 방법 및 주의 사항 그리고 자동이체 압류 계좌 해제와 입금 가능 여부 그리고 새 계좌 지정 방법에 대해서 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

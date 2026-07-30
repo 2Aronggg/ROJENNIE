@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_013858",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1241,
+        "consulting_content": "고객은 ★★은행 통장에 입금된 금액의 예금주 확인과 송금인과의 직접 연결을 요청하였고 상담사는 개인정보 보호 차원에서 예금주 확인은 불가함을 안내하고 중계 연결 및 담당자 연락을 통한 대체 절차를 제시하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

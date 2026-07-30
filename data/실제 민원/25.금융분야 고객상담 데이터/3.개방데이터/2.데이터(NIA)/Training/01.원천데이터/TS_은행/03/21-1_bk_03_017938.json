@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_017938",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1000,
+        "consulting_content": "고객은 도약 계좌 자동 이체가 잔액 부족으로 실패하고 직접 송금했으며, 다음 월 재시도가 예정됨을 확인하고 한도 초과도 확인했다고 말했고, 상담사는 자동 이체 재시도 일정과 한도 조정 필요성을 안내하고, 잔액 확보와 현금 입금 방법을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

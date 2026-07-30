@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_026035",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 601,
+        "consulting_content": "고객은 기존 ★★은행 입출금 계좌 해지를 원했으며, 상담사는 전화 해지는 불가하니 모바일 앱에서 전체 계좌 선택→해지→인증 절차를 안내하고, 해지 후 10분 이내 문자, 이메일 확인 가능하다고 답변하였다. 고객은 해지 후 자동이체는 별도 해지 필요와 신규 입출금 계좌 개설은 온라인 또는 지점 방문으로 신분증, 기존 계좌 정보 준비하면 된다고 문의했으며, 상담사는 해당 절차를 설명하고 진행 의사를 확인하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

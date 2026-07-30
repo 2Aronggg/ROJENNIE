@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_006068",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 2015,
+        "consulting_content": "고객이 본인 신청 여부가 불확실한 자동이체 등록 문자를 받아 확인을 요청하였으며 상담원이 조회한 결과 특정 기관의 자동이체가 등록되어 있는 것을 설명하였다. 상담원은 기관을 통한 출금 요청 가능성을 안내하며 해당 기관 문의가 필요함을 설명하였고, 고객이 원하여 자동이체 해지 방법을 어플과 콜센터 연결을 통해 안내하였다. 해지 진행 중 화면 오류로 메뉴가 보이지 않아 콜센터 연결을 도왔으며, 이후 해지 요청 접수, 인증번호 입력 절차를 완료하여 자동이체가 정상 해지되었음을 확인하였다. 상담원은 향후 자동이체 관리 확인 방법과 의심 문자 대응, 보안 유지 방법을 추가로 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

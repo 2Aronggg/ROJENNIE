@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_027006",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1046,
+        "consulting_content": "고객은 대출 이자 즉시 출금을 요청하고 계좌, 주민등록, 비밀번호 등 인증 정보를 제공하였고 상담사는 계좌 확인 후 텔레뱅킹 미가입으로 즉시 출금이 어렵다고 안내하며 가상계좌 입금 방법을 문자로 발송하고, 연체 방지 옵션으로 자동이체 예약 등을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

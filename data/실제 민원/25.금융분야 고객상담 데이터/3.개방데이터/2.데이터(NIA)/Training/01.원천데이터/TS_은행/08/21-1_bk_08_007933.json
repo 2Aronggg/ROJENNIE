@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_007933",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1244,
+        "consulting_content": "고객은 개인사업자 대출 만기 연장을 원하고 서류를 팩스로 송부하고자 하였으며, 상담사는 연장 신청에 필요한 서류를 문자, 팩스로 발송하고 지점 정보를 제공하였다. 심사 결과는 영업일 2~3일 내에 문자, 이메일로 통보될 것이며, 승인 시 연장된 상환 일정과 계약서 사본을 전달하였다. 연장 시 기존 대출 금액은 유지되지만 이자율은 소폭 조정될 수 있음을 안내하고, 취소는 전송 확인 번호와 ‘취소’ 회신으로 가능하나 진행 상황에 따라 제한될 수 있음을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

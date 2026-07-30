@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_012510",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 2209,
+        "consulting_content": "고객은 기존 담보 대출 연장을 원하고 담당자 연결 및 연장 절차 안내를 요청하였고 상담사는 대출 종류 확인, 추가 서류 안내, 휴대폰 인증 신청이 완료되면 변경된 상환 일정과 새로운 이자율에 대한 안내문이 고객님의 등록된 주소로 우편 발송되며, 이메일로도 동시에 안내됩니다. 안내문은 보통 신청일 기준 2~3영업일 내에 도착하며, 앱 내 ‘대출관리 연장내역’ 메뉴에서도 변경된 조건을 확인하실 수 있다. 추가로 궁금한 사항은 FAQ 코너를 통해 확인하거나 고객센터로 문의하시면 됩니다.를 진행한 뒤 연장 신청을 완료하고 결과 안내를 약속하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

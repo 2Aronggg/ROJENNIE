@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_000881",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1007,
+        "consulting_content": "고객은 은행 적금 자동이체가 실행되지 않은 이유와 계좌 변경 가능 여부, 이체 실패 시 수수료 발생 여부, 재시도 시점, 내역 확인 방법, 납입 한도 내 직접 입금 가능 여부 등을 문의하였다. 상담사는 시스템 점검으로 인한 일시 오류 가능성과 직접 입금 또는 재설정 권장, 계좌 변경 절차, 수수료 없음, 이체 반영 시점, 알림 및 내역 확인 경로 등을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

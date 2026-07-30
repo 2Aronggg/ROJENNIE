@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_015607",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 899,
+        "consulting_content": "고객은 대출 금리 인상 여부와 감면 조건을 문의하였고 상담사는 금리 변동과 감면을 위해 매월 일정 금액 이상 적금, 청약저축이 필요함을 안내하였다. 고객은 조건을 확인하고 진행 의사를 밝혔으며 상담사는 낮은 금리 대출 상품 안내와 신청 절차를 제안하였다. 고객은 오후 3시 이후 연락을 요청하였고 상담사는 해당 시간에 담당자가 연락하겠다고 약속하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

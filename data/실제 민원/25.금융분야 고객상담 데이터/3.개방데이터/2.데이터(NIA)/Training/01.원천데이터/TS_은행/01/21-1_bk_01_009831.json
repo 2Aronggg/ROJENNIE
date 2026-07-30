@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_009831",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1175,
+        "consulting_content": "고객은 두 건의 미확인 입금 내역 확인을 요청했고 상담사는 계좌 조회를 진행하였다. 고객은 계좌 번호와 이름을 제공하고 비밀번호를 입력했으며 상담사는 입금이 법원 송달료 처리된 사실을 안내하고, 향후 알림을 문자로 받도록 설정해 주었다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

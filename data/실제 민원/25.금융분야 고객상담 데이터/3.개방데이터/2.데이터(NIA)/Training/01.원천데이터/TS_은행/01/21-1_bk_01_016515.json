@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_016515",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1400,
+        "consulting_content": "고객은 해외 체류 중 입출금 내역 확인을 요청하고, 계좌 정보와 비밀번호를 제공하여 특정 날짜의 거래를 조회하였고, 상담사는 해당 입금, 출금 내역을 확인해 주었으며, 추가로 표시되지 않은 거래와 문자 알림 지연 문제를 제기한 데 대해 앱 알림 설정 및 인터넷, 모바일 뱅킹 이용을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

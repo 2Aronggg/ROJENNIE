@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_023720",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1191,
+        "consulting_content": "고객은 이자 캐시백 내역 확인을 위해 본인 확인 절차와 계좌 정보를 제공하였고 상담사는 계좌 비밀번호 입력 후 입금 일자와 금액을 조회해 날짜, 금액을 안내하고, 7일 이내 안내문 발송 및 세금 원천징수 안내는 추후 연결 가능하다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

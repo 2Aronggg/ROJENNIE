@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_010034",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1556,
+        "consulting_content": "고객은 아파트 관리 사무실로서 입금 일자, 금액, 계좌 정보를 제공하며 거래 확인을 요청하였고 상담사는 제공된 정보를 토대로 시스템 조회를 시도하였다. 조회 결과 기록과 일치하지 않아 추가 검증이 필요함을 안내하고, 영수증 제출 방법 및 처리 기간 2~3일을 설명하며 진행 상황을 지속적으로 알려주겠다고 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

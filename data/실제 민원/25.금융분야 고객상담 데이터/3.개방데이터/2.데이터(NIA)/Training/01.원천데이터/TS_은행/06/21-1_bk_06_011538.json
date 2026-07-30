@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_011538",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 689,
+        "consulting_content": "고객은 대출 연체 여부와 연체 시 이자, 연체료 안내를 요청하였고 상담사는 대출 현황을 확인하고 연체 이자 일일 0.03%, 연체료 5천원 등을 안내하였으며, 오늘 납부일 소상공인 대출의 원금이 미납된 상태임을 알려주고 잔액을 유지하면 자동이체가 처리될 것이라고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

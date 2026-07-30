@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_031224",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1236,
+        "consulting_content": "고객은 수표 입금 후 카드 결제 오류를 신고하고 본인 확인을 위해 계좌, 생년월일, 비밀번호를 제공하였고 상담사는 입금 확인 및 본인 인증을 완료한 뒤, 영업일 기준 1~2일 소요와 주말, 공휴일 제외를 안내하며, 해당 금액은 월요일 오후 12시 30분 이후에 자금화되어 이용 가능함을 전달하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

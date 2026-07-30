@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_020634",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1305,
+        "consulting_content": "고객은 대출 연장을 신청하고 신분증 사진이 흐려 인증이 안 된다고 하였고 상담사는 서류, 절차 안내와 함께 사진 재촬영 또는 영업점 방문을 권유하며, 필요한 계좌, 휴대폰 정보 제공을 요청하고 인증 링크를 문자로 전송한 뒤 문제 지속 시 직접 전화 지원 및 영업점 방문 일정을 잡아 진행하겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

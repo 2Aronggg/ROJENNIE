@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_028734",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 964,
+        "consulting_content": "고객은 ★★은행에서 ◆◆◆ 페소 환전 가능 여부와 전 지점 이용 가능성을 문의하였고 상담사는 전 지점에서 매도, 구매가 가능하며 신분증 지참 후 창구에서 교환 절차를 안내하고, 수수료는 실시간 변동, 영업시간은 평일 9시~18시이며 주말에는 주요 ATM에서 일부 환전이 가능하다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

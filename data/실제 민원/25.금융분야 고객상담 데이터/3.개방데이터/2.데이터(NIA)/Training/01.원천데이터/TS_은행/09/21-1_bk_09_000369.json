@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_000369",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1362,
+        "consulting_content": "고객은 페소 환전을 원해 보유량, 환율, 수수료, 필요한 서류, 영업점 위치와 영업시간, 한 번에 교환 가능한 금액 및 예약 절차 등을 문의했고, 상담원은 현재 페소 보유량 확인, 적용 환율 안내, 환전 수수료, 서류 안내, 영업점 정보와 예약 방법, 환전 후 현금 보관 및 환불 정책 등에 대해 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

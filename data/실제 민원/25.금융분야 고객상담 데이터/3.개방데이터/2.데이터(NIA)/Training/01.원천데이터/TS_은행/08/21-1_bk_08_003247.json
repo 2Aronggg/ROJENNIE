@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_003247",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1629,
+        "consulting_content": "고객은 전화로 전세 대출 연장 일정과 필요한 서류를 문의하고, 담당자 연결 지연 및 입금 확인을 요청하였고 상담사는 지점 담당자와 연결을 시도하고, 연장 가능 날짜 확인 및 서류 제출 방법을 안내하며, 진행 상황을 문자로 알려드리겠다고 약속하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

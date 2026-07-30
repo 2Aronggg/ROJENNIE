@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_018992",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 2422,
+        "consulting_content": "고객은 대출 만기 연장을 신청하고 서류 제출 및 비용 안내를 요청하였고 상담사는 계좌 확인 후 연장에 필요한 사업자등록증, 소득증명서 등 서류를 팩스로 보내라고 안내하고, 비용은 청구될 예정이며 이자율은 동일하고 승인까지 3~5영업일 소요된다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_008000",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1199,
+        "consulting_content": "고객은 전세 대출 연장을 원했으며, 만기일이 ●월 ●일임을 확인하였다. 상담사는 버팀목 전세 대출은 비대면 연장이 불가하므로 방문이 필요하다고 안내하였다. 방문 시 신분증, 대출 계약서, 전세 계약서, 급여 내역 등 서류를 준비하도록 요청하였다. 고객은 다음 주 화요일 오후에 방문 가능하다고 답변했으며, 서류와 최근 상환 내역을 문자로 송부하기로 약속하였다. 방문 당일 현장 심사 후 연장 계약서를 작성, 서명하고, 연장 안내 문자는 ●●년 ●월 ●일에 발송될 예정이라고 전하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

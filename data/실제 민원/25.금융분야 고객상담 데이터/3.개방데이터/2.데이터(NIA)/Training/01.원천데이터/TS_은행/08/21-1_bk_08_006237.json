@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_006237",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 2056,
+        "consulting_content": "고객의 마이너스 통장 대출 만기 연장 신청은 만기일로부터 일정 기간 이후 가능하며, 안내 문자를 통해 지정된 날짜 이후 모바일로 진행할 수 있음을 설명하였다. 연장 시 인증코드 입력 및 전자서명 절차를 안내하고, 연장 계약서의 주요 내용인 이자율, 연장 기간, 상환 방식 등을 설명하였다. 또한 예상 월 상환액을 계산하여 문자로 안내하고, 조기 상환 시 수수료 부과 여부 및 계약서 사본 확인 방법을 안내하였다. 마지막으로 연장 승인 결과 통보 일정과 절차를 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

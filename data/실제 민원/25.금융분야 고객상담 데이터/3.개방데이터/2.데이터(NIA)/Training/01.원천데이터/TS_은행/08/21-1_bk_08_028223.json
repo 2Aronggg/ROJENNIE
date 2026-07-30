@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_028223",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1034,
+        "consulting_content": "고객은 처리 단계와 서류 준비 여부를 물었고 상담사는 계좌, 생년월일 확인을 요청해 본인 확인을 마쳤다. 고객은 비밀번호를 입력했으며 상담사는 마이너스 대출 연장 승인과 금리 심사 진행 중임을 알리고, 조기 상환 시 위약금이 부과될 수 있음을 설명했다. 고객은 계약서 이메일 대신 앱 확인을 원했고 상담사는 필요 시 서류 요청 및 24시간 고객센터 이용을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

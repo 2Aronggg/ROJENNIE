@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_030100",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1560,
+        "consulting_content": "고객은 현금 인출 신청과 카드 재발급 후 한도 축소로 인한 출금 제한을 문의하고, OTP 재발급 및 한도 해지를 요청하였고 상담사는 신원 확인 후 계좌, 비밀번호 확인 절차를 안내하고, 현재 한도는 제한액 이하 사용 가능함을 설명하며 모바일 앱에서 한도 해지 방법과 OTP 재발급 절차를 안내하고, 최종 연락처 확인 후 추가 문의 없음을 확인하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

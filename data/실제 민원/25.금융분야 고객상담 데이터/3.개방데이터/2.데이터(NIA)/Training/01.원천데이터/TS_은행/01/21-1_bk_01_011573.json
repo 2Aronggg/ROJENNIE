@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_011573",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1191,
+        "consulting_content": "고객은 특정 월 입금 내역 확인과 해당 서류를 팩스로 받기를 요청하였고 상담사는 입금이 정상이며 인터넷뱅킹에서 거래내역 조회 방법, 팩스 발송 소요 시간, 영업점 방문 시 신분증 지참을 안내하였으며 필요 시 이메일로 정리본을 제공하겠다고 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

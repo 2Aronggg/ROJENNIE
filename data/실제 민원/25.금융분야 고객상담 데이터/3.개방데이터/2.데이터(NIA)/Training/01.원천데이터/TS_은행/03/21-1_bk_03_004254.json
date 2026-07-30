@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_004254",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1270,
+        "consulting_content": "고객은 백화점 자동이체 미설정 출금을 확인하고 해지를 요청했으며, 상담사는 계좌, 비밀번호 확인 후 해당 자동이체가 등록돼 있음을 안내하고, 직접 해지는 불가하므로 백화점 고객센터에 문의하도록 필요한 정보와 절차, 소요시간 등을 안내했으며, 해지 요청 접수 후 문자로 결과를 알려드리겠다고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

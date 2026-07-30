@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_000818",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1076,
+        "consulting_content": "고객은 마이너스 통장 대출의 상환 시작일, 첫 납부 금액과 원, 이자 비율, 변동 금리 적용 기준 및 변동 통보 방식, 조기 상환 시 이자 감면 혜택, 입출금 통장 잔액 확인, 자동 이체 설정 및 공휴일 처리 방법 등에 대해 문의했고, 상담사는 각각의 날짜, 금액 비율, 금리 연동, 조기 상환 절차, 계좌 잔액, 자동 이체 방법을 구체적으로 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

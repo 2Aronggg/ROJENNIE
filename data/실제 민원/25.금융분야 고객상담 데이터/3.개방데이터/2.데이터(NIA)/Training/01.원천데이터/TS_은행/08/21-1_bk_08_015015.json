@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_015015",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1063,
+        "consulting_content": "고객은 대출 연장 오류로 전화하여 계좌, 생년월일 등 본인 확인을 진행하였고, 상담사는 연장 절차에 기존 금리 인하 신청이 충돌함을 알려 취소를 제안하였으며, 고객은 취소를 요청하고, 상담사는 취소 후 연장 처리가 약 10분 소요될 것이라고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

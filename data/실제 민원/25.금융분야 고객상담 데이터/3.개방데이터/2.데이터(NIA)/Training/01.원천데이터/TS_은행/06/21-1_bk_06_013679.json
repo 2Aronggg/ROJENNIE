@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_013679",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1146,
+        "consulting_content": "고객은 개인 대출 미납으로 가상 계좌 발급을 요청하였고 상담사는 계좌 번호와 개인정보를 받아 발급 절차를 진행하였다. 고객은 미납 금액과 입금 기한을 확인하였고 상담사는 23시 30분까지 입금 시 연체 해소와 이자 정산이 이루어진다고 안내하였다. 고객은 자동 이체 설정을 요청하였고 상담사는 영업일 1~2일 내 완료될 것이라며 신청을 접수하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

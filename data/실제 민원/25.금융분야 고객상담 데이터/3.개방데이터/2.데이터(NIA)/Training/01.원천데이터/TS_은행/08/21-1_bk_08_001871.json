@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_001871",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1294,
+        "consulting_content": "고객은 전세 대출 만기 연장 방법과 절차, 필요 서류, 신청 가능 시기, 금리 관련 사항 등에 대해 종합적으로 문의하였으며, 상담사는 대출 연장 신청 절차와 서류 준비 방법, 처리 소요 기간, 금리 변동 가능성 및 유의사항 등에 대해 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

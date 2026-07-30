@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_025107",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 781,
+        "consulting_content": "고객은 대출 연장을 원해 계좌 확인을 위해 은행 앱 설치와 성명, 생년월일, 비밀번호를 제공하였고 상담사는 앱 다운로드 안내, ARS 비밀번호 입력, 연장 방법 및 알림톡 재발송, 서류 없이 인증서 제출 가능 등을 안내하고, 접수 후 심사 결과를 문자로 알려 주겠다고 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

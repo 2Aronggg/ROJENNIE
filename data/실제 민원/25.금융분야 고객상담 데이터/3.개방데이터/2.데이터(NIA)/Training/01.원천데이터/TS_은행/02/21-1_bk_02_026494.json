@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_026494",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 2002,
+        "consulting_content": "고객은 이체 시 수취인 계좌 번호를 착오로 잘못 입력해 반환을 요청했으며, 본인 확인 절차 후 반환 신청 방법, 필요 서류, 방문, 비대면 신청 가능, 처리 기간, 수수료 등을 문의하였고 상담사는 취소는 불가능하나 착오 송금 반환 절차는 별도 신청이 필요하고 서류 제출, 각 건별 개별 신청, 3~5영업일 소요 및 수수료 발생 가능성을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

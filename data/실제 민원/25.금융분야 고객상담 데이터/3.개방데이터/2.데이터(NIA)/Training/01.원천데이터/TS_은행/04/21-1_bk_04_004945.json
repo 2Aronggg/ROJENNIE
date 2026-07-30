@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_004945",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 910,
+        "consulting_content": "고객은 만기 적금 청약 및 해지 절차와 수수료 여부를 문의하였고 상담사는 계좌 번호, 생년월일 확인 후 ARS 비밀번호 입력을 안내하고, 모바일 앱에서 전체 계좌 → 해당 예금 → 계좌 관리 → 해지 신청 순서를 설명하며, 해지는 영업일 1~2일 내 처리된다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

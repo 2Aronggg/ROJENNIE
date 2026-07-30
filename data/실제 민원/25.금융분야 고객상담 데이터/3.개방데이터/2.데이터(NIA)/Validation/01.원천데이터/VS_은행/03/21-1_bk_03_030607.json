@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_030607",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1107,
+        "consulting_content": "고객은 아파트 관리비 자동이체를 ★★은행 계좌와 연동하려 했지만 해당 어플에서 오류가 발생한다며 화면 캡처와 링크 재전송을 요청하였고, 상담사는 안내 부족을 사과하며 기존 자동이체 절차와 일반 연동 방식만 설명하고, 앱 재설치, 전화 신청 등 대체 방법을 제시하며 필요 시 연결 서비스를 제공한다는 답변을 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

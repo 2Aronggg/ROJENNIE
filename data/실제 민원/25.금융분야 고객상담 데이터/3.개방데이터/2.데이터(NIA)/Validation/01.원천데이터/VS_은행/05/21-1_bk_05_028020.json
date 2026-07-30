@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_028020",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 922,
+        "consulting_content": "고객은 모바일에서 계좌 제한 해제 신청이 되지 않는다고 문의하였고, 상담사는 제한 해제 절차로 서류 제출 후 영업점 방문 또는 팩스와 전화 확인 두 가지 방법이 있다고 안내하며 고객이 직접 방문을 선택하자 급여 입금 계좌임을 확인하고 재직증명서와 근로계약서, 신분증을 지참해 방문하도록 요청하고 서류 심사에 2~3일이 소요되며 급행 심사는 비용 없이 가능하다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_014569",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1048,
+        "consulting_content": "고객은 사업자 통장에서 08시 10분경 발생한 미확인 출금을 문의하였고 상담사는 거래 일시와 금액 확인을 요청하였다. 고객은 비밀번호 입력에 어려움을 겪었고 상담사는 비밀번호 재설정 안내와 모바일, 인터넷 뱅킹 이용을 제안하였다. 상담사는 해당 출금이 자동 이체로 처리된 것으로 확인하고 상세 내역을 서류로 제공하겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

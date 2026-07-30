@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_030356",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 848,
+        "consulting_content": "고객은 대출 연장 신청 중 ‘오엠O OO O OO’ 오류와 코드 12345가 발생한다며 스마트폰 앱에서 시도했으며 서류 준비 의사를 밝혔고 상담사는 캐시 삭제와 앱 업데이트를 안내하고, 기존 신청이 있을 경우 취소 후 재신청 필요와 소득, 신분증 서류 제출을 요구했으며 확인 후 등록 번호로 연락하겠다고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

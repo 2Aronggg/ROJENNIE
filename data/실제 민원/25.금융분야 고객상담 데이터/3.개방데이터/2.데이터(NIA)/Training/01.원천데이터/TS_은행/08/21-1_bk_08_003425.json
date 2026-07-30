@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_003425",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 948,
+        "consulting_content": "고객은 이번 달 만기 대출 연장 여부를 문의했으며 상담사는 연장은 필요 없고 만기 후 대출이 종료된다고 안내하고, 추가 대출은 신규 신청이 필요하므로 주민등록증, 소득증빙, 통장 사본을 제출하고 온라인이면 신속히 처리된다고 설명하였다. 또한 금리 변동 알림 서비스를 신청하도록 제안하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

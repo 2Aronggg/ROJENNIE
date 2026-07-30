@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_008706",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1309,
+        "consulting_content": "고객은 입금 내역 확인을 요청하였고, 계좌 번호와 비밀번호를 통해 거래 조회를 진행하였다. 두 건의 입금이 확인되었으나, 입금자 은행명 및 계좌 번호는 제공되지 않았으며, 이에 대해 안내하였다. 자동이체는 정상이며, 카드 결제 취소, 환불, 대출, 적금, 앱 비밀번호 변경 등 추가 문의가 없음을 확인하였다. 향후 필요 시 입금자에게 직접 연락하도록 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_016669",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1328,
+        "consulting_content": "고객은 보이스피싱 피해로 인한 계좌 이상 거래 여부를 문의하고 지급정지 해제 절차와 필요 서류를 물었으며, 비밀번호 재입력 과정을 거쳤고, 상담사는 계좌를 조회, 지급정지를 확인하고 해제는 영업점 방문이 필요함을 안내하며 통장, 도장, 신분증 지참을 요청하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

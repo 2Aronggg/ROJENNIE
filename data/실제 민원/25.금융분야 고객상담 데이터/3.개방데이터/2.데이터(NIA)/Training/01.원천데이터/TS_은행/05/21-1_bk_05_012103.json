@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_012103",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1630,
+        "consulting_content": "고객은 외화 이체 한도 상향과 제한 해제를 원한다며 서류 제출 및 영업점 방문을 요청하였고 상담사는 최근 3개월 거래내역, 소득증빙 필요와 비대면 앱으로는 한도 상향이 어려워 직접 방문, 팩스 제출을 안내하였으며, 수수료와 환율도 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

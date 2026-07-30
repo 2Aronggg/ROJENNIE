@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_011646",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1546,
+        "consulting_content": "고객은 연체 대출 금액 및 계좌 정보를 요청하였고 상담사는 가상 계좌와 금액을 문자로 안내하였다. 고객은 이자율과 상환 방식을 물었고 상담사는 연 15% 이자와 전액, 분할 상환 옵션을 설명하였다. 고객은 전액 상환을 원한다며 입금 절차를 재안내받았고 상담사는 입금 시 연체 해소 및 확인 문자를 발송한다는 안내를 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_020248",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1578,
+        "consulting_content": "고객은 전세 대출 연장을 위해 본인 확인 및 계좌, 주민등록번호 등 정보를 제공하고 연장 절차와 필요 서류, 비대면 진행 방법, 금리 정보를 문의하였고 상담사는 확인 후 연장 신청은 계약서와 신분증 사본 제출, 전자 서명으로 가능하며, 비대면 서류 사진 촬영 및 자동 전산 처리, 금리는 현재 86% 수준이며 고정 옵션 선택 가능, 연장 결과는 영업일 2~3일 내 통보하고 기존 자동 이체 유지라고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

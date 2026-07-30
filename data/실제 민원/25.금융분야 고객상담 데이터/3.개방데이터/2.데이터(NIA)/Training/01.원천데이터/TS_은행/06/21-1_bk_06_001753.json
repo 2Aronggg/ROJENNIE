@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_001753",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1705,
+        "consulting_content": "고객은 대출과 연계된 적금 미납 여부, 본인 명의가 아닌 경우 조회 방법, 출금 절차, 문자 안내 확인, 대출 상환 방법 및 자동이체 설정, 변경, 실패 시 처리 등에 대해 문의했고, 상담사는 대출과 적금 연계시 이자 혜택 및 적금 미납시 처리절차, 대출 상환 방법 및 자동이체 설정 방법 등에 대해 안내했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

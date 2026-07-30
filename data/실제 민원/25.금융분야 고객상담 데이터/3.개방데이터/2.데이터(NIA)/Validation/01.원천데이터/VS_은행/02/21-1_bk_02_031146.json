@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_031146",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1004,
+        "consulting_content": "고객은 아들 청약통장으로 이체를 실수해 출금 계좌가 ★★은행임을 알렸고, 상담사는 ★★은행에 자금 반환 신청이 필요하다고 안내하며 이체 확인서, 신분증 사본, 반환 신청서가 필요하고, 신청서를 이메일으로 송부하겠다고 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

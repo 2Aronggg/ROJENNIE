@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_004369",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1925,
+        "consulting_content": "고객은 전세자금 대출 연장 절차와 필요 서류, 비용, 이자 변동 여부를 문의하였고 상담사는 만기 30일 전 신청 필요와 인증 절차 안내 후, 기본 서류를 문자로 보내고 앱 업로드 가능함을 설명하며 이자는 기존과 동일하고 처리 기간은 영업일 2~3일이라고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

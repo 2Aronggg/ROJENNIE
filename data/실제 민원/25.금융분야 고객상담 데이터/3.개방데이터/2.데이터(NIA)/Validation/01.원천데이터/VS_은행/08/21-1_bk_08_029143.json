@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_029143",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 804,
+        "consulting_content": "고객은 해외에 있는 배우자의 담보 대출 연장을 전자 서명으로 신청하고 입금 시점 연기를 문의했으며, 상담사는 대출 종류 확인 후 담보 평가와 영업점 방문 필요성을 안내하고, 전자 서명 절차, 필요 서류 및 전화, 메일 상담을 통해 지원하겠다고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_019564",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 839,
+        "consulting_content": "고객은 대출 만기 연장을 문의하고 계좌, 신분 정보를 제공했으며 서류 제출을 약속하고 팩스, 이메일로 전송하겠다고 하였고, 상담사는 연장 절차와 필요 서류, 제출 방법을 안내하고 검토 후 2~3일 내 계약서, 상환일정 발송 및 동일 이자율 적용을 설명하며 진행 상황을 문자, 전화로 알려주겠다고 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

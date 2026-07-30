@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_009144",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1942,
+        "consulting_content": "고객은 급여통장 전환을 원했으며, 한도 제한 해제 조건은 상담센터에서 안내가 어려워 스마트폰 어플 또는 팩스로 서류 제출을 권유받았다하였다. 재직증명서와 최근 3개월 이내 급여명세서를 준비해 영업시간 내 지점 방문 또는 팩스 전송 후 확인 번호를 메모하도록 안내받았다하였다. 서류 검토 후 2~3일 내에 전환 가능 시점을 문자로 통보하고, 전환 완료 시 기존 통장 해지 절차도 함께 안내하기로 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_027618",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 798,
+        "consulting_content": "고객은 아파트 관리비 자동이체 해지를 원하고 폰뱅킹 미사용이라 어플 사용법을 문의하였고 상담사는 스마트폰 어플 메뉴에서 자동이체 → 조회, 변경, 해지 순으로 진행하도록 안내하고 해지 버튼 클릭 및 확인 절차를 설명하였고, 고객은 안내대로 해지를 완료하고 정상 처리됨을 확인하였고 상담사는 추가 문의 시 안내 가능하다고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

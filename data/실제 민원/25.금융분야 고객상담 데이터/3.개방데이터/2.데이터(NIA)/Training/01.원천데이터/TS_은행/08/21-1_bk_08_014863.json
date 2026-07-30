@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_014863",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1219,
+        "consulting_content": "고객은 운전자금 대출 연장을 요청하고 계좌 번호, 생년월일 등 본인 확인 정보를 제공하였고 상담사는 확인 후 대출이 아직 사전 조회 미완료 상태임을 안내하고, 비대면 서류 제출 방법과 문자, 이메일 발송을 제안하였으며, 다음 주까지 결과를 기다리라고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

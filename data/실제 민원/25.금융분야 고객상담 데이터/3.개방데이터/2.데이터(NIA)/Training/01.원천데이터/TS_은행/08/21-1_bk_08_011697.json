@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_011697",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 700,
+        "consulting_content": "고객은 계좌 번호와 비밀번호를 제공하고 대출 연장 서류 접수 현황 및 이자, 상환 일정, 면제 조건을 문의하였고 상담사는 서류 제출이 정상이며 처리 결과는 영업일 2일 이내에 안내되고 모바일 앱에서 확인 가능하고, 면제는 연체 없을 때 적용된다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

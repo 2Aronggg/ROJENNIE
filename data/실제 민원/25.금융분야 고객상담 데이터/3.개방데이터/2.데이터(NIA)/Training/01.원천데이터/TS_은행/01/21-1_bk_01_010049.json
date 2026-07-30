@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_010049",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 660,
+        "consulting_content": "고객은 지난 3개월간 입출금 내역을 팩스로 받고자 하였고 상담사는 ARS 이용 방법과 정보 입력 절차를 안내하였다. 고객은 안내에 따라 시작, 종료일자를 입력하고 팩스 번호와 모바일 번호를 제공하였고 상담사는 팩스 전송 및 문자 알림을 진행한다고 안내하였다. 고객은 대출 상환 내역도 동일 절차로 받을 수 있는지 문의하였고 상담사는 동일 방법으로 요청 가능하다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

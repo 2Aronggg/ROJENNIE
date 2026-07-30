@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_029736",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1121,
+        "consulting_content": "고객은 퇴직금 입금 확인을 위해 계좌 정보와 비밀번호를 제공하고 입금 일자, 금액을 알려 요청하였다. 상담사는 정보를 조회해 입금을 확인하고 비과세 한도 초과 여부와 세금 안내를 제공했으며, 자동 이체 설정을 전화 상담으로 진행하겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

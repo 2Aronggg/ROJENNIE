@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_031015",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 894,
+        "consulting_content": "고객은 비대면 계좌 개설 후 한도 해제를 원하고 필요한 서류와 소요 시간을 문의했으며, 공과금 모바일 인증 방법과 영업점 방문 안내를 요청하였고 상담사는 소득, 거주지 증빙 서류와 2~3일 검토 기간을 안내하고, 모바일 인증은 전화로는 불가하니 영업점 방문을 권유하며 영업시간, 위치를 제공하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

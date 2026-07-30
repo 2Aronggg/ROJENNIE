@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_000461",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1071,
+        "consulting_content": "고객은 사업자 대출의 일부를 상환하고 남은 금액을 연장하고 싶어 방문 필요 여부와 비대면 절차를 문의했으며, 상담원은 계좌 확인 후 모바일 앱과 카카오톡을 통한 비대면 신청 방법, 필요한 서류, 인증 수단, 금리 변동 가능성 등을 안내하고, 고객은 모든 질문에 만족해 마무리하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

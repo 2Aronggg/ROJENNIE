@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_001757",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1893,
+        "consulting_content": "고객은 만기된 적금의 재가입 및 자동 재예치 절차와 혜택 유지 여부, 퇴직연금 자금 인출 및 전환 방법을 문의했고, 상담원은 재가입 방법, 재예치 옵션, 혜택 연장, 퇴직연금 인출 조건 및 전환 가능한 상품과 수수료를 안내했다. 상담사는 두 서비스는 별개이므로 동시 진행이 가능하다는 점에 대해서도 설명했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

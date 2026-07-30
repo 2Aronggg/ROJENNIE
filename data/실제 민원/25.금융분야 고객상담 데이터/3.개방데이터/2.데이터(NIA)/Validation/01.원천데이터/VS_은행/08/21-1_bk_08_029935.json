@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_029935",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 974,
+        "consulting_content": "고객은 전세 대출 연장을 원하며 필요한 서류와 금리, 사진 제출 가능 여부를 문의했고 상담사는 앱 연장, 지점 방문 두 방법을 안내하고, 전세 계약서 외 기본 서류를 문자로 보내드리며 원본 지참을 권고하고, 금리는 기존과 동일하고 심사는 영업일 2~3일 소요된다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

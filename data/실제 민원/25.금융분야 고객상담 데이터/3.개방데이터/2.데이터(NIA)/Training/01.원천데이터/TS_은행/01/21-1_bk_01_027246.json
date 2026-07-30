@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_027246",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1959,
+        "consulting_content": "고객은 입금, 출금 내역 및 금액 확인을 요청하였고 상담사는 비밀번호 입력을 안내하고, 입금, 출금이 정상 처리되었음을 알려 주었으며, 잔액 부족 및 추가 입금 상황을 설명하고, 최근 비밀번호 변경 여부와 영업시간, 온라인뱅킹 이용 방법을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

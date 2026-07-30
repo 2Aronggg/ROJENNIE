@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_025141",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 849,
+        "consulting_content": "고객은 타행에서 적금 통장으로 이체가 거부됐다고 문의했으며, 상담사는 자동 이체가 등록되지 않았음을 알려 재등록을 요청하고, 재등록 후 영업시간 내 즉시 처리, 1~2시간 내 입금 확인 가능하고 수수료는 없다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

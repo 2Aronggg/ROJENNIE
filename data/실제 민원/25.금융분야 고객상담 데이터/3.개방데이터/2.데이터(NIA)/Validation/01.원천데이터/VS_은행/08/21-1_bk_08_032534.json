@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_032534",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1021,
+        "consulting_content": "고객은 청년버팀목 대출 연장을 요청하고 본인 확인을 위해 이름, 생년월일, 계좌 정보를 제공하였고, 상담사는 대출 만기일을 확인 후 연장 절차는 만기 전 카톡 알림으로 진행되며 신분증 사본, 최근 3개월 급여내역서가 필요하고 이자, 수수료 안내문을 송부하고, 온라인 신청 가능 및 지정 방문일에 방문하면 연장이 완료된다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

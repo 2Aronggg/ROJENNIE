@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_000773",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1837,
+        "consulting_content": "고객은 동일 은행 간 이체 후 내역이 표시되지 않아 문의했다. 상담사는 계좌 유형 확인과 본인 인증을 거쳐 시스템 지연 가능성을 안내하고, 모바일 조회 절차 및 백오피스 확인을 진행했다. 또한 고객이 문의한 개인사업자 계좌를 확인하고, 비밀번호 입력시 보안 안내, 이체 실패시 환불 절차와 처리 기한에 대해서도 설명했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

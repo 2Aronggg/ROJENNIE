@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_009492",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1784,
+        "consulting_content": "고객은 신용대출 이율 감면 조건으로 제휴 카드 사용 실적 확인 방법을 문의하였다. 은행은 체크, 신용카드 구분 없이 고객 명의의 카드와 입출금계좌에서 자동이체 실적만 확인하면 합산된 금액으로 실적이 인정된다고 안내하였다. 결제 일자는 별도 고려되지 않으며, 자동이체 실패 시 재등록 방법과 실적 중단 시 이율 감면이 중단된다고 설명하였다. 실적 충족 시 재신청 절차는 시스템 자동 반영이며, 모바일 앱에서 실적 현황과 대출 잔액, 감면 기간을 확인할 수 있다고 안내하였다. 추가 혜택으로 포인트 적립, 수수료 면제 등이 있으며, 문자 알림 설정으로 안내를 받을 수 있다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

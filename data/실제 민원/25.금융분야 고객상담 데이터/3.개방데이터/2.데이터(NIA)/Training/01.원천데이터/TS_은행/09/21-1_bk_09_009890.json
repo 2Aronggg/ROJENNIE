@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_009890",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 869,
+        "consulting_content": "고객은 인근 ★★은행 ◆◆◆지점에서 소액 외화를 환전하고자 하였으며, 해당 지점에 충분한 외화 재고가 있음을 확인하였다. 고객은 달러를 위안화로 교환하려 했으며, 신분증 및 거래 서류를 지참하면 즉시 환전이 가능함을 안내하였다. 또한 스마트폰 어플을 통한 사전 신청 방법과 절차를 설명받았으며, 어플에서 통화, 금액 입력 후 수령점 지정으로 신청이 완료된다고 안내하였다. 현재 달러, 위안화에 각각 ●●●%, ●●●%의 환율 우대가 제공되며, 거래 금액이 ●●●원 이상이면 자동 적용된다고 안내하였다. 고객은 안내에 만족하여 추후 필요 시 재연락하겠다고 회신하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

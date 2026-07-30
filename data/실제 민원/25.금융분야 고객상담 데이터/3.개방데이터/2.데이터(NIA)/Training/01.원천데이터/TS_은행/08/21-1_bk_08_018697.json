@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_018697",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1428,
+        "consulting_content": "고객은 ●월●일 만기 소상공인 대출 연장을 문의하고 연장 가능 여부, 절차, 필요 서류, 수수료, 이자 변동을 물었고 상담사는 비대면 카카오 알림톡 신청, 만기일 확인, 신분증, 사업자등록증 사전 준비, 알림톡 첨부 또는 영업점 방문 제출, 수수료 ○○원, 금리 연동 이자, 심사 기간 및 결과는 알림톡, 이메일으로 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

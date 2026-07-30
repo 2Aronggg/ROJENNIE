@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_015076",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1599,
+        "consulting_content": "고객은 예금 통장에서 금액이 빠진 것을 확인하고 출금 및 잔액, 최근 3개월 거래 내역을 조회하고자 하였고 상담사는 계좌 정보와 비밀번호를 받아 현재 잔액을 안내하고, 해당 날짜의 입, 출금 내역 및 송금, 특판 거래가 정상 처리됨을 확인하여 보고서 형태로 제공하고 상담을 종료하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_003854",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 848,
+        "consulting_content": "고객은 비대면으로 한도 해지를 시도했지만 대상이 아니라는 메시지를 받아 해지 방법을 물었고 상담사는 비대면 해지가 불가함을 안내하고, 지점 방문 또는 서류를 팩스로 송부 후 상담을 권유하였다. 고객은 신분증 사본, 거래내역 전달 방법을 물었으며 상담사는 팩스, 이메일로 서류를 보내도록 문자 안내하고, 처리 기간은 영업일 2~3일, 문의는 전화, 문자 가능하다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

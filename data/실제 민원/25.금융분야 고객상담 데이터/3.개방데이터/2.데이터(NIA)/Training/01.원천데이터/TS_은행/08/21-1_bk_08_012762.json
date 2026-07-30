@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_012762",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1433,
+        "consulting_content": "고객은 연장 신청을 하고 필요한 서류 제출 및 계좌, 비밀번호 확인을 하였고 상담사는 서류 접수, 본인 확인을 진행하고 연장 절차와 3.5% 이자율, 자동이체 유지 방법을 안내하였으며, 서류 확인 메일을 영업 종료 전까지 발송하겠다고 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

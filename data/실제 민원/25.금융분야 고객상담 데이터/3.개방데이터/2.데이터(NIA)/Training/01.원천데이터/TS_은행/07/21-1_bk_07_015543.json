@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_015543",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1158,
+        "consulting_content": "고객은 ★★카드 이용 실적 미충족 문의와 최근 결제 확인을 요청하였고 상담사는 계좌, 비밀번호 인증을 진행하고, 실시간 조회와 정산 시점 차이로 결제가 아직 반영되지 않았음을 안내하였으며, 다음 달 정상 처리 시 자동 반영될 것이라 설명하고, 혜택 안내 신청을 제안하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

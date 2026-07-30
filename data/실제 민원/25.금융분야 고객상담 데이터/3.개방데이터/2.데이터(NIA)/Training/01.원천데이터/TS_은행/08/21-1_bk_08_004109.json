@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_004109",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1310,
+        "consulting_content": "고객은 대출 연장을 문의하고 계좌, 성명, 생년월일, 비밀번호를 제공했으며 연장 가능 여부와 금리, 상환일을 물었다. 상담사는 신원 확인 후 금리 미확정으로 영업점 승인 필요를 안내하고 관리점 연결을 제안했으며, 연 5.2% 금리와 월말 원리금 상환을 설명하고 연장 진행을 승인하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

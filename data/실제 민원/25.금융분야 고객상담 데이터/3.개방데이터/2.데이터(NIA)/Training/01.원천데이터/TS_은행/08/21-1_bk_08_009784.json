@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_009784",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1419,
+        "consulting_content": "고객은 전세 보증금 대출 연장 및 서류 진행 상황을 문의하였다. 상담사는 스크래핑 완료와 기본 서류 접수가 확인되었으며, 보증인 신분증, 소득증명서가 추가로 필요하다고 안내하였다. 보증인 서류는 2~3일 내 제출하면 심사가 진행된다고 설명하였다. 모바일 뱅킹에서 대출 현황 확인 방법과 변동금리, 고정금리 전환 절차, 수수료를 안내하였다. 중도 상환 수수료는 남은 원금의 1%임을 알려주었다. 고객은 서류를 준비해 보내겠다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_015219",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1355,
+        "consulting_content": "고객은 자동이체 취소 가능 여부와 해지 절차, 결제일, 불이익 및 휴일 영향을 문의하였고 상담사는 해당 은행 홈페이지, 앱에서 직접 해지하도록 경로를 문자로 안내하고, 즉시 반영되지만 지연 및 휴일 시 출금 위험이 있을 수 있음을 설명하며, 미납 시 불이익 없고 대체 계좌 이체 방법을 제시하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

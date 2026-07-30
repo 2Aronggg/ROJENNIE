@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_002930",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1138,
+        "consulting_content": "고객은 자동이체 내역과 시작일을 확인하고 해지를 원해 신분증 사본, 거래내역서 제출을 요청했으며, 상담사는 계좌 정보를 확인해 시작일을 안내하고 해지에 필요한 서류와 이메일 전송 방법을 설명하고 처리 진행을 약속하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

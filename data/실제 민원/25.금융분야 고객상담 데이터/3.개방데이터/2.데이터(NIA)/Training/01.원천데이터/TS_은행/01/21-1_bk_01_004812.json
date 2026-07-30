@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_004812",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 835,
+        "consulting_content": "고객은 모바일 앱으로 과거 거래내역 조회 방법과 기간 설정, 한도 여부, PDF, 이메일 저장 방법, 보안 주의사항 및 일일 조회 제한을 문의하였고 상담사는 신규 통장 개설일 이후 전체 조회 가능, 달력 선택, 직접 입력 안내, 저장, 이메일 전송 방법, 인증 번호 입력 및 공공 와이파이 사용 자제, 조회 횟수 제한 없음, 시스템 점검 시 제한될 수 있음을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_004659",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1062,
+        "consulting_content": "고객은 대출 연장 문자를 받고 설치 없이 전화로 연장을 원한다며 본인 확인 절차와 서류 필요 여부를 물었고, 상담사는 계좌, 비밀번호 확인 후 별도 서류 없이 전화 연장이 가능하고 이자율 변동을 안내하며 연장 완료 시 문자, 이메일로 통보하고, 오늘 오후에 연락드리겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

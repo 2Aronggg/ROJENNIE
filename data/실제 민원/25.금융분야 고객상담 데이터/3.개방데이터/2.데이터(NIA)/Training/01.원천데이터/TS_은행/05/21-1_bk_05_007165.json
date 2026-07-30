@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_007165",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1333,
+        "consulting_content": "고객은 한도계좌 해지를 원했으며, 급여 수령 계좌임을 확인하고 급여 소득 증빙 서류를 지참해 영업점 방문 또는 팩스 전송이 필요하다고 안내하였다. 고객은 오후 2시 방문을 예약했으며, 방문 시 서류 검토 후 해지 가능 여부를 당일 또는 며칠 내에 통보받게 될 것이라고 안내하였다. 해지 수수료는 면제이며, 잔액이 0원인지 최종 확인 후 계좌를 정리할 예정이라고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

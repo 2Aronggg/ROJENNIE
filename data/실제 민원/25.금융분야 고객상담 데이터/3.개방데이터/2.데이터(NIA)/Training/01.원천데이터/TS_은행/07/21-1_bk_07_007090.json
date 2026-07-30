@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_007090",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1307,
+        "consulting_content": "고객은 기존 주택담보대출에 연계된 청청 해지 후 재가입 시 이자 할인 혜택을 받을 수 있는지 문의하였다. 상담사는 재가입이 가능하며 기존 할인율에 연 0.2% 추가 프로모션이 적용될 수 있다고 안내하였다. 재가입 절차는 기존 청청 해지 확인 후 모바일 앱에서 신청서 작성, 필요 서류 업로드, 제출이며, 심사는 1~2일 내에 진행되고 승인 시 즉시 대출 이자에 반영된다고 설명하였다. 추가 문의 시 언제든 전화 연결 가능하다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

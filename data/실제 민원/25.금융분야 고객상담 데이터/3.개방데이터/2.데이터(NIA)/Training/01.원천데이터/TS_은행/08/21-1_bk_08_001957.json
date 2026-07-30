@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_001957",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1497,
+        "consulting_content": "고객은 마이너스 통장 만기 연장을 위해 절차, 필요 서류, 심사 결과 확인 방법, 이자율 변동 여부, 연장 거절 시 대안, 콜센터 대행 가능 여부 등을 문의했으며, 상담사는 모바일 앱과 콜센터를 통한 두 가지 연장 방법, 본인 인증 절차, 서류 제출 조건, 신용 등급별 서류 예시, 실시간 심사 결과 확인, 이자율 유지 또는 조정 여부, 대체 대출 상품 제안, 콜센터 직접 신청 지원 등에 대해 안내했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

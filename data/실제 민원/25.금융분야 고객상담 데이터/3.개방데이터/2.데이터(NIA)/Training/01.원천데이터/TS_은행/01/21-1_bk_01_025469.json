@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_025469",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1507,
+        "consulting_content": "고객은 최근 몇 달 입출금 내역 조회와 특정 금액, 날짜의 거래 확인을 요청했으며, 계좌 번호, 비밀번호, 성명, 생년월일 등 본인 인증 정보를 제공하였다. 상담사는 제공된 정보로 인증을 완료하고, 요청 기간, 금액에 해당하는 거래 내역을 조회해 입금, 지급 사실을 안내했으며, 자동이체 내역 조회와 비밀번호 변경 방법을 모바일, 인터넷 뱅킹에서 진행하도록 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

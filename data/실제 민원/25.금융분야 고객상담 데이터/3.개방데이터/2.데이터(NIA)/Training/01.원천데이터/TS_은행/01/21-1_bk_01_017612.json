@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_017612",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1830,
+        "consulting_content": "고객은 계좌 잔액 조회를 요청하고 통장 번호, 생년월일, 비밀번호 등 여러 정보를 제공했으며, 상담사는 정보 확인을 위해 번호 재입력, 신원 검증을 요청하고, 시스템 점검으로 조회 지연을 안내한 뒤 비밀번호 입력 절차를 안내하고, 최종적으로 보안 검증 및 추가 안내를 제공하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_021751",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1059,
+        "consulting_content": "고객은 자동이체 시작일과 진행 여부를 확인하고 중단, 변경 방법 및 수수료를 문의하였고 상담사는 이체가 다음달 ●일부터 매월 지정일에 실행되며 주말인 경우 전 영업일에 인출된다고 안내하고, 중단은 요청 시 즉시 반영, 변경은 날짜, 금액 지정으로 가능하다고 설명하고, 기본 수수료는 없고 은행 간 이체 시 소정 수수료가 발생할 수 있음을 알려주었다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_032177",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1577,
+        "consulting_content": "고객은 입출금 내역 중 지점 표시가 안 된 항목과 자동이체 출금 내역을 확인하고자 계좌 번호와 비밀번호를 제공하였고 상담사는 거래 내역을 조회해 해당 자동이체가 고객 설정임을 확인하고 날짜, 금액을 안내하여 문의를 해결하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

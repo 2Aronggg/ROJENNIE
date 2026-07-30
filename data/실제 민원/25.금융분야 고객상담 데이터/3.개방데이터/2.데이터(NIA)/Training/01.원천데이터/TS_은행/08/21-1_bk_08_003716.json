@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_003716",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1118,
+        "consulting_content": "고객은 대출 연장을 신청하고 계좌 번호, 비밀번호 등 본인 확인 정보를 제공하였고, 서류 제출 방법과 필요 서류를 문의하였다. 상담사는 신분증, 급여내역, 대출계약서, 주민등록등본 등 4가지 서류를 안내하고, 방문 없이 택스로 송부 가능함을 설명했으며, 연장 승인 결과는 영업일 2~3일 내에 통보하고, 담당자와의 연락 메모를 남겨 추후 콜백을 약속하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

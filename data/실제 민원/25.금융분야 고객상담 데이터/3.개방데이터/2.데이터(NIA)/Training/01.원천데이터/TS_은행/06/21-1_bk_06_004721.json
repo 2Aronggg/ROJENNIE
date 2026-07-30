@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_004721",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1540,
+        "consulting_content": "고객은 대출 연체 문의를 위해 계좌, 비밀번호 등 본인 확인 정보를 입력하였고 상담사는 확인 후 연체 사실을 안내하였다. 고객은 납부 일정과 가상계좌 문제를 설명하였고 상담사는 해당 일정대로 납부하면 된다고 답했다. 고객은 채무조정 가능 여부와 신청 절차를 물었으며 상담사는 지점 방문, 제출이 필요하고 온라인은 제한적이라고 안내하였다. 고객은 연체 이자율을 문의했고 상담사는 연 15% 수준이라 설명했으며, 명세서 문자를 요청하자 상담사는 발송을 완료하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

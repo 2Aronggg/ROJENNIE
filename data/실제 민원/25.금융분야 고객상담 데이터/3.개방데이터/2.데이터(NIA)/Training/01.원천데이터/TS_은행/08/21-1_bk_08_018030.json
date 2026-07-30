@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_018030",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1129,
+        "consulting_content": "고객은 대출 연장 관련 부재중 전화를 받고 은행 방문을 계획하며 본인 확인 및 계좌 비밀번호 입력을 시도했으며 연장 절차와 준비 서류 안내를 요청하였다. 상담사는 고객의 신원 확인을 위해 정보와 비밀번호 입력을 요구하고, 연장은 앱에서 가능함을 설명하고, 방문 시 신분증, 계약서 지참을 안내하며, 문자로 상세 안내를 보내겠다고 전달하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

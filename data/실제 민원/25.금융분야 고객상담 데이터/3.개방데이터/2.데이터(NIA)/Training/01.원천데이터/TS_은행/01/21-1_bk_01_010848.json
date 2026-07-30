@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_010848",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1064,
+        "consulting_content": "고객은 본인 계좌의 입금내역을 확인하고자 문의했으며, 특정 연도와 기간 동안 총 네 건의 입금 내역과 각 입금 날짜 및 금액을 안내받았고, 추가로 타행 이체 건은 처리 중임을 안내받았다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

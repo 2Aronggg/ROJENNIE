@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_007772",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1301,
+        "consulting_content": "고객은 부수거래 감면 적용과 금리 변동을 문의하였다. 상담사는 급여 영점 사 프로만 충족돼 기본 금리 2.5%에서 0.3% 할인된 2.2%가 이번 달부터 적용된다고 안내하였다. 추가 0.2% 할인을 위해서는 적립식에 일정 금액 이상 예치하거나 제휴 카드 월 30만원 사용 실적이 필요하다고 설명하였다. 적립식 종류와 금리를 간략히 안내하고, 목표달성형과 카드 실적을 동시에 충족하면 추가 할인이 겹쳐 적용된다고 전달하였다. 연락처 변경은 모바일 앱 고객 정보 관리 메뉴에서 가능하며, 내일 같은 시간에 재연락 및 최신 혜택 안내를 약속하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

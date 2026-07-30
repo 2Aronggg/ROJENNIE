@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_018525",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1056,
+        "consulting_content": "고객은 상담원에게 계좌 해지를 원하고 필요한 서류와 절차를 문의하였고 상담사는 고객에게 신분증, 통장, 통장 도장이 필요하다고 안내하고 영업점 방문 심사를 권유했으며, 잔액은 다른 계좌로 이체 가능하다고 설명하였다. 전체 계좌 해지도 안내해주었다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

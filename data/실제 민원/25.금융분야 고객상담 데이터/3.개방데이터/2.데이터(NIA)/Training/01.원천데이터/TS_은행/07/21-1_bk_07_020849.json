@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_020849",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 894,
+        "consulting_content": "고객은 대출 금리와 자산 우대 적용 여부를 문의하였고 상담사는 계좌, 성명, 생년월일을 확인하고, 대출이 신규로 진행 중이며 현재 모든 감면이 적용돼 예상 상환액을 안내하겠다고 하였으며, 고객은 추가 문의 없음을 밝히고 문자 기록 전송을 요청하였고 상담사는 이를 승인하고 상담을 종료하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

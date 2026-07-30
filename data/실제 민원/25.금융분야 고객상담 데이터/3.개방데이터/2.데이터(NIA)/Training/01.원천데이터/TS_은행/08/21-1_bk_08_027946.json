@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_027946",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1228,
+        "consulting_content": "고객은 대출 만기 도래와 연장 여부, 연장 수수료 및 조기 상환 위약금에 대해 문의하였고 상담사는 연장은 앱 신청 필요와 수수료는 문자로 안내, 위약금은 계약서 기준이며 신분증, 소득증빙 서류를 팩스, 영업점 제출하도록 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

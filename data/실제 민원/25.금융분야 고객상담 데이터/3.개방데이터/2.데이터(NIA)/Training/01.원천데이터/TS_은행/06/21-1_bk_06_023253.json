@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_023253",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1619,
+        "consulting_content": "고객은 가상계좌 번호와 입금액을 문자로 요청했고 상담사는 ARS, SMS 인증과 비밀번호 입력을 안내하였다. 고객은 본인 확인 정보와 휴대폰 번호를 제공해 인증을 완료했고 상담사는 입금 마감 시각과 일회성 가상계좌 금액을 안내하였다. 고객은 ★★카드 결제를 원했고 상담사는 카드사는 직접 연결해야 한다며 자동이체 중지는 모바일 앱, 전화 상담으로 가능하다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

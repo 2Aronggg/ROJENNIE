@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_021448",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1200,
+        "consulting_content": "고객은 전세자금 대출 서류 비대면 제출 여부와 처리 일정, 상환 일정, 금리 변동, 조기 상환 절차를 물었고 상담사는 이름, 계좌, 생년월일, 비밀번호 확인 후 서류가 자동 스크래핑으로 접수돼 진행 중이며 추가 서류 시 연락 예정이라고 안내하고, 상환은 매월 말 자동 이체, 금리는 고정, 변동 가능성은 정책에 따르고, 조기 상환은 영업점 방문, 전화 신청 가능하고 수수료가 발생할 수 있음을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_021633",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 764,
+        "consulting_content": "고객은 일일 한도 계좌 변경 및 제한 해제를 원했으며 모바일에서 대상 아님 메시지를 받았고, 상담사는 최신 앱 업데이트 후 시도 권고와 서류 제출, 심사 절차 안내, 검토 기간 3~5일, 비용 없음이라고 안내했으며, 고객은 최종적으로 진행을 포기하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

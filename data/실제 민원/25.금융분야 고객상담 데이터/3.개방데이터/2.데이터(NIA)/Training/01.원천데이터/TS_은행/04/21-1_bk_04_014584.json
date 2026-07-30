@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_014584",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1923,
+        "consulting_content": "고객은 만기된 금리확정형 예금의 원금, 이자 및 세금 적용 금액을 확인하고 차이 설명을 요청하였고 상담사는 원금, 세전 이자 금액을 안내하고 세후 계산 방식과 차이점을 설명하였다. 고객은 또한 신규 고정, 변동 금리 적금 특징과 자동 이체 설정 방법을 문의하였고 상담사는 각 적금의 금리 적용 방식과 자동 이체 절차를 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

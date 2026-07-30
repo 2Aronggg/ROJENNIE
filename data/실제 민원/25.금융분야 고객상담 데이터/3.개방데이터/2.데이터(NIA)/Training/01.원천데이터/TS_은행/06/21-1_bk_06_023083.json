@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_023083",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1526,
+        "consulting_content": "고객은 연체 대출 금액을 입금하고자 하였고, 통장이 오후에 풀릴 예정이라 입금 시점과 자동 출금 여부를 문의하였으며, 가상계좌 발급 및 본인 확인 절차를 요청하였다. 상담사는 가상계좌 정보를 제공하고 24시간 사용 제한, 일회성 사용, 이중 출금 가능성을 안내하며, 성명, 생년월일, 계좌 비밀번호 등 본인 확인을 요구하고, 입금 완료 시 문자로 내역을 전송하겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

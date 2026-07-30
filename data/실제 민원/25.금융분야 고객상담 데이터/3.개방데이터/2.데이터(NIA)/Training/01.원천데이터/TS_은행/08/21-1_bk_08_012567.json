@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_012567",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 762,
+        "consulting_content": "고객은 대출 연장 확인을 요청하고 계좌, 주민번호 등 정보를 제공하였고 상담사는 마이너스 통장 대출이 연장됐으며 금리는 동일하고 다음 달 말부터 원리금 자동 이체가 시작된다고 안내하였다. 고객은 상환 일정과 금액 확인을 문의하였고 상담사는 매월 말 자동 이체와 온라인 조회 가능함을 설명하였다. 고객은 추가 문의 없음을 확인하고 상담사는 필요 시 연락을 권유하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

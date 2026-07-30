@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_001415",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1164,
+        "consulting_content": "고객은 홈쇼핑 결제 취소 후 환불 입금이 확인되지 않아 문의하며 마이너스 한도가 얼마인지 문의했고, 상담원은 카드사와 은행의 정산 절차 및 승인처리 기간, 마이너스 통장 연동 상황, 재구매 방법 및 필요한 서류 등을 안내하며 온라인 뱅킹 조회 방법에 대해서도 설명했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

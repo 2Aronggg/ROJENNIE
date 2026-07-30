@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_014090",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1244,
+        "consulting_content": "고객은 비상금 대출 연장을 시도했으나 시스템 오류로 진행이 안 된다고 하였고 상담사는 연장은 ★★ 어플에서 진행해야 하며, 개인사업자 등록 해제와 폐업 증명서, 신분증을 영업점에 제출하도록 안내하였다. 고객은 서류 발급 의사를 밝히었고 상담사는 홈택스에서 해제 증명서 발급 방법과 연장 처리 소요 시간 1~2일을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

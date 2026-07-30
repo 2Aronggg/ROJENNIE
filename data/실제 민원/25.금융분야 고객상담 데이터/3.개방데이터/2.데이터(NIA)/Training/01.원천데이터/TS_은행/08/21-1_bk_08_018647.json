@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_018647",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1273,
+        "consulting_content": "고객은 마이너스 통장 대출 연장을 요청하고 현재 한도, 잔액을 문의하였고 상담사는 계좌, 주민번호 인증 후 연장 가능 시기와 모바일 앱 신청 방법을 안내하였으며, 연장 신청은 만기 전 지정 기간에 하면 수수료 없이 가능하고 금리 변동 가능성을 알려주었고, 연장 승인 여부는 문자와 앱 알림으로 전달된다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

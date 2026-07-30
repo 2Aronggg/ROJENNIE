@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_023780",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 883,
+        "consulting_content": "고객은 주거래 은행을 변경하면서 기존 자동이체를 새 은행으로 옮기고 싶다고 요청했으며, 상담사는 전화로는 계좌 이동이 불가하므로 스마트폰 앱 이용이나 지점 방문을 안내하고, 전력회사와 자동차 할부는 각각 해당 기관에 직접 연락하거나 방문, 우편 신청해야 한다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

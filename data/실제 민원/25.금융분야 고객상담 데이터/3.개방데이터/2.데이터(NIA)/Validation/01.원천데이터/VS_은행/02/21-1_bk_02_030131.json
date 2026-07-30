@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_030131",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 892,
+        "consulting_content": "고객은 ★★은행 통장에 모르는 사람으로부터 입금된 금액에 대해 중계요청을 하였고, 계좌번호, 예금주, 입금일, 금액을 제공하였다. 상담사는 계좌와 입금 내역을 확인하고, 중계 요청 처리 예상 시간을 영업일 기준 며칠 이내로 안내하며 진행 상황을 문자로 알려드리겠다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

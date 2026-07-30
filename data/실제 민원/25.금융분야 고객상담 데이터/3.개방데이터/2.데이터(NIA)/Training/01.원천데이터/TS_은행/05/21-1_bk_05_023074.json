@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_023074",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1565,
+        "consulting_content": "고객은 앱 이체 시 한도 초과로 전송 금액이 제한됐다고 문의하였고 상담사는 해당 계좌가 거래 한도 계좌임을 안내하고, 급여, 통장 목적 서류를 팩스로 제출해 심사받을 것을 권유하였다. 고객은 서류 발송 방법과 문자 안내를 요청하였고 상담사는 문자로 상세 안내하고, 한도 해제는 영업점 방문 심사 후 가능하다고 설명하였다. 고객은 오늘 4시 방문 예약을 요청하였고 상담사는 예약을 확정하고 신분증, 위임장 지참을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

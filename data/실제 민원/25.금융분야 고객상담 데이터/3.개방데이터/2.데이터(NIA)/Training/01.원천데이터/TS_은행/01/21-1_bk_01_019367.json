@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_019367",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1380,
+        "consulting_content": "고객은 입금 계좌 번호, 일시, 금액을 알려 확인을 요청하였고 상담사는 입금이 정상 처리됐으며 계좌가 고객 명의와 일치함을 안내하였다. 고객은 문자 알림 서비스 상태를 문의하였고 상담사는 수수료 미납으로 서비스가 중단됐으며 납부 후 자동 복구된다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

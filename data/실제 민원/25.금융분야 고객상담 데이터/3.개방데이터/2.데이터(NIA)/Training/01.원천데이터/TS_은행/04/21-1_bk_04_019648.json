@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_019648",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1101,
+        "consulting_content": "고객은 중도 해지를 원하고 타행 입금 가능 여부와 이자 차액, 위약금, 수수료를 확인하고자 하였으며, 상담사는 모바일 앱 해지 절차와 영업일 기준 입금, 원계좌 입금 가능함을 안내하고, 타행 이체는 별도 절차와 금액에 따라 변동되는 수수료가 발생한다는 점을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

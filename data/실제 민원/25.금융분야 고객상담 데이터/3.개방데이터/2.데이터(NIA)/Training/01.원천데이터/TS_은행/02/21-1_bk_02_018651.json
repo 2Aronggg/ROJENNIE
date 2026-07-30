@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_018651",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1030,
+        "consulting_content": "고객은 문자 알림 의심 거래 확인을 요청하고 주민등록번호와 휴대폰을 제공하였고 상담사는 해당 송금은 고객이 거부한 것으로 판단해 조치가 필요 없다고 안내하였다. 고객은 거래 상세 내역을 원했으며 상담사는 필요 시 재확인 절차를 제안하였다. 고객은 예금 상품의 종류와 금리, 기간을 문의했고 상담사는 정기, 자유입출금, 우대예금 등 주요 상품을 설명하였다. 고객은 연금 계좌의 세금 우대와 자동 이체 설정을 물었고 상담사는 신청 절차와 방문 예약 가능성을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_020621",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 692,
+        "consulting_content": "고객은 모바일로 대출 연장을 진행하려 했으나 방법을 몰라 문의했다. 상담사는 본인 확인 절차를 거쳐 고객의 대출이 ●월 ●●●일 만기 연장 건이며 비대면 전용 상품임을 확인했다. 유선상으로는 처리가 불가하며 모바일 어플을 통해서만 직접 연장이 가능하다고 안내했다. 이에 고객의 휴대폰 번호로 모바일 앱 내 연장 신청 경로를 문자로 즉시 발송해 드리며 직접 진행하도록 안내했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_019142",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1401,
+        "consulting_content": "고객은 모바일 입출금 조회와 문자통지 서비스, 즉시 알림 여부, 최근 3건 출금 내역, ★★은행 송금 입금 확인, 잔액 차이 등을 문의하였고 상담사는 앱 조회 방법, 문자 알림 설정, 즉시 알림 확인, 출금 상세, 송금 금액, 입금 시각, 시스템 반영 지연 및 24시간 이내 반영 안내 등으로 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

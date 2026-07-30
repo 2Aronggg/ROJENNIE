@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_017374",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1537,
+        "consulting_content": "고객은 예상치 못한 입금 사실을 확인하고 사기 여부를 문의하였고 상담사는 계좌와 입금 내역을 조회하여 송금인 OOO 님임을 안내하고, 필요 시 은행 고객센터 중계 서비스를 이용하도록 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

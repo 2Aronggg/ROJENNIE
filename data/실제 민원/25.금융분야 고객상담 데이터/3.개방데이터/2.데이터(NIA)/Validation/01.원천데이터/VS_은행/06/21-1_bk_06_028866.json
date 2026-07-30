@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_028866",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1088,
+        "consulting_content": "고객은 적립 포인트를 대출 상환에 사용하고 싶다고 요청했으며, 계좌 번호와 비밀번호 입력에 어려움을 겪어 다른 인증 방법을 요구했다. 상담사는 계좌 확인 절차를 안내하고, 키패드 오류를 설명한 뒤 문자 인증을 제안하여 인증 코드를 전송하고, 인증 완료 후 대출 상환 및 포인트 적립 절차를 안내하겠다고 답변했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

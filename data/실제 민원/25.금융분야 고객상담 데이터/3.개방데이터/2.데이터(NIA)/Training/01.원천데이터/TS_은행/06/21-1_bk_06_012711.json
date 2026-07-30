@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_012711",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 938,
+        "consulting_content": "고객은 대출 이자 자동 출금 내역 및 향후 정기 출금 일정에 대해 문의하였고 상담사는 거래 내역을 조회하여 자동 이체가 대출 이자와 연관됨을 확인하고 다음 출금 일자를 안내하며 추가 문의 시 FAQ를 참고하도록 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

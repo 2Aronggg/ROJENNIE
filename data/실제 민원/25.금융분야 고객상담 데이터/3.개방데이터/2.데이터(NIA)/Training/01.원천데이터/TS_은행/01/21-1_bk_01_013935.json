@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_013935",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1216,
+        "consulting_content": "고객은 타은행으로 이체된 출금 내역 확인을 요청하였고 상담사는 해당 거래가 고객 명의 체크카드 사용에 의한 승인된 출금임을 안내하였다. 고객은 이의제기 절차와 예방 방법, 카드 사용 현황 보고를 요청하였고 상담사는 전화 접수 후 서면 증빙 제출, 3일 이내 조사 안내와 알림, 비밀번호 변경, 거래 차단 권고하고 최근 30일 사용 내역, 잔액, 이용한도 제공을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

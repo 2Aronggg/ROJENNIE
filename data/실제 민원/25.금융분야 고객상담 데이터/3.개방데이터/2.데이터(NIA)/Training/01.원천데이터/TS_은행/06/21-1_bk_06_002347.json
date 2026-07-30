@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_002347",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 988,
+        "consulting_content": "고객은 원금 분할 상환 일정 문자를 받고 매월 납부 금액, 지원금 적용 시 이자율, 조기상환 등에 대해 문의하였다. 상담사는 고정 금리와 원리금 균등 상환 방식, 이자 금액 지원금 적용 후 납부 금액, 조기 상환 시 위약금 적용, 잔액 부족 시 자동연체 처리 진행, 연체 수수료 부과 등을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

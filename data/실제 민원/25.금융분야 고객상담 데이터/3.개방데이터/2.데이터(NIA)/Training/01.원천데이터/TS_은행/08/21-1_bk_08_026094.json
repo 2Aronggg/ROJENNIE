@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_026094",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1086,
+        "consulting_content": "고객은 전세 대출 만기 연장을 문의하고 문자 미수신 및 담당자 연결 여부를 확인하였고, 서류 제출 방법과 이자율 변동을 질문하였다. 상담사는 만기일을 확인하고 연장 심사 절차와 필요 서류 및 모바일 앱, 이메일 제출 방법을 안내했으며, 제출 후 확인 메일 발송과 금리 유지 조건 및 변동 가능성을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

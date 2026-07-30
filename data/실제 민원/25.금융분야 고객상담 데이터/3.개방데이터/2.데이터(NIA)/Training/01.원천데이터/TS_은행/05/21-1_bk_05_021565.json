@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_021565",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1432,
+        "consulting_content": "고객은 인터넷뱅킹 송금 한도 해제를 요청하고 급여통장 사용 사실을 알렸으며, 한도 변경 경로와 방문, 팩스, 디지털 인증 등 3가지 방법을 문의했고, 상담사는 현재 한도와 정책을 설명하고 어플 경로를 문자로 보내며, 재직증명서 지참 방문 또는 팩스 발송, 디지털 인증 절차를 안내하고 처리 기간은 영업일 2~3일이며 수수료는 없다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

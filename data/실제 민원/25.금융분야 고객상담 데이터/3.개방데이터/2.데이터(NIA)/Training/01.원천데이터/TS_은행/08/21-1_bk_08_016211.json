@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_016211",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 907,
+        "consulting_content": "고객은 전세 대출 연장을 문의하고 계좌번호, 성명, 생년월일을 제공하였고, 서류 없이 자동 연장이 가능한지 확인을 원하였다. 상담사는 방문 없이 연장은 불가하고 영업점에 서류를 제출해야 하며, 제출 후 2~3일 심사, 5일 이내 결과 안내, 이자율 유지와 추가 수수료 없음을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

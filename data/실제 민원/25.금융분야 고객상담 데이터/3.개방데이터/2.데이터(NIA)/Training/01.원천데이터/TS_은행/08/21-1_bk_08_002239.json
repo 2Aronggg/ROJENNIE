@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_002239",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1059,
+        "consulting_content": "고객은 대출 만기 연장을 요청을 위해 본인 확인 절차를 거친 뒤 연장 심사 진행 상황과 절차를 문의했다. 상담원은 금리 산정 방식, 전자 계약서 작성 방법, 기존 자동 이체 유지 여부, 추가 서류 필요성 및 심사 소요 시간 등에 대해 안내했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

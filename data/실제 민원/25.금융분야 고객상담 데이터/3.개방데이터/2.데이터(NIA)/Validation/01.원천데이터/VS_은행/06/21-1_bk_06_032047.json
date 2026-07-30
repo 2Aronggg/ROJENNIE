@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_032047",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 992,
+        "consulting_content": "고객은 대출 이자 금액 및 월별 상환액을 문의하고, 가상계좌 발송 및 입금 절차를 요청했으며, 입금 수수료와 확인 문자 여부를 물었다. 상담사는 현재 이자, 상환액 확인은 진행 중이라 안내하고, 가상계좌를 휴대폰으로 발송하며 입금 기한과 일회성 사용을 설명하고, 수수료는 없으며 입금 시 문자와 앱 확인이 가능하다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

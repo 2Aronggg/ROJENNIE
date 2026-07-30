@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_030975",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1595,
+        "consulting_content": "고객은 대출 연장 필요 시점을 확인하고 연장 안내 미수신을 문의했으며, 계좌, 생년월일, 비밀번호를 제공하였다. 상담사는 연장 만기일을 확인하고 연장 절차와 조건, 필요 서류 및 금리 변동 조항을 안내했으며, 추가 서류 제출이 없음을 알려주었다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

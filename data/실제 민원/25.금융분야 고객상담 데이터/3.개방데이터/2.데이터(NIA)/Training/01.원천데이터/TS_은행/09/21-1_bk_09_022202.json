@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_022202",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 994,
+        "consulting_content": "고객은 외화 잔액, 한도와 ATM 인출, 수수료, 환전 서류, 시간 등을 문의하였고 상담사는 잔액, 한도 확인, 수수료 안내, 우대 환율, 해외 출금, 지점 환전, 필요 서류, 시간을 설명하였다. 고객은 오후 상담 예약, 문자 URL 전송을 요청했고 상담사는 전화, 채팅 예약, 문자 전송을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_028597",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 673,
+        "consulting_content": "고객은 오늘 만기인 마이너스 대출 연장을 요청했고 상담사는 앱에서 연장 신청 방법을 안내하고, 연장 경로를 문자와 이메일로 발송하며 승인 결과는 문자, 앱 알림으로 알려진다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

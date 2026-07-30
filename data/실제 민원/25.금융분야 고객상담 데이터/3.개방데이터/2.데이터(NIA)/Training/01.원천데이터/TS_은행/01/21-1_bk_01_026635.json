@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_026635",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1383,
+        "consulting_content": "고객은 과거 거래내역을 엑셀 파일로 이메일 전송받고자 요청하였고 상담사는 앱 내 ‘거래내역 간편 전송’ 메뉴 이용 방법을 안내하고 계좌, 이름, 이메일 입력 후 전송 절차를 설명하였다. 또한 고객은 보안 알림 설정 방법을 문의하였고 상담사는 어플 설정에서 ‘계좌 보안’ 알림을 켜는 단계와 비밀번호 주기 변경을 권고하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

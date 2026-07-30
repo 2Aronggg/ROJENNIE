@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_010413",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "신규고객",
+        "consulting_client_type": null,
+        "source_length": 1573,
+        "consulting_content": "고객은 신규 통장을 한도계좌로 개설하고 전환 절차와 필요 서류, 지점 정보, 신청 방법을 문의하였고 상담사는 급여 입금 실적 확인 후 자동 전환 및 온라인 전환 신청 방법, 재직증명서 제출 방법, 해당 지점 주소, 전화번호를 문자로 제공한다는 안내를 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

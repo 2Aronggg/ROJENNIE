@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_003133",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 856,
+        "consulting_content": "고객은 신용대출 이자 우대를 카드 결제 실적으로 받고 싶다며 실적 기준과 추가 확인 사항, 자동이체 유지 여부, 필요 서류를 문의하였고 상담사는 실결제 금액 기준 적용, 연체, 잔액 검토, 자동이체 시 조건 충족, 신분증, 급여내역, 카드 실적증명서 제출을 안내하고 확인 후 본부와 협의해 연락드리겠다고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

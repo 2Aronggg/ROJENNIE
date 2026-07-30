@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_005173",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1280,
+        "consulting_content": "고객은 비상금대출 연장을 문의하였으며, 상담원은 대출 만기일 전 부터 어플에서 대출 연장 신청이 가능하고 기존 이자율 유지 여부 및 연장 승인 소요 시간에 대해서도 설명했다. 상담원은 또한 어플을 통한 남은 원금 및 이자, 월 상환액 확인 및 상환 방식 변경 절차를 설명하고, 신용대출 상품 및 조기상환 수수료 없는 상품을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_016227",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 911,
+        "consulting_content": "고객은 대출 연장 시 금리 감면 체크 누락 여부를 문의하였고 상담사는 우대 금리, 부수거래 감면은 실적만 있으면 자동 유지되며 체크는 필요 없다고 안내하였다. 고객은 계약서 체크란이 남은 것을 확인했으며 상담사는 신규 시 체크 권장하지만 연장 시 실적 여부에 따라 감면 적용 여부가 결정된다고 설명하였다. 고객은 자동이체 설정으로 감면 유지가 가능함을 확인하였고 상담사는 별도 신청 없이 자동이체로 유지된다고 재확인하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

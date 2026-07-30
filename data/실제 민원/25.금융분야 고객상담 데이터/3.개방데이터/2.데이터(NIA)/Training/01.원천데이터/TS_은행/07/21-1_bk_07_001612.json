@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_001612",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1877,
+        "consulting_content": "고객은 우대 금리 적용 조건을 문의하고 계좌, 비밀번호 확인을 시도했으나 오류 초과로 재등록 안내를 받았으며, 상담사는 자동이체 금액 기준, 한도와 예금 상품, 개설 서류를 설명하고, 비밀번호 재등록 방법을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

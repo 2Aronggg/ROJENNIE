@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_005381",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1213,
+        "consulting_content": "고객은 현재 아파트 구입 자금 대출의 연체 금액을 가상 계좌로 입금해 전액 상환하고자 하였으며, 남은 원금, 이자 계산 및 자동 이체 설정 방법을 문의하였다. 상담사는 연체 금액을 먼저 해소해야 전액 상환이 가능하다고 안내하고, 가상 계좌 번호를 문자로 발송했으며, 입금 확인 후 잔액 산출 및 상환 절차를 안내하겠다고 밝혔다. 또한 자동 이체는 은행 앱의 ‘대출 관리’ 메뉴에서 설정 가능하다고 설명하고, 연체가 신용 등급에 영향을 줄 수 있음을 알렸다. 추가로 신규 대출 상품 및 금리 변동 정보를 원하면 추후 상담 예약이 가능하다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

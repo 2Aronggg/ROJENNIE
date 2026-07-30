@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_025280",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1092,
+        "consulting_content": "고객은 특례 아파트 대출 상환 금액이 실제와 다르다며 상세 산출과 차액 발생 시점을 문의하였고 상담사는 계좌 정보를 받아 이자, 원금 계산 방식을 설명하고, 차액 원인과 연체, 조기상환 수수료 여부를 확인한 뒤 조기 상환 시 남은 원금에 현재 금리를 적용해 일시불 납부하면 된다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

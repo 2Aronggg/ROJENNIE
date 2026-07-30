@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_021478",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1272,
+        "consulting_content": "고객은 기존 통장을 재개설하고 인터넷 이체 한도 해제를 시도했으나 앱에서 ‘한도 제한 해제 대상이 아닙니다’ 메시지가 표시돼 비대면 해지가 불가하다고 판단했으며, 상담사는 앱 내 한도 해지 절차를 안내하고 필요 서류를 지점 방문 또는 팩스로 제출하도록 권유하고, 서류 전송 후 1~2일 내 검토 결과를 연락드리겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

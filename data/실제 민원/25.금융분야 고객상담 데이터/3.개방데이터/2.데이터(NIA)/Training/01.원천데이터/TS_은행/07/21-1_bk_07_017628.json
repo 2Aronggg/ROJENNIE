@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_017628",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 928,
+        "consulting_content": "고객은 대출 부수거래 회수 시기와 적금 최소 금액, 우대 혜택 조건, 청약 금액 및 시작 시점을 문의하였고 상담사는 회수 시기 안내, 최소 적금 ●●원 및 우대 조건 설명, 청약 필요 금액, 서류 및 이체 시작 시점을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

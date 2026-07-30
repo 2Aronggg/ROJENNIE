@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_032097",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1528,
+        "consulting_content": "고객은 자동이체 보험료 미처리 문제를 제기하고 계좌, 생년월일, 비밀번호 등 본인 확인 정보를 제공했으며, 추가 자동이체 내역과 납부자 번호를 알려 주었다. 상담사는 신원 확인 후 시스템 조회를 진행해 두 건의 자동이체 중 하나가 정상 처리되지 않음을 확인하고, 조치를 약속하며 영업일 1~2일 소요를 안내하고, 결과를 문자로 전달하겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

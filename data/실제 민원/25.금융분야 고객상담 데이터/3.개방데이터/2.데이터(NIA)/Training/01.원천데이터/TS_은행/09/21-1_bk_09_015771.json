@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_015771",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1874,
+        "consulting_content": "고객은 홍콩달러 환전을 원하고 금액, 한도, 수수료, 앱 이용 방법, 지점 재고, 신분증 제출 등을 문의하였고 상담사는 환전 가능 여부와 일일 최대 5,000달러 한도, 기본 수수료 대비 0.1% 우대 수수료, 스마트폰 뱅킹 이용 절차와 실시간 환율 확인 방법, 지점 재고 확인 및 사전 예약 권장, 최소 거래 금액 10,000원 및 신분증 제시 필요 등을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

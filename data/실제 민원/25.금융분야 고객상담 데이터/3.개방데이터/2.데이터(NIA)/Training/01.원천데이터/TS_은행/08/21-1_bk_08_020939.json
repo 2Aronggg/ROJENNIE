@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_020939",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1279,
+        "consulting_content": "고객은 모바일 앱에서 대출 연장을 시도했으나 화면에 진행 상황이 표시되지 않아 연장이 안 된다고 문의하였고 상담사는 연장이 미처리 상태임을 안내하고, 연장 절차 경로와 한도, 이자율을 설명한 뒤 실시간 승인 소요 시간과 앱 업데이트 필요성을 알려 주었으며, 업데이트 후에도 문제 시 서버에서 직접 연장을 진행하겠다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

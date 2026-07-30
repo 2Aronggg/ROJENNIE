@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_011278",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 814,
+        "consulting_content": "고객은 최근 청약 신청 시 발생한 미확인 ●●원 출금이 가족에 의해 이루어진 것으로 추정된다고 신고하였고 상담사는 계좌, 비밀번호 확인 후 거래내역을 조회하고, 해당 출금이 카드 결제와 연관될 수 있음을 안내하며 이중 문자 수신 가능성을 설명하고 비밀번호 변경을 권고하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

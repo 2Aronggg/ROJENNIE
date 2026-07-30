@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_023327",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1503,
+        "consulting_content": "고객은 한도 해제를 위해 서류 제출, 지점 방문 절차와 다른 지점에서도 가능한지 문의했으며, 어플을 통한 신청 방법과 파일 형식, 제출 기간을 물었고, 상담사는 영업점 방문, 팩스, 원격 상담 모두 가능하고 지정 지점에 국한되지 않으며, 어플에서 ‘한도 관리’→해제 신청→PDF, JPEG 첨부 후 영업일 2~3일 내 검토, 결과 안내한다는 안내를 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

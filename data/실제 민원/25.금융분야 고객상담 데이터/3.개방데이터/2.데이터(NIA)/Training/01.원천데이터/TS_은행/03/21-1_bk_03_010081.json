@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_010081",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1106,
+        "consulting_content": "고객은 현재 은행의 자동이체를 전부 새로운 계좌로 옮기고 싶으며 절차, 수수료, 기간, 필요 서류를 문의하였고 상담사는 계좌 이동 서비스가 무료이며 계약 해지 시 위약금이 있을 수 있다고 안내하고, 처리 기간은 영업일 3~5일, 신분증, 계좌 확인서, 자동이체 계약서 사본 등이 필요하다고 설명하고, 모바일 앱 ‘계좌 이동’ 메뉴 이용 또는 영업점 방문으로 진행하도록 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

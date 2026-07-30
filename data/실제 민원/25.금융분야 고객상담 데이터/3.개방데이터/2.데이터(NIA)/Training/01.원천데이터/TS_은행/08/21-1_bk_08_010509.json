@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_010509",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1108,
+        "consulting_content": "고객은 신용대출 한도와 연장 가능을 문의하였고 상담사는 한도 증액은 신규 모바일 신청만 가능하고 연장은 만기 30일 전 신청 후 심사 결과에 따라 가능하다고 안내하였다. 고객은 모바일에서 금리, 한도가 표시되지 않아 신규 신청을 원하였고 조기 상환 수수료는 남은 원금, 기간에 따라 비율이 적용돼 현재는 낮은 비율이 적용될 예정이라고 상담사는 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

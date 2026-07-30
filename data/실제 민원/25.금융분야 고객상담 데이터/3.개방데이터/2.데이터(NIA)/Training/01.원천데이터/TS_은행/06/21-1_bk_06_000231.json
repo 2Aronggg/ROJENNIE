@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_000231",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1193,
+        "consulting_content": "고객은 연체 알림 문자를 받고 내용과 결제 방법을 문의했으며, 상담사는 연체 금액과 발생 일자를 안내하고, 온라인, 모바일 결제와 분할 상환 옵션을 설명했다. 또한 연체 해소 시 신용 등급 영향과 향후 연체 방지 알림 서비스를 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

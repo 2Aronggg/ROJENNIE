@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_029881",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1303,
+        "consulting_content": "고객은 상담원에게 입금 내역과 자유 입금 절차를 문의했으며, 상담사는 고객에게 입금은 타은행을 통해 이루어진 것으로 확인하고 사전 동의가 필요함을 안내했으며, 상세 내용은 해당은행에서는 확인불가이므로 타은행에 직접 문의하도록 권고하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

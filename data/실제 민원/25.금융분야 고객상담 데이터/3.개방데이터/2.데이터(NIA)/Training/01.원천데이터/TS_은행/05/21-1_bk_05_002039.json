@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_002039",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1094,
+        "consulting_content": "고객님, 무통장 입금 가능한 카드와 이체 한도 상향, 급여이체와 자동이체 내용에 대해 문의하였고, 상담사는 무통장 입금이 가능한 카드와 이체 한도 상향, 급여 이체가 자동으로 이루어지는지 그리고 자동이체 설정 방법과 자동이체 한도 증액 방법에 대해서 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

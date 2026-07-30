@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_008441",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1628,
+        "consulting_content": "고객은 어제 잘못된 계좌로 송금한 사실을 알리고 반환을 요청했으며, 상담사는 계좌, 금액, 거래 번호 등을 확인하고 자금 반환 신청을 접수, 처리 기간과 절차를 안내하고 결과 통보 방법을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

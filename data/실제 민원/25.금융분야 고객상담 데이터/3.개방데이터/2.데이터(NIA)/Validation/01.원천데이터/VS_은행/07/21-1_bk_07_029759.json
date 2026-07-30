@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_029759",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 495,
+        "consulting_content": "고객은 급여이체 인정 문자를 받았으며 자동 신청 여부를 문의하였고 상담사는 해당 절차가 별도 입력 없이 시스템에서 자동으로 진행되며 조건 충족 여부는 실시간 확인, 문자 안내된다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

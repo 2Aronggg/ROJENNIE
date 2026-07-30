@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_018493",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1086,
+        "consulting_content": "고객은 인터넷뱅킹에서 퇴직연금 IRP 자동이체 금액을 변경하고자 하였고 상담사는 이체 탭 → 자동이체 → 조회, 변경 메뉴에서 금액 입력 후 변경 완료를 안내하고, 변경 시 문자 알림, 월 최대 500만원 한도, 실패 시 보류, 다음 영업일 재시도, 계좌 변경은 출금계좌 변경 메뉴 이용을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

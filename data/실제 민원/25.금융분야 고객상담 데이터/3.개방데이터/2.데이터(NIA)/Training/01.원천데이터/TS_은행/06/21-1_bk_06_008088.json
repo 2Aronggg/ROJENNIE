@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_008088",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1226,
+        "consulting_content": "고객은 연체 중인 대출 상환을 위해 기존 상품을 변경하고자 하였으며, 상담원은 가상계좌와 금액을 문자로 발송하고 오늘 23시 59분까지 입금하면 연체 기록이 남지 않음을 안내하였다. 또한 금리 조정 및 상환 기간 연장 등 재조정 옵션을 설명하고, 조건에 따라 차등 적용된 금리 조정이 가능함을 문자로 제공하였다. 자동이체보다 일회성 가상계좌 직접 송금이 안전하다고 안내하고, 연체 이자는 일일 기준으로 발생한다는 점을 알렸다. 고객은 금요일까지 입금하면 이자 없이 처리된다는 안내를 받고 해당 계좌 정보를 재전송받기로 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

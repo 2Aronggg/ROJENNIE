@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_001134",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1351,
+        "consulting_content": "고객은 입금된 금액을 송금인에게 다시 보내기 위해 송금인 계좌 번호 조회 및 반환 절차를 문의하였고 상담사는 고객의 성명, 입금일, 금액, 통장 정보 등 본인 확인을 요청한 뒤 입금 내역을 확인하고, 계좌 번호 확인에 시간이 소요됨을 안내하며, 송금인에게는 은행 발송 안내문에 기재된 연락처로 연락하도록 안내하고, 처리 상황을 문자와 전화로 알려드리겠다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_028413",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 989,
+        "consulting_content": "고객은 자녀통장 자동이체를 신청했으나 금액이 출금 후 다시 입금되는 현상을 겪고 계좌, 비밀번호 확인을 위해 정보를 제공하였고, 상담사는 시스템 조회 결과 타행 자동이체가 ‘기타 수취 불가’ 사유로 반환된 것을 확인하고 해당 은행에 문의하도록 안내했으며, 자동이체 재시도는 영업일 기준 1~2일 후 가능함을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

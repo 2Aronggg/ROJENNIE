@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_012927",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 941,
+        "consulting_content": "고객은 적립식 펀드 자동이체 중단을 요청하고 환불 정책을 문의하였고 상담사는 계좌 확인 후 자동이체 시작일을 안내하고, 온라인, 전화 해지 가능 및 즉시 처리됨을 설명하고, 출금 후 7일 이내 환불 요청 시 원금, 수익 반환, 손실은 고객 부담, 수수료 발생 가능함을 안내한 뒤 해지 요청을 접수하고 문자 확인을 약속하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

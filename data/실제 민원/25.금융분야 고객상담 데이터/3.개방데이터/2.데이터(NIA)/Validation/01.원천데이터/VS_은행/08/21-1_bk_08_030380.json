@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_030380",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1221,
+        "consulting_content": "고객은 대출 연장 문의와 본인 확인 정보를 제공하였고 상담사는 계좌 확인 후 모바일 연장 진행 상황을 점검하고, 인증이 안 된 경우 문자 인증 절차와 코드 전송 번호를 안내했으며, 연장 후 금리는 변동 없음을 확인하고 최종 승인 내역을 문자, 이메일로 발송한다는 안내를 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_005234",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1600,
+        "consulting_content": "고객은 현금 미수 이자 미납 안내를 받고 이 의미와 납입 방법을 문의하였다. 상담원은 미수 이자는 아직 입금되지 않은 이자이며 계좌 확인이 필요하다고 설명하였다. 고객은 주민등록번호만으로 인증이 가능한지 물었고, 문자 인증이 어려워 음성 안내로 전환하였다. 상담원은 전화로 인증 번호를 전달하고 입력을 완료하여 일시불 납입을 진행하였다. 납입 금액은 연체 이자, 수수료 포함 55,000원이며 결제가 정상 처리되었다. 이후 재발 시 고객센터, 앱 알림 서비스를 이용하도록 안내하고, 알림 설정 방법을 단계별로 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

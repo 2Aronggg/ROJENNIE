@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_003451",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1056,
+        "consulting_content": "고객은 청약, 아이알피 자동이체 미이행을 문의했고 상담사는 시작일이 이후라 출금이 안 된 것이라 설명하고, 입금 여부와 무관함을 안내하였다. 고객은 알림 옵션 설정과 다음 달 출금일을 물었고 상담사는 알림을 활성화하고 출금일을 ●월 ●일로 알려주었다. 고객은 출금일을 15일로 변경 요청했으며 상담사는 변경을 처리하고 영업일 기준 반영될 것이라고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

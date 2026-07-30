@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_002723",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1387,
+        "consulting_content": "고객은 다른 은행 계좌로 매월 일정 금액 자동이체를 원하고 전화 신청 가능 여부, 한도, 변경, 취소 절차, 수수료, SMS 알림, 다중 수취인 등록, 보안 주의사항 등을 문의했다. 상담원은 인터넷, 스마트폰뱅킹을 통한 신청이 가능하고 통장은 필요 없으며, 한도와 수수료 정책, 변경, 취소 방법, 알림 설정, 다중 등록 방법, 보안 권고 등을 안내했다. 고객은 안내에 만족하며 추후 필요 시 재연락하겠다고 말했다"
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

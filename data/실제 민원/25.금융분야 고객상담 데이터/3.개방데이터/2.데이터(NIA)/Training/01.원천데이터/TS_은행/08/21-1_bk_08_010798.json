@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_010798",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 802,
+        "consulting_content": "고객은 대출 연장을 요청하고 번호 오류와 개인사업자 정보 변경을 문의하였고 상담사는 연장은 영업일 1~2일 소요이며 이자율 동일, 번호 오류는 재입력 요청, 개인사업자 등록이 남아 있어 방문해 신분증, 사업자등록증으로 정보 변경 후 연장을 진행하고 확인서를 이메일로 송부한다는 안내를 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

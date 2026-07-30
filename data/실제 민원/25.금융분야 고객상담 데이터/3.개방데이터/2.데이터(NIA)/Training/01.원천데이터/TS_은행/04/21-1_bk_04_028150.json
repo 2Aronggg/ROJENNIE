@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_028150",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 928,
+        "consulting_content": "고객은 중도 인출을 원한다며 앱에서 해당 메뉴가 보이지 않아 확인을 요청했고, 상담사는 로그인 확인 후 전체 계좌, 계좌 관리 메뉴에서 해지, 해지예상 조회를 이용해 인출 금액을 입력하고 해지하면 즉시 연결된 입출금 계좌로 입금된다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_010615",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1678,
+        "consulting_content": "고객은 대출 만기 연장을 위해 필요한 서류를 문의하였고 상담사는 소득 금액 증명원, 과세 표준 증명원, 국, 지방세 완납증명서 등 총 네 개를 준비하고, 인증 절차 후 지점 방문 제출하면 연장 신청이 진행된다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

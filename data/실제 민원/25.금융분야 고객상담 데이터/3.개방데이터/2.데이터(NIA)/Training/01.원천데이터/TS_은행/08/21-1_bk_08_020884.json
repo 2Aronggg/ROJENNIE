@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_020884",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1632,
+        "consulting_content": "고객은 대출 연장 절차와 한도 유지, 인출 후 연장 신청 및 당일 입금, 최소 입금액, 모바일 앱 이용, 조기 상환 방법을 문의하였고 상담사는 마이너스 통장 한도 축소 가능성을 설명하고, 한도 복구를 위해 일정 비율 인출 후 연장을 진행하도록 안내했으며, 인출 후 바로 연장 신청과 최소 입금액 충족 시 추가 입금, 서류 없이 연장이 완료되고, 모바일 앱에서도 가능하고, 조기 상환은 영업점 방문 또는 앱 신청 시 위약금 여부를 확인하도록 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

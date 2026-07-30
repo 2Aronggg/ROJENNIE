@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_025882",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 835,
+        "consulting_content": "고객은 대출 만기 연장 문의와 은행 연락 불가를 이유로 본인 확인 정보를 제공하였고 상담사는 계좌, 생년월일 확인 후 일반 시설 자금 대출 연장 가능을 안내하며, 문자에 포함된 링크 클릭 후 연장 신청 절차와 진행 상황 알림을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

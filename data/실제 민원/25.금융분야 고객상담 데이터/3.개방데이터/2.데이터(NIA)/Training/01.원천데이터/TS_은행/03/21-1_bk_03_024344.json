@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_024344",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 2483,
+        "consulting_content": "고객은 최근 자동이체 내역을 확인하고 백화점에만 등록된 불필요한 자동이체를 해지하고자 했으며, 보험 자동이체는 유지하고 싶다고 요청하였고, 상담사는 계좌, 비밀번호 확인 후 자동이체 목록을 안내하고, 백화점 자동이체 해지를 위한 인증 절차를 진행해 해지 완료를 알렸으며, 보험 자동이체는 그대로 유지된다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_021656",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1239,
+        "consulting_content": "고객은 대만달러 환전을 원하고 금액, 통화, 수수료, 환율, 필요 서류, 예약 여부를 문의했으며, 상담사는 영업점 보유량, 소량 단위 제공, 0.5% 수수료, 환율 30.45원, 신분증 외 서류 없음, 예약 시 금액 확보 가능함을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

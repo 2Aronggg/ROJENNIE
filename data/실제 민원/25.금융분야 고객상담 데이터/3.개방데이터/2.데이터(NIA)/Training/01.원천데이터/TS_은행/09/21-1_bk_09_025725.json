@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_025725",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1399,
+        "consulting_content": "고객은 대학생 신분으로 ★★ 카드를 이용해 USD 환전, 해외 결제, 충전 한도, 수수료, 학생 혜택, 발급 요건, 앱 충전 절차, 인증, 실시간 환율, 수수료 면제, 잔액 조회, 신청 서류 등을 문의하였고 상담사는 앱을 통한 외환 충전 방법, 한도, 수수료 안내, 발급 자격, 필요 서류, 인증 절차, 실시간 환율 적용 및 잔액 확인 방법을 설명하고 신청 절차를 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

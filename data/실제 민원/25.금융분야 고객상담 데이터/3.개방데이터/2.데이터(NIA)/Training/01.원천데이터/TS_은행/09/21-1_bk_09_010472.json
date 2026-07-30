@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_010472",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1159,
+        "consulting_content": "고객은 소액권 교환을 원한다고 문의하였고 상담사는 본점에서는 불가하니 지점, 제휴은행 방문을 권유하였다. 고객은 수수료와 혜택을 물었고 상담사는 별도 수수료가 없고 실시간 환율이 적용된다고 안내하였다. 고객은 일일 교환 한도와 소요 시간을 물었고 상담사는 일일 1,000달러 한도이며 즉시 처리 가능하다고 설명하였다. 고객은 공휴일 영업 여부를 확인하였고 상담사는 공휴일에는 영업하지 않으며 평일 방문을 권장하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

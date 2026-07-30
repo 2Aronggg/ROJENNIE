@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_001692",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "80세이상",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1761,
+        "consulting_content": "고객은 이름 등록 오류와 입금 확인 문제로 연장 신청을 진행하려 했으며, 입금 지연 원인, 알림 방법, 영업시간 외 연장 가능 여부, 비밀번호 재설정 절차와 잠금 정책 등을 문의했다. 상담사는 입금 확인 절차와 연장 처리 시간, 수수료 여부, 비밀번호 재설정 방법, 자동 이체 유지, 알림 채널, 재입금 및 환불 정책, 고객 정보 변경 서류 등을 안내했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

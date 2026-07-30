@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_031876",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1031,
+        "consulting_content": "고객은 두 대출 만기 연장을 요청하고 서면 계약이 처리되지 않아 확인을 요구했으며, 상담사는 연장은 최종 분할 상환 후 진행되며 일정과 수수료 내역을 문자, 이메일로 제공한다는 안내를 하였고, 고객은 문자 수신을 원하고 수수료는 연장 기간에 따라 차등 적용됨을 확인했으며, 내역서는 영업일 기준 1일 이내에 기존 이메일로 발송될 것이라며 변경을 원할 경우 통화 중 신청 가능하다고 안내받고 그대로 두겠다고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

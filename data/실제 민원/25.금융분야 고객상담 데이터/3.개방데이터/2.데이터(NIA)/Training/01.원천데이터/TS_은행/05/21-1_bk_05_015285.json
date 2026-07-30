@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_015285",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1453,
+        "consulting_content": "고객은 모바일 앱으로 이체를 시도했으나 한도 초과 메시지가 나타나 한도 초과임을 확인하였고, 상담사는 계좌가 일일 ●●원 한도 계좌로 지정되어 있어 해당 금액 이상 이체가 불가하다고 안내하고, 한도 해제는 영업점 방문이 필요하며 신분증, 본인 카드, 자동이체 정보, 거래내역서 등을 지참하고 서류 확인 후 즉시 또는 1~2일 소요될 수 있다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_011384",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1788,
+        "consulting_content": "고객은 자동이체 미이체 문제를 제기하고 계좌번호, 본인확인 정보를 제공하였고 상담사는 이체 종료일 확인 후 자동이체가 종료된 사실을 안내하고 재신청 필요성을 설명하였다. 또한 온라인, 앱 이용을 권장하고 문자 안내 및 해지 방법을 제공하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

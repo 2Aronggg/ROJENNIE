@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_009404",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1609,
+        "consulting_content": "고객은 신규 통장 개설 후 계좌 및 본인 확인을 진행하였으며, 급여 입금 금액 10만원 차이 오류가 시스템 오류로 확인되어 정상 처리되었다고 안내하였다. 주소 변경을 요청하여 영업일 1~2일 내 반영되고 완료 시 문자로 통보하기로 하였다. 신용카드 2025년 9월 15일 결제 취소 요청을 받아 승인 상태에서 취소 처리 중이며 완료 시 문자 안내를 약속하였다. 저축예금 금리 연 2.5%에서 차기 분기 0.2% 인상 예정임을 이메일로 안내하기로 하였으며, 자동이체 내역 및 변경 방법을 모바일 뱅킹에서 확인, 수정 가능함을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_001246",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1366,
+        "consulting_content": "고객은 이체 한도 초과로 송금이 안 된다고 문의했으며 상담사는 전자금융은 한도액까지 가능하고 영업점에서는 하루 일정액까지 인출, 이체 가능하다고 안내하였고, 고객은 앱에서 한도 해제가 안 된다고 답변했으며 상담사는 방문 시 여권, 주소 확인서류, 신청서 등 필요 서류와 영업일 1~2일 처리 기간을 안내하였고, 고객은 준비해 방문하겠다고 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

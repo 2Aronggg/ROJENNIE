@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_021327",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1642,
+        "consulting_content": "고객은 전세자금 대출 이자와 매월 납부액, 조기 상환 시 이자 차감 여부를 문의하고 자동이체 및 납부일 변경을 요청하였고 상담사는 월 납부액 약 ○○○원과 총 이자를 안내하고, 온라인, 모바일, ARS 등 납부 방법을 설명하며 조기 상환 시 약 ○% 이자 차감 가능함을 알려준 뒤 자동이체 설정 및 납부일 15일 변경을 완료하고 확인 문자를 발송하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

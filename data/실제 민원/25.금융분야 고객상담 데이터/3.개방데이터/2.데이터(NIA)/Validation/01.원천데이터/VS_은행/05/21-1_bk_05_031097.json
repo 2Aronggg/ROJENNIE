@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_031097",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1353,
+        "consulting_content": "고객은 자동화기기에서 계좌 이체 한도 초과 메시지가 나타나 한도 상향을 요청했으며, 상담사는 고객의 신원 확인 후 현재 자동기기 일일 한도는 ●●원, 창구 방문 시 ●●●원까지 가능하다고 안내하고, 모바일 앱에서 한도 해제 절차를 시도하거나 영업점 방문을 권유하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

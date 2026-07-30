@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_004001",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 615,
+        "consulting_content": "고객은 내일 만기 자동이체 해지를 원하고 방문해 처리하고 싶다고 요청했으며, 상담사는 자동이체 해지는 인터넷, 모바일 앱을 직접 이용해야 한다고 안내하고, 필요 시 휴대폰으로 링크 발송 및 전화 상담을 통한 비밀번호 설정 지원을 제안했으며, 기타 문의는 추후 가능하다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_029131",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 672,
+        "consulting_content": "고객은 본인확인 후 주민등록번호와 휴대전화 번호를 제공했고, 상담사는 가상계좌 입금 방법, 시간, 금액 안내와 이자 포함 납부 사실을 설명하였다. 고객은 상환 서류를 팩스로 받기를 요청하고 팩스번호를 알려주었으며, 상담사는 납입 확인 후 서류 발송과 현재 대출 상환 일정, 잔액 안내를 제공하겠다고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

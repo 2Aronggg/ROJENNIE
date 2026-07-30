@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_028122",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1586,
+        "consulting_content": "고객은 대출 연장 신청을 시도했으나 앱 오류가 발생해 상세 정보를 제공하였고 상담사는 금리 미확정으로 연장이 지점 방문 필요함을 안내하고, 금리 변동 가능성 및 연장 신청 시점, 방문 시간을 알려주었다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_011618",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 986,
+        "consulting_content": "고객은 대출 연장 서류 제출 기한과 연장 시 이자율 변동을 문의하였고 상담사는 제출 마감일은 월●일까지이며 추가 서류가 필요할 수 있다고 안내하고, 연장 시 기존 금리와 동일하나 기간에 따라 약간 변동될 수 있음을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

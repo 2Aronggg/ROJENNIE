@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_001118",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1519,
+        "consulting_content": "고객은 현재 이용 중인 마이너스 통장의 연장 절차와 비용, 신청 방법, 연장 거절 시 대안, 신용점수 영향 등에 대해 문의했고, 상담원은 ARS 이용 방법, 연장 가능 기간, 추가 이자, 수수료 없음, 전화 신청 가능 여부, 거절 시 대출 상품 제안 및 재신청 가능성, 신용 관리 주의사항 등을 안내했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

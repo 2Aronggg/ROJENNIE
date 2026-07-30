@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_028748",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1045,
+        "consulting_content": "고객은 대출 원리금 일시 상환 금액과 입금 방법을 문의하였고 상담사는 자동이체와 일시불 옵션을 안내하고, 오늘 만기 세 건의 잔액 및 위약금 포함 금액을 알려 주었으며, 즉시 출금은 불가하므로 오늘 밤 12시 전까지 입금하면 당일 처리된다고 안내하고, 금액 정보를 문자로 보내겠다고 제안하였고, 고객은 해당 시간 내 입금하겠다고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

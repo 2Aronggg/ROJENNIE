@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_017243",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1568,
+        "consulting_content": "고객은 노란 우산 공제 조합의 월말 자동 출금 내역과 상세 정보를 문의하였고 상담사는 비밀번호 인증을 진행한 뒤 자동이체 금액, 일자를 확인해 알려주었으며, 취소, 변경은 조합 고객센터로 직접 문의하고 계좌번호와 출금 일자를 준비하라고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

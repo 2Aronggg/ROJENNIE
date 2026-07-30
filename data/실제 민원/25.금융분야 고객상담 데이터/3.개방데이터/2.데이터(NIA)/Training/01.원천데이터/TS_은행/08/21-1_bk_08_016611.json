@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_016611",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1107,
+        "consulting_content": "고객은 대출 만기 연장 문의를 위해 전화했으며, 상담사는 연장 신청에 필요한 서류와 팩스 제출 방법을 안내하고, 서류 확인 및 승인 절차는 영업일 기준 회신될 것이라고 설명하였다. 또한 고객이 이미 팩스로 서류를 보냈다고 알려주자, 상담사는 담당자에게 확인 후 결과를 알려주겠다고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

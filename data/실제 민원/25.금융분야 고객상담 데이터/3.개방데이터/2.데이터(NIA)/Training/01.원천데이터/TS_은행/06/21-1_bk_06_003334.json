@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_003334",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1521,
+        "consulting_content": "고객은 대출 이자 납부 현황과 정확한 납부일, 금액이 이자만 포함되는지 확인하고 싶다고 요청했으며, 상담사는 마이너스 통장 연계 사실을 확인하고, 매월 세 번째 주 첫 영업일에 자동 이체되는 이자 납부일과 금액이 이자만임을 안내하고, 자동 이체 설정 방법과 확인 문자를 제공하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

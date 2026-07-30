@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_019107",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1672,
+        "consulting_content": "고객은 적금 만기 입금일이 언제인지 문의했으며, 상담사는 시스템 조회 결과 자동 이체 날짜와 만기일이 일치해 해당 일에 입금될 것임을 안내하고, 입금 알림 및 잔액 확인 방법을 설명한 뒤 다른 문의 없음을 확인하고 상담을 종료하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_021198",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1865,
+        "consulting_content": "고객은 입출금 내역 확인과 입금 지연을 문의했으며, 가상계좌 발급 가능 여부와 수수료, 온라인 신청 방법을 물었고, 연체가 신용도에 미치는 영향을 확인하고자 하였다. 상담사는 계좌 정보를 확인하고, 해당 상품은 가상계좌 발급이 불가해 지점 방문을 권유했으며, 입금 제한 사유를 안내하고, 가상계좌는 수수료가 없고 온라인으로 신청 가능함을 설명하고, 연체 기록이 신용평가에 영향을 줄 수 있음을 알렸다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

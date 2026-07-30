@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_001378",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1506,
+        "consulting_content": "고객은 대출 연장과 관련해 신청 절차, 제출 서류, 심사 기간, 금리 변동, 연장 수수료, 신용점수 영향, 온라인 신청 방법, 추가 확인 절차, 후속 조치 등을 문의했다. 상담사는 대출 연장에 필요한 서류 목록, 평균 심사일, 고정금리 유지 조건, 수수료율, 신용평가 기준, 모바일,인터넷 신청 절차, 화상 상담 가능 여부, 승인 결과 통보 방식 등에 대해 안내했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

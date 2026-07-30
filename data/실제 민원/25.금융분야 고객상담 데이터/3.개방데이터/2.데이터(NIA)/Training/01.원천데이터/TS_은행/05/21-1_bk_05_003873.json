@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_003873",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "신규고객",
+        "consulting_client_type": null,
+        "source_length": 1123,
+        "consulting_content": "고객은 체크카드 이체 한도를 문의하였고 상담사는 계좌 확인 후 ATM, 인터넷뱅킹은 일일 일정 금액, 영업점은 더 높은 금액 한도를 안내하였으며, 한도 조정은 기존 한도 해제 후 앱 이용 또는 영업점 방문을 권고하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

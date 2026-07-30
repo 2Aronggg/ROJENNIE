@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_003649",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 999,
+        "consulting_content": "고객은 자동이체 알림을 받았지만 신청하지 않았다고 알렸고 상담사는 자동이체가 등록됐음을 확인했다. 고객은 출금 금액과 사기 여부를 물었으며 상담사는 금액 확인이 어려워 추가 조사를 진행 중이라고 답변했다. 고객은 차단, 해지를 원했고 상담사는 모바일 뱅킹에서 해지 방법을 안내하고, 해지 완료 시 차단 확인 문자가 발송된다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

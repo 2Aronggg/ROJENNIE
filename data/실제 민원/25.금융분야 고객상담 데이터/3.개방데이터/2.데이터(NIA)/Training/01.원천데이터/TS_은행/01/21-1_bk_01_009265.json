@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_009265",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1405,
+        "consulting_content": "고객은 ○○은행 통장에서 특정 일자에 금액이 빠진 사실을 문의하였다. 상담원은 ARS 연결 및 모바일뱅킹 알림을 조회하여 타은행 자동이체 요청이 있었음을 확인하였다. 고객은 해당 자동이체가 자신이 설정한 것이 아니라고 답변하였다. 상담원은 최근 변경한 스트리밍 서비스 구독이 자동이체 시도였으며 잔액 부족으로 실패 기록이 있음을 설명하였다. 상담원은 구독 서비스 결제 설정을 일시 중지하거나 해지하고, 잔액을 충분히 유지하도록 안내하며 해지 방법 안내 링크를 문자로 발송하겠다고 제안하였다. 추가 의심 거래 발생 시 언제든지 재문의하도록 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

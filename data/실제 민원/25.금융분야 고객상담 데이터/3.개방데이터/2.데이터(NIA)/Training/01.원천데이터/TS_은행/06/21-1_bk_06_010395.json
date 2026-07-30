@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_010395",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1744,
+        "consulting_content": "고객은 전세대출 이자, 상환 일정, 남은 원금 조회와 일자별 상환액 산정, 조기상환 위약금 금액을 문의하였고 상담사는 현재 금리 1.3% 적용 및 남은 원금, 기간, 월별 상환액을 안내하고, 일자별 계산 진행 상황을 설명한 뒤 조기상환 시 위약금 계산 방법과 예상 금액을 제공하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

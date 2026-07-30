@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_033182",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1094,
+        "consulting_content": "고객은 해외 사이트에서 자동 결제된 두 건을 취소하고 싶다고 요청했고, 상담사는 계좌, 생년월일, 비밀번호 인증 후 해당 금액이 ★★페이 충전 형태임을 확인, ★★페이 전용 취소 절차와 영업일 기준 처리 및 결과 안내와 지원 전화번호 연결을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

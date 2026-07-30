@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_004083",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1375,
+        "consulting_content": "고객은 모바일 전세 계약 연장이 정상 처리됐는지와 필요한 전입세대 확인 열람 서류 및 제출 여부, 지정 연장 절차와 급행 처리 수수료, 카드 발급 및 수령 방법을 문의하였고 상담사는 서류는 주민센터 발급이 필요하고 제출 절차를 안내하며, 지정 연장은 별도 승인, 입금이 필요하고 급행은 1~2일 소요, 수수료 발생을 설명하고, 계약 완료 후 카드 발급은 평균 5일이며 수령 방법과 주소 변경 절차를 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

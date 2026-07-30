@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_030203",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1212,
+        "consulting_content": "고객은 대출 만기 연장을 원하고 폐업으로 모바일 연장이 어려워 서류 제출 방법을 문의했으며, 상담사는 신분증, 급여내역, 계약서 사본을 준비해 다음 주 방문 또는 우편 제출 가능하다고 안내하고, 담당자 연결 후 연락, 급행 처리 비용은 별도 안내될 예정이며 승인 시 문자, 이메일로 통보한다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

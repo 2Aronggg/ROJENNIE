@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_022380",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1179,
+        "consulting_content": "고객은 대출금 만기 도래 안내를 받고 연장 방법을 문의하였고 상담사는 본인 확인 절차 후 온라인 뱅킹을 통한 연장 신청 방법과 필요 서류, 모바일 촬영 업로드 안내를 제공하였으며, 신청 후 결과를 문자로 통보하고 추후 연락하겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

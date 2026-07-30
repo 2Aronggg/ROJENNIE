@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_030495",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1042,
+        "consulting_content": "고객은 캐나다달러 보유 지점을 찾고 3천 달러 환전을 원한다며 방문 일정을 알려 달라고 요청하였고 상담사는 네트워크 내 지점 조회와 환율, 수수료 확인 후 가능한 지점과 권종을 안내하고, 신분증 확인, 서명 절차 및 영수증 발급을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

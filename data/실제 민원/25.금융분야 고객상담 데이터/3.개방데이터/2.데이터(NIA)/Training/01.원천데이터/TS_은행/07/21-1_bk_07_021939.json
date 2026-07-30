@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_021939",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 740,
+        "consulting_content": "고객은 금리 상승 원인과 상환액 영향, 급여 입금 조건 및 자동이체 조건을 문의하였고 상담사는 대출 조회, 금리 차이 안내, 최근 급여 입금 여부를 확인하여 다음달부터 급여 인정 및 금리 인하 가능함을 설명하고 자동이체 등 추가 조건을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

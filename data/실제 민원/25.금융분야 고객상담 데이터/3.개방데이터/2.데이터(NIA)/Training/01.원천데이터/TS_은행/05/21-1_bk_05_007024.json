@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_007024",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1117,
+        "consulting_content": "고객은 계좌 이체 한도 제한 해제를 문의하였다. 상담사는 비대면 해제가 제한적이며 일반계좌 전환을 위해 영업점 방문이 필요하고, 가계 자금 용도 증빙 서류를 제출해야 한다고 안내하였다. 또한 일시적 한도 상향 및 기타 서비스는 영업점 방문 또는 전화 상담을 통해 진행 가능하고, 자동이체와 알림 서비스는 모바일 앱에서 설정할 수 있다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

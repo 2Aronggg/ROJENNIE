@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_013986",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1960,
+        "consulting_content": "고객은 대출 금리와 최저 금리, 혜택 금액을 문의하였고 상담사는 현재 금리 재검토 중이며 적용 가능 금리를 안내하였다. 고객은 적금 혜택 적용 여부와 누락 납입을 확인하고 싶어 하였고 상담사는 실적을 검토하고 누락 금액을 재입금한다는 안내를 하였다. 고객은 자동이체 미이체 문제와 재지급 절차를 요청하였고 상담사는 잔액 확인 후 재지급 절차와 예방 조치를 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_029962",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 945,
+        "consulting_content": "고객은 기존에 개설한 계좌의 한도 해제를 원하고 필요한 서류와 전송 방법을 문의하였고, 상담사는 사업자 등록증, 매출 증빙, 임대차 계약서 등을 팩스로 보내고 전화로 해제 심사 요청하면 된다고 안내했으며, 모바일 팩스 사용 가능하고 결과는 영업일 1~2일 내 평일 오후 2~5시 사이에 문자, 이메일로 통보될 것이라고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

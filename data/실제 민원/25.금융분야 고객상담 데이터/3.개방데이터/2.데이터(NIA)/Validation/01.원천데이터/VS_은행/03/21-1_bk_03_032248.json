@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_032248",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "신규고객",
+        "consulting_client_type": null,
+        "source_length": 909,
+        "consulting_content": "고객은 자동이체 현황 확인과 중단을 요청하고 수수료 여부와 신규 설정 방법을 문의하였고 상담사는 현재 자동이체가 정상 등록돼 있음을 안내하고, 비밀번호 재입력으로 중단을 처리했으며 수수료가 없음을 알려주고, 모바일 앱이나 전화로 새로운 자동이체를 설정하는 절차를 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

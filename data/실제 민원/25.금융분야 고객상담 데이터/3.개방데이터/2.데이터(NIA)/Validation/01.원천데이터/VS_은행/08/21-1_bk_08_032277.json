@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_032277",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1038,
+        "consulting_content": "고객은 만기 연장 문의와 담당 지점 연결이 안돼 정보를 제공했으며 연장 여부와 금리 확인을 기다리겠다고 하였고 상담사는 고객 정보를 확인하고 연장 대상 통장, 만기일을 안내한 뒤 금리 확인이 지연 중임을 알리며, 연장에 필요한 신분증, 통장 사본을 전자 제출 가능하다고 안내하고 조기 상환 절차도 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

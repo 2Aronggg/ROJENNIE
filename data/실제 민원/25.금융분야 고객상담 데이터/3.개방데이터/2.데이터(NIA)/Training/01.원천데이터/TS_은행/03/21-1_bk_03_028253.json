@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_028253",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1310,
+        "consulting_content": "고객은 청약, 적금 자동이체가 설정되지 않은 것을 확인하고 모바일 앱으로 재설정하고자 했으며, 상담사는 시스템에서 자동이체 미등록을 확인하고 앱에서 자동이체 관리 메뉴 이용 방법을 안내하고, 이체는 다음 영업일에 시작되며 수수료는 없다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_016190",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1129,
+        "consulting_content": "고객은 홍콩달러 환전을 원하고 500달러, 200달러 단위와 금액 확인, 실시간 환율, 수수료, 최대 한도 등을 문의하였고 상담사는 보유량에 따라 해당 단위만 가능하고 현재 환율을 안내하며, 영업점 방문 시 신분증, 계좌 준비가 필요하고 인터넷뱅킹 이용 시 환율 우대 가능함을 설명하고, 수수료와 한도는 영업점에서 확인하도록 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

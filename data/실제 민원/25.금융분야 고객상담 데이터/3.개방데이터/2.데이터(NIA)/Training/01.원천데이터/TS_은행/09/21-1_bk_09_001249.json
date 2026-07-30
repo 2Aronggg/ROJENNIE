@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_001249",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1402,
+        "consulting_content": "고객은 환전 가능 여부, 환율, 수수료, 당일 수령 절차, 권종 선택, 최소 및 최대 금액 및 예약 필요성, 영수증,거래 내역 확인 방법을 문의하였고, 상담원은 외화 보유량 확인, 우대 환율 적용 및 신청, 결제 방법, 필요한 서류와 절차, 권종 요청 방법, 예약 권고, 영수증, 내역 확인 방법에 대해 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_000225",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1372,
+        "consulting_content": "고객은 앱을 통한 외화환전 절차, 권종 선택, 우대율 적용, 수수료, 대리인 방문 시 필요서류, 로그인 오류 및 환전 금액별 추가 절차를 문의하였고 상담사는 앱 신청방법과 오류 해결, 지점별 권종 재고 확인, 환전 수수료 및 우대율 적용 기준, 대리인 거래 시 서류 요건, 대금 수령 및 서류 발급 절차를 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

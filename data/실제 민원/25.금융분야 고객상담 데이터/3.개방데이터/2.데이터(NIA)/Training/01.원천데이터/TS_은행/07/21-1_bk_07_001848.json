@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_001848",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1330,
+        "consulting_content": "고객은 대출 부수거래 감면 조건과 청약, 적금 선택에 따른 감면, 적금 납입액 조절 옵션에 대해 문의했으며, 상담사는 부수거래 감면 조건과 조건 미충족 시 대출 금리, 적금 금리 감면 혜택 및 적금 매월 납입액 조절에 대해서 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_021495",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1783,
+        "consulting_content": "고객은 대출 연장과 서류 제출을 문의하였고 상담사는 비대면 연장에 필요한 새 임대차 계약서 및 특약 작성, 제출 기한은 오늘 저녁까지이며 기한 초과 시 지점 방문 필요, 이자율 변동 및 수수료 금액을 안내하고 승인 후 2~3영업일 내 입금될 것이라고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

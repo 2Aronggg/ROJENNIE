@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_017431",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1723,
+        "consulting_content": "고객은 대출 금리 우대를 위한 카드 사용 요건을 충족하고자 발급받은 카드를 수령하지 않은 상태에서 카드 교체 가능 여부와 사용 일정을 문의하였고 상담사는 기존 카드도 요건을 만족하므로 교체는 어렵고, 카드 수령, 사용을 권고하며 필요한 서류와 절차를 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_014969",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1006,
+        "consulting_content": "고객은 대출 연장을 시도했으나 앱에서 진행되지 않아 문의하였고 상담사는 고객 정보를 확인한 뒤 대출이 다음달 만기임을 안내하고, 연장 수수료와 최대 3개월 연장 가능성을 설명하였다. 또한 고객의 사업자 등록이 개인 근로자로 변경돼 모바일 연장이 어려우니 신분증, 폐업 증명서를 지참하고 지점 방문 후 자격 변경 후 앱 연장을 진행하도록 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

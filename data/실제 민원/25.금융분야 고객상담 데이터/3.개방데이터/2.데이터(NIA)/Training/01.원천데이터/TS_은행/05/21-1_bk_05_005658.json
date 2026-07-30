@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_005658",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1610,
+        "consulting_content": "고객은 계좌이체 한도 제한으로 한도 상향을 문의했다. 상담사는 금융거래 한도 계좌는 비대면 해제가 불가하고, 영업점 방문이 필요하며 심사 결과에 따라 해제가 불가할 수 있음을 안내했고 해외 결재 서비스는 추가 서류가 발생될 수 있으며 영업점 방문으로 한도 상향 신청이 가능함을 안내했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

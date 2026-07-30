@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_001071",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1143,
+        "consulting_content": "고객은 대출 자동이체 실패와 남은 금액 청구 시점, 현금 납부 절차, 연체 이자 적용 방식, 상환 일정 변경 방법, 서류 확인 방법 등에 문의했고, 상담원은 현재 출금 상황, 재시도 일정, 현금 납부 안내, 연체 이자율 설명, 상환 일정 변경 절차 및 서류 열람 방법을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

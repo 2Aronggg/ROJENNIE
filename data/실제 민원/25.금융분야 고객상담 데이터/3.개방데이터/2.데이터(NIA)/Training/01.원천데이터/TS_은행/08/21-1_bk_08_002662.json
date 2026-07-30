@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_002662",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 2108,
+        "consulting_content": "고객은 전세 대출 만기 연장을 문의하며 연장 절차, 필요 서류, 이자율 변동, 심사 기간, 신용점수 영향, 자동이체 유지 여부, 추가 수수료, 전자 계약서 발송 등 다양한 질문을 했고, 상담사는 전세 대출 만기 연장에 관련해 정책 설명, 구체적 예시, 서류 전송 방법, 보안 절차 등을 안내하고 진행 상황 조회 방법과 담당 부서 연락처도 제공하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

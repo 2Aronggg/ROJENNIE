@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_022371",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "신규고객",
+        "consulting_client_type": null,
+        "source_length": 1378,
+        "consulting_content": "고객은 계좌 번호와 본인 확인 정보를 제공하고 근로소득 원천징수영수증, 재직증명서, 신분증을 팩스로 보내겠다고 요청하였고 상담사는 계좌 확인 오류를 안내하고 재입력을 요구한 뒤, 서류 접수 및 검토 절차와 영업점에서 3~5일 소요될 수 있음을 설명하며, 추가 서류 요청 가능성과 최종 해지 여부는 영업점에서 연락드릴 것이라고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

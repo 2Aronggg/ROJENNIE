@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_010474",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 545,
+        "consulting_content": "대출 연장에 대해 안내드리겠다. 고객님 성함과 생년월일을 알려주시겠습니까? 고객님의 소중한 정보를 입력해 주셨다. 저희 쪽에만 통장 보유 중입니다. ★★은행은 ●월 ●일 ●지점에서 금리 승인이 나기 전에 승인이 완료돼야 앱으로 연장 절차를 진행할 수 있다. 연장 경로는 연락 주신 번호로 문자 전송해 드리겠다. 승인이 완료되면 카카오톡이나 문자로 알려드리며, 그때 앱으로 연장 절차를 진행해 주시면 됩니다. 지점에 접수해달라고 전 전달 한번 해드릴 거고 조금만 시간 양해 부탁 드리겠다"
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

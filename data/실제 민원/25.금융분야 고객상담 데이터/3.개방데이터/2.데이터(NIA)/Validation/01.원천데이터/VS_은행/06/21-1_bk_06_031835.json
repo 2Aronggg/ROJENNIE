@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_031835",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1145,
+        "consulting_content": "고객은 대출 원리금 상환 금액과 조기 상환 시 이자, 수수료 안내를 요청했고 상담사는 현재 출금액 ○○원과 조기 상환 시 일할 이자와 0.2% 수수료를 설명하였다. 고객은 자동 이체 신청 방법과 금리 변동 가능성을 물었고 상담사는 모바일, 전화로 신청 가능함을 안내하고, 현재 금리 변동 가능성은 낮으며 변동 시 사전 안내한다는 답변을 제공하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

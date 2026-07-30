@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_013721",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1660,
+        "consulting_content": "고객은 대출 연장 신청 상태와 서류 발송 일정을 문의하였고 상담사는 계좌, 신분 확인 후 신청이 정상 접수되어 처리 중이며 최종 만기일을 안내하고, 연장 승인 후 영업일 3일 이내 우편 발송될 것이라 설명하였다.고객은 대출 연장 신청 상태와 서류 발송 일정을 문의하였고 상담사는 계좌, 신분 확인 후 신청이 정상 접수되어 처리 중이며 최종 만기일을 안내하고, 연장 승인 후 영업일 3일 이내 우편 발송될 것이라 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

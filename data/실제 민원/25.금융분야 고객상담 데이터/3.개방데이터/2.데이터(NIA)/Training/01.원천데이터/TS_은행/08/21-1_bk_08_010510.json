@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_010510",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1454,
+        "consulting_content": "고객은 대출 만기 연장 절차와 일정, 금리 차이 및 수수료 여부를 문의하였고 상담사는 계좌, 신분 확인 후 앱에서 연장 계약서를 작성하도록 문자 안내와 승인 대기 안내를 제공하였으며, 신분증 사진 필요와 금리 변동 가능성을 설명하고 수수료는 별도 없음을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

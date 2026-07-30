@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_022557",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 902,
+        "consulting_content": "고객은 자동이체가 주말에 처리되지 않아 누락된 금액을 다음 영업일에 합산할 수 있는지 문의하였고 상담사는 주말에는 이체가 이월되어 다음 영업일에 처리된다고 안내하고, 처리 결과는 영업일 기준 1~2일 내에 문자, 전화로 통보될 것이라고 설명하였다. 고객은 처리 결과 통보 시점과 자동이체 취소 시 재설정 방법을 요청하였고 상담사는 결과는 1~2일 내에 알려드리며, 취소 시 모바일뱅킹 또는 영업점 방문으로 재설정 가능하다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

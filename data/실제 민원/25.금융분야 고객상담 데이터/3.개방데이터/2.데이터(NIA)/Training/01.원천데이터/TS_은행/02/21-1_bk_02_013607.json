@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_013607",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1114,
+        "consulting_content": "고객은 다른 은행에서 본인 계좌로 두 번 입금된 사실을 확인하고 중계 요청을 하였고 상담사는 입금 일시와 금액, 입금자명을 확인해 조회를 진행하며 결과 확인을 위해 잠시 대기해 달라고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

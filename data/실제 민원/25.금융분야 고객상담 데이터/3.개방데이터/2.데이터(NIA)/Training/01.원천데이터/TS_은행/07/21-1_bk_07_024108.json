@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_024108",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1048,
+        "consulting_content": "고객은 ★★은행에서 버팀목 전세 대출을 7% 금리로 받았고, 카드, 신용카드 미사용이 금리, 우대에 영향을 주지 않는다며 문의했으며, 상담사는 금리 유지, 자동이체 상환 방식, 조기 상환 위약금 없음, 지점 변경은 방문, 전화 신청, 서류는 최소 5년 보관한다는 안내를 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

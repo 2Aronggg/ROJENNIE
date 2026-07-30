@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_005880",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1295,
+        "consulting_content": "고객은 이체한도 해제 요청을 하였으며, 모바일 해제가 불가하다고 안내받았다. 은행은 급여통장임을 증명할 급여명세서, 재직증명서, 원천징수영수증 중 하나 이상을 지참해 영업점 방문하거나 팩스로 제출하도록 안내하였다. 서류 심사 후 승인 여부는 현장에서 즉시 통보될 수도 있으나, 내부 승인 절차가 필요할 경우 영업일 1~2일 내에 연락을 받게 된다고 설명하였다. 해제 절차 진행 중 기존 한도 제한은 유지되며, 급한 이체는 다른 계좌 이용이나 영업점 임시 조치를 문의하도록 권고하였다. 방문 전 사전 전화 예약을 통해 대기 시간을 줄일 수 있다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

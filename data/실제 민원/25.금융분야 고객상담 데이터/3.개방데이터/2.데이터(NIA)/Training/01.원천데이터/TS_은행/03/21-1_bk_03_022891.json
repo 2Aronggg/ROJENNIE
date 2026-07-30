@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_022891",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "80세이상",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1518,
+        "consulting_content": "고객은 어머니 명의 통장을 대리인으로 해지하고 자동이체와 체크카드까지 모두 폐쇄하고자 하며 인터넷뱅킹으로 절차를 진행하고 싶다고 요청했고, 상담사는 자동이체 확인, 잔액 0원 확보 후 순차적 해지와 카드 폐기 방법을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

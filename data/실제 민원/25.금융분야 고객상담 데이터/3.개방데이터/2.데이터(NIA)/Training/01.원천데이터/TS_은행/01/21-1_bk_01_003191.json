@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_003191",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1363,
+        "consulting_content": "고객은 예상치 못한 입금 내역 확인을 요청했고 상담사는 계좌와 금액을 조회해 입금이 정상 처리됐음을 안내하였고, 이후 고객은 수수료 정책 문의를 하였으며 상담사는 현재 변동 없음을 설명하고 이메일 안내 가능함을 알려 주었으며, 고객은 추가 문의 없음을 밝혀 상담을 종료하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

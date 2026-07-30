@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_009067",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 858,
+        "consulting_content": "고객은 ○○은행에 입금된 금액과 일자를 확인하고 해당 입금을 기반으로 중계 요청을 진행하고자 하였다. 상담사는 입금 금액, 일자를 확인하고, 중계에 필요한 예금주 성명 및 담당 부서를 문의하였다. 고객은 예금주 성명과 ◆◆◆ 부서, 연락 가능한 전화번호를 제공하였다. 상담사는 ★★은행과의 연락이 어려움을 안내하고, 메모 전달 및 추가 안내를 제안하였다. 중계 요청이 완료되면 결과를 문자로 통보하고, 필요 시 우선 순위 조정 및 서류 제출을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

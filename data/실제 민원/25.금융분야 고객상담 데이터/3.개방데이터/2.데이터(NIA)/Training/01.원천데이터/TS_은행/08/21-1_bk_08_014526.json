@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_014526",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1191,
+        "consulting_content": "고객은 마이너스 대출 연장 방법, 서류와 본인 확인 절차를 문의하였고 상담사는 문자, 전화 인증 방법을 안내하였다. 고객은 앱 사용이 어려워 전화로 연장 신청을 요청하고 추가 이자율과 연장 완료 후 확인 전화를 원하였고 상담사는 전화 접수를 진행하며 이자율 변동 가능성을 안내하고 추후 연락을 약속하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

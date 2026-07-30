@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_016441",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1161,
+        "consulting_content": "고객은 현재 가입한 OO은행 신탁 상품의 수익자를 변경하고 싶다. 수익자 변경은 어떻게 진행되며, 어떤 서류가 필요한가요?입금 내역 확인과 비밀번호 변경을 요청하였고 상담사는 계좌 번호를 확인하고 신탁 계좌임을 안내한 뒤 최근 3개월 거래 내역을 문자로 발송하고 비밀번호를 1234로 변경하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

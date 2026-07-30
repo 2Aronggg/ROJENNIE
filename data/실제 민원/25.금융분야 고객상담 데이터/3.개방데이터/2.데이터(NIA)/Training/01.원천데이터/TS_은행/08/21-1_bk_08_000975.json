@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_000975",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1146,
+        "consulting_content": "고객은 대출 만기 연장 절차와 필요한 서류, 신용 보증 보험의 역할 및 가입 방법, 연장 금액 입금 시점 등을 문의하였다. 상담원은 본인 확인 방법, 온라인 신청 방법, 서류 준비 안내, 보험 혜택과 비용, 입금 기한 및 자주 발생하는 실수 등을 설명하고 추가 문의 시 연락 방법을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_018313",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1827,
+        "consulting_content": "고객은 입금 확인을 위해 은행, 계좌, 거래 번호, 입금 일시, 금액 등을 제공하였고, 상담사는 시스템 조회, 추가 자료 요청, 입금 여부 확인, 업체 연결 시도 등을 진행하며 결과를 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

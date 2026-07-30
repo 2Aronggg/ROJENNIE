@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_005898",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1076,
+        "consulting_content": "고객은 기존 카드와 동일 등급의 신규 카드를 기본 디자인으로 발급 요청하였다. 발급 절차는 영업일 2~3일 소요이며, 급배송 옵션은 추가 요금이 발생한다는 안내를 문자로 받기로 하였다. 고객은 이번 달 초부터 현재까지의 입출금 내역을 팩스로 송부받고자 하며, 팩스 번호 02-1234-5678을 제공하였다. 상담원은 ARS 연결을 통해 내역서를 추출, 전송하고, 전송 완료 후 확인 문자를 발송하기로 하였다. 또한 기존 카드를 해지하고 신규 카드와 동시에 처리하도록 요청하였으며, 해지 신청도 함께 진행하기로 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

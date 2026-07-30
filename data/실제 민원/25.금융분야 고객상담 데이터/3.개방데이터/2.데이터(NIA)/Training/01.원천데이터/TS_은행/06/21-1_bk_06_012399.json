@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_012399",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1714,
+        "consulting_content": "고객은 대출 이자 자동이체 현황 확인과 연체 시 이자, 벌금 안내, 자동이체 날짜 변경을 요청하였고 상담사는 현재 잔액, 납부 일정과 자동이체 정상 처리 사실을 확인하고 연체 시 적용 규정과 금액을 설명한 뒤 원하는 날짜로 변경 가능함을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

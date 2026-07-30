@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_020520",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1200,
+        "consulting_content": "고객은 재개발 조합원 대출 원금, 이자 납부와 가상계좌 발급 방법을 문의했으며, 여러 건을 한 번에 납부하려면 건별 가상계좌를 발급받아야 한다고 상담사는 안내하고, 가상계좌는 발급일 24시간 내 사용 가능하다고 설명하였다. 또한 대출 연장, 금리 재조정은 지점 방문 또는 온라인 신청으로 가능하다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_029266",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1012,
+        "consulting_content": "고객은 전세 대출 상환 알림을 받고 연장을 원한다며 개인정보와 휴대폰 번호를 제공하고 서류 스캔본을 이메일로 보내겠다고 했고, 상담사는 대출 관리 사실을 확인하고 연장에 필요한 전세 계약서, 신분증 사본과 소요 기간을 안내하며, 서류 검토 후 결과를 전화로 알려주고 연장 시 이자율은 기존과 동일하다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

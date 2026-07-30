@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_027401",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1431,
+        "consulting_content": "고객은 ●월●일 입금 내역의 상세 정보와 증빙용 PDF를 요청했으며, 전자 서명 없이 전체 인쇄와 모바일 앱 저장 방법도 문의하였다. 상담사는 거래내역 조회 방법, 기간 입력, 상세 출력 옵션 선택, PDF 형식 선택 및 전자 서명 옵션 설명, 인증서 필요 안내, 전체 인쇄 방법 및 모바일 앱에서 공유, 저장 버튼으로 PDF 저장 방법을 차례로 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

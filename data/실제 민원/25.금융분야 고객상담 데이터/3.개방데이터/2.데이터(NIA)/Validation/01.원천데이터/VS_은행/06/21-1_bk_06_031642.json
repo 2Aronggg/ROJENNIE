@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_031642",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1174,
+        "consulting_content": "고객은 대출 이자 납입일이 지난 것을 확인하고 원금, 이자 동시 상환 여부를 물었고 상담사는 원금도 함께 상환해야 연체가 지속되지 않는다며 안내하였다. 고객은 연체 마감일과 보고 시점을 문의했으며 상담사는 원래 상환일과 영업일 기준 예상 보고일을 알려 주고 연체 이자율을 설명하였다. 고객은 빠른 상환 계획 수립을 원한다고 밝혔고 상담사는 연체 금액 확인, 일시, 분할 상환 신청 절차와 서류를 모바일 앱 사진 업로드 또는 팩스로 제출하도록 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

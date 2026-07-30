@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_020056",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1226,
+        "consulting_content": "고객은 마이너스 통장 연장 후 일일 한도 증액 가능 여부를 문의하였고 상담사는 만기일 이후에만 증액 신청이 가능하다고 안내하고, 온라인 신청 방법, 지점 방문 제출 서류, 심사 소요 시간 등을 설명하였으며, 추후 일정에 맞춰 재연락하라고 안내하고 문서 이메일 전송을 약속하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

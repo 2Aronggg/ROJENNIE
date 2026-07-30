@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_028315",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1765,
+        "consulting_content": "고객은 대출 이자 미납금 출금을 요청하고 자동 출금 일자, 금액, 추가 비용을 확인했으며, 위약금 및 면제 여부, 상환 절차와 필요 서류, 대환 조건을 문의하였고 상담사는 자동 출금 예정을 안내하고, 위약금은 계약서 기준이며 조기 상환 시 발생 가능함을 설명하고, 상환 방법은 잔액 입금 후 자동 처리이며 필요한 서류와 절차를 안내한 뒤 대환은 기존 대출 정산 후 새 계약 체결이며, 자세한 서류는 영업점 방문이 필요하다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

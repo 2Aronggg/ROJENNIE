@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_002861",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1427,
+        "consulting_content": "고객은 노란 우산 공제 자동이체가 정상적으로 처리되지 않아 원인과 해결 방법을 문의했고, 상담사는 계좌 정보 확인 후 자동이체 미등록 상황을 설명하고 재설정 절차, 출금 실패 시 알림 및 연체료 정책, 대출 연계 여부 등을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

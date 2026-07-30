@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_004948",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1055,
+        "consulting_content": "고객은 3천 달러 환전을 원하고 가능한 지점과 보유 현황, 일일 한도, 신분증, 계좌 확인 절차, 모바일 사전 신청 및 수수료 할인 정보를 문의하였고 상담사는 주요 지점 보유 여부를 확인하고, 방문 시 신분증, 계좌 확인서 필요와 일일 5천 달러 한도, 모바일 앱 사전 신청 방법, 실시간 보유 확인, 수수료 0.5%→0.3% 할인 등을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

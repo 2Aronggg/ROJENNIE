@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_006099",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 2353,
+        "consulting_content": "고객은 대출 원리금 상환액 증가 원인을 문의하였다. 상담사는 금리 변동과 우대 조건 미충족이 원인임을 설명하고, 급여 이체와 카드 사용 실적을 충족하면 우대 금리가 재적용된다고 안내하였다. 또한 변동 금리를 고정 금리로 전환하려면 신분증, 소득증명, 대출 계약서 등 서류를 제출하고 심사를 거쳐 3~5일 내 적용된다고 설명하였다. 전환 절차와 조건 충족 시 우대 금리 재적용 시점은 다음 달부터라고 안내하였다. 고객은 본인 인증 후 현재 대출 잔액 5,200만원, 변동 금리 4.2%임을 확인하고 추후 서류 준비 후 전환을 검토하기로 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

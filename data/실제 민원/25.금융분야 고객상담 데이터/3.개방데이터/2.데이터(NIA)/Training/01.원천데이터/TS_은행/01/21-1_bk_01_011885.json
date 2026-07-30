@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_011885",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1529,
+        "consulting_content": "고객은 신용증권으로 송금한 금액의 입금 상황과 지연 시간을 문의하였고 상담사는 송금 일시, 금액, 계좌를 확인하여 이체가 완료되었음을 안내하고 이체 확인서 발송 및 추가 확인 절차를 제시하였다.★★★★★★★★★★★★"
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

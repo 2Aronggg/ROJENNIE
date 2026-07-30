@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_024254",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1091,
+        "consulting_content": "고객은 연장 문자 내용 확인과 신청 방법을 문의하고 계좌, 본인 정보를 제공했으며, 링크가 열리지 않아 전화 신청을 요청했고, 추가 서류 여부와 이자율 변동을 물었다. 상담사는 ARS 인증 절차 안내 후 링크 이용 불가 시 전화로 연장 절차를 진행하고, 서류는 필요 없으며 이자율이 0.5% 상승하고 상환일은 동일함을 설명하고, 고객이 ‘예’라고 답해 연장 계약을 완료하고 계약서 발송을 안내했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

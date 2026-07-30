@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_032608",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 841,
+        "consulting_content": "고객은 모바일로 대출 연장 신청 후 진행 상황과 완료 여부, 이메일 알림 및 이자율 변동을 문의하였고 상담사는 연장 신청이 정상 접수되어 영업일 2~3일 내 전산 반영될 예정이며, 완료 시 문자, 이메일 알림이 제공되고 기존 조건 유지와 위약금 여부는 추가 안내 가능하다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_029186",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 994,
+        "consulting_content": "고객은 개인 신용대출 연장을 신청했으나 인증 절차 후 연장이 아직 처리되지 않았음을 확인했고, 상담사는 휴대폰 인증을 진행하고 연장은 모바일 앱에서 직접 진행하도록 경로 문자를 보내며 승인 결과는 영업일 1~2일 내 문자로 통보되고, 거절 시 서류 보완 후 재신청 방법을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

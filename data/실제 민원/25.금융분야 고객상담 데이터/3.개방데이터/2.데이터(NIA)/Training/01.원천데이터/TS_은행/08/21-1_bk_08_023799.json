@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_023799",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 835,
+        "consulting_content": "고객은 마이너스 대출 연장을 비대면으로 신청하고 계좌, 생년월일 등 본인 확인 정보를 제공했으며, 연장 처리와 새로운 한도 적용을 확인하였다. 상담사는 연장 완료와 동일 이자율 적용, 향후 변동 시 안내, 추가 조치 필요 없음을 안내하고 상담을 종료하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

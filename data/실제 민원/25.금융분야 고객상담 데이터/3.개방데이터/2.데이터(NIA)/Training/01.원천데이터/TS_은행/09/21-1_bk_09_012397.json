@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_012397",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 885,
+        "consulting_content": "고객은 하루 인출 한도가 ●●원이라며 ◆◆◆ 통화 환전을 요청했고, 상담사는 창구 환전 시 최대 한도와 모바일, 온라인 이용 시 한도 확대 가능성을 안내했다. 이어 ★★ 은행의 현찰 매도 우대율이 적용되지 않음을 설명하며 일반 환율 기준을 제시했다. 고객은 우대 환율 적용 시 금액 차이를 확인하고, 상담사는 실제 환율 예시로 계산 결과를 안내했다. 마지막으로 고객은 환전 신청 방법을 문의했고, 상담사는 온라인 신청 절차와 방문 시 인증 방법을 안내했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

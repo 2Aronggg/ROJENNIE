@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_015442",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1016,
+        "consulting_content": "고객은 주택청약 재신청 시 대출 금리 감면 가능 여부와 필요 서류, 조건, 신용점수, 처리 기간, 월 상환액 변동을 문의하였고 상담사는 6개월 이내 동일 통장 사용, 해지, 재신청 사유 서면 제출, 신용점수 700점 이상이면 혜택 가능하고 영업일 3~5일 소요, 월 상환액 약 ●천 원 감소이며 추후 연장, 추가 인하 옵션은 정책에 따라 안내될 수 있다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

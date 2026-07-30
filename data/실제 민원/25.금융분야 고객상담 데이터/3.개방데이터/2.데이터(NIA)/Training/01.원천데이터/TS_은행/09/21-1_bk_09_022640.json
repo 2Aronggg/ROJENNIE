@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_022640",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 613,
+        "consulting_content": "고객은 ★★은행에서 ◆◆◆ 돈 환전 가능 여부와 금액 ●●●원에 대한 수수료, 최종 금액을 문의했고, 두 지점 보유량 확인과 예약 방법, 영업 시간을 추가로 물었으며, 상담사는 수수료 0.5%와 예상 결제 금액을 안내하고, 두 지점 모두 충분히 보유 중이며 변동 가능성을 설명한 뒤, 전화, 앱 예약 시 신분증 확인으로 가능하고, 영업시간은 09:00~18:00이며 야간 환전은 별도 신청 가능하다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

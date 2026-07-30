@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_030053",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1800,
+        "consulting_content": "고객은 대출 연장을 위해 본인 확인 정보와 서류 제출 방법을 문의했으며, 상담사는 계좌 번호, 비밀번호 확인 후 신분증, 계약서 사본을 사진으로 업로드하거나 공인인증서 이용 두 가지 비대면 제출 방식을 안내하고, 이자율 변동 없음, 연체료 발생 등 조건과 보안 주의사항을 설명하고 연장 결과 통보 시점을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

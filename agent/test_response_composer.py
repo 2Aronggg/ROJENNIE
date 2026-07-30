@@ -131,6 +131,5 @@ class ResponseComposerTests(unittest.TestCase):
         self.assertEqual(view.issues[0].status, "amend")
         self.assertEqual(view.issues[0].masked_fields, ["account_number"])
 
-
 if __name__ == "__main__":
     unittest.main()

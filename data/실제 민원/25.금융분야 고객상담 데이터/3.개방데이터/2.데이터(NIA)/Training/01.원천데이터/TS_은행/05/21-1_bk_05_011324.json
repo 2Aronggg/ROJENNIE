@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_011324",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1259,
+        "consulting_content": "고객은 일반 계좌 해지를 원해 영업점 방문 예약을 요청하였고 상담사는 서류 지참 및 금요일 오후 예약을 확정하고, 방문 외 방법은 없다고 안내하였다. 또한 고객은 환전 한도와 증액 절차를 문의하였고 상담사는 동일 은행 환전에도 한도가 적용되며 증액은 온라인 신청, 서류 제출이 필요함을 설명하고, 일일 이체 한도와 모바일, 영업점 차이를 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

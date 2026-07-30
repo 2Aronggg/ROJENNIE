@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_010463",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1535,
+        "consulting_content": "고객은 이체한도 제한 및 ‘대상이 아님’ 메시지 원인을 문의했고, 상담사는 해제 기준 미충족으로 인한 것이라 안내했다. 재직증명서, 급여명세서 등 서류 제출 후 2~3영업일 내 승인되며, 결과는 문자 또는 전화로 안내된다고 설명했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_008595",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1047,
+        "consulting_content": "고객은 본인 계좌의 예약 이체 존재 여부를 조회하고자 하였으며, 상담원은 계좌 번호, 비밀번호 확인 후 최근 거래 내역을 안내하였다. 마지막 이체는 ★★은행으로 금액 ●●원이며, 이후 예약 이체 기록은 없다고 확인하였다. 기존에 등록된 예약 이체 및 취소된 이체도 존재하지 않으며, 자동 생성은 고객이 직접 설정할 경우에만 발생한다는 점을 설명하였다. 새 예약 이체는 모바일 앱, 인터넷뱅킹의 ‘예약 이체’ 메뉴에서 대상 은행, 금액, 일자를 입력하고 비밀번호와 인증 문자로 확인 절차를 거쳐 등록할 수 있다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

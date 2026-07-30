@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_007050",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1346,
+        "consulting_content": "고객은 타 은행 계좌에서 자사 계좌로 자동이체를 신청하고자 하였으며, 은행에 별도 등록 절차가 없음을 문의하였다. 상담원은 해당 자동이체는 기관에서 직접 신청해야 하며, 전자서명은 지원되지 않아 서류를 직접 방문 제출해야 한다고 안내하였다. 준비 서류는 납부계좌 사본, 사업자등록증 사본, 자동이체 신청서이며, 승인까지 3~5영업일이 소요된다고 설명하였다. 진행 상황은 인터넷뱅킹 ‘자동이체 관리’ 메뉴에서 조회 가능하다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

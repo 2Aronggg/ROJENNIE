@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_027381",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1227,
+        "consulting_content": "고객은 디지털 상품권 자동이체 등록 알림을 받고 확인을 요청했으며, 계좌, 비밀번호 등 본인 확인 절차를 진행하였다. 상담사는 계좌와 가맹점 정보를 조회하고 자동이체는 요청 시 발생함을 설명하고, 잘못 등록 시 1~2일 내 취소 가능함을 안내하며 현재 등록 요청이 보류 중임을 전달하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

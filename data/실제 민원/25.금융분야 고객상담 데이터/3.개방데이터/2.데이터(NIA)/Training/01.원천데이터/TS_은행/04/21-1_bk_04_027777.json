@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_027777",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1247,
+        "consulting_content": "고객은 급히 현금이 필요해 적금 조기 해지를 요청하고 계좌번호, 성명, 생년월일, 비밀번호 등 본인 확인 정보를 제공하였고 상담사는 중도해지 수수료 가능성을 안내하고, 신원 확인 후 1~2일 영업일 내 해지 처리와 이자 일할 계산 후 기존 입출금 계좌로 입금될 것임을 문자로 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

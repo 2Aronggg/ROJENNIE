@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_026840",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1007,
+        "consulting_content": "고객은 산림 조합 계좌에 입금된 금액과 송금인 내역 확인을 요청하고 예금주명과 금액, 표시를 제공했으며, 추가로 예금주와 직접 연결을 원했다. 상담사는 계좌 정보와 예금주명을 확인하고 입금 내역 조회 절차를 안내한 뒤, 시스템 점검 상황을 알리며 예금주와 중계 전화를 연결해 주고, 필요 시 추가 문의를 요청하며 통화를 종료했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

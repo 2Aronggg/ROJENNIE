@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_008543",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1069,
+        "consulting_content": "고객은 지난주 방문 시 거래내역서를 받지 못해 오늘 오후에 지점에 방문해 서류 발급을 원하였다. 상담사는 신분증 제시 후 본인 확인 절차를 거치면 즉시 출력이 가능하며, 출력은 무료이고 보통 10분 이내에 받을 수 있다고 안내하였다. 또한 계좌잔액증명서 등 다른 증명서도 동일 절차로 함께 발급 가능하다고 설명하였다. 예약 없이 방문 가능하나 사전 전화 안내 시 대기 시간을 최소화할 수 있다고 권고하였다. 복사본은 인정되지 않으며, 특수한 경우를 제외하고는 모든 출력이 무료라고 재확인하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

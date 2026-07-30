@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_002189",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1528,
+        "consulting_content": "고객은 체크카드 자동이체로 두 번 출금된 건강보험료 내역을 확인하고 환불 및 중복 방지 방법을 문의했다. 상담사는 거래 내역을 조회하고 중복 출금을 확인, 환불 절차와 자동이체 관리 방법을 단계별로 안내했다. 또한 포인트 적립 혜택을 제공하고 최종 확인 문자를 약속했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

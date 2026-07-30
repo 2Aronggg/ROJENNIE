@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_015032",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1379,
+        "consulting_content": "고객은 신용대출 우대 금리 적용 조건으로 카드 사용, 자동이체 등 실적 충족 여부와 적용 시점, 해지 절차를 문의하였고 상담사는 카드 사용 최소 금액, 결제일, 자동이체 계좌 연계 기준을 설명하고, 실적 확인 다음 영업일에 우대 금리가 적용되며 미달 시 자동으로 기본 금리로 전환된다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

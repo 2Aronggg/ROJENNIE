@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_026297",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 791,
+        "consulting_content": "고객은 어머니가 오픈뱅킹으로 가상계좌에 이체한 내역 확인을 원했으며, 상담사는 해당 이체는 이용은행에 문의해야 한다고 안내하고, 곧 문자로 결과를 알려드리겠으며, 다른 계좌도 동일 절차로 조회 가능하다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

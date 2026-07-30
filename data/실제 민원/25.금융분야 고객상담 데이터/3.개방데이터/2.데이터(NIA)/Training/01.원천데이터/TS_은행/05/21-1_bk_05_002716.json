@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_002716",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 2114,
+        "consulting_content": "고객은 현재 보유 중인 금융거래 한도 계좌의 출금 및 이체 한도를 상향하고 동시에 소액 대출을 신청하고자 했으며, 모바일 뱅킹을 통한 서류 제출 및 심사 절차, 필요한 서류와 예상 소요 시간 등에 대해 문의했다. 상담원은 한도 상향과 대출 신청을 동시에 진행하기 위한 절차 및 조건에 대해 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

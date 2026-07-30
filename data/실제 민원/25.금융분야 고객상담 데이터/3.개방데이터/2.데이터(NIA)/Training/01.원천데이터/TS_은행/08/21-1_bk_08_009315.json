@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_009315",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1597,
+        "consulting_content": "고객은 기업 대출 연장을 위해 서류 제출 방법을 문의하였다. 상담원은 재난 지점은 서류 접수가 제한되며 인근 지점이나 모바일 앱을 통한 제출이 가능하다고 안내하였다. 고객은 대출 계약서, 신분증, 재무제표를 준비했고, 앱에서 ‘사업자 서류 제출’ 메뉴를 선택해 사진을 업로드하도록 설명하였다. 파일명에 성함과 ‘연장’ 키워드를 포함하도록 지시하고, 접수가 완료되면 담당 직원이 검토 후 1~2일 내에 결과를 통보한다는 절차를 안내하였다. 고객은 추가 문의 없이 결과를 기다리기로 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

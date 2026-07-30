@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_024186",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1508,
+        "consulting_content": "고객은 ●●원 출금 내역을 확인하고 싶다고 요청하였고 상담사는 신원 확인 후 계좌 번호와 비밀번호 입력을 안내하였다. 고객은 정보를 제공하고 인증 번호를 확인하였으며 상담사는 거래를 조회해 퇴직연금 계좌에서 출금된 것으로 확인하였다. 고객은 추가 조치를 원한다며 진행을 요청하였고 상담사는 카드 정지, 분실 신고 및 비밀번호 변경 등 보안 조치를 안내하였다. 고객은 안내를 이해하고 비밀번호를 바로 변경하겠다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

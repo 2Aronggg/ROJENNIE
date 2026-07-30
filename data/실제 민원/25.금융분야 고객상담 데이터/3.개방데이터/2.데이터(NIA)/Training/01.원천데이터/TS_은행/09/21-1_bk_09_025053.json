@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_025053",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1631,
+        "consulting_content": "고객은 환전 수령 현황과 날짜, 지점 변경을 문의했으며 상담사는 신청은 취소 불가하지만 내역 조회, 수령점 등록 변경으로 날짜, 지점 조정이 가능하고, 앱, 웹 모두 동일 절차이며, 원화 입금은 자동이며 신분증, 계좌 확인만 필요하고 추가 수수료는 없다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

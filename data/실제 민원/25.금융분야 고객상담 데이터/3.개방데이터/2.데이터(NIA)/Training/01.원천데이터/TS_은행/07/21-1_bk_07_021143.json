@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_021143",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1548,
+        "consulting_content": "고객은 우대 금리와 제휴 카드 혜택 적용 기준을 문의하고 계좌, 비밀번호를 제공하며 실적 충족 여부와 출금 내역, 카드 종류 적용 여부를 물었고, 상담사는 카드 사용, 출금 금액에 따라 우대 금리가 결정되고 현재 실적이 미충족임을 확인, 설명하며, 신용, 체크카드 모두 합산 적용, 월 최소 인출액 충족 시 우대 금리가 적용된다고 안내하고 문자로 상세 안내를 약속하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

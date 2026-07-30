@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_022071",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1099,
+        "consulting_content": "고객은 대출 이자, 원금 총액과 자동이체 가능 시점, 다른 대출 관리 여부를 문의하였고 상담사는 계좌, 생년월일 확인 후 미납 이자와 마이너스 통장 한도, 오후 6시 이후 출금 제한을 안내하고, 잔액 유지 시 오늘 납부 가능, 연체료, 신용도 영향, 필요 서류 및 모바일 앱 자동이체 변경 방법을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

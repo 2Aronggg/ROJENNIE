@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_010415",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 2307,
+        "consulting_content": "고객은 아파트 관리 사무소 담당자로서 특정 일시의 입금이 발생했으나 시스템에 조회되지 않아 중계 요청 및 확인을 문의했고, 상담사는 입금 일자, 시간, 금액, 이체 은행과 계좌 정보를 재확인한 뒤 지연 반영 가능성을 안내하며 예금주 연락 및 문자 안내로 추가 확인을 진행하겠다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

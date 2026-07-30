@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_014046",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1952,
+        "consulting_content": "고객은 IRP 자동이체 중복 및 잔액 부족으로 오늘 출금이 발생한 점을 문의하였고 상담사는 계좌 조회 후 중복 설정을 확인하고 다음 이체일에도 정상 진행될 것이라 안내하였으며, 일정 변경, 일시 해지는 앱에서 직접 수행하도록 문자 안내를 제공하였다고 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

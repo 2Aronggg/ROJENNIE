@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_019708",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1048,
+        "consulting_content": "고객은 한도계좌로 인해 인터넷뱅킹 이체가 되지 않는 이유와 일일 이체 한도, 다른 채널에서의 거래 가능 여부를 문의했고, 상담사는 계좌가 금융거래 한도계좌임을 설명하며 인터넷, 자동화기기, 창구별 한도와 초과 시 지점 방문 필요, 한도는 매일 초기화됨 등을 상세히 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

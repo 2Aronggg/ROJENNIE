@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_025090",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 2797,
+        "consulting_content": "고객은 출금 내역 문의와 자동이체 해지 요청을 하였고 상담사는 자동이체 내역을 확인하고 전화, 앱 해지 절차와 위약금 없음 등을 안내하며, 보안 알림에 대해 비밀번호 변경 및 추가 문의 방법을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

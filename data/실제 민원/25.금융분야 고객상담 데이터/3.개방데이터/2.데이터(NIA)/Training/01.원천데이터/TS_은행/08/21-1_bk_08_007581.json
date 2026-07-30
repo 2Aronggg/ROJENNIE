@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_007581",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1426,
+        "consulting_content": "고객은 대출 연장과 중도금 보험 입금 확인이 필요함을 문의하였다. 상담원은 계좌 및 연장 신청이 보류 상태이며 입금 확인이 선행되어야 함을 안내하였다. 입금 예정일을 이번 주 말로 받았으며, 입금 확인 후 연장 절차와 보증료 자동이체 설정을 진행하기로 하였다. 자동이체를 위해 휴대폰 번호를 등록하고, 이자율이 기존 대비 0.3% 상승함을 설명하였다. 정확한 추가 이자액은 영업시간 내 시스템에서 산"
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

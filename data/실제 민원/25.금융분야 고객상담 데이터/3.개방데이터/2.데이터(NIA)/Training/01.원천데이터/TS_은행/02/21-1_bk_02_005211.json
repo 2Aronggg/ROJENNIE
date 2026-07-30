@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_005211",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1147,
+        "consulting_content": "고객은 타행으로부터 착오 송금 반환 문자 수신 후 일부 금액만 반환받을 수 있는지 문의하였다. 상담원은 전체 금액 반환이 원칙이며 부분 반환은 입금자와 별도 합의가 필요하다고 안내하였다. 입금자와 연락이 어려울 경우 해당 은행 고객센터에 중계 요청 절차를 문의하고, 필요 정보를 제공하도록 권고하였다. 또한 입금자 확인 서류를 확보한 후 재문의하거나, 반환이 거부될 경우 금융감독원에 민원을 제기할 수 있음을 설명하였다. 고객에게는 먼저 입금자 연락 경로를 확인하고, 미확인 시 타은행 고객센터에 중계 요청을 진행하도록 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

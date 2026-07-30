@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_015951",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1420,
+        "consulting_content": "고객은 프로 계좌 해지를 시도했으나 화면에 오류가 없어 진행되지 않아 도움을 요청하였고 상담사는 계좌 번호 확인 및 ARSS 연결을 통한 인증 절차를 안내하고, 잔액 정산, 자동이체, 모임통장 서비스 해지를 선행하고 서류를 스캔본으로 이메일, 팩스 제출 후 최종 해지를 진행하도록 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

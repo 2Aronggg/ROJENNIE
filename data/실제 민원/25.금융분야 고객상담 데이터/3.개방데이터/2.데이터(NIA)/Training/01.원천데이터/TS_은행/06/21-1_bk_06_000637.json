@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_000637",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1335,
+        "consulting_content": "고객은 기존 대출 계좌 번호 확인과 연체 금액 정산 방법을 문의했고, 상담원은 기존 계좌 번호와 연체 금액 확인 후 가상 계좌 발급 절차와 입금 금액, 마감시간 및 마감 이후 입금시 불이익, 연체 이자 여부, 입금 확인 방법 및 입금 확인 문자 전송 등을 안내했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

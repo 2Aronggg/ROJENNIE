@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_019156",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 772,
+        "consulting_content": "고객은 F마켓에서 전신환으로 구매한 외화를 현찰로 받으려면 절차와 필요 서류를 물었고 상담사는 1.5% 현찰수수료와 신분증 및 최근 3개월 내 공과금 고지서 사본 제출을 안내했으며, 영업시간 내 지점 방문 시 즉시 수령 가능하고 사전 전화 문의와 앱 신청을 권장하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

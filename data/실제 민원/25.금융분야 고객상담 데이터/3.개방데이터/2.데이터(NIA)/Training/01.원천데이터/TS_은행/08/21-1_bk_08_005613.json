@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_005613",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1488,
+        "consulting_content": "고객은 기업 운전자금 대출 만기 안내 메시지를 받고 연장 신청 방법과 절차를 문의하였다. 상담사는 해당 대출이 비대면 연장 가능 상품임을 안내하고, 어플을 통한 연장 신청 방법, 기간 선택, 이자율 변동 조건, 알림톡 안내 및 연장 완료 절차를 설명한 뒤 연장 신청을 정상 처리하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

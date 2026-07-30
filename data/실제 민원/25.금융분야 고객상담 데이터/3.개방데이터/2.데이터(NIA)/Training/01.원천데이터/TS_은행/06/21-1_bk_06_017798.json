@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_017798",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1356,
+        "consulting_content": "고객은 대출 월 납입액을 물었고 상담사는 원리금과 이자를 포함한 금액을 안내하였다. 고객은 조기 상환 위약금 문의했으며 상담사는 잔액, 남은 회차에 따라 달라진다고 답변하였다. 고객은 연장 조건과 서류를 물었고 상담사는 신청 시기와 소득 증빙 필요를 안내하였다. 고객은 변동금리로 인한 납입액 변동 가능성을 확인했으며 상담사는 금리 변동 시 사전 안내한다는 답변을 제공하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

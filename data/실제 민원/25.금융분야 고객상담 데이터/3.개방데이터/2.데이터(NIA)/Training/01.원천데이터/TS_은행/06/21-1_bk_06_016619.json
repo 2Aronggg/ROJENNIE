@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_016619",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 2208,
+        "consulting_content": "고객은 채무조정 대상 문자 수신 후 상환 방법을 문의하였고 상담사는 비상금, 마이너스 대출 두 건의 미납 이자를 문자로 안내하고 해당 금액을 입금하면 상환된다고 안내하였다. 또한 고객은 다른 대출 여부와 상환 일정을 물었고 상담사는 현재 두 건만 보유 중이며 상세 일정은 문자로 전달하겠다고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

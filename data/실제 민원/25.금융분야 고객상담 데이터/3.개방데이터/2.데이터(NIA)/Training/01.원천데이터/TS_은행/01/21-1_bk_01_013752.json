@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_013752",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1235,
+        "consulting_content": "고객은 확인되지 않은 ★★★ 원 입금 건에 대해 전화 중계와 입금자 정보 제공을 요청하였고 상담사는 개인정보 보호 차원에서 번호 제공이 어렵우며 보안 질문을 통한 중계 가능함을 안내하고, 거래 일시, 금액, 입금자명을 받아 조회를 진행하며 결과를 문자, 이메일로 1~2일 내에 알려주겠다고 하였으며, 추가 서류 제출 시 영업일 기준 3일 이내 회신 가능하다고 설명했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

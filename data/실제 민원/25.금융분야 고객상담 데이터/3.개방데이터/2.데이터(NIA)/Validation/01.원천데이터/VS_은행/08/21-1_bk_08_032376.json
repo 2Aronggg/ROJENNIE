@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_032376",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 902,
+        "consulting_content": "고객은 대출 연장을 신청하고 배우자 동의와 계약서 촬영까지 완료했으며 화면 전환이 안 된다고 문의했고, 수수료, 금리 변동을 물었으며, 추가 서류가 없음을 확인하고 심사 결과는 영업일 2일 이내에 알려주겠다고 답변받았다. 또한 연장 승인 시 기존 상환 일정이 자동 연장되고, 계좌를 새로 개설하면 배우자 동의와 서류 재업로드가 필요하다고 안내받았다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

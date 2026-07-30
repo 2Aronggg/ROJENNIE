@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_015060",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1083,
+        "consulting_content": "고객은 자동 이체 등록 문자 수신 후 절차와 신고 방법을 문의하였고 상담사는 등록이 되지 않았음을 확인하고 새 등록 방법을 앱 이용 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

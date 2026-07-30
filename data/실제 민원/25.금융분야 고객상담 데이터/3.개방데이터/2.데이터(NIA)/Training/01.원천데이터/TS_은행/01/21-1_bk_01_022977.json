@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_022977",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1205,
+        "consulting_content": "고객은 자신에게 모르는 금액이 입금된 사실과 예금주 확인이 어려움을 호소했으며, 거래 내역 확인을 요청했지만 상담사는 해당 금액은 거래은행에서만 상세 확인 가능하고 예금주 명칭은 제공되지 않으며, 자세한 내용은 해당 은행, ★★페이 고객센터에 문의하라고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

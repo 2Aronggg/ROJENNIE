@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_018892",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1202,
+        "consulting_content": "고객은 출금이 안 되고 한도가 표시되지 않는다며 계좌가 전자금융 일일 이체 한도 ●●원으로 제한된 것을 확인했고, 한도 해지는 모바일 앱에서 직접 진행하도록 안내받았으며, 필요 서류와 절차를 문자로 받기로 하였다. 상담사는 개인 고객임을 확인하고 서류 안내를 약속했으며, 추가 서비스 안내 후 상담을 종료하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

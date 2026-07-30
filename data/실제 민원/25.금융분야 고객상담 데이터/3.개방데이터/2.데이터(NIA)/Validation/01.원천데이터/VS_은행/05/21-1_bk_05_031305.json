@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_031305",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1241,
+        "consulting_content": "고객은 임대 소득 입금을 위한 계좌 개설과 한도 해제를 원해 계약서와 신분증을 지참하고 영업점 방문을 요청했으며, 모바일 해제 시도 후 실패했음을 알렸다. 상담사는 임대 계약서와 신분증을 지참해 영업점 방문 후 담당 직원이 검토, 한도 해제 절차를 진행하도록 안내하고, 평일 10시~16시 방문 예약을 권유하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

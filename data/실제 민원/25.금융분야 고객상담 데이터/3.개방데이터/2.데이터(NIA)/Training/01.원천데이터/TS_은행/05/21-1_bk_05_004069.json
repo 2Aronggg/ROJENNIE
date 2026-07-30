@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_004069",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1124,
+        "consulting_content": "고객은 출금 한도 해지를 요청했으나 상담사는 시스템상 해지 불가와 영업점 방문 필요를 안내하고, 계좌 확인을 위해 개인정보와 비밀번호를 입력받아 본인 확인을 완료하였다. 이후 상담사는 계좌가 금융거래 한도 계좌로 설정돼 이체, 출금 한도가 제한됨을 설명하고, 해외 송금 한도는 추후 문의 가능하다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

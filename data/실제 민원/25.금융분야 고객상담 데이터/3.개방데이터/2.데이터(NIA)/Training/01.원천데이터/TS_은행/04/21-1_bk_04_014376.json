@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_014376",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1013,
+        "consulting_content": "고객의 예금 만기 여부를 확인한 후 만기 금액과 적용 금리, 세후 이자 및 원천징수 세율을 안내하였다. 만기 금액을 다른 계좌로 이체하려면 별도 절차가 필요함을 설명하였으며, 재투자 가능한 고정금리, 변동금리 상품도 함께 안내하였다. 또한 은행에서 걸려온 부재중 전화는 만기 안내 목적이었다고 설명하며 고객의 의문을 해소하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

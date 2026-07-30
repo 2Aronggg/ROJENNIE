@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_026222",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 951,
+        "consulting_content": "고객은 아파트 관리비와 도시가스 요금을 ★★은행 자동이체로 등록하고 싶다고 요청하였고 상담사는 관리비는 자동이체 가능하나 가스는 앱이나 인터넷뱅킹을 이용해 직접 등록하도록 안내하고, 영업점 방문 시 신분증, 고지서, 지로 번호를 지참하라고 설명하였다. 고객은 지정일에 자동이체 시작을 원하고 신청 시점에 따라 적용된다고 확인하였으며, 문자와 앱 푸시 알림을 동시에 받도록 요청하였고 상담사는 알림 설정을 해 주겠다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

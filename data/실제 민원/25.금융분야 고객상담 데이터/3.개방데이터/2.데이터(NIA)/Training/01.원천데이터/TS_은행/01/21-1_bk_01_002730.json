@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_002730",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1204,
+        "consulting_content": "고객은 모바일 앱에서 통장 거래내역을 엑셀 파일로 받는 방법을 문의했고, 상담사는 로그인 후 메뉴 접근, 기간 설정, 파일 저장 절차를 안내하였다. 또한 이메일 자동 전송 설정, 파일에 포함되는 항목, 오류 발생 시 대처 방법 및 파일 열기 확인 요령을 설명하고 추가 문의 사항이 없음을 확인했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

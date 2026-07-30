@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_018686",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1295,
+        "consulting_content": "고객은 대출 연장을 요청하고 본인 확인을 위해 계좌, 생년월일, 비밀번호를 입력했으며 온라인으로 연장 서류를 제출하고 정상 접수 여부와 추가 서류 필요 여부, 이자율 변동을 문의하였고 상담사는 ARS 인증 후 정보를 확인하고 서류가 정상 업로드되어 검토 중이며 2~3영업일 내에 결과를 문자, 이메일로 알려주겠다고 안내하고, 추가 서류는 필요 시 연락드리며 이자율은 기존 계약과 동일하다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_020935",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1062,
+        "consulting_content": "고객은 대출 연장을 원해 계좌번호와 신분증, 대출 계약서 사본을 준비하겠다고 했고, 상담사는 본인 확인을 마치고 연장 신청은 디지털 문자 안내에 따라 진행하며, 추가 비용은 연체 이력 없을 경우 없다고 안내하고, 문자 미도착 시 영업시간 내 전화 확인 가능하다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

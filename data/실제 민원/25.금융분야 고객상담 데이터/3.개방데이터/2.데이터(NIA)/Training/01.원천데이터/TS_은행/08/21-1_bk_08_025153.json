@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_025153",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1282,
+        "consulting_content": "고객은 이름, 주민번호, 문자, 비밀번호를 제공해 본인 확인을 하였고 상담사는 인증을 완료한 뒤 보유 대출 두 건의 상세 정보를 안내하고, 조기 상환 수수료는 원금의 1%이며 금리 변동은 계약 조건에 따라 적용된다고 설명하였다. 고객은 연장 신청을 원한다며 절차를 물었고 상담사는 모바일, 웹에서 ‘대출 연장’ 메뉴 선택 후 개인정보 입력 및 추가 인증을 하면 된다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

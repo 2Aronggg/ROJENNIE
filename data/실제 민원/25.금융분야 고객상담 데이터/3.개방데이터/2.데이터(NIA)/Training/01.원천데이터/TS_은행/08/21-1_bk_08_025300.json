@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_025300",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1152,
+        "consulting_content": "고객은 소상공인 대출 연장을 위해 ★★은행 앱에 부가세 과세표준 증명서를 업로드했으나 시스템 오류가 발생했다고 알렸고, 상담사는 계좌 확인 및 인증을 진행한 뒤 파일 형식, 용량, 발행일 확인을 안내하고, 필요 시 담당 부서 연결을 약속하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

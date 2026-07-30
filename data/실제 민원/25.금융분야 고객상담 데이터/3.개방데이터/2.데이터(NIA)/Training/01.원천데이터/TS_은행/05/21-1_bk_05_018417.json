@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_018417",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "20~29세",
+        "consulting_client": "신규고객",
+        "consulting_client_type": null,
+        "source_length": 765,
+        "consulting_content": "고객은 급여 통장 한도 해제가 안돼 앱에서도 해지되지 않아 전화했으며, 상담사는 온라인 해지 메뉴가 없음을 확인하고, 급여 명세표, 건강보험 자격득실 확인서, 신분증을 지참해 가까운 영업점 방문해 해제 신청하도록 안내하고, 처리 지연 가능성과 주말 영업 여부를 설명한 뒤 문자로 상담 내용 정리를 제공하겠다고 제안하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

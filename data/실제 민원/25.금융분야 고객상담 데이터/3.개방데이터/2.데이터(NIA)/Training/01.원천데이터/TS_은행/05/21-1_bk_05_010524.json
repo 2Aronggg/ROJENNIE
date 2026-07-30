@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_010524",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1295,
+        "consulting_content": "고객은 금융거래 한도 계좌의 이체 한도 초과 문제 해결을 위해 서류 제출 및 방문 절차를 문의하였고 상담사는 재직증명서 등 서류를 팩스로 송부하거나 영업점 방문을 권고하며, 예약 없이도 가능하나 사전 예약 시 대기 시간을 줄일 수 있다고 안내하고, 자동기기와 창구 이용 한도 및 일일 거래 횟수 제한 등 추가 제한 사항도 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

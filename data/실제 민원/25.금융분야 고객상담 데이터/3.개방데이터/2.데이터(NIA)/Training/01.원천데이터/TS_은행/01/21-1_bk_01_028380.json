@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_028380",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 913,
+        "consulting_content": "고객은 출금 의심을 신고하고 계좌 정보를 제공했으며 비밀번호 입력이 안돼 앱 로그인 링크를 받아 확인했지만 여전히 이상 출금을 확인하였다. 상담사는 본인 확인 절차와 앱 로그인 안내 후 의심 거래를 즉시 정지, 조사하고 2~3일 내 결과를 지정 휴대폰으로 알림, 전화 상담 가능하며, 조사 완료 시 환불 및 계좌 정정 절차를 안내하겠다고 밝혔다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

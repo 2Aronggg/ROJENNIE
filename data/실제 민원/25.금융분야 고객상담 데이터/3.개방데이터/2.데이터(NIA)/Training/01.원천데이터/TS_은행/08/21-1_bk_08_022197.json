@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_022197",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 2066,
+        "consulting_content": "고객은 전세자금 대출 연장을 원해 서류와 절차를 문의하고 계좌, 성명, 생년월일 등 본인 확인 정보를 제공했으며 연락처를 알려 서류를 문자로 받기를 요청하였다. 상담사는 연장에 필요한 담보평가서, 소득증빙 등 서류 목록을 안내하고, 영업점 방문 시 제출하면 3~5일 소요되며 급할 경우 당일 처리 가능함을 설명하였다. 또한 문자 발송 및 홈페이지, 앱 예약 방법을 안내하고, 추가 문의 없음을 확인하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

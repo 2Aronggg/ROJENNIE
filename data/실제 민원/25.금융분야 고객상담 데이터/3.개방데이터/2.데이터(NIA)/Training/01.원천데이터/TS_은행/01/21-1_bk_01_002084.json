@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_002084",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1226,
+        "consulting_content": "고객은 최근 은행 계좌에서 이체한 내역 확인과 본인 인증 절차 및 계좌 번호 확인 방법을 문의하였고, 상담사는 다양한 본인 인증 방법과 이체 상태 조회, 영수증 발송, 수수료 내역 확인, 재조회 절차, 모바일 앱 이용법 및 실시간 알림 설정 방법을 안내하여 고객이 직접 확인하고 설정할 수 있도록 도왔다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

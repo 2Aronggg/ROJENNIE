@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_009339",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1319,
+        "consulting_content": "고객은 계좌번호와 생년월일, 통장 비밀번호를 입력하였다. 상담사는 자동이체 납부일 및 금액을 안내하고, 월별 납부 시 금액 변동 가능성을 알렸다. 현재 대출 잔액과 연이자율을 확인하고, 추가 상환은 모바일 뱅킹이나 전화로 가능함을 설명하였다. 고객은 다음 달 15일에 일정 금액을 상환하도록 예약 요청을 하였으며, 상담사는 자동 이체 예약을 완료하였다. 기존 서비스로는 체크카드와 저축예금이 있으며, 기본 적금 가입 절차를 안내하였다. 계좌 잔액과 최근 5일 거래 내역을 제공받았으며, 미결제 항목이 없음을 확인하고 상담을 종료하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

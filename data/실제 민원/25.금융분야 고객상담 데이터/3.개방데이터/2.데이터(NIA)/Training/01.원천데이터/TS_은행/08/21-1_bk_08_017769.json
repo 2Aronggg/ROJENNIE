@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_017769",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 967,
+        "consulting_content": "고객은 대출 연장 절차와 필요 서류, 수수료 안내를 요청하고 휴대폰 번호를 알려 카카오톡으로 자료를 받기를 원했으며, 상담사는 계좌, 생년월일 확인 후 연장 가능 여부와 서류 제출 방법, 수수료 내용을 카카오톡으로 전송해 드리겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

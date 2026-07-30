@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_020117",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1124,
+        "consulting_content": "고객은 마이너스 대출 만기와 연장 가능, 필요 서류를 물었고 상담사는 연장은 만기 전 신청 가능하고 신분증, 소득증명서가 필요하며 금리 적용을 안내하였다. 고객은 연장 절차, 이자율 변동과 적금 상품을 문의했으며 상담사는 연장은 본인 확인, 서류 제출 후 심사, 문자 안내이며 금리 변동은 정책에 따라 사전 안내, 적금은 금리, 혜택 설명 후 연결해 주겠다고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

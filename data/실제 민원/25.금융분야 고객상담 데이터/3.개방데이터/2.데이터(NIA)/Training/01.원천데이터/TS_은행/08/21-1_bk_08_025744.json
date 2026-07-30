@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_025744",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 953,
+        "consulting_content": "고객은 대출 연장을 요청하고 계좌 확인을 위해 주민등록번호, 생년월일, 핸드폰 번호를 제공했으며 인증 번호와 비밀번호를 입력하였고, 서류 제출 방법과 계약서 서명 절차를 안내받아 바로 진행하겠다고 하였다. 상담사는 계좌와 신분을 확인하고 연장 가능성을 안내한 뒤 비대면 앱을 통한 서류 사진 업로드와 계약서 전자 서명 방법을 설명했으며, 연장 시 이자율은 기존과 동일함을 알려 주었다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

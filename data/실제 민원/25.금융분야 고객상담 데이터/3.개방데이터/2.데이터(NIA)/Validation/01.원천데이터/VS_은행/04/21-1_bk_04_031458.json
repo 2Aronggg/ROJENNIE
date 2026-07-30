@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_031458",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 973,
+        "consulting_content": "고객은 적금 해지를 원하고 신분증, 비밀번호 제출 및 영업점 방문 절차를 문의하였고 상담사는 신분증 원, 사본 지참, 비밀번호 미등록 시 영업점 방문이 필요함을 안내하고, 예약 방법은 전화, 앱 이용이라고 설명하였다. 고객은 해지 수수료 여부를 물었고 상담사는 계약서에 따라 남은 기간에 따라 이자 차감 및 수수료가 부과될 수 있음을 알려주었다. 고객은 오늘 바로 진행하고 싶다고 하였고 상담사는 영업점 방문 시 해지 신청서 작성 및 확인 절차를 진행하도록 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_018347",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1357,
+        "consulting_content": "고객은 월세 자동이체가 해지됐는지 확인을 요청했고 상담사는 조회 결과 기간 경과로 해지됐으며 재신청이 필요하다고 안내하였다. 고객은 재등록 절차와 스마트폰 오류 상황을 물었고 상담사는 앱, PC, 방문 등록 방법과 입력 시 계좌, 금액, 일자 확인 및 알림 설정을 권고하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

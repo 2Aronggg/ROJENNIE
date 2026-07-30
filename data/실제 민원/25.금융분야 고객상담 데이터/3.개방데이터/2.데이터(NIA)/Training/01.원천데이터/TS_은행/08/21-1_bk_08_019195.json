@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_019195",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1041,
+        "consulting_content": "고객은 만기 도래 신용대출 연장을 원하고 계좌, 비밀번호 확인 후 모바일 앱에서 연장 절차를 진행하려 했으며, 상담사는 앱 이용 방법과 오류 시 원격 지원, 문자 안내 및 완료 후 확인 메시지 발송을 안내하고 비밀번호 변경을 권고하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_015216",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1083,
+        "consulting_content": "고객은 대출 한도와 연장 여부를 문의하였고 상담사는 계좌, 연장 승인 사실과 연장된 현재 이용 중이신 마이너스 통장 대출의 만기가 도래하였고 대출 연장이 완료되었음을 안내하였으며 추가로 적금 감액 상환 문자는 대출 연장과 별개이므로 추가 상환이 필요 없음을 알려주었다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

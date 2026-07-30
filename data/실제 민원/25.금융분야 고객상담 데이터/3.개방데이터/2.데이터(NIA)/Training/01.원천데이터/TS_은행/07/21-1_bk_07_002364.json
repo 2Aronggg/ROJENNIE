@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_002364",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1147,
+        "consulting_content": "고객은 대출 가상 금리와 적금 연계 우대 조건에 대해 문의했고, 상담사는 가상 금리와 실제 적용 차이, 우대 적용 시점과 기간, 필요한 서류와 인증 절차, 납입액 기준에 따른 혜택, 중도 해지 시 금리 및 수수료, 상환 시 주의사항 등에 대해 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

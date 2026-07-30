@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_013757",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1307,
+        "consulting_content": "고객은 마이너스 대출 연장을 요청하고 계좌, 비밀번호, 본인인증을 진행하였으며, 인증번호를 받아 모바일 앱에서 전자 계약서에 서명하였다. 상담사는 연장 절차와 금리 승인 상황을 안내하고, 인증, 서명 방법을 설명한 뒤 자동이체 유지와 완료 시 통보를 약속하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

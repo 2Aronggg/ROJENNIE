@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_025074",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 2557,
+        "consulting_content": "고객은 2025년 4월 15일 5만원 자동이체 문자와 발신번호를 알려주고 보안 질문에 답했으며, 직접 ★★은행에 전화해 등록 취소와 비밀번호 변경을 하겠다고 하였고 상담사는 자동이체 등록 기록을 확인하고 사기 가능성을 안내하며, 은행 고객센터 연락 방법, 취소 절차, 비밀번호 변경, 추가 보안 앱 설치 등 주의사항을 권고하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

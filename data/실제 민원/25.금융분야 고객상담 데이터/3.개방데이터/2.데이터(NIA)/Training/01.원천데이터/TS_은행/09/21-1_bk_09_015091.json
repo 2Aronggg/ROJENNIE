@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_015091",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 820,
+        "consulting_content": "고객은 홍콩 달러 현금 환전을 원하고 금액과 방문 시간을 알려 주었으며, 다른 은행 이용 중임을 밝혔고 상담사는 외환 담당자 연결 후 환율, 한도 내 즉시 가능함을 안내하고, 우대 환전 조건과 신분증, 원화 금액 지참을 권유했으며, 추가 서비스는 없다고 확인하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_028601",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1286,
+        "consulting_content": "고객은 대포 통장으로 보유한 대출의 만기 연장을 요청하고 계좌 지급정지 해제와 정책 제약을 문의했으며, 연장 심사에 소득 증빙, 신용 확인 등 서류가 필요하고 심사 기간은 영업일 기준 일주일이며, 승인 시 연체 이자, 수수료가 부과될 수 있다고 상담사는 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

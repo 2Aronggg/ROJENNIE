@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_030651",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 803,
+        "consulting_content": "고객은 신용 대출 연장을 요청했으나 연장이 안 된다고 알려졌고, 상담사는 계좌 정보와 비밀번호를 받아 확인했으며, 연장 제한 사유가 신용 점수 미달 및 연체 가능성이라고 안내하고, 최근 급여 이체 내역을 문자로 제출하면 재검토 후 연락하겠다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

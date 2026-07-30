@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_003757",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 944,
+        "consulting_content": "고객은 대만 달러 6천 달러 현찰 환전 가능 여부와 지점, 환산 금액, 수수료, 일본 엔 환전 가능성을 물었고 상담사는 해당 지점 보유 확인, 실시간 환율 안내와 수수료 없음, 엔도 동일 지점에서 취급 가능하다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

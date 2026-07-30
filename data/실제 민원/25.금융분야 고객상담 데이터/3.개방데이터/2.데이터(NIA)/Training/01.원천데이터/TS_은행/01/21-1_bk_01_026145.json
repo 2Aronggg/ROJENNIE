@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_026145",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1771,
+        "consulting_content": "고객은 일시 정지된 계좌에서 현금이 나오지 않아 출금이 안 된다고 문의했으며, 계좌, 생년월일 등 인증 정보를 제공하려 했지만 시스템에 반영되지 않아 추가 확인을 요구하였다. 상담사는 기기 위치 확인과 인증 절차를 안내하고, 일시 정지 상태에서는 출금 제한 및 영업일 1~2일 소요됨을 설명하며 문자, 앱 알림 확인을 권유하고, 재연결을 약속하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

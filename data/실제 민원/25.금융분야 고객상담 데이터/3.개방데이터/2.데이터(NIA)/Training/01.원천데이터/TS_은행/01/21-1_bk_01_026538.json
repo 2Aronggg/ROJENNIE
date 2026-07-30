@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_026538",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1925,
+        "consulting_content": "고객은 이체 시 해지된 통장이라는 오류 메시지가 나타난다며 ▲▲은행 계좌와 계좌번호, 생년월일을 제공하고 비밀번호 입력까지 시도했지만 여전히 오류가 발생한다고 했고, 상담사는 계좌를 조회해 정상 운영 중임을 확인하고 오류 원인은 은행 시스템 또는 입력 오류일 수 있다고 안내한 뒤, 해당 은행에 직접 문의해 상태 확인을 권고했으며, 고객은 안내대로 은행에 연락해 문제를 해결하겠다고 답했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_016865",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1267,
+        "consulting_content": "고객은 대출 연장 계약서를 온라인으로 제출했으나 시스템에 반영되지 않아 확인을 요청했고, 상담사는 계좌, 신원 확인 후 연장 약정서와 입금 상황을 검토하여 현재 입금이 확인됐으나 다른 연체로 자동 연장이 안 됨을 안내하고, 추가 금액 납부 시 연장이 완료될 것이라고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

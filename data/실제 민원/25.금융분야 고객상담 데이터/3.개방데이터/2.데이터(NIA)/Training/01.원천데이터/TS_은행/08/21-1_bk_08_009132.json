@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_009132",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1199,
+        "consulting_content": "고객은 만기 도래 사업자 대출 연장을 위해 필요한 서류를 문의했으며, 상담사는 비대면으로 이메일 제출이 가능하다고 안내했다. 연장 신청서, 신분증 사본, 최근 3개월 거래내역서가 필요하고 거래내역서는 인터넷뱅킹에서 PDF로 발급 가능하다고 설명했으며, 메일 제목 지정 방법과 서류 전송 후 1시간 이내 담당자 연락 예정임을 안내했다. 이자율은 기존과 동일하게 적용되나 승인 후 변동 여부를 최종 안내하며, 연장 전까지는 기존 이자율로 납부하면 되고 신청 취소는 24시간 이내 가능하다고 정리했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

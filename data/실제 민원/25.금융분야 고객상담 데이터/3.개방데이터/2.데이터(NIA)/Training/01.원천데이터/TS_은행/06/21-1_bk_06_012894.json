@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_012894",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 956,
+        "consulting_content": "고객은 대출 이자와 적금 납입 확인 및 연체 사실을 문의하였고 상담사는 연체 금액을 안내하고 즉시 출금은 불가하나 자동이체 설정을 도와줄 수 있으며 환전 수수료는 별도 부과되지 않는다라고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

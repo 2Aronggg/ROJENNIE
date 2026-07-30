@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_029035",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1006,
+        "consulting_content": "고객은 대출 이자 납부를 위해 가상 계좌 발급을 요청하고, 계좌 번호, 샵 버튼 제공 및 본인 확인을 위해 성명, 생년월일, 통장 비밀번호를 전달하였고, 입금 확인 시점을 문의하였으며, 상담사는 일회성 가상 계좌를 발송하고 오늘 납부 금액, 입금 마감 시간, 잔액 비우기 등 주의사항을 안내한 뒤, 입금이 실시간으로 카카오톡 알림으로 확인되고 영업시간 내 시스템에 반영되어 이자 처리가 이루어진다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

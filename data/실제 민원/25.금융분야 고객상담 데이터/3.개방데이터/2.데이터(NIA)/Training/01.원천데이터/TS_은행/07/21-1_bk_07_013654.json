@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_013654",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 935,
+        "consulting_content": "고객은 담보 대출 할인 혜택 조건과 관리비 자동이체 포함 여부를 문의하였고 상담사는 ★★카드 월 사용액이 ●●원 이상이면 혜택이 자동 적용되고 관리비는 별도 항목이라 연동되지 않아도 된다고 안내하였다. 고객은 사용 내역 확인 방법을 물었고 상담사는 인터넷뱅킹, 모바일앱에서 실시간 확인 가능하며 목표 미달 시 해당 월에 혜택이 적용되지 않음도 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_030890",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 968,
+        "consulting_content": "고객은 영업시간과 기업 통장 해지를 물었고, 상담사는 영업시간은 평일 9시~18시이며 해지는 지점 방문이나 모바일 앱으로 가능하고 잔액은 입출금통장으로 이체된다고 안내하였다. 고객은 이체 한도 초과 시 추가 인증과 신규 통장 개설 서류, 방법을 물었으며, 상담사는 인터넷뱅킹 한도 내 이체 가능, 초과 시 추가 인증, 해제 가능하고, 신규 통장은 신분증, 기존 통장 사본으로 온라인, 방문 모두 가능하다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

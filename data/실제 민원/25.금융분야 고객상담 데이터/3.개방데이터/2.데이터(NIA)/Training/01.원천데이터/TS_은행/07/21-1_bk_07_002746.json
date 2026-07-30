@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_002746",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "80세이상",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1694,
+        "consulting_content": "고객은 문자에 포함된 대출 우대 금리와 급여이체 실적 안내에 대해 조건, 혜택, 실적 기준, 필요 서류, 적용 후 이자율 변동 등을 문의했고, 상담사는 대출 우대 금리 적용을 위한 월, 연 급여이체 기준, 적금 연계 우대, 서류 요구사항, 적용 시점 등을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

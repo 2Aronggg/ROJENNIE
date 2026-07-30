@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_030862",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 956,
+        "consulting_content": "고객은 온라인으로 주택담보대출 연장 신청 후 진행 상황을 확인하고자 계좌 정보를 제공했으며, 연장 승인이 시스템에 접수돼 영업일 기준 2~3일 내 검토된다고 문의하였고, 상담사는 현재 신청이 검토 중이며 승인 결과는 문자, 이메일, 전화로 안내될 것이라고 답변하고, 적용 금리는 연 3.5%이고 수수료는 1만원이며 추가 서류는 필요 없고, 조기 상환 시 별도 신청과 수수료 발생 가능성을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_011774",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1836,
+        "consulting_content": "고객은 전자금융 이체 한도 제한으로 큰 금액 이체가 안 된다고 문의하였고 상담사는 계좌 확인 후 한도 해제는 앱에서 신청하고, 대상자가 아니면 지점 방문 및 서류 제출이 필요하다고 안내하였다. 고객은 해제 진행 상황과 소요 시간을 물었고 상담사는 실시간 처리되며 영업일 1~2일 내 결과가 반영되고 문자, 앱 알림으로 확인 가능하다고 설명하였다. 또한 대출 신청 시 한도 해제가 신용 평가에 긍정적 영향을 줄 수 있음을 알려주었다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

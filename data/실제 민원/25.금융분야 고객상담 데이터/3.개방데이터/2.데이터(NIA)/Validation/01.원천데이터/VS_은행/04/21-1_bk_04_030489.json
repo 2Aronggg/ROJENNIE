@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_030489",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1419,
+        "consulting_content": "고객은 적금 만기 후 입금 금액이 예상보다 적어 확인을 요청하였고 상담사는 입금 내역을 검토하고 지점장에게 문의 후 전화로 결과를 알려 주겠다고 안내하였다. 고객은 자동 연장 옵션에 대해 설명을 듣고 신청을 요청하였으며 상담사는 옵션을 신청 처리하고 완료 후 문자 안내를 약속하였다. 고객은 추가 알림 설정은 필요 없다고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

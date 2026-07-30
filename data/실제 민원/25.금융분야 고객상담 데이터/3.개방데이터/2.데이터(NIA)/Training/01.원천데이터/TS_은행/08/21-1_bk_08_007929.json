@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_007929",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1018,
+        "consulting_content": "고객은 전세자금 대출 서류를 모두 제출했으나 아직 연락이 없고 대출 만기일이 임박하여 진행 상황 확인을 요청하였다. 상담원은 서류가 현재 검토 단계에 있으며 영업일 기준 며칠 소요된다고 안내하였다. 진행 상황에 따라 추가 확인이 필요하면 별도로 안내해 드리겠다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

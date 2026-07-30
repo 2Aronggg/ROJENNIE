@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_022522",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 973,
+        "consulting_content": "고객은 연체 중인 공공 대출 확인을 요청하고, 상담사는 계좌, 생년월일 확인 후 연체 내역을 안내하며 연장 가능 여부를 설명하였다. 고객은 이자만 납부 중이며 대출 연장을 원하고, 서류 제출과 심사를 약속받아 담당 부서가 결과를 1~2일 내에 연락하고 추가 이자, 수수료 안내를 문자로 받기로 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

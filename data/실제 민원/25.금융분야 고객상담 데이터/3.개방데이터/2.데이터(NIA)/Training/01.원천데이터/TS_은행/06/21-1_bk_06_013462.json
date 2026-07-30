@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_013462",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1040,
+        "consulting_content": "고객은 압류된 계좌로 대출 상환과 가상계좌 발급 방법을 문의하였고 상담사는 본인확인 후 계좌 확인을 시도했으며, 해당 대출은 가상계좌 발급이 불가해 지점 방문 결제가 필요하고, 압류 해제를 위해서는 압류 통보서, 신분증 사본, 상환계획서가 필요하다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

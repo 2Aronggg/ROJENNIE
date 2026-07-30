@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_030535",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 689,
+        "consulting_content": "고객은 내일 만기되는 자유적금의 입금액과 세금, 조기해지 패널티, 자동이체 날짜 변경 방법을 문의하였고 상담사는 만기 금액, 이자, 세율, 조기해지 시 원금 0.5% 차감, 자동이체는 모바일뱅킹, 콜센터에서 변경 가능함을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

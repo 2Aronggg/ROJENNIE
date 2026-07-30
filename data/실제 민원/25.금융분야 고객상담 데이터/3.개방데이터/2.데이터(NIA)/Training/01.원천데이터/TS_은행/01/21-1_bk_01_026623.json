@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_026623",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1119,
+        "consulting_content": "고객은 입금 출처와 상세 내역을 알고 싶어 계좌 확인을 요청했고 상담사는 입금 내역 두 건을 확인하고, 정확한 지점은 확인 불가하다고 안내하며 상세 내용을 문자로 발송하겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

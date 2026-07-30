@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_027460",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1471,
+        "consulting_content": "고객은 대출 이자와 가상계좌 안내를 요청했고 상담사는 변동, 고정형 금리 설명과 본인 확인 절차를 안내하였다. 고객은 계좌번호, 비밀번호 등 정보를 제공하고 가상계좌 발송을 요청했으며, 상담사는 등록된 휴대폰으로 일회성 가상계좌를 문자로 보내고 입금 마감시간과 정확한 금액 입금 필요성을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

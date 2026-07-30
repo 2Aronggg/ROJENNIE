@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_021318",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1219,
+        "consulting_content": "고객은 오늘 10시~11시 거래내역 확인을 요청했고 상담사는 계좌, 비밀번호, 생년월일을 확인한 뒤 조회를 진행했으며, 입, 출금이 시스템에 반영되지 않아 카드사 승인 문의를 안내하고, 알림 서비스는 활성화, 자동이체는 없음을 알려 주었다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

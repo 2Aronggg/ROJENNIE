@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_031750",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1639,
+        "consulting_content": "고객은 적금 만기일과 입금 상황을 확인하고 지원금 수령 시기 및 세금 문의, 담당 부서 전화번호를 요청하였고 상담사는 계좌, 매월 납입액이 전액 충족돼 추가 입금이 안 됨을 안내하고, 만기일은 ○월○일이며 지원금은 지정 채널을 통해 수령하고 세부는 해당 부서에 문의하도록 전화번호를 제공하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

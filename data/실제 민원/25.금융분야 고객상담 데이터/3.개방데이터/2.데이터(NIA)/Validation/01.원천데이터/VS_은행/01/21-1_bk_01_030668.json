@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_030668",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1234,
+        "consulting_content": "고객은 ★★은행 계좌 내역 재발송 연락을 놓쳐 방문, 팩스 여부와 전체 내역, 이체 확인증 발급을 요구했으며 오전 10시 이후 방문을 원했고, 상담사는 마스킹 정책을 설명하고 전체 번호 확인을 위해 이체 확인증이 필요함을 안내했으며 발급은 2~3일이라고 알려 주고 요청을 담당 부서에 전달해 진행 상황을 문자, 전화로 알려 주겠다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

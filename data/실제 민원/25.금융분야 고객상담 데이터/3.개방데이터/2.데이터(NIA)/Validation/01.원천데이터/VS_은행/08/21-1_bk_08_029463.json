@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_029463",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 949,
+        "consulting_content": "고객은 대출 연장을 원해 모바일에서 연장 버튼을 찾지 못해 전화했고, 상담사는 모바일 앱의 대출 조회, 관리 메뉴에서 연장 신청을 선택하도록 안내했으며, 연장 시 별도 서류 제출은 필요 없고 이자, 연체료가 자동 계산된다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

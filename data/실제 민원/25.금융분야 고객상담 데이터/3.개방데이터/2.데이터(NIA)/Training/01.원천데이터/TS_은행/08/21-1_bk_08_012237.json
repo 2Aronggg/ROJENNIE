@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_012237",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 833,
+        "consulting_content": "고객은 대출 기한 연장을 요청하고 계좌, 신분 확인을 마쳤으며, 상담사는 비대면 카카오톡을 통한 서류 제출 안내와 2일 이내 전송, 2~3일 내 심사 결과 통보, 수수료 발생 가능성을 설명하고, 서류 양식 위치를 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

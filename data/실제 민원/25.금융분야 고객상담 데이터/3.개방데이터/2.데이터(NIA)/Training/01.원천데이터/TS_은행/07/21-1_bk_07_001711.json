@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_001711",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1169,
+        "consulting_content": "고객은 카드 사용 시 금리 우대와 카드 사용액 확인 방법, 우대 조건 미 충족 시 대출 금리의 변화에 대해서 문의하였고, 상담사는 카드 사용 시 금리 우대되는 내용과 카드 사용액 확인 방법, 우대 조건 미 충족 시 대출 금리와 다른 카드 사용 가능 여부, 카드 사용 실적이 대출 우대 금리에 반영되는 시점에 대해서 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

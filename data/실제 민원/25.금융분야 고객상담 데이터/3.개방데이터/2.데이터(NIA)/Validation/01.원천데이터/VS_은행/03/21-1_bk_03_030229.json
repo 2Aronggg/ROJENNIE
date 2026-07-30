@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_030229",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "20~29세",
+        "consulting_client": "신규고객",
+        "consulting_client_type": null,
+        "source_length": 795,
+        "consulting_content": "고객은 자동 이체 시작일과 적용 계좌를 문의하고 계좌 번호, 성명, 생년월일을 제공했으며, 해지 방법과 수수료 여부도 물었고, 상담사는 다음 달 1일부터 매월 동일 일자에 이체가 진행된다고 안내하고, 은행 계좌이면 상관없다고 확인 후 본인 확인을 완료했으며, 자동 이체 일정과 금액을 설명하고, 해지는 전화, 인터넷뱅킹으로 가능하고 수수료가 없다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

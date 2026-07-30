@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_007553",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1692,
+        "consulting_content": "고객은 직장인론과 마이너스 통장 두 건의 대출 연장을 원하고, 연장 시 일시불과 분할 상환 중 선택이 가능한지 문의하였다. 상담사는 연장 금리와 상환 방식, 12개월, 24개월 분할 시 월 상환액과 전체 이자 변동을 안내하였다. 연장 신청서는 이메일로 발송하고 서명, 신분증, 급여명세서 제출 후 영업일 2~3일 내 심사 결과를 통보한다는 절차를 설명하였다. 심사 부정 시 대출 조건 재조정 또는 고정, 변동 금리 신규 상품을 제안하고, 변동 금리 리스크는 추가 상환, 상한선 적용으로 관리할 수 있음을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

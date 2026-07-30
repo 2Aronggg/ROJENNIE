@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_011851",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1729,
+        "consulting_content": "고객은 대출을 원금 상환으로 전환하고 오늘 입금된 금액이 대출 상환에 반영되는지 확인하고 잔액과 남은 원금을 알고자 하였고 상담사는 입금액을 대출에 적용하고 현재 잔액을 알려주며 남은 원금과 3.5%의 새로운 이자율을 안내하고 추가 수수료는 없음을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

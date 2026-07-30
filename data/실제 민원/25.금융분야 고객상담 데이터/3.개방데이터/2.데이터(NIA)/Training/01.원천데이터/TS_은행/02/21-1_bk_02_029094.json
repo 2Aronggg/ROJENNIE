@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_029094",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 2276,
+        "consulting_content": "고객은 두 건의 법인 통장 입금 거래에 대한 확인 및 중계 요청을 하였고 상담사는 거래 일자, 금액, 계좌 정보를 확인하고 공동망 내역 조회, 중계 절차 진행을 안내하며, 고객 동의를 받아 예금주에게 연락 및 담당자 연결을 진행하고, 처리 예상 시간을 15분으로 알려주고 만족도 조사 제안을 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

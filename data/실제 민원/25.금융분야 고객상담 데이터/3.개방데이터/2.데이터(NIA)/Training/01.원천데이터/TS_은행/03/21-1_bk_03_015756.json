@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_015756",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1897,
+        "consulting_content": "고객은 자동이체 안내 문자와 ▲▲ 계좌 현황, 수수료, 연결 여부, 보안 인증 절차를 문의하였고 상담사는 문자 확인 방법, 오픈뱅킹 조회, 수수료 정책, OTP, 지문, 얼굴인식 인증 절차를 안내하고 전화 상담으로 실시간 계좌, 연결 상태 확인이 가능함을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_027627",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1115,
+        "consulting_content": "고객은 엔화 환전을 신청하고 수령 지점, 시간 안내를 요청했으며, 상담사는 본인 확인, 결제, 영업시간을 안내하고 예약을 잡았다. 고객은 CD기에서 엔화 출금 가능 여부를 물었고, 상담사는 국내에서는 지원되지 않을 수 있어 카드사 확인이 필요하다고 답했다. 고객은 실시간 환율, 수수료 안내를 요청했고, 상담사는 현재 환율, 수수료, 예상 금액을 제시 후 진행 여부를 확인했다. 고객은 진행을 승인하고 가까운 환전소 위치 안내를 요청했으며, 상담사는 위치 정보를 제공한다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

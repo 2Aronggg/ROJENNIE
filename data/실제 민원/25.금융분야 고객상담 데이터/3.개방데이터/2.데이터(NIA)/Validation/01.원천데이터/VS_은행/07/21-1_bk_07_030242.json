@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_030242",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 890,
+        "consulting_content": "고객은 대출 이자 납부와 자동 이체 설정을 요청했으며, 상담사는 대출 원금 5,000만원, 총 잔액 5,250만원을 안내하고, 매월 15일 자동 이체를 연동 계좌와 비밀번호 확인을 거쳐 설정 완료하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

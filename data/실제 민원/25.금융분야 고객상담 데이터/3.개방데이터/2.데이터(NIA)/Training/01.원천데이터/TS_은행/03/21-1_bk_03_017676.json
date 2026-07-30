@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_017676",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 785,
+        "consulting_content": "고객은 기존 자동이체 해지를 요청하였고 상담사는 계좌, 비밀번호 확인 후 전화상 해지는 불가하므로 서면 신청서와 신분증 사본을 팩스로 보내면 2~3영업일 내 처리된다고 안내하였으며, 새로운 자동이체는 인터넷뱅킹이나 모바일 앱으로 바로 등록 가능하다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

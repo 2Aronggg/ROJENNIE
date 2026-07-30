@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_006332",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1315,
+        "consulting_content": "고객이 보험사 자동이체 해지를 요청하였으나 유선 해지가 불가해 앱, 인터넷뱅킹 또는 지점 방문을 통한 해지 절차를 안내하였다. 본인확인 후 자동이체 내역을 조회하여 해당 보험 자동이체 외 다른 예약은 없음을 확인하였다. 고객 요청에 따라 해지 방법과 절차가 포함된 안내 문자를 발송하였으며, 해지 완료 후 확인 문자가 발송되고 미수신 시 고객센터로 연락하도록 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

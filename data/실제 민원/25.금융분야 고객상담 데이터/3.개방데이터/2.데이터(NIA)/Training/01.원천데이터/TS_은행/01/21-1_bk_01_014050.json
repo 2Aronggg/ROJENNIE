@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_014050",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1297,
+        "consulting_content": "고객은 예상치 못한 출금 내역 확인을 요청하였고 상담사는 계좌, 해당 일자 거래를 조회하여 금액이 ★★페이 결제로 처리됐음을 안내하였으며, 은행 시스템에서는 상세 확인이 어려워 ★★페이 고객센터 전화번호를 제공하고 자동 결제 차단 방법을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_011577",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "20~29세",
+        "consulting_client": "신규고객",
+        "consulting_client_type": null,
+        "source_length": 1102,
+        "consulting_content": "고객은 대출 잔액 및 이번달 입금 금액을 문의하였고 상담사는 마이너스 통장 대출 금액과 이자를 안내하였다. 고객은 조기 상환 수수료와 가능 여부를 물었고 상담사는 수수료 비율과 이자 감소 시뮬레이션을 제공하였다. 고객은 시뮬레이션 결과를 확인하고 입금 일자와 출금 시점을 안내받았다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

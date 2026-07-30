@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_024403",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1294,
+        "consulting_content": "고객은 사용하지 않던 계좌의 송금 한도 해지를 요청하고 비대면 인증 절차를 안내받고자 하였고 상담사는 비대면 한도 해제 방법을 앱 메뉴 안내와 휴대폰 인증, 공공데이터 동의 절차를 설명하고 해제 신청을 진행하도록 도와주었으며, 해제 완료 후 일반 이체 한도로 이용 가능하고 자동이체는 유지되며 결과는 영업일 기준 몇 시간 내에 문자로 안내된다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

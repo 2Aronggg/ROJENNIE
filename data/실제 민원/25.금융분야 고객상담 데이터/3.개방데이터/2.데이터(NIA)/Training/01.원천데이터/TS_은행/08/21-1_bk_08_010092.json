@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_010092",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1769,
+        "consulting_content": "고객은 전세 대출 연장을 문의하고 계약 조건 변동 없음을 확인하였으며, 연장 절차와 필요 서류, 비용이 없고 인쇄비만 발생한다는 안내를 받았으며 연장 신청을 진행하였다. 상담사는 연장 신청 방법과 서류 전송을 안내하고, 조기 상환 시 위약금 없이 가능함을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

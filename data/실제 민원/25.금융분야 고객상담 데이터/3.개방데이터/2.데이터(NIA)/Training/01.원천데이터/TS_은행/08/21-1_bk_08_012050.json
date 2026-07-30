@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_012050",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "80세이상",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 735,
+        "consulting_content": "고객은 대출 만기 안내 문자를 받고 연장 방법을 문의하였고 상담사는 연장 조건 및 필요 서류를 안내하고, 전화로 재연락 일정을 잡아 주겠다고 하였다. 고객은 이름과 연락 가능 시간을 알려 재연락을 요청하였고 상담사는 신분증 확인 절차와 전화 재연락을 오늘 중에 진행하며, 연장 신청 완료 시 문자, 이메일로 결과를 통보하겠다고 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

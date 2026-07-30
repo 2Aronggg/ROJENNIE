@@ -11,7 +11,6 @@ PRODUCT_KEYWORDS: tuple[tuple[str, tuple[str, ...]], ...] = (
     ("ELS", ("ELS", "지수연계")),
     ("펀드", ("펀드", "환매", "운용보수", "보수")),
     ("대출", ("대출", "연체", "중도상환", "채권추심", "변동금리")),
-    ("보험", ("보험", "보험금", "환급금")),
     ("적금", ("적금", "자동이체", "우대조건")),
     ("예금", ("예금", "정기예금", "계좌", "통장", "지급정지")),
 )
@@ -117,8 +116,6 @@ def _classify_product(text: str) -> str | None:
 def _classify_issue_type(text: str, product: str | None) -> str:
     if product == "대출":
         return "지원제외_대출"
-    if product == "보험":
-        return "지원제외_보험"
     if product == "적금" and any(keyword in text for keyword in ("자동이체", "이체 실패", "우대조건이 깨졌", "놓쳤")):
         return "자동이체누락안내"
     if product == "적금" and any(keyword in text for keyword in ("중도해지", "위약금", "계약서에 없던 수수료")):
@@ -164,4 +161,3 @@ def _infer_product_from_issue(issue_type: str) -> str | None:
     if issue_type in {"배상비율불만", "분쟁조정안내부족", "상환금과소지급", "중도해지손실", "원금손실설명부족"}:
         return "ELS"
     return None
-

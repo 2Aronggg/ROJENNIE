@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_031251",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 684,
+        "consulting_content": "고객은 도약 계좌의 자동이체 결제 계좌를 다른 계좌로 변경하고자 전화했으며, 어플 시도 후 실패했다고 알렸고, 상담사는 휴대폰 번호 확인 후 문자로 변경 경로를 발송하고, 자동이체만 변경되며 계좌는 해지되지 않음을 안내했으며, 변경 후 확인 문자, 이메일 수신 가능 여부를 물어 수신 가능하다고 답받았다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_008231",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 911,
+        "consulting_content": "고객은 기존 일반시설자금 대출 잔액을 가상계좌를 통해 일시 상환하고자 하였으며, 상담원은 타행 계좌와 비밀번호를 입력받아 가상계좌 번호와 입금 금액을 안내하였다. 가상계좌는 일회성으로 당일 23시 11분까지 입금해야 하며, 입금 시 자동으로 대출 상환이 처리되고 입"
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

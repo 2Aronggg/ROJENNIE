@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_023568",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 594,
+        "consulting_content": "고객은 이자 납부 일정, 금액, 자동 인출일을 물었고 상담사는 월별 이자와 지정일 자동 이체를 안내하였다. 고객은 가상 계좌 발급을 요청했으며 상담사는 일회성 번호와 입금 마감 시간을 알려주었다. 고객은 연체 금액 확인과 처리 방법을 요구했고 상담사는 연체액과 가상 계좌 입금으로 해소 가능함을 설명하였다. 고객은 입금 확인 절차와 필요 서류를 물었고 상담사는 입금 확인 후 신분증, 계약서 사본을 발송한다는 답변을 제공하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

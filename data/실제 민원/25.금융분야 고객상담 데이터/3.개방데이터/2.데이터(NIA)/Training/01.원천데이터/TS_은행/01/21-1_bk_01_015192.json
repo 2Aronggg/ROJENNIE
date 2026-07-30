@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_015192",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1319,
+        "consulting_content": "고객은 통장 입금 내역 확인과 서비스 해지, 만기 금액 수령 방법, SMS 인증 절차 진행을 요청하였고 상담사는 입금 내역 확인, 해지 처리 안내, 인증 번호 발송 및 입력 방법, 대출 신청 절차와 필요 서류를 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

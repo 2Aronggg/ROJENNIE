@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_003028",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1617,
+        "consulting_content": "고객은 송금과 비상금 대출 금리 감면, 급여 충족 혜택, 조기 상환 절차, 신용 등급 영향, 온라인 서류 조회 및 수정 방법 등에 대해 질문했고, 상담원은 자동 금리 감면 적용 시점, 급여 충족 여부 실시간 확인 방법, 조기 상환 절차와 비용, 신용 점수 관리 팁, 간편 인증 절차와 거절 시 대처 방안에 대해 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

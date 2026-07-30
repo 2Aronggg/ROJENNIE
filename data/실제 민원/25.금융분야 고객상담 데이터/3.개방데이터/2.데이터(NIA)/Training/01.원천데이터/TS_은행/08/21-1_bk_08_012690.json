@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_012690",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1342,
+        "consulting_content": "고객은 대출 연장 절차와 필요 서류, 자동 연장 여부 및 수수료, 이자 변동을 문의하였고 상담사는 연장은 자동이 아니며 전세 계약서 사본, 주민등록등본, 소득증빙 등 서류 제출 후 심사 필요하고, 비대면 앱으로 제출 가능하며, 수수료는 없고 기존 금리는 변동 없을 수 있음을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

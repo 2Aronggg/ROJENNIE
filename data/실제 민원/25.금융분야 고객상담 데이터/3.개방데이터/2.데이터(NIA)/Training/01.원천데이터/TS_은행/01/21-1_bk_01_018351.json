@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_018351",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1416,
+        "consulting_content": "고객은 이자 입금이 확인되지 않아 입금 일자를 문의하였고, 상담사는 입금일을 확인하고 1~2영업일 내 처리될 수 있음을 안내하며 계좌, 비밀번호 확인을 요청하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_017442",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 779,
+        "consulting_content": "고객은 신용담보대출 연장을 위해 기존 계약서와 최근 3개월 급여명세서, 재직증명서를 제출하고 수수료 여부와 이자율 변동을 문의하였고 상담사는 서류 제출을 안내하고 수수료는 없으며 이자율은 기존과 동일함을 설명하고, 서류 검토 후 영업일 2~3일 내 결과 통보 및 최종 승인 시 한도와 상환일정이 확정된다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

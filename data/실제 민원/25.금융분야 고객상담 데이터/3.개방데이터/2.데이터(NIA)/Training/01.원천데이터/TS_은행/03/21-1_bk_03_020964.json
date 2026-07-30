@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_020964",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 942,
+        "consulting_content": "고객은 아파트 관리비 자동이체 해지를 요청하고 앱에서 내역을 찾지 못한다는 말을 했으며, 상담사는 자동이체 등록 여부를 조회해 은행 측에 등록되지 않았음을 안내하고 바로 해지 절차를 진행해 출금 일정이 없음을 확인시켰고, 해지 완료 문자를 발송하겠다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

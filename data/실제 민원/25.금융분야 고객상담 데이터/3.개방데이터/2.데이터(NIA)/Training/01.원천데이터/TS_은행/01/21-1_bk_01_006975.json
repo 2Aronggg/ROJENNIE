@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_006975",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1660,
+        "consulting_content": "고객은 모르는 사람에게 입금된 금액의 보낸 사람을 확인 요청했으며, 상담사는 계좌번호 확인 불가와 입금 은행 통한 중계 요청 절차를 안내하여, 이체를 원할 경우 모바일 앱 이체 메뉴를 이용하도록 안내하였으며, 처리 결과 통보를 약속하며 상담을 종료했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

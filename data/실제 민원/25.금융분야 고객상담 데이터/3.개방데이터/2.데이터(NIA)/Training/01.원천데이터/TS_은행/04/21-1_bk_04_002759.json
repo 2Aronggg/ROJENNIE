@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_002759",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1626,
+        "consulting_content": "고객은 청약 저축 해지를 원해 절차와 영향에 대해 문의했고, 상담사는 모바일 어플을 통한 청약 저축 해지 방법, 금액 이체 시점, 전화 해지 불가, 어플 사용 단계, 재가입 시 혜택 차이, 현재 프로모션, 금리 우대 종료 및 세액공제 영향 등에 대해 안내했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

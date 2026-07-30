@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_005846",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 974,
+        "consulting_content": "고객은 법인 계좌에 입금된 금액의 거래 내역과 입금자 정보를 확인하고자 하였으며, 입금자와 직접 통화하고 서면 증빙을 요청하였다. 상담원은 입금 일시와 금액을 확인하고, 해당 입금이 ○○업체와의 계약에 따른 선불금임을 안내하였다.입금자 연락처와 영업시간을 제공하고, 서면 증빙을 이메일로 발송하겠다고 안내하였다. 상담원은 입금 관련 담당자와 연결을 진행하고, 연결이 완료된 후 정보를 전달하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

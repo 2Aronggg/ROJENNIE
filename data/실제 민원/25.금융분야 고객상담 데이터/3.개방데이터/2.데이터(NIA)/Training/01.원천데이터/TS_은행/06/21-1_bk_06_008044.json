@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_008044",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1254,
+        "consulting_content": "고객은 출금된 대출금의 정체와 결제일 기준을 문의하였고, 상담사는 해당 출금이 기존에 받은 대출 2건 중 특정 대출의 정기 출금임을 확인해 안내하고, 결제일 규칙과 남아 있는 대출 건 여부를 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

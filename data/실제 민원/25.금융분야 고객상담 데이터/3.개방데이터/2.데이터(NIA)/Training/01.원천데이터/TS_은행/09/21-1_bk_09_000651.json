@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_000651",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1624,
+        "consulting_content": "고객은 보유중인 위안화 잔액 확인과 현금 인출, 환전 절차, 수수료, 동전 취급 여부 등에 대해 문의하였고, 달러 및 유로 보유 가능 여부를 확인하며 대량 환전 상담 예약까지 요청하였다. 상담사는 환전 한도, 환전 예약 방법, 필요 서류, 수수료율, 환전 시점, 지점 영업시간 및 주차 정보를 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

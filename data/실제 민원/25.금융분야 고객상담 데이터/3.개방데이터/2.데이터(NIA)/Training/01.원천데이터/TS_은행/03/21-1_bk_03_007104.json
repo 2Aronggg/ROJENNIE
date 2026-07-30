@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_007104",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 986,
+        "consulting_content": "고객은 기존에 신청한 자동이체가 지속되는 것으로 판단되어 해지를 요청하였다. 상담원은 해당 출금이 자동이체가 아닌 정기결제 형태임을 확인하고, 해지는 서비스 제공처에 직접 문의해야 한다고 안내하였다. 또한 인터넷뱅킹에서 거래내역을 확인하고, 해지 시 계좌번호와 본인 확인용 신분증만 필요하다고 설명하였다. 고객은 안내에 따라 서비스센터에 해지 요청을 진행하기로 하였으며, 추가 문의가 없다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

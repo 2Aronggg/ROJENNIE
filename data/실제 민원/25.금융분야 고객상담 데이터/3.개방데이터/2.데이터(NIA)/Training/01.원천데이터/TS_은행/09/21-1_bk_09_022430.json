@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_022430",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1005,
+        "consulting_content": "고객은 해외 여행 중 사용 가능한 체크카드 발급 및 환전 방법을 문의하였고 상담사는 체크카드 발급 절차와 비밀번호 설정, 소액 결제 활성화 방법, 해외 결제, 인출 수수료 안내와 환전할 경우 환전 시 신분증 지참 및 지점 방문 필요성을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

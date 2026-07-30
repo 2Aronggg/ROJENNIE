@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_001083",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1413,
+        "consulting_content": "고객은 자동이체가 일시적으로 등록된 상황을 문의했고, 상담원은 해당 등록이 요금 수납을 위한 일시적 처리이며 이미 해지됐음을 설명했다. 상담원은 추가로 고객이 문의한 자동이체 재설정, 알림 관리, 계좌 변경, 수수료 여부, 실시간 확인 방법 등에 대해서도 안내했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

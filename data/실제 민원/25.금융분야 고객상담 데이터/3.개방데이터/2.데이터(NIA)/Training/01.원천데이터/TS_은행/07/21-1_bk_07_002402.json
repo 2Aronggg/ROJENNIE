@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_002402",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1436,
+        "consulting_content": "고객은 전세 대출의 우대 금리 적용 조건과 현재 적용 금리를 문의하고, 상담원으로부터 거래 실적이 없을 경우의 대처 방안, 추가 실적 인증 시 받을 수 있는 혜택, 다른 대출 상품으로 전환 시 이자 절감 효과와 절차 등에 대해 안내받았다. 상담원은 조건별 금리 차이와 전환 절차, 필요 서류 및 보안 절차에 대해서도 안내했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

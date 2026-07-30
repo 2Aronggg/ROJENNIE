@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_014289",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1198,
+        "consulting_content": "고객은 현재 계좌 잔액으로 한도 증액이 가능한지 확인하고 서류 제출 방법을 문의하였고 상담사는 시스템상 증액이 불가하므로 계좌 이용 목적 증빙 서류를 준비해 지점 방문 또는 팩스로 제출하도록 안내하고, 신분증 사본, 거래내역서, 계약서, 영수증 등을 준비하라고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

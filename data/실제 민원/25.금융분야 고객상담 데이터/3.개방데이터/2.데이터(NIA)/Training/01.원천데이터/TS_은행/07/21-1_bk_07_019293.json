@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_019293",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 2006,
+        "consulting_content": "고객은 대출 금리와 혜택, 상환 일정 및 조기 상환 수수료에 대해 문의하였고 상담사는 계좌, 비밀번호 확인 절차를 안내하고, 현재 적용 금리는 연 4.2%이며 자동 이체로 매월 말일 상환되고 조기 상환 수수료는 없다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

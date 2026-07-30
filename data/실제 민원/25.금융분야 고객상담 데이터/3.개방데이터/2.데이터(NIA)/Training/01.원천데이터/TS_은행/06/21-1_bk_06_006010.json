@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_006010",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1482,
+        "consulting_content": "고객은 미납 대출 여부 확인을 요청하였다. 상담사는 세 건의 대출 중 기업 운전 자금 대출이 아직 상환되지 않았으며, 금액 ●●●원과 가상계좌 입금 마감 시각을 안내하였다. 고객은 문자 알림 설정과 자동이체를 요청했고, 자동이체 신청이 완료되어 매월 지정일에 자동 출금되도록 하였다. 이후 대출 연장을 원한다며 반년 연장 신청 의사를 밝히자, 연장 절차와 필요 서류를 이메일로 송부하기로 하였으며, 서류 검토 후 추가 안내를 약속하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

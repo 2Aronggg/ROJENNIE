@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_003500",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1141,
+        "consulting_content": "고객은 적금 만기 안내를 받았다고 문의했으나 실제로 대출 만기 연장을 원한다며 계좌번호, 이름, 생년월일, 비밀번호를 제공하였고 상담사는 정보를 확인 후 마이너스 통장 대출의 연장이 필요함을 안내하고, 모바일 앱 링크를 문자로 발송해 연장 절차를 진행하도록 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

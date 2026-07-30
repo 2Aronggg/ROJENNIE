@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_016329",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 999,
+        "consulting_content": "고객은 대출 이자 총액과 납부 금액을 문의하였고 상담사는 신원 확인 후 금액을 안내하고 가상계좌 송금을 제안하며 입금 기한과 연체 이자 위험을 설명하였다.상담사는 입금 내역은 실시간으로 확인되며, 추가 입금이 필요한 경우에는 문자 또는 앱 알림을 통해 안내되거나 상담을 통해 직접 확인하실 수 있다. 모바일 앱의 ‘대출관리 > 납부내역’ 메뉴에서 입금 여부와 부족 금액을 확인하실 수 있으며, 필요 시 고객센터로 문의하시면 정확한 금액을 재안내해 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

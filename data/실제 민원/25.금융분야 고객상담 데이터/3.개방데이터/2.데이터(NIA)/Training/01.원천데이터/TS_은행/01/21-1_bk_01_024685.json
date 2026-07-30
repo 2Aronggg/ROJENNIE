@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_024685",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1266,
+        "consulting_content": "고객은 오늘 출금된 해외 결제 거래 내역 확인을 요청하고 계좌, 본인 확인을 진행했으며, 상담사는 거래가 해외 결제 후 정산 시점에 출금된 것이라 설명하고 영수증, 거래내역 비교를 권고한 뒤, 카드 재발급은 영업점 방문 또는 모바일 신청으로 1~2일 내 가능하다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_014063",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 2167,
+        "consulting_content": "고객은 모바일 앱으로 대출 이자 납입이 안 된다고 문의하였고 상담사는 고객 신원 확인 후 가상계좌를 문자로 발송하고, 입금 시 자동 상환 및 확인 문자가 전송된다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_024768",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 646,
+        "consulting_content": "고객은 소액 ◆◆◆ 동 환전을 원하고, 필요한 서류와 앱 예약 여부 등을 문의하였고 상담사는 현금 지참 시 창구에서 최소 금액 제한 없이 즉시 환전 가능하며 신분증, 현금, 신청서가 필요하고, 앱 사전 예약은 해당 지점에서 미지원이라 창구 방문을 권유하며, 소액 환전 수수료는 없다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

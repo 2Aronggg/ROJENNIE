@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_028675",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 749,
+        "consulting_content": "고객은 대출 금액, 이자율 확인과 납부일, 연체 시 이자율을 문의했고 상담사는 납부일은 매월 15일이며 연체 이자율은 연 6.5%라고 안내하고 자동이체 설정 방법을 설명하였다. 이후 고객은 본인 확인 및 계좌 비밀번호 입력을 시도했으나 오류가 발생해 상담사는 재입력을 요청하고 거래 진행 상황을 확인하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

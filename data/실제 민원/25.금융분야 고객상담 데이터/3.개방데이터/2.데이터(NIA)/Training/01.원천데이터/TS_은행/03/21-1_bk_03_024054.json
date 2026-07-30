@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_024054",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1086,
+        "consulting_content": "고객은 자동 이체가 안 된 적금 입금을 확인하고자 계좌, 본인 정보를 제공하였고 상담사는 조회 후 일정, 금액을 안내하였다. 고객은 금리, 우대와 입금 지연 시점을 물었고 상담사는 설명하였다. 또한 고객은 전분기 한도와 월 입금액 변경을 요청했으며 상담사는 한도 설명과 변경 절차를 안내하고 변경 요청을 접수하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

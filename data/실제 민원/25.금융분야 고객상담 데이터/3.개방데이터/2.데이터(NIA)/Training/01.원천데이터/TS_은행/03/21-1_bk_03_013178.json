@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_013178",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1170,
+        "consulting_content": "고객은 ‘집 코드’ 앱에 카드 번호를 입력해 현금 인출을 시도했으나 오류가 발생하고 자동이체 해지를 원했으며 카드 사용 차단을 요청하였고 상담사는 자동이체는 은행 어플의 자동이체 관리 메뉴에서 해지하거나 기관에 직접 문의하도록 안내하고, 카드 일시 정지는 어플의 보안, 비밀번호 메뉴에서 진행할 수 있다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

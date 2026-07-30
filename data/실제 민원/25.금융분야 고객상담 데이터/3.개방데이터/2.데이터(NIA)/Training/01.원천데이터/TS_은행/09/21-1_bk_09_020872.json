@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_020872",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1825,
+        "consulting_content": "고객은 호주달러 ●●●원 교환을 원하고 보유량, 직원 연결, 인터넷뱅킹 신청, 한도 확인, 계좌이체 옵션을 문의했으며, 상담사는 현재 보유량 충분함을 안내하고 방문, 온라인 신청 절차, 실시간 환율 적용, 수수료, 우대 여부, 일일 한도 확인 및 오후 2~4시 재연락 약속, 계좌이체는 영업일 1일 내 입금된다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

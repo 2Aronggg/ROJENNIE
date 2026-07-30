@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_025790",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1803,
+        "consulting_content": "고객은 아파트 대출, 적금, 주택청약, 퇴직연금 연계 할인 연장 및 해지, 재신청 절차와 서류 제출 기한을 문의하였고 상담사는 적금 연장은 온라인, 전화 신청 가능, 해지는 신분증, 급여명세, 계약서 등 서류를 3일 이내 이메일, 팩스로 보내면 된다고 안내하고, 서류 접수 후 확인 전화를 드려 할인 적용 여부와 납입 일정을 알려드리겠다고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

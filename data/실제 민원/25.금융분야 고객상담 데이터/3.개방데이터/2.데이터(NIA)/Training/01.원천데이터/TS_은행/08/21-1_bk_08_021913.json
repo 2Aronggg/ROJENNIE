@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_021913",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1655,
+        "consulting_content": "고객은 대출 연장 신청 현황과 남은 원, 이자, 서면 확인서 발송 및 팩스 제출 가능 여부를 문의하였고 상담사는 신청이 정상 반영됐음을 알리고, 출금 지연 사유를 조사 중이며, 모바일 인증 어려움 시 대체 인증 및 전화 예약 절차를 안내하고, 예약 확인 메일 및 연락 시간 조정을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

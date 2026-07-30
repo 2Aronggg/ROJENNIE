@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_017888",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1328,
+        "consulting_content": "고객은 관리비 중계 요청을 위해 입금 정보를 제공하고 동, 호수 누락을 알렸으며, 상담사는 계좌, 입금일, 금액 확인을 요청하고 정보를 검토한 뒤 담당자와 연결해 중계 절차를 안내하고 진행하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

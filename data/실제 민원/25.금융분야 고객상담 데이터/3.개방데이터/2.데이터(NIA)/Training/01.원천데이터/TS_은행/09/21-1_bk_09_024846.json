@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_024846",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1230,
+        "consulting_content": "고객은 5,000위안 현금 환전을 원하고 100, 50위안 권종만으로 가능 여부와 수수료, 영수증 발급 방법을 문의하였고 상담사는 해당 지점에 재고가 있으며 권종 조합 가능, 신분증, 여행 일정표 등 서류 필요와 모바일 앱 예약 시 수수료 포함 및 영수증 발급 가능, 영업시간, 한도 안내를 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

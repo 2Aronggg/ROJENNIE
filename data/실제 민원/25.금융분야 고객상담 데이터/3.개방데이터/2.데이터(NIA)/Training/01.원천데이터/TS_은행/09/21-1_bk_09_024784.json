@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_024784",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 791,
+        "consulting_content": "고객은 환전 후 받은 여행자보험 안내 문자와 가입 가능 여부, 절차, 비용 등을 문의하였고 상담사는 오늘 24시까지 링크로 가입 가능하고, 앱 전환 후 완료 시 확인 문자와 증권이 전송되며 기본 보험은 무료, 추가 옵션은 비용이 발생한다는 점을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

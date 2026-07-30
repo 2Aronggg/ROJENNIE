@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_028973",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1151,
+        "consulting_content": "고객은 ★★ 통장의 일일, 월별 거래 한도 확인 및 해지 절차를 문의했으며, 해지는 시스템에서 대상이 아니라고 안내받아 서류 제출 및 영업점 방문이 필요하다고 답변받았다. 상담사는 신분증, 계약서 사본을 팩스로 보내거나 지참해 방문하도록 안내하고, 급여이체, 자동이체 조건 충족 여부를 확인 후 혜택 적용 가능성을 설명했다. 또한, 해당 지점 방문 상담 가능 여부를 확인하고 추가 문의는 없다고 확인했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

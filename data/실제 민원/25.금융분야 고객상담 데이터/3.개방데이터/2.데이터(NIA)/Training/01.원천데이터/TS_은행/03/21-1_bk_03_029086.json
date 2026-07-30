@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_029086",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 690,
+        "consulting_content": "고객은 자동이체 미이체를 확인하고자 전화를 걸었고 상담사는 계좌와 비밀번호 확인 후 자동이체가 신청되지 않았음을 안내하였다. 고객은 자동이체 신청과 금액, 일정, 수수료 정보를 요구했으며 상담사는 OTP 카드 필요와 신청 절차 및 월 500원 수수료를 설명하고, 다음 영업일에 이체가 정상 진행되고 모바일 앱에서 확인 가능하다고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

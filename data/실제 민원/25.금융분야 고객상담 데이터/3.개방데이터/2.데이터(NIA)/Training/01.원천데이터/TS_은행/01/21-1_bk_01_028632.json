@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_028632",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1651,
+        "consulting_content": "고객은 본인 아닌 12시 출금 사실을 신고하고 계좌, 비밀번호 확인 절차를 진행했으며, 출금 위치와 거래 내역을 문의했지만 상담사는 해당 출금이 ATM 인출 및 타행 송금이 출금 형태로 표시된 것이라고 설명하고, 추가 확인 및 보안 점검을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

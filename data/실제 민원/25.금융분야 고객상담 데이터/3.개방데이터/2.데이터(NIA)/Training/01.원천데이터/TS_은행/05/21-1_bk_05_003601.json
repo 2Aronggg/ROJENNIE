@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_003601",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1605,
+        "consulting_content": "고객은 계좌 해지와 한도 해지를 원하고 자동이체 해제 상황을 설명했으며, 서류 준비와 영업점 방문 절차, 온라인 신청 불가, 하루 한도 초과 시 수수료 여부를 문의하였고 상담사는 한도 해지는 영업점 방문이 필요하고 신분증, 통장 사본, 소득증명서가 요구될 수 있으며, 온라인 신청은 현재 불가하고 수수료는 별도 부과되지 않음을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

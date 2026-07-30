@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_015775",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1029,
+        "consulting_content": "고객은 대출 만기 연장을 요청하고 비밀번호를 몰라 인증 절차를 진행하였고 상담사는 문자 인증 및 계좌 확인 후 연장 가능 기간은 최대 12개월이며 심사는 영업일 기준 하루 이내이며 금리는 기존과 동일, 수수료는 별도이며 일시 상환 시 이자, 연체료만 청구된다고 안내하고, 재대출은 신용 검토 후 별도 안내하며, 추후 문자를 통해 연장 절차를 진행하도록 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

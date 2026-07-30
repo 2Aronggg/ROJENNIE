@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_018796",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 2010,
+        "consulting_content": "고객은 해외 여행자 보험 가입 가능 여부와 금액 조건, 보장 내용, 청구 절차 및 온라인 포털 로그인 방법 등을 문의하였고 상담사는 300달러 이상 환전 시 보험 가입 가능, 금액에 관계없이 보장 동일, 필요 서류는 여권 사본, 일정표이며, 청구는 현지 진료 영수증, 진단서와 포털 업로드 또는 우편 접수, 포털 주소와 로그인 방법을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

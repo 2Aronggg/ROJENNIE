@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_004717",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1010,
+        "consulting_content": "고객은 대출 연장을 요청하고 계좌, 신분 정보를 제공하였고 상담사는 확인 후 거래내역을 문자로 전송하고 서류 제출 방법을 안내하였다. 고객은 서류를 이메일로 보내겠다고 하였고 상담사는 제출 기한과 연장 심사 절차를 설명하였다. 고객은 이자 일정과 위약금 문의 여부를 전달하였고 상담사는 필요 시 위약금 안내와 진행 상황을 문자, 이메일로 알려주겠다고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

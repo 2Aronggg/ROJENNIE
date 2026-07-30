@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_014261",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1605,
+        "consulting_content": "고객은 문자로 받은 대출 내용 확인을 요청하였고 상담사는 계좌, 사업자 대출임을 안내하였다. 고객은 자동이체, 가상계좌, 모바일 앱 납부 방법과 조기상환 위약금 비율을 문의하였고 상담사는 자동이체 설정, 가상계좌 신청, 앱 이용 절차와 위약금 % 및 연체시 이자, 수수료 부과 기준을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

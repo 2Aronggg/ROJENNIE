@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_013927",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1254,
+        "consulting_content": "고객은 특정 거래 내역 확인과 인터넷뱅킹 신규 가입을 요청하였고 상담사는 계좌 정보와 2023년 5월 50,000원 거래를 확인해 주며, 회원가입 메뉴 선택, 개인정보, 신분증, 휴대전화 인증 절차를 안내하고 비밀번호 입력을 요청하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

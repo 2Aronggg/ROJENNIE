@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_012517",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1139,
+        "consulting_content": "고객은 보유 카드로 싱가폴 달러 대출을 원하고 큰 권종 및 내일 약정을 요청했으며 금리와 상환 방법을 문의하였고 상담사는 지점 확인 후 대출 가능 권종을 안내하고 대기 상황을 알린 뒤 내일 동일 조건으로 예약하고 연 3.2% 금리와 원리금 균등, 원금 균등 상환 선택 가능함을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_026718",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 995,
+        "consulting_content": "고객은 전세 대출 금액이 기준을 초과하면 분할 상환인지 문의하였고 상담사는 대출 금액 초과 시 ●월●에 원리금 일시 상환 필요와 연체료, 추가 이자 발생 가능성을 안내하였다. 고객은 조기 상환 방법과 수수료 비율을 물었고 상담사는 영업시간 방문, 모바일 뱅킹 신청 가능과 수수료는 대출잔액 비율임을 설명하고 정확 금액은 시스템 확인 후 제공한다는 답변을 하였다. 고객은 모바일 뱅킹에서 잔액, 상환일 확인 가능함을 확인하고, 대략 ●●●원 정도 입금하면 된다고 이해한 뒤 추가 문의 없음을 밝혔으며 상담사는 필요 시 월 상환일 변경 및 연기 신청 절차를 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

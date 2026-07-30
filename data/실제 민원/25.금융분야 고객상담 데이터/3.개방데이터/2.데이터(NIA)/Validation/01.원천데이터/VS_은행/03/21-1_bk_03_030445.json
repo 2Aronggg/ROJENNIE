@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_030445",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 774,
+        "consulting_content": "고객은 대출 이자 자동이체 시간이 새벽으로 설정돼 있어 오후 인출로 변경을 요청하였고 상담사는 계좌, 비밀번호 확인 후 자동이체 오후 인출을 등록하고 정상 예약됨을 안내하였으며, 상세 이자 계산은 대출 담당 부서에 문의하도록 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_028158",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1690,
+        "consulting_content": "고객은 매직 서비스 자동이체 정상 여부와 취소를 요청했으며, 상담사는 어제 등록된 자동이체를 확인하고, 취소 수수료가 없음을 안내한 뒤 즉시 취소 처리 및 확인 문자를 발송하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

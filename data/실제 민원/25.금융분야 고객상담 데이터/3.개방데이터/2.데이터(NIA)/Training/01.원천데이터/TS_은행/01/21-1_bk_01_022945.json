@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_022945",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1425,
+        "consulting_content": "고객은 입금 확인, 잔액, 거래내역, 앱 이체 오류, 일련번호 조회, 문자수신 문제, 환전 제한 초과 등을 요청했으며 상담사는 계좌 정보 확인, 입금내역 안내, 앱 설정 점검 권고, 일련번호 조회는 센터 안내, 통신사 문의 권고, 환전 한도 초과 안내 및 증액 신청 방법을 제공하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

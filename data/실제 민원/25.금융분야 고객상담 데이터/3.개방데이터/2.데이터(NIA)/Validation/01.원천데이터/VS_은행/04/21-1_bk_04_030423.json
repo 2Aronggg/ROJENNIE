@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_030423",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 725,
+        "consulting_content": "고객은 ★★은행 어플에서 적금 해지 알림과 입금 사실을 확인하고 의미를 문의하였고 상담사는 해당 적금이 만기되어 원금, 이자 합산 금액이 입금됐음을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

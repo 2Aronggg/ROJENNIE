@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_025579",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 908,
+        "consulting_content": "고객은 ▲▲ 계좌로 오늘 입금된 금액을 확인하고 중계 요청을 하였고 상담사는 입금 여부를 확인한 뒤 담당자에게 연결을 시도했으며, 수수료, 한도 안내와 문자 알림 서비스를 활성화하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

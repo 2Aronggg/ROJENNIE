@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_017826",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1281,
+        "consulting_content": "고객은 자동차 대출 관련 금리 우대 적금 해지 여부와 대출 상환 일정, 연체 비용, 금리 재조정 가능성을 문의하였고 상담사는 적금 해지 시 대출에 영향 없으며 재가입 방법을 안내하고, 상환 일정은 매월 말일이며 앱에서 확인 방법을 설명하고, 연체 시 이자, 수수료가 부과된다고 안내하며, 재조정, 재융자는 잔액, 신용 검토 후 가능하다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

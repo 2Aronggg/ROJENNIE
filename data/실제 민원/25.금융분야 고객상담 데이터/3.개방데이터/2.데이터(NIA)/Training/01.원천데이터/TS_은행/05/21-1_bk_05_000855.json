@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_000855",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1269,
+        "consulting_content": "고고객은 인터넷뱅킹 이체 한도 증액 방법에 대해 문의하였고, 상담사는 신분증 사본, 급여 입금 내역서, 거래 내역서 제출을 통한 증액 절차와 모바일 앱을 통한 서류 업로드 방법, 심사 소요 기간, 일시 한도 상향 신청 절차, 수수료 발생 조건, 거절 시 재신청 방법, 기존 서비스 영향 여부 등을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

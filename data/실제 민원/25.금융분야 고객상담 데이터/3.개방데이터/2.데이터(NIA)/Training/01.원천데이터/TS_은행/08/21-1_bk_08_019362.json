@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_019362",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1160,
+        "consulting_content": "고객은 대출 연장 요청과 계좌, 비밀번호 제공을 하였고 상담사는 대출 현황을 안내하며 연장은 고객이 직접 신청해야 함을 설명하였다. 고객은 연장 절차와 비용, 인증 방법을 문의하였고 상담사는 상환을 우선 진행하고 문자 링크 통한 인증 절차 및 결과는 영업일 1~2일 내 안내, 수수료는 없으며 이자만 적용된다고 답변하였다. 고객은 신청 전 주의사항 확인을 요청하였고 상담사는 잔액, 상환계획 검토와 마감일 이전 인증 완료를 권고하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

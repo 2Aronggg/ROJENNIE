@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_003829",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1524,
+        "consulting_content": "고객은 송금 한도 해지를 요청했으며 비대면 해제가 불가하다고 안내받아 지점 방문 또는 팩스로 서류 제출이 필요하다고 안내받았다. 상담사는 비대면 제한 사유를 설명하고, 개인, 사업자 구분에 따라 신분증 사본과 최근 3개월 거래내역서를 제출해야 한다는 구체적인 서류 목록을 문자로 보내겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

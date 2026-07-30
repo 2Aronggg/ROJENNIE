@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_021925",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 803,
+        "consulting_content": "고객은 관리비 자동이행 해지를 요청했으며, 상담사는 해당 자동이행이 체크카드 결제로 되어 있어 은행이 아닌 카드사에 해지 요청해야 함을 안내하고, 인터넷뱅킹에서 자동이체 설정 방법과 해지 처리 기간 및 계좌 보안 절차 등을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

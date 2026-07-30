@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_017451",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 946,
+        "consulting_content": "고객은 연장 절차와 서류 여부를 문의하였고 상담사는 만기일 자동 연장임을 안내하고 서류 제출이 필요 없으며 연장 완료 후 이메일, 문자로 안내가 발송된다고 설명하였다. 또한 연체, 정보유출, 개인회생 등 경우 자동 연장 제외될 수 있음을 추가로 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

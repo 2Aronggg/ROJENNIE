@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_026046",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1225,
+        "consulting_content": "고객은 대출 금리 감면 조건으로 카드 종류와 자동이체 여부를 문의하였고 상담사는 감면은 ★★은행 발급 카드와 해당 은행 계좌에서 자동이체 설정이 필요하다고 안내하였으며, 타사 카드는 적용되지 않아 카드 교체와 온라인, 지점 신청, 자동이체 설정 절차를 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

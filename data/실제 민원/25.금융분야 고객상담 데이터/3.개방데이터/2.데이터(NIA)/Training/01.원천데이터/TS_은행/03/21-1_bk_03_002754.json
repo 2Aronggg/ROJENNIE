@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_002754",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1467,
+        "consulting_content": "고객은 연금 적금 자동이체 미처리와 입금 지연 문제를 문의했고, 상담원은 시스템 연동 오류와 복구 일정, 알림 설정 방법, 위약금 및 추가 옵션 안내 등을 설명했다. 고객은 이율 상승 옵션 신청과 이메일 알림 설정, 전용 전화번호 문의까지 마무리했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_025968",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1491,
+        "consulting_content": "고객은 계좌 거래내역 조회 오류를 제기하고 인터넷뱅킹, 방문 등 조회 방법과 인증서 필요 여부, 자료 전달 방식을 문의하였고 상담사는 인터넷뱅킹 조회 시 보안코드 입력과 기간 선택을 안내하고, 인증서 없을 경우 제한을 설명하며, 팩스, 이메일 전송 가능과 비용을 안내하고, 필요 시 영업점 방문 및 대리인 이용 제한을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_007779",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1238,
+        "consulting_content": "고객은 대출 연장 및 금리 감면을 신청하고자 하며 대출 번호 12345678에 대해 6개월 연장을 요청하였다. 상담원은 연장 신청이 접수되었고 남은 대출 잔액과 12개월 남은 상환 기간을 확인하였다. 금리 감면 조건으로 최근 3개월간 급여이체와 월 평균 30만원 이상 카드 사용이 필요하다고 안내하고, 고객의 카드 사용 실적이 평균 35만원으로 조건을 충족함을 확인하였다. 이에 따라 금리 감면이 자동 적용되어 기존 금리보다 0.5% 낮은 금리가 이번 달 말부터 적용될 것임을 통보하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

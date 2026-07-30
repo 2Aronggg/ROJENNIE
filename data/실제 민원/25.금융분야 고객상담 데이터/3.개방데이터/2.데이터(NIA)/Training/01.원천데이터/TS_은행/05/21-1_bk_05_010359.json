@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_010359",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 958,
+        "consulting_content": "고객은 급여통장으로 개설된 계좌의 이체한도 상승을 원하고 방문 여부를 문의하였고 상담사는 방문 시 서류 제출과 비대면 앱 이용 두 가지 방법을 안내하였으며, 급여 입금 3회 이상, ●개월 필요와 입금 없을 경우 한도 상승 제한을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

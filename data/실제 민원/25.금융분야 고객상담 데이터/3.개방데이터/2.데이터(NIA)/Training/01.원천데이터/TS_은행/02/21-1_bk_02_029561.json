@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_029561",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1256,
+        "consulting_content": "고객은 반환 거래 고유 번호와 날짜, 금액을 제공하고 입금 여부 확인을 요청했으며, 담당자 연결 및 이메일 영수증 발송을 원했다. 상담사는 시스템에서 입금 확인이 어려움을 안내하고, 전문 부서 담당자 번호를 제공해 직접 문의하도록 하였으며, 처리 기간은 영업일 3~5일이며 영수증을 이메일로 송부하겠다고 안내했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_029886",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1868,
+        "consulting_content": "고객은 디딤돌 전세 대출 연장을 위해 대출 현황 확인 및 필요 서류, 비대면 제출 방법, 수수료와 승인 소요 시간을 문의하였고 상담사는 연장 절차와 필요한 서류 안내, 수수료는 잔액, 연장 기간에 따라 변동되며 문자로 상세 금액 제공, 최종 심사는 3~5 영업일 내 통보될 것이라고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

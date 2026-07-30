@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_021534",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 999,
+        "consulting_content": "고객은 만기된 예금 해지를 시도했지만 자동이체 때문에 버튼이 회색 처리돼 진행이 안 된다고 하였고 상담사는 자동이체 해제는 영업점 방문 또는 전화 신청이 필요하다고 안내하고, 조기 해지 시 중도 해지 이율 적용으로 이자 손실이 발생할 수 있음을 설명한 뒤 오늘 오후 5시 이후 문자로 재연락하겠다고 약속하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_014826",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1073,
+        "consulting_content": "고객은 타행에서 ★★페이로 입금된 금액의 출처 확인과 영수증 발송, 잔액 조회를 요청하였고 상담사는 거래 내역을 조회해 입금이 정상 처리됐음을 안내하고 영수증 전송 및 잔액 확인 결과를 알려 주겠다고 하였다. 고객은 타행에서 ★★페이로 입금된 금액의 출처 확인과 영수증 발송, 잔액 조회를 요청하였고 상담사는 거래 내역을 조회해 입금이 정상 처리됐음을 안내하고 영수증 전송 및 잔액 확인 결과를 알려 주겠다고 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

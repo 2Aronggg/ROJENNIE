@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_001549",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1112,
+        "consulting_content": "고객은 저축 계좌 해지 절차와 중도인출 절차, 한도를 문의했다. 상담사는 계좌 해지를 위한 지점 방문 또는 우편 신청 방법을 안내하고, 중도 인출 한도와 앱 메뉴 경로, 해지 사유 입력 예시를 설명했다. 해지 후 잔액 정산 방식과 자동 이체 해제, 해지 후 조회 가능 기간도 안내했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_004354",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1114,
+        "consulting_content": "고객은 한도 제한 계좌 해제를 요청하고 앱 오류로 내일 재시도하겠으며, 잔액 이체, 급여 입금 시 해제 절차와 증빙 서류 제출 방법, 팩스 안내, 해외 사용 수수료를 물었다. 상담사는 앱 해지 안내와 오류 시 캡처 제출, 잔액은 지정 계좌로 이체, 수수료 없음, 급여 입금 1~2일 내 해제, 서류는 영업점 방문, 팩스로 보내면 전화 확인, 해외 수수료 안내, 관리점 연결은 영업점에서 진행된다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

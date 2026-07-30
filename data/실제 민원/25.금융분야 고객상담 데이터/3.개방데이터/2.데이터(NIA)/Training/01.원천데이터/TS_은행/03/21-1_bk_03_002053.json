@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_002053",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1766,
+        "consulting_content": "고객은 다른 은행에서 일회성 결제로 출금된 금액에 대해 자동이체 여부, 취소,환불 절차, 출금 시점 확인, 부정 거래 신고 방법, 향후 결제 차단 방법 등을 문의했고, 상담사는 거래 조회, 앱을 통한 해지,차단 절차, 신고 시 필요한 서류와 환불 진행 과정을 안내했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

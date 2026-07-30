@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_013785",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1292,
+        "consulting_content": "고객은 이자 지원 대상 대출의 가상 계좌 금액 및 번호 확인을 요청하고 성명, 생년월일, 비밀번호 등 본인 확인 정보를 제공하였고 상담사는 계좌 조회 후 정확한 금액과 가상 계좌 번호를 문자로 안내하고, 입금 마감 시각과 현금 입금 시 원 단위 정확성 요구를 설명하였다. 고객은 문자 알림 서비스를 신청하였고 상담사는 알림 설정을 완료하여 입금 시 자동 알림이 전송되도록 하였다. 고객은 추가 문의가 없음을 확인하고 상담사는 필요 시 재연락을 권고하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_016047",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1260,
+        "consulting_content": "고객은 적금 자동이체와 온라인 신청 처리, 환전 가능 여부를 물었고 상담사는 자동이체가 정상 설정되고 온라인 신청이 완료됐으며 환전도 가능하다고 안내하였다. 고객은 중도 해지 시 낮은 금리 적용, 수수료 부과와 해제일 이전 해지 불가, 만기까지 유지해야 이자를 받는다고 질문하였고 상담사는 이를 설명하고 자동이체 확인은 앱에서 조회, 변경 가능하다고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_002673",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1295,
+        "consulting_content": "고객은 인터넷 요금을 인터넷 뱅킹으로 자동이체 해지를 원해 적절한 절차와 비용, 확인 방법을 문의했고 상담원은 본인 확인 절차, 전화와 인터넷 뱅킹을 통한 해지 방법, 해지 후 문자, 이메일 안내, 처리 시간 및 위약금 여부 등을 안내했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

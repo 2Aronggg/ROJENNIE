@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_015502",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1319,
+        "consulting_content": "고객은 대출 원금 상환 후 자동이체된 전화 요금이 아직 출금되지 않았으며, 출금 일자와 내역 확인을 요청하였고 상담사는 계좌, 비밀번호 확인이 전화상 어려움이라 신분증 지참 방문을 안내하고, 요금제 변경으로 인한 청구일 변동 가능성을 설명하며 확인 후 결과를 알려주겠다고 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

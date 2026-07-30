@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_007149",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1701,
+        "consulting_content": "고객은 연금, 이자 납부를 무통장 입금으로 진행하고, 연금 전용 계좌 지정 및 대출 상환 일정 확인을 요청하였다. 상담사는 가상계좌 안내와 입금 마감시간 및 확인 문자 발송 절차를 설명하였다. 연금 전용 계좌 전환 신청을 접수하고 1~2일 내 처리될 것임을 안내하였다. 대출 상환은 매월 말일 자동 이체이며, 이번 달은 19일 납부 예정임을 알려주고 일정 변경은 온라인 뱅킹 메뉴를 통해 신청 가능함을 안내하였다. 마지막으로 입금, 계좌, 문자, 전환, 일정 변경 체크리스트를 제공하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

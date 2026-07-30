@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_027837",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1572,
+        "consulting_content": "고객은 대출 연장을 원한다며 계좌, 비밀번호 등 본인 확인 정보를 제공하였고 상담사는 확인 후 두 건의 대출이 각각 연장 필요함을 안내하였다. 고객은 서류 제출 방법과 자동 연장 여부를 문의하였고 상담사는 신분증, 소득증빙 및 앱 사진 촬영으로 비대면 접수가 가능함을 설명하였다. 고객은 금액과 상환 일정 확인을 요청하였고 상담사는 해당 금액과 연장 완료 일자를 알려주며 일정은 문자, 앱으로 확인 가능하다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

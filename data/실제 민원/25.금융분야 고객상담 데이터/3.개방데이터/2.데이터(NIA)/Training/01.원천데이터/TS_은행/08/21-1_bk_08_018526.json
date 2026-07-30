@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_018526",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1686,
+        "consulting_content": "고객은 모바일 대출 연장 시 ‘업무상 오류’ 메시지가 나타난다고 문의하고 계좌 번호와 본인 확인 정보를 제공했으며, 오류 원인으로 승인 번호 충돌을 확인했다고 전했다. 상담사는 계좌 확인 절차를 안내하고 시스템 로그 검토, 오류 복구 작업을 진행 중이며, 최종 확인 후 다시 연락드리겠다고 안내했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

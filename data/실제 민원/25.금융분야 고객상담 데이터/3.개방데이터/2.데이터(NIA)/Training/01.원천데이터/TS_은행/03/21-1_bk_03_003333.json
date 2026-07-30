@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_003333",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1768,
+        "consulting_content": "고객은 적금 자동이체 일정, 시간, 날짜 변경 및 급여 입금 연동 절차, 알림 서비스, 누락 등록 확인, ARS, 전화 변경 방법, 급여 실적 인정 기준, 공인인증 일자를 문의하였고 상담사는 자동이체 설정 확인, 시간 변동 안내, 변경 절차와 서류 설명, 모바일, 문자 알림 안내, 누락 재등록 안내, 채널별 변경 방법, 급여 입금 기준 및 공인인증 일자 확인 등을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

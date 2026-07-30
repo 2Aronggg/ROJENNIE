@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_025340",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 970,
+        "consulting_content": "고객은 매월 적금을 자동 이체로 납입하고자 하는 계좌와 이체 현황을 확인하고, 타은행으로 변경 및 자동 이체 중단 방법과 해지 시 벌금 여부를 문의하였고 상담사는 계좌 확인 절차 후 자동 이체가 설정되어 있음을 안내하고, 이체 중단은 고객센터, 인터넷뱅킹으로 가능하며 계약에 따라 벌금이 부과될 수 있음을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

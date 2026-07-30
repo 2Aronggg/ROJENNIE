@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_025895",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 750,
+        "consulting_content": "고객은 연금 입금 내역 확인서 발급을 요청하고 모바일, 팩스, 이메일 등 수령 방법을 문의했으며, 인터넷뱅킹을 사용하지 않아 영업점 방문이 필요함을 확인하였다. 상담사는 문서 발급은 영업점 방문 시 신분증 지참으로 가능하고, 예약은 전화, 온라인으로 가능하다고 안내하고, 수수료는 무료이며 3일 이내 수령 가능하다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

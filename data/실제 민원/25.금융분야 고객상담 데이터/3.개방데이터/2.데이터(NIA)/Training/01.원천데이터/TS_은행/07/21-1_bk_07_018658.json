@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_018658",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1070,
+        "consulting_content": "고객은 급여 입금 시 이자 감면 프로그램과 신청 절차, 필요 서류 및 결과 안내를 문의하였고 상담사는 급여 일정 연동 여부 확인 후 감면 조건과 온라인, 방문 신청 방법, 제출 서류 및 검토 기간은 며칠이며 결과는 문자, 이메일로 안내된다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

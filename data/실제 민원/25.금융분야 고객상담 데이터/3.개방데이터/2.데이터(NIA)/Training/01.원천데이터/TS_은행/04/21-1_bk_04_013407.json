@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_013407",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1165,
+        "consulting_content": "고객은 적금의 만기일을 확인하고, 만기 적금 해지를 문의하고 계좌, 비밀번호 등 본인 확인 정보를 제공하였고 상담사는 상품명, 시작, 만기일을 확인한 뒤 자동 해지 및 원금, 이자 입금을 안내하고, 세전 이자와 15.4% 원천징수 후 세후 금액을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

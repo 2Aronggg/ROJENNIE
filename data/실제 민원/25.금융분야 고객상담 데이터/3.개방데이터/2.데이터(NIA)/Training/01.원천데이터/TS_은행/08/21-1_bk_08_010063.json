@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_010063",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 781,
+        "consulting_content": "고객은 대출 연장 여부 확인과 조기 상환 절차, 비용, 월별 상환액, 잔여 원리금 조회, 서류 도착일 확인을 요청하였고 상담사는 연장 처리 및 만기일 확인, 이자율, 수수료 변동 없음 안내, 조기 상환 절차, 비용 설명, 인터넷뱅킹 조회 방법 및 월별 상환액, 잔여 원리금 제공, 서류는 오늘 우편 발송 및 도착 예정임을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_007439",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1224,
+        "consulting_content": "고객은 법인 계좌의 자동이체를 오늘 바로 중단하는 방법을 문의하였고, 상담사는 고객센터에서는 처리 불가하며 기업 인터넷뱅킹에서 자동이체 해지를 진행해야 한다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

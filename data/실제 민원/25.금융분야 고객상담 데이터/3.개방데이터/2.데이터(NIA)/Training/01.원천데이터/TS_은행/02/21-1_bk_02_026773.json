@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_026773",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 2524,
+        "consulting_content": "고객은 계좌에 입금된 금액, 일자, 입금자 정보를 제공하고 중계 요청 및 확인 알림을 요구하였고 상담사는 입금 내역 확인을 위해 추가 서류와 계좌 정보를 요청하고, 시스템 점검으로 확인이 지연됨을 안내한 뒤 중계 요청을 진행하고 완료 시 문자, 이메일로 알림을 제공하겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

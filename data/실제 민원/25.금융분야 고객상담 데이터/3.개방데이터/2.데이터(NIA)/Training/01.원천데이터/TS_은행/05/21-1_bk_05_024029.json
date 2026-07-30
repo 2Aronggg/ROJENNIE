@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_024029",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1569,
+        "consulting_content": "고객은 하루 입출금, 이체 한도와 계좌 유형을 확인하고, 보험금 급이체와 한도 해제 방법을 문의했으며, 상담사는 일회, 일일 한도 금액을 안내하고, 사업자, 개인 구분 및 한도 해제는 지점 방문 필요와 서류 안내를 제공하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_017026",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 663,
+        "consulting_content": "고객은 이번달 대출 상환을 위해 가상계좌 발급을 요청하고 모바일, 앱 이용 가능 여부를 문의하였고, 본인확인 절차 후 계좌번호와 비밀번호를 제공하였다. 상담사는 에이알에스 연결을 통해 본인확인을 진행하고, 입력받은 정보를 확인한 뒤 핸드폰 문자로 일회성 가상계좌를 발송했으며, 입금 기한, 금액 정확성 및 자동 상환 절차를 안내하였다. 고객은 추가 문의가 없음을 확인하고, 상담사는 언제든지 전화, 앱으로 재발송 가능함을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

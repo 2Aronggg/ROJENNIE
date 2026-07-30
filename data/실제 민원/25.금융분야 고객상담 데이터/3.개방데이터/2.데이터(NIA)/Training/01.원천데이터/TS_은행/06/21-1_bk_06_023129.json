@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_023129",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1072,
+        "consulting_content": "고객은 대출 이자 납부 일자를 문의하였고 상담사는 본인 확인을 위해 휴대폰 인증, 생년월일, 비밀번호 등을 요청한 뒤, 이자 금액과 입금 기한을 안내하고, 입금 시 잔액 유지 방법을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

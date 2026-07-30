@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_024065",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1589,
+        "consulting_content": "고객은 루블 환전을 원하고 약 ●●● 원을 문의했으며, 지역 지점 재고 확인을 요청하였다. 상담사는 일부 지점에만 재고가 있음을 알려 재고 있는 ★★ 지점과 ◆◆◆◆ 지점을 확인해 예약 및 담당자 연결을 제안하고, 신분증, 환전 신청서 등 필요 서류와 변동 가능한 환율을 사전 확인하도록 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

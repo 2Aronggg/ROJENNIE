@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_004417",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1011,
+        "consulting_content": "고객은 대출 연장 여부와 연장료, 이자율 변동, 온라인 신청 방법을 문의하고 신용점수 낮음으로 거절 우려를 표시해 담당 상담 연결을 요청하였다. 상담사는 연장은 12개월까지 가능하고 연장료는 원금의 0.5%, 이자율은 최대 0.3%p 상승한다며 온라인 신청 절차를 안내했으며, 신용점수 개선 방안을 제시한 뒤 고객이 편한 시간에 담당자가 연락하도록 약속하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

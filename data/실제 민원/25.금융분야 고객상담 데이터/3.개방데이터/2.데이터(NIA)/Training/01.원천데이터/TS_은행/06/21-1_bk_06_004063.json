@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_004063",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 566,
+        "consulting_content": "고객은 추가 상환 여부와 오늘 납부 금액을 문의하고 성명을 제공했으며 온라인 뱅킹을 선택했다가 자동이체 신청을 요청하고 금액 재확인을 요구하고 다음 달 금리 변동을 물었다. 상담사는 기존 상환 내역과 남은 원리금, 오늘 납부액을 안내하고 결제 방법을 설명한 뒤 자동이체 절차를 진행하며 금액을 재제시하고 금리 변동 가능성은 낮다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

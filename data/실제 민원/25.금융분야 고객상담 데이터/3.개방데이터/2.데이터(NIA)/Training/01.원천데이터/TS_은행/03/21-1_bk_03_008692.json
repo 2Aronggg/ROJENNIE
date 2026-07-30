@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_008692",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1382,
+        "consulting_content": "고객은 ★★은행 문제로 보험 자동이체 해지를 요청하였다. 상담원은 전화 해지는 불가하므로 모바일 ★★ 어플에서 해지하도록 안내하였다. 해지 시 등록된 휴대폰으로 인증 문자가 발송되며, 번호 입력 후 최종 완료된다고 안내하였다. 고객이 문자 수신이 어려워 대체 번호를 제공하면 해당 번호로 인증을 보낼 수 있다고 전달하고, 재설정이 필요하면 어플에서 자동이체 추가 메뉴를 이용하면 된다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

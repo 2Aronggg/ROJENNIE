@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_027581",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1485,
+        "consulting_content": "고객은 자유적금 만기일에 월 입금 누락 여부와 해지 절차를 문의하였고 상담사는 누락은 한도 초과라며 인터넷뱅킹, 모바일 앱으로 직접 해지하고 잔액이 영업일 1~2일 내 입금될 것임을 안내하고, 확인 메시지는 문자와 이메일로 발송한다는 안내를 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

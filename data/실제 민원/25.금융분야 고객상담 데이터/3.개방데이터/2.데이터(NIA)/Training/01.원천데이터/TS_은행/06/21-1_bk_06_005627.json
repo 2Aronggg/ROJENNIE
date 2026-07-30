@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_005627",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1200,
+        "consulting_content": "고객은 대출 원리금 상환을 위해 가상계좌 조회를 요청하였다. 상담사는 대출 두 건의 일회성 가상계좌 발급 후 입금 마감시간을 안내하였다. 연체 시 연체이자 부과 및 안내 문자 발송과 모바일뱅킹에서 자동이체 신청이 가능함을 안내했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

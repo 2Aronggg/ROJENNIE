@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_030634",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 979,
+        "consulting_content": "고객은 전세자금 대출 연장을 위해 필요한 서류와 절차, 금리 변동 여부 및 인증 방법을 문의하였고, 서류를 문자 링크로 1~2일 내 받겠다고 요청하였다. 상담사는 비대면 앱 신청이 가능하고 금리는 그대로 유지되며, 모바일, 공동인증서 등 인증 수단을 안내하고, 서류를 문자 링크로 제공하겠다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

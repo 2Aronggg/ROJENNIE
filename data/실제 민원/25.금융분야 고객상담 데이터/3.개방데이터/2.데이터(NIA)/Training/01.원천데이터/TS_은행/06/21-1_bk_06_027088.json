@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_027088",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1074,
+        "consulting_content": "고객은 가상 계좌와 입금 금액을 요청하였고 상담사는 계좌 유형, 입금 예정일 확인 후 본인 확인을 위해 성명, 생년월일, 보안 질문, 문자 인증을 진행하였다. 고객은 문자 인증 코드를 입력하고 비밀번호를 제공하였고 상담사는 인증 완료 후 가상 계좌 발급 및 입금 안내를 하였다. 고객은 수수료 여부를 문의하였고 상담사는 별도 수수료가 없음을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

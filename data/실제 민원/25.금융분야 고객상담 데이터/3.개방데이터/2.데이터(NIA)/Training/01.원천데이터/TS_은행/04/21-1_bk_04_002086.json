@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_002086",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1747,
+        "consulting_content": "고객은 적금 해지 시 횟수 초과 오류와 계좌 확인, 대출 연체, 해지 절차, 링크 입력 방법, 세금 처리 등에 대해 질문했고, 상담사는 계좌를 조회하여 연체를 확인했고, 연체 상환 방법, 해지 단계, 원금 입력 안내, 오류 처리, 이자 비과세와 세금 신고 절차 등을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

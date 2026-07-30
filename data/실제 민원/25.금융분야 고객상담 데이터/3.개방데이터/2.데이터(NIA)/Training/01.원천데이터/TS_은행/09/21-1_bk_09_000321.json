@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_000321",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1480,
+        "consulting_content": "고객은 방문하려는 지점에 홍콩달러 현금 보유 여부와 다른 지점 재고, 전화, 인터넷뱅킹을 통한 환전 방법을 문의했다. 상담사는 외화 재고 상황을 안내하며 가상계좌를 이용한 전화 환전 절차와 수수료, 인터넷뱅킹 사전 신청 방법, 필요 서류 등을 설명했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_013082",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 971,
+        "consulting_content": "고객은 전세 자금 대출 연장을 문의하고 대리인 신청이 불가함을 확인했으며, 비대면 연장 URL을 제공받아 진행하기를 요청하였다. 상담사는 본인 확인 절차와 필요한 네 가지 정보를 안내하고, 비대면 연장 방법과 금리 유지, 상환 일정 조정 가능 여부를 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

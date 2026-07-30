@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_013072",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1209,
+        "consulting_content": "고객은 보유한 외화 동전의 원화 재환전 가능 여부와 필요한 서류, 수수료, 처리 기간 및 급행 서비스 등을 문의하였고 상담사는 해당 동전은 일부 은행에서만 환전 가능하고, 통장, 주민등록증만 있으면 되며, 수수료는 기본 요율 적용, 처리 시간은 영업일 1~2일이라고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

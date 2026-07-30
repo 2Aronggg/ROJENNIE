@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_023023",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 927,
+        "consulting_content": "고객은 신용대출 우대 금리와 조건을 문의하고 급여이체, 청약저축, 통장개설에 대해 질문했으며, 본인 확인 정보를 제공하였다. 상담사는 해당 대출 상품을 제안하고 혜택 검토 후 재연락을 약속했으며, 급여이체 방식, 청약저축 조건, 통장 개설 절차를 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

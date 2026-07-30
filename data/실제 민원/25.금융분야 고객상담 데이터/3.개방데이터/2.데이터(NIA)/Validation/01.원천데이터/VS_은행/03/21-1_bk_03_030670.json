@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_030670",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1136,
+        "consulting_content": "고객은 자동이체 해지 방법과 필요 서류, 그리고 최근 출금 내역 확인을 요청했으며, 상담사는 본인 확인 절차 후 자동이체 해지는 전화로 불가하고 신분증, 통장을 지참해 가까운 영업점 방문을 안내하고, 온라인에서도 확인 가능함을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_001818",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 899,
+        "consulting_content": "고객은 전세자금 대출 연장을 원한다며 본인 확인과 계좌, 비밀번호 제공을 요청했고, 상담사는 신원 확인 후 연장 절차를 안내하고 서류를 문자, 이메일로 발송하며, 방문 또는 앱 신청 방법을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_024154",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1201,
+        "consulting_content": "고객은 마이너스 통장 약정 절차와 상환 방법, 연체 여부 및 조기 상환 절차를 문의하였고 상담사는 계좌, 인적, 비밀번호 확인 후 대출 현황을 안내하고, 문자로 상세 절차를 발송했으며, 연체 없음을 확인하고 조기 상환은 모바일 뱅킹 신청 가능하고 서류는 필요 없으며 이자 계산 방식을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

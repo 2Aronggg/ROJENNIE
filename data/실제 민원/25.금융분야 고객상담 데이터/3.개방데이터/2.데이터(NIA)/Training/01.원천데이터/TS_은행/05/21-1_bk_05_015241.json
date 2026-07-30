@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_015241",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 915,
+        "consulting_content": "고객은 입출금 통장의 거래 한도 해지를 전화로 시도했으나 제한 확인이 어려워 영업점 방문을 요청하였고 상담사는 전화로는 확인이 불가하니 서류 제출 후 영업점 방문이 필요하고, 재직증명서, 소득증명서 등 증빙을 준비하고 영업점 운영 시간에 맞춰 방문하도록 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

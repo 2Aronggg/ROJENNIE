@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_018649",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1048,
+        "consulting_content": "고객은 기존 대출금 납부와 가상계좌 발급을 문의했으며 내일 입금을 원했지만 가상계좌는 당일 발급만 가능하다고 안내받고, 전화 재요청을 약속하였다. 상담사는 연체 상태와 추심 절차, 연체 이자 방지 및 신용 등급, 대출 한도 영향, 조기상환 수수료와 재협상 가능성을 설명하고 담당 부서 연결을 제안하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

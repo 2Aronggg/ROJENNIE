@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_024866",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 829,
+        "consulting_content": "고객은 대출 연장을 위해 소득금액증명원을 발급받지 못한다며 급여명세서, 원천징수영수증, 통장사본 등 대체 서류 제출을 요청했고, 담당자 연결이 어려워 서류 준비 후 연락을 요청하였다. 상담사는 대체 서류 가능성을 안내하고, 시화지점 담당자를 확인 중이며 서류 검토 후 전화로 연락드리겠다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

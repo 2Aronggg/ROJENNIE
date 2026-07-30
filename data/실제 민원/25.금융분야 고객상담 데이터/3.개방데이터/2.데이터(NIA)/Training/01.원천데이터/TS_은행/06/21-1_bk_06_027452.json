@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_027452",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1625,
+        "consulting_content": "고객은 이자 납입이 정상 처리되지 않아 확인을 요청하고, 계좌, 비밀번호 정보를 제공하였으며, 상담사는 미납 금액을 확인하고 자동이체 설정 방법을 단계별로 안내하고, 문제 발생 시 재문의 가능함을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

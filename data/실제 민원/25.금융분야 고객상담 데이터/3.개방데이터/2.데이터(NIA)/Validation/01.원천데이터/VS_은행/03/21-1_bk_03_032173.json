@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_032173",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1222,
+        "consulting_content": "고객은 자동이체 입금 여부와 즉시 적금 반영, 이체 횟수 및 취소 방법을 문의하였고 상담사는 자동이체가 정상 등록, 오늘 적금 계좌로 입금됐음을 안내하고, 매월 동일일 출금 예정과 잔고 확인을 권고했으며, 취소는 영업일 기준으로 수수료 없이 가능하다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

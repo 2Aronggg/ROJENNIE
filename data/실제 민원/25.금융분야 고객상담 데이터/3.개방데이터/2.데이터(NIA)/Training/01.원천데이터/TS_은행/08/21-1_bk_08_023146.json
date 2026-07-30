@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_023146",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 2366,
+        "consulting_content": "고객은 본인 확인을 위해 성명, 생년월일, 계좌, 비밀번호를 제공하였고 상담사는 이를 확인 후 현재 이용 중인 ★★ 신용대출의 연장 절차와 새로운 상환 일정, 적용 이자율 및 자동 출금 금액을 안내하였으며, 남은 원리금 납부 방법을 설명하고 진행을 요청하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

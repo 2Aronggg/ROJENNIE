@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_004149",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 944,
+        "consulting_content": "고객은 자동이체 잔액 부족과 연계 계좌 번호 미확인 문제를 제기하고 본인 확인 정보를 제공했으며, 상담사는 계좌 번호와 자동이체 일정, 잔액 현황을 안내하고, 입금 방법 또는 일정 변경 절차를 안내하겠다고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

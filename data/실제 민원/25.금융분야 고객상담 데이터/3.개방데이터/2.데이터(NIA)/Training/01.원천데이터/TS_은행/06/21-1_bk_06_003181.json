@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_003181",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1334,
+        "consulting_content": "고객은 가상 계좌 연동을 요청하고 성명, 생년월일, 휴대폰 번호를 제공했으며 인증 문자 번호 입력과 비밀번호 입력 방법을 문의하였고, 상담사는 정보 확인 후 문자 인증 코드를 발송하고 입력 절차를 안내하며, 가상 계좌 사용 기간, 잔고 부족 시 주의사항, 사기 예방 안내를 제공하고 최종 절차 완료를 알렸다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

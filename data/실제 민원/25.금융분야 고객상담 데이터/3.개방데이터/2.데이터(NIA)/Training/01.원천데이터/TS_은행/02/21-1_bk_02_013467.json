@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_013467",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 776,
+        "consulting_content": "고객은 기업센터 사고 송금 담당자 연결을 요청하며 착오 송금 건의 진행 상황을 문의했다. 상담사는 사고 송금 접수 일자와 원 거래 일자 금액 고유 번호를 확인한 뒤 해당 건이 지점 방문 처리로 안내된 이력이 있다고 설명했다. 또한 지점 방문 시 신분증과 사고 송금 고유 번호 송금 금액이 확인되는 자료를 지참하면 절차를 진행할 수 있다고 안내했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

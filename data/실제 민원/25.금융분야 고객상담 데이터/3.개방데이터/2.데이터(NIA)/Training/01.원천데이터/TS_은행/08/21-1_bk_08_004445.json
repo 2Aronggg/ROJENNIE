@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_004445",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1060,
+        "consulting_content": "고객은 아이디 입력 후 인증센터 이용, 로그아웃 및 사업자 선택 절차와 인증서 발급, 재발급 방법, 유효기간, 모바일 사용 및 앱 설치 방법을 물었고 상담사는 인증서 발급은 로그인 없이 인증센터에서 진행하고, 사업자 선택 후 아이디 입력으로 발급 가능함을 안내하고, 유효기간은 2년이며 재발급은 기존 인증서 선택 후 5분 내에 가능하고, 발급된 인증서는 PC, 모바일 모두 사용 가능하고, 모바일 앱 설치 후 인증서 파일 가져오기와 비밀번호 입력으로 등록하는 방법을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

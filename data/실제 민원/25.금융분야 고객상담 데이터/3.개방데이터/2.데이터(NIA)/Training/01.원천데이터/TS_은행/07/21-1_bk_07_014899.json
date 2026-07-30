@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_014899",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 956,
+        "consulting_content": "고객은 마이너스 통장 대출 이자 이중 청구와 혜택 미충족을 문의하였고 상담사는 계좌 비밀번호 오류를 안내하고, 적금 납입액 미충족으로 적립식 유실감면 혜택이 적용되지 않음을 설명하였다. 상담사는 해당 혜택은 지정일 이후 가입 시 적용되며, 고객이 적금을 새로 가입하면 다음 달부터 혜택을 받을 수 있다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_025410",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1005,
+        "consulting_content": "고객은 남은 원리금 전액 상환을 원하고 가상계좌 송금을 요청했으며, 상담사는 위약금 여부를 안내하고 가상계좌 번호를 문자로 발송해 입금 확인 후 처리하겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

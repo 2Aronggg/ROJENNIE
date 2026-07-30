@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_024888",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 981,
+        "consulting_content": "고객은 주택 구입 대출 금리 감면 시점을 묻고 카드 교체 여부와 사용 조건, 조기 상환 수수료, IRP 연동 절차를 문의하였고 상담사는 감면은 영업 종료 후 다음 영업일에 적용되며 카드 사용, 출금액 충족 시 유지된다고 안내하고, 조기 상환 시 수수료가 일부 면제될 수 있음과 IRP 계좌는 온라인, 영업점 신청이 필요하다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

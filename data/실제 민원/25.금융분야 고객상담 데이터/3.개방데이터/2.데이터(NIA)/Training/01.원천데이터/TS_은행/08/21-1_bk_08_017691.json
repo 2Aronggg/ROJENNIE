@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_017691",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1242,
+        "consulting_content": "고객은 대출 연장을 문의했으며 계좌 번호를 기억하지 못해 확인 방법을 요청했고, 상담사는 인터넷뱅킹 확인 제안 및 계좌, 비밀번호 인증 절차를 안내하고, 문자 인증 번호 입력을 요구하며 진행하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

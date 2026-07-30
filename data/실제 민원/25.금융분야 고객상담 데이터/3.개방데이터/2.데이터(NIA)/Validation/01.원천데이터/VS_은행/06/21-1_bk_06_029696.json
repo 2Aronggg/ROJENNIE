@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_029696",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1918,
+        "consulting_content": "고객은 대출 연체 금액과 일자를 확인하고 전액 상환을 원한다며 이름, 생년월일, 휴대전화, 비밀번호 등을 제공하였고 상담사는 신원 확인 후 가상계좌와 입금 금액, 기한을 안내하고, 입금 완료 시 연체 해제와 결과 통지를 약속하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_030973",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 849,
+        "consulting_content": "고객은 정기예금 만기 서류 수령 시기를 문의하고 인증 절차를 요청했으며, 휴일 및 전날 방문 가능 여부와 대출 금리, 보험 내용도 물었다. 상담사는 본인 인증 후 만기일 영업시간에 서류 발급 가능하고, 휴일이면 전날 또는 다음 영업일에 수령 가능하다고 안내했으며, 대출 금리와 조기 상환 혜택은 별도 상담, 보험은 손해 없음이라고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

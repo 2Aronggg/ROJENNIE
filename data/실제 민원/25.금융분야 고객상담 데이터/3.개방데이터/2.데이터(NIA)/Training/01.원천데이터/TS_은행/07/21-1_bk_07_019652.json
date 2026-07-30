@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_019652",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1711,
+        "consulting_content": "고객은 급여 입금 인증을 통한 대출 금리 감면 혜택 내용을 문의하고, 중복 적용 여부와 절차를 확인했으며, 본인 확인 절차를 진행하였다. 상담사는 부수거래 금리 감면 조건을 설명하고, 중복 혜택은 제공되지 않음과 인증 완료 시 0.4% 감면이 적용된다고 안내했으며, 현재 급여 입금이 인증돼 해당 일자부터 감면이 적용될 예정임을 알려주고, 급여 이체일 변경 시 모바일 톡, 콜센터에 알려야 혜택 유지가 가능하고, 감면 전후 이자 차이는 인터넷뱅킹, 앱에서 확인 가능하다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

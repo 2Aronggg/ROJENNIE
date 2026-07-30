@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_004568",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1209,
+        "consulting_content": "고객은 전세 대출 갱신 서류 여부를 문의하고 본인 확인을 위해 서비스 이용 여부와 성명, 생년월일을 제공한 뒤 인증 링크로 로그인하여 비밀번호를 입력하였고, 상담사는 인증 절차를 완료하고 계좌 잔여 만기를 안내하며 만기 이후 연장 신청 가능일과 임대인 동의, 계약서 작성 필요, 금리 변동, 수수료 없음 등을 설명하고 연장 신청을 진행해 결과를 문자로 알려주겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

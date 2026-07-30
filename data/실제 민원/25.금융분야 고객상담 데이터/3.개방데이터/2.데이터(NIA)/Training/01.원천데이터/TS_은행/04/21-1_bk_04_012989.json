@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_012989",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1905,
+        "consulting_content": "고객은 청약 통장 해지를 원하여 모바일 앱을 설치, 로그인 후 계좌 관리 → 해지 예상 조회 → 해지 버튼 선택 → 금액 입력, 스마트 간편 인증 절차를 진행하였고 상담사는 앱 설치 안내, 단계별 화면 조작 방법, 입력 및 인증 방법, 입금 처리 기간 및 재개설 가능 여부를 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

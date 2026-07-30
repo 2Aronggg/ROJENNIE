@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_019911",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1560,
+        "consulting_content": "고객은 청약 적금 자동이체 등록 여부와 중복 출금, 최근 입출금 내역 및 다른 자동이체 항목을 확인하고 싶다고 요청했으며, 계좌 번호, 생년월일, 비밀번호를 제공하였다. 상담사는 고객 정보를 확인하고 시스템 조회를 통해 자동이체가 ★★은행에 등록된 사실과 금액, 일자 중복을 안내했으며, 청약 적금 잔액, 이율은 변동 없음을 알려 주었다. 또한 자동이체 일정이 매월 ●일임을 확인하고, 모든 자동이체 항목을 검토, 수정 가능함을 제시하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_019562",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1977,
+        "consulting_content": "고객은 전세 자금 대출 연장을 문의하고 본인 확인, 계좌, 비밀번호를 제공했으며 앱 신청 가능 여부와 마감일을 확인하고자 하였고, 상담사는 정보를 확인 후 연장 가능함을 안내하고 마감일까지 서류를 준비해 앱 또는 방문 신청이 가능하다고 설명하였다. 고객은 기존 대출을 타은행으로 이전하고 금리 비교를 원한다는 의사를 밝히었고, 상담사는 전환 절차와 보증서 재발행 등 필요한 서류와 절차를 안내하며 마감일 전 서류 제출을 강조하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

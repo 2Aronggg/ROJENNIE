@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_010653",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1012,
+        "consulting_content": "고객은 자동이체 출금이 잔액 부족으로 실패한 시점 확인과 취소 가능 여부를 문의하였고 상담사는 전산 오류로 즉시 확인이 어려움을 안내하고, 자동이체 취소는 수수료 없이 가능하며 이미 출금된 금액은 복구 절차를 진행한다는 내용으로 추후 연락하겠다고 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

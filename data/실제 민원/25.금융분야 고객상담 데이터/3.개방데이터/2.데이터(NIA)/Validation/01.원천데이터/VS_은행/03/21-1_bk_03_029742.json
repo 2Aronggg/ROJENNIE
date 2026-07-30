@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_029742",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1225,
+        "consulting_content": "고객은 청년청약저축 자동이체 미처리와 일정 확인을 요청했고 상담사는 계좌, 시스템 장애로 입금이 누락됐음을 안내하며, 자동이체는 지정일에 재개되고 매월 동일 금액이 출금될 것임을 확인시켰고, 변경, 중단은 언제든 가능하다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

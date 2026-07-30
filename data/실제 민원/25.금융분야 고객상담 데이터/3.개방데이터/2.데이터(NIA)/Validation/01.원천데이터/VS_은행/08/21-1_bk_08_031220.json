@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_031220",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 0,
+        "consulting_content": "고객은 대출 연장 시점을 문의하고 계좌 일부와 본인 정보를 제공하였고 상담사는 계좌 확인, 비밀번호 입력을 통한 연장 가능 여부를 확인하여 연장 금액을 안내하고 전산 반영 및 확인 메시지 발송을 약속하였으며, 추가 서비스 안내를 제안하였고 고객은 현재는 필요 없다고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

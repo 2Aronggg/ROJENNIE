@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_003527",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 987,
+        "consulting_content": "고객은 IRP 자동이체 해지를 시도했으나 화면에서 해지 옵션을 찾지 못해 상담사에게 도움을 요청했고, 상담사는 앱 메인 화면에서 메뉴 → 이체 → 자동이체 → 조회, 변경, 해지 순으로 선택하도록 안내하여 해지 버튼을 누르게 했으며, 즉시 처리됨을 확인하고 문자 확인 및 영업시간 외 처리 안내를 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_002609",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1195,
+        "consulting_content": "고객은 모르는 사람에게 입금된 금액에 대해 문의하였다. 부당하게 입금된 금액에 대해 환불 요청 방법과 환불 신청 절차를 물어봤으며, 상담사는 입금 내역 확인, 사기 여부 판단 방법, 입금자 확인 절차, 환불 및 회수 가능성, 무단 입금 방지 대책, 이체 방법과 수수료 안내 등을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

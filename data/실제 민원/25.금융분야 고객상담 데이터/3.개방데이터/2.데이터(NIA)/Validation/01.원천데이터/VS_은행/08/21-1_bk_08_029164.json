@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_029164",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1149,
+        "consulting_content": "고객은 연장 문자를 받아 확인을 원하고 이름, 휴대폰 번호를 제공했으며, 상담사는 문자 인증 링크를 발송하고 비용은 고객 부담이라고 안내하였다. 고객은 대출 연장을 요청했고, 상담사는 서류 제출을 통해 연장이 가능하고 영업점 방문 또는 온라인 제출 두 방법이 있으며, 만기일 이전에 신청, 준비하면 된다고 설명하였다. 고객은 지점 방문으로 처리하겠다고 답하고, 상담사는 알림톡과 우대 금리 혜택 가능성을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

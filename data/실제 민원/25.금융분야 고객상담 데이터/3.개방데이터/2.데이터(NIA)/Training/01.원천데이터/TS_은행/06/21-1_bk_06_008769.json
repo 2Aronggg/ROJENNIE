@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_008769",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1092,
+        "consulting_content": "고객은 전세 자금 대출 상환일에 이자가 일부만 출금되어 남은 금액 출금 시점을 문의하였다. 상담원은 해당 계좌에 추가 입금이 확인되었으며, 잔액이 자동 출금될 것임을 안내하였다. 고객은 자동이체 알림을 문자로 받기를 원했고, 상담원은 전월 이체 전날 문자 안내 설정을 완료하였다. 고객은 전자문서 수신을 요청하였으며, 상담원은 전자문서 동의를 완료하고 마이뱅크 앱에서 확인 가능함을 안내하였다. 상담원은 대출 상환 일정과 잔액 확인 방법을 안내하고, 추가 문의 시 전화 상담 가능함을 알렸다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

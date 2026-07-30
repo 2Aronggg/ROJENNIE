@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_025874",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 2398,
+        "consulting_content": "고객은 대출 연체 사실을 확인하고 계좌, 신분 정보를 제공했으며 추가 입금이 필요함을 인지해 입금 금액과 방법을 문의하였고 상담사는 미납 금액, 부족액을 안내하고 연체료 계산 방식, 입금 계좌를 알려주며 기한 내 전액 납부 시 추심이 없음을 전달하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

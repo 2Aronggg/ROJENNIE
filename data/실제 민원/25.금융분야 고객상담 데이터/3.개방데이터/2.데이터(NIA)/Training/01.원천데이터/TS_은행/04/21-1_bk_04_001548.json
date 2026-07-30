@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_001548",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1367,
+        "consulting_content": "고객은 ★★ 인터넷뱅킹 로그인 후 예적금 메뉴가 보이지 않는 문제로 문의하였으며, 상담사는 고객 계좌의 예적금 상품이 비활성화 상태이거나 시스템 오류일 가능성이 있다고 안내했다. 이후 고객은 자동 재가입 가능 여부, 이자 지급일과 지급 방식, 다른 저축, 투자 상품 전환 가능 여부 및 절차, 전환 반영 소요 시간과 금리 유지 여부, 전환 시 필요한 서류나 인증 절차에 대해 물었고 상담사는 절차에 대해 안내했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

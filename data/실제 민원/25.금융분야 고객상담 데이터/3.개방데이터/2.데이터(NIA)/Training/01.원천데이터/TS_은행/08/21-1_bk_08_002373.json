@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_002373",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1326,
+        "consulting_content": "고객은 비대면으로 접수한 대출 연장 신청의 진행 상황과 예상 처리 기간, 연체 이자 발생 여부, 재융자 가능성 및 절차를 문의했다. 상담사는 연장 신청 서류가 영업점에서 검토 중임을 안내했다. 또한 연체 시 이자 부과 예시와 재융자 신청 시 필요한 서류 및 절차에 대해서도 설명했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

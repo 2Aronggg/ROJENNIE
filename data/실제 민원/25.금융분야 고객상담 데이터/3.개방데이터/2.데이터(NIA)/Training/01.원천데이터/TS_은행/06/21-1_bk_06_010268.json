@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_010268",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1130,
+        "consulting_content": "고객은 전액 상환을 원하고 가상계좌 입금을 선택하였으며, 상담사는 전액 상환 가능 금액과 수수료 없음, 가상계좌 번호를 문자로 발송하고 입금 마감 안내, 이메일 영수증 발송 가능성을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

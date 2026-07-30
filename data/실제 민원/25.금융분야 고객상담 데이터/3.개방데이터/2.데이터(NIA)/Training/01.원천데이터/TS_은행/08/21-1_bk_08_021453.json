@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_021453",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1263,
+        "consulting_content": "고객은 대출 만기 연장을 요청하고 이름, 생년월일, 계좌 정보를 제공했으며, 인증 번호와 비밀번호를 입력하였다. 상담사는 연장 가능 여부 검토와 서류 안내, 인증 절차 진행을 알리고, 연장 심사 결과는 영업일 2~3일 내 문자로 통보한다는 점과 이자율은 기존과 동일하고 연장 금액의 0.5% 수수료가 부과된다는 내용을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

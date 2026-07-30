@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_006713",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1538,
+        "consulting_content": "고객은 해외 체류 중 아파트 관리비 자동이체 해지를 요청하였고, 상담사는 앱을 통한 해지 절차와 URL을 안내하였다. 고객이 항목을 찾지 못하자 계좌를 조회하였으며, 자동이체 등록이 없음을 확인하였고 환불이 필요할 경우 앱 또는 전화로 요청 가능하다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

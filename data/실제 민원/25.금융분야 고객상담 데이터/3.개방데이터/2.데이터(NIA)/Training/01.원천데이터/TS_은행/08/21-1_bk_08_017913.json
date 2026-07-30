@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_017913",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1306,
+        "consulting_content": "고객은 급히 비상금 대출을 신청하고 문자, 카톡 제한으로 알림 방식을 문의했으며, 연체 시 문자 발송과 우편 거부 등록 가능성을 확인하고 자동이체 설정을 요청하였다. 상담사는 대출은 마이너스 형식이며 연체 시 문자, 추가 비용이 발생함을 안내하고, 알림 방식 변경은 불가하지만 우편 거부 등록과 자동이체 설정을 권고했으며, 사전 연장 신청은 불가능하고 재무 상담 연계도 제안하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

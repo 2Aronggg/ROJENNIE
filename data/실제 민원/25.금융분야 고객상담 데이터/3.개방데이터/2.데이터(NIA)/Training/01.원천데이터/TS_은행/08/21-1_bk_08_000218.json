@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_000218",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1411,
+        "consulting_content": "고객은 대출 연장 신청 완료 후 변동 되는 사항과 재평가, 추가 서류, 거절 시 대안, 본 은행의 장점에 대해 문의하였고, 상담사는 대출 연장 신청 완료 후 구체적 입금 시기, 이자율, 이자 계산 방식, 추가 서류 및 평가, 거절 시 대안, 거절 사유 확인 방법, 재신청 유의점, 상환 일정 및 금액 변동, 수수료 구조와 처리 속도를 포함한 본 은행의 장점과 확인 전화 시기 및 준비물에 대해 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_014253",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1228,
+        "consulting_content": "고객은 대출 연장을 요청하고 계좌, 본인 확인 절차와 OTP 입력을 진행하였으며, 전자 서명 방법을 안내받았다. 상담사는 확인 절차를 수행하고 연장 승인 및 약정서 서명, 연장 완료 후 안내문 발송을 안내하였다.고객은 대출 연장을 요청하고 계좌, 본인 확인 절차와 OTP 입력을 진행하였으며, 전자 서명 방법을 안내받았다. 상담사는 확인 절차를 수행하고 연장 승인 및 약정서 서명, 연장 완료 후 안내문 발송을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

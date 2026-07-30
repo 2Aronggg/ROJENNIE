@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_009450",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "신규고객",
+        "consulting_client_type": null,
+        "source_length": 1277,
+        "consulting_content": "고객은 계좌 이체를 시도하면서 현재 이체 한도와 증액 절차를 문의하였다. 상담사는 계좌가 한도 제한 계좌임을 안내하고 일일 한도는 ○○원이며, 온라인에서 증액 신청 시 신분증 사진과 소득 증빙을 첨부해야 한다고 설명하였다. 또한 급여 통장으로 전환하면 기본 한도가 상승하고 전환은 영업점 방문 또는 모바일 앱의 통장 관리 메뉴에서 신청할 수 있다고 안내하였다. 비밀번호 변경은 ARS 연결 후 기존 비밀번호를 입력하고 새 4자리 비밀번호를 입력하면 완료된다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

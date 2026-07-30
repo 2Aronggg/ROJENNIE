@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_020040",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1575,
+        "consulting_content": "고객은 대출 만기 연장을 요청하고 계좌, 생년월일 등 정보를 제공하였고 상담사는 연장 절차와 필요 서류, 비대면 신청 방법을 안내하고 심사 결과는 영업일 1~2일 내에 문자로 통보될 것이라 설명하였다. 고객은 금리, 조기상환 수수료 정보를 문자로 받기를 원했고 상담사는 현재 연 ㅇ% 금리와 비례 수수료를 안내하며 앱 설치 및 로그인 방법을 안내하였다. 고객은 추가 문의 없음을 확인하고 상담사는 오늘 상담 내용을 문자와 앱 알림으로 재전달하겠다고 말했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

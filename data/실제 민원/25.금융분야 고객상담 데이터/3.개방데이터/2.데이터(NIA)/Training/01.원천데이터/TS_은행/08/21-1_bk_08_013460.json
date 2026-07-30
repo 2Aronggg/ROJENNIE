@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_013460",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 917,
+        "consulting_content": "고객은 비대면 대출 연장을 시도하던 중 오류 코드와 임시 저장된 두 건이 발생했다고 알렸고, 상담사는 계좌 정보를 확인하고 하나의 임시 저장 건을 취소하였다. 고객은 연장 절차를 재시도하도록 안내받았고, 상담사는 최신 앱 사용 및 인증서 재발급을 권고하며 정상 완료 시 문자, 이메일로 확인 메시지를 발송하겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

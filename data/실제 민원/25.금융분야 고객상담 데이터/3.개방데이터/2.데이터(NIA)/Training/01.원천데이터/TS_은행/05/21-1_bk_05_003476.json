@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_003476",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1135,
+        "consulting_content": "고객은 급여 입금용 통장을 사용 중이며 해외 결제, 송금 한도와 제한 여부를 문의하였고 상담사는 계좌 확인 후 해당 계좌는 금융거래 한도 계좌가 아니며 등록 기기 미사용으로 일일 이용 한도가 제한됨을 안내하고, 해외 송금은 일일 5천만원 한도이며 별도 본인 확인 절차가 필요하므로 담당팀으로 연결 및 전화 회신을 요청해 메모를 남기겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

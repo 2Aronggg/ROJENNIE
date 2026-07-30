@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_024473",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 705,
+        "consulting_content": "고객은 전화번호로 송금을 시도했지만 출금이 안 된 것을 확인하고 해당 금액 처리 방법을 문의하였고 상담사는 수취인이 은행, 계좌를 등록해야 출금이 이루어지며, 등록이 없을 경우 취소, 환불된다고 안내하고 현재 잔액은 변동 없고 등록 시 입금 처리된다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

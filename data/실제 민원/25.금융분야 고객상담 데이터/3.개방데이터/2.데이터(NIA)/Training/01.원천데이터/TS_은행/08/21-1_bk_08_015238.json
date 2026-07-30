@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_015238",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 953,
+        "consulting_content": "고객은 대출 연장을 요청하고 서류 제출 방법과 본인 확인 절차를 문의하였고 상담사는 잔액, 남은 기간 확인 후 30일 전까지 서류 제출 필요와 이메일, 팩스로 제출 가능함을 안내하고, 계좌, 생년월일 등 본인 확인을 진행하였으며, 현재 금리 심사 미완료라 담당 직원 연결 및 추후 연락을 약속하고 연장 시 금리, 상환 방식도 간략히 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

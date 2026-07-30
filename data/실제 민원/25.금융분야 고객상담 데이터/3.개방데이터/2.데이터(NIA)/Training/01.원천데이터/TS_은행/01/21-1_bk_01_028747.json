@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_028747",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 658,
+        "consulting_content": "고객은 ○○원 출금 내역을 확인했으나 출처를 몰라 확인을 요청했고 상담사는 본인 확인을 위해 성명, 생년월일, 계좌 비밀번호를 요구한 뒤, 해당 금액이 체크카드 사용으로 발생했음을 안내하고, 고객이 이용 기록이 없음을 확인한 후 비정상 거래로 판단해 카드 사용을 일시 제한하고 재발급 절차를 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

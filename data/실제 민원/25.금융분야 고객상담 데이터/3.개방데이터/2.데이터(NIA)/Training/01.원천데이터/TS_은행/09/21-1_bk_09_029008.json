@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_029008",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 816,
+        "consulting_content": "고객은 1달러 지폐 보유 여부와 금액, 위안화 제공 여부, 환율 및 보관 절차를 문의하였고 상담사는 1달러는 보유 중이며 소액 매수 제한, 위안화는 없음을 안내하고 현재 환율과 금액, 신분증 지참 및 영업시간, 수수료 없음을 설명하였다..."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

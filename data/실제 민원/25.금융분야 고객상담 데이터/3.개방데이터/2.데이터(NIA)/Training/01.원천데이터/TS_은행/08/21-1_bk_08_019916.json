@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_019916",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 0,
+        "consulting_content": "고객은 두 건 대출 연장을 위해 계좌 번호와 비밀번호를 제공하고 모바일 앱에 공인인증서를 연결했으며, 원금, 이자 납입 증명서와 이자율 안내를 이메일로 요청했고, 상담사는 계좌 확인 후 연장 절차와 자동 서류 제출을 안내하고, 증명서를 지정 이메일로 발송하며 현재 이자율 변동 없음을 알려 주고, 정기 알림 서비스 신청을 받아 설정해 주었다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

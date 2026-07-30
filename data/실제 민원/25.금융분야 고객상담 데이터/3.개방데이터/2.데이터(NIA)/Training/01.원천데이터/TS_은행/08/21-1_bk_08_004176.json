@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_004176",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 705,
+        "consulting_content": "고객은 전세 자금 대출 연장 신청 진행 상황을 문의하고, 온라인으로 신청했으며 이름을 제공하고 확인을 요청하였다. 상담사는 신청 내역을 조회하고 담당 부서에서 확인 중이며 영업일 1~2일 내 결과를 알려줄 것이라고 안내하고, 추가 서류 필요 시 연락을 약속하였다. 또한 연장 한도와 금리 변동에 대해 설명하고, 최종 금액은 담당 부서에서 확인 후 통보하겠다고 말했다. 고객은 결과 통보를 요청했고, 상담사는 전화, 문자, 카카오톡으로 즉시 알려주겠다고 답했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

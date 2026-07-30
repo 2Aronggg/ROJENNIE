@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_013939",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1135,
+        "consulting_content": "고객은 대출 미납 금액과 구성 내역, 상환 방법을 문의하였고 상담사는 대출 내역을 조회하여 원금, 이자, 연체료 구성과 일시, 분할 상환 옵션을 설명하고 6개월 분할 상환 예상 금액을 문자로 안내하기로 하였다.■■■■■■■■"
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

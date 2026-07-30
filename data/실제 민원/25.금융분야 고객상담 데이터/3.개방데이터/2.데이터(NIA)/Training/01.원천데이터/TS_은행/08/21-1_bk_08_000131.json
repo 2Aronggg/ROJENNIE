@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_000131",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1903,
+        "consulting_content": "고객은 전세 대출 연장을 원했으며 배우자 동의와 필요한 서류, 위임서 절차, 이자율 변동 및 월 상환액 차이에 대해 문의했다. 상담사는 서류 목록, 제출 기한, 위임서 공증 방법, 시스템 오류 해결 방안, 전화 연결 대기 시간, 이자율 적용 방식, 지점 방문 안내 등을 친절히 설명하고 고객의 질문에 차례로 답변했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

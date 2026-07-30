@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_003976",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1345,
+        "consulting_content": "고객은 급여 입금용 신규 계좌가 기존 한도 적용 계좌와 동일한지 확인하고, 한도 해제를 원한다며 재직증명서만 제출하면 된다고 문의했으며, 처리 기간은 3~5영업일, 비용은 무료라고 답변받았다. 상담사는 서류 접수, 검토 절차와 팩스 전송, 연락 확인 후 담당자가 결과를 통보하며 신분증은 필요 없고 별도 수수료는 없다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

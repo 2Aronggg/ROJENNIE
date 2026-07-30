@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_018838",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1136,
+        "consulting_content": "고객은 마이너스 통장 연장을 요청하고 계좌, 성명, 생년월일, 비밀번호를 제공해 본인 확인을 마쳤으며, 상담사는 연장 신청이 현재 심사 미완료라 진행 불가함을 안내하고, 심사 완료 시 문자, 앱으로 신청 가능하다고 설명하고, 연장 시 기존 이자율 유지와 추가 수수료 없음, 연체 시 연체료 발생 가능을 알려주고, 이메일은 기존대로 사용된다고 확인하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

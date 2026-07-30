@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_029139",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1036,
+        "consulting_content": "고객은 적금 만기 전 해지 시 이자 차이와 수수료, 인터넷 해지 처리 시점, 만기 해지 방법, 연금 세액공제 및 부분 해지 가능 여부를 문의하였고 상담사는 중도 해지 시 금리 차이와 원금 0.2% 수수료, 세전, 세후 금액을 안내하고 인터넷 해지는 영업일 1~2일 내 처리되며 만기 시 앱 해지를 권유하며 연간 납입 1,800만 원 이하 시 세액공제 가능하고 부분 해지는 불가하다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

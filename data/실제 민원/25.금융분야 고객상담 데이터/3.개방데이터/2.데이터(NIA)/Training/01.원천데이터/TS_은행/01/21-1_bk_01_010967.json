@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_010967",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1030,
+        "consulting_content": "고객은 체크카드 해외 결제로 잔고에 미결제 금액이 표시돼 차감 시점을 문의하였고 상담사는 해당 금액이 승인 대기 상태이며 영업일 기준 3~7일 내에 차감되고, 수수료는 카드사 약관에 따라 부과될 수 있으며 모바일 앱, 인터넷뱅킹에서 확인 가능하고 문자 알림을 설정해 주겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

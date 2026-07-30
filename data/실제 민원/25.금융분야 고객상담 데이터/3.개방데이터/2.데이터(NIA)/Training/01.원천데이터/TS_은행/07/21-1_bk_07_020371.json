@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_020371",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 854,
+        "consulting_content": "고객은 대출 및 계좌 정보를 확인하고 비밀번호 입력을 시도했으나 시스템 점검으로 실패했으며, 처리 결과를 문자, 이메일 중 선택해 안내받고자 했고 상담사는 본인 확인 절차를 진행하고 비밀번호 재입력을 안내한 뒤 시스템 점검 상황을 설명하고, 영업일 1~2일 내 처리와 선택 채널로 결과 안내를 약속하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_030107",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1658,
+        "consulting_content": "고객은 대출 이자와 입금 미반영, 반복 전화에 혼란을 호소하고 계좌, 신분 확인 후 대출 잔액, 이자 현황 및 필요한 서류를 문의했으며, 상담사는 본인 확인 절차를 안내하고 대출 잔액, 이자 정보를 확인해 제공했으며, 입금 미반영 시 영업점 방문 필요와 신분증, 소득증명서, 거래내역서 제출을 안내하고, 추가 연락 가능성을 확인하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

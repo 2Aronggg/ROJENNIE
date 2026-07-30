@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_000527",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1328,
+        "consulting_content": "고객은 적금 대출 만기 연장 방법과 필요 서류, 금리 유지 여부, 심사 일정 및 비용 등에 대해 문의했고 상담사는 온라인, 방문 연장 절차, 서류 목록, 금리 변동 가능성, 심사 결과 통보 시점과 거절 시 대안, 연장 후 원리금 처리 방식, 발생 가능한 수수료 등을 안내하였다"
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

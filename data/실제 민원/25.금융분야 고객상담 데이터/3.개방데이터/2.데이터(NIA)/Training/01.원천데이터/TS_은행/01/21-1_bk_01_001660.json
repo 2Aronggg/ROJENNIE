@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_001660",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "80세이상",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1600,
+        "consulting_content": "고객은 계좌 잔액 확인, 입금 경로, 송금 한도, 실패한 송금 복구, ATM 출금 차액 처리, 실시간 알림 신청 등 여러 문의를 했으며, 상담원은 계좌 잔액 및 입금 내역을 안내하고, 한도 상향 절차, 조사 진행 확인 방법, 차액 환불 소요 시간, 알림 수신 번호 추가 등록, 제휴사 리스트 PDF 제공 등에 대해 안내했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

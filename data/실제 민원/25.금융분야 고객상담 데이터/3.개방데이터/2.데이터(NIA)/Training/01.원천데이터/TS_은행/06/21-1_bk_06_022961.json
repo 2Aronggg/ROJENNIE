@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_022961",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1102,
+        "consulting_content": "고객은 건설 자금 대출 두 건의 오늘 상환 가능 여부와 필요 서류를 문의했으며, 연체 금액 전액을 가상 계좌로 즉시 결제하고 대출 잔액, 다음 상환일 확인 및 서류를 이메일로 받기를 요청하였다. 상담사는 연체 금액 납부 안내와 결제 절차를 설명하고, 대출 잔액 1억 원, 다음 상환일 12월 15일을 알려 주며, 서류를 이메일로 발송하고 발송 완료 후 문자로 확인해 주겠다고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

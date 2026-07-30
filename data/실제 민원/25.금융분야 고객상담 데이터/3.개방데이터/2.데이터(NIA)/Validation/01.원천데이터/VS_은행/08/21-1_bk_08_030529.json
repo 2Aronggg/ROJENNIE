@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_030529",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1649,
+        "consulting_content": "고객은 개인사업자 대출 연장을 신청하고 필요한 서류와 절차를 문의하였고 상담사는 최근 3개월 급여명세서, 사업자등록증, 대출계약서 제출 필요, 영업일 2~3일 심사, 연 5.5% 이자율을 안내하고, 카카오톡 알림 및 비대면, 방문 제출 방법을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

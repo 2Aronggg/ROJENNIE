@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_027198",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 719,
+        "consulting_content": "고객은 마이너스 통장 연장을 요청했으며, 상담사는 본인 확인을 위해 ARS 연결 후 계좌번호, 비밀번호 입력을 안내하고, 시스템 오류로 즉시 확인이 어려워 10분 이내 재연락 및 서류와 영업일 3일 처리 기간을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

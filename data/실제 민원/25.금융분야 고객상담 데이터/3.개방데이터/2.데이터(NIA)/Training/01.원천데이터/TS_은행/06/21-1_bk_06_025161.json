@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_025161",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1299,
+        "consulting_content": "고객은 대출 원금, 이자 미납 해소를 위해 오늘 입금을 원한다며 계좌번호, 성명, 생년월일을 제공하고 입력 절차를 따랐고, 영수증 문자 발송 및 연체료 산정 방법을 문의하였다. 상담사는 가상계좌 입금 안내, 입금 마감 시각, 잔고 정리 주의사항을 설명하고, 입금 완료 시 문자 영수증 및 홈페이지 확인 가능함을 안내하며 연체료는 미납일 기준 비율로 계산된다고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

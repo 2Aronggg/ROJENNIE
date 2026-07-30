@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_015420",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "신규고객",
+        "consulting_client_type": null,
+        "source_length": 1429,
+        "consulting_content": "고객은 엔화 무료 환전 후 현금 인출 방법과 온라인 신청 절차, 하루 한도 확인, 수령점 변경 및 공항 영업시간 등을 문의하였고 상담사는 국내 현금은 지정 환전소 이용 또는 인터넷뱅킹 송금 후 현금화가 가능함을 안내하고, 온라인 신청 방법, 한도 확인 방법, 수령점 지정, 변경 절차, 보안 주의사항 및 우대 혜택은 별도 신청 필요함을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

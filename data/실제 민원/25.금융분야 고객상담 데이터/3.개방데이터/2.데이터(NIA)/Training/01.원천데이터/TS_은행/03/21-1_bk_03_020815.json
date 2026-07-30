@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_020815",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1042,
+        "consulting_content": "고객은 대출 신청 시 등록된 자동이체와 기타 자동이체 내역을 확인하고 모두 해지하고 싶다고 요청했으며, 상담사는 계좌 확인 후 두 건의 자동이체 정보를 문자로 제공하고, 모바일 앱에서 ‘이체, 자동이체’ → ‘자동이체 관리’ 메뉴로 해지하는 절차를 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

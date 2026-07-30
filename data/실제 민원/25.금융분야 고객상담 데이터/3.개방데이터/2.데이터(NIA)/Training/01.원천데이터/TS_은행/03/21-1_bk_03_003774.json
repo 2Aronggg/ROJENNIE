@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_003774",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 773,
+        "consulting_content": "고객은 매월 자동이체 내역을 확인하고 해지 여부와 알림 설정을 문의하였고 상담사는 자동이체가 매월 ●●일 ●●●원씩 진행됨을 확인하고, 해지는 직접 가능하다고 안내했으며, 푸시 알림 서비스를 설정해 드렸고, 수수료는 월 ●●원이며 해지 시 비용이 없다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

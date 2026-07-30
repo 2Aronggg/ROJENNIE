@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_005606",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1298,
+        "consulting_content": "고객은 대출 만기 안내장을 받고 연장 신청을 위해 연락하였으며, 자동 연장이 되지 않은 사유와 연장 절차에 대해 문의하였다. 상담사는 해당 대출이 청약 담보 대출로 자동 연장 조건이 충족되지 않아 직접 신청이 필요함을 안내하고, 인터넷 뱅킹을 통한 연장 방법과 인증 절차를 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

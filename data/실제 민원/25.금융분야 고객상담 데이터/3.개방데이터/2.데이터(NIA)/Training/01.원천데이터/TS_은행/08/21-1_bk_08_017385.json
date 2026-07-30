@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_017385",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1047,
+        "consulting_content": "고객은 전세 안심 대출 연장과 계약서 작성 시점, 필요 서류 및 절차, 심사 기간과 비용 등을 문의하였고 상담사는 연장에 필요한 서류와 영업시간 내 방문 안내, 심사 기간 3~5일, 결과는 5일 이내 통보, 별도 수수료 없음 등을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

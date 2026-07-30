@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_013018",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1309,
+        "consulting_content": "고객은 대출 상환일 및 연장 절차를 문의하였고 상담사는 대출 잔액 1천만 원, 월 상환액 300만 원, 다음 상환일 2025년 12월 31일을 안내하였고 자동 연장이 적용된다고 설명하였다. 고객은 연장 해지 방법과 조기 상환 위약금 여부를 물었고 상담사는 모바일 앱 ‘대출 관리’ 메뉴에서 해지 절차를 안내하고, 남은 기간 6개월 미만이면 위약금이 면제되고 그 이상이면 원금의 2%가 부과된다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

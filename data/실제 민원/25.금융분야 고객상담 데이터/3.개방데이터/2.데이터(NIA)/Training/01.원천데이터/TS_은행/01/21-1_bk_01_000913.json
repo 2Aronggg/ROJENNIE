@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_000913",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1813,
+        "consulting_content": "고객은 은행 모바일 앱 화면 변화, 잔액 표시, 거래 내역 순서, 비밀번호 입력 절차, 수수료 및 알림 설정 등에 대한 여러 질문을 했고, 상담사는 어플 업데이트 내용, 거래내역 순서 변경에 대한 실제 송금처리 영향 여부, 보안 절차, 수수료 기준, 알림 관리 방법 등에 대해 안내했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

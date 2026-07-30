@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_028188",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1020,
+        "consulting_content": "고객은 증권사에 ●●원 이체 후 입금이 확인되지 않아 문의하였고 상담사는 은행 시스템에서 이체가 정상 처리됐음을 확인하고 증권사에 직접 확인하도록 안내하였으며, 계좌, 이름 일치 확인과 모바일 앱을 통한 입금 확인 방법을 제공하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

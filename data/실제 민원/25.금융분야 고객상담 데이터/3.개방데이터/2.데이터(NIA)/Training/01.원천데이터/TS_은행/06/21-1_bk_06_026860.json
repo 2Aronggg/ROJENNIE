@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_026860",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1078,
+        "consulting_content": "고객은 두 건의 대출이 미납 상태이며 연체 이자와 기한 연장, 자동이체 설정 방법을 문의하였고 상담사는 본인 인증 후 가상계좌 입금 안내와 연체 이자 계산 방식, 연장 신청 절차 및 모바일 앱 자동이체 설정 방법을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

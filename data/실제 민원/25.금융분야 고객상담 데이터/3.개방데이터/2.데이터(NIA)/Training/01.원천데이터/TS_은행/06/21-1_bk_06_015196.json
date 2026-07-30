@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_015196",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1274,
+        "consulting_content": "고객은 ㅇ월ㅇ일 이자 이중 발생 및 소액 수수료 부과 이유를 문의하고 금리 변동 알림 서비스 신청을 요청하였고 상담사는 계좌 확인 후 자동이체 실패와 잔액 부족으로 인한 이자 차이를 설명하고, 소액 수수료는 잔액 기준 유지비임을 안내하며, 금리 변동 알림 서비스를 전화 인증 후 즉시 신청해 문자, 이메일로 안내하기로 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

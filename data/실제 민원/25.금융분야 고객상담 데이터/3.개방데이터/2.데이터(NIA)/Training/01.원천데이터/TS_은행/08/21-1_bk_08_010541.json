@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_010541",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1180,
+        "consulting_content": "고객은 전세 자금 대출 잔액, 상환 일정 확인과 자동 이체 설정, 조기 상환 혜택 및 신청 방법, 서류 발급을 문의하였고 상담사는 본인 인증 후 잔액, 기간을 안내하고 자동 이체 비밀번호 입력으로 설정을 완료했으며, 조기 상환 시 이자 절감 가능과 신청 절차를 설명하고, 계약서, 스케줄표를 이메일로 발송하겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

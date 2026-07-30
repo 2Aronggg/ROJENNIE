@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_021507",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1173,
+        "consulting_content": "고객은 입금자 정보가 없는 10분 전 입금 내역 확인을 요청했고 상담사는 계좌, 비밀번호 등을 받아 조회했으며, 입금이 법원 송달료로 ★★ ★★ 통장에 입금된 것을 확인하고, 연락처가 없으니 해당 법원 담당 부서에 문의하도록 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_007478",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1689,
+        "consulting_content": "고객은 남편과 공동명의인 주택담보대출의 금리 할인 적용 현황을 확인하고, 적금 만기 연계 할인 0.3% 적용을 요청하였다. 상담원은 에스엠에스 인증을 진행하고, 할인 적용을 완료하였다. 또한 대출 잔액과 상환 일정은 문자 요약으로 제공하고, 원리금 균등에서 원금 균등으로 상환 방식 변경을 요청하였다. 상담원은 변경을 접수하고 처리 완료 후 새로운 상환 스케줄을 문자로 안내하기로 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

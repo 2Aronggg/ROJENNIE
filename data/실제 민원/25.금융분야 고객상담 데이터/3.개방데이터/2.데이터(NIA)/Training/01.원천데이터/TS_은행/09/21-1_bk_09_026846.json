@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_026846",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 887,
+        "consulting_content": "고객은 스위스 프랑 환전을 원하고 금액, 수수료, 환율 확인 및 방문 예약을 요청하였고 상담사는 계좌 잔액 충분함을 확인하고 어플 환전 절차 안내, 수수료 0.2%, 실시간 환율 안내, 현금 수령 방법 및 예약 방법을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

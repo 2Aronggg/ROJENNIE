@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_006412",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 897,
+        "consulting_content": "고객은 남편 명의 주택 신용대출 마이너스 통장의 만기가 ●월 ●●일임을 알려, 연장 절차와 안내 알림 미수신을 문의하였다. 상담원은 본인 확인을 위해 계좌번호, 비밀번호, 생년월일 등을 확인하였다. 연장 신청은 영업일 기준 며칠 소요되며 정확한 일정은 안내하기 어렵다고 설명하였다. 다음주 수요일까지 알림톡이 없을 경우 재연락을 요청하였다. 현재 금리 심사 단계는 진행 중이 아니라고 안내하였다. 절차 완료 시 남은 기간과 잔액이 남아 있음을 알려하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

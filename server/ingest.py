@@ -4,10 +4,14 @@ import argparse
 import hashlib
 import json
 import re
+import zlib
 from datetime import date
 from pathlib import Path
 from typing import Iterable
+from xml.etree import ElementTree
+from zipfile import ZipFile
 
+import olefile
 from pypdf import PdfReader
 
 from .schemas import DocumentChunk
@@ -16,12 +20,20 @@ from .schemas import DocumentChunk
 PDF_DIRS = {
     "공통규정": ("law", ["공통"]),
     "예금 상품 설명서": ("product_manual", ["예금"]),
+    "KB은행_상품_data": ("product_manual", ["예금"]),
+    "KB_예금_data": ("product_manual", ["예금"]),
+    "KB_예금": ("product_manual", ["예금"]),
+    "KB_ 적금_data": ("product_manual", ["적금"]),
+    "KB_적금": ("product_manual", ["적금"]),
+    "KB_펀드_data": ("product_manual", ["펀드"]),
+    "KB_펀드": ("product_manual", ["펀드"]),
     "펀드 상품 설명서": ("product_manual", ["펀드"]),
 }
 DATE_RE = re.compile(r"(?<!\d)(20\d{2})[.\-/](\d{1,2})[.\-/](\d{1,2})(?!\d)")
 FILENAME_DATE_RE = re.compile(r"(20\d{6})")
 EFFECTIVE_RE = re.compile(r"\[시행\s*(20\d{2})\.\s*(\d{1,2})\.\s*(\d{1,2})\.\]")
 SECTION_RE = re.compile(r"제\s*\d+조(?:의\d+)?(?:\([^\n)]{1,80}\))?")
+HWP_TEXT_RE = re.compile(r"[가-힣A-Za-z0-9][가-힣A-Za-z0-9\s.,!?%()ㆍ·:\-~\[\]「」『』제호]+")
 
 
 def _to_date(year: str, month: str, day: str) -> date | None:
@@ -48,13 +60,26 @@ def _doc_id(relative_path: Path) -> str:
     return hashlib.sha1(relative_path.as_posix().encode("utf-8")).hexdigest()[:12]
 
 
-def _metadata(pdf_path: Path, data_dir: Path) -> tuple[str, str, list[str], str, date | None]:
-    relative = pdf_path.relative_to(data_dir)
+def _metadata(file_path: Path, data_dir: Path) -> tuple[str, str, list[str], str, date | None]:
+    relative = file_path.relative_to(data_dir)
     folder = relative.parts[0]
     doc_type, products = PDF_DIRS.get(folder, ("unknown", ["미분류"]))
-    if folder == "펀드 상품 설명서" and "ELS" in pdf_path.name.upper():
+    if "금감원_판례" in relative.parts:
+        doc_type, products = "fss_case", _case_products(relative.name)
+    if folder in {"펀드 상품 설명서", "KB_펀드_data", "KB_펀드"} and "ELS" in file_path.name.upper():
         products = ["ELS"]
-    return _doc_id(relative), doc_type, products, f"local:{relative.as_posix()}", _date_from_filename(pdf_path.name)
+    return _doc_id(relative), doc_type, products, f"local:{relative.as_posix()}", _date_from_filename(file_path.name)
+
+
+def _case_products(name: str) -> list[str]:
+    upper_name = name.upper()
+    if "ELS" in upper_name:
+        return ["ELS"]
+    if any(keyword in name for keyword in ("금투", "펀드", "투자", "신탁", "ETF")):
+        return ["펀드"]
+    if any(keyword in name for keyword in ("예금", "통장", "은행")):
+        return ["예금", "공통"]
+    return ["공통"]
 
 
 def _chunks(text: str, max_chars: int = 1400) -> Iterable[str]:
@@ -75,10 +100,8 @@ def _chunks(text: str, max_chars: int = 1400) -> Iterable[str]:
         yield " ".join(current)
 
 
-def extract_pdf_chunks(pdf_path: Path, data_dir: Path, max_chars: int = 1400) -> list[DocumentChunk]:
-    doc_id, doc_type, products, source, published_at = _metadata(pdf_path, data_dir)
-    reader = PdfReader(str(pdf_path))
-    pages = [(page.extract_text() or "") for page in reader.pages]
+def _chunks_from_pages(file_path: Path, data_dir: Path, pages: list[str], max_chars: int = 1400) -> list[DocumentChunk]:
+    doc_id, doc_type, products, source, published_at = _metadata(file_path, data_dir)
     document_text = "\n".join(pages)
 
     # 파일명에 날짜가 없으면 본문 날짜를 보조값으로 사용한다.
@@ -115,9 +138,78 @@ def extract_pdf_chunks(pdf_path: Path, data_dir: Path, max_chars: int = 1400) ->
     return chunks
 
 
+def extract_pdf_chunks(pdf_path: Path, data_dir: Path, max_chars: int = 1400) -> list[DocumentChunk]:
+    reader = PdfReader(str(pdf_path))
+    pages = [(page.extract_text() or "") for page in reader.pages]
+    return _chunks_from_pages(pdf_path, data_dir, pages, max_chars)
+
+
+def extract_hwpx_chunks(hwpx_path: Path, data_dir: Path, max_chars: int = 1400) -> list[DocumentChunk]:
+    pages: list[str] = []
+    with ZipFile(hwpx_path) as archive:
+        section_names = sorted(name for name in archive.namelist() if name.startswith("Contents/section") and name.endswith(".xml"))
+        for name in section_names:
+            root = ElementTree.fromstring(archive.read(name))
+            texts = [node.text for node in root.iter() if node.text and node.text.strip()]
+            pages.append(" ".join(texts))
+    return _chunks_from_pages(hwpx_path, data_dir, pages or [""], max_chars)
+
+
+def extract_hwp_chunks(hwp_path: Path, data_dir: Path, max_chars: int = 1400) -> list[DocumentChunk]:
+    pages: list[str] = []
+    with olefile.OleFileIO(str(hwp_path)) as ole:
+        compressed = _hwp_is_compressed(ole)
+        section_paths = sorted(path for path in ole.listdir() if len(path) == 2 and path[0] == "BodyText" and path[1].startswith("Section"))
+        for path in section_paths:
+            payload = ole.openstream(path).read()
+            if compressed:
+                payload = zlib.decompress(payload, -15)
+            pages.append(_decode_hwp_section(payload))
+    return _chunks_from_pages(hwp_path, data_dir, pages or [""], max_chars)
+
+
+def _hwp_is_compressed(ole: olefile.OleFileIO) -> bool:
+    if not ole.exists("FileHeader"):
+        return False
+    header = ole.openstream("FileHeader").read()
+    return len(header) > 36 and bool(header[36] & 0x01)
+
+
+def _decode_hwp_section(payload: bytes) -> str:
+    spans: list[str] = []
+    offset = 0
+    while offset + 4 <= len(payload):
+        header = int.from_bytes(payload[offset : offset + 4], "little")
+        offset += 4
+        tag_id = header & 0x3FF
+        size = (header >> 20) & 0xFFF
+        if size == 0xFFF:
+            if offset + 4 > len(payload):
+                break
+            size = int.from_bytes(payload[offset : offset + 4], "little")
+            offset += 4
+        record = payload[offset : offset + size]
+        offset += size
+        if tag_id == 67:
+            spans.append(record.decode("utf-16le", errors="ignore"))
+    text = " ".join(spans) if spans else payload.decode("utf-16le", errors="ignore")
+    return " ".join(HWP_TEXT_RE.findall(text))
+
+
+def extract_document_chunks(file_path: Path, data_dir: Path, max_chars: int = 1400) -> list[DocumentChunk]:
+    suffix = file_path.suffix.lower()
+    if suffix == ".pdf":
+        return extract_pdf_chunks(file_path, data_dir, max_chars)
+    if suffix == ".hwpx":
+        return extract_hwpx_chunks(file_path, data_dir, max_chars)
+    if suffix == ".hwp":
+        return extract_hwp_chunks(file_path, data_dir, max_chars)
+    return []
+
+
 def iter_pdf_chunks(data_dir: Path) -> Iterable[DocumentChunk]:
-    for pdf_path in sorted(data_dir.rglob("*.pdf")):
-        yield from extract_pdf_chunks(pdf_path, data_dir)
+    for file_path in sorted(path for path in data_dir.rglob("*") if path.suffix.lower() in {".pdf", ".hwp", ".hwpx"}):
+        yield from extract_document_chunks(file_path, data_dir)
 
 
 def write_jsonl(chunks: Iterable[DocumentChunk], output: Path) -> int:

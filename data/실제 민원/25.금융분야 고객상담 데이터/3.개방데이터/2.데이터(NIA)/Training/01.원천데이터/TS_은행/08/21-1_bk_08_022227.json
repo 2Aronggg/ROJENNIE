@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_022227",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 2017,
+        "consulting_content": "고객은 마이너스 통장 대출 연장을 원하고 연장 절차와 필요 서류를 문의하였고 상담사는 계좌번호, 성명, 생년월일 확인 후 비대면 인증이 어려워 신분증 지참 및 지점 방문을 안내하며, 현재 앱이 미설치된 상황을 확인하고 가장 빠른 연장 방법은 지점 방문이라고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_005624",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1433,
+        "consulting_content": "고객은 전세론 이자와 납입 일정 확인을 위해 연락했으며, 폰뱅킹 미가입으로 직접 인출이 어려워 일회성 가상계좌 발급을 요청했다. 상담사는 가상계좌를 문자로 안내하고, 당일 마감 전 정확 금액 입금 및 최초 입금 재확인을 강조했다. 이어 고객의 OTP 미설정 문제를 해결하기 위해 모바일 뱅킹 앱 설치와 보안 메뉴에서의 등록 절차, 안내 URL 제공을 설명했다. 추가로 다른 대출 상품은 간단히 비교만 하고, 고객 요청에 따라 전세론 중심으로 진행했으며, 조기상환수수료는 남은 기간 등에 따라 달라져 계약서 기준으로 산정됨을 안내하고 계약서를 이메일로 발송했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

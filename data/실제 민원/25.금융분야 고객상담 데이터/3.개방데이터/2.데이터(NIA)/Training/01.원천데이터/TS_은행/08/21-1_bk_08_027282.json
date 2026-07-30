@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_027282",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1771,
+        "consulting_content": "고객은 대출 연장 여부와 상환 계획, 수수료 정보를 확인하고자 본인 확인, 계좌, 비밀번호를 제공하였고 상담사는 연장이 정상 처리됐으며 현재 잔액, 분할 상환 일정, 수수료는 승인 금액 기준으로 다음 결제일에 청구되고 이메일, 앱에서 확인 가능하다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

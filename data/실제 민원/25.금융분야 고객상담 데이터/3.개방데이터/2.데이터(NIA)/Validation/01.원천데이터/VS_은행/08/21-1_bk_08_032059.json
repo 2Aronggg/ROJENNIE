@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_032059",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1609,
+        "consulting_content": "고객은 신용대출 연장을 문의하고 이전 연장 절차와 현재 연장 가능 여부를 확인하고자 했으며, 연장 신청 중 화면 오류가 발생해 상환 옵션을 문의하였다. 상담사는 연장 가능 금액과 조건을 안내하고, 오류 상황을 파악 중임을 알리며, 상환 시 입금 계좌와 절차를 설명하고 필요한 서류를 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

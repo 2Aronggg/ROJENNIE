@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_011869",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1062,
+        "consulting_content": "고객은 달러와 유로 소량 환전 및 필요한 서류와 수수료를 문의하였고 상담사는 재고 확인 후 예약 가능 여부와 신분증, 거래내역서 제출 필요를 안내하였다. 고객은 오후 방문 시간을 물었고 상담사는 영업시간이 9시~16시이며 오후 방문 가능함을 알려주고, 대체 권종이 없음을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_021557",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1926,
+        "consulting_content": "고객은 환전, 충전 시 한도 초과 메시지가 나타나 한도 확대 절차와 다른 계좌 이용 가능 여부, 현재 한도, 잔액, 수수료, 앱에서 한도 조회 방법을 물었고, 해제 불가 시 대처를 문의하였다. 상담사는 한도 초과는 일일, 월간 누적 한도 때문이라며, 앱 ‘한도 관리’에서 해제 시도와 ‘한도 조회’가 가능하고, 전자금융 한도는 ●●원, 창구는 ●●●원이며 다음 날 초기화된다고 안내하고, 해제 불가 시 영업점 방문, 추가 인증이 필요하다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

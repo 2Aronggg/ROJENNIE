@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_028400",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1729,
+        "consulting_content": "고객은 개인 대출 연장을 위해 필요한 서류를 모두 준비했고 본인확인 및 ARS 연결을 동의했으며, 연장 신청을 방문으로 진행하고 금리와 상환 일정 안내를 요청하였다. 상담사는 서류 확인 후 본인확인 절차와 ARS 연결을 안내하고, 연장 가능 여부와 연 5.5% 금리, 12개월 균등 상환 일정 등을 문자와 전화로 알려 주며 방문 예약을 도와주겠다고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

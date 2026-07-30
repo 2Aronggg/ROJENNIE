@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_013173",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1289,
+        "consulting_content": "고객은 개인 대출 만기일 확인 및 연장을 요청하였고 상담사는 대출 만기일을 안내하고 연장 절차를 앱 이용 방법으로 설명하였다. 고객은 연장 신청을 원한다는 의사를 밝히었고 상담사는 앱 내 연장 메뉴 선택 및 서류 제출 안내를 제공하였다. 고객은 추가 서류 문의를 하였고 상담사는 신분증 사본과 최근 거래내역 제출을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

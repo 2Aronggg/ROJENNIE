@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_001077",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1547,
+        "consulting_content": "고객은 부재중 전화를 확인하고 입금 내역과 출처, 수수료 여부 등을 문의했으며, 상담원은 만족도 조사 전화였음을 안내하고 입금 정보를 제공했다. 상담사는 추가로 고객이 문의한 입금 알림 서비스 신청 방법과 최근 거래 내역 조회 절차에 대해서도 설명했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

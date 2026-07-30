@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_009370",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 956,
+        "consulting_content": "고객은 내일이 대출 이자 납입일이라 오늘 가상계좌로 조기 납부를 원하였다. 상담사는 가상계좌와 금액을 문자로 발송하고, 당일 23시 00분까지 입금해야 금액이 변동되지 않는다며 안내하였다. 입금이 실시간으로 확인되면 이자 납부가 완료된다고 설명하였다. 다음 상환일은 다음 달 말이며, 연체 시 추가 이자가 발생한다는 점을 알렸다. 자동이체는 모바일 앱에서 설정 가능하고, 설정 방법은 로그인 후 메뉴에서 단계별 안내를 따르면 된다고 안내하였다. 추가 대출 상품 상담은 필요 시 연결 가능하다고 전하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

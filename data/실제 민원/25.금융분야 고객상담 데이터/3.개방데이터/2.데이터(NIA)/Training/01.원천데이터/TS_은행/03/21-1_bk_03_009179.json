@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_009179",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1470,
+        "consulting_content": "고객은 보유 중인 적금 내역과 납입액, 만기일을 확인하고자 하였으며, 해지 시 위약금 여부와 금리 변동을 문의하였다. 상담원은 본인확인 후 자동이체 상세를 안내하고, 위약금은 잔여 기간에 따라 산정된다고 설명하였다. 계약서 내용은 시스템에 없으며, 담당 부서에서 서면으로 안내를 제공하기로 접수하였다. 또한 자동이체 날짜 변경 방법을 모바일 앱, 인터넷뱅킹 절차로 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

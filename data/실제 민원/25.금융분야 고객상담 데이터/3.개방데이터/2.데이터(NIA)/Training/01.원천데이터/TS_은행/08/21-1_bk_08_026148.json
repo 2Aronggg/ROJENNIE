@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_026148",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 796,
+        "consulting_content": "고객은 기존 전세 대출의 만기가 다가와 방문 일자를 문의하고 계약서 날짜 변경 및 체크카드 발급 가능 여부를 확인했으며, 이름을 제공하고 일정 변경을 요청하였다. 상담사는 만기일을 확인하고 다음 주 월요일에 방문하면 담당자가 도와줄 수 있다고 안내하며, 전세 대출 연장 서류와 절차, 체크카드 발급은 계약 유지 시 가능함을 설명하고, 변경된 방문 일정으로 조정해 주겠다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

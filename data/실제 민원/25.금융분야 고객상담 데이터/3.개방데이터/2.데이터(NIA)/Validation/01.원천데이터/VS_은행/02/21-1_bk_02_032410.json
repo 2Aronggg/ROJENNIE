@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_032410",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 897,
+        "consulting_content": "고객은 입금 일자, 금액, 계좌 번호를 알려주고 입금자 명칭이 다르게 표시된 점을 확인 요청했으며, 중계 담당 연결과 처리 결과를 문자, 이메일로 받기를 원하였다. 상담사는 제공된 정보를 시스템에서 조회하고 입금 내역을 확인한 뒤 중계 담당 상담원에게 연결해 주었으며, 처리 완료 후 문자와 이메일로 안내하겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

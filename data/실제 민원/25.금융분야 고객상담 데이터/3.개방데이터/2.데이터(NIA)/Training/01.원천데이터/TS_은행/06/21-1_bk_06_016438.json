@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_016438",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1259,
+        "consulting_content": "고객은 대출 연장과 결제 납입일 문자, 자동이체 상황, 지원금 동시 납입 및 연장 수수료 여부를 문의하였고, 상담사는 연장 처리와 새로운 만기 반영을 안내하고 자동이체가 정상이며 수수료가 없음을 확인시켜 주었으며, 관련 서류는 온라인에서 확인 가능하다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

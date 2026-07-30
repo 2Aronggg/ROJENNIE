@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_026310",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 2339,
+        "consulting_content": "고객은 대출 만기 연장을 문의하고 본인 확인 및 비밀번호 입력을 시도했으며, 연장은 자동이 아니고 직접 신청, 앱 이용이 필요하고 금리 승인이 대기 중임을 알았고, 수수료와 상환 일정 안내를 받았다. 상담사는 확인 절차와 비밀번호 재입력을 안내하고, 연장 신청 방법 및 일정, 수수료, 상환 내용을 제공하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

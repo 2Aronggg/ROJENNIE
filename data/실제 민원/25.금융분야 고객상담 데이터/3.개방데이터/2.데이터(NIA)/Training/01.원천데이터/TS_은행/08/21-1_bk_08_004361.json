@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_004361",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1843,
+        "consulting_content": "고객은 대출 연장을 문의하고 계좌, 생년월일 등 본인 확인 정보를 제공하였고 상담사는 확인 후 비상금 대출은 앱에서 만기일 이후 직접 연장해야 한다고 안내했으며, 연장 가능 시점과 상환 계획은 만기 후 재검토해야 한다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

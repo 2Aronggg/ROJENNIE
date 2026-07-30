@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_005488",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 954,
+        "consulting_content": "고객은 오늘 표시된 환전 수령 일자를 오늘, 내일, 모레 중 선택해 변경할 수 있는지 문의하였다. 상담사는 어플 메뉴에서 하루 단위로 일자 변경이 가능하다고 안내하였다. 인터넷 환전 시 현재 제공되는 우대 환율이 최선이며 변동 가능성을 설명하였다. 환전 금액을 다른 계좌로 이체하려면 인터넷, 모바일 ‘환전 후 이체’ 메뉴를 이용하면 실시간 처리되며 영업시간 외에는 다음 영업일에 처리된다고 안내하였다. 온라인 인증 완료 시 추가 신분증 제시가 필요 없으며, 포인트, 마일리지는 환전 우대에 직접 연동되지 않지만 상품권 구매 후 간접 활용 가능하다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

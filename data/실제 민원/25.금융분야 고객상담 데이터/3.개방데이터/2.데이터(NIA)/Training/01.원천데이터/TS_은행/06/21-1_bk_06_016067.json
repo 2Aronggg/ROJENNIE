@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_016067",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 692,
+        "consulting_content": "고객은 가상계좌 발급을 요청하고 영수증 문자 수신을 원했으며 잔고 정리를 약속하였고 상담사는 연체 상황을 안내하고 가상계좌 정보를 문자로 전송하며 영수증 발송을 안내하고 잔고 정리 및 입금 확인을 요청하고 추가 상환 옵션을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

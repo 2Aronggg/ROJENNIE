@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_024795",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1370,
+        "consulting_content": "고객은 대출 연장 문자 내용 확인과 외국인 신청 가능 여부, 필요한 서류 및 모바일 앱을 통한 절차를 문의하였고 상담사는 여권, 주소 서류와 주민등록증, 소득증빙 제출을 안내하고, 오피스텔 담보 대출 연장은 앱에서 서류 사진 첨부, 본인인증으로 신청 가능하며 마감일 이전 신청 시 수수료가 없고, 결과는 문자, 이메일로 통보한다는 답변을 제공하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

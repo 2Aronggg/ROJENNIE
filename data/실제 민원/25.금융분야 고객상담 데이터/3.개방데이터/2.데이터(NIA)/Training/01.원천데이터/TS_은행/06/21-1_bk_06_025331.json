@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_025331",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1311,
+        "consulting_content": "고객은 자동이체 정상 여부 확인을 요청하고 계좌 정보를 제공했으며, 상담사는 계좌, 신원 확인 후 자동이체 요청이 진행 중이며 잔액 부족 시 지연될 수 있음을 안내하고, 당일 출금 예정과 문자 통보, 연체 위험 및 개인정보 보호를 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_014778",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 2001,
+        "consulting_content": "고객은 아파트 관리비 자동이체 현황과 해지 시 출금 여부를 문의하였고 상담사는 시스템 조회를 진행하여 현재 자동이체가 유지 중이며 오늘 해지 시 다음 영업일에 출금이 취소될 수 있음을 안내하였다. 고객은 해지 요청을 확인하고 추가 연락을 요청하였고 상담사는 확인 결과를 추후 전화로 전달하겠다고 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

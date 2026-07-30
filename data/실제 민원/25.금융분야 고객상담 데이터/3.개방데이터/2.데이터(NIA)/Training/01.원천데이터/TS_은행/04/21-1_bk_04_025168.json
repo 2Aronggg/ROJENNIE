@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_025168",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 688,
+        "consulting_content": "고객은 정기예금 만기 전 해지 시 이자 차감 여부와 실제 수령액 계산을 문의하였고 상담사는 앞당긴 일수만큼 이자가 차감되며 금리는 동일하고, 온라인, 방문으로 예상 금액 확인 가능하다고 안내하였다. 또한 고객은 대출 상품 종류를 물었고 상담사는 주택, 신용, 자동차 대출 등 제공 중이며 상세는 담당 상담원 연결을 제안하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

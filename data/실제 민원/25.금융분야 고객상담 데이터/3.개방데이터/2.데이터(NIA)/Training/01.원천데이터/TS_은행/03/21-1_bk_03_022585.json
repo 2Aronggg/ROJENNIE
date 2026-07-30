@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_022585",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1354,
+        "consulting_content": "고객은 매월 자동이체가 발생한다며 거래 내역 조회와 중단을 요청했으며, 상담사는 신원 확인 후 자동이체 내역을 확인하고 수취인 정보를 제공하지 못한다는 안내와 해당 기관 문의를 권고한 뒤, 전자 서명으로 해지 신청서를 작성하도록 도와 해지를 완료하고 다음 결제일에 출금이 중단될 것이라고 확인하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

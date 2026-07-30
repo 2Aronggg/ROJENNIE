@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_020475",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1422,
+        "consulting_content": "고객은 한도 제한 일반예금 계좌 해제를 위해 모바일 앱 경로 안내와 서류 준비를 요청했고 상담사는 단계별 메뉴 안내와 오류 시 지점 방문을 권고하였다. 고객은 해지 완료 후 자동이체 유지 여부와 인터넷뱅킹 신청 서류를 물었고 상담사는 자동이체는 유지되지 않으며 신분증, 통장, 도장, 휴대폰을 지참하라고 안내하였다. 마지막으로 고객은 유지수수료 여부를 문의했고 상담사는 소액 입출금 시 면제된다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

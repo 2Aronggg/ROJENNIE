@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_016634",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 2142,
+        "consulting_content": "고객은 대출 이자 납부 지연 문자를 받고 모든 납부를 완료했으며 확인을 요청하였고 상담사는 계좌, 생년월일, 비밀번호 등 남은 이자 금액을 안내하고 지정 계좌 입금을 요청하였으며 고객은 즉시 입금하겠다고 하였고 상담사는 입금 처리 및 연체 해소를 확인하고 자동이체 설정 및 신용등급 영향을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

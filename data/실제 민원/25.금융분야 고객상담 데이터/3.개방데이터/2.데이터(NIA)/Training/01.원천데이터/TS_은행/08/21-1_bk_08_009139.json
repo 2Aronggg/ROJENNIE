@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_009139",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1204,
+        "consulting_content": "고객은 전세 대출 연장 신청 상태 확인 및 정상 처리 여부를 문의하였다. 상담원은 신청이 미처리된 것을 확인하고 재신청을 안내하였다. 재신청 후 정상 접수되어 영업일 1~2일 내 승인 예정이라고 안내하였다. 고객은 5천만 원, 5년 고정 금리 대출 상품을 문의하였고, 상담원은 금리 4.2% 옵션과 필요 서류를 안내하였다. 마지막으로 최근 입금 내역이 정상 반영됐음을 확인해 주었다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

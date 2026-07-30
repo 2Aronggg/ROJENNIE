@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_030863",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1029,
+        "consulting_content": "고객은 대출 신청 서류와 절차, 기존 대출 금리, 잔액 확인, 카드 사용액이 금리 감면에 미치는 영향 및 금리 우대 절차를 문의하였고 상담사는 필요한 서류 안내, 조건 설명, 카드 결제 확인 방법 제시, 우대 신청 절차를 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

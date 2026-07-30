@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_010901",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 745,
+        "consulting_content": "고객은 대출 서류 승인 확인을 위해 본인 인증 정보를 제공하였고 상담사는 인증 절차와 재전송을 안내하였다. 고객은 인증 문자를 받지 못했다고 알렸고 상담사는 시스템 문제 가능성을 언급하고 재전송을 약속하였다. 고객은 대출 금액, 이자율 및 연장 가능 여부를 문의하였고 상담사는 대출 ○○○만원, 연이자율 ○%를 알려주고 조건에 따라 연장이 가능함을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

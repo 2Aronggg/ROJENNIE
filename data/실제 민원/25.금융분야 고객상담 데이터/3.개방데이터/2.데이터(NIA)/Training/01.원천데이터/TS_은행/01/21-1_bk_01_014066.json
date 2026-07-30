@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_014066",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1365,
+        "consulting_content": "고객은 그 저기에 보시면 계좌 번호가 있기 때문에요. 해당 번호 기준으로 전체 거래 내역을 조회할 수 있나요?동일 금액이 두 번 출금된 사실을 확인하고자 하였고 상담사는 거래 내역을 조회하여 한 건은 청약 종합 저축, 다른 한 건은 퇴직연금 신탁에 정상 입금된 것으로 확인하였다. 또한 자동 이체 해지 방법을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

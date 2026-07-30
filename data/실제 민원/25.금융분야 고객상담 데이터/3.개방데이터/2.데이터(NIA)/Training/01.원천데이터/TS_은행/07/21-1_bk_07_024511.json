@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_024511",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1770,
+        "consulting_content": "고객은 전세 대출 이자 감면 조건과 조기 상환 위약금에 대해 문의하였고 상담사는 감면은 카드 사용액이 아니라 은행 계좌에서 일정 금액 이상 출금될 때 적용된다고, 현재 출금액이 기준에 미치지 않아 조정이 필요함을 안내하였다. 또한 조기 상환 위약금은 남은 기간에 따라 차등 부과되며 연장, 재조정 절차와 모바일 앱 이용 방법을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

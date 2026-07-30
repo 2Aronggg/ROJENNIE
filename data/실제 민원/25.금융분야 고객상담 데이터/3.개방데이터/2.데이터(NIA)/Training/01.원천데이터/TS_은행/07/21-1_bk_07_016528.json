@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_016528",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 619,
+        "consulting_content": "고객은 급여 입금일을 변경했으며 대출 기준 충족 여부와 한도, 이자율, 상환 일정 변동, 연체 시 이자, 절차를 문의하였고 상담사는 급여 입금 시 기준 충족 가능함을 안내하고 현재 한도, 이자율 및 변동 일정, 연체 처리 내용을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

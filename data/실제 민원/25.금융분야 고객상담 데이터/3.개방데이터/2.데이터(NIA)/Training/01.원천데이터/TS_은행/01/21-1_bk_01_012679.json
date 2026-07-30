@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_012679",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 2571,
+        "consulting_content": "고객은 대출 관련 민생 지원금 입금 여부와 종합소득세 신고 가능 여부를 확인하고 서류 제출 방법을 문의하였고 상담사는 입금 내역과 금액을 확인해 안내하였다. 상담사는 신고 기간과 필요 서류증명서)를 설명하고 이메일로 스캔본 제출 가능함을 알려주었다고 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

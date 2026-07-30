@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_008154",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 694,
+        "consulting_content": "고객은 중도금 대출 이자 자동이체 해제 여부를 문의하였다. 상담원은 현재 자동이체가 고객 계좌 설정되어 있음을 확인하고, 별도 해제 요청 없이 그대로 진행하면 된다고 안내하였다. 또한 이자 납부일 전날 문자 알림을 발송하도록 설정하였다. 현재 다른 계좌로 이전을 원할 경우 별도 절차가 필요함을 안내하였다. 추후 상환 일정 문의 시 추가 상담이 가능함을 안내하고, 고객은 현재 추가 서류 제출 계획이 없으며 필요 시 재문의하겠다고 답하였다. 대화가 종료되었다고 기록하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

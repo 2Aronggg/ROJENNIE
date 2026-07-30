@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_022304",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1120,
+        "consulting_content": "고객은 우대 통장의 자동이체 내역을 확인하고 싶다고 요청하였고 상담사는 거래 시점, 금액을 조회해 처리된 것으로 안내하였으며, 카드 사용 한도 확인 요청에 대해 계좌 정보를 토대로 확인 후 결과를 알려주겠다고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

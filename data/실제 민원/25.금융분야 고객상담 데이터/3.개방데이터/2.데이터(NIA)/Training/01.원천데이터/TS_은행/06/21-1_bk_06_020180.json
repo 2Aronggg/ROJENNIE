@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_020180",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1575,
+        "consulting_content": "고객은 마이너스 통장 이자 납부 일정, 방법과 가상계좌 발급을 문의했고 상담사는 입금이 선행돼야 발송된다고 답변하였다. 고객은 압류 확인을 위해 개인정보를 제공했으며 상담사는 인증 후 조회하였다. 고객은 ARS 입력 오류로 재입력을 요청했고 상담사는 정확히 입력하도록 안내하였다. 고객은 자동이체 설정을 원해 휴대폰 번호와 앱 비밀번호를 제공하겠다고 했고 상담사는 문자로 절차를 안내하고 입금 예정일을 확인하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

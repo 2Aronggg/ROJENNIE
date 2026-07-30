@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_005413",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1362,
+        "consulting_content": "고객은 전세 자금 대출 시 금리 인하 우대 조건 조회 방법을 문의하였고, 상담사는 급여 입금 계좌 적금 카드 사용 실적 등 우대 요건을 설명하였다. 고객은 대출 신청 절차와 예상 소요 시간을 문의하였고, 상담사는 온라인 신청서를 통한 대출신청 방법과 제출 서류들을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

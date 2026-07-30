@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_012349",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1382,
+        "consulting_content": "고객은 정릉점에서 달러 환전 금액과 현재 환율을 문의하였고, 주말, 공휴일 환전 가능 여부와 절차를 확인하였으며, 문자 링크 오류 시 대처법을 요청하였다. 상담사는 당일 환전 가능, 보유 현황과 실시간 환율이 1,300원 정도이며 변동 가능함을 안내하고, 신분증, 통장 지참 및 오후 3시 이전 신청 시 당일 수령 가능함을 설명하였다. 또한, 모바일 앱 이용 방법과 링크 오류 시 URL 복사, 앱 업데이트 등 대처법을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

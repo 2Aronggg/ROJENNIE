@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_001075",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1183,
+        "consulting_content": "고객은 대출 관련 가상계좌와 자동이체, 가상계좌 입금 마감시간, 이자율 변동, 상품 전환, 상환 일정 연장 등에 대해 여러 질문을 했고, 상담사는 가상계좌 입금 마감 시간, 대출 잔액과 이자율, 자동이체 설정 변경 절차, 신규 계좌 등록 기한, 대출 전환시 필요 조건 및 기존 대출 잔액 처리 방식, 상환 일정 연장 등에 대해 안내했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

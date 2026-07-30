@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_005115",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1225,
+        "consulting_content": "고객은 은행 앱 알림을 통해 마이너스 통장 대출 연장을 문의하였고, 상담사는 비대면 신청 절차를 안내하였고, 연장 신청 후 확인 문자와 계약서가 발송될 예정이며 연장 금리는 기준 금리에 따라 변동되며, 연장 시작 시점에 확정된다고 안내 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

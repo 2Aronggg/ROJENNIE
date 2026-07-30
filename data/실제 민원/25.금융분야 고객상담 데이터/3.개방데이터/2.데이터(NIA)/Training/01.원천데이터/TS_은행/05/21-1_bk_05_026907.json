@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_026907",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1276,
+        "consulting_content": "고객은 개인사업자 계좌에서 이체 한도 초과 오류가 발생해 서류 제출 및 한도 해제 절차와 신규 계좌 개설 방법을 문의하였고 상담사는 한도는 계좌 자체 제한이며 앱 또는 영업점 방문으로 해제 가능하고, 필요 서류는 사업자등록증, 신분증이며 문자로 안내하고, 신규 계좌는 온라인 신청 가능하고 2~3일 내 개설된다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

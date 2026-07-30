@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_019039",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 838,
+        "consulting_content": "고객은 금리 혜택 조건과 필요한 서류 제출 일정 등을 문의하였고 상담사는 카드 사용 실적이 일정 금액 이상이면 금리 할인 적용 및 월 실적 반영 방식, 제출 서류와 3일 이내 접수 필요, 고정 금리 적용 등을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

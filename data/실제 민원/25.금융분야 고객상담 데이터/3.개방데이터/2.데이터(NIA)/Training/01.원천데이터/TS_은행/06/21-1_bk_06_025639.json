@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_025639",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1100,
+        "consulting_content": "고객은 대출 납부 미처리와 가상계좌 발송을 요청하였고 상담사는 계좌번호, 성명, 생년월일, 휴대폰, SMS 인증, 보안질문, 계좌비밀번호 등 본인 확인 절차를 진행한 뒤, 대출 금액이 미납임을 확인하고 가상계좌 정보를 등록된 휴대폰으로 전송하여 당일 밤 11시까지 입금하도록 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_024399",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1462,
+        "consulting_content": "고객은 개인 신용대출 연장과 금리 인하, 마이너스 통장 한도 증액, 조기 상환 및 알림 수신 방법을 문의하였고 상담사는 연장 절차와 금리 심사 기간, 한도 증액은 지점 전달, 조기 상환 수수료 안내, 보안 설명, 알림은 카톡, 문자 구독으로 제공하며 결과는 영업일 1~2일 내에 통보한다는 답변을 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

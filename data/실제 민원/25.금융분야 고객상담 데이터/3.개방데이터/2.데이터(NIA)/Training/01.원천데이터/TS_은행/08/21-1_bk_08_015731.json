@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_015731",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1051,
+        "consulting_content": "고객은 대출 연장 문자 수신 후 본인 확인을 거쳐 연장 사실을 확인하고 오류 코드 문제로 녹취 부서 연결을 요청하였고 상담사는 계좌, 개인정보 확인 후 연장 사실을 안내하고, 오류 시 녹취 부서에 접수하며 금리 변동은 신용, 직장인 기준에 따라 추후 안내될 것이라고 설명하고, 연장 승인 후 전자문서 제출 절차를 안내하며 진행을 진행하겠다고 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_002316",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1535,
+        "consulting_content": "고객은 대출 연체 여부와 현재 잔액, 이자율 등을 문의하였고, 상담사는 이용 중인 대출 상품, 연체 내역 없음, 상환일, 조기 상환 시 위약금 발생, 대출 연장 조건, 원리금균등상환으로 매월 동일한 이자 납부, 부분 납부 방법 및 연체 시 비용에 대해 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

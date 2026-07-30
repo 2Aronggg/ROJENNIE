@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_016643",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 2274,
+        "consulting_content": "고객은 자동 이체 미처리로 내일 대출 상환을 원하고 가상 계좌 이용을 요청하였고 상담사는 본인 인증 후 가상 계좌 발급 제한 및 입금 마감 시각을 안내하고, 내일 재연락을 권유하며 수수료는 없고 연체 시 이자 적용을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

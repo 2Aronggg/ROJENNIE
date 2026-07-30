@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_008745",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 830,
+        "consulting_content": "고객은 의료 장비 구입 관련 대출의 만기 연장 가능 여부와 필요 서류를 문의하였다. 상담사는 대출 만기일이 도래하면 연장 안내가 진행되며, 사전 조회 결과에 따라 서류 없이 연장되거나 재직증명서, 소득증빙 서류가 필요할 수 있고 문자로 절차를 안내하겠다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

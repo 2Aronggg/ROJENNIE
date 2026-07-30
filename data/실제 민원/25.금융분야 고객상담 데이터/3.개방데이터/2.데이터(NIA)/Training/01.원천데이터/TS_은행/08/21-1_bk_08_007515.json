@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_007515",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1276,
+        "consulting_content": "고객은 사업자 대출 연장 신청을 위해 담당 지점과 통화를 요청하였다. 상담사는 본인 확인 차 계좌번호와 생년월일을 물어 확인하였다. 연장 신청은 모바일 앱에서 가능하나 화면 오류 시 최신 버전으로 업데이트하도록 안내하였다. 승인 소요 기간은 영업일 기준 1~2일이며, 오늘 결과를 원할 경우 영업점을 직접 방문해 서류를 제출하도록 권고하였다. 방문 시 신분증, 대출 계약서, 연장 신청서를 지참해야 한다고 안내하였다. 고객은 현재 연장 외 다른 대출 상품에 대한 문의는 없다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_019078",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 2337,
+        "consulting_content": "고객은 청약 통장 해지를 원하고, 본인 인증이 어려워 전화번호 변경 및 계좌, 생년월일, 비밀번호 제공을 하였고, 상담사는 인증 절차를 진행하고 새 번호를 반영해 해지 요청을 접수, 영업일 1~2일 내 처리될 것이라 안내하였으며, 해지 후 재청약 조건과 적립금 출금 방법을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

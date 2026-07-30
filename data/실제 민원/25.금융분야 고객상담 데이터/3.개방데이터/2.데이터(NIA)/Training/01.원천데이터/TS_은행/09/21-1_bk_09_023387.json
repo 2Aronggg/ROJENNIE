@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_023387",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 898,
+        "consulting_content": "고객은 아들의 환전을 위해 필요한 금액과 체크카드 발급 여부를 문의했고, 상담사는 환율, 수수료 안내와 주민등록증 지참 후 평일 9시~18시 지점 방문 시 즉시 카드 발급 및 다양한 권종 선택, 현금 영수증 발급 가능함을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

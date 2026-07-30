@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_023858",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1440,
+        "consulting_content": "고객은 인출 한도 제한으로 통장을 해지하고 잔액을 찾고자 하였고 상담사는 신분증, 통장, 서명만 있으면 현금 인출 및 계좌 해지가 가능하다고 안내하였다. 고객은 도장이 필요하냐고 물었고 상담사는 서명만 충분하다고 답변하였다. 고객은 해지 수수료와 잔액 수령 방법을 문의했으며 상담사는 해지 수수료는 없고 잔액은 현금, 이체 또는 수표로 받을 수 있으며 이체 시 소액 수수료가 발생할 수 있다고 설명하였다. 고객은 신규 통장 개설로 인한 한도 조정 가능성을 확인하고, 방문 시 기존, 신규 계좌 정보를 준비하라는 권고를 받았다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_021805",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1203,
+        "consulting_content": "고객은 싱가포르 달러 환전을 원하고 약 ○○○원 정도 금액을 제시했으며, 필요한 서류와 우대 혜택, 수수료를 문의하였고 상담사는 여권 사본, 거래내역서, 모바일 인증서 등 서류와 0.2% 수수료를 안내하고, 우대율 ○○○% 적용 및 비대면 신청 가능성을 설명했으며, 방문 가능 시간을 오전 9시~오후 4시로 알려주고 예약을 도와주었다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

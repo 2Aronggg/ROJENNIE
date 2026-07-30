@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_023618",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 852,
+        "consulting_content": "고객은 대출 연장을 요청했고 상담사는 연장 서류를 모바일, 지점 중 선택 가능하다고 안내하였다. 고객은 금리 변동과 옵션을 물었고 상담사는 현재 금리와 기간을 설명하였다. 고객은 전화번호를 제공해 서류 발송을 요청했으며 상담사는 인증 문자 후 카카오톡, 문자로 전송한다고 답하였다. 고객은 쿠폰과 모바일 서류 전달을 원했고 상담사는 앱 자동 적립 및 모바일 발송을 약속하였다. 고객은 상환 내역 확인 방법을 물었고 상담사는 온라인 조회 절차를 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

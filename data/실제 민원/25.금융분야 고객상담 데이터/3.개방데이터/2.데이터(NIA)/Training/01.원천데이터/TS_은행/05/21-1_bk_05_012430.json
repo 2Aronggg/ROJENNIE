@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_012430",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1095,
+        "consulting_content": "고객은 한도 해지를 시도했으나 ‘대상자가 아니므로 한도 해지가 불가합니다’라는 안내를 받아 이유를 문의하였고 상담사는 사용 기간, 빈도 등 사유 확인이 제한돼 지점 방문을 권고하며 신분증, 최근 거래내역 등 서류 준비와 예약 시 절차가 원활해진다는 안내를 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_017399",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 796,
+        "consulting_content": "고객은 전세금 안심 대출의 이자 연체 금액 확인 및 입금 안내를 요청하였고 상담사는 ●월●에 약간 미납되었음을 알려주었다. 그리고 고객이 요청한 가상계좌를 발급해 문자로 안내하며, 연체 금액 납부 기한 및 확인 방법도 안내했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

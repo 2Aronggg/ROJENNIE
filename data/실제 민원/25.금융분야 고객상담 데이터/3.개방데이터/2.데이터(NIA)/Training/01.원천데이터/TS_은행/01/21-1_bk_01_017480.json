@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_017480",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1026,
+        "consulting_content": "고객은 ★★해상에서 입금된 금액을 최근 두 달간 확인하고 새 적금 상품 안내를 요청하였고 상담사는 입금 내역을 제공하고 적금 옵션을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

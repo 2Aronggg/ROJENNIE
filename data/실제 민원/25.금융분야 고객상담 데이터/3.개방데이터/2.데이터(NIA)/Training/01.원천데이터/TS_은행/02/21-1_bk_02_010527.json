@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_010527",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1679,
+        "consulting_content": "고객은 계좌이체 실수로 잘못 출금된 금액의 반환을 요청하였고 상담사는 계좌, 거래 정보를 확인 후 자금 반환 접수를 진행하겠다고 안내하였다. 고객은 성명, 계좌번호, 연락처를 제공해 본인 확인에 동의하였고 상담사는 확인 후 3~5영업일 소요와 문자, 이메일 등으로 진행 상황을 안내하겠다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

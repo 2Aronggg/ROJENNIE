@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_005637",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1324,
+        "consulting_content": "고객은 주택담보대출 우대 금리 조건 충족 안내를 받고 적용 방법을 문의하였다. 상담사는 우대 금리 적용을 위해 ‘합 서비스’ 가입과 카드, 예금 등 자산 연결이 필요하다고 안내하였다. 고객은 모바일 앱에서 카드 인증을 마치고 자산을 연결했으며, 추가 계좌 연결 시 금리 상승 폭이 확대된다고 확인하였다. 상담사는 예금 계좌 연결 시 기본 금리보다 0.OO% 추가 적용되며, 적용 기준은 앱 내 자산 연결 화면에서 확인 가능하다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

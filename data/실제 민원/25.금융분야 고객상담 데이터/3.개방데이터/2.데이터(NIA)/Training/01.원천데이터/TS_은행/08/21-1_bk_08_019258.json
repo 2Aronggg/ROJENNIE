@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_019258",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1281,
+        "consulting_content": "고객은 대출 만기 안내를 받아 문의했으며 계좌 번호를 기억하지 못해 휴대폰 인증 절차를 진행하였고, 비밀번호 입력이 어려워 비밀번호 변경 방법을 안내받았다. 또한 연장에 필요한 서류와 확인 방법을 안내받고, 비밀번호 변경 후 다시 연락하겠다고 밝혔다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

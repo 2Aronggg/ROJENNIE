@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_024005",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 2265,
+        "consulting_content": "고객은 이체 한도 해제 방법을 문의하였고 상담사는 계좌에 일일, 한 번 이체 한도가 적용돼 있으며 스마트폰 뱅킹에서 해지 시도 가능하지만 비대면 해지는 증빙 서류가 필요해 어렵다고 안내하였다. 고객은 안내를 이해하고 이메일로 FAQ를 받겠다고 요청하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

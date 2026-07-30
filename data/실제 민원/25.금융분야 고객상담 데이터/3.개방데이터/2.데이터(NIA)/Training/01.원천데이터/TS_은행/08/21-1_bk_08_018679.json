@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_018679",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1044,
+        "consulting_content": "고객은 대출 만기 연장을 요청하고 본인 확인 및 대출 정보를 제공하였고 상담사는 자동 연장 가능함을 안내하고 별도 서류, 신청 없이 연장이 진행된다고 설명하였다. 다만 지정일을 넘어서 서류 안내가 필요하다면, 다시 연락 주시길 청하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

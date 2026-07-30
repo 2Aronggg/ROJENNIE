@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_009046",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1004,
+        "consulting_content": "고객은 인터넷 앱으로 환전 시 한도 초과 메시지가 나타난다고 문의하였다. 상담사는 해당 계좌가 출금 제한 한도 계좌라 하루 ●●원만 환전 가능하며, 앱에서 해제가 불가하므로 영업점 방문 후 신분증과 급여계좌 사본, 거래내역 등으로 심사 후 한도 해제 및 현장 환전이 가능하다고 안내하였다. 한도는 ●●원으로 제한되며, 하루에 여러 차례 나눠 환전하면 가능하다고 조언하였다. 급한 일정에 맞춰 오늘 오후 방문 시 담당 직원이 신분증 확인 후 서류 작성, 한도 조정 후 즉시 환전 절차를 진행할 수 있다고 설명하였다. 또한 해외 송금 한도도 동일하므로 사전 해제 신청을 권고하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_007914",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1354,
+        "consulting_content": "고객은 아파트 담보 대출의 우대 금리 적용 여부와 이자 납부일에 대한 문자를 받아 혼란을 호소하였다. 상담원은 대출 금리 적용 조건을 설명하고, 실적 충족 시 우대 금리가 유지됨을 안내하였다. 또한 급여이체와 월 2회 이상 입금이 우대 금리 유지에 필요함을 확인하고, 최근 입금 내역이 조건을 만족함을 알려주었다. 우대 금리는 ●월●부터 실적 여부와 관계없이 적용되며, 급여이체 일정 변동이 없음을 확인하였다. 문자 발송 및 온라인 신청 가능 안내도 제공하였다. 대출 상환 계획 조정이 필요하면 언제든 문의 가능함을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}
