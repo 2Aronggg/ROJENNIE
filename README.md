@@ -1,48 +1,97 @@
-# 금융소비자 보호 에이전트
+# KB Key Buddy
 
-복합 금융 문의를 민원 사건 단위로 분해하고, 계약·거래·안내문·증빙을 연결한 뒤 관련 규정과 상품 문서를 근거로 해결 방안, 추가 질문, 제출 서류와 절차를 안내하는 서비스입니다.
+금융 소비자의 복합 민원을 이해하고, 사용자의 **내 금융정보**, 약관·상품설명서·사례 RAG, 법령 MCP를 함께 확인해 처리 결과와 후속 절차를 안내하는 금융 소비자 보호 에이전트입니다.
 
-## 핵심 흐름
+대출은 구현 범위에서 제외합니다. 현재 MVP는 `data/`에 있는 예금·적금·ELS 문서와 가상 금융정보를 대상으로 합니다.
+
+## 핵심 구조
 
 ```text
-복합 문의
-→ Issue Splitter
-→ Focal Builder + 사건 그래프
-→ 사실관계·최신성 검증
-→ 공통 규정 + 상품별 문서 RAG
-→ Logic Verification
-→ Decision Gate
-→ 개인정보 범위 통제
-→ 민원별 답변 통합
+사용자 로그인·내 금융정보 조회 동의
+        ↓
+사용자 문의 입력
+        ↓
+Case Builder Agent
+ ├─ Issue Splitter
+ ├─ Focal Builder
+ └─ 필수 사실 추출
+        ↓
+FastAPI MCP Client
+        ↓
+Finance MCP Server
+ ├─ 내 금융정보 조회
+ ├─ 거래·금리·안내 이력 조회
+ ├─ RAG 근거 검색
+ └─ 이자 계산
+        ↓
+Evidence & Decision Agent
+ ├─ 사용자 진술·내 금융정보 대조
+ ├─ RAG 후보 관련성 검증
+ ├─ 선택적 법령 MCP 조회
+ └─ Logic Verification
+        ↓
+Deterministic Policy Gate
+ ├─ proceed: 판단 가능
+ ├─ ask: 핵심 정보 추가 확인
+ ├─ amend: 입력·증빙 보완
+ └─ hold: 고위험·전문가 검토
+        ↓
+Response Agent
+ ├─ 민원내용
+ ├─ 처리결과
+ ├─ 소비자 유의사항
+ └─ 제출 서류·후속 절차
 ```
 
-각 민원은 `proceed`, `amend`, `ask`, `hold` 중 하나로 처리합니다. `hold`는 자동으로 단정하지 않고 전문가 검토 대상으로 남깁니다.
+MCP는 새 에이전트가 아닙니다. 기존 조회·검색·계산 함수를 LLM이 호출할 수 있도록 연결하는 도구 계층입니다. RAG의 원천 문서는 계속 `data/`에 있고, `search_evidence` MCP Tool이 기존 RAG 검색 함수를 호출합니다.
 
-## 현재 데이터
+## MCP Tools
 
-- 공통 규정: 금융소비자보호법, 은행법, 은행법 시행령, 자본시장법
-- 상품 문서: 예금 12개, 펀드·ELS 10개
-- 자체 민원: 단일 75개, 복합 75개, 통합 CSV 1개
-- 현재 MVP 상품: 예금, 적금, 펀드, ELS
+초기 Finance MCP는 읽기 전용으로 구성합니다.
 
-보험 약관·상품설명서와 공식 분쟁조정 사례 원문은 현재 데이터에 없으므로 후속 수집 대상입니다.
+```text
+get_my_profile()
+get_my_products()
+get_my_transactions(account_id)
+get_my_rate_history(account_id)
+get_my_notice_history(account_id)
+search_evidence(query, product_type)
+get_evidence(evidence_id)
+calculate_interest(principal, rate, days, tax_rate)
+```
+
+고객 ID는 LLM이나 사용자가 입력하지 않습니다. 로그인 세션의 가상 고객 `CUST-001`을 서버가 연결하고, MCP는 현재 사용자의 `/me` 범위만 조회합니다.
+
+## 리포트 원칙
+
+- 사용자가 이미 입력한 금액·금리·기간은 다시 묻지 않습니다.
+- 내 금융정보에 없고 문의에도 없는 핵심 값만 `ask`로 질문합니다.
+- RAG 검색 후보는 노드로 분리하지 않고 리포트의 `판단 근거`에 묶습니다.
+- 사용자 화면에는 검색 점수·검색 방식·내부 chunk ID를 노출하지 않습니다.
+- 근거를 클릭하면 문서명·페이지·조항·짧은 인용문을 상세 표시합니다.
+- 최종 리포트는 `민원내용 / 처리결과 / 소비자 유의사항` 형식으로 생성합니다.
+
+## 데이터
+
+- 금융 규정·약관·상품설명서: `data/`의 RAG 원천 문서
+- 민원 JSON·CSV: Issue Splitter 평가와 회귀 테스트용
+- 가상 고객·계약·거래: 서버 Mock 데이터
+- 대출 데이터와 대출 처리 경로: 없음
 
 ## 디렉터리
 
 ```text
-client/          사용자 화면과 API 연동 규칙
-server/          API·오케스트레이션·RAG 구현 규칙
-docs/            PRD와 작업 목록
-server/agent/    에이전트가 읽는 공통·단계별 규칙
-data/            규정·상품 문서·민원 시나리오
+client/             React Flow 화면과 API 연동
+server/             FastAPI, 파이프라인, Mock 데이터, MCP 연결
+server/agent/       에이전트가 읽는 규칙 문서와 구현 모듈
+data/               RAG 원천 문서와 평가 데이터
+docs/               PRD와 작업 문서
 ```
 
-자세한 요구사항은 [docs/PRD.md](docs/PRD.md), 작업 순서는 [docs/TODO.md](docs/TODO.md)를 참고합니다.
+## 실행
 
-## 현재 상태
-
-현재 저장소는 기획 문서와 RAG 원천 데이터 정리 단계입니다. 실행 가능한 client/server 코드는 아직 추가하지 않았습니다.
+서버 실행은 [server/README.md](server/README.md), 클라이언트 실행은 [client/README.md](client/README.md)를 참고합니다.
 
 ## 주의
 
-이 서비스는 법률 자문이나 금융회사의 최종 판단을 대신하지 않습니다. 답변에는 근거 문서와 적용 시점, 확인되지 않은 사실을 함께 표시해야 합니다.
+이 서비스는 금융회사나 금융감독기관의 최종 판단, 법률 자문, 민원 자동 접수를 대신하지 않습니다. 외부 제출·계약 변경·계좌 변경은 수행하지 않으며, 최종 판단은 정식 금융 민원 절차를 통해 확인해야 합니다.

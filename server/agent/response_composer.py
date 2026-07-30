@@ -9,7 +9,7 @@ from server.schemas import CaseAnalysis, EvidenceRef, Fact, IssueAnalysis
 
 
 STATUS_LABELS = {
-    "proceed": "진행 가능",
+    "proceed": "진행 중",
     "amend": "보완 필요",
     "ask": "추가 확인 필요",
     "hold": "전문가 검토 대기",
@@ -38,6 +38,7 @@ DOCUMENTS_BY_ISSUE = {
     "명의도용": ["거래 또는 계좌 개설 알림", "본인 인증 기록", "금융회사 답변"],
     "만기지급거절": ["계약서 또는 상품설명서", "만기일 확인 자료", "금융회사 답변"],
     "우대금리설명부족": ["상품설명서", "우대금리 조건 안내 자료", "가입 당시 상담 기록"],
+    "금리변경미통지": ["상품설명서", "금리 변경 안내 자료", "우대조건 안내 자료"],
     "중도해지위약금": ["계약서 또는 상품설명서", "해지 신청 내역", "수수료 산정 내역"],
     "자동이체누락안내": ["자동이체 실패 내역", "우대조건 안내 자료", "알림 수신 내역"],
     "민원처리지연": ["민원 접수 내역", "접수번호", "금융회사 답변 또는 처리 상태"],
@@ -157,6 +158,8 @@ def _status_description(issue: IssueAnalysis, status: str) -> str:
 
 
 def _summary(issue: IssueAnalysis) -> str:
+    if issue.report.reasoning.strip():
+        return issue.report.reasoning
     focal_type = issue.focal.get("type")
     if focal_type:
         return f"{issue.product}의 {issue.issue_type} 민원이며, 중심 확인 대상은 {focal_type}입니다."
@@ -164,20 +167,26 @@ def _summary(issue: IssueAnalysis) -> str:
 
 
 def _confirmed_facts(facts: list[Fact]) -> list[str]:
-    visible_fields = {"date_or_duration", "amount", "rate", "product_name", "institution", "requested_action"}
+    visible_fields = {"date_or_duration", "amount", "rate", "product_name", "institution", "requested_action", "상품명", "가입일", "만기일", "기본금리", "우대금리", "실제 적용 금리", "가입금액", "세전 이자", "세금", "실제 지급 금액", "우대금리 조건", "우대조건 상태", "자동이체 실패일", "금리 변경 이력", "안내 이력", "안내 수신 여부"}
     return [f"{_field_label(fact.field)}: {fact.value}" for fact in facts if fact.field in visible_fields]
 
 
 def _missing_questions(missing_facts: list[str]) -> list[QuestionItem]:
+    question_by_field = {
+        "안내 금액": "예상하신 이자 금액은 얼마인가요?",
+        "금리 변경 이력": "금리 변경 안내를 받은 날짜나 메시지가 있나요?",
+        "안내 이력": "금리 또는 우대조건 안내를 받은 기록이 있나요?",
+        "고객 인증·동의 데이터": "본인 인증과 데이터 조회 동의를 완료했나요?",
+        "가상 계약 데이터": "확인할 예금·적금 계좌번호를 알려주세요.",
+    }
     return [
         QuestionItem(
             field=field,
-            question=f"{field}을(를) 알려주세요.",
+            question=question_by_field.get(field, f"{field}을(를) 알려주세요."),
             reason="검색 근거와 사실관계를 같은 민원에 연결하기 위해 필요합니다.",
         )
         for field in missing_facts[:3]
     ]
-
 
 def _evidence_item(ref: EvidenceRef) -> EvidenceItem:
     return EvidenceItem(
@@ -194,6 +203,8 @@ def _evidence_item(ref: EvidenceRef) -> EvidenceItem:
 
 
 def _next_steps(issue: IssueAnalysis, status: str) -> list[str]:
+    if status in {"proceed", "ask"} and issue.report.follow_up_actions:
+        return issue.report.follow_up_actions
     if status == "hold":
         return ["자동 답변으로 단정하지 않고 Human Review에서 사실관계와 위험 신호를 확인합니다."]
     if status == "ask":
@@ -242,6 +253,22 @@ def _field_label(field: str) -> str:
         "product_name": "상품명",
         "institution": "금융회사",
         "requested_action": "요청 조치",
+        "상품명": "상품명",
+        "가입일": "가입일",
+        "만기일": "만기일",
+        "기본금리": "기본금리",
+        "우대금리": "우대금리",
+        "실제 적용 금리": "실제 적용 금리",
+        "가입금액": "가입금액",
+        "세전 이자": "세전 이자",
+        "세금": "세금",
+        "실제 지급 금액": "실제 지급 금액",
+        "우대금리 조건": "우대금리 조건",
+        "우대조건 상태": "우대조건 상태",
+        "자동이체 실패일": "자동이체 실패일",
+        "금리 변경 이력": "금리 변경 이력",
+        "안내 이력": "안내 이력",
+        "안내 수신 여부": "안내 수신 여부",
     }.get(field, field)
 
 

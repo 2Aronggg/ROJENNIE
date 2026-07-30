@@ -55,6 +55,7 @@ class IssueInput(BaseModel):
     text: str = Field(min_length=1)
     focal: dict[str, Any] = Field(default_factory=dict)
     target: dict[str, Any] = Field(default_factory=dict)
+    mock_data: dict[str, Any] = Field(default_factory=dict)
     facts: list[Fact] = Field(default_factory=list)
     required_facts: list[str] = Field(default_factory=list)
 
@@ -62,6 +63,7 @@ class IssueInput(BaseModel):
 class CaseAnalyzeRequest(BaseModel):
     case_id: str | None = None
     session_id: str | None = None
+    customer_id: str | None = "CUST-001"
     prompt: str = Field(min_length=1)
     as_of: date | None = None
     issues: list[IssueInput] = Field(default_factory=list)
@@ -77,17 +79,40 @@ class Decision(BaseModel):
     risk_flags: list[str] = Field(default_factory=list)
 
 
+class IssueReport(BaseModel):
+    complaint_content: str = ""
+    issue: str = ""
+    processing_result: str = ""
+    consumer_cautions: list[str] = Field(default_factory=list)
+    used_evidence_chunk_ids: list[str] = Field(default_factory=list)
+    current_decision: str = "추가 확인 필요"
+    reasoning: str = ""
+    follow_up_actions: list[str] = Field(default_factory=list)
+    generated_by: Literal["llm", "fallback"] = "fallback"
+
+
+class LogicVerification(BaseModel):
+    summary: str = ""
+    checks: list[str] = Field(default_factory=list)
+    unresolved: list[str] = Field(default_factory=list)
+    generated_by: Literal["llm", "fallback"] = "fallback"
+
+
 class IssueAnalysis(BaseModel):
     issue_id: str
     product: str
     issue_type: str
     focal: dict[str, Any] = Field(default_factory=dict)
     target: dict[str, Any] = Field(default_factory=dict)
+    mock_data: dict[str, Any] = Field(default_factory=dict)
     facts: list[Fact] = Field(default_factory=list)
     missing_facts: list[str] = Field(default_factory=list)
     fact_resolution: FactResolution
+    retrieval_query: str = ""
     evidence_refs: list[EvidenceRef] = Field(default_factory=list)
     decision: Decision
+    logic_verification: LogicVerification = Field(default_factory=LogicVerification)
+    report: IssueReport = Field(default_factory=IssueReport)
     content_scope: dict[str, Any] = Field(default_factory=dict)
     next_steps: list[str] = Field(default_factory=list)
 

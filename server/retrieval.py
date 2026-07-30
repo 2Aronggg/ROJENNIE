@@ -7,7 +7,7 @@ from datetime import date
 from pathlib import Path
 from typing import Iterable
 
-from .ingest import iter_pdf_chunks, write_jsonl
+from .ingest import iter_document_chunks, write_jsonl
 from .schemas import DocumentChunk, EvidenceRef
 
 
@@ -46,7 +46,11 @@ def load_jsonl(path: Path) -> list[DocumentChunk]:
 
 def document_manifest(data_dir: Path) -> dict[str, dict[str, int]]:
     manifest: dict[str, dict[str, int]] = {}
-    for path in sorted(data_dir.rglob("*.pdf")):
+    paths = list(data_dir.rglob("*.pdf"))
+    paths.extend((data_dir / "regulations" / "law_api").glob("*.json"))
+    for path in sorted(paths):
+        if path.name == "manifest.json":
+            continue
         stat = path.stat()
         manifest[path.relative_to(data_dir).as_posix()] = {
             "size": stat.st_size,
@@ -70,11 +74,18 @@ def needs_reindex(data_dir: Path, chunks_path: Path) -> bool:
     if not chunks_path.exists():
         return True
     artifact_mtime = chunks_path.stat().st_mtime_ns
-    return any(path.stat().st_mtime_ns > artifact_mtime for path in data_dir.rglob("*.pdf"))
+    return any(
+        path.stat().st_mtime_ns > artifact_mtime
+        for path in (
+            list(data_dir.rglob("*.pdf"))
+            + list((data_dir / "regulations" / "law_api").glob("*.json"))
+        )
+        if path.name != "manifest.json"
+    )
 
 
 def reindex(data_dir: Path, output: Path) -> int:
-    return write_jsonl(iter_pdf_chunks(data_dir), output)
+    return write_jsonl(iter_document_chunks(data_dir), output)
 
 
 class SearchIndex:
@@ -97,7 +108,7 @@ class SearchIndex:
             index = cls.from_jsonl(chunks_path)
             if index.chunks:
                 return index
-        return cls(list(iter_pdf_chunks(data_dir)), source=f"pdf:{data_dir}")
+        return cls(list(iter_document_chunks(data_dir)), source=f"data:{data_dir}")
 
     def search(
         self,

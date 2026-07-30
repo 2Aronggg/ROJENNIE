@@ -99,6 +99,7 @@ class ReviewApiP1Tests(unittest.TestCase):
         )
         self.assertEqual(reviewed.status_code, 200)
         self.assertEqual(reviewed.json()["analysis"]["issues"][0]["decision"]["control"], "hold")
+        self.assertEqual(reviewed.json()["analysis"]["issues"][0]["report"]["current_decision"], "\uac80\ud1a0 \ub300\uae30")
 
         audit = self.client.get("/api/v1/cases/case_review/audit")
         self.assertEqual(audit.status_code, 200)

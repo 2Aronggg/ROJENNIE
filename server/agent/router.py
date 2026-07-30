@@ -7,20 +7,23 @@ from datetime import date
 from pathlib import Path
 from typing import Any, Literal
 
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 from server.agent.focal_builder import build_issue_input
 from server.schemas import CaseAnalyzeRequest, IssueInput
 
 
 LOGGER = logging.getLogger(__name__)
-RouteProduct = Literal["예금", "적금", "펀드", "ELS", "보험", "공통"]
+RouteProduct = Literal["예금", "적금", "대출", "펀드", "ELS", "보험", "공통"]
 
 
 class LLMRouteIssue(BaseModel):
     text: str
     product: RouteProduct
     issue_type: str
+    focal: dict[str, Any] = Field(default_factory=dict)
+    target: dict[str, Any] = Field(default_factory=dict)
+    required_facts: list[str] = Field(default_factory=list)
 
 
 class LLMRouteResult(BaseModel):
@@ -31,7 +34,7 @@ ROUTER_SYSTEM_PROMPT = """당신은 금융 소비자 민원 Issue Splitter다.
 사용자 문장을 독립적으로 처리해야 하는 민원 이슈 목록으로 분해한다.
 
 규칙:
-- 허용 상품은 예금, 적금, 펀드, ELS, 보험, 공통뿐이다.
+- 허용 상품은 예금, 적금, 대출, 펀드, ELS, 보험, 공통이다.
 - 상품과 쟁점이 다르고 필요한 규정·증빙·해결 조치가 다를 때만 분리한다.
 - 같은 사건의 원인과 결과는 하나의 이슈로 유지한다.
 - issue_type은 짧은 한국어 식별자로 작성한다. 법적 결론을 단정하지 않는다.
@@ -46,6 +49,7 @@ PRODUCT_KEYWORDS: tuple[tuple[str, tuple[str, ...]], ...] = (
     ("ELS", ("ELS", "지수연계")),
     ("펀드", ("펀드", "환매", "운용보수", "보수")),
     ("보험", ("보험", "보험금", "환급금")),
+    ("대출", ("대출", "대출금", "대출금리", "원리금", "중도상환수수료", "대출 잔액")),
     ("적금", ("적금", "자동이체", "우대조건")),
     ("예금", ("예금", "정기예금", "계좌", "통장", "지급정지")),
 )
@@ -71,11 +75,16 @@ ISSUE_RULES: tuple[tuple[str, tuple[str, ...]], ...] = (
     ("배상비율불만", ("배상 비율", "배상비율", "산정 기준", "배상 협상")),
     ("중도해지손실", ("조기해지", "중도 해지", "중도상환", "손실 규모", "손실이")),
     ("분쟁조정안내부족", ("분쟁조정", "금감원", "신청 절차")),
+    ("금리변경미통지", ("금리 변경", "금리변경", "변경 안내")),
     ("금리인상미통지", ("금리가", "금리", "인상 안내", "사전 안내")),
     ("설명의무위반", ("상품 설명", "조건에 대한 설명", "서류만 작성", "산정 기준을 설명")),
+    ("대출금리변경미통지", ("대출 금리 변경", "대출금리 변경", "대출 금리 인상", "대출 사전 안내")),
+    ("상환금액오류", ("대출 상환금", "원리금이 다르", "상환 금액이 다르", "상환내역 오류")),
+    ("중도상환수수료", ("중도상환수수료", "중도상환 수수료")),
+    ("연체이자산정", ("연체이자", "연체 이자", "연체금")),
 )
 
-SPLIT_RE = re.compile(r"(?:[.!?。]\s+)|(?:요\.\s+)|(?:니다\.\s+)|\s*(?:아 그리고|그리고 마지막으로|그런데|게다가|또|그리고)\s*")
+SPLIT_RE = re.compile(r"(?:[.!?。]\s+)|(?:요\.\s+)|(?:니다\.\s+)|(?:,\s*(?=(?:예금|적금|대출|펀드|ELS|보험)))|\s*(?:아 그리고|그리고 마지막으로|그런데|게다가|또|그리고)\s*")
 
 
 def build_case_request(
@@ -83,6 +92,7 @@ def build_case_request(
     *,
     case_id: str | None = None,
     session_id: str | None = None,
+    customer_id: str | None = "CUST-001",
     as_of: date | None = None,
     use_llm: bool | None = None,
     client: Any | None = None,
@@ -95,6 +105,7 @@ def build_case_request(
     return CaseAnalyzeRequest(
         case_id=case_id,
         session_id=session_id,
+        customer_id=customer_id,
         prompt=prompt,
         as_of=as_of,
         issues=split_prompt_to_issues(prompt, use_llm=use_llm, client=client),
@@ -121,7 +132,9 @@ def split_prompt_to_issues_llm(prompt: str, *, client: Any | None = None) -> lis
     llm_client = client or _gemini_client()
     response = llm_client.models.generate_content(
         model=os.getenv("GEMINI_MODEL", "gemini-3.5-flash"),
-        contents=ROUTER_SYSTEM_PROMPT + "\n\nUser input:\n" + prompt,
+        contents=ROUTER_SYSTEM_PROMPT
+        + "\n\nReturn structured focal, target, and required_facts for every issue. Keep them grounded in the user input.\n\nUser input:\n"
+        + prompt,
         config={
             "response_mime_type": "application/json",
             "response_schema": LLMRouteResult.model_json_schema(),
@@ -137,15 +150,20 @@ def split_prompt_to_issues_llm(prompt: str, *, client: Any | None = None) -> lis
         issue_type = routed.issue_type.strip() or "미분류"
         if not text:
             continue
-        issues.append(
-            build_issue_input(
-                issue_id=f"issue_{index:03d}",
-                product=routed.product,
-                issue_type=issue_type,
-                text=text,
-                raw_product=routed.product,
-            )
+        issue = build_issue_input(
+            issue_id=f"issue_{index:03d}",
+            product=routed.product,
+            issue_type=issue_type,
+            text=text,
+            raw_product=routed.product,
         )
+        if routed.focal:
+            issue = issue.model_copy(update={"focal": {**issue.focal, **routed.focal, "source": "agent.focal_builder.llm"}})
+        if routed.target:
+            issue = issue.model_copy(update={"target": {**issue.target, **routed.target}})
+        if routed.required_facts:
+            issue = issue.model_copy(update={"required_facts": routed.required_facts})
+        issues.append(issue)
     return issues
 
 
@@ -247,6 +265,15 @@ def _classify_product(text: str) -> str | None:
 def _classify_issue_type(text: str, product: str | None) -> str:
     if product == "보험":
         return "지원제외_보험"
+    if product == "대출":
+        if any(keyword in text for keyword in ("중도상환수수료", "중도상환 수수료")):
+            return "중도상환수수료"
+        if any(keyword in text for keyword in ("연체이자", "연체 이자", "연체금")):
+            return "연체이자산정"
+        if any(keyword in text for keyword in ("상환 금액이 다르", "대출 상환금", "원리금이 다르", "상환내역 오류")):
+            return "상환금액오류"
+        if any(keyword in text for keyword in ("금리 변경", "금리변경", "금리 인상", "사전 안내")):
+            return "대출금리변경미통지"
     if product == "적금" and any(keyword in text for keyword in ("자동이체", "이체 실패", "우대조건이 깨졌", "놓쳤")):
         return "자동이체누락안내"
     if product == "적금" and any(keyword in text for keyword in ("중도해지", "위약금", "계약서에 없던 수수료")):
@@ -291,4 +318,6 @@ def _infer_product_from_issue(issue_type: str) -> str | None:
         return "적금"
     if issue_type in {"배상비율불만", "분쟁조정안내부족", "상환금과소지급", "중도해지손실", "원금손실설명부족"}:
         return "ELS"
+    if issue_type in {"대출금리변경미통지", "상환금액오류", "중도상환수수료", "연체이자산정"}:
+        return "대출"
     return None

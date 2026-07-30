@@ -1,75 +1,146 @@
 # Server
 
-금융 문의 분석, 문서 검색, 규정 검증, 답변 조합을 담당하는 영역입니다.
-
-## 최소 모듈
-
-```text
-server/
-├─ app.py            FastAPI endpoint
-├─ schemas.py        Pydantic 입력·출력 모델
-├─ ingest.py         PDF 텍스트 추출·chunk 생성
-├─ retrieval.py      키워드 기반 최소 검색
-├─ facts.py          사실 최신성·충돌 검증
-└─ evaluation.py     자체 민원 평가
-```
+FastAPI 기반 오케스트레이터입니다. 브라우저 요청을 받아 세 개의 에이전트와 읽기 전용 MCP Tool을 순서대로 호출합니다.
 
 ## 처리 순서
 
 ```text
-request
-→ validate input
-→ split issues
-→ build focal/evidence
-→ resolve facts
-→ retrieve evidence
-→ verify logic
-→ decision gate
-→ compose response
+POST /api/v1/cases/analyze
+        ↓
+Case Builder Agent
+ ├─ Issue Splitter
+ ├─ Focal Builder
+ └─ 필수 사실 추출
+        ↓
+MCP Client
+ ├─ Finance MCP: 내 금융정보·거래·상환·금리·안내 이력 조회
+ ├─ RAG Retriever: 로컬 규정·약관·판례 검색
+ └─ Calculator Tool: 이자 계산
+        ↓
+Evidence & Decision Agent
+ ├─ 사실 대조
+ ├─ 근거 관련성 검증
+ └─ Logic Verification
+        ↓
+Deterministic Policy Gate
+        ↓
+Response Agent
 ```
+
+MCP는 에이전트가 아닙니다. Finance MCP는 `mock_data.py`의 읽기 전용 금융 조회·계산 함수를 Tool로 노출하는 연결 계층입니다. [공식 Python SDK](https://github.com/modelcontextprotocol/python-sdk)
+
+## 디렉터리
+
+```text
+server/
+├─ app.py                         FastAPI API
+├─ pipeline.py                    전체 오케스트레이션
+├─ schemas.py                     API·case schema
+├─ mock_data.py                   합성 고객·계약·거래 데이터
+├─ logic_graph.py                 민원 트리와 사실 관계
+├─ retrieval.py                   RAG 검색 구현
+├─ mcp_finance.py                 Finance MCP Server
+├─ mcp_client.py                  MCP Tool 호출 클라이언트
+└─ agent/
+   ├─ router.py                   Case Builder 라우팅
+   ├─ focal_builder.py            Focal Builder
+   ├─ rag_query.py                RAG 질의 생성
+   ├─ logic_verification.py       근거·사실 검증
+   ├─ decision_gate.py            결정 상태 계산
+   ├─ response_composer.py        최종 답변 구성
+   ├─ report_composer.py          리포트 구성
+   └─ mock_customer_data_resolver.py  내 금융정보 연결
+```
+
+## Finance MCP Tools
+
+초기에는 하나의 내부 MCP 서버만 사용합니다.
+
+| Tool | 역할 | 데이터 출처 |
+|---|---|---|
+| `get_my_profile` | 현재 사용자·동의 상태 조회 | `mock_data.py` |
+| `get_my_products` | 예금·적금·대출·ELS 상품 조회 | `mock_data.py` |
+| `get_my_transactions` | 거래내역 조회 | `mock_data.py` |
+| `get_my_repayments` | 대출 상환내역 조회 | `mock_data.py` |
+| `get_my_rate_history` | 금리 변경 이력 조회 | `mock_data.py` |
+| `get_my_notice_history` | 안내 이력 조회 | `mock_data.py` |
+| `search_evidence` | 약관·상품설명서·규정 RAG 검색 | `retrieval.py` |
+| `get_evidence` | 근거 상세 조회 | RAG 인덱스 |
+| `calculate_interest` | 이자·세금 계산 | 결정적 함수 |
+
+고객 ID는 문의에서 추출하지 않습니다. 서버 세션의 현재 사용자에 연결된 가상 고객만 조회합니다.
+
+```text
+session user
+  → CUST-001
+  → get_my_products()
+  → 관련 account_id 선택
+  → 거래·금리·안내 이력 조회
+```
+
+MCP Tool은 모두 읽기 전용입니다. 민원 제출, 이메일 전송, 계좌·계약 변경 Tool은 만들지 않습니다.
+
+## RAG와 MCP의 관계
+
+```text
+retrieval.py.search(query)
+        ↓
+retrieval.py가 data/ 문서 검색
+        ↓
+evidence_id·문서명·페이지·조항·인용문 반환
+        ↓
+Evidence & Decision Agent
+        ↓
+Logic Verification
+```
+
+MCP가 RAG 데이터를 대신 저장하지 않습니다. RAG는 검색 기능이고, MCP는 그 기능을 에이전트가 호출하는 표준 인터페이스입니다.
+
+RAG 후보자료는 최종 리포트의 판단 근거에 연결합니다. `similarity_score`, `search_method`, 내부 chunk ID는 기본 응답에 노출하지 않습니다.
 
 ## API
 
-- `GET /health`
-- `POST /api/v1/cases/analyze`
-- `GET /api/v1/cases/{case_id}`
+| Method | Path | 역할 |
+|---|---|---|
+| `POST` | `/api/v1/cases/analyze` | 문의 분석 및 case 생성 |
+| `GET` | `/api/v1/cases/{case_id}` | 트리·리포트·근거 조회 |
+| `POST` | `/api/v1/cases/{case_id}/review` | Human Review 결과 반영 |
 
-각 민원 결과에는 `issue_id`, `product`, `issue_type`, `focal`, `target`, `facts`, `missing_facts`, `evidence_refs`, `decision`, `content_scope`, `next_steps`를 포함합니다.
+## 상태
 
-## 구현 원칙
+```text
+proceed = 사실·근거가 충분하여 리포트 생성
+ask     = 사용자에게 핵심 정보 추가 질문
+amend   = 입력 마스킹·증빙 보완 필요
+hold    = 고위험·명의도용·중대한 충돌로 검토 대기
+```
 
-- 규정·사례 검색 결과가 없으면 근거가 있다고 가장하지 않는다.
-- 문서 시행일을 검증한다.
-- LLM이 만든 사실과 원문에서 추출한 사실을 구분한다.
-- 외부 제출은 사용자 확인 없이는 실행하지 않는다.
-- LangGraph, pgvector, reranker는 필요성이 확인된 뒤 추가한다.
+Policy Gate는 LLM이 아니라 일반 코드로 최종 상태를 결정합니다. 사용자가 이미 입력한 값이나 Finance MCP로 확인된 값은 다시 질문하지 않습니다.
 
 ## 로컬 실행
 
 ```powershell
-python -m unittest server.test_p0
-python -m server.ingest --data-dir data --output server/chunks.jsonl
+cd C:\Users\WIN11\ROJENNIE
+\.venv\Scripts\Activate.ps1
+python -m pip install -r server\requirements.txt
 python -m uvicorn server.app:app --reload
 ```
 
-`server/chunks.jsonl`은 생성 산출물이므로 커밋하지 않습니다.
+MCP를 별도 프로세스로 실행하는 경우:
 
-## LLM router
+```powershell
+python server\mcp_finance.py
+```
 
-server/agent/router.py uses structured LLM output when a supported Gemini API key is set. It falls back to the deterministic rule router when the key, SDK, network, or response is unavailable.
+기본 개발 모드는 `inprocess`이며, 실제 MCP stdio 왕복이 필요하면 `FINANCE_MCP_TRANSPORT=stdio`를 설정합니다. 데이터 접근과 MCP Tool의 입출력 계약은 분리해 유지합니다.
 
-Environment variables:
-GEMINI_API_KEY=...
-Supported key aliases: GOOGLE_API_KEY, GOOGLE_GENAI_KEY.
-ROUTER_MODE=auto
-GEMINI_MODEL=gemini-3.5-flash
+## LLM
 
-Use ROUTER_MODE=rule to force the deterministic fallback during tests.
+`GEMINI_API_KEY`가 있으면 구조화된 LLM 출력을 사용하고, 키·SDK·네트워크·응답 오류가 있으면 결정적 fallback으로 전환합니다. LLM은 고객 ID, 검증 사실, 이자 계산 결과를 임의 생성하지 않습니다.
 
-## P1 server capabilities
+## 제외
 
-- Loads server/chunks.jsonl when it is newer than the source PDFs; otherwise builds the index from PDFs.
-- Applies product and effective-date filters, with optional embedding scores combined with full-text scores.
-- Returns logic_graph and regulation_notices in case analysis responses.
-- Supports POST /api/v1/cases/{case_id}/review and GET /api/v1/cases/{case_id}/audit.
-- The current supplied chunks have no embeddings, so their default match type is full_text.
+- 금융회사 내부 시스템 실제 연동
+- 외부 민원 자동 제출
+- 계좌·계약 변경
+- MCP를 통한 쓰기 작업

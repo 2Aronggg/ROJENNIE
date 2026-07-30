@@ -3,6 +3,7 @@ from __future__ import annotations
 import unittest
 
 from server.agent.focal_builder import build_issue_input
+from server.facts import missing_facts, resolve_facts
 
 
 class FocalBuilderTests(unittest.TestCase):
@@ -32,6 +33,22 @@ class FocalBuilderTests(unittest.TestCase):
         self.assertEqual(issue.focal["rates"], ["0.3%"])
         self.assertEqual(issue.target["action_target"], "KB 민원창구")
         self.assertTrue(any(fact.field == "product_name" for fact in issue.facts))
+
+    def test_maps_expected_and_actual_amounts_from_user_sentence(self) -> None:
+        issue = build_issue_input(
+            issue_id="issue_001",
+            product="예금",
+            issue_type="거래오류",
+            text="예금 만기 이자로 30만원을 예상했지만 실제로는 279,180원만 입금됐습니다. 가입금액은 1,000만원이고 적용금리는 3.3%였습니다.",
+        )
+
+        values = {fact.field: fact.value for fact in issue.facts}
+        self.assertEqual(values["안내 금액"], 300000)
+        self.assertEqual(values["실제 지급 금액"], 279180)
+
+        missing = missing_facts(issue.required_facts, resolve_facts(issue.facts))
+        self.assertNotIn("안내 금액", missing)
+        self.assertNotIn("실제 지급 금액", missing)
 
     def test_unsupported_product_is_kept_out_of_a_product_route(self) -> None:
         issue = build_issue_input(

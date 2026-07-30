@@ -1,14 +1,14 @@
 # TODO
 
-## 협업 규칙
+## 협업 원칙
 
-두 사람은 같은 파일을 수정하지 않는다. 각자 브랜치를 따로 만들고, `main`에 직접 push하지 않는다.
+두 사람이 같은 파일을 동시에 수정하지 않는다. 각자 담당 디렉터리에서 작업하고, 공통 계약 변경은 PR 전에 공유한다.
 
-| 담당 | 소유 파일 | 책임 |
+| 담당 | 담당 파일 | 책임 |
 |---|---|---|
-| A: 데이터·서버 | `data/`, `server/`, `docs/todo/A_DATA_SERVER.md` | 문서 인덱싱, RAG, 공통 schema, API, 사실 검증 |
-| B: 에이전트·클라이언트 | `server/agent/`, `client/`, `docs/todo/B_AGENT_CLIENT.md` | 에이전트 규칙, 결정 게이트, 답변, UI |
-| 통합 담당 | `README.md`, `docs/PRD.md`, `docs/TODO.md` | 초기 구조 반영과 최종 통합만 담당 |
+| A: 데이터·서버·MCP | `data/`, `server/`, `docs/todo/A_DATA_SERVER.md` | Mock 금융정보, RAG, Finance MCP, FastAPI, API·Tool 계약 |
+| B: 에이전트·클라이언트 | `server/agent/`, `client/`, `docs/todo/B_AGENT_CLIENT.md` | 3개 에이전트, Policy Gate 연동, React Flow, 채팅·리포트 UI |
+| 공동 | `README.md`, `docs/PRD.md`, `docs/TODO.md` | 구조 확정 후 한 명이 통합 수정 |
 
 ### Git 규칙
 
@@ -17,38 +17,60 @@ A: feat/data-server
 B: feat/agent-client
 ```
 
-- A와 B는 각자 담당 디렉터리만 수정한다.
-- `README.md`, `docs/PRD.md`, `docs/TODO.md`는 작업 중 수정하지 않는다.
-- API 입력·출력 계약은 A가 먼저 정의하고 B는 읽기만 한다.
-- 계약 변경이 필요하면 먼저 이슈나 PR 댓글로 합의한 뒤 통합 담당이 반영한다.
-- 각자 브랜치를 push하고 별도 PR을 만든다. 한 브랜치에 공동 push하지 않는다.
-- 통합 순서는 `A PR → API 계약 확인 → B PR`로 한다.
+- A와 B는 각자 브랜치에서 작업한다.
+- `main`에 직접 push하지 않는다.
+- 공통 schema·API·MCP Tool 계약은 A가 먼저 제안하고 B가 사용한다.
+- 공통 문서는 충돌 방지를 위해 한 번에 한 명만 수정한다.
+- 통합 순서는 `A PR → 계약 확인 → B PR → 전체 테스트`다.
+- 최신 원격 변경을 먼저 fetch하고, 충돌 해결 후 테스트한다.
 
-## 담당별 작업
+## 구조 확정 사항
 
-- [A 데이터·서버 TODO](todo/A_DATA_SERVER.md)
-- [B 에이전트·클라이언트 TODO](todo/B_AGENT_CLIENT.md)
+- 실제 LLM 에이전트는 `Case Builder`, `Evidence & Decision`, `Response` 3개다.
+- Issue Splitter와 Focal Builder는 Case Builder 내부 단계다.
+- My Info Resolver, RAG Retriever, Calculator, Logic Graph, Policy Gate는 일반 모듈 또는 MCP Tool이다.
+- MCP는 새 데이터를 보관하지 않고 기존 함수와 RAG를 Tool로 노출한다.
+- 브라우저는 MCP를 직접 호출하지 않고 FastAPI만 호출한다.
+- 고객 ID는 LLM이 추측하지 않고 서버 세션에서 연결한다.
+- 대출은 구현하지 않는다.
 
-## 통합 시점 체크리스트
+## 통합 체크리스트
 
-통합 담당만 체크한다.
-
-- [ ] A의 API schema와 B의 client 요청 형식이 일치함
-- [ ] `proceed / amend / ask / hold` 값이 모든 계층에서 동일함
-- [ ] 민원별 `issue_id`가 검색·검증·답변까지 유지됨
-- [ ] 근거 문서의 `doc_id`, 페이지·섹션이 최종 답변에 연결됨
+- [ ] `customer_ref`와 조회 동의 상태가 API에 포함됨
+- [ ] `get_my_products` 결과가 issue별 account에 연결됨
+- [ ] 사용자가 이미 입력한 사실을 재질문하지 않음
+- [ ] `search_evidence`가 기존 RAG를 호출하고 구조화된 결과를 반환함
+- [ ] RAG 후보가 Logic Verification 이후에만 처리 결과에 반영됨
+- [ ] 근거 후보가 별도 트리가 아니라 리포트 판단 근거에 표시됨
+- [ ] 근거 상세 클릭 시 문서명·페이지·조항·인용문이 표시됨
+- [ ] 검색 점수·검색 방식·내부 chunk ID가 기본 화면에 노출되지 않음
+- [ ] `proceed / ask / amend / hold`가 모든 계층에서 동일함
+- [ ] `issue_id`가 MCP 조회·검색·검증·리포트까지 유지됨
 - [ ] 복합 민원 결과가 서로 섞이지 않음
-- [ ] `complex_issue_75.json`으로 end-to-end 테스트 통과
+- [ ] 사용자가 제공한 금액·금리·거래 사실을 다시 질문하지 않음
+- [ ] `complex_issue_75.json` end-to-end 테스트 통과
+- [ ] MCP 장애 시 근거 없는 proceed가 발생하지 않음
 - [ ] 개인정보 원문이 기본 답변에 노출되지 않음
 
-## 데이터 수집 시점
+## 데이터 추가 기준
 
-현재 데이터로 MVP 구현과 분해·검색 파이프라인 검증을 먼저 진행한다. 공식 분쟁조정 사례, 절차·제출서류, 보험 문서는 MVP 평가 후 필요성이 확인될 때 추가한다.
+현재 MVP 구현에 필수 데이터는 추가하지 않는다. 다음은 기능 확장 시에만 수집한다.
+
+- [ ] 공식 금융 분쟁조정·민원 사례 원문
+- [ ] 공식 민원 접수 절차·제출 서류 정보
+- [ ] 첨부 HWP·PDF 문서 추출용 테스트 파일
+- [ ] 추가 예금·적금 상품 설명서
+
+실제 고객정보, 실제 계좌번호, 주민번호는 수집하지 않는다.
 
 ## 완료 기준
 
-- [ ] 복합 75건에서 하위 민원 수·상품·쟁점을 비교할 수 있음
-- [ ] 답변마다 근거 문서와 적용 시점이 표시됨
-- [ ] 핵심 사실이 없으면 자동으로 질문하거나 보류함
-- [ ] 개인정보가 포함된 원문을 기본 답변에 그대로 노출하지 않음
-- [ ] 현재 데이터 범위 밖의 상품·사례를 과장하지 않음
+- [ ] 사용자가 내 금융정보 조회 동의 후 문의를 입력할 수 있음
+- [ ] Case Builder가 복합 문의를 issue별 Case로 변환함
+- [ ] Finance MCP가 내 금융정보·RAG·계산 Tool을 제공함
+- [ ] Evidence & Decision Agent가 MCP 결과와 사용자 진술을 함께 검증함
+- [ ] Response Agent가 세 가지 리포트 섹션을 생성함
+- [ ] React Flow에서 민원 분기와 사용자 답변 노드를 확인할 수 있음
+- [ ] 추가 정보가 필요한 단계만 채팅 질문과 빨간 표시를 가짐
+- [ ] 서버 재시작 이후 민원 기록 보존 여부가 명확함
+- [ ] 서버·클라이언트·MCP·회귀 테스트가 모두 통과함

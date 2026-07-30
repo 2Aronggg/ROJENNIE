@@ -6,7 +6,7 @@ from server.agent.content_scope import apply_content_scope
 from server.schemas import Fact, IssueInput
 
 
-SUPPORTED_PRODUCTS = {"예금", "적금", "펀드", "ELS", "공통"}
+SUPPORTED_PRODUCTS = {"예금", "적금", "대출", "펀드", "ELS", "공통"}
 UNSUPPORTED_PRODUCTS = {"보험"}
 
 INSTITUTION_KEYWORDS = (
@@ -29,6 +29,7 @@ REQUIRED_FACTS_BY_ISSUE: dict[str, list[str]] = {
     "명의도용": ["인지일", "금융회사명", "거래 또는 계좌번호 마스킹본", "인증 기록", "금융회사 답변"],
     "만기지급거절": ["가입일", "만기일", "상품명", "금융회사 답변"],
     "우대금리설명부족": ["가입일", "상품명", "우대금리 조건", "설명서 수령 여부"],
+    "금리변경미통지": ["상품명", "기본금리", "실제 적용 금리", "금리 변경 이력", "안내 이력"],
     "중도해지위약금": ["가입일", "해지일", "상품명", "위약금 또는 수수료 금액"],
     "자동이체누락안내": ["자동이체 실패일", "상품명", "안내 수신 여부", "우대금리 조건"],
     "민원처리지연": ["민원 접수일", "접수 채널", "금융회사 답변 여부"],
@@ -42,6 +43,10 @@ REQUIRED_FACTS_BY_ISSUE: dict[str, list[str]] = {
     "배상비율불만": ["배상 안내일", "상품명", "제시 배상비율", "산정 근거 안내"],
     "중도해지손실": ["가입일", "해지 또는 상환 요청일", "상품명", "손실 금액"],
     "분쟁조정안내부족": ["민원 접수일", "상품명", "금융회사 답변", "분쟁조정 안내 여부"],
+    "대출금리변경미통지": ["대출 실행일", "상품명", "기존 금리", "실제 적용 금리", "금리 변경 이력", "안내 이력"],
+    "상환금액오류": ["대출 실행일", "상품명", "상환 예정 금액", "실제 상환 금액", "상환 내역"],
+    "중도상환수수료": ["대출 실행일", "상품명", "중도상환일", "중도상환수수료", "수수료 안내 여부"],
+    "연체이자산정": ["상품명", "연체 발생일", "연체이자", "연체 내역", "금융회사 답변"],
     "지원제외_보험": ["Human Review"],
 }
 
@@ -53,6 +58,7 @@ FOCAL_TYPES_BY_ISSUE = {
     "명의도용": "identity_or_auth_record",
     "만기지급거절": "contract",
     "우대금리설명부족": "notice",
+    "금리변경미통지": "rate_change_notice",
     "중도해지위약금": "contract",
     "자동이체누락안내": "notice",
     "민원처리지연": "company_response",
@@ -66,6 +72,10 @@ FOCAL_TYPES_BY_ISSUE = {
     "배상비율불만": "company_response",
     "중도해지손실": "settlement_statement",
     "분쟁조정안내부족": "procedure_notice",
+    "대출금리변경미통지": "rate_change_notice",
+    "상환금액오류": "settlement_statement",
+    "중도상환수수료": "fee_notice",
+    "연체이자산정": "settlement_statement",
 }
 
 DATE_RE = re.compile(r"\d{4}[-.]\d{1,2}[-.]\d{1,2}|\d{1,2}월\s*\d{1,2}일|\d+일째|\d+일")
@@ -87,6 +97,7 @@ def build_issue_input(
     scoped_text = scope.text
     facts = extract_facts(scoped_text)
     required_facts = required_facts_for(product_for_api, issue_type)
+    facts = _add_contextual_amount_facts(scoped_text, facts, required_facts)
 
     return IssueInput(
         issue_id=issue_id,
@@ -179,6 +190,42 @@ def extract_facts(text: str) -> list[Fact]:
     if action:
         facts.append(Fact(field="requested_action", value=action, source_ref="user_input", confidence=0.6))
     return facts
+
+
+def _add_contextual_amount_facts(text: str, facts: list[Fact], required: list[str]) -> list[Fact]:
+    required_set = set(required)
+    if not {"안내 금액", "실제 지급 금액"} <= required_set:
+        return facts
+
+    amount_facts = [fact for fact in facts if fact.field == "amount"]
+    matches = list(AMOUNT_RE.finditer(text))
+    added: set[str] = set()
+    for match, fact in zip(matches, amount_facts):
+        prefix = text[max(0, match.start() - 24):match.start()]
+        suffix = text[match.end():min(len(text), match.end() + 18)]
+        field = None
+        if re.search(r"가입\s*금액|원금", prefix):
+            field = "가입금액"
+        elif re.search(r"예상|기대", suffix):
+            field = "안내 금액"
+        elif re.search(r"실제|입금|지급", prefix + suffix):
+            field = "실제 지급 금액"
+        if field in required_set and field not in added:
+            facts.append(fact.model_copy(update={"field": field, "value": _normalize_amount(fact.value)}))
+            added.add(field)
+    return facts
+
+
+def _normalize_amount(value: object) -> int | float | object:
+    text = str(value).replace(",", "").replace("원", "").replace(" ", "")
+    if text.isdigit():
+        return int(text)
+    total = 0.0
+    for unit, multiplier in (("억", 100_000_000), ("천만", 10_000_000), ("백만", 1_000_000), ("만", 10_000), ("천", 1_000), ("백", 100)):
+        match = re.search(rf"(\d+(?:\.\d+)?)\s*{unit}", text)
+        if match:
+            total += float(match.group(1)) * multiplier
+    return int(total) if total.is_integer() else total if total else value
 
 
 def required_facts_for(product: str, issue_type: str) -> list[str]:

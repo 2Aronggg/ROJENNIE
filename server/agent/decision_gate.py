@@ -53,7 +53,7 @@ def apply_decision_gate(issue: IssueAnalysis) -> GateDecision:
                 human_review=True,
             )
         )
-    if issue.target.get("is_unclear") is True:
+    if issue.target.get("is_unclear") is True and not issue.mock_data.get("available"):
         candidates.append(GateDecision(control="ask", reasons=["처리 대상 금융회사 또는 접수 대상이 불명확합니다."]))
     if issue.missing_facts:
         candidates.append(GateDecision(control="ask", reasons=["핵심 사실이 부족합니다."]))

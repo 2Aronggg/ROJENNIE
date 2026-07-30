@@ -40,7 +40,10 @@ def build_logic_graph(case: CaseAnalysis) -> LogicGraph:
                     node_id=condition_id,
                     node_type="condition",
                     label=issue.issue_type,
-                    attributes={"missing_facts": issue.missing_facts},
+                    attributes={
+                        "missing_facts": issue.missing_facts,
+                        "logic_verification": issue.logic_verification.model_dump(mode="json"),
+                    },
                 ),
                 LogicNode(
                     node_id=decision_id,

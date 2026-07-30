@@ -27,7 +27,7 @@ class ResponseComposerTests(unittest.TestCase):
                         EvidenceRef(
                             doc_id="doc_001",
                             chunk_id="chunk_001",
-                            path="local:공통규정/은행법.pdf",
+                            path="local:regulations/은행법.pdf",
                             page=12,
                             section="제18조",
                             score=0.42,

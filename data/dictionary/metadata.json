@@ -1,0 +1,10 @@
+{
+  "count": 538,
+  "source": "금융감독원 금융소비자정보포털 파인 금융용어사전",
+  "base_url": "https://fine.fss.or.kr/fine/fnctip/fncDicary/list.do",
+  "generated_files": [
+    "fine_financial_glossary.csv",
+    "fine_financial_glossary.json",
+    "fine_financial_glossary.sqlite3"
+  ]
+}
