@@ -86,6 +86,24 @@ ISSUE_RULES: tuple[tuple[str, tuple[str, ...]], ...] = (
     ("연체이자산정", ("연체이자", "연체 이자", "연체금")),
 )
 
+# Decision Gate와 평가 데이터가 문자열 완전일치로 참조하는 고정 라벨 체계.
+_EXTRA_TYPE_HINTS: tuple[tuple[str, str], ...] = (
+    ("연체이자과다", "연체이자가 과도하게 부과됨"),
+    ("채권추심과다", "과도한 추심 연락·독촉"),
+    ("지원제외_보험", "보험 상품 민원"),
+    ("미분류", "위 어디에도 해당하지 않을 때"),
+)
+ISSUE_TYPES: tuple[str, ...] = (
+    *(name for name, _ in ISSUE_RULES),
+    *(name for name, _ in _EXTRA_TYPE_HINTS),
+)
+
+
+def _issue_type_guide() -> str:
+    lines = [f"- {name}: {', '.join(keywords)}" for name, keywords in ISSUE_RULES]
+    lines.extend(f"- {name}: {hint}" for name, hint in _EXTRA_TYPE_HINTS)
+    return "\n".join(lines)
+
 SPLIT_RE = re.compile(r"(?:[.!?。]\s+)|(?:요\.\s+)|(?:니다\.\s+)|(?:,\s*(?=(?:예금|적금|대출|펀드|ELS|보험)))|\s*(?:아 그리고|그리고 마지막으로|그런데|게다가|또|그리고)\s*")
 
 
@@ -131,12 +149,19 @@ def split_prompt_to_issues(
 
 
 def split_prompt_to_issues_llm(prompt: str, *, client: Any | None = None) -> list[IssueInput]:
+    schema = LLMRouteResult.model_json_schema()
+    for definition in schema.get("$defs", {}).values():
+        issue_type_prop = definition.get("properties", {}).get("issue_type")
+        if issue_type_prop is not None:
+            issue_type_prop["enum"] = list(ISSUE_TYPES)
     response = LLMPolicyGateway(client=client).generate_json(
         stage="issue_splitter",
         contents=ROUTER_SYSTEM_PROMPT
+        + "\n\nissue_type은 반드시 다음 목록에서만 선택한다. 각 라벨 뒤는 해당 라벨의 대표 표현 예시다:\n"
+        + _issue_type_guide()
         + "\n\nReturn structured focal, target, required_facts, and a confidence from 0 to 1 for every issue. Keep them grounded in the user input.\n\nUser input:\n"
         + prompt,
-        response_schema=LLMRouteResult.model_json_schema(),
+        response_schema=schema,
     )
     if not response.text:
         raise ValueError("Gemini returned no structured routing result")
@@ -146,6 +171,8 @@ def split_prompt_to_issues_llm(prompt: str, *, client: Any | None = None) -> lis
     for index, routed in enumerate(result.issues, start=1):
         text = routed.text.strip()
         issue_type = routed.issue_type.strip() or "미분류"
+        if issue_type not in ISSUE_TYPES:
+            issue_type = _classify_issue_type(text, routed.product)
         if not text:
             continue
         issue = build_issue_input(

@@ -31,7 +31,7 @@ button:focus-visible, input:focus-visible, textarea:focus-visible { outline: 3px
 .brand span { display: block; color: var(--muted); font-size: 12px; margin-top: 2px; }
 .case-id { color: var(--muted); font-size: 12px; }
 .panel { background: var(--panel); border: 1px solid rgba(234, 223, 202, .78); border-radius: 18px; backdrop-filter: blur(16px); box-shadow: var(--shadow); }
-.workspace { display: grid; grid-template-columns: minmax(0, 1fr) 380px; gap: 18px; align-items: stretch; }
+.workspace { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; align-items: stretch; }
 .case-panel { min-width: 0; min-height: 720px; padding: 20px; display: flex; flex-direction: column; }
 .section-head { align-items: flex-start; margin-bottom: 16px; }
 .section-head h2 { margin: 0; font-size: 17px; }
@@ -334,7 +334,7 @@ button:focus-visible, input:focus-visible, textarea:focus-visible { outline: 3px
 .admin-audit-table pre { overflow: auto; margin: 0; padding: 9px; border-radius: 7px; color: #665a46; background: rgba(245, 239, 225, .7); font-size: 10px; white-space: pre-wrap; }
 
 @media (max-width: 1100px) {
-  .workspace { grid-template-columns: minmax(0, 1fr) 330px; }
+  .workspace { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .flow-node { width: 210px; }
   .issue-node { width: 240px; }
   .report-layout { grid-template-columns: 190px minmax(0, 1fr) 280px; }

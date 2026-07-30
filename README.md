@@ -15,6 +15,18 @@
 - 첫 단계에서는 민원·리포트·검토·감사 로그와 사용자 정보만 Supabase로 옮기고, 가상 금융 원장과 RAG 원천 문서·corpus는 기존 저장 방식을 유지할 수 있습니다.
 - Supabase로 이전하더라도 RAG 원천 문서·corpus는 별도 관리하고, 에이전트가 사용하는 Finance MCP Tool 계약은 유지합니다.
 
+## 배포용 Supabase 설정
+
+Supabase를 만들 때는 다음 설정을 사용합니다.
+
+- ✅ `Enable Data API`
+- ❌ `Automatically expose new tables`
+- ✅ `Enable automatic RLS`
+
+배포 1차 대상은 사용자·동의 상태, 민원·리포트, 상담원 검토 결과, 실행·감사 로그입니다. 새 테이블은 자동 공개하지 않고 RLS 정책을 직접 작성해 사용자 본인 데이터와 관리자 권한을 분리합니다.
+
+가상 금융 원장인 `server/finance/mock_bank.sqlite3`는 당분간 읽기 전용 데모 데이터로 유지합니다. `data/`의 RAG 원천 문서와 corpus도 Supabase 테이블에 섞지 않습니다. 에이전트는 계속 Finance MCP Tool만 호출하므로, 이후 금융 데이터 저장소를 교체해도 에이전트 흐름은 유지됩니다.
+
 ## 핵심 구조
 
 ```text

@@ -67,6 +67,18 @@ def redact_pii(value: str) -> tuple[str, int]:
     return redacted, count
 
 
+def _strip_additional_properties(schema: Any) -> Any:
+    """Gemini Developer API rejects additionalProperties in response schemas."""
+    if isinstance(schema, dict):
+        schema.pop("additionalProperties", None)
+        for value in schema.values():
+            _strip_additional_properties(value)
+    elif isinstance(schema, list):
+        for item in schema:
+            _strip_additional_properties(item)
+    return schema
+
+
 def evaluate_policy(stage: str, contents: str) -> PolicyDecision:
     if stage not in ALLOWED_STAGES:
         return PolicyDecision(False, stage, reason="unsupported_llm_stage")
@@ -111,7 +123,7 @@ class LLMPolicyGateway:
             contents=safe_contents,
             config={
                 "response_mime_type": "application/json",
-                "response_schema": dict(response_schema),
+                "response_schema": _strip_additional_properties(json.loads(json.dumps(dict(response_schema)))),
             },
         )
         text = getattr(response, "text", "") or ""

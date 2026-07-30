@@ -627,13 +627,13 @@ function buildFlowGraph(session) {
   function layout(id, depth) {
     const childIds = children.get(id) || [];
     if (!childIds.length) {
-      positions[id] = {x: depth * 300, y: leaf * 145};
+      positions[id] = {x: leaf * 300, y: depth * 180};
       leaf += 1;
-      return positions[id].y;
+      return positions[id].x;
     }
-    const ys = childIds.map(function(childId) { return layout(childId, depth + 1); });
-    positions[id] = {x: depth * 300, y: ys.reduce(function(total, value) { return total + value; }, 0) / ys.length};
-    return positions[id].y;
+    const xs = childIds.map(function(childId) { return layout(childId, depth + 1); });
+    positions[id] = {x: xs.reduce(function(total, value) { return total + value; }, 0) / xs.length, y: depth * 180};
+    return positions[id].x;
   }
   layout("root", 0);
   relations.forEach(function(relation) {
@@ -649,12 +649,12 @@ function buildFlowGraph(session) {
 
 function FlowNode({data, selected}) {
   if (data.kind === "root") {
-    return <div className={"flow-node root-node" + (selected ? " selected" : "")}><Handle type="source" position={Position.Right} /><strong>{data.title}</strong><span>민원별 분석 트리</span></div>;
+    return <div className={"flow-node root-node" + (selected ? " selected" : "")}><Handle type="source" position={Position.Bottom} /><strong>{data.title}</strong><span>민원별 분석 트리</span></div>;
   }
   if (data.kind === "issue") {
     return <div className={("flow-node issue-node " + data.control + (data.reviewRequired ? " review" : "") + (selected ? " selected" : ""))}>
-      <Handle type="target" position={Position.Left} />
-      <Handle type="source" position={Position.Right} />
+      <Handle type="target" position={Position.Top} />
+      <Handle type="source" position={Position.Bottom} />
       <div className="flow-issue-head"><b>{data.letter}</b><span className="flow-status">{data.controlLabel}</span></div>
       <strong>{data.title}</strong>
       <span>focal: {data.focal || "미확인"}</span>
@@ -663,8 +663,8 @@ function FlowNode({data, selected}) {
     </div>;
   }
   return <div className={("flow-node fact-node " + data.nodeType + (data.path ? " path" : "") + (selected ? " selected" : ""))} title={data.summary}>
-    <Handle type="target" position={Position.Left} />
-    <Handle type="source" position={Position.Right} />
+    <Handle type="target" position={Position.Top} />
+    <Handle type="source" position={Position.Bottom} />
     <div className="flow-fact-title"><i></i><strong>{data.title}</strong></div>
     <span>{data.source}</span>
     <small>{data.createdAt}</small>
