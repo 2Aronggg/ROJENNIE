@@ -51,6 +51,11 @@ REQUIRED_FACTS_BY_ISSUE: dict[str, list[str]] = {
     "지원제외_보험": ["Human Review"],
 }
 
+# missing_facts()가 문자열 완전일치로 대조하므로, required_facts에는 이 어휘만 들어와야 한다.
+KNOWN_FACT_FIELDS: frozenset[str] = frozenset(
+    field for fields in REQUIRED_FACTS_BY_ISSUE.values() for field in fields
+) | {"상품 유형", "사건일"}
+
 FOCAL_TYPES_BY_ISSUE = {
     "계약해지_지연": "contract",
     "금리적용오류": "terms_or_notice",

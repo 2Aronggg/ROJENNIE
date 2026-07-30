@@ -9,7 +9,7 @@ from typing import Any, Literal
 
 from pydantic import BaseModel, Field
 
-from server.agents.focal_builder import build_issue_input
+from server.agents.focal_builder import KNOWN_FACT_FIELDS, build_issue_input
 from server.policy.gateway import LLMPolicyGateway
 from server.schemas import CaseAnalyzeRequest, IssueInput
 
@@ -188,8 +188,13 @@ def split_prompt_to_issues_llm(prompt: str, *, client: Any | None = None) -> lis
             issue = issue.model_copy(update={"focal": {**issue.focal, **routed.focal, "source": "agent.focal_builder.llm"}})
         if routed.target:
             issue = issue.model_copy(update={"target": {**issue.target, **routed.target}})
-        if routed.required_facts:
-            issue = issue.model_copy(update={"required_facts": routed.required_facts})
+        # LLM은 "가입금액 1,000만원"처럼 값이 박힌 문장을 돌려주기도 한다. 그런 항목은
+        # 영원히 미충족으로 남아 사용자가 이미 말한 사실을 다시 묻게 되므로 버린다.
+        extra_facts = [field for field in routed.required_facts if field in KNOWN_FACT_FIELDS]
+        if extra_facts:
+            issue = issue.model_copy(
+                update={"required_facts": list(dict.fromkeys([*issue.required_facts, *extra_facts]))}
+            )
         issues.append(issue)
     return issues
 
