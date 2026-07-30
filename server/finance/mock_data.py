@@ -12,7 +12,7 @@ DEFAULT_DB_PATH = Path(__file__).with_name("mock_bank.sqlite3")
 
 CUSTOMER = {
     "customer_id": "CUST-001",
-    "name": "김민지",
+    "name": "정유진",
     "authenticated": True,
     "consent_status": "granted",
 }
@@ -34,6 +34,23 @@ DEPOSIT = {
     "status": "matured",
 }
 
+DEPOSIT_2 = {
+    "account_id": "DEP-002",
+    "customer_id": "CUST-001",
+    "product_type": "deposit",
+    "product_name": "KB 첫재테크 정기예금",
+    "opened_at": "2026-03-02",
+    "maturity_at": "2027-03-02",
+    "principal": 5_000_000,
+    "base_rate": 0.028,
+    "preferential_rate": 0.004,
+    "applied_rate": 0.032,
+    "gross_interest": 160_000,
+    "tax": 24_640,
+    "net_interest": 135_360,
+    "status": "active",
+}
+
 SAVINGS = {
     "account_id": "SAV-001",
     "customer_id": "CUST-001",
@@ -50,6 +67,23 @@ SAVINGS = {
             "status": "failed",
             "failed_at": "2026-06-10",
         }
+    ],
+    "status": "active",
+}
+
+SAVINGS_2 = {
+    "account_id": "SAV-002",
+    "customer_id": "CUST-001",
+    "product_type": "installment_savings",
+    "product_name": "KB 청년희망적금",
+    "opened_at": "2026-01-05",
+    "maturity_at": "2028-01-05",
+    "base_rate": 0.040,
+    "preferential_rate": 0.010,
+    "applied_rate": 0.050,
+    "preferential_conditions": [
+        {"condition": "monthly_auto_transfer", "status": "met"},
+        {"condition": "salary_transfer", "status": "met"},
     ],
     "status": "active",
 }
@@ -179,7 +213,7 @@ class MockBankClient:
                 "INSERT OR REPLACE INTO customers(customer_id, payload) VALUES (?, ?)",
                 (CUSTOMER["customer_id"], _dump(CUSTOMER)),
             )
-            for account in (DEPOSIT, SAVINGS, LOAN):
+            for account in (DEPOSIT, DEPOSIT_2, SAVINGS, SAVINGS_2, LOAN):
                 connection.execute(
                     "INSERT OR REPLACE INTO accounts(account_id, customer_id, product_type, payload) VALUES (?, ?, ?, ?)",
                     (

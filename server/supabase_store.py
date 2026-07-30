@@ -184,6 +184,25 @@ class SupabaseStore:
 
         return self._safe("get_case", operation, None)
 
+    def list_cases(self, limit: int = 30) -> list[dict[str, Any]]:
+        """상담 이력 목록. 마이 페이지가 브라우저 저장소 대신 서버를 읽는다."""
+
+        def operation() -> list[dict[str, Any]]:
+            owner_id = self._owner()
+            if not owner_id:
+                return []
+            return self._request(
+                "cases",
+                params={
+                    "owner_id": f"eq.{owner_id}",
+                    "select": "case_id,prompt,created_at,analysis",
+                    "order": "created_at.desc",
+                    "limit": str(limit),
+                },
+            )
+
+        return self._safe("list_cases", operation, [])
+
     def save_review(self, response: ReviewResponse) -> bool:
         def operation() -> bool:
             case_uuid = self._case_uuid(response.case_id)

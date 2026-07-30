@@ -1119,28 +1119,53 @@ function AdminPage({history}) {
 }
 
 function MyPage({history, onNavigate}) {
+  const [profile, setProfile] = useState({customer: null, products: {deposits: [], savings: [], loans: []}});
   const [financial, setFinancial] = useState({deposits: [], savings: [], loans: [], loading: true});
+  const [storedCases, setStoredCases] = useState([]);
 
   useEffect(function() {
     let alive = true;
     Promise.all([
+      fetch(API_BASE + "/mock/customers/CUST-001/profile").then(function(response) { return response.ok ? response.json() : null; }),
       fetch(API_BASE + "/mock/customers/CUST-001/deposits").then(function(response) { return response.ok ? response.json() : []; }),
       fetch(API_BASE + "/mock/customers/CUST-001/savings").then(function(response) { return response.ok ? response.json() : []; }),
       fetch(API_BASE + "/mock/customers/CUST-001/loans").then(function(response) { return response.ok ? response.json() : []; }),
+      fetch(API_BASE + "/api/v1/cases?limit=30").then(function(response) { return response.ok ? response.json() : []; }),
     ]).then(function(values) {
-      if (alive) setFinancial({deposits: values[0], savings: values[1], loans: values[2], loading: false});
+      if (alive) {
+        setProfile(values[0] || {customer: null, products: {deposits: [], savings: [], loans: []}});
+        setFinancial({deposits: values[1], savings: values[2], loans: values[3], loading: false});
+        setStoredCases(Array.isArray(values[4]) ? values[4] : []);
+      }
     }).catch(function() {
-      if (alive) setFinancial({deposits: [], savings: [], loans: [], loading: false});
+      if (alive) {
+        setProfile({customer: null, products: {deposits: [], savings: [], loans: []}});
+        setFinancial({deposits: [], savings: [], loans: [], loading: false});
+        setStoredCases([]);
+      }
     });
     return function() { alive = false; };
   }, []);
 
+  // 서버(Supabase) 이력이 기준이고, 아직 저장되지 않은 브라우저 기록만 덧붙인다.
+  const seen = new Set(storedCases.map(function(item) { return item.case_id; }));
+  const records = storedCases
+    .concat(history.filter(function(item) { return !seen.has(item.case_id); }))
+    .sort(function(left, right) { return String(right.created_at || "").localeCompare(String(left.created_at || "")); });
+
+  const enrolledProducts = [
+    ...(profile.products?.deposits || []).map(function(item) { return {type: "예금", name: item.product_name}; }),
+    ...(profile.products?.savings || []).map(function(item) { return {type: "적금", name: item.product_name}; }),
+    ...(profile.products?.loans || []).map(function(item) { return {type: "대출", name: item.product_name}; }),
+  ];
+  const customer = profile.customer || {};
+
   return <main className="page-shell my-page">
     <div className="page-title"><div><span className="eyebrow">MY FINANCE</span><h1>마이 페이지</h1><p>민원 진행 상황과 연결된 금융 정보를 한 곳에서 확인합니다.</p></div><button className="primary-action" type="button" onClick={function() { onNavigate("chat"); }}>새 민원 상담</button></div>
-    <section className="profile-card panel"><div><span className="eyebrow">본인 정보</span><h2>김민지</h2><p>CUST-001 · 본인인증 완료 · 정보 제공 동의 완료</p></div><div className="profile-badge">안전하게 연결됨</div></section>
+    <section className="profile-card panel"><div><span className="eyebrow">본인 정보</span><h2>{customer.name || "김민지"}</h2><p>{customer.customer_id || "CUST-001"} · {customer.authenticated ? "본인인증 완료" : "본인인증 확인 필요"} · {customer.consent_status === "granted" ? "정보 제공 동의 완료" : "정보 제공 동의 확인 필요"}</p></div><div className="profile-product-summary"><span className="eyebrow">가입 상품</span>{financial.loading ? <span>불러오는 중</span> : enrolledProducts.length ? <div className="profile-product-chips">{enrolledProducts.map(function(item) { return <span className="profile-product-chip" key={item.type + item.name}>{item.type} · {item.name}</span>; })}</div> : <span>가입 상품 없음</span>}</div><div className="profile-badge">안전하게 연결됨</div></section>
     <section className="my-grid">
-      <div className="panel complaint-history"><div className="card-head"><div><h2>민원 목록</h2><p>최근 접수 순으로 확인합니다.</p></div><strong>{history.length}건</strong></div>
-        {history.length === 0 ? <div className="empty-state">아직 접수한 민원이 없습니다.<button type="button" onClick={function() { onNavigate("chat"); }}>민원 작성하기</button></div> : <div className="history-list">{history.map(function(record) {
+      <div className="panel complaint-history"><div className="card-head"><div><h2>민원 목록</h2><p>최근 접수 순으로 확인합니다.</p></div><strong>{records.length}건</strong></div>
+        {records.length === 0 ? <div className="empty-state">아직 접수한 민원이 없습니다.<button type="button" onClick={function() { onNavigate("chat"); }}>민원 작성하기</button></div> : <div className="history-list">{records.map(function(record) {
           const status = caseStatus(record.analysis);
           return <article className="history-item" key={record.case_id}><div className="history-item-head"><span>{formatDate(record.created_at)}</span><b className={status}>{CASE_STATUS_LABEL[status]}</b></div><strong>{record.prompt || "복합 금융 문의"}</strong><div className="history-issues">{(record.analysis?.issues || []).map(function(issue) { const issueStatus = issue.decision?.control || "ask"; return <span key={issue.issue_id}>{issue.product} · {issue.issue_type} <em className={issueStatus}>{CASE_STATUS_LABEL[issueStatus]}</em></span>; })}</div><small>{record.case_id}</small></article>;
         })}</div>}

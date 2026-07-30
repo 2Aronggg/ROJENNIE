@@ -353,6 +353,14 @@ def get_mock_products(customer_id: str) -> dict[str, list[dict[str, object]]]:
     return MOCK_BANK_CLIENT.get_products(customer_id)
 
 
+@app.get("/mock/customers/{customer_id}/profile")
+def get_mock_profile(customer_id: str) -> dict[str, object]:
+    customer = MOCK_BANK_CLIENT.get_customer(customer_id)
+    if customer is None:
+        raise HTTPException(status_code=404, detail="mock customer not found")
+    return {"customer": customer, "products": MOCK_BANK_CLIENT.get_products(customer_id)}
+
+
 @app.get("/mock/customers/{customer_id}/deposits")
 def get_mock_deposits(customer_id: str) -> list[dict[str, object]]:
     _require_mock_customer(customer_id)
@@ -587,6 +595,33 @@ def analyze_case(request: CaseAnalyzeRequest) -> CaseAnalysis:
     SUPABASE_STORE.save_case(result)
     _record_audit(case_id, "case.analyzed", "system", {"issues": _audit_issues(result)})
     return result
+
+
+@app.get("/api/v1/cases")
+def list_cases(limit: int = 30) -> list[dict[str, object]]:
+    """마이 페이지 상담 이력. Supabase가 꺼져 있으면 메모리 저장소로 답한다."""
+    limit = min(max(limit, 1), 100)
+    stored = SUPABASE_STORE.list_cases(limit)
+    if stored:
+        return stored
+    created = {
+        case_id: min(
+            (event.created_at for event in AUDIT_LOG if event.case_id == case_id),
+            default=None,
+        )
+        for case_id in CASE_STORE
+    }
+    rows = [
+        {
+            "case_id": case.case_id,
+            "prompt": case.prompt,
+            "created_at": created.get(case.case_id),
+            "analysis": case.model_dump(mode="json"),
+        }
+        for case in CASE_STORE.values()
+    ]
+    rows.sort(key=lambda row: str(row["created_at"] or ""), reverse=True)
+    return rows[:limit]
 
 
 @app.get("/api/v1/cases/{case_id}", response_model=CaseAnalysis)
