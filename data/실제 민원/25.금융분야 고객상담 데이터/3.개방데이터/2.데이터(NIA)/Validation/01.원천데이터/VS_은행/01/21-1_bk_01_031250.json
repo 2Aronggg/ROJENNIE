@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_031250",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 982,
+        "consulting_content": "고객은 출금 내역 확인을 요청하고, 상담사는 확인 후 출금 두 건과 금액, 잔액을 안내하였다. 고객은 금액을 확인하고 알림 설정을 원했으며 상담사는 모바일 앱에서 출금 알림 켜는 방법을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

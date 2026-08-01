@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_017036",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 958,
+        "consulting_content": "고객은 대출 연체 확인 및 연체이자 계산 방법을 문의하고, 가상계좌 입금 안내와 신규 대출 가능 여부를 물었으며, 상담사는 연체 현황을 안내하고, 연체이자는 일일 연체율 적용으로 누적된다고 설명하고, 연체 해소 전에는 신규 대출 심사가 제한된다고 안내했으며, 가상계좌 정보를 문자로 전송하고 입금 방법을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

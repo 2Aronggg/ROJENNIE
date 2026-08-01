@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_005599",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1356,
+        "consulting_content": "고객은 전세 자금 대출의 연장 가능 여부를 확인하고자 연락하였으며교육비 대출 상품에도 관심을 보였고 , 연장 시점과 신청 방법, 서류 제출 여부를 문의하였다. 상담사는 해당 대출이 적금 담보 대출이 아닌 전세 자금 대출임을 확인하고, 연장 신청 가능 시점과 모바일 앱을 통한 신청 절차를 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

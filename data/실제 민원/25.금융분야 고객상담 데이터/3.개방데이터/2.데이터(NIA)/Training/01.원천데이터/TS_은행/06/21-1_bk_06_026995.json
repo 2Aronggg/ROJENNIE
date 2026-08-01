@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_026995",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1200,
+        "consulting_content": "고객은 대출 이자 미납 여부를 확인하고 싶다며 금액과 입금 방법을 문의했으며, 가상계좌 발송과 입금 마감 시간을 물었다. 상담사는 시스템 조회 후 미납 금액을 알려주고, 가상계좌 번호와 입금 안내를 문자로 전송하며, 영업시간과 연체 시 일일 0.03% 이자 적용을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

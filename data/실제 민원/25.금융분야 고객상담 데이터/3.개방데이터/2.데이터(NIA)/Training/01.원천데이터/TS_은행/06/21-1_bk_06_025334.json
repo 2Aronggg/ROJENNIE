@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_025334",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1551,
+        "consulting_content": "고객은 대출 신청 현황과 금액, 이자, 서류, 상환 일정, 연장 가능 여부를 문의했으며 자동이체 설정도 요청하였고 상담사는 중복 접수 사과와 함께 대출 금액, 이자, 상환일, 연장 절차, 필요 서류를 안내하고 자동이체 방법을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

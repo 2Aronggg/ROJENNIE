@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_024168",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1236,
+        "consulting_content": "고객은 입금 계좌 번호와 금액, 날짜 등 거래 정보를 제공하고 입금 확인을 요청하였고 상담사는 정보를 재확인하고 시스템 조회, 추가 검증을 진행한 뒤 담당 부서에 연결하여 최종 결과를 안내하겠다고 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

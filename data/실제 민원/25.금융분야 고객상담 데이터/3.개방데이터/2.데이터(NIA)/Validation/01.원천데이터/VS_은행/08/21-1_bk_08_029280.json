@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_029280",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1802,
+        "consulting_content": "고객은 대출 연장 서류와 이자율, 팩스 번호 및 제출 방법, 시스템 오류 해결, 담당자 연락처, 임시 비밀번호 발급, 보험 서류 여부, 서류 검토 소요 기간을 문의하였고 상담사는 계좌 확인 후 대출 만기, 주소를 안내하고, 서류는 스크래핑, 팩스로 제출 가능하며 팩스 번호와 담당자 성함은 제공 불가, 임시 비밀번호 발급 절차와 보험 서류 필요 여부, 검토 기간은 영업일 3~5일이라고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

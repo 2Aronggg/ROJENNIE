@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_030181",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1318,
+        "consulting_content": "고객은 중도 인출 가능 여부, 비용, 세금 면제 범위와 대출 당일 승인, 지급일, 추가 대출, 연장 옵션, 신청 서류를 문의하였고 상담사는 인출은 영업점 방문 시 가능하고 수수료, 세금은 없으며 이자 손실은 인출액에 따라 차감된다고 안내하고, 대출은 신청일 영업일 기준 당일 또는 지정일에 지급 가능하고 마이너스, 주택담보대출 등 옵션을 소개했으며, 세금 면제는 연간 일정 금액까지이며, 신청 서류는 신분증, 급여명세서, 통장 사본이라고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

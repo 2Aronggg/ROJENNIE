@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_016851",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1577,
+        "consulting_content": "고객은 계좌 번호 없이 잔액 및 거래내역 조회를 원하고 전화, SMS 인증으로 본인 확인을 요청하였고 상담사는 주민등록증만으로는 제한적이라 SMS 인증 절차와 스마트폰 번호 제공을 안내하고, 인증 후 실시간 조회가 가능하다고 설명하였다. 고객은 가까운 지점 위치와 영업시간 안내를 요구하였고 상담사는 시내 중심가 지점 주소와 영업시간을 문자로 전송하겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

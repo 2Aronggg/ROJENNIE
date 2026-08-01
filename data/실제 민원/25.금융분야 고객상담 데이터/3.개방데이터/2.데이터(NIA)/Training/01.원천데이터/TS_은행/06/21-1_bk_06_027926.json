@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_027926",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1194,
+        "consulting_content": "고객은 연체 대출 상품 전환 가능 여부를 문의하고 본인 확인을 위해 계좌, 생년월일, 비밀번호 등을 제공하였고 상담사는 미납 시 대환이 불가함을 안내하며, 미납 없을 경우 금리 재조정 및 A, B 상품 비교표를 문자로 송부하고, 서류 발송 및 방문 절차, 담보보험 선택 가능 등을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

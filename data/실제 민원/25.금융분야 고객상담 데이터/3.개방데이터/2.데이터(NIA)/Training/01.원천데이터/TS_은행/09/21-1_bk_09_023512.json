@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_023512",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1299,
+        "consulting_content": "고객은 500만원 규모의 외화 구매와 온라인 신청 가능 여부, 가까운 지점 및 주차 정보, 금리, 수수료 안내, 해당 지점 연락처, 계좌 개설 절차와 필요 서류를 문의하였고 상담사는 금액 확인 후 지역에 맞는 지점 안내와 온라인 신청 가능성, 주차 정보는 확인 중이며 금리, 수수료와 잔여 한도, 처리 시간을 설명하고 전화번호와 영업시간을 제공했으며 계좌 개설은 온라인, 방문 두 방식이며 신분증, 거주 확인 서류가 필요하다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

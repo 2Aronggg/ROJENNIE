@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_020760",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 929,
+        "consulting_content": "고객은 비상금 대출 연장을 요청하고 본인 확인을 위해 계좌번호, 생년월일, 비밀번호를 제공하였고 상담사는 확인 후 대출 잔액과 만기일을 안내하고, 연장은 해당 은행 앱에서 만기 이후에 가능하니 문자로 전송된 경로를 통해 조회, 연장하도록 안내하였으며, 연장 수수료와 금리도 사전 안내한다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_005956",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1312,
+        "consulting_content": "고객은 동일 금액을 두 번 이체했으나 한 건만 표시돼 확인을 요청하였다. 상담원은 거래내역을 조회하였다. 조회 결과, 지정일에 두 계좌 모두 해당 금액이 정상 입금된 것을 확인하였다. 한 건은 현재 보류 상태이며 확인이 완료되는 대로 안내하기로 하였다. 고객에게 모바일 뱅킹 알림이 활성화돼 있음을 확인하고 추후 동일 상황 시 푸시 알림으로 확인 가능하다고 안내하였다. 상담 내용과 확인 결과를 문자로 발송하기로 하였으며, 추가 문의는 없다고 회답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

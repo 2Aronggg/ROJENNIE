@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_030808",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1240,
+        "consulting_content": "고객은 보험료 자동이체 정지를 요청하고, 앱 미설치, 전화, 영업점 방문 등 절차와 소요시간, 즉시 정지 가능 여부를 문의하였고, 상담사는 앱에서 직접 해지하거나 전화 요청, 영업점 방문을 안내하고, 즉시 정지는 불가하지만 방문 시 바로 처리 가능하고 다른 지점에서도 동일 절차로 가능하다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

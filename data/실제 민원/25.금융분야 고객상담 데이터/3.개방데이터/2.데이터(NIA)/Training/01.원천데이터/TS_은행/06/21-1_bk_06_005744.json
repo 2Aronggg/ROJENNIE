@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_005744",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 964,
+        "consulting_content": "고객님, 이자 상환 이자 납부하려고 전화 주셨군요. 이자 납부와 관련해서 가상 계좌를 보내드리면 되겠습니까? 현재 보유하고 계신 계좌가 확인이 안 되는 상황이라면 기존에 사용하시던 계좌의 마지막 네 자리를 알려주실 수 있나요? 현재 확인해 보았으며 가상 계좌를 보내드리겠다. 특정 원이시며 오늘 오후 특정 시 특정 분 안쪽으로 입금하시면 처리됩니다. 일회성 계좌이기 때문에 따로 계좌를 안내 받아 주시고 입금 금액을 문자로 기재해서 보내드리겠다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_001096",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1501,
+        "consulting_content": "고객은 대출 신청 절차, 서류 제출 방법, 현재 상환 일정과 잔액, 조기 상환 위약금 여부, 금리 종류와 변동 시 영향, 연장 및 재조정 조건, 수수료 내역 등에 대해 문의했고 상담원은 절차와 예시를 들어 대출 신청 절차 및 서류 제출 방법과 현재 대출 상황등을 안내했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

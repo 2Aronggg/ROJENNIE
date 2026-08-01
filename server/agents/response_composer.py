@@ -58,6 +58,42 @@ DOCUMENTS_BY_ISSUE = {
 PRIVACY_NOTICE = "주민등록번호, 전체 계좌번호, 카드번호, 인증번호, 비밀번호는 입력하거나 그대로 제출하지 마세요."
 DISCLAIMER = "본 안내는 참고용 정보이며, 최종 판단은 금융감독원 분쟁조정 등 정식 절차를 통해 결정됩니다."
 
+# 금융감독원 소비자지원부 분쟁조정 관련 안내
+DISPUTE_RESOLUTION_INFO = {
+    "title": "분쟁조정 신청 안내",
+    "description": "본 분석 결과에 대해 이의가 있거나 추가 조정이 필요한 경우, 금융감독원 소비자지원부에 분쟁조정을 신청할 수 있습니다.",
+    "visiting": {
+        "address": "서울시 영등포구 국제금융로8길 26 KB국민은행 여의도 본점",
+        "type": "방문민원 접수처",
+    },
+    "mail": {
+        "address": "서울시 영등포구 의사당대로 141 KB국민은행 신관 소비자지원부",
+        "type": "우편 접수처",
+    },
+    "contact": {
+        "fax": "02-2047-9413",
+        "email": "kbg734200@kbfg.com",
+    },
+    "documents_to_bring": {
+        "myself": ["본인 실명입력증표"],
+        "representative_consent": [
+            "위임장(원서서식2호, 소비자보호포털의 민원관련서식에서 출력 가능)",
+            "대리인 신분증 사본",
+        ],
+        "representative_family": [
+            "위임장(원서서식2호, 소비자보호포털의 민원관련서식에서 출력 가능)",
+            "대리인 신분증 사본",
+            "주민등록증 사본 또는 가족관계증명서(발급일로부터 3개월 이내)",
+        ],
+        "representative_other": [
+            "위임장(원서서식2호, 소비자보호포털의 민원관련서식에서 출력 가능)",
+            "대리인 신분증 사본",
+            "위임의 인감증명서 또는 본인서명사실확인서",
+        ],
+        "evidence": ["기타 사실관계를 입증하는 서류 사본"],
+    },
+}
+
 
 class QuestionItem(BaseModel):
     field: str
@@ -109,6 +145,7 @@ class CaseResponseView(BaseModel):
     session_id: str | None = None
     issues: list[IssueResponseView]
     closing: dict[str, list[str] | str]
+    dispute_resolution: dict[str, Any] = Field(default_factory=lambda: DISPUTE_RESOLUTION_INFO)
 
 
 def compose_case_response(case: CaseAnalysis) -> CaseResponseView:
@@ -123,6 +160,7 @@ def compose_case_response(case: CaseAnalysis) -> CaseResponseView:
             "unconfirmed": _collect_questions(issues),
             "disclaimer": DISCLAIMER,
         },
+        dispute_resolution=DISPUTE_RESOLUTION_INFO,
     )
 
 

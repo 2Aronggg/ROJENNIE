@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_030272",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1406,
+        "consulting_content": "고객은 대출 만기 연장 문의를 위해 주민번호 외 추가 인증 정보를 요청했고, 상담사는 다른 인증 절차와 연장 신청 방법을 안내하며, 온라인 신청 가능, 필요 서류는 신분증, 계약서 사본이며, 문자로 링크를 보내 진행하도록 하고, 결과는 영업일 1~2일 내 문자, 이메일로 안내하고 전자 서명으로 최종 계약한다는 내용을 전달하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

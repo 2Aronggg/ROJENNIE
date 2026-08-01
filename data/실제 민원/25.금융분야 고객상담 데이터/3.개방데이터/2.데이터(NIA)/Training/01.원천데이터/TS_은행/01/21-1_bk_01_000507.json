@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_000507",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1244,
+        "consulting_content": "고객은 거래내역 일부 누락과 출금 표시 오류로 문의했다. 상담사는 시스템 반영 지연과 앱 캐시 문제 가능성을 안내하고, 거래내역 조회 및 잔액 확인, 앱 업데이트 방법, 수수료 내역, 입금과 출금 일정, 대출 상환 일정까지 설명했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

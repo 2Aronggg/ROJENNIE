@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_001717",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1557,
+        "consulting_content": "고객은 자동이체 등록, 변경, 해지 절차와 보안 인증, 이체일 처리 방식, 수수료 여부 등에 대해 문의했고, 상담원은 인터넷뱅킹을 통한 자동이체 등록 방법, 보안 인증 절차, 주말 및 공휴일 처리 절차, 이체 정보 변경 및 해지 방법에 대해 설명했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

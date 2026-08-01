@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_018554",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1083,
+        "consulting_content": "고객은 급여 입금 인정 안내와 금리 우대 적용 시기를 물었고 상담사는 급여 입금 다음 달부터 감면이 적용된다고 답변하였다. 고객은 이전 적용 여부와 혜택 중단 방법을 문의하였고 상담사는 조건 충족을 확인하고 온라인, 전화로 중단 가능하다고 안내하였다. 고객은 추가 혜택을 물었고 상담사는 자동이체 할인, 포인트 적립 등 다른 서비스 이용 가능함을 알려주었다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

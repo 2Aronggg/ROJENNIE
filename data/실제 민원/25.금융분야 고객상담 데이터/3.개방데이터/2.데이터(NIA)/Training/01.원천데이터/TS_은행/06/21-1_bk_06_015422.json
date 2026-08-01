@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_015422",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1409,
+        "consulting_content": "고객은 대출 상환이 이체되지 않아 남은 금액과 즉시 납부 가능 여부를 문의하였고 상담사는 계좌, 남은 금액 ●원임을 안내하고, 콜센터에서는 즉시 출금이 불가하므로 고객이 직접 선납 절차를 진행해야 함을 설명하였다. 또한 고객은 납부 알림 서비스를 신청하고자 하여 상담사는 휴대폰 번호 등록으로 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

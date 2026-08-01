@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_030188",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1955,
+        "consulting_content": "고객은 적금 만기일 확인과 해지, 재가입 절차, 이벤트 혜택 재적용 여부, 신규 통장 개설 및 금리 우대 등을 문의하였고 상담사는 만기일을 확인하고 해지, 재가입 절차와 필요한 서류, 조건을 안내하며, 현재 이벤트 혜택과 금리 우대, 수수료 면제 내용을 설명하고, 재적용 가능 여부와 재연락 일정을 잡아 추후 안내하겠다고 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

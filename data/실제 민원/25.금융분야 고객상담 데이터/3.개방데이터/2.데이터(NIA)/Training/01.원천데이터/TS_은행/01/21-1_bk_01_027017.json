@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_027017",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1187,
+        "consulting_content": "고객은 ▲▲▲▲▲ 연결과 이메일 거래 내역서 수신을 요청하였고 상담사는 해당 직접 연결은 불가하나 유사 서비스인 ▲▲▲▲ 연결을 진행하고, 자동 이메일 전송을 안내하였으며, 적금 상품 안내도 제공하겠다고 답하였다.★★"
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

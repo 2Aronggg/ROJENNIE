@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_027515",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1650,
+        "consulting_content": "고객은 보증재단에 제출한 대출 연장 서류가 시스템에 반영되지 않아 확인을 요청하고, 서류를 재촬영, 재전송하겠다고 하였고, 상담사는 서류 미접수 사실을 안내하고 재전송을 요청했으며, 서류가 확인되는 대로 영업일 2~3일 내 연장 처리와 주요 유의사항 및 FAQ 안내를 제공하겠다고 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

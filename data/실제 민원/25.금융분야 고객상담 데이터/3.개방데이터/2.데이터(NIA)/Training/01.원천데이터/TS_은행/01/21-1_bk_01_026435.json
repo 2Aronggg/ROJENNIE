@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_026435",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 2157,
+        "consulting_content": "고객은 ●●년부터 OOO명으로 된 전체 송금 내역서를 기간, 금액, 수수료 포함해 제공받고 싶다고 요청하였고 상담사는 전산 조회 가능과 특정인 내역은 지점 방문이 필요함을 안내하였다. 고객은 확인된 6건의 거래 내역과 금액, 수수료 정보를 확인하였고 상담사는 해당 정보를 제공하고, 서류 제출을 위해 ARS 연결 및 영업시간 내 방문 절차를 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

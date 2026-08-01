@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_009090",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1382,
+        "consulting_content": "고객은 최근 ★★은행으로 연금 계좌를 이전하고, ▲▲연금 입금이 누락돼 확인을 요청하였다. 상담사는 고객의 성명, 생년월일, 계좌번호, 비밀번호를 ARS를 통해 확인하였다. 시스템 오류로 해당 일자 입금이 지연됐으며, 재처리는 영업일 1~2일 소요된다고 안내하였다. 다른 계좌로 이체하려면 연금 관리 공단에 별도 신청이 필요하다고 설명하였다. 입금 완료 시 문자 알림을 등록하고, 이메일로 상담 내용 요약을 제공하겠다고 약속하였다. 고객은 휴대폰 번호와 이메일을 제공했으며, 향후 온라인 뱅킹, 모바일 앱으로 입금 내역을 실시간 조회할 수 있음을 확인하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

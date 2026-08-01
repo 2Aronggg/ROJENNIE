@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_025595",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 625,
+        "consulting_content": "고객은 해외 현금 인출 가능 여부와 한도, 수수료, 할인 조건, 환불 절차를 문의하였고 상담사는 카드로 현지 ATM 인출 가능, 일일 500달러, 월 2,000달러 한도, 인출액 1% 수수료를 안내하고, 월 누적 이용액 5,000달러 초과 시 우대율에 따라 할인 적용된다고 설명했으며, 환불은 해외 이용 후 30일 이내에 고객센터에 연락해 신청서를 제출하면 진행된다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_030646",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1150,
+        "consulting_content": "고객은 유로 환전을 약 ●●●원 규모로 요청하고 동전 권종 및 이전 오류 해결 여부를 물었으며, 예약 방법과 필요 신분증, 환율 보장 기간을 확인하고자 하였고 상담사는 최소 지폐 단위 안내, 동전 제공 가능, 오류는 최신 업데이트로 해결됐음, 모바일 앱 예약 시 수수료 우대와 실시간 보유량 확인 메뉴를 안내하고, 주민등록증, 운전면허증, 여권 중 하나를 제시하면 된다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_029921",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1118,
+        "consulting_content": "고객은 전세자금 연장 대출 관련 연락이 없다고 문의하고, 전화 연락을 원한다. 상담사는 계좌, 생년월일 확인 후 ARS 연결 안내하고, 담당 부서에 전달해 내일 중 연락하겠다고 약속하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

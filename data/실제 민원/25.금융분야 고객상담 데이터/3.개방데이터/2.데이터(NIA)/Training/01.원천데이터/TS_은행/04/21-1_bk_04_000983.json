@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_000983",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1204,
+        "consulting_content": "고객은 만기된 저축 계좌의 해지 절차와 필요 서류, 승인 소요 기간, 서류 제출 방법, 모바일 앱 이용 절차, 승인 지연 시 조치, 해지 후 이자 처리 및 자동이체 해지 방법, 재가입 혜택을 문의했다. 상담사는 만기 저축 해지 승인 절차, 서류 제출 경로, 앱 접수 방법, 처리 단계, 금리 우대 등 후속 혜택을 안내했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

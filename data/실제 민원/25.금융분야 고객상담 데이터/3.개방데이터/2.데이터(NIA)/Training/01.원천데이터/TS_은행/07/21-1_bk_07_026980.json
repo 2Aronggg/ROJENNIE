@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_026980",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1699,
+        "consulting_content": "고객은 전세 자금 대출 이자 감면 조건 확인을 요청하고 계좌, 신분 확인 정보를 제공하였고 상담사는 조건 충족 여부를 안내하여 할인 적용 가능함을 알려 주었으며, 적금, 청약 조건을 설명하고 조기 상환 위약금은 계약서 기준이라고 안내하였다. 고객은 다른 대출 상품 비교와 안내 메일 발송을 요청하였고 상담사는 모바일 앱, 영업점 이용 안내와 메일 발송 절차를 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

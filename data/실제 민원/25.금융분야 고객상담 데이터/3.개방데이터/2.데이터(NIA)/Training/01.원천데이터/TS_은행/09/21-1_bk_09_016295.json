@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_016295",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1222,
+        "consulting_content": "고객은 대규모 여권 환전을 원했으며 가까운 거여동 지점 방문과 신분증 지참을 요청하였고 상담사는 해당 지점 위치 안내와 영업시간, 수수료, 환전 한도, 당일 환율, 신분증 정보를 제공하고 문자로 상세 안내를 약속하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

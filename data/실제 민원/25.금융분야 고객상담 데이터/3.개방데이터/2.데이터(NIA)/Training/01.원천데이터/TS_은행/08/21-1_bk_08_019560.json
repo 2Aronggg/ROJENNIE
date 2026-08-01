@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_019560",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1446,
+        "consulting_content": "고객은 전세 대출 상환 일정 및 연장 가능 여부를 확인하고 서류와 절차를 문의하였고 상담사는 계좌 확인 후 연장 절차는 모바일 링크를 통해 신청하고, 연장 계약서, 신분증, 직장 계약서 등 서류 제출이 필요하며, 현재 이자율은 연 4.5%이고 연장 승인 시 2~3일 내 입금된다고 안내하였고, 조기 상환은 앱 또는 콜센터 이용 가능하다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

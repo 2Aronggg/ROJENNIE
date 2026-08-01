@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_023739",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 984,
+        "consulting_content": "고객은 신용대출 연장 가능한 연수와 기간을 문의했으며, 상담사는 연장 신청은 만기일 이후 일정 일수부터 가능하고 최장 ○년까지 연장 가능하며 비용은 없고, 모바일 앱, 홈페이지에서 연장 버튼을 눌러 신청하면 신용평가가 영업일 1~2일 내에 결과가 문자, 이메일로 안내된다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

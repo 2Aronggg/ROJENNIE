@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_018037",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1013,
+        "consulting_content": "고객은 대출 연장을 문의하고 계좌번호, 성명, 생년월일, 비밀번호 등 본인 확인 정보를 제공했으며 연장 완료 확인을 요청하였다. 상담사는 정보를 확인 후 연장 가능 여부와 절차, 조건을 안내하고, 자동 연장 적용일과 추가 이자율을 설명한 뒤 연장을 시스템에 반영하고 모바일 앱 및 문자로 확인 방법을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

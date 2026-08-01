@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_024407",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 969,
+        "consulting_content": "고객은 이체한도 상향을 원하고 필요한 서류와 제출 방법을 문의했으며, 상담사는 신용평가, 실적 검토 후 한도 결정, 신분증, 재직증명서가 필요하고 팩스, 우편 제출 가능하며, 서류 도착 후 영업일 2~3일 내에 결과를 문자로 안내한다는 내용으로 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

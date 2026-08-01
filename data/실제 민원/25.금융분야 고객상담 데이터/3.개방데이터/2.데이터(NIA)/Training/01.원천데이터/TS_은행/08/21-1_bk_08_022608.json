@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_022608",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 839,
+        "consulting_content": "고객은 비대면 대출 연장 신청 중 필요한 서류를 문의했고, 상담사는 모바일 앱, 홈페이지에 서류를 첨부하도록 안내하고, 계좌, 연장 심사가 영업일 3~5일 소요되며 추가 서류는 문자로 안내될 것이라고 설명하였다. 고객은 소득, 재직증명서 업로드 위치를 물었고, 상담사는 업로드 방법을 안내하고 문자 알림 설정을 요청받아 설정해 주었다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

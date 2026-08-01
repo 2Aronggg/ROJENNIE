@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_015539",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1059,
+        "consulting_content": "고객은 타행 자동이체 수수료와 감면 조건을 문의하였고 상담사는 수수료 발생 사실과 6개월 유효한 감면 조건을 안내하였다. 고객은 본인 확인을 위해 계좌, 비밀번호를 제공하였고 상담사는 확인 후 감면을 즉시 적용하고 문자로 결과를 송부하겠다고 하였다. 고객은 재신청 방법을 물었고 상담사는 온라인, 전화로 2~3일 내 반영 가능함을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

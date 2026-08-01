@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_004895",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1035,
+        "consulting_content": "고객은 대출 만기 연장을 요청하고 계좌, 본인 확인 정보를 제공하였고 상담사는 계좌 확인 후 연장 절차를 안내하며 모바일 앱 신청용 문자와 URL을 전송하고, 추가 서류, 비용 없이 승인 시 즉시 새 만기일이 적용된다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

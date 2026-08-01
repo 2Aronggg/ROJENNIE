@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_011706",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1731,
+        "consulting_content": "고객은 대출 이자 감면 여부를 확인하고자 전화했으며, 실적 미충족으로 감면이 보류된 상황임을 확인하였다. 상담사는 급여이체, 적금, 주택청약 실적 충족이 필요하다고 안내하고, 실적 충족 시 자동 적용 및 절차를 설명하였다. 또한 고객은 상환 일정을 문의하였고, 상담사는 매월 말일 원리금 납부이며 상세 금액은 별도 안내문으로 제공한다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

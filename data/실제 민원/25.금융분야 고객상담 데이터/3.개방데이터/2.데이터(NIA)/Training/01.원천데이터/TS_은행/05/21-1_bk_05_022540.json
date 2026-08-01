@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_022540",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1166,
+        "consulting_content": "고객은 출금 한도 제한 해제를 요청하였고 상담사는 계좌 확인 후 주민등록증, 사업자등록증 사본 제출을 안내하였으며, 서류 검토에 영업일 1~2일 소요, 진행 상황을 문자로 안내하고, 필요 시 임시 한도 증액 및 다른 계좌 사용 가능 여부를 검토하겠다고 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

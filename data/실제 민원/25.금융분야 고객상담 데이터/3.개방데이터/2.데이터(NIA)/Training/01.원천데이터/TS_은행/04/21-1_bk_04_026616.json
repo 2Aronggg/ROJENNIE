@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_026616",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1101,
+        "consulting_content": "고객은 ●월 ●일 만기 정기예금의 휴일 처리와 조기 방문 가능 여부를 물었고 상담사는 자동 해지, 다음 영업일 입금 예정임을 안내하였다. 고객은 만기 후 추가 적금 가입, 금리 변동 안내와 재가입 절차, 자동 재투자 옵션을 문의했으며 상담사는 고정 금리이며 변동 시 모바일, 문자 알림으로 안내되고, 재가입은 가능하나 자동 재투자는 제공되지 않는다 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

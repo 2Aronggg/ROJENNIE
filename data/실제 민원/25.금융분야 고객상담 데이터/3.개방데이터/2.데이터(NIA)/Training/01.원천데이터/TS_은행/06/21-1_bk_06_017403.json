@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_017403",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 975,
+        "consulting_content": "고객은 대출 이자 납부 후 추가 수수료와 연체료 부과 기준, 다음 납부 일정 및 대출 해지 절차를 문의하였고 상담사는 현재 연체, 수수료 없음과 연체 시 하루 0.03%, 최대 30일 부과를 안내하고, 다음 이자 납부일과 해지 시 마지막 납부 후 계약 종료임을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

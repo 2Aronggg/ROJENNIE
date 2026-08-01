@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_017331",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1200,
+        "consulting_content": "고객은 대출 이자 연체로 가상계좌 입금 및 상환 유예 옵션을 문의하였고 상담사는 본인 확인을 위해 문자, 비밀번호 인증을 진행하고 연체 금액과 가상계좌 입금과 주의사항을 안내를 제공하였으며, 상환 유예 옵션은 추후 안내 가능하다고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_017288",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1448,
+        "consulting_content": "고객은 잔금 지급일에 맞춘 대출 실행 시점을 문의하고 본인 확인 및 계좌 연동 정보를 제공하였고, 서류 준비와 이자 유형, 조기 상환 위약금 등에 대해 질문하였다. 상담사는 대출 실행은 잔금일에 맞춰 처리되며 본인 확인, 계좌 연동, 주민등록증, 소득증빙 서류를 영업일 전까지 준비하도록 안내하고, 변동형, 고정형 이자 차이와 위약금은 계약서에 명시된다고 설명하였으며, 추후 확인 후 연락드리겠다고 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_031935",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1000,
+        "consulting_content": "고객은 저축통장에서 이자일 전날 자동이체를 설정하고 가상계좌로 입금받기를 원한다며 등록된 휴대폰 번호와 본인 확인 정보를 제공하였고 상담사는 계좌, 비밀번호 확인 후 가상계좌를 휴대폰으로 전송하고 자동이체 날짜를 이자일 전날로 지정해 진행하겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

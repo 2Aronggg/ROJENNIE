@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_010897",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1596,
+        "consulting_content": "고객은 세 개의 계좌 중 자동이체 계좌와 두 대출의 상환 일정을 확인하고 오늘 입금 금액 및 마감 시간을 문의하였고 상담사는 자동이체 설정을 조회하여 두 대출 모두 현재 일정대로 유지됨을 안내하고, 오늘 입금해야 할 금액과 밤 11시 마감 시간을 알려주었으며, 입금 완료 시 확인 연락을 약속하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

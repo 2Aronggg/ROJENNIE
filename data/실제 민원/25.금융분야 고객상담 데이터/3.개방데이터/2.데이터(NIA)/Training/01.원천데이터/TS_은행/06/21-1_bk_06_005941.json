@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_005941",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1190,
+        "consulting_content": "고객은 대출 원리금 차감 후 카드 결제 동시 처리로 인해 자금이 모자라다고 문의하였다. 상담사는 상황을 정리하고, 대출 상환 일정 조정과 카드 한도 증액 두 가지 방안을 제시하였다. 고객은 임시 대출 신청을 원하였고, 상담원으로부터 안내받은 임시 대출 조건에 동의 후 대출 신청을 진행했다. 임시 대출이 다음 영업일에 입금될 예정이며, 입금 확인 후 자동 출금 일정이 설정될 것임을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

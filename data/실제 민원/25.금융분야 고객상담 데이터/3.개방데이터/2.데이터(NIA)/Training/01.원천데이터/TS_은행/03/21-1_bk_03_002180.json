@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_002180",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1396,
+        "consulting_content": "고객은 통장 해지 후 자동이체와 아파트 관리비 처리 방법을 문의하고, 이사 후 계좌와 주소 변경 절차, 남은 잔액 및 카드 폐기 방법, 새로운 통장 개설에 필요한 서류 등에 대해 물었다. 상담사는 자동이체는 해지되지 않으니 관리 사무소에 문의할 것을 권고하고, 절차를 안내하며, 추가 질문에 대해 구체적인 처리 방법을 설명했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

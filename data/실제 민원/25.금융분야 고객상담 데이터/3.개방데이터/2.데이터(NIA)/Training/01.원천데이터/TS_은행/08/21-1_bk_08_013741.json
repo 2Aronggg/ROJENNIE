@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_013741",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1044,
+        "consulting_content": "고객은 대출 연장 가능 여부와 절차, 조기 상환 수수료를 문의하였고 상담사는 자동 연장 방식과 연장 처리 절차를 안내하고 현재 잔액 및 예상 수수료를 조회하여 전달하였으며 연장만 진행하고 조기 상환은 보류한다는 고객의 의사를 확인하고 연장 처리를 완료하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

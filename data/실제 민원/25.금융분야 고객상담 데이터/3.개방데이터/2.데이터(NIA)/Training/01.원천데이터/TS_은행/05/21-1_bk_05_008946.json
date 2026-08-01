@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_008946",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1795,
+        "consulting_content": "고객은 일일 이체 한도가 제한되어 추가 이체가 불가하다고 문의하였다. 상담사는 계좌가 비밀번호 변경, 비정상 출금 시도로 제한 계좌 전환된 것이 원인이라 설명하였다. 해제는 온라인이 불가능하고, 신분증, 급여통장 사본, 해제 사유서 등 서류를 지점에 제출해 심사받아야 한다고 안내하였다. 방문 시 평일 10~11시를 권장하고, 자동이체 내역, 대규모 이체 계획을 함께 전달하면 심사 속도가 빨라진다고 조언하였다. 해제가 승인되면 일일 한도가 기본 한도로 복구되어 보통 ○○원 수준이 된다고 보고하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

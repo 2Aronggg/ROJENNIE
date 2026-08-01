@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_020141",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1374,
+        "consulting_content": "고객은 급여 감면 적용 여부와 대출 진행을 위해 계좌, 휴대폰, 비밀번호 등 개인정보 제공 및 인증을 요청하였고 상담사는 계좌번호 제공, 문자, 인증코드 입력, 비밀번호 확인 절차를 안내하고, 급여 충족 시 감면 적용 및 금리 변동을 설명하며 추가 문의 시 언제든 문의하라고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

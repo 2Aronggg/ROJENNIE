@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_001577",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1690,
+        "consulting_content": "고객은 청년 임차보증금 대출 연장을 위해 필요한 서류와 절차를 문의했고, 상담사는 계약서 원본, 갱신 계약서, 소득증명서, 주민등록등본 등 기본 서류와 전자 계약서 미비 시 대체 서류 제출 방법을 안내하였다. 또한 상환 일정 변경, 이자율 변동 가능성, 심사 소요 시간, 추가 서류 예시와 제출 방법을 설명하고, 최종 승인 후 서류 보관 및 상환 안내 절차를 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

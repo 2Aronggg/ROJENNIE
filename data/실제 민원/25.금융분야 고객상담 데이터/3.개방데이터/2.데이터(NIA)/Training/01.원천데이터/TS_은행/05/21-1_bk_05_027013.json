@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_027013",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 814,
+        "consulting_content": "고객은 한도 상향을 위해 건강보험 득실 확인서를 지점에 팩스로 보내고 추가 서류 여부를 문의했으며, 성명, 연락처를 제공하였다. 상담사는 제공된 정보를 확인하고 서류를 지점에 전달해 검토 절차를 시작하며, 심사는 영업일 기준 며칠 소요될 수 있음을 안내하고, 진행 상황을 주기적으로 업데이트하고 필요 시 추가 서류 요청 및 연락을 드리겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

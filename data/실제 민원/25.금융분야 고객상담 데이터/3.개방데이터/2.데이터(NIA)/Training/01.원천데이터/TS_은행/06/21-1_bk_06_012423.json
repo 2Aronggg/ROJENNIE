@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_012423",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 914,
+        "consulting_content": "고객은 대출 연체 금액을 본인 통장 또는 가상계좌로 입금하고 싶다고 문의하였고 상담사는 인증 절차를 진행한 뒤, 가상계좌와 본인 계좌 모두 입금 가능하나 연체 건별로 별도 입금해야 하고, 가상계좌는 당일 밤 23시 11분까지 정확히 입금하면 1시간 이내 확인 후 연체 해제와 문자 안내를 제공한다는 내용으로 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

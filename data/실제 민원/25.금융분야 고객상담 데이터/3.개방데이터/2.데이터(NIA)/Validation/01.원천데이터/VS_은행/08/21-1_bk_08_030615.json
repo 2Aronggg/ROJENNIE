@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_030615",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 943,
+        "consulting_content": "고객은 대출 연장을 신청하고 보안카드, 비밀번호 입력에 어려움을 겪어 휴대폰 인증 및 모바일 앱에서 확인 가능한 일회용 비밀번호 사용을 요청하였고 상담사는 연장 가능 기간, 이자 변동 안내와 함께 보안 인증 절차를 설명하고 일회용 비밀번호 이용 방법을 안내하며 연장 신청을 최종 진행하겠다고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_004657",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1443,
+        "consulting_content": "고객은 엔화 300,000엔 환전을 원하고, 신분증 없이 ●●원 미만 소액으로 진행하고 싶으며 수수료, 우대, 온라인 신청, 필요 서류, 예약 절차, 환율 변동을 문의하였다. 상담사는 신분증 미제출 시 서류 필요 없고 ●●원 미만이면 가능하다고 안내했으며, 온라인 환전은 제공되지 않아 창구 방문, 예약을 권고하고, 우대는 적용되지 않으며 환율은 실시간 적용된다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

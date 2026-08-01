@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_000940",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1361,
+        "consulting_content": "고객이 비상금 대출 연장을 원해 대출 연장 가능 여부와 절차를 문의하였다. 상담원은 대출 연장에 필요한 서류, 모바일 앱을 통한 단계별 신청 방법, 전화를 통한 대출 연장 신청 절차, 그리고 연장 수수료와 이자율 변동여부 및 인증 절차등에 대해 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

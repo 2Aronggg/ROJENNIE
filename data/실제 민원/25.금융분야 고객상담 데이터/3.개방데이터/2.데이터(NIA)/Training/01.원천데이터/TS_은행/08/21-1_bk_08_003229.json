@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_003229",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 966,
+        "consulting_content": "고객은 대출 연장을 요청하고 본인확인 정보를 제공하였고, 상담사는 대출 현황을 확인해 연장 승인 및 새 만기일을 안내하며, 연장 시 별도 수수료, 이자율 변동이 없고 자동이체 일정도 동일함을 설명하고, 승인 결과를 문자, 이메일로 발송하고 향후 문의 전화번호를 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

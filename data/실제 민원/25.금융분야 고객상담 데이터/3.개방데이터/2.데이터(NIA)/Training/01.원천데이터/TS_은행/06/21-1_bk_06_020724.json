@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_020724",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1146,
+        "consulting_content": "고객은 연체 이자 감면을 요청하고 계좌 번호를 모른다고 답했으며, 상담사는 본인 확인을 위해 생년월일, 휴대폰, 인증번호 입력을 안내하고, 연체 원금, 이자 합계 금액을 문자로 전송해 주겠다고 안내하였다. 고객은 가상계좌로 상환하고 금액을 문자, 이메일로 받기를 원했으며, 상담사는 가상계좌는 일회성이라 매월 새 번호를 문자로 보내고, 재전송 및 영수증 발송도 가능하다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

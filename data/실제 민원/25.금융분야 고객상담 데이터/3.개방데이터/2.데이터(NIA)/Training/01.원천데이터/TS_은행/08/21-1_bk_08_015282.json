@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_015282",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1002,
+        "consulting_content": "고객은 대출 연장과 ●●원 분할 상환을 신청하고 처리 상황 및 상환 일정, 금액 안내를 요청하였고 상담사는 계좌, 비밀번호를 받고 조건을 확인했으며 정확한 금액은 추후 안내하고 서면 제공 가능하다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

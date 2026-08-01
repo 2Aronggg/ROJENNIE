@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_000362",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1637,
+        "consulting_content": "고객은 해지된 통장 잔액의 자동 이체 여부와 보류 처리, 재입금 절차, 기간 제한, 모바일 확인 방법, 보안 인증 절차 등을 문의했다. 상담사는 해지 통장의 잔액은 신규 통장으로의 자동 이체 불가 원칙, 해지 후 이체 요청 필요 기간, 보류 기간, 비밀번호 보안 이유, 입금 지연 처리 및 실시간 확인 방법 등에 대해 안내했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

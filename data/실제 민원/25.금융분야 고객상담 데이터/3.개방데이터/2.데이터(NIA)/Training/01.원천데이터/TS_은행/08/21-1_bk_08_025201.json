@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_025201",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1417,
+        "consulting_content": "고객은 한도 약정일 문자 내용과 신용조회 동의 여부를 문의하였고 상담사는 한도 약정은 대출 한도 조정, 연장을 위한 절차이며 신용조회는 고객의 전화 동의 후 즉시 진행되고 신용등급에 영향을 주지 않으며, 조회 결과에 따라 연장 가능 여부와 조건을 영업점에서 안내드린다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

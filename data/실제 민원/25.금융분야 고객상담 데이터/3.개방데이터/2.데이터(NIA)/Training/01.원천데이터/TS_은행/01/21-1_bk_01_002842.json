@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_002842",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1678,
+        "consulting_content": "고객은 퇴직연금 자동 이체 금액이 예상과 다르게 출금된 것을 확인하고 원인을 문의했으며, 상담원은 계좌 확인 후 자동 이체 일정과 보안 옵션을 안내했다. 고객은 알림 방식 변경, 2단계 인증 설정, 비정상 출금 차단 및 환불 절차 등에 대해 추가 질문했고, 상담원은 구체적인 설정 방법과 절차를 설명했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

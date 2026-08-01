@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_020734",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1827,
+        "consulting_content": "고객은 착오 송금 처리 현황과 입금 지연에 대해 문의하였고 상담사는 접수일 기준 3~5영업일 소요와 반환, 거절 절차를 안내하고, 수취은행에 직접 문의 및 서류 발송을 권고하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

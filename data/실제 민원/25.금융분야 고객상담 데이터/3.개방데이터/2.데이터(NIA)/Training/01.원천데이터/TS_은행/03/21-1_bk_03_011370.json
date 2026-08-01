@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_011370",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1591,
+        "consulting_content": "고객은 아파트 관리비 자동이체를 설정하려고 문의를 하였으며 상담사는 전화상 등록이 불가하므로 앱, 인터넷뱅킹 또는 영업점 방문을 통하여 신청할 수 있음을 안내하였고, 정확한 주소와 관리사무소와의 약정이 선행되어야 한다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

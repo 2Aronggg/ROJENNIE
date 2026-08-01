@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_031647",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1522,
+        "consulting_content": "고객은 이체 일자 확인과 잔액 부족으로 보류된 상황을 문의하였고 상담사는 현재 일정과 최소 입금액 00,000원을 안내하였다. 고객은 추가 입금을 요청하였고 상담사는 입금 확인 시 즉시 이체 처리한다는 답변을 제공하였다. 고객은 자동이체 전날 문자 알림 서비스를 신청하였고 상담사는 문자 알림을 등록 완료하고 향후 서비스 안내를 제시하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

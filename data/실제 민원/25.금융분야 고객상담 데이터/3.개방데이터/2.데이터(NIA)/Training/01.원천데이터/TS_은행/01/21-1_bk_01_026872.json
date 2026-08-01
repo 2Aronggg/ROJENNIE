@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_026872",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1312,
+        "consulting_content": "고객은 대출 이자, 민생 금융 캐시백 등 정보를 요청하고, 특정 날짜의 거래내역 확인 및 문자 요약, 입금 금액, 지점 확인, 종소세 신고용 출력까지 요구하였고, 상담사는 거래내역 조회 방법 안내, 상세 내역 제공, 문자 요약 발송, 계좌 비밀번호 입력 절차 안내, 입금 금액, 지점 확인 결과와 다른 통장에 동일 입금 없음, 출력 방법을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

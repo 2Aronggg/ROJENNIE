@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_004974",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 943,
+        "consulting_content": "고객은 대출 상환 일정과 중도상환수수료 여부를 문의하였고 상담사는 현재 이자만 납부 중이며 원리금 균등 분할 상환 방식의 예상 원금, 이자 금액을 안내하고, 중도상환수수료가 없음을 확인시켜 주었다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

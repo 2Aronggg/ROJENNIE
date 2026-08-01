@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_029732",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 819,
+        "consulting_content": "고객은 대출 연체 금액 및 상환 방법을 문의했고 상담사는 두 건의 연체 사실과 이자, 수수료를 안내하고, 가상계좌 번호와 입금 기한 및 상환 옵션을 문자로 발송하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

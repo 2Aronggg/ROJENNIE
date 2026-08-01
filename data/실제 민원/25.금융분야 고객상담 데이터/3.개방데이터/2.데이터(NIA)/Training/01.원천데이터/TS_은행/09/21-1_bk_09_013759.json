@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_013759",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1465,
+        "consulting_content": "고객은 이자율 변경 및 통화 환전을 원하고 신분증 사진을 업로드하여 거래를 진행하였고 상담사는 계좌 확인, 절차 안내, 본인 인증 및 사진 확인 후 거래 완료와 영수증 발송을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

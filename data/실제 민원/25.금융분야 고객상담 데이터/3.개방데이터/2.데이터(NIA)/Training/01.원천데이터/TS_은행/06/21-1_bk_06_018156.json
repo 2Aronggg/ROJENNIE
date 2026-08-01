@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_018156",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 738,
+        "consulting_content": "고객은 대출 이자 납입을 위해 가상계좌 발급을 요청하고 가상계좌 사용 시 유의사항을 문의하였다. 본인 확인 정보를 제공하였고 상담사는 확인 후 일회성 가상계좌 번호와 금액을 안내하고 입금 절차, 영수증, 연체 이자 발생 여부 등 사용 유의사항을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

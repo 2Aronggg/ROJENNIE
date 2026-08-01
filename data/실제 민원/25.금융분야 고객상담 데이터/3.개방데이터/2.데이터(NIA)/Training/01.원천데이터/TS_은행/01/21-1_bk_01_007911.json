@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_007911",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1352,
+        "consulting_content": "고객은 OOO은행 계좌에 입금이 되지 않아 통장에 반영되지 않는다고 문의하였다. 상담사는 영업시간 외 입금 지연 및 휴면계좌로 인한 제한 가능성을 설명하고, 입금 처리 중임을 확인하였다. 고객에게 입금 영수증 제출 및 A은행 본점 입금 사실을 알려 달라고 요청하였다. 입금이 최대 2시간 내 처리될 것이며, 휴면계좌 해제를 위해 재활성화 절차를 진행하였다. 재활성화 후 입금이 정상 반영될 것이고, 향후 자동이체, 실시간 이체 이용과 정기 거래 유지가 입금 원활에 도움이 된다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_026324",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1442,
+        "consulting_content": "고객은 자동 적금 입금 계좌 확인을 요청하고 본인 확인을 위해 계좌번호, 성명, 생년월일을 제공하였고 상담사는 확인 절차 후 현재 보유 중인 적금이 없음을 안내하였다. 고객은 과거 해지된 적금이 있음을 확인하고 해지 후 원금이 입금된 계좌와 일자를 문의하였으며 상담사는 원금이 고객의 입출금 계좌로 지정일에 입금되었다고 답변하였다. 고객은 자동이체 변경 방법을 물었고 상담사는 모바일 뱅킹 앱의 ‘이체, 출금’ 메뉴에서 계좌 지정 방법을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

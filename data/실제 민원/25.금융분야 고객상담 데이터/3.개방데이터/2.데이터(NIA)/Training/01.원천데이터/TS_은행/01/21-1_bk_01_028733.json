@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_028733",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1203,
+        "consulting_content": "고객은 기존 보안 매체로 일일 이체 한도가 부족해 이체가 안 된다고 문의했으며, 상담사는 현재 한도와 보안 매체 등급을 안내하고, 모바일 OTP 설치, 보안 매체 등급 상승 또는 영업점 방문을 통해 한도를 확대할 수 있다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

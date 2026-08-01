@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_007307",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1735,
+        "consulting_content": "고객은 가상계좌에 입금이 되지 않아 ‘계좌 사용 불가’ 오류 메시지를 제시하였다. 상담원은 계좌가 현재 일시적 제한 상태이며 시스템 점검으로 입금이 차단됐음을 안내하였다. 입금 재시도는 점검 종료 후 1~2시간 내에 처리될 수 있으며, 다른 은행 계좌를 이용하려면 동일한 가상계좌 번호와 금액을 입력하고 메모에 ‘중도금 대출 이자’라고 기재하도록 권고하였다. 또한 계좌 번호, 금액, 메모 정확성 및 모바일 앱 최신 버전 사용 여부를 재확인하도록 요청하였다. 제한 해제는 영업점 방문 또는 전화 신청으로 가능하다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

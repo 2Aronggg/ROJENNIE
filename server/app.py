@@ -12,6 +12,7 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 
 from .agents.mock_customer_data_resolver import MockCustomerDataResolver
+from .agents.issue_validator import validate_issues
 from .agents.logic_verification import verify_issue_logic
 from .agents.rag_query import build_rag_query
 from .agents.report_composer import DECISION_LABELS, compose_issue_report
@@ -418,6 +419,36 @@ def health() -> dict[str, str]:
     return {"status": "ok"}
 
 
+# issue_type 키워드 분류(server/agents/router.py)가 자연스러운 표현("제 명의로 대출이
+# 나간 걸 몰랐어요")을 놓치면, 명의도용은 HIGH_RISK_ISSUES 하나에만 의존하던 이전에는
+# hold로 가지 못하고 그대로 통과했다. 여기서는 issue_type 분류와 별개로 원문 자체에서
+# 넓은 사기·명의도용 동의어와 프롬프트 인젝션 시도를 다시 한번 훑어 risk_flags를 채운다.
+# decision_gate.HOLD_RISK_FLAGS가 이 값들을 받아 무조건 hold로 승격시킨다.
+LEGAL_UNCERTAINTY_ISSUES = frozenset(
+    {"설명의무위반", "위험설명부족", "원금손실설명부족", "배상비율불만", "손실민원부실"}
+)
+
+SUSPICIOUS_INPUT_PATTERNS: tuple[str, ...] = (
+    # 명의도용/비인가 거래 — issue_type 분류가 놓칠 수 있는 자연스러운 표현들
+    "명의도용", "명의를 도용", "제 명의로", "제 몰래", "본인 확인 없이", "본인인증 없이",
+    "인증 없이", "허락 없이 개설", "동의 없이 개설", "제가 만든 적 없", "가입한 적이 없",
+    "신청한 적이 없", "신청한 기억이 없", "제가 신청하지 않", "보이스피싱", "피싱 의심", "사기를 당",
+    # 프롬프트 인젝션 / 시스템 지시 우회 시도
+    "이전 지시를 무시", "위 지시를 무시", "지시를 무시하고", "규칙을 무시하고", "시스템 프롬프트",
+    "너는 이제부터", "너는 지금부터", "ignore previous instructions", "system prompt", "you are now",
+)
+
+
+def _detect_risk_signals(text: str, issue_type: str) -> list[str]:
+    flags: list[str] = []
+    if issue_type in LEGAL_UNCERTAINTY_ISSUES:
+        flags.append("legal_uncertainty")
+    lowered = text.lower()
+    if any(pattern.lower() in lowered for pattern in SUSPICIOUS_INPUT_PATTERNS):
+        flags.append("suspicious_input")
+    return flags
+
+
 def _fallback_issue(request: CaseAnalyzeRequest) -> IssueInput:
     return IssueInput(
         issue_id="issue_001",
@@ -473,6 +504,7 @@ def _analyze_issue(
     issue: IssueInput,
     request: CaseAnalyzeRequest,
     customer_data: dict[str, object] | None,
+    case_id: str,
     use_llm_report: bool | None = None,
     use_llm_rag: bool | None = None,
     use_llm_logic: bool | None = None,
@@ -521,6 +553,7 @@ def _analyze_issue(
         risk_flags.append("evidence_insufficient")
     if (customer_data is None or customer_data.get("access_granted") is False) and issue.product in {"예금", "적금", "대출"}:
         risk_flags.append("customer_data_unavailable")
+    risk_flags.extend(_detect_risk_signals(issue.text, issue.issue_type))
 
     control = "ask" if missing or resolution.conflicts or not evidence else "proceed"
     risk_level, risk_reasons = assess_risk(
@@ -569,6 +602,11 @@ def _analyze_issue(
             "risk_level": "critical" if gate.control == "hold" else result.risk_level,
         }
     )
+    # gate.audit_log/false_negative_risk는 apply_decision_gate가 매번 계산하지만,
+    # 여기서 기록하지 않으면 호출부(analyze_case)로 전달할 방법이 없어 그대로
+    # 버려진다 - 감사 가능성(체크리스트 3번)이 실제로 성립하려면 저장까지 돼야 한다.
+    if gate.audit_log is not None:
+        _record_audit(case_id, "decision_gate", "system", gate.audit_log.model_dump(mode="json"))
     return result.model_copy(update={"report": compose_issue_report(result, use_llm=use_llm_report)})
 
 
@@ -633,6 +671,8 @@ def analyze_case(request: CaseAnalyzeRequest) -> CaseAnalysis:
             as_of=request.as_of,
         )
         issues = routed_request.issues or [_fallback_issue(request)]
+    validation_log = validate_issues(CaseAnalyzeRequest(case_id=case_id, prompt=request.prompt, issues=issues))
+    _record_audit(case_id, "issue_validation", "system", validation_log.model_dump(mode="json"))
     customer_data = CUSTOMER_DATA_RESOLVER.resolve(request.customer_id)
     if not SUPABASE_VECTOR_STORE.enabled:
         get_index()  # 로컬 fallback 사용 시에만 인덱스를 빌드
@@ -644,6 +684,7 @@ def analyze_case(request: CaseAnalyzeRequest) -> CaseAnalysis:
                     issue,
                     request,
                     customer_data,
+                    case_id,
                     use_llm_report=use_llm,
                     use_llm_rag=use_llm,
                     use_llm_logic=use_llm,

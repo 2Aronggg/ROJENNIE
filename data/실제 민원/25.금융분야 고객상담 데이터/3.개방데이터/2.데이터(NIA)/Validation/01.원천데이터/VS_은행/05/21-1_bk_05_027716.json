@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_027716",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 849,
+        "consulting_content": "고객은 이체 한도 확인 방법을 물었고 상담사는 모바일 앱 ‘한도 관리’에서 확인 가능하다고 안내하였다. 고객은 이체 취소, 재전송, 수수료, 한도, 대출 금리 변동을 물었고 상담사는 취소 불가, 재전송은 새 이체, 일반 이체는 수수료 면제, 한도 초과 시 별도 수수료, 최신 금리는 앱, 홈페이지에서 확인 가능하고 영업점 방문도 가능하다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

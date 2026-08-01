@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_004652",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 917,
+        "consulting_content": "고객은 이자 대출 및 연체 정보와 부분 납부 가능 여부를 문의하였고 상담사는 연체 금액 전액 정산 필요와 신용 정보 공유를 안내하였다. 고객은 이자 감면 조건을 물었고 상담사는 연체 30일 이하, 전체 금액 50% 이상 일시 상환 시 적용되며, 적용 시점은 다음 결제 주기라고 설명하였다. 고객은 남은 절차를 요청하였고 상담사는 서류 제출, 검토 후 승인 시 안내드릴 것이라고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

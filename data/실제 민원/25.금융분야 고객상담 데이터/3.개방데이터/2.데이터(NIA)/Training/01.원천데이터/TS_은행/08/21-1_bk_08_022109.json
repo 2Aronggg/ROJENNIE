@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_022109",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1133,
+        "consulting_content": "고객은 전세자금 대출 연장을 원한다며 연장 절차와 필요 서류, 이자율 변동 여부를 문의하였고 상담사는 연장은 심사 서류 제출 후 영업점 방문이 필요하고 모바일 신청 시 주민등록증, 소득증명서, 전세계약서 사진 첨부로 가능하다고 안내하였으며, 기존 이자율이 적용되나 정책에 따라 변동 가능성을 언급하고, 심사 기간은 영업일 3~5일 정도 소요된다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

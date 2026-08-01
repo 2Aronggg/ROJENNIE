@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_023752",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1023,
+        "consulting_content": "고객은 외화 환전 수수료 우대 여부를 확인하고자 계좌 정보를 제공하였고 상담사는 고객 등급은 연간 거래 실적에 따라 산정되며 현재 등급으로는 엔화→원화 환전 수수료 우대가 적용되지 않음을 안내하고, 우대 기준은 모바일 앱에서 확인 가능하고 해외 송금 수수료는 별도 안내한다는 정보를 제공하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

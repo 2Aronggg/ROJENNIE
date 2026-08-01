@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_019642",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1177,
+        "consulting_content": "고객은 대출 이자 납입 및 자동이체 설정에 대해 문의하였고 상담사는 계좌 연결, 비밀번호 입력을 안내하고, 자동이체 계좌가 등록되어 있어 잔액만 충분하면 이자가 자동 차감된다고 설명하였다. 고객은 추가 절차가 없음을 확인하고 상담을 종료하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

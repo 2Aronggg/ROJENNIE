@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_001127",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1577,
+        "consulting_content": "고객은 입출금 거래내역을 종합소득세 신고용으로 팩스로 받고 싶어 문의하였고, 상담사는 ARS를 통해 입출금 거래내역을 전송하는 방법과 날짜 입력, PDF 형식 전송, 페이지 구성, 대출 상환 내역 포함 여부, 파일 크기, 전송 시간 등을 안내하며 ARS 연결 방법을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

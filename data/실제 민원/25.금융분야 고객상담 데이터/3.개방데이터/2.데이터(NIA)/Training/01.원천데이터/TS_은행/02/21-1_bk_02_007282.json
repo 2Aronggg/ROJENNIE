@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_007282",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1181,
+        "consulting_content": "고객은 타행 자금 반환 청구 건의 진행 상황과 반환 금액, 계좌 번호, 입금 예정 시각을 문의했고, 상담사는 반환 청구 접수 일자와 고유 송금 번호, 반환 금액 및 계좌 정보를 확인해 안내하고, 입금 예정 시각과 문자 알림 제공을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

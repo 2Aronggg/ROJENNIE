@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_018981",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1304,
+        "consulting_content": "고객은 내일 만기되는 대출 연장 및 연장 계좌 해지 여부를 확인하고 자동 연장 정책을 문의하였고 상담사는 계좌 정보 확인 후 신원 인증을 진행하고 연장 금액을 확인하고 청약 담보 대출의 연장 절차와 자동 연장 조건, 예외 사항을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

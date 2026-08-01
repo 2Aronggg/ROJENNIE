@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_021142",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "신규고객",
+        "consulting_client_type": null,
+        "source_length": 1168,
+        "consulting_content": "고객은 남미 출장으로 달러를 환전한 뒤 페소 현찰로 전환을 원하고, 약 ●●●원 규모를 문의했으며 환전 한도와 영업시간도 물었다. 상담사는 해당 지점에 페소가 보유 중임을 확인하고, 신분증 지참 후 창구 방문 신청 방법, 수수료 없음, 실시간 환율 적용, 일일 한도 ●●●원, 영업시간 9시~18시를 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

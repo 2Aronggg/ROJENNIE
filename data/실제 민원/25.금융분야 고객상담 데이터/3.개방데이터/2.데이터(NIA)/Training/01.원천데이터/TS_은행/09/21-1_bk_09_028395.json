@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_028395",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 908,
+        "consulting_content": "고객은 오늘까지 가능한 환전 예약을 확인하고 변경 가능 여부를 물었고 상담사는 창구 업무는 오후 4시까지이며 예약 변경은 어려우니 온라인 사전 신청을 권고하였다. 고객은 기존 예약 유지가 가능한지 확인했으며 상담사는 시간이 지나지 않은 경우 기존 예약을 유지할 수 있다고 안내하고, 방문 시 신분증 제시와 지점, 날짜 재등록을 요청하였다. 또한 예약 관리 페이지 확인 방법을 알려주었다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

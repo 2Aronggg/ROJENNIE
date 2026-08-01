@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_001466",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1207,
+        "consulting_content": "고객은 주택 담보 대출의 이자 납부일과 추가 납부 금액을 문의하고, 자동이체 부족시 처리 절차, 조기 상환 위약금, 연체 시 조치, 비밀번호 재설정 방법 등 다섯 가지 주요 사항에 대해 질문했다. 상담원은 본인 확인 절차를 진행 후, 가상 계좌 입금 방법과 기한, 보안 절차를 안내하며 각 질문에 설명했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_023028",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 780,
+        "consulting_content": "고객은 신용대출 연장을 문의하고 서류 제출 방법과 추가 비용을 물었으며, 연장 거절 시 대환 가능성과 영업점 방문 예약을 요청하였고, 상담사는 연장 제한 가능성을 안내하고 비대면 연장 절차와 필요 서류 제출 방법을 설명했으며, 연장 시 추가 이자, 수수료 발생 가능성을 알리고, 거절 시 대환 옵션과 조건을 안내한 뒤 영업점 예약을 잡아주고 방문 시 신분증, 대출 서류 지참을 권고하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

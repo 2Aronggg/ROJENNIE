@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_018597",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1860,
+        "consulting_content": "고객은 대출 만기 연장을 원한다며 계좌, 성명, 생년월일, 비밀번호 등 본인 확인 정보를 제공하였고 상담사는 확인 후 모바일 앱에서 약정서 메뉴 위치를 안내하고 연장 계약서 작성 화면을 확인시켜 주었다. 고객은 이자율 3.5%와 상환 일정 등을 확인하고 전체 동의를 완료하겠다고 답했으며 상담사는 동의 저장 및 연장 처리 결과를 안내하여 연장 신청이 완료되었다고 알렸다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

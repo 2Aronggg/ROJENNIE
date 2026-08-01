@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_021004",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 971,
+        "consulting_content": "고객은 대출 만기 연장 가능 여부와 상환 필요성을 물었고 상담사는 자동 연장 상품이며 자동 연장일은 ●월 ●일이고 별도 상환 필요 없음을 안내하고, 연장 확인 방법은 모바일 앱 ‘대출 관리’ 메뉴 확인이라고 설명하였다. 또한 대출 통지 서비스 등록을 요청하자 상담사는 무수료 등록을 완료했으며, 금리는 고정이고 변동 시 문자, 카톡으로 알린다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

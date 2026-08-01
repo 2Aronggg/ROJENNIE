@@ -4,7 +4,7 @@ import json
 import unittest
 from types import SimpleNamespace
 
-from server.policy.gateway import LLMPolicyGateway, PolicyDenied, redact_pii
+from server.policy.gateway import LLMPolicyGateway, PolicyDenied, redact_pii, sanitize_llm_text, sanitize_llm_texts
 
 
 class _Models:
@@ -51,3 +51,13 @@ class PolicyGatewayTests(unittest.TestCase):
                 response_schema={},
             )
         self.assertEqual(client.models.contents, "")
+
+    def test_sanitize_drops_compensation_and_legal_conclusion_claims(self) -> None:
+        self.assertEqual(sanitize_llm_text("배상액 100만원을 지급해야 합니다"), "")
+        self.assertEqual(sanitize_llm_text("이것은 명백히 불완전판매입니다"), "")
+        self.assertEqual(sanitize_llm_text("환급될 것입니다"), "")
+        self.assertEqual(sanitize_llm_text("근거 문서를 확인하세요"), "근거 문서를 확인하세요")
+
+    def test_sanitize_texts_filters_list_and_keeps_order(self) -> None:
+        result = sanitize_llm_texts(["증빙 서류를 준비하세요", "배상액을 요구하세요", "거래일을 확인하세요"])
+        self.assertEqual(result, ["증빙 서류를 준비하세요", "거래일을 확인하세요"])

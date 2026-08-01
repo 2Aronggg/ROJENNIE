@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_021184",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1348,
+        "consulting_content": "고객은 대출 연장과 비용, 금리 변동을 문의하고 본인 확인을 위해 개인정보와 계좌 정보를 제공했으며, 계좌 조회 방법을 요청하였다. 상담사는 보유 대출을 확인하고 연장은 모바일 앱에서 신청 가능하고 고정 금리 유지, 기간에 따라 재조정 가능함을 안내한 뒤, 안내 문자와 절차를 송부하고 신청 시점 및 추가 서류 필요 시 안내하겠다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

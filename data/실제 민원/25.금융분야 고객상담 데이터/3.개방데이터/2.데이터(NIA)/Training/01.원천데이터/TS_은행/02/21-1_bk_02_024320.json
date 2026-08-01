@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_024320",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1103,
+        "consulting_content": "고객은 외국인 급여 송금 시 금액이 잘못 입금돼 정정 방법을 문의하였고 상담사는 수취인 동의가 없으면 반환이 불가하므로 영업점 방문해 자금 반환 청구를 해야 한다고 안내하였다. 고객은 반환에 필요한 서류와 이메일, 팩스 전송 가능, 수수료는 없음을 확인하고 서류를 준비해 영업점에 방문하겠다고 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

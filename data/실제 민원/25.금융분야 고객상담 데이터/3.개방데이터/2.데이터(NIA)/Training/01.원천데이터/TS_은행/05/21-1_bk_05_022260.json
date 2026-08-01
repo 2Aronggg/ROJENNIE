@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_022260",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1072,
+        "consulting_content": "고객은 외국인 계좌의 송금 한도 제한으로 송금이 안 된다고 문의했으며, 한도 증액, 해제는 모바일 앱에서 신청 가능하지만 대상자 여부에 따라 전화로는 처리할 수 없다고 안내받았다. 고객은 영업점 방문을 통해 신분증, 거주지 증명서, 거래 목적 서류를 제출해 한도 해제를 신청하기로 하였고, 상담사는 서류 제출, 검토 후 1~3일 내 결과 통보와 수수료 안내, FAQ 참고를 권유하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_013859",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1302,
+        "consulting_content": "고객은 통장 내역을 엑셀 파일로 세무사 사무실에 이메일 전송하고 싶다고 요청하였고 상담사는 스마트폰 뱅킹 앱의 ‘거래내역, 간편 전송’ 메뉴 이용 방법을 안내하고 보안은 암호화된 채널임을 설명하였다. 고객은 이메일 주소를 제공하였고 상담사는 엑셀 파일을 해당 주소로 즉시 전송하고 문자 안내를 약속하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

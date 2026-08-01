@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_026454",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 958,
+        "consulting_content": "고객은 50만원이 모르는 입금된 사실을 알리고 반환 처리를 요청하였고 상담사는 입금 내역을 확인해 ‘홍길동’이 송금한 것임을 안내하고, 직접 반환은 불가하므로 예금주와 연결하거나 반환 절차와 필요 서류를 안내하고, 연락처를 문자로 전달하고 결과는 SMS, 이메일로 알려드리겠다고 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

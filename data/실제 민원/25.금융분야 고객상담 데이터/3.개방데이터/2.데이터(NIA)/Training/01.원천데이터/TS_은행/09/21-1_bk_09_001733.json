@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_001733",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1299,
+        "consulting_content": "고객은 환전 가능 금액, 소액권 수량, 필요 서류, 우대 환율 조건, 어플 예약 절차, 캐나다 달러 환전 방식, 수수료 및 우대율 확인 방법 등을 문의하였고, 상담원은 신분증 지참, 어플 예약 시 우대 수수료 적용, 임직원 할인 조건, 권종별 재고 확인 권장, 어플을 통한 환율,수수료 확인 절차 등을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

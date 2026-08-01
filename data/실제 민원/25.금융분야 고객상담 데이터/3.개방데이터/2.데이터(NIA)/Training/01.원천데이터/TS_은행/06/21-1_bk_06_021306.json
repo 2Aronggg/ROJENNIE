@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_021306",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1568,
+        "consulting_content": "고객은 주택담보대출의 현재 원금 상환 시작 시점과 일정, 조기상환 절차를 문의하였고 상담사는 계좌, 생년월일 확인 후 거치기간 종료와 새로운 자동출금일, 금액을 안내하고, 조기상환 서류, 신청방법을 설명하며 연락처를 업데이트하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

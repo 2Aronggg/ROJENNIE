@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_003657",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1170,
+        "consulting_content": "고객은 대출 미납 금액 확인과 신용카드 할부 연체 시 처리 방침 및 상환 유예, 금리 조정 옵션을 문의하였고 상담사는 현재 대출 원금, 이자, 총 납부액을 안내하고, 연체 시 정보 공유 및 카드 정지 가능성을 설명하며, 가상계좌 생성 및 입금 방법을 안내하고, 모바일 앱을 통한 대출 조회 방법을 알려 주었다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_020333",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 2206,
+        "consulting_content": "고객은 마이너스 통장 연장 방법과 앱 이용 여부, 금리 인하 요구권 신청 절차를 문의하였고 상담사는 연장은 에이블 앱을 통해 승인 후 문자로 진행 가능하고, 금리 인하 신청은 온라인 뱅킹, 앱 메뉴에서 가능하며 해외 신청 시 추가 인증이 필요함을 안내하고, 자산 증가가 심사에 반영될 수 있음을 설명한 뒤 문자 링크와 지점 메모를 제공하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

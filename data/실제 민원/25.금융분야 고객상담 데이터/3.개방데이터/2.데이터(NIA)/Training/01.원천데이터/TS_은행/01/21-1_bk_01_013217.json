@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_013217",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 2080,
+        "consulting_content": "고객은 ●월 ●●일 날 핸드폰으로 이체한 ●● ●원의 입금처를 기억하지 못해 확인을 요청했다. 상담사는 해당 거래 내역을 조회했다. 송금처가 ▲▲은행임을 확인했으나, 받는 사람의 구체적인 정보를 은행이 직접 제공할 수 없어 ▲▲ 고객센터에 전화하여 '연결 요청'을 하도록 안내했다. 고객센터 전화번호를 안내하고, 연결을 통해서만 상대방과 통화 가능함을 재차 강조하며 상담을 마쳤다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

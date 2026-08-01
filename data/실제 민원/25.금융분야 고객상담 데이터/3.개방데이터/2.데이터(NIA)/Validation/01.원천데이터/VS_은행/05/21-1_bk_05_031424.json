@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_031424",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1081,
+        "consulting_content": "고객은 하루 이체 한도 계좌라 폰뱅킹 이체가 가능한지 문의하였고 상담사는 해당 계좌가 전자금융 한도 계좌임을 안내하고, 일일 한도 초과 시 폰뱅킹 이체가 제한되고 ATM, 창구 이용 또는 한도 해제 요청이 가능하다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

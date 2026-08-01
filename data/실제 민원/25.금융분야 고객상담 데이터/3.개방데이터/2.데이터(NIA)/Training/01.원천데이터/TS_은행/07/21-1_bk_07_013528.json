@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_013528",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 798,
+        "consulting_content": "고객은 전세 대출 금리 인하 조건인 적금 유지와 여행 적금 해지, 위약금 처리, 청약 혜택, 자동이체 설정 등을 문의하였고 상담사는 매월 일정 금액 이상 적금을 유지하면 요건 충족, 해지 시 새 적금 가입 및 위약금은 대출 상환에 차감, 청약은 우선 공급, 가점 상승 혜택, 자동이체는 인터넷뱅킹, 모바일 앱에서 설정 가능함을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

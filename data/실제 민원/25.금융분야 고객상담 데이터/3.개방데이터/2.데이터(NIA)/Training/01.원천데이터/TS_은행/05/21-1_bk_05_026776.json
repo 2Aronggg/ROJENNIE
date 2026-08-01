@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_026776",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1503,
+        "consulting_content": "고객은 모바일 앱으로 타행 계좌 이체를 시도했으나 샵 버튼이 작동하지 않아 앱 업데이트와 비밀번호 입력을 요청받았고, 상담사는 직접 이체는 불가하므로 앱 이용을 권고하고 일회 이체 한도와 하루 한도, 상향 신청 절차를 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

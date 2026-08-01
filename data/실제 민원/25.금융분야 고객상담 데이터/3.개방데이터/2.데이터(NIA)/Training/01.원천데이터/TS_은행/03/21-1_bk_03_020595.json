@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_020595",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 979,
+        "consulting_content": "고객은 정기 적금 자동이체 금액이 일부만 이체된 점과 상품의 납부 방식, 위약금 등을 문의하였고 상담사는 계좌, 비밀번호 확인 후 분기 납부형 상품임을 설명하고, 조기 해지 시 위약금 발생과 수수료 없음을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

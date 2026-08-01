@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_017605",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1361,
+        "consulting_content": "고객은 급히 입금해야 하는 금액을 위해 가상 계좌 발급을 요청하였고 상담사는 이름, 생년월일, 휴대폰, 비밀번호 확인 절차를 진행하고 비밀번호 재입력 후 인증을 완료하였다. 이후 상담사는 가상 계좌 번호와 입금 마감 시간 및 금액 정확성 안내를 문자로 발송하였으며, 고객은 이를 확인하고 감사 의사를 표했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

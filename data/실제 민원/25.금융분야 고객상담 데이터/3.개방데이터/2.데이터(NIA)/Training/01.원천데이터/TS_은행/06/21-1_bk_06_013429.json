@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_013429",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1371,
+        "consulting_content": "고객은 대출 이자 납부를 원한다며 계좌번호, 비밀번호 등 본인 확인을 진행하였고 상담사는 가상 계좌를 발송하고 금액, 이자, 연체 이자를 안내하였으며 영수증 문자 발송과 위약금 안내, 알림 서비스 신청을 처리하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

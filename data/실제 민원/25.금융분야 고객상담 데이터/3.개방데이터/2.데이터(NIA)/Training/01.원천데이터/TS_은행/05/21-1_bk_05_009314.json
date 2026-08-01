@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_009314",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1488,
+        "consulting_content": "고객은 계좌개설 후 이체한도 해지 대상이 아니라 이체가 안 된다고 문의하였다. 상담사는 직장인 여부를 확인하고 재직, 소득 증명서 등 서류를 관리지점에 팩스로 송부하도록 안내하였다. 서류 전송 후 영업점에서 검토하여 해지 승인 여부를 문자와 전화로 통보하고, 승인 시 인터넷뱅킹, 모바일앱에서 이체한도 재설정 방법을 안내하기로 하였다. 고객은 오후 2시 이후 연락 가능 시간을 제공하고, 추가 문의는 없다고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

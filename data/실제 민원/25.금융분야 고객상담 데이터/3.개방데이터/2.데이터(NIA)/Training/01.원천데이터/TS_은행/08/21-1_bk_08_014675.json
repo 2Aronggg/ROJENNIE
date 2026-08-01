@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_014675",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 977,
+        "consulting_content": "고객은 대출 연장을 시도했으나 오류와 중복 신청 메시지가 나타났고, 상담사는 계좌 확인 후 오류 원인을 파악하고 본부에 확인 후 전화로 재연락하겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

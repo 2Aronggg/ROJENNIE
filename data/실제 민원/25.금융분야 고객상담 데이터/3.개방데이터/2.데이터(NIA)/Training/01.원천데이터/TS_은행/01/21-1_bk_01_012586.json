@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_012586",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 2134,
+        "consulting_content": "고객은 2건의 출금 내역 상세를 문의하였고 상담사는 생년월일 앞자리와 계좌, 비밀번호를 요청하였다. 고객은 입력 오류 후 재입력으로 확인이 완료되었다. 상담사는 거래를 확인해 대출 상환과 적금 자동 이체임을 안내하고 두 거래가 정상 처리됐음을 확인하였다. 고객은 출금 알림 서비스를 신청하고자 하였고 상담사는 설정을 진행하겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

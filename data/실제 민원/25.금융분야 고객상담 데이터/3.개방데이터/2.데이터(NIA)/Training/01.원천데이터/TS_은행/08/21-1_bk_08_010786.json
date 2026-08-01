@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_010786",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1296,
+        "consulting_content": "고객은 전세 계약 연장 및 대출 연장을 문의하고 계좌, 신분 정보를 제공하였고 상담사는 연장 절차에 필요한 서류와 영업점 방문 안내, 서류 제출 후 5~7일 소요와 금리 변동 가능성을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

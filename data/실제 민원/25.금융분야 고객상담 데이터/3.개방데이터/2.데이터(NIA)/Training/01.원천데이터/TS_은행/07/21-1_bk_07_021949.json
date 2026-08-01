@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_021949",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1201,
+        "consulting_content": "고객은 대출 우대 금리 적용 여부와 조건 충족 시점을 문의하였고 상담사는 급여이체, 적금 가입이 우대 조건이며 현재 시스템 조회 결과 아직 충족되지 않아 금리 혜택이 적용되지 않았음을 안내하고, 다음 급여이체일 또는 적금 납입일 기준으로 월말까지 충족 시 적용된다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

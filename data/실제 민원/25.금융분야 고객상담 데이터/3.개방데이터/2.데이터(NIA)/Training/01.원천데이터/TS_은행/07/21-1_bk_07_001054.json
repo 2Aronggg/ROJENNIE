@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_001054",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1199,
+        "consulting_content": "고객은 카드 결제금의 대출 우대 금리 적용 방법과 제휴 카드 사용 실적과 할부 결제 금액의 실적 인정 방법에 대해서 문의하였고, 상담사는 카드 결제 금액의 대출 금리 감면 조건, 카드 결제금의 대출 우대 금리 적용 방법, 카드 대금 출금에 따른 대출 우대금리 적용 방법에 대해서 설명했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

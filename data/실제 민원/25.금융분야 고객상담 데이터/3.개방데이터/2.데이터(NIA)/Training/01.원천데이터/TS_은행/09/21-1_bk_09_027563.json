@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_027563",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 920,
+        "consulting_content": "고객은 바트와 달러 환전 가능 여부와 금액, 환율, 수수료, 해외 송금 서류 및 외화 이자율을 문의하였고 상담사는 현재 보유 한도 안내가 어려움과 금액 제시 시 가능 여부 확인, 사전 예약 시 수수료 우대와 환율 제공, 신분증 및 금액 지참 안내, 해외 송금 절차와 이자율 설명을 제안하고 예약을 도와주겠다고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_024059",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1764,
+        "consulting_content": "고객은 대출 상환 방법과 일정, 변동 금리 적용 절차 및 확인 방법, 이자 청구 시점과 자동 차감, 월별 명세서 발송 시기를 문의하였고 상담사는 원리금 균등 상환 방식과 월별 납부액, 변동 금리 적용 시 별도 안내, 모바일 뱅킹으로 금리 확인 가능, 이자는 매월 말 자동 차감되며 명세서는 이메일, 알림으로 매월 말 발송된다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

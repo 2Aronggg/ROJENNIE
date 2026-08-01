@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_008924",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1378,
+        "consulting_content": "대출 상환을 위한 가상계좌 발급 및 입금 절차를 안내하였다. 고객은 휴대폰 인증을 완료하고, 가상계좌 번호와 입금 기한을 전달받았다. 입금 시 정확한 금액과 시간만 충족하면 자동 처리되며, 영수증 문자와 푸시 알림을 통해 입금 확인이 가능함을 안내하였다. 이중 출금 방지를 위해 자동이체 잔액을 비우도록 권고하고, 비밀번호 주기적 변경 방법을 설명하였다. 비밀번호 변경은 웹뱅크 또는 모바일 앱에서 현재 비밀번호 입력 후 새 비밀번호를 두 번 입력하는 절차임을 안내하였다. 추가 문의 사항이 없으며 상담을 종료하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

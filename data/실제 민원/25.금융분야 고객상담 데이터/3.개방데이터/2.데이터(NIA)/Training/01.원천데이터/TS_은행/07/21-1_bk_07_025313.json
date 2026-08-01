@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_025313",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1372,
+        "consulting_content": "고객은 부수거래 감면 해지와 처리 기간, 추가 비용, 급여이체 일자 변경 가능 여부 등을 문의하였고 상담사는 신원 확인 후 2~3일 내 처리, 비용 없음, 일자 변경 가능, 급여 인정 기준, 연간 최대 5회 적용, 중복 불가 등을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

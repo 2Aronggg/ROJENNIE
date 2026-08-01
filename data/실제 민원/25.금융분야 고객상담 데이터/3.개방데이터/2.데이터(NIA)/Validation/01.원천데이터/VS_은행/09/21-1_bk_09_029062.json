@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_029062",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1087,
+        "consulting_content": "고객은 환전 신청 수령일을 오늘에서 원하는 날짜로 변경하고 싶어 앱 로그인 후 환전 내역 조회, 수령점, 수령일 변경 절차를 문의했으며, 상담사는 앱 메뉴 안내, 내역 조회 방법, 수령점, 수령일 변경 방법을 단계별로 설명하고 변경을 완료시켰고, 수수료 확인 방법과 영수증 이메일 발송 안내까지 제공하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

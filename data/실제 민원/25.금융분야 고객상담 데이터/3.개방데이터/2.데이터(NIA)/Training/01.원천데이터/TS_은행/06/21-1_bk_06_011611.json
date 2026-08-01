@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_011611",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1259,
+        "consulting_content": "고객은 대출 연체 여부와 자동 출금 여부를 문의했으며 운전 중이라 계좌 번호 제공이 어려워 인증 방법을 요구하였고 상담사는 계좌 번호, 비밀번호 인증 또는 앱 인증을 안내하고 연체 일수와 이자 현황을 설명하며 자동이체 설정 가능성을 제시하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

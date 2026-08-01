@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_019790",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "80세이상",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1194,
+        "consulting_content": "고객은 입금된 채권 중계 요청을 위해 은행, 계좌, 입금액, 시간을 제공했으며 추가 서류 준비 의사를 밝혔고 상담사는 계좌 확인, 인증 절차 진행, 필요 서류 안내, 진행 상황을 지속적으로 알려주겠다고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

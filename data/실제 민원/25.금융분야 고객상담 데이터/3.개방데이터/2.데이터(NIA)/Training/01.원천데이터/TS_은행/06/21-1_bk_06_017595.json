@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_017595",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1098,
+        "consulting_content": "고객은 대출 연체로 입금해야 할 금액과 납부일을 문의하였고 상담사는 연체 원리금 총액과 입금 금액을 안내하고, 입금 확인 시 상환 계획을 재안내하겠으며, 연체 시 발생하는 일일 이자 및 벌금 부과 방식을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

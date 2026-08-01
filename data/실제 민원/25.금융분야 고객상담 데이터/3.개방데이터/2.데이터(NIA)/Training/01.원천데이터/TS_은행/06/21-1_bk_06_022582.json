@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_022582",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1073,
+        "consulting_content": "고객은 내일 대출 원리금 자동 출금을 문의했고 상담사는 계좌, 비밀번호를 받아 폰뱅킹 미가입으로 앱 상환을 안내하였다. 고객은 오늘 상환 일정, 금액을 물었고 상담사는 원금 500만원, 이자 45만원, 총 545만원이라 답변하였다. 고객은 조기 상환 할인 여부를 물었고 상담사는 연 0.5% 할인 적용과 앱 신청 방법을 안내하였다. 고객은 금리 변동과 자동 이체를 질문했으며 상담사는 고정 금리와 자동 이체 설정 방법을 설명하였다. 고객은 서류 이메일 발송을 요청했고 상담사는 발송 및 문자 확인을 약속하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

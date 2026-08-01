@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_022649",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 865,
+        "consulting_content": "고객은 임대차 계약서 기반 대출 연장을 원하고 계약 기간 확인, 기존 조건 유지 및 모바일 앱 화면 선택과 서류 안내를 요청하였고 상담사는 모바일 연장 절차와 서류 촬영 방법, 추가 서류 가능성 및 문자 안내 제공을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

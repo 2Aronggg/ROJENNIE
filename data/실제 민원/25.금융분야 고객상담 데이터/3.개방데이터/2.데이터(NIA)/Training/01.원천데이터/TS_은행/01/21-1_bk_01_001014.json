@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_001014",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1263,
+        "consulting_content": "고객은 저축 예금 해약 후에도 자동이체가 계속되어 금액이 빠진 상황을 문의했고, 상담사는 자동이체 설정 해지 및 차단, 이자 정산, 거래내역 제공 및 해지 후 24시간 이내의 반영 여부 확인 등을 안내하며 향후 자동이체 관리 주의사항을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

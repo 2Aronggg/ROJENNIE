@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_027599",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 955,
+        "consulting_content": "고객은 대출 연장 신청 여부 확인을 위해 전화했고, 상담사는 계좌 정보를 받았다. 고객은 연장이 아직 완료되지 않았음을 확인했고, 상담사는 신분증, 사업자등록증, 매출증빙 서류 제출과 온라인 포털 업로드 방법을 안내하였다. 고객은 의심스러운 문자에 대해 문의했으며, 상담사는 사기 가능성을 경고하고 클릭 금지를 권고하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

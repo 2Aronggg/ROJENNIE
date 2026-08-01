@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_000508",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1684,
+        "consulting_content": "고객에게 자동이체 통장의 은행과 금리 감면 혜택의 연관성을 안내하고, 부수거래 조건 충족을 위해 급여 입금 계좌를 ★★은행으로 변경해야 함을 설명하였다. 또한 조기 상환 시 위약금 부과 기준과 확인 방법, 자동 차감 절차를 안내하였다. 이어서 대출 조건 변경 및 추가 대출 신청 절차와 소요 기간을 설명하였으며, 급여통장 변경 및 자동이체 재등록 방법과 주의사항을 구체적으로 안내하였다. 마지막으로 고객의 모든 문의사항을 종합적으로 해소하고 향후 대출 관리 절차를 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

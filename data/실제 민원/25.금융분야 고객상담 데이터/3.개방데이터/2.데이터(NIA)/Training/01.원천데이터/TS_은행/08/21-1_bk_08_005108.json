@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_005108",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1494,
+        "consulting_content": "고객은 사업자 대출 연장을 요청하였고, 상담원은 계좌 확인 후 재무제표와 사업계획서 제출을 안내 하였다. 상담원은 서류 접수 후 2~3일 내 심사 결과가 문자로 통보되며, 연장 약정은 전자 서명으로 처리되었고 금리와 상환 조건은 기존과 동일하나 잔액 기준으로 이자 차이가 발생할 수 있음을 안내하였고, 자동이체 설정 방법에 대해서도 설명했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

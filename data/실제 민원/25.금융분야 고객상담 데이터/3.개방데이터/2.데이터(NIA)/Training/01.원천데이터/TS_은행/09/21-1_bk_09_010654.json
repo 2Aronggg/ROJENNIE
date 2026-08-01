@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_010654",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1301,
+        "consulting_content": "고객은 환전, 송금 금액이 동일자, 동일인 기준 한도를 초과할 경우 및 일일 한도 초과 시 자동으로 ★★★에 보고되고 전산망에 기록된다는 구체적 예시와 해외 송금 적용 여부를 문의하였고 상담사는 초과 시 실시간 보고, 기록이 이루어지며 해외 송금도 일정 금액 초과 시 동일하게 보고된다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

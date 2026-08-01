@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_025566",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1090,
+        "consulting_content": "고객은 대출 상환 연장 신청을 요청하고 본인 확인을 위해 성명, 생년월일, 대출번호, 계좌비밀번호를 제공하였고 상담사는 대출이 청약 종합 저축을 담보로 한 것이며 자동 연장 구조임을 확인하고, 연장 시 이자율 유지와 수수료 없음, 연체 시 연체료 적용을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

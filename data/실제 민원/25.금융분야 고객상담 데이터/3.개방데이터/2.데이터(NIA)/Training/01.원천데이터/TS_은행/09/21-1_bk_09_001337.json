@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_001337",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 636,
+        "consulting_content": "고객은 보유한 페소를 엔화로 직접 환전하고 싶다고 요청했으며, 상담사는 페소를 먼저 원화로 매입한 뒤 엔화로 재환전해야 함을 안내하고, 매입 가능한 지점 확인과 신분증, 외화계좌 확인서 등 서류 필요, 하루 1,000달러 한도, 엔화 매입 시 수수료 0.3%, 최소 5,000원임을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

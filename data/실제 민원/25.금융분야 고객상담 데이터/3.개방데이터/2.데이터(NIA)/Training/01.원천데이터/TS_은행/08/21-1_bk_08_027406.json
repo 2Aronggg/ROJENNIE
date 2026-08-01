@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_027406",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1390,
+        "consulting_content": "고객은 기업용 시설 일반 자금 대출 연장을 요청하고 계좌, 비밀번호 확인을 시도했으며, 방문 시간 문의를 하였고, 상담사는 계좌 확인 절차 후 비대면 연장은 불가하고 서류 지참 후 평일 9시~18시 지점 방문이 필요함을 안내하고, 서류 목록을 문자로 발송해 번호를 확인받아 전송했으며, 추가 문의 없음을 확인하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

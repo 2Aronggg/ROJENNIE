@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_007883",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 975,
+        "consulting_content": "고객은 어제 저녁에 입금된 출처를 모르는 금액이 자신의 계좌에 들어왔다고 문의하였다. 상담원은 거래내역을 조회하여 해당 입금이 법원 회생 전세금 반환금으로 표시됨을 확인하였다. 고객에게는 해당 금액을 법원에 반환한다는 의사를 서면으로 제출해야 하며, 서면은 은행 지점 방문 또는 우편으로 보내고 신분증 사본과 입금 내역 사본을 첨부해야 한다고 안내하였다. 추가적인 미확인 입금은 없으며, 회수 절차 외에 별도 문의사항이 없다고 확인하였다. 상담은 고객이 서면 제출 준비를 하겠다고 답하고 종료하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

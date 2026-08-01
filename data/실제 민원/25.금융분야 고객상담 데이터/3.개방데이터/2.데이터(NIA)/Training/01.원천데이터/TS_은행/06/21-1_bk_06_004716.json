@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_004716",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1089,
+        "consulting_content": "고객은 대출 원금 가상계좌 입금을 요청했으나 상담사는 소상공인 정책자금이라 가상계좌 발급이 불가함을 안내하고, 연체 금액 및 입금 마감 시각 정보를 문자로 전송하겠다고 하였으며, 자동이체 계좌로 입금하거나 별도 상환계획 상담을 예약할 수 있다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

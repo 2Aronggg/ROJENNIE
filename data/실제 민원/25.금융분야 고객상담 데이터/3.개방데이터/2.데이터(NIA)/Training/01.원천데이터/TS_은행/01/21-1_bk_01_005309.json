@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_005309",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1666,
+        "consulting_content": "고객은 특정 일자에 발생한 출금 내역의 수취인 정보를 확인하고자 문의하였다. 상담원은 거래를 조회하여 해당 건이 고객이 설정한 자동이체이며 내부 계좌로 이체된 것임을 확인하였다. 시스템 오류로 외부 송금으로 표시된 점을 설명하고 오류가 수정되어 정상 처리되었음을 안내하였다. 향후 거래 내역은 모바일, 인터넷뱅킹에서 확인하고, 의심 시 콜센터에 문의하도록 권고하였다. 자동이체 해지는 앱의 자동이체 관리 메뉴에서 해지할 수 있음을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

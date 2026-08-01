@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_027510",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 982,
+        "consulting_content": "고객은 대출 기간 연장을 원하며 두 상품의 금리 차이와 부수거래 체크 여부를 문의했고, 상담사는 연 2%와 2.5% 금리 차이를 설명하고 부수거래는 혜택을 위해 필수이며, 연장에 필요한 서류는 신분증, 계약서 사본이라고 안내했으며, 금리는 계약 확정 다음 영업일에 적용된다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

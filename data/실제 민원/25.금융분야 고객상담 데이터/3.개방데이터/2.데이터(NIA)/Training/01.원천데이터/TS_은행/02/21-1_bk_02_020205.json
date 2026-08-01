@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_020205",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1368,
+        "consulting_content": "고객은 자금 반환 관련 절차와 서류 문의를 하였고 상담사는 거래 고유 번호와 날짜, 계좌 정보를 요청하며 시스템 조회를 진행하고, 확인 결과와 금액을 재확인한 뒤 다음 절차를 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

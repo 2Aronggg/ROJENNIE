@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_023128",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1705,
+        "consulting_content": "고객은 출금, 상환 금액과 날짜, 이자 내역 확인 및 두 차례 출금 합산, 과거 이자 납부 차이 검토, 대출 연장 가능 여부를 문의하였고 상담사는 계좌, 신분 확인 후 잔액, 이자 납부 현황을 안내하고, 합산 상환액을 제시하며, 이자 차감 결과와 연장 조건을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

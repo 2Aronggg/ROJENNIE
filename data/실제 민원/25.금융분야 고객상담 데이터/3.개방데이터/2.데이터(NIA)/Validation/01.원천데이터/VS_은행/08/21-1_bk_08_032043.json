@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_032043",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1080,
+        "consulting_content": "고객은 마이너스 통장 만기 연장을 문의하고 본인 확인 및 계좌 정보를 제공하였고 상담사는 대출 잔액, 이자율을 확인 후 어플에서 클릭 몇 번으로 연장 가능하고 기존 이자율 유지 여부, 연장 기간, 수수료를 안내하였으며 추가 서류 없이 진행 가능함을 설명하고, 고객은 추가 질문이 없다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

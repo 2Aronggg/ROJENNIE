@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_010431",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1155,
+        "consulting_content": "고객은 대출 전액 상환 의사를 밝히고 필요한 서류, 절차와 위약금 여부를 문의하였고 상담사는 현재 잔여 원금과 연체, 위약금이 없음을 확인하고, 상환 의향서 제출 및 잔액, 완료 확인서 발송, 재대출 가능 여부를 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

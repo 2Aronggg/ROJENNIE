@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_022850",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 928,
+        "consulting_content": "고객은 새 계좌의 하루 이체 한도가 자동으로 상승하지 않아 어떻게 해야 하는지 문의하였고 상담사는 한도는 자동 해제되지 않으며 카드 결제, 공과금 자동이체 실적을 충족해야 일반계좌 이전이 가능하고, 한도 조정은 온라인 신청 후 즉시 반영되지 않아 영업점 방문이 필요하다고 안내하였다. 고객은 실적 충족 시 ★★카드 결제 월 누적 금액을 확인하고, 신분증, 거래내역서, 자동이체 신청서 사본을 지참해 평일 10시~16시 영업점에 방문하겠다고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_022799",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 916,
+        "consulting_content": "고객은 신용대출 연장을 시도했으나 오류 코드를 확인했고, 상담사는 본인확인 절차 후 시스템 점검으로 지연이 발생한다며 10분 후 재신청을 요청하고 기존 오류를 취소하겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

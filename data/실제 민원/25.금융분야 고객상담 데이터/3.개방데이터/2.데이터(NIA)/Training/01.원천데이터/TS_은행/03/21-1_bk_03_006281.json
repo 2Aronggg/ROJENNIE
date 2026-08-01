@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_006281",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1257,
+        "consulting_content": "고객의 출금 발생 사유를 확인한 결과 자동이체 두 건이 인출되었고 일부 금액은 재입금되었음을 안내하였다. 자동이체는 지난달 ★★★★ 기관에서 등록된 건으로 상세 내역 및 환불 여부는 해당 기관에 문의해야 함을 설명하였다. 고객이 자동이체 해지를 요청하였으나 텔레뱅킹 미가입 상태로 상담원 해지는 불가하며, 해지는 영업시간 내 처리 시 1~2일 내 반영됨을 안내하였다. 비밀번호 오류 시 최신 비밀번호 입력이 필요함을 안내하였고, 모르는 거래일 경우 취소, 환불 및 분쟁 신고 절차를 지원할 수 있음을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_000441",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1108,
+        "consulting_content": "고객은 모르는 입금 내역의 출처, 입금자 확인 절차, 계좌 보호 조치, 신고 방법 및 중계 요청 처리 단계에 대해 문의했다. 상담사는 입금 경로 확인 방법, 개인정보 보호 조치, 신고 절차와 필요 서류, 중계 요청 처리 시간 및 주의사항에 대해 안내했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

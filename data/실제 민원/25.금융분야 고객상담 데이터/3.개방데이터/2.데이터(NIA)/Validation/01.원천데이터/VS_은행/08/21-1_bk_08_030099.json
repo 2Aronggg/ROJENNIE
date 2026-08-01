@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_030099",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1256,
+        "consulting_content": "고객은 대출 만기 연장을 신청하고 싶으며 우편 안내를 받지 못했고 앱 대신 전화로 진행하고자 하였고, 상담사는 본인 확인 및 보안 인증 후 연장 신청 방법을 안내하며, 전화 및 지점 방문을 통한 절차와 신분증 사본, 최근 3개월 급여 내역서, 기존 대출 계약서 등 필요한 서류와 전송 방법을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

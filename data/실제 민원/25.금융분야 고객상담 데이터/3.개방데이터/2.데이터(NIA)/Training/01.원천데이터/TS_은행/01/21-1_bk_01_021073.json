@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_021073",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1198,
+        "consulting_content": "고객은 전신환 오픈뱅킹으로 ●●●원을 송금했으나 내역이 안 뜨는 것을 확인하고자 했고, 상담사는 계좌, 본인 확인 정보를 요청한 뒤 시스템 조회를 통해 해당 금액이 ★★은행을 통해 정상 출금됐음을 안내하고, 수취은행 계좌 확인은 오픈뱅킹 제공기관에 문의하도록 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

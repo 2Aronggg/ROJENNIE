@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_025427",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 2298,
+        "consulting_content": "고객은 대출 연장을 요청하고 계좌 확인을 위해 본인 정보와 비밀번호를 제공하며 인증 방법을 문의하였고 상담사는 연장 조건 및 필요 서류, 대체 인증 절차, 적용 이자율, 상환 일정 등을 안내하고 신청 완료 시 문자, 이메일 발송 및 영업일 기준 처리 기간을 알려 주었다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

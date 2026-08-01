@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_013511",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1182,
+        "consulting_content": "고객은 이름과 부서를 알려주고 해외 법인 계좌 입금자 확인을 위한 중계 요청을 하였고 상담사는 시스템 조회 후 중계 절차를 진행하며 영업일 1~2일 내 처리 및 문자 안내를 약속하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_004032",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1237,
+        "consulting_content": "고객은 대출 우대 금리 전환에 카드 사용 금액 확인을 요청했고 상담사는 카드 사용 금액은 확인 불가하나 출금 계좌에서 일정 금액 이상 출금 시 우대 금리가 적용된다고 안내하였다. 고객은 현재 대출 잔액과 영점일 프로 적용 여부를 물었고 상담사는 대출 규모와 상환 방식에 관계없이 영점일 프로가 자동 적용된다고 설명하였다. 고객은 혜택을 받기 위한 예금, 사용 기준을 확인하고자 했고 상담사는 월 사용액, 예금액 기준을 제시하며 추가 문의 없음을 확인하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

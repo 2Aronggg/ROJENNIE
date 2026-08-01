@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_002699",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1729,
+        "consulting_content": "고객은 비상금 대출 만기 연장 시 이자율 변동, 이자 정산 방식, 신청 절차, 상환 계획, 조기 상환 혜택 등을 문의했다. 상담사는 대출 연장 기간별 조건과 신청 방법을 안내하고, 모바일 앱 이용 절차와 상환 계획, 조기 상환 시 이점까지 설명했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

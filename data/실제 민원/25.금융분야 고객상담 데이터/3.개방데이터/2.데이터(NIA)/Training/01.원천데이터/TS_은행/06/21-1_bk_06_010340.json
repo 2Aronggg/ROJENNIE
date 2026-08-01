@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_010340",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1669,
+        "consulting_content": "고객은 2024년 10월 5일 대출 일부를 입금했으나 차감된 금액이 조기 상환 수수료 6만원 때문임을 확인하고 남은 원금, 이자 계산과 금리 변동 여부, 서면 내역 이메일 발송을 요청하였고 상담사는 수수료 금액을 안내하고 잔액, 이자 계산을 설명하며 금리 유지와 이메일 송부를 약속하고 낮은 금리 상품 검토 가능성을 제시하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

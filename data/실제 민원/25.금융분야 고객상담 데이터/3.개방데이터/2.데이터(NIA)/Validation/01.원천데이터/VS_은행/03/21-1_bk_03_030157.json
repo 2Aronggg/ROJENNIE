@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_030157",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 826,
+        "consulting_content": "고객은 관리비 자동납부를 ★★은행으로 신청하려 했고 문자 인증이 안돼 차단을 해제했으나 여전히 안돼 상담사는 앱 신청 또는 지점 방문을 안내하고, 서류 준비를 요청하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

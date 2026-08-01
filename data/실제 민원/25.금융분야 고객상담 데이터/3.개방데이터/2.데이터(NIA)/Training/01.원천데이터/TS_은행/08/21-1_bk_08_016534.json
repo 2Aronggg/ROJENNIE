@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_016534",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1103,
+        "consulting_content": "고객은 대출 연장 시 선택한 금리 인하 조건을 수정하고 싶어 온라인, 방문 신청 절차와 심사 기간을 문의하였고 상담사는 조건 변경은 온라인 뱅킹 메뉴에서 가능하며 1~2일 내 심사 결과를 문자로 안내하고, 부수거래는 유지된다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

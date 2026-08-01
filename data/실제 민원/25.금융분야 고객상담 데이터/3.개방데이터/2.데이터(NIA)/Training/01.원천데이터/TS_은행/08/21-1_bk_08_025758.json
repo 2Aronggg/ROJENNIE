@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_025758",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 800,
+        "consulting_content": "고객은 마이너스 통장 대출 연장 문자와 전화를 스팸, 보이스피싱으로 오인해 무시하고 끊었으며, 연장 절차와 마감일 등을 문의하였고 상담사는 연장은 문자 URL을 통해 진행하고, 연장 조건 확인, 동의 후 진행 가능하며, 신청은 만기 7일 전부터 가능하고 별도 서류는 필요 없으나 요청 시 안내한다는 내용으로 안내하고 추가 지원을 약속하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

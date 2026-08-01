@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_018107",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1073,
+        "consulting_content": "고객은 자동이체 실패 원인 확인을 위해 계좌 정보를 제공하였고 상담사는 입금 한도 초과로 이체가 제한됐으며 수수료는 없고 다음 이체일은 기존 날짜임을 안내하고, 한도 증액은 앱, 전화로 신청 가능하다고 설명하였다.고객은 자동이체 실패 원인 확인을 위해 계좌 정보를 제공하였고 상담사는 입금 한도 초과로 이체가 제한됐으며 수수료는 없고 다음 이체일은 기존 날짜임을 안내하고, 한도 증액은 앱, 전화로 신청 가능하다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

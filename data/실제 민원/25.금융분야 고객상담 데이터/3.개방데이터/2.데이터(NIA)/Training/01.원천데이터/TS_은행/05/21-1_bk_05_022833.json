@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_022833",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1378,
+        "consulting_content": "고객은 한도 계좌 해지를 원해 모바일 앱 이용을 요청했고, 상담사는 앱 메뉴 → 돼지 저금통 아이콘 → ‘금융거래 한도 해제’ 선택 후 사유, 본인 확인, 신청 절차를 안내하였다. 고객은 처리 기간, 서류 필요 여부와 전화, 팩스, 영업점 방문 방법을 물었고, 상담사는 3~5 영업일 소요, 별도 서류는 없으나 신분증 지참 권고와 전화 상담 후 팩스 안내, 영업점은 평일 9시~18시 사전 예약 권장을 설명하였다. 고객은 더 간단한 방법을 물었고, 상담사는 현재 앱, 영업점 방문이 유일한 빠른 방법이라고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

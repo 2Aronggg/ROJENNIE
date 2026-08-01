@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_012439",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1522,
+        "consulting_content": "고객은 대출 만기 연장을 요청하고 계좌 번호, 생년월일, 비밀번호 등 본인 확인 정보를 제공하였고 상담사는 정보를 확인하고 연장 신청 절차를 안내하였다. 고객은 연장 신청 마감 시점과 서류 제출 방법을 문의하였고 상담사는 만기일 이전, 최소 7일 전까지 신청하고 서류는 사진 촬영 후 모바일 앱, 카카오톡으로 전송하면 된다고 안내하였다. 고객은 추가 문의 없이 진행 의사를 밝히었고 상담사는 진행 중 문의 시 언제든 연락하라고 마무리하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

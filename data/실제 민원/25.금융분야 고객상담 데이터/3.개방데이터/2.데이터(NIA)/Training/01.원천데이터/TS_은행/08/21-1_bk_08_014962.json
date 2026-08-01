@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_014962",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1365,
+        "consulting_content": "고객은 마이너스 통장 만기 연장을 위해 연장 신청 절차와 필요 서류를 문의하였고, 상담사는 계좌 확인 후 앱 내 대출 관리 메뉴 접근 방법을 안내하고, 연장 신청에 신분증 사본, 소득증명서 제출이 필요함을 설명한 뒤 사진 첨부 방법과 영업일 1~2일 내 결과 통보를 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

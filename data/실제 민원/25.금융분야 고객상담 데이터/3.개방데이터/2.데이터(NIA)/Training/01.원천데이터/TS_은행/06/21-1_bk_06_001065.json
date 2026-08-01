@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_001065",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1406,
+        "consulting_content": "고객은 대출 상환 알림을 받고 잔액 부족으로 인한 연체 가능성을 확인하고자 했으며, 계좌 번호와 모바일 앱 사용 방법을 문의했다. 상담사는 앱 설치와 인증 절차를 안내하고, 전화 대출 연체 상황과 가상계좌 발급 가능성을 설명했다. 또한 고객이 문의한 연체 이자율과 비밀번호 재설정 방법에 대해서도 안내했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

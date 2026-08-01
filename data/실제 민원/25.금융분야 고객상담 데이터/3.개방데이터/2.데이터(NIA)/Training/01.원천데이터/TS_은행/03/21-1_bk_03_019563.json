@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_019563",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1575,
+        "consulting_content": "고객은 매월 ●일에 자동이체를 설정했으나 오늘 정기 적금으로 이체가 되었고 잔액 부족으로 자동이체가 보류된 상황을 확인하였고, 추가 입금 또는 이체일 연기를 원한다고 요청하였고 상담사는 계좌, 현재 잔액 부족을 안내하고, 입금 또는 일자 연기 옵션을 제시하며 재처리 일정을 알려 주었다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

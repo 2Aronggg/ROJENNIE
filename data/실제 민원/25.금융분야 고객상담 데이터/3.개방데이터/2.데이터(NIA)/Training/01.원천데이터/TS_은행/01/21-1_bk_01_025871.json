@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_025871",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1582,
+        "consulting_content": "고객은 인터넷뱅킹에서 거래 내역이 조회되지 않아 계좌, 비밀번호, 휴대폰 인증을 진행하도록 요청하였고 상담사는 신원 확인 절차를 안내하고 인증 코드를 발송, 입력받아 조회를 시도했으며, 모바일 인증 앱 설정 방법과 오래된 거래 조회는 별도 요청 필요함을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

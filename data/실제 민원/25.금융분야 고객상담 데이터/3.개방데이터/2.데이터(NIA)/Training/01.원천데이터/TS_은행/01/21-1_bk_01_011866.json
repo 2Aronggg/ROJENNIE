@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_011866",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1548,
+        "consulting_content": "고객은 출금 내역과 금액이 캐피탈에서 발생한 것인지 확인을 요청하고 본인 확인을 위해 이름, 계좌, 날짜를 제공하였으며 파일 누락과 자동이체 관련 문의도 제기하였다. 상담사는 제공된 정보를 토대로 거래 조회를 진행하고 수수료 가능성을 안내하며 OTF 파일 확인 및 캐피탈 고객센터 연락처를 제공하고, 자동이체 변경 방법과 할부, 대출 관련 안내도 추가로 제시하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

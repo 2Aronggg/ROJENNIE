@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_019947",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 980,
+        "consulting_content": "고객은 최근 현금 인출 내역이 확인돼 본인 모르게 ●●원이 출금된 사실을 신고했고, 상담사는 계좌와 비밀번호를 확인하여 ATM 출금 및 외부 자동이체 내역을 확인했다고 안내하였으며, 가족, 카드 사용 여부를 점검하고 계좌 보호를 위해 비밀번호 변경을 권고하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

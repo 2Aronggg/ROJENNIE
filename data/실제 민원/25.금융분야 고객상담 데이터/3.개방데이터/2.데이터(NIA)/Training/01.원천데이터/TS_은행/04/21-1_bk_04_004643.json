@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_004643",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1857,
+        "consulting_content": "고객은 모바일 앱으로 군적금 해지를 시도했으나 해지 옵션이 보이지 않고 전역 확인서 이미지가 불명확해 오류가 발생했으며, 동의서 화면에서도 해지 버튼이 활성화되지 않아 진행이 멈춘 상황이라고 하였고, 상담사는 전역 확인서 재촬영 및 텍스트 제출을 안내하고, 시스템 점검 후 예적금 전담 부서로 연결해 전문 안내를 제공하며, 고객에게 성명, 연락처를 확인하고 추후 연락을 약속하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

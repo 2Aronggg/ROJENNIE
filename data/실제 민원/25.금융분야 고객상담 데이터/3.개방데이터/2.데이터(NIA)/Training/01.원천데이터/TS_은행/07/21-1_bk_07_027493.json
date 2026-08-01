@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_027493",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1109,
+        "consulting_content": "고객은 대출 가능 여부와 청약저축, 적금 가입을 문의했고, 상담사는 어플 또는 지점 방문을 안내하고, 금리감면 조건, 서류 제출을 요구했으며, 현재 감면은 0.2%p이며, 어플 단계별 안내와 영업시간을 알려주고, 기타 펀드, CMA 등 상품도 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

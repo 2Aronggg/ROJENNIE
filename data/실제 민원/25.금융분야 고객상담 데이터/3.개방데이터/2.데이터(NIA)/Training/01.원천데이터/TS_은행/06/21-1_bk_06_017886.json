@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_017886",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1859,
+        "consulting_content": "고객은 계좌 번호를 모른 채 연체 해소와 자동이체 재설정을 요청했으며, 상담사는 본인 확인을 위해 인증 번호와 개인정보를 요구하고, 연체 금액 조회, 분할 납부 안내, 자동이체 재설정 절차를 진행하겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

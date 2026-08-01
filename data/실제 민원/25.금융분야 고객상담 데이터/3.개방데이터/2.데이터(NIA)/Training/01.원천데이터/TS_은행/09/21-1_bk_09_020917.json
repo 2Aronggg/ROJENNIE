@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_020917",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1001,
+        "consulting_content": "고객은 달러 환전을 원한다며 ★★ 앱을 이용한 예약 절차와 수수료, 수령 시점, 취소 방법을 문의하였고 상담사는 앱에서 환전 예약 메뉴 선택 후 금액 입력, 결제 정보를 입력하면 즉시 완료된다고 안내하고, 수수료는 환율에 포함돼 별도 청구되지 않으며 우대 적용 시 할인 혜택이 있다고 설명했으며, 예약 후 영업시간 내 지점 방문 시 신분증 제시로 바로 수령 가능하고, 취소는 앱 내 예약 관리 메뉴에서 요청하면 위약금 없이 처리된다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

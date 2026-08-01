@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_018062",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 920,
+        "consulting_content": "고객은 특정 이체내역이 퇴직연금 수수료인지 확인을 요청했고 상담사는 본인확인 필요를 안내한 뒤 해당 이체가 수수료임을 확인하고 추가 비용은 없다고 답변하였다. 고객은 매월 차감액을 확인하고 싶다고 하였고 상담사는 모바일 앱에서 거래내역 조회 방법을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_031342",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1321,
+        "consulting_content": "고객은 적금 및 주택청약 저축 현황을 확인하고 싶어 계좌 인증 절차를 요청했으며, 문자 URL을 통해 인증을 완료하였다. 상담사는 인증 후 두 상품이 보유 중임을 확인하고, 납입 기간은 자유롭고 조기 해지 시 이자 차감, 가점 감소 등 불이익이 발생한다는 점과 적금 연 이자율 2.5% 및 청약 저축은 별도 금리 적용됨을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

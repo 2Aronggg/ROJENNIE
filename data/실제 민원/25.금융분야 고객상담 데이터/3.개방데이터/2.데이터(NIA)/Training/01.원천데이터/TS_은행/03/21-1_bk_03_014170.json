@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_014170",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1624,
+        "consulting_content": "고객은 모바일 앱으로 퇴직연금 자동이체 신청 상태와 금액, 출금일 확인을 요청하였고 상담사는 신청이 정상 등록되어 매월 지정일에 금액이 이체되며 수수료는 면제된다고 안내하였다. 고객은 계좌, 금액 변경 방법과 처리 기간을 문의하였고 상담사는 앱에서 자동이체 관리 메뉴로 삭제 후 재등록하면 되며 영업일 1~2일 내 반영되고 문자 안내가 온다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

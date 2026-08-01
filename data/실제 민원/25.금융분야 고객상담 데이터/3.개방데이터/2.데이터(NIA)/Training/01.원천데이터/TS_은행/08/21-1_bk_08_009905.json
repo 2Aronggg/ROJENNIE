@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_009905",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1587,
+        "consulting_content": "고객은 마이너스 통장 연장 신청을 위해 배우자와 통화를 원한다고 요청하였다. 상담원은 고객의 성명, 생년월일, 휴대폰 번호를 확인하고, 배우자의 성명, 연락처를 입력받아 본인 확인을 완료하였다. 연장 시 기존 금리보다 0.5%p 인상되고 월 상환액이 약 10% 증가한다는 안내를 제공하였다. 계약서는 전자 서명으로 진행되며, 서명 완료 후 연장이 확정되고 확인 문자가 발송될 예정이라고 설명하였다. 추가 문의 사항이 없음을 확인하고 상담을 종료하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

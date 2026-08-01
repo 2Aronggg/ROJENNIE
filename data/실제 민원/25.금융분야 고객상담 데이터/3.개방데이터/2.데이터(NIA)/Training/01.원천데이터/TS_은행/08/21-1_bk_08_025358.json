@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_025358",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1332,
+        "consulting_content": "고객은 대출 연장을 취소하고 싶다고 요청했으며, 상담사는 본인확인 절차 후 계좌, 비밀번호 입력 문제를 해결하고 주소를 확인, 반영한 뒤 연장 취소가 신용점수에 미치는 영향을 안내하고 요청을 처리하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

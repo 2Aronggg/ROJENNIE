@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_028168",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1623,
+        "consulting_content": "고객은 전세 대출 연장을 요청하고 계좌 정보를 확인하지 못해 문자 인증과 본인 확인을 진행하였고 상담사는 인증 절차를 안내하고 입력을 받았다. 고객은 연장 가능 여부를 확인했으나 시스템에 건이 없음을 통보받아 11시에 재연락을 요청했으며 상담사는 해당 시간에 전화하고 서류와 처리 기간을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

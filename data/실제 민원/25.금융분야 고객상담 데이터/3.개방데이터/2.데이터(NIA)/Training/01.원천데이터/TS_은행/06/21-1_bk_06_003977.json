@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_003977",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1035,
+        "consulting_content": "고객은 대출금 완납 후 자동으로 출금되는 금액에 대해 알고 싶다고 요청하였고 상담사는 대출 잔액 및 매월 자동 이체 일정을 안내하고, 추가 출금은 없음을 확인해 주었다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

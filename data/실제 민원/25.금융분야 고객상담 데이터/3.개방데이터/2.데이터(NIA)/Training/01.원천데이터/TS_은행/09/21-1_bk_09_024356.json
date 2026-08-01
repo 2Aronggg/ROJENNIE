@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_024356",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1800,
+        "consulting_content": "고객은 보유 원화를 달러로 환전하고자 하며 환전 가능 금액, 한도, 필요 서류, 지점 방문 절차를 문의하였고 상담사는 환전 비율, 한도, 서류, 지점 영업시간, 연락 방법 등을 안내하고 담당자 연결 후 상담을 마무리하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

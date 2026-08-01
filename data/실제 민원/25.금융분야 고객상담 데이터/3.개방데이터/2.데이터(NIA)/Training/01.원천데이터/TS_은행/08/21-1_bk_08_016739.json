@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_016739",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1810,
+        "consulting_content": "고객은 계약 해지 후 연장을 위해 필요한 서류와 본인 확인 절차를 문의하였고 상담사는 계좌 번호, 성명, 생년월일, 비밀번호 등을 요청해 확인하였다. 고객은 정보를 제공하고 연장 신청서와 신분증 사본을 방문, 우편 또는 QR코드 문자 발송으로 받은 양식으로 제출하면, 상담사는 서류 검토 후 영업일 3일 이내에 연장 절차를 완료하고 진행 상황을 문자로 안내한다는 점을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_026554",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1180,
+        "consulting_content": "고객은 입출금 계좌의 일일 이체 한도 초과로 전화해 한도 상향을 요청했고, 상담사는 현재 한도가 ●●원임을 안내하고 온라인, 전화 신청 방법을 설명한 뒤, 전화로 한도를 ●●원으로 상향 요청하여 승인 절차와 안내 시점을 알려 주었다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_015000",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 931,
+        "consulting_content": "고객은 간병인 보험 자동이체가 이중 출금된 점을 확인하고 환불을 요청하였고 상담사는 이중 출금 사실을 확인하고 영업일 2~3일 내 환불 및 입금 확인 문자를 안내하였으며, 향후 계좌, 코드 일치 여부를 정기 점검하도록 권고하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_029563",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1162,
+        "consulting_content": "고객은 대출 만기 안내 우편을 받아 확인을 요청하고 신분, 계좌 정보를 제공했으며 비밀번호 입력을 시도하였다. 상담사는 대출 존재 여부를 조회해 전액 상환됨을 확인하고, 청약통장은 자동 연장되어 다음 연도 만기임을 안내하였다. 또한 대출 상환 확인서와 청약통장 내역서를 이메일로 송부하겠다고 약속하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_011266",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1449,
+        "consulting_content": "고객은 대출 만기 연장을 신청하고 계좌, 신분 확인을 위해 정보와 비밀번호를 제공하였고, 상담사는 연장 가능 여부를 조회한 결과 잔액이 부족해 약 1만원 입금을 요청하고 온라인 뱅킹 납부를 안내하여 입금 후 연장 절차가 완료될 것이라고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

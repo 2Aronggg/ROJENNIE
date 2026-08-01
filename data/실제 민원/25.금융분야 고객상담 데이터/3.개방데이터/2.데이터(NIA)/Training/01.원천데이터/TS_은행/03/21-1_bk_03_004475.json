@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_004475",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1514,
+        "consulting_content": "고객은 ★★은행 카드와 연결된 자동이체 내역 확인 및 재설정을 요청했고, 정보를 제공하겠다고 답변받았다. 상담사는 확인 절차를 진행했으나 시스템상 조회가 어려워 재설정 안내와 함께 서류를 이메일로 발송하겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

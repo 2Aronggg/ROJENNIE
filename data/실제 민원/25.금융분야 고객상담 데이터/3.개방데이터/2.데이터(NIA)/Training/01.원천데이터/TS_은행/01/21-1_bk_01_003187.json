@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_003187",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1335,
+        "consulting_content": "고객은 본인 명의 ★★카드와 연계된 통장 존재 여부와 조회 절차, 통장 사본 발급 방법을 문의하였고 상담사는 보안 확인이 필요해 직접 조회는 어렵다며 카드사 문의 또는 모바일 앱 ‘카드, 계좌 연동 조회’ 이용을 안내하고, 앱 로그인, 카드 선택, 통장 번호 확인 후 지점 방문 또는 모바일 뱅크에서 사본 발급이 가능하다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

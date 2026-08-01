@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_029527",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1242,
+        "consulting_content": "고객은 한도 계좌 해제를 위해 필요한 서류와 절차를 문의했고 상담사는 신분증, 통장, 도장 지참 후 영업점 방문, 서류 제출을 안내하고 심사 기간은 3~5일이라고 답변하였다. 또한 고객은 대출 종류와 필요 서류를 물었고 상담사는 신용, 담보 대출 구분과 각각 소득증명서, 주민등록등본 등 필요 서류, 신용 등급에 따라 신용 대출이 우선임을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

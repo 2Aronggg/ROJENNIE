@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_024841",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 673,
+        "consulting_content": "고객은 대출 연장 여부와 진행 상황을 확인하고 금리 변동, 조기상환 수수료, 자동이체 설정 방법을 문의하였고 상담사는 만기와 서류 제출 완료를 안내하고, 연장은 영업점에서 처리될 예정이라 연락을 약속하였으며, 현재 금리는 변동 없고 조기상환 수수료는 잔여 원금의 1%이며 자동이체는 모바일 앱에서 대출 상환 메뉴로 설정하면 된다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

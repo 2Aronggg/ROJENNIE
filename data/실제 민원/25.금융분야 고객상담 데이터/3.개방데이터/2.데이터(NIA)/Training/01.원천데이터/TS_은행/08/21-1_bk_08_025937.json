@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_025937",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1363,
+        "consulting_content": "고객은 전세 대출 연장을 위해 필요한 서류와 신청 시기, 제출 방법, 처리 기간, 비용 및 거절 시 안내 등을 문의하였고 상담사는 연장 신청은 ●●일 이후 가능하며, 필요 서류는 계약서 사본, 신분증, 상환 내역서이며, 모바일 앱을 통해 업로드 가능하고, 검토는 영업일 2~3일 소요된다고 안내하였으며, 연장 시 추가 수수료는 없고 기존 금리 적용, 거절 시 사유와 재신청 조건을 문자, 이메일로 통보하고, 연장 완료 후 새로운 상환 일정은 앱과 문자로 확인 가능하다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

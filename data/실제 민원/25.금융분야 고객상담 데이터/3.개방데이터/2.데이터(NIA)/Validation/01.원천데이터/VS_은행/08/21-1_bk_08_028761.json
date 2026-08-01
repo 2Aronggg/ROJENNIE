@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_028761",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1094,
+        "consulting_content": "고객은 전세 보증금 대출 연장을 원하고 보증금 증액에 따른 대출 방식, 서류를 문의했으며, 이름, 연락처를 제공하고 내일 담당자 연락을 요청하였다. 상담사는 연장 절차와 필요 서류, 한도 조정 가능성을 안내하고, 담당 부서에 전달해 내일 오전 9시 연락을 잡아드리겠다고 약속하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

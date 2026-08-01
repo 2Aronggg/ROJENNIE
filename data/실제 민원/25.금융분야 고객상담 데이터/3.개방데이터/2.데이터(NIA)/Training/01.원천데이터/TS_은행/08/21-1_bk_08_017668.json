@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_017668",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1352,
+        "consulting_content": "고객은 대출 연장 서류 제출 및 진행 상황을 문의하였고 상담사는 계좌, 비밀번호를 받아 서류 검증 중임을 안내하였다. 고객은 처리 기간, 이자율, 비대면 서명, 앱 설치, 수수료를 물었고 상담사는 영업일 2~3일 소요, 기존 이자율 유지, 모바일 앱에서 인증 후 서명 가능, ‘OO은행 모바일뱅크’ 설치 방법을 안내하며 수수료는 없고 연체 시 연체료가 부과될 수 있다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

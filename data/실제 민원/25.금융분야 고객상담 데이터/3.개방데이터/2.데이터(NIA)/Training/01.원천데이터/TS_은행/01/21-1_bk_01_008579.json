@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_008579",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1376,
+        "consulting_content": "고객은 계좌에서 출금된 내역 중 본인이 인지하지 못한 거래를 확인하고자 문의했고, 상담사는 지정 기간의 출금 내역을 조회해 안내한 뒤 의심 거래를 확인하여 문자로 상세 내역을 전달하고, 요청에 따라 해당 거래를 일시 정지하며 비밀번호 변경 등 보안 조치를 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

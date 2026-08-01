@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_029077",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1598,
+        "consulting_content": "고객은 기존 퇴직금 담보 대출 연장을 검토하고 잔액을 정기 적금으로 전환하고자 하며, 자산 매각 여부도 문의했으며, 상담사는 고객의 신원 확인 후 연장 조건과 금리, 조기상환수수료를 안내하고, 연장 신청은 문자 안내에 따라 진행하도록 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_020185",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1034,
+        "consulting_content": "고객은 〇월과 〇월 이체내역이 열세 내역서에 누락돼 확인을 요청하였고 상담사는 모바일 폰뱅킹 이체 기록을 확인해 급여이체 확인증 발급 절차를 안내하였다. 고객은 확인증을 빠르게 받아야 한다고 요청하였고 상담사는 PDF 파일을 휴대폰으로 즉시 전송하고, 필요 시 이미지 변환 및 재발송도 가능하다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

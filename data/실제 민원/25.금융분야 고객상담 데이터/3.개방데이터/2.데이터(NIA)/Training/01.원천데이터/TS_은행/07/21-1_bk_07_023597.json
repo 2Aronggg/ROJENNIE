@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_023597",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 2230,
+        "consulting_content": "고객은 계좌 확인이 어려워 인증 절차를 요청했고 상담사는 모바일 앱 인증 및 문자 링크로 신원 확인을 진행하였다. 고객은 주택담보대출 갈아타기 상품에 금리 감면이 없음을 확인하고 생활안정자금, 퇴직연금, 주택청약 조건을 문의했으며, 상담사는 금리 감면 혜택이 없고 청약 최소 납입액은 ●원이며 온라인 신청 가능함을 안내하고 담당 부서로 연결해 주겠다고 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

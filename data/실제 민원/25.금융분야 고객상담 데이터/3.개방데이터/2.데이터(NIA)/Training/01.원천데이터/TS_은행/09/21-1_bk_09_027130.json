@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_027130",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 610,
+        "consulting_content": "고객은 엔화 현금을 원화로 환전하고 계좌 입금을 원한다며 현금, 신분증만 있으면 된다고 확인하고, 강남점 오후 2시 방문 예약을 요청하였다. 상담사는 외화 지폐 상태 확인을 위해 지점 방문 필요, 입금 가능 계좌 안내, 현재 환율, 수수료, 처리 시간 설명 후 강남점 오후 2시 예약을 완료하고 방문 시 현금, 신분증, 계좌 정보를 재확인하라고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

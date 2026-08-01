@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_027001",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1212,
+        "consulting_content": "고객은 청약 통장의 자동이체 설정 방법을 문의하였고 상담사는 로그인 후 메뉴 → 이체 → 자동이체 선택, 출금, 입금 계좌 입력, 금액, 주기 설정, 보안 인증 절차를 안내하였으며, 기존 자동이체 수정 방법과 완료 시 확인 메일 발송을 설명하고, 추가 문의는 언제든 가능하다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_021254",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1947,
+        "consulting_content": "고객은 대출 연체 상황과 상환 일자, 금액을 문의하였고 상담사는 연체 시작일과 마감일, 필요 금액을 안내하고 한 번 입금하면 연체가 해소된다고 설명하였다. 고객은 해당 일정에 맞춰 입금하겠다고 답하고 대출 재조정도 검토하고 싶다고 추가 요청했으며 상담사는 재조정 조건과 절차를 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

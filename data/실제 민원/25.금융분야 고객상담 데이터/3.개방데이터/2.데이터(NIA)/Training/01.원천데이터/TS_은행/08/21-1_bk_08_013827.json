@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_013827",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1438,
+        "consulting_content": "고객은 대출 연장 자동 적용 여부와 절차를 문의하였고 상담사는 예금담보 대출은 정기예금 연장 시 자동 연장되며 이자율, 상환일이 동일하고, 신원, 계좌 확인 후 시스템에서 연장 여부를 확인하여 안내하였으며, 자동 연장되지 않을 경우 별도 신청이 필요함을 전달하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

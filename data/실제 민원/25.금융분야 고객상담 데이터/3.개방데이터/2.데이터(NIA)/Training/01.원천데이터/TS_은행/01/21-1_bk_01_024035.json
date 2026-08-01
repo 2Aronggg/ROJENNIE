@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_024035",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "80세이상",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1031,
+        "consulting_content": "고객은 통장 잔액 조회를 원하고 본인 확인을 위해 이름, 생년월일, 계좌번호, 비밀번호 입력을 시도했으나 입력 방법을 몰라 어려움을 겪었다고 하였고 상담사는 단계별 입력 안내와 비밀번호 입력을 요청한 뒤 잔액 〇〇원과 최근 거래 내역을 제공하고 추가 상품 안내를 제안했으며, 고객은 추가 문의 없음을 밝혀 상담이 종료되었다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

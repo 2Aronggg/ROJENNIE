@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_033014",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1204,
+        "consulting_content": "고객은 자동이체 오류와 재등록, 퇴직연금, 예금 계좌 자동이체, 보험료 자동이체 문의를 하였고 상담사는 카드 재등록 안내, 자동이체 신청 절차 설명, 보험료는 보험사에 문의하도록 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

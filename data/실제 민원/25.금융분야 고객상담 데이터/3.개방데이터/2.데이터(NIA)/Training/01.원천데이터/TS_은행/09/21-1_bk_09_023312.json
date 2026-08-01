@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_023312",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1540,
+        "consulting_content": "고객은 ★★은행에 처음 계좌를 개설하고 여행 경비용 달러 현찰을 환전하려고 하며, 사전 예약, 온라인 신청, PC 메뉴 탐색, 영업시간 제한, 자동 환전 서비스를 문의하였고 상담사는 사전 예약 필요와 온라인, PC 신청 방법, 외환 메뉴 위치, 영업시간 안내, 자동 예약 이용 방법 및 인터넷뱅킹 가입 절차를 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

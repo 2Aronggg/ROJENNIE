@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_028005",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 834,
+        "consulting_content": "고객은 입출금 변동과 만기 환급금 누락을 문의하고 자동 알림 신청 및 영업시간 외 조회 방법을 물었으며, 상담사는 인터넷, 스마트폰 뱅킹으로 직접 확인을 권고하고 알림은 앱 설정만 켜면 자동 전송되며 별도 신청이 필요 없고, 새벽 거래는 오전 8시 이후에 집계돼 지연될 수 있어 직접 확인이 가장 정확하고 영업시간 외에도 인터넷뱅킹으로 조회 가능하나 최신 반영은 영업시간 이후라고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

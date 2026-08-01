@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_021987",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1945,
+        "consulting_content": "고객은 대출 이자를 가상 계좌로 납부하고자 계좌 번호와 비밀번호 등 정보를 제공하였고 상담사는 계좌 조회, 연동 절차와 가상 계좌 발급 방법을 안내하고, 입금 기한, 잔액 관리, 일회성 계좌 특성을 설명하며, 필요 시 추가 연동 및 문의 대응을 약속하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

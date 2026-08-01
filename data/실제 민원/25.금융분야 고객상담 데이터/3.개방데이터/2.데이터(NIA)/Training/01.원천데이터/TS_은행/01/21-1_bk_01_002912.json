@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_002912",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1215,
+        "consulting_content": "고객은 계좌에서 발생한 미확인 체크카드 결제에 대해 거래 일시와 가맹점명을 확인하고 환불 절차와 향후 예방 방법을 문의했다. 상담원은 거래 내역을 안내하고, 카드사에 직접 문의해 환불을 진행해야 함을 설명했다. 또한 일일 사용 한도 설정과 실시간 결제 알림 서비스를 제공하고, 온라인 뱅킹에서 의심 거래를 신고할 수 있는 방법을 안내했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

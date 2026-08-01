@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_018954",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 882,
+        "consulting_content": "고객은 대출 만기 연장을 요청하고 계좌 번호, 비밀번호 등 본인 확인을 마친 뒤 연장 방법과 필요 서류를 물었으며, 연장은 모바일 앱의 ‘연장 관리’ 메뉴에서 직접 진행하고 추가 서류 없이 가능하다고 안내받았다. 상담사는 연장은 자동이 아니며 고객이 직접 연장해야 함을 설명하고, 연장 신청을 접수해 처리 완료 후 문자로 안내할 것과 금리는 변동 없음을 알려주었다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

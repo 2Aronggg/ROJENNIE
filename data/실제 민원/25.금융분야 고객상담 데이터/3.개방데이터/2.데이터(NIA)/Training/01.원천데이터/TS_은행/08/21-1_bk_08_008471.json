@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_008471",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 801,
+        "consulting_content": "고객은 대출 연장 신청 건의 진행 상황을 문의하였다. 상담사는 본인 확인을 진행한 뒤 연장 신청이 접수되었으며 추가 서류 제출이 필요하다고 안내하였다. 필요한 서류는 신분증, 사업자등록증, 소득 및 납세 관련 증명서이며 서류 확인 후 심사가 진행된다고 설명하였다. 고객 요청에 따라 영업점 연결을 시도했고 담당자가 추후 연락할 예정이며, 연장 결과는 영업점에서 약 3일 이내에 안내될 예정이라고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

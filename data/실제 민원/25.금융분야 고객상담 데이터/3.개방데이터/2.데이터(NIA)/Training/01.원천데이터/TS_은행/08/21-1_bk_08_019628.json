@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_019628",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1276,
+        "consulting_content": "고객은 주택 담보 대출 연장을 비대면으로 신청하고 연장 확인서를 이메일로 받고 싶다고 요청하였고 상담사는 계좌, 비밀번호 등 신용 대출임을 안내하고 모바일 앱에서 연장 절차와 문자 링크 이용 방법을 설명하며, 연장 완료 후 1~2영업일 내에 문자와 이메일로 확인서를 발송한다는 안내를 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_030935",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1151,
+        "consulting_content": "고객은 적금 출금 거래 내역과 금액, 목적을 확인하고 정상 여부를 문의하였고 상담사는 시스템 조회 결과 타행 송금으로 고객 요청한 거래임을 안내하고, 적금 해지 시 이자 손실 안내와 상담 내용 문서 발송을 제안하여 연락처로 전송하겠다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

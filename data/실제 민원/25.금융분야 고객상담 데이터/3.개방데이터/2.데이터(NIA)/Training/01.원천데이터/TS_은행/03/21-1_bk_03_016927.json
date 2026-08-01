@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_016927",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1109,
+        "consulting_content": "고객은 적금 자동 이체가 중단된 이유를 문의하고 다음 달 입금 가능 여부와 유지 방법을 요청하였고 상담사는 분기 한도 초과로 자동 이체가 보류됐음을 설명하고, 다음 달 한도 초기화로 입금 가능함을 안내하며, 한도 내 금액 조정 또는 일부 해지 후 재입금으로 자동 이체를 유지할 수 있음을 제안하고 절차 진행을 약속하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

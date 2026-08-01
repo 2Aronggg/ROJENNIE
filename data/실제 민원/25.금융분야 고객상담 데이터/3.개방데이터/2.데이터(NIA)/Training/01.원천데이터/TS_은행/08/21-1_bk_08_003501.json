@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_003501",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 788,
+        "consulting_content": "고객은 인터넷 신용대출 연장을 문의하고 연장 건이 확인됐으나 금리 승인이 미완료라 아직 확정되지 않았다고 답변받았으며, 금리 4.5% 적용, 월 상환액 동일, 금리 승인 후 1~2일 내에 영업점 방문 또는 온라인 서명으로 연장 약정서를 작성할 수 있다고 안내받았다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

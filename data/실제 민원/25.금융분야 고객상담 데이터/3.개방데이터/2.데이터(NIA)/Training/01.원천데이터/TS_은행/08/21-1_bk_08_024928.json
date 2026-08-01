@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_024928",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1262,
+        "consulting_content": "고객은 대출 연장을 시도하면서 잔액이 ‘영원’으로 표시되는 문제를 확인하고 계좌 정보와 비밀번호를 제공하였고, 상담사는 마이너스 통장 상태와 오류 원인을 설명하고 연장 절차를 앱에서 진행하도록 안내하며 연장 수수료 0.5%를 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

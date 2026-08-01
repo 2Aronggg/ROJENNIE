@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_026976",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1055,
+        "consulting_content": "고객은 기존 적금 상세와 신규 저축계좌 연계 가능 여부, 일부 해지 절차를 문의하고 거래내역을 확인하도록 요청하였고 상담사는 상품이 일부 해지 가능함을 안내하고 거래내역을 확인해 해지 가능성을 확인한 뒤, 현재 적금 연이율 3.5%와 만기 후 재투자 시 동일 금리 적용 및 변동 시 사전 안내를 제공한다는 정보를 전달하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

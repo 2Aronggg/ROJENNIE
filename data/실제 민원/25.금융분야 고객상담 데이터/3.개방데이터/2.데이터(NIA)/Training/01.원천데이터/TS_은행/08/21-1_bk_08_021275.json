@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_021275",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1094,
+        "consulting_content": "고객은 대출 연장 버튼이 안 보여 문의하고 계좌, 성명, 생년월일, 비밀번호를 제공했으며 연장 가능 여부와 진행 상황을 물었고 상담사는 계좌 확인 후 비대면 연장은 현재 불가하고 만기일을 안내하며 심사 중임을 알려주고, 승인 시 문자와 비대면 신청 가능, 필요 서류와 수수료, 이자 변동을 안내하고 앱 신청 가능 여부도 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

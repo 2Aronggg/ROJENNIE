@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_022521",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 990,
+        "consulting_content": "고객은 마이너스 대출 연장을 문의하고 본인 확인 정보를 제공했으며, 연장 방법과 한도 변동을 물었고, 연장 절차 문서와 문자 발송을 요청하였다. 상담사는 고객의 계좌, 생년월일을 확인하고, 연장은 ★★ 앱에서만 가능하고 연장 메뉴를 문자로 보내겠다고 안내했으며, 연장 승인 시 기존 한도가 유지되고 별도 신청이 필요함을 설명하고, 완료 후 문자, 이메일 확인 및 추가 문의 가능함을 알려주고, 문서와 문자 발송을 약속하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

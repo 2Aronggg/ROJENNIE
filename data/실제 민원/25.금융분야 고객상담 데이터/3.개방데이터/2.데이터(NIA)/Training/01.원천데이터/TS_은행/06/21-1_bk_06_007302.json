@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_007302",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1538,
+        "consulting_content": "고객은 현재 보유 중인 아파트 리스 대출의 이자 조정 및 상환 연장 방법을 문의하였다. 상담사는 미납 금액 입금 절차와 영수증 제출 후 1시간 이내 조정 가능 옵션을 안내하고, 연체 3개월 이하, 최근 정상 상환 조건에 따라 이자율을 0.5% 낮추고 상환 기간을 2년 연장해 주겠다고 제안하였다. 필요한 서류는 신분증 사본과 최근 3개월 급여 내역이며, 전자 서명 링크를 통해 제출하도록 안내하였다. 또한 고객의 다른 대출을 포함한 통합 상환 계획도 재조정 가능하다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

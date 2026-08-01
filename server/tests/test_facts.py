@@ -19,6 +19,19 @@ class ResolveFactsConflictTest(unittest.TestCase):
         )
         self.assertIn("실제 적용 금리", resolution.conflicts)
 
+    def test_conflicts_record_provenance_for_audit_trails(self) -> None:
+        resolution = resolve_facts(
+            [
+                Fact(field="product_name", value="예금", source_ref="user_input", confidence=0.9),
+                Fact(field="product_name", value="적금", source_ref="mock_data", confidence=0.8),
+            ]
+        )
+
+        self.assertIn("product_name", resolution.provenance)
+        self.assertEqual(resolution.conflicts["product_name"], ["\"예금\"", "\"적금\""])
+        self.assertEqual(resolution.provenance["product_name"][0].status, "conflict")
+        self.assertEqual(resolution.provenance["product_name"][0].source_type, "user_input")
+
 
 if __name__ == "__main__":
     unittest.main()

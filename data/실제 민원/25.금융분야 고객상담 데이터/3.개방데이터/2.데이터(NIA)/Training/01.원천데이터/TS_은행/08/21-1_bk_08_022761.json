@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_022761",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 942,
+        "consulting_content": "고객은 전세 대출 연장을 요청하고 소득 증빙, 계약서 등 서류를 준비했으며, 연장 가능 기간이 아직 아니므로 연장 신청을 미루고 상환 일정 조정을 문의하였고, 상담사는 본인 인증 후 서류 확인을 안내하고 현재는 연장 심사 불가임을 알려준 뒤 상환 계획 검토 및 조정 가능성을 설명하며 연장 가능 기간과 처리 시간에 대한 정보를 추후 안내하겠다고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_014942",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1717,
+        "consulting_content": "고객은 전세 대출 연장과 필요한 서류, 절차, 비대면 제출 방법을 문의하였고 상담사는 대출 조건, 연장 수수료 0.5%, 이자율 동일, 심사 기간 3~5일을 안내하고, 방문 시 제출 서류 리스트와 추가 서류 발생 가능성을 설명하며, 문자, 이메일, 팩스로 서류 전송 및 제출 방법을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

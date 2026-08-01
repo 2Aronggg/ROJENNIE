@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_000960",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1154,
+        "consulting_content": "고객은 지점의 백 달러 권종 보유 여부를 확인하고, 다른 지점에서도 환전 가능 여부와 예약, 모바일 앱 혜택, 당일 수령 절차, 필요 서류 및 수수료 등에 대해 문의하였다. 상담사는 환전 예약 방법, 앱을 통한 환율 우대, 당일 수령 조건 및 서류, 수수료 면제 정보에 대해 안내 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

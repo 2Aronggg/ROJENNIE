@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_025109",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1260,
+        "consulting_content": "고객은 한도 해제와 서류 없이 진행 가능 여부를 문의하였고 상담사는 서류 검증이 필수이며 자동이체 내역만으로는 제한된다고 안내하였고, 우편 발송 및 추가 전화 상담, 담당자 연결을 약속하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

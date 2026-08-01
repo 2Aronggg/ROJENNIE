@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_029707",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1027,
+        "consulting_content": "고객은 모바일 대출 연장 승인을 문의하고 계좌, 비밀번호 확인 후 연장 승인 상태와 3.5% 이자율, 수수료 없음 등을 안내받았으며, 자동 연장 완료와 추가 조치 필요 없음을 확인하였고 상담사는 본인 확인 절차를 거쳐 승인 상황을 설명하고 연장 처리 완료 및 향후 문의 시 안내하겠다고 응답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

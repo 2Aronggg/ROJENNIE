@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_008705",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1245,
+        "consulting_content": "고객은 대출 연장이 안 된다는 문자 수신 후 의미를 문의하였다. 상담원은 계좌번호, 성명, 생년월일, 비밀번호 확인을 요구하였으며, 비밀번호 오류로 재설정이 필요함을 안내하였다. 고객은 문자 인증을 선택하여 비밀번호를 재설정하고, 연장 신청이 가능함을 확인하였다. 상담원은 6개월 연장 계약을 전자 서명으로 진행하도록 안내하고, 서명 완료 후 연장 금액 및 상환 일정이 문자로 발송될 것이라고 전달하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

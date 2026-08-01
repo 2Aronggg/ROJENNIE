@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_015316",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1684,
+        "consulting_content": "고객은 대출 연장을 신청하고 필요한 서류와 담보 확인, 연장 수수료 및 처리 기간을 문의하였고 상담사는 본인 확인 절차 후 서류 제출을 안내하고, 담보 제공자와 협의 필요 및 전화로는 진행 어려움을 설명하며, 연장 결과는 영업일 2~3일 내에 문자, 전화로 안내되고 수수료는 연장 기간, 담보 종류에 따라 차등 적용된다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

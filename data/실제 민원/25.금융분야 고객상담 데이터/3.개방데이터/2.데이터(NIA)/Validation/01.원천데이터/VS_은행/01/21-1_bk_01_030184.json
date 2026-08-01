@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_030184",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 861,
+        "consulting_content": "고객은 연장 주문으로 인한 중복 출금 환불 절차를 문의하였고 상담사는 거래내역 확인을 안내하고, 중복 출금 시 영업일 기준 5일 이내 환불 및 거래내역 캡처와 신분증 사본 제출을 요구하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_013463",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 2574,
+        "consulting_content": "고객은 출금 한도 해제를 요청하고 계좌 번호 확인 및 비밀번호 입력을 시도했으나 오류가 발생하였다. 상담사는 계좌가 한도 제한 계좌임을 안내하고 모바일 앱 신청 또는 영업점 방문 시 재직증명서 등 서류 제출이 필요하다고 설명하였다. 또한 영업점 운영 시간은 평일 9시~18시이며 주말, 공휴일 휴무, 온라인 신청도 가능하다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_020169",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 922,
+        "consulting_content": "고객은 자동이체를 했지만 입금 계좌가 확인되지 않아 어느 계좌로 들어갔는지 확인을 요청하였고, 상담사는 계좌 인증 확인 후 시스템 반영 지연과 처리 시간 및 수수료 안내, 확인이 어려울 경우 지점 방문 및 예약 방법을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

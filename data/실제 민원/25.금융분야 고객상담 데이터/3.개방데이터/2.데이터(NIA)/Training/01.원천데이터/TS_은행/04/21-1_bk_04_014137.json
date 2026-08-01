@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_014137",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1497,
+        "consulting_content": "고객은 만기 적금을 연장하고 변동금리 적금 추가 가입을 원한다며 연장 가능 여부와 중도해지 수수료, 다른 상품을 문의하였고 상담사는 적금 자동 재예치와 최대 연장 기간, 중도해지 이자 차감 등을 안내하고 변동금리 적금의 금리, 기간, 수수료를 설명한 뒤 온라인 신청 절차와 필요 서류를 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

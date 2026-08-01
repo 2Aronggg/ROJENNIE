@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_015656",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 904,
+        "consulting_content": "고객은 적금 자동 이체 미처리와 입금 예정일 확인, 해지 시 수수료 및 잔액 처리 문의를 하였고 상담사는 계좌 확인 후 메모를 남겨 담당 부서에 전달하고, 전화, 문자 연락을 요청하며 수수료 안내는 추후 제공하겠다고 안내하였다.ㅌㅌㅌㅌㅌㅌ"
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

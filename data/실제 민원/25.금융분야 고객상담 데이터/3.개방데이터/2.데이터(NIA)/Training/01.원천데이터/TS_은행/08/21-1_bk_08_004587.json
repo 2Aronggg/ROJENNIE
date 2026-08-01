@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_004587",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 775,
+        "consulting_content": "고객은 개인 신용 대출 연장을 원하고 계좌, 본인 확인을 마쳤으며, 금리 미확정으로 연장이 어려운 상황임을 문의했고, 상담사는 금리가 확정되면 문자로 알리고 앱에서 연장 약정을 진행하도록 안내하고, 앱 메뉴 위치와 알림 미수신 시 센터 연락을 권유하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

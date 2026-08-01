@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_020593",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1071,
+        "consulting_content": "고객은 대출 만기 연장을 원하고 절차와 서류를 문의했으며, 비밀번호 확인에 어려움을 겪었다고 답했다. 상담사는 계좌, 비밀번호 확인을 시도했으나 일치하지 않아 재시도를 제안하고, 남은 일자와 연장에 필요한 서류, 본인 확인 절차를 안내하며 비대면 앱 제출 또는 영업점 방문 방법을 문자와 QR코드로 제공하고, 연장 시 기존 이자율 유지와 수수료 가능성을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_025489",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1291,
+        "consulting_content": "고객은 카드로 환전하고자 지점 방문을 원하고, 여권 없이 신분증만으로 절차가 가능함을 확인했으며, 약 300달러 환전을 요청하고 실시간 환율 확인 방법과 우대 조건을 문의하였고, 상담사는 잔액 확인 후 현금 교환 가능, 신분증 지참 안내, 현재 재고와 우대 환율, 수수료 설명, 모바일 앱 신청 및 실시간 조회 방법을 안내하고, 상세 내용과 환율 정보를 문자로 발송하겠다고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

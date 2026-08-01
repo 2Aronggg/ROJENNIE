@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_002692",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1203,
+        "consulting_content": "고객은 아파트 담보 대출의 결제일 변경과 자동 인출 설정을 문의하고, 상담원은 계좌 확인, 신원 인증, 비밀번호 입력 절차를 안내한 뒤 폰뱅킹 가입 방법과 자동 인출 설정 방법을 설명했다. 이 후 상담사는 고객이 문의한 가상계좌와 입금 마감 시간, 영수증 발송 및 대출 상환 관리에 대해서도 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

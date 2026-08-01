@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_002370",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1476,
+        "consulting_content": "고객은 대출 이자 납부를 원해 바로 이체가능한 방법을 문의하였고, 상담원은 이자 납부는 계좌이체, 자동이체, 모바일 뱅킹이 가능한 점을 안내하였고, 가상 계좌 발급 후 계좌번호와 입금 기한, 모바일 앱 내 내역 확인 및 자동이체 설정 방법을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

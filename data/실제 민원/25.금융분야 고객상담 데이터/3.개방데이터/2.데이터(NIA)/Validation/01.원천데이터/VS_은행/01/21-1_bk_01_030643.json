@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_030643",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 722,
+        "consulting_content": "고객은 급여가 입금된 후 인출이 안 되고 잔액이 없다고 표시되는 문제를 제기하였고 상담사는 실시간 정산 지연으로 일시적 사용 제한이 있을 수 있음을 안내하고, 계좌, 카드 제한 가능성을 확인하기 위해 은행에 직접 연락해 조회하도록 요청하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

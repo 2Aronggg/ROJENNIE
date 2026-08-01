@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_020128",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1065,
+        "consulting_content": "고객은 타행 자동이체 수수료 발생 이유와 면제 시점을 문의하였고 상담사는 급여이체가 등록되지 않아 수수료가 부과된다고 안내하며, 급여이체 등록 절차와 모바일, 전화로 자동이체 해지 방법을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

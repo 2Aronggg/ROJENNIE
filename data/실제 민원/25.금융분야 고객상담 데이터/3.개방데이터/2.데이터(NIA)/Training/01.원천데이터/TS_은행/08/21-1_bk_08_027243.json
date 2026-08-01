@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_027243",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1059,
+        "consulting_content": "고객은 마이너스 통장 만기 연장을 문의하고 계좌번호, 성명, 생년월일 등 본인 확인을 진행하였고 상담사는 에스엠에스 인증으로 확인 후 연장은 추가 비용 없이 기존 금리 적용된다고 안내하였다. 고객은 연장 신청 시점과 방법, 절차를 물었고 상담사는 현재 앱에서 바로 신청 가능하고, 앱이 안 될 경우 전화 상담으로 진행 가능하며, 연장 처리 즉시 앱에서 잔액 확인 가능하고, 신용 요건 충족 시 대부분 승인된다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

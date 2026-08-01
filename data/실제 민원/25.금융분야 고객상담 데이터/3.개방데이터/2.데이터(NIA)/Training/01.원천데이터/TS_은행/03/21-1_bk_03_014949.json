@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_014949",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 844,
+        "consulting_content": "고객은 자동이체가 정상 처리되지 않아 문의를 주셨고, 또한 그에 따른 출금 지연과 계좌 상태, 한도에 대한 문의하였고, 상담사는 계좌 상태와 한도 확인을 진행하고, 출금 시점을 안내하였으며, 수수료 정책과 재발 방지 주의 사항을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

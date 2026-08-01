@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_019478",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 2241,
+        "consulting_content": "고객은 스위치원 앱으로 환전 가능 여부와 달러, 홍콩달러 현찰 한도, 수수료, 우대율을 문의했으며, 필요한 서류와 주소 확인을 요청하였다. 상담사는 해당 앱은 제공되지 않으며, 현찰은 영업점 방문, 콜센터 예약이 필요하고, 수수료는 1%이며 인터넷뱅킹 이용 시 할인 적용, 한도와 절차는 계좌 보유, 신분증 제출 후 진행된다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

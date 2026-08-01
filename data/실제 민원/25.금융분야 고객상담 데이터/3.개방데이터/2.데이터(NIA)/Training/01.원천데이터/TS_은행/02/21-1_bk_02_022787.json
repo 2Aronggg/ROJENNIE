@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_022787",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1177,
+        "consulting_content": "고객은 타행으로 송금했으나 내역이 표시되지 않아 수취인 정보를 확인하고 환불, 재송금을 요청했으며, 동의서 제출 방법을 문의하였다. 상담사는 계좌, 이체 일시, 금액을 확인하고, 수취인 동의가 필요함을 안내하고 전자서명 절차와 신분증, 거래내역서 제출을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

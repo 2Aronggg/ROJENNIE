@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_020227",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1228,
+        "consulting_content": "고객은 한도 계좌 이체 제한 해제를 요청하고 계좌번호, 성명, 생년월일, 비밀번호를 제공했으며, 급여 수령 목적이라 영업점 방문, 서류 제출이 필요함을 확인하였다. 상담사는 제한 해제는 영업점 심사와 주민등록증, 통장, 도장 등 서류가 필요하고, 서류 준비 여부를 확인한 뒤 방문을 권고하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_030311",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1414,
+        "consulting_content": "고객은 최근 몇 개월 및 특정 일자의 입출금 거래내역 조회와 입금 상세 확인을 요청하였고 상담사는 해당 기간, 거래를 조회해 금액과 일자를 안내하였으며, 자동이체 설정 변경 내역이 정상임을 확인해 알려 주었다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

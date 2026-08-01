@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_020785",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 601,
+        "consulting_content": "고객은 ★★ 대출 연장을 신청하고 연장 수수료와 이자 변동을 문의하였고 상담사는 연장 기간은 최대 12개월, 수수료는 잔액의 0.5%이며 이자 변동 가능성을 안내하고, 연장은 ★★ 앱의 대출 관리 메뉴에서 직접 신청하도록 절차를 설명하고 승인 결과는 문자로 안내된다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

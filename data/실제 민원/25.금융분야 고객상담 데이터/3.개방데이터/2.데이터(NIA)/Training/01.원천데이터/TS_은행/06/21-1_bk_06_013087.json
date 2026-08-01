@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_013087",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1248,
+        "consulting_content": "고객은 대출 상환, 이자 납부 방법과 전용 계좌 개설, 해지, 앱 인증 절차, 이자 금액 확인 및 입금 기한, 대출 연장 가능 여부와 금리 상승을 문의하였고 상담사는 절차 안내, 이자 금액을 제시, 입금 요청, 연장 조건을 설명하고 안내문 발송 예정임을 전달하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

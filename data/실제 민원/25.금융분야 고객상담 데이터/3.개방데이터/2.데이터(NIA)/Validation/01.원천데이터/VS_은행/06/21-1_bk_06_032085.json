@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_032085",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1199,
+        "consulting_content": "고객은 마이너스 대출 출금이 안 된다고 문의하고 계좌, 생년월일 등 본인 확인을 진행했으며, 상담사는 대출 한도와 잔액을 확인해 출금 가능함을 안내하고, 이자, 수수료는 계약 금리 기준이며 위약금만 발생 가능하다고 설명한 뒤 자동이체 설정을 요청한 고객에게 매월 말일 자동이체를 등록해 문자로 확인해 주겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

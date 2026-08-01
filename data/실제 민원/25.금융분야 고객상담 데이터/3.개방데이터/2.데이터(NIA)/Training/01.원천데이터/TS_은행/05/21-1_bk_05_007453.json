@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_007453",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1026,
+        "consulting_content": "고객은 송금 한도 조회를 요청하였다. 상담원은 본인 확인 절차로 성명, 생년월일, 계좌번호 입력을 요구하고 확인을 완료하였다. 현재 고객 계좌는 전자금융 이체 및 영업점 입출금 시 ●●원까지 가능하다는 한도 정보를 제공하였다. 한도 변경은 별도 신청이 필요하나 고객은 기존 한도를 유지하기로 결정하였다. 또한 고객은 비밀번호 오류 경험을 언급하였고, 상담원은 비밀번호 정상 등록을 확인하고 필요 시 변경 방법을 안내하였다. 상담은 추가 문의 없음을 확인하고 종료하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

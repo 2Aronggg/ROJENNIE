@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_024669",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1225,
+        "consulting_content": "고객은 휴대폰으로 이체를 실수해 다른 계좌로 송금했으며 금액, 시간, 수취인 정보를 제공하고 반환 의사를 밝혔으며, 상담사는 오류 확인 질문, 반환 절차와 수수료 안내, OTP 인증 방법을 설명하고 고객이 코드를 입력한 후 자금 반환을 진행한다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

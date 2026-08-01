@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_023918",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1186,
+        "consulting_content": "고객은 인터넷뱅킹을 사용하지 않아 ARS 계좌 비밀번호를 입력하고 급여 입금 기간 확인을 요청하였고 상담사는 계좌 확인 절차를 진행한 뒤 ★★은행에서 ●●년 ~ ●●년까지 정기 입금된 내역을 조회해 제공했으며, 온라인 명세서 조회 방법과 계좌 변경 절차도 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

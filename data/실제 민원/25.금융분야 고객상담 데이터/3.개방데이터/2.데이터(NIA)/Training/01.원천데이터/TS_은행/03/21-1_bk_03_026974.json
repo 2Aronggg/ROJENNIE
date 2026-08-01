@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_026974",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1283,
+        "consulting_content": "고객은 두 개 적금 중 하나의 자동이체가 한도 초과로 중단돼 금액을 낮춰 재설정하고 입금 확인 메일을 요청했으며, 상담사는 한도 초과 시 일시 정지됨을 설명하고 금액 조정은 다음 결제 주부터 적용된다고 안내하며, 즉시 수동 입금 가능 및 변경 완료 시 문자, 이메일로 확인을 보내겠다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

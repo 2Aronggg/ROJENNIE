@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_016076",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1157,
+        "consulting_content": "고객은 원화를 유로로 환전하고자 지점별 보유량, 일일 상한선, 환율, 수수료, 주말 영업 여부 등을 문의하였고 상담사는 해당 지점 보유량 충분함을 확인하고 일일 최대 ●●●천 원, 환율 1유로당 1,350원, 수수료 최종 0.2% 우대, 예약 시 주말 제한 운영 및 영업시간 안내와 문자 전송으로 상세 정보를 제공하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

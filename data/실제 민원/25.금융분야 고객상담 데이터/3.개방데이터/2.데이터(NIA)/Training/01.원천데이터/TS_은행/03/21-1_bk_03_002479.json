@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_002479",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1252,
+        "consulting_content": "고객은 자동 이체 내역과 출금 일자, 연결된 기관 정보, 중단 절차, 추가 비용 발생 원인, 환불 방법, 모바일 앱에서의 관리 방법을 문의하였고, 상담사는 각각에 대해 설명하고 필요한 연락처를 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

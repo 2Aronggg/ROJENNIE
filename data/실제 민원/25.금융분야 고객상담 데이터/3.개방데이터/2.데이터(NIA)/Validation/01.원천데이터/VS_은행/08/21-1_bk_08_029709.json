@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_029709",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 2001,
+        "consulting_content": "고객은 마이너스 대출 연장 신청이 처리되지 않은 상태라 확인을 요청했고 상담사는 시스템 조회 결과 연장이 신청되어 있으나 입금 지연으로 아직 확정되지 않았으며, 연장 수수료 0.5%와 금리 0.2%p 상승, 기본 6개월 연장 기간을 안내하고 추가 연장은 전화, 앱으로 가능하다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

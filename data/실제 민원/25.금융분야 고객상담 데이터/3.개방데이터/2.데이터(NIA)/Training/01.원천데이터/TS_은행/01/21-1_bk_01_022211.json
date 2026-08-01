@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_022211",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1755,
+        "consulting_content": "고객은 모르는 사람에게 입금된 금액과 경위를 문의하고 계좌, 비밀번호, 본인 정보를 제공하였고 상담사는 보안 확인 후 해당 입금은 자체 확인이 어려워 ★★은행 고객센터 문의와 계좌 잠금, 입금 취소 절차, 필요 서류 및 연락처 안내를 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

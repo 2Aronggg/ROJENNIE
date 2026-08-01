@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import re
+from datetime import date
 from typing import Literal
 
 from server.agents.content_scope import apply_content_scope
@@ -167,23 +168,27 @@ def build_target(text: str, raw_product: str | None) -> dict:
 
 
 def extract_facts(text: str) -> list[Fact]:
-    facts = [Fact(field="user_statement", value=text, source_ref="user_input", confidence=0.75)]
+    # recorded_date=오늘: 사용자 문의 원문에서 뽑아낸 진술이 "언제 접수됐는지"를 남긴다.
+    # 재분석(POST /review)이나 향후 다른 출처의 사실과 비교할 때 date.min끼리 비교돼
+    # 리스트 순서에 의존하는 걸 막는다 (server/agents/facts.py:resolve_facts).
+    today = date.today()
+    facts = [Fact(field="user_statement", value=text, source_ref="user_input", confidence=0.75, recorded_date=today)]
     for value in DATE_RE.findall(text):
-        facts.append(Fact(field="date_or_duration", value=value, source_ref="user_input", confidence=0.7))
+        facts.append(Fact(field="date_or_duration", value=value, source_ref="user_input", confidence=0.7, recorded_date=today))
     for value in AMOUNT_RE.findall(text):
-        facts.append(Fact(field="amount", value=value, source_ref="user_input", confidence=0.75))
+        facts.append(Fact(field="amount", value=value, source_ref="user_input", confidence=0.75, recorded_date=today))
     for value in RATE_RE.findall(text):
-        facts.append(Fact(field="rate", value=value, source_ref="user_input", confidence=0.75))
+        facts.append(Fact(field="rate", value=value, source_ref="user_input", confidence=0.75, recorded_date=today))
 
     product_name = _extract_product_name(text)
     if product_name:
-        facts.append(Fact(field="product_name", value=product_name, source_ref="user_input", confidence=0.6))
+        facts.append(Fact(field="product_name", value=product_name, source_ref="user_input", confidence=0.6, recorded_date=today))
     institution = _extract_institution(text)
     if institution:
-        facts.append(Fact(field="institution", value=institution, source_ref="user_input", confidence=0.65))
+        facts.append(Fact(field="institution", value=institution, source_ref="user_input", confidence=0.65, recorded_date=today))
     action = _extract_requested_action(text)
     if action:
-        facts.append(Fact(field="requested_action", value=action, source_ref="user_input", confidence=0.6))
+        facts.append(Fact(field="requested_action", value=action, source_ref="user_input", confidence=0.6, recorded_date=today))
     return facts
 
 

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_033328",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1057,
+        "consulting_content": "고객은 남편이 여러 은행, 카드 계좌로 입금했으나 중복 처리 및 오류 화면이 나타난 문제를 제기하고, 직접 조치와 필요한 서류를 문의하였고 상담사는 먼저 남편 통장의 은행을 확인하고 착오 송금 반환을 위해 은행에 전화, 방문을 권고하며, 신분증, 통장 사본, 오류 캡처 등 서류 준비와 처리 기간을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

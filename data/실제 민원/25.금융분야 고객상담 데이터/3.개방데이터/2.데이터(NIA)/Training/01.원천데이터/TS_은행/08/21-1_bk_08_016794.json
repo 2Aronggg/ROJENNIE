@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_016794",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1064,
+        "consulting_content": "고객은 대출 연장을 요청하고 계좌, 비밀번호 등 본인 확인 정보를 제공하였고 상담사는 확인 후 연장이 완료되었으며 이자만 자동 인출되는 일정과 상환 가능 시점을 안내하였다. 고객은 이자만 납부되는지 확인하고 적금 상담 예약을 요청하였고 상담사는 자동 이체 계좌를 안내하고 오늘 바로 적금 상담 예약이 가능함을 알려주었다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

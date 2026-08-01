@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_026603",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 972,
+        "consulting_content": "고객은 기업 대출 압류와 급한 이자 납부 문제를 호소하고 즉시 가상계좌 이체를 요청했으며, 상담사는 계좌, 비밀번호 확인을 거쳐 오늘 이체 진행과 문자 안내, 재시도 절차 및 고객센터 연락처를 제공하고 법률 상담 연계도 약속하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

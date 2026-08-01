@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_020429",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1053,
+        "consulting_content": "고객은 환전 시 은행에 직접 가서 하는 것과 인터넷으로 하는 것 사이에 차이와 예약 가능 여부를 문의하였고 상담사는 인터넷뱅킹 이용 시 실시간 환율 적용과 사전 예약으로 원하는 날짜에 현찰을 받을 수 있으며, 수수료 우대와 취소, 한도 조회 방법을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

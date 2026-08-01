@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_003651",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 757,
+        "consulting_content": "고객은 대출 연장 승인 문자를 받고 연장 절차 여부를 물었고 상담사는 연장 심사가 진행 중이며 결과는 문자, 카톡으로 안내될 것이라고 답했다. 고객은 본인 정보와 비밀번호를 제공하고 연장 수수료가 0.5%인지 문의했으며 상담사는 수수료 부과와 자동이체 유지 가능함을 안내하고, 연장 결과 확인 후 동의하면 연장이 완료된다고 설명했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

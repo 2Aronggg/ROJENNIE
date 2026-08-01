@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_010184",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 888,
+        "consulting_content": "고객은 대출 원금, 이자 상환액 확인과 문서 발송을 요청하였고 상담사는 현재 잔액과 총 상환액을 안내하였다. 고객은 자동이체 설정을 원하였고 상담사는 인증 후 자동이체 절차를 안내하고 설정을 완료하였다. 고객은 대출 연장 가능 여부를 문의하였고 상담사는 연장 조건과 예상 이자율을 검토 후 추후 안내하겠다고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

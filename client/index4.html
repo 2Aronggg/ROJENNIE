@@ -426,6 +426,17 @@
         letter-spacing: 0.04em;
       }
 
+      .dev-token {
+        display: inline-flex;
+        margin-left: 4px;
+        color: var(--blue-deep);
+        font-family: "IBM Plex Mono", Consolas, "Courier New", monospace;
+        font-size: 0.82em;
+        font-weight: 900;
+        opacity: 0.72;
+        white-space: nowrap;
+      }
+
       .ai-text {
         margin: 0;
         color: var(--charcoal);
@@ -623,6 +634,14 @@
         color: var(--blue-deep);
       }
 
+      .meta-trace {
+        margin-left: auto;
+        color: #166534;
+        font-family: "IBM Plex Mono", Consolas, "Courier New", monospace;
+        opacity: 0.7;
+        white-space: nowrap;
+      }
+
       .pipeline-done {
         display: inline-flex;
         padding: 3px 9px;
@@ -649,7 +668,7 @@
         opacity: 0;
         transform: scale(0.97);
         backdrop-filter: blur(18px);
-        animation: endPopup 0.9s var(--ease) 10.2s forwards;
+        animation: endPopup 0.9s var(--ease) 9.3s forwards;
         pointer-events: none;
       }
 
@@ -704,7 +723,7 @@
       <header class="header panel">
         <section>
           <div class="badge-row">
-            <span class="agent-badge">AGENT 4 / 4</span>
+            <span class="agent-badge">&lt;/&gt; AGENT 4 / 4</span>
             <span class="eyebrow">Response Composer</span>
           </div>
           <h1>판단을 민원별로 나눠 이해하기 쉬운 답변으로 조립</h1>
@@ -746,23 +765,23 @@
 
           <div class="answer-sections">
             <div class="answer-item">
-              <p class="ai-label">① 현재 확인된 내용</p>
+              <p class="ai-label">① 현재 확인된 내용 <code class="dev-token">fact</code></p>
               <p class="ai-text">약관 제3조에 우대금리 3.5% 조건이 명시되어 있습니다. <span class="ai-ref">prod_deposit_001</span></p>
             </div>
             <div class="answer-item">
-              <p class="ai-label">② 관련 규정·약관·사례</p>
+              <p class="ai-label">② 관련 규정·약관·사례 <code class="dev-token">refs</code></p>
               <p class="ai-text">KB 우량우대예금 약관 제3조, 우대금리 변경 안내 <span class="ai-ref">notice_2026_003</span></p>
             </div>
             <div class="answer-item emphasized">
-              <p class="ai-label">③ 현재 판단</p>
+              <p class="ai-label">③ 현재 판단 <code class="dev-token">finding</code></p>
               <p class="ai-text">조건 명시는 확인됐지만, 조건 충족 여부와 사전 고지 여부는 아직 확인되지 않았습니다.</p>
             </div>
             <div class="answer-item">
-              <p class="ai-label">④ 부족한 정보</p>
+              <p class="ai-label">④ 부족한 정보 <code class="dev-token">missing</code></p>
               <p class="ai-text">우대금리 조건 실제 충족 여부, 변경 안내 수신 여부</p>
             </div>
             <div class="answer-item emphasized">
-              <p class="ai-label">⑤ 권장 다음 단계</p>
+              <p class="ai-label">⑤ 권장 다음 단계 <code class="dev-token">next</code></p>
               <div class="question-row">
                 <span class="q-num">Q1</span>
                 <p class="q-text">우대금리 조건을 충족하셨나요?<br /><span class="q-why">조건 충족 여부가 확인되어야 적용 여부를 판단할 수 있습니다.</span></p>
@@ -773,11 +792,11 @@
               </div>
             </div>
             <div class="answer-item">
-              <p class="ai-label">⑥ 제출 서류</p>
+              <p class="ai-label">⑥ 제출 서류 <code class="dev-token">docs</code></p>
               <p class="ai-text">계약서 사본, 우대조건 충족 증빙, 변경 안내 수신 내역</p>
             </div>
             <div class="answer-item">
-              <p class="ai-label">⑦ 개인정보 주의사항</p>
+              <p class="ai-label">⑦ 개인정보 주의사항 <code class="dev-token">mask</code></p>
               <p class="ai-text">계약서의 제3자 정보와 불필요한 계좌번호는 마스킹 처리합니다.</p>
             </div>
           </div>
@@ -827,31 +846,31 @@
 
           <div class="answer-sections">
             <div class="answer-item">
-              <p class="ai-label">① 현재 확인된 내용</p>
+              <p class="ai-label">① 현재 확인된 내용 <code class="dev-token">fact</code></p>
               <p class="ai-text">가입 시 안내 수수료율과 현재 안내 수수료율의 불일치가 확인되었습니다. <span class="ai-ref">fact_005</span></p>
             </div>
             <div class="answer-item">
-              <p class="ai-label">② 관련 규정·약관·사례</p>
+              <p class="ai-label">② 관련 규정·약관·사례 <code class="dev-token">refs</code></p>
               <p class="ai-text">예금거래기본약관 제18조, 중도해지 수수료율 고시 변경 이력 <span class="ai-ref">notice_2025_011</span></p>
             </div>
             <div class="answer-item emphasized">
-              <p class="ai-label">③ 현재 판단</p>
+              <p class="ai-label">③ 현재 판단 <code class="dev-token">finding</code></p>
               <p class="ai-text">가입 당시 안내와 현재 수수료율이 달라, 가입 시점 안내 기준 정산을 요청할 수 있습니다.</p>
             </div>
             <div class="answer-item">
-              <p class="ai-label">④ 부족한 정보</p>
+              <p class="ai-label">④ 부족한 정보 <code class="dev-token">missing</code></p>
               <p class="ai-text">없음</p>
             </div>
             <div class="answer-item emphasized">
-              <p class="ai-label">⑤ 권장 다음 단계</p>
+              <p class="ai-label">⑤ 권장 다음 단계 <code class="dev-token">next</code></p>
               <p class="ai-text">은행 민원창구에 가입 시 안내 수수료율 기준 정산을 요청하세요.</p>
             </div>
             <div class="answer-item">
-              <p class="ai-label">⑥ 제출 서류</p>
+              <p class="ai-label">⑥ 제출 서류 <code class="dev-token">docs</code></p>
               <p class="ai-text">가입 당시 안내 문자, 계약서 사본, 현재 창구 안내 수수료율 자료</p>
             </div>
             <div class="answer-item">
-              <p class="ai-label">⑦ 개인정보 주의사항</p>
+              <p class="ai-label">⑦ 개인정보 주의사항 <code class="dev-token">mask</code></p>
               <p class="ai-text">상담 녹취·문자 제출 시 타인 이름, 연락처, 전체 계좌번호는 가립니다.</p>
             </div>
           </div>
@@ -876,6 +895,7 @@
       <footer class="meta panel">
         <span><b>구현</b> agent/response_composer.py</span>
         <span><b>출력 연결</b> server.schemas.FinalResponse</span>
+        <span class="meta-trace">trace 05bb2e7f · 29ms · exit 0</span>
         <span class="pipeline-done"><b>파이프라인 완료</b>&nbsp;4 / 4 단계</span>
       </footer>
     </main>
@@ -886,11 +906,13 @@
 
     <button class="replay" type="button" id="replay">Replay</button>
 
+    <script src="agent-api.js"></script>
     <script>
       const replay = document.querySelector("#replay");
       let playTimer = null;
 
       function startPlayback() {
+        window.KBAgentDemo?.renderAgent4(document);
         window.clearTimeout(playTimer);
         document.body.classList.remove("playing");
         playTimer = window.setTimeout(() => {

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_014564",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 2363,
+        "consulting_content": "고객은 이자 납부가 진행되지 않아 문의하였고 상담사는 오전 10시~오후 6시 사이에 잔액이 있으면 당일 자동 차감된다고 안내하였다. 고객은 대출 잔액 마이너스 표시와 조회 방법, 조기 상환 시 이자 절감 절차, 자동 이체 설정 및 연체 시 대처 방안을 질문하였고 상담사는 마이너스 통장 방식이라 앱, 인터넷뱅킹에서 확인 가능하고, 일일 이자 기준 상환으로 이자 절감이 가능하며, 모바일 자동 이체 방법과 연체 이자, 연체료 부과 및 신용도 유지 안내를 제공하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

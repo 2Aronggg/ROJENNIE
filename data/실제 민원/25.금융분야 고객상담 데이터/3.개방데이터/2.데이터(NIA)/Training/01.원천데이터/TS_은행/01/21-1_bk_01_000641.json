@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_000641",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1033,
+        "consulting_content": "고객은 특정 입금 내역의 입금자명, 입금 일시, 금액, 입금자와 수취인 관계를 문의했다. 상담사는 입금자명과 거래 메모 약어의 의미를 안내하고, 추가 확인 시 필요한 서류 제출 방법과 처리 기간을 설명했다. 또한 입금 확인 수수료와 모바일 뱅킹 이용 절차를 함께 안내했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

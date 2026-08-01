@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_023231",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 0,
+        "consulting_content": "고객은 대출 이자 연체 금액과 가상계좌 정보를 문자로 받기를 요청했고, 본인 확인을 위해 계좌번호, 생년월일, 비밀번호를 제공하였다. 상담사는 세 건의 대출이 모두 연체 중임을 안내하고, 이자 연체 상세 내역과 가상계좌 번호를 문자로 발송했으며, 입금 기한과 연체 이자 발생 가능성을 설명하였다. 또한 상환 유예와 분할 상환 옵션을 제시하고, 분할 상환 계약은 온라인 인증 후 서명 가능하다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

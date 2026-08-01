@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_008054",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1276,
+        "consulting_content": "고객은 대출 만기 연장 안내를 받고 연장을 원한다며 계좌 확인 및 비밀번호 입력을 요청하였다. 상담사는 어플을 통한 본인 확인과 비밀번호 입력을 안내하고, 연장에 필요한 추가 입금 금액을 제시하였다. 연장 시 적용 이자율은 기존 이자에 가산 금리가 더해진 형태이며, 상세 내용은 어플 ‘대출 관리’‑‘연장 상세’에서 확인 가능하다고 설명하였다. 연장 승인 시 대출 한도는 유지되고, 상환 일정은 ‘상환 일정’ 탭에서 확인 가능하다고 안내하였다. 추가 입금이 완료되면 실시간 반영 후 연장 신청이 가능하다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

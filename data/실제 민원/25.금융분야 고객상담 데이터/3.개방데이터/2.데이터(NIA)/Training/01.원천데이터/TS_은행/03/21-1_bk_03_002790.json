@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_002790",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1609,
+        "consulting_content": "고객은 아파트 관리비 자동 이체가 안 된 상황을 문의했고, 상담원은 계좌와 비밀번호를 받아 원인을 파악했다. 시스템 오류와 이체 한도 초과가 원인으로 밝혀졌으며, 한도 상향과 알림 설정을 안내하고 재시도가 자동으로 이루어질 것이라고 설명했다. 고객은 추가 질문을 통해 재시도 시점, 수수료, SMS 알림 설정 방법 등을 확인했고, 상담원은 답변하고 테스트 문자도 전송했다. 최종적으로 재시도 결과를 문자로 알려 주겠다고 약속하며 통화를 종료했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

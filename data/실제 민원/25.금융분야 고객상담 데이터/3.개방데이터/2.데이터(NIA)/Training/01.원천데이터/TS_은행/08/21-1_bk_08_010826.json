@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_010826",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1400,
+        "consulting_content": "고객은 대출 연장을 전화로 가능한지 문의하고 본인 확인을 위해 ARS에 계좌번호, 비밀번호, 생년월일 등을 입력하였고 상담사는 확인 절차를 진행한 뒤 연장 가능한 대출임을 확인하고 추가 서류 검토 후 비대면 연장 URL을 문자, 이메일로 전달하겠다고 안내하였으며, 최종 승인 결과도 동일 방식으로 통보하겠다고 알렸다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

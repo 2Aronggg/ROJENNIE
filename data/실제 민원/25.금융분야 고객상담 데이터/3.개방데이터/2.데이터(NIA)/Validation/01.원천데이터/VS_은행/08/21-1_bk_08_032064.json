@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_032064",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 961,
+        "consulting_content": "고객은 대출 연장을 요청하고 연장에 필요한 서류와 절차를 물었으며, 상담사는 온라인으로 신분증 사본 및 최근 3개월 거래내역서 제출을 안내하고, 승인 시 영업일 기준 1~2일 내 입금된다고 설명하였다. 고객은 연장 거절 시 조치와 즉시 전화 연장 가능 여부를 문의했고, 상담사는 거절 사유를 서면으로 통보하고 재심사 또는 다른 대출 상담을 제안하며, 현재는 본인 확인 및 서류 제출이 필요해 전화로 즉시 연장은 불가하다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

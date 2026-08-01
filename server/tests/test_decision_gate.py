@@ -69,6 +69,26 @@ class DecisionGateTests(unittest.TestCase):
 
         self.assertEqual(decision.control, "amend")
 
+    def test_hold_when_legal_uncertainty_is_detected(self) -> None:
+        decision = apply_decision_gate(
+            _issue(
+                decision=Decision(control="proceed", risk_flags=["legal_uncertainty"]),
+            )
+        )
+
+        self.assertEqual(decision.control, "hold")
+        self.assertTrue(decision.human_review)
+
+    def test_hold_when_suspicious_input_is_detected(self) -> None:
+        decision = apply_decision_gate(
+            _issue(
+                decision=Decision(control="proceed", risk_flags=["suspicious_input"]),
+            )
+        )
+
+        self.assertEqual(decision.control, "hold")
+        self.assertTrue(decision.human_review)
+
 
 if __name__ == "__main__":
     unittest.main()

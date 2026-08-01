@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_012995",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 908,
+        "consulting_content": "고객은 환전 금액 한도와 필요한 서류를 문의하였고 상담사는 다만 동일자, 동일인 기준으로 초과 환전이 발생하면 자동으로 시스템에 통보됨.기준의 한도 초과 여부는 신분증, 3개월 거래내역서 제출로 확인 가능하며, 구체적인 통화, 금액을 물어 확인 후 수수료, 환율 안내도 제공 가능 하다고 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

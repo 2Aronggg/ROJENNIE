@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_001662",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1344,
+        "consulting_content": "고객은 OTP와 인증서의 은행 간 충돌로 인한 재발급 절차에 대해 문의했다. 특히 기존 OTP 비활성화, 새 OTP 발급 절차, 인증서 없이 등록하는 방법, 일련번호 확인 및 재사용 가능 여부 등을 질문했다. 상담사는 OTP 재발급 절차와 비활성화 및 새 OTP 발급 방법을 설명했다. 또한 인증서 없이 일련번호 입력으로 등록 가능함을 설명하고, 오류 시 대처법을 안내했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_031303",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1207,
+        "consulting_content": "고객은 즉시 환전을 원하고 어머니도 혜택을 받을 수 있는지 문의했으며, 앱으로 신청 가능하고 필요한 서류와 절차를 물었고, 금액 한도와 수수료를 확인하고 바로 진행하고자 했고, 방문 예약 여부도 물었다. 상담사는 환전은 지정된 환전소에서 신분증, 여권으로 10분 내 처리되며 우대 적용 방법과 앱 신청 절차, 금액 한도, 수수료 안내, 문자 링크 전송 및 다른 통화, 수수료 정보 제공을 안내하고, 방문 시 예약은 필요 없으며 추가 문의에 대응하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

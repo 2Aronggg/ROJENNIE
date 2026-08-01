@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_030138",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 869,
+        "consulting_content": "고객은 카드 사용 연계 대출 금리 감면이 적용되지 않아 확인을 요청했고 상담사는 계좌, 주민등록, 비밀번호 등 2~3일 내에 결과를 문자로 안내하겠다고 안내했으며, 현재 마일리지 카드 연계 혜택이 적용 중이며 향후 대출에도 동일 조건이 가능하다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

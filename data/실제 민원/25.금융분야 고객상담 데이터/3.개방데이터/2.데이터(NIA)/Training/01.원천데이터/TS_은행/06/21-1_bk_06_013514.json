@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_013514",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1330,
+        "consulting_content": "고객은 연체 대출 상환 금액과 상세 내역을 요청하고 이메일, 문자 전송 및 자동 알림 서비스 신청을 하였고 상담사는 대출 현황을 안내하고 가상계좌 송금이 불가함을 설명한 뒤 문자로 상세 내역을 전송하고 자동 알림 서비스를 등록하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

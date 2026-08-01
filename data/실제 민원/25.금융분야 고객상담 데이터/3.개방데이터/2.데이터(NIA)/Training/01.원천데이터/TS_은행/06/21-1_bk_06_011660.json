@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_011660",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1657,
+        "consulting_content": "고객은 대출 이자 납입을 위한 가상 계좌와 입금 방법, 연체 이자율을 문의하였고 상담사는 계좌 번호, 비밀번호 입력을 안내하고 연 15% 이자율, 부가 수수료 없음, 가상 계좌는 일회성이며 당일 23시까지 입금해야 함을 설명하였다. 고객은 입금자명을 본인 이름으로 기재하고 문자 수신만 원한다는 의사를 밝혔으며 상담사는 가상 계좌 정보를 문자로 발송하고 48시간 유효함을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

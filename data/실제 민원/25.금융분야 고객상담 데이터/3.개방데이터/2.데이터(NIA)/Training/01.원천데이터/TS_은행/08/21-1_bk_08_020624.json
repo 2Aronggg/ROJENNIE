@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_020624",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1879,
+        "consulting_content": "고객은 전세대출 계약 연장을 원하고 본인 확인 및 계약서 제출 절차를 문의했으며, 상담사는 계약서와 신분증만 필요하고 서류는 별도 없으며, 영업점 방문 또는 온라인 신청으로 1~2일 내 처리되고 수수료는 없다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

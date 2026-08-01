@@ -27,6 +27,8 @@ def _bucket(path: str) -> str | None:
         return "products"
     if relative.startswith("cases/"):
         return "cases"
+    if relative.startswith("guides/"):
+        return "guides"
     return None
 
 
@@ -129,6 +131,32 @@ def _glossary_records(data_dir: Path) -> list[dict[str, object]]:
     return records
 
 
+def _guide_records(data_dir: Path) -> list[dict[str, object]]:
+    guides_dir = data_dir / "guides"
+    records: list[dict[str, object]] = []
+    for path in sorted(guides_dir.rglob("*.md")):
+        text = path.read_text(encoding="utf-8").strip()
+        if not text:
+            continue
+        relative = path.relative_to(data_dir).as_posix()
+        doc_id = _id(relative)
+        title = next((line.lstrip("# ").strip() for line in text.splitlines() if line.startswith("#")), path.stem)
+        for number, text_chunk in enumerate(_chunks(text), start=1):
+            chunk = DocumentChunk(
+                doc_id=doc_id,
+                chunk_id=f"{doc_id}-c{number}",
+                path=f"local:{relative}",
+                doc_type="guide",
+                product=["공통"],
+                source="local",
+                page=1,
+                section=title,
+                text=text_chunk,
+            )
+            records.append(_record(chunk, "guides", source_file=path.name, format="md"))
+    return records
+
+
 def _embeddings_cache(path: Path) -> dict[str, list[float]]:
     if not path.exists():
         return {}
@@ -154,6 +182,7 @@ def build_corpus(
         "regulations": [],
         "products": [],
         "cases": [],
+        "guides": [],
         "glossary": [],
     }
     for chunk in chunks:
@@ -161,6 +190,7 @@ def build_corpus(
         if corpus in grouped:
             grouped[corpus].append(_record(chunk, corpus))
     grouped["cases"].extend(_case_records(data_dir))
+    grouped["guides"].extend(_guide_records(data_dir))
     grouped["glossary"].extend(_glossary_records(data_dir))
 
     embeddings = _embeddings_cache(embeddings_path)
@@ -208,6 +238,7 @@ def build_corpus(
         "documents": documents,
         "total_chunks": len(all_records),
         "authoritative_for_decision": ["regulations", "products", "cases"],
+        "action_guides": ["guides"],
         "display_only": ["glossary"],
         "excluded": ["complaints"],
     }

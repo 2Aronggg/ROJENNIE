@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_010583",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1078,
+        "consulting_content": "고객은 대출 원리금 가상계좌 송금을 요청하고 인증 절차를 진행하였으며 영수증을 카카오톡으로 받기를 원했고 상담사는 인증 안내와 가상계좌 정보를 제공하였다. 고객은 모바일 앱 설치와 대출 상환 내역 조회 방법을 문의하였고 상담사는 앱 설치 절차와 온라인, 모바일 조회 가능함을 안내하였다. 고객은 입금 지연 시 대처 방법을 물었고 상담사는 고객센터 연락을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

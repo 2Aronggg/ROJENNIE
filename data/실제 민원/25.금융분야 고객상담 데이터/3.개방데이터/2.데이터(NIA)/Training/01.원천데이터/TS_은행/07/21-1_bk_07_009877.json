@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_009877",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 2132,
+        "consulting_content": "고객은 대출 연계 카드 사용 시 금리 감면 혜택과 적용 조건을 문의하였다. 상담원은 고객 카드 등급이 일반형이며 기본 금리에서 0.3%p가 자동 감면된다고 안내하였다. 감면 적용은 별도 신청 없이 매월 결제 실적 기준으로 자동 적용된다고 설명하였다. 카드 재발급 시 기존 혜택이 유지되며, 대출 자동이체와 카드 결제일이 겹칠 경우 이체가 우선 처리된다고 안내하였다. 결제일 연장은 모바일 뱅킹 앱에서 설정 가능하다고 안내하였다. 마지막으로 대출 관련 서류를 이메일로 발송해 드렸다고 확인하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

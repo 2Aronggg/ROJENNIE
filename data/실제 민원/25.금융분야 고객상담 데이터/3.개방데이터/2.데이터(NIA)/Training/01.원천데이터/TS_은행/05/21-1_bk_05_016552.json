@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_016552",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 909,
+        "consulting_content": "고객은 한도 계좌로 인해 이체가 제한되어 예금 만기 자금을 다른 은행으로 운용하는 방법을 문의하였고, 상담사는 모바일 앱에서는 해제가 불가해 거래 목적에 따른 서류를 지참해 지점 방문이 필요하며, 현장 심사 후 한도 해제 또는 대안 상품 안내가 가능하다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

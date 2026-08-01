@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_021472",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 858,
+        "consulting_content": "고객은 계좌 번호와 입금 금액을 알려주었고 상담사는 입금 내역을 확인 후 해당 이체가 타업체를 통한 것으로 확인하였다. 고객은 금액 회수를 요청했으며 상담사는 중계 요청이 가능하지만 상대 업체에 문의해야 한다고 안내하고, 직접 문의 시 거래 번호, 상대 계좌, 이체 일시를 준비하라고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

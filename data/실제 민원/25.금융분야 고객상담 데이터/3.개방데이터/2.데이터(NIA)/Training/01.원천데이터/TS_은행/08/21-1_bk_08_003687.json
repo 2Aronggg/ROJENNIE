@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_003687",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 920,
+        "consulting_content": "고객은 전세 대출 연장 절차를 문의하고 보증금, 세입자 변동 없음을 알렸으며, 필요한 서류와 전자 제출 방법, 모바일 앱 설치 및 문자를 통한 신청 경로를 요청하였다고 상담사는 주민등록증, 계약서, 급여 내역서 등 서류를 안내하고, 앱 설치 방법과 파일 전송 방법을 설명한 뒤 문자 링크를 보내 연장 신청이 가능함을 알려 주었고, 연장 시 이자율은 기존과 동일하다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

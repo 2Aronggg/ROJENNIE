@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_025112",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 977,
+        "consulting_content": "고객은 대출 연장을 문의하고 계좌 번호, 생년월일, 비밀번호 등 본인 확인을 진행했으며, 보험금 지급 시점, 금액이 연장에 영향을 미칠 수 있음을 물었다. 상담사는 확인 절차 후 연장 승인이 완료되었고, 계약서 서명 및 이자율, 월 상환액 변동 안내를 제공하겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

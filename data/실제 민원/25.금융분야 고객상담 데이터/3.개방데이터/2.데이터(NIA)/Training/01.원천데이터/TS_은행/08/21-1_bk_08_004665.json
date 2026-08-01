@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_004665",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1119,
+        "consulting_content": "고객은 대출 만기 안내를 받고 연장 방법과 절차를 문의하였고 상담사는 만기일을 안내하고, 앱에서 연장 신청 가능, 서류, 추가 금리, 수수료 없음, 신용 등급 영향은 연체 시에만 있다고 설명하였으며, 조기 상환 시 위약금 확인 방법도 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

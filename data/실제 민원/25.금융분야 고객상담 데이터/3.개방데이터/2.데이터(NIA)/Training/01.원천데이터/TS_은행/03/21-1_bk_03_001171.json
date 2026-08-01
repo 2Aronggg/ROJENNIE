@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_001171",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1086,
+        "consulting_content": "고객은 인증서 만료와 자동이체 미이행 문제를 문의하였고 상담사는 인증서 재발급 및 자동이체 재설정 절차를 안내하였으며, 현재 상품은 정기예금으로 자동이체가 불가함을 설명하고 다른 적금, 자유 적립식 옵션을 제안하였다. 이후 재설정 및 재발급을 진행하고 결과를 문자로 안내하겠다고 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

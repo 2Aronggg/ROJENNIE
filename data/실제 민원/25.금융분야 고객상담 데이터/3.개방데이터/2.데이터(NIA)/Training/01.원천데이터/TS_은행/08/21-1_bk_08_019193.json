@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_019193",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1336,
+        "consulting_content": "고객은 대출 연장 서류 제출 시 ‘스크래핑 데이터가 없다’ 오류가 발생했다고 알렸고 상담사는 사업자 정보 재확인 및 복사, 붙여넣기 시도를 안내했으며, 오류 지속 시 영업점 담당자와 연결해 수기 접수를 제안하였다.고객은 지점과 성명을 제공해 담당자 연결을 요청했고 상담사는 해당 ◆◆◆지점 담당자와 연결해 문제 해결을 도와주었다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

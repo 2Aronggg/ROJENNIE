@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_003244",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 962,
+        "consulting_content": "고객은 잘못 누른 것으로 추정되는 대출, 마이너스통장 관련 금액 확인과 계약서, 거래내역 조회를 요청하였고 상담사는 현재 대출 잔액, 마이너스 한도, 이자 미발생 금액 등을 안내하고 추가 문의 없음을 확인한 뒤 상담을 종료하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

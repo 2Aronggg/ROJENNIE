@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_002579",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1338,
+        "consulting_content": "고객은 미확인 해외 체크카드 출금 내역에 대해 문의했고, 상담사는 해당 거래가 매입 보류 상태임을 설명하고 있다. 그리고 조회 방법, 해외 사용 제한, 환불 절차와 소요 시간, 보안 강화 방안, 계좌 연동 서비스에 미치는 영향 등을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

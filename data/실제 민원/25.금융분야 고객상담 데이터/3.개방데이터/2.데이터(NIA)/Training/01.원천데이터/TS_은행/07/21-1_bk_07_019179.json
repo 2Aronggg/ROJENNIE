@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_019179",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1212,
+        "consulting_content": "고객은 주택담보대출 이자감면을 위해 청약저축 실적 충족이 필요하다고 문의하고, 기존 저축 해약, 재가입 및 자동이체 금액 증액 절차를 물었으며, 상담사는 앱에서 자동이체 금액 수정이 가능하고 문자 인증 후 바로 적용된다고 안내하고, 이번 달 입금으로 실적을 맞출 수 있으며 혜택은 연 1회, 실적 충족 후 30일 이내 금리조정이 이루어진다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_029196",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1055,
+        "consulting_content": "고객은 해외 송금 상담원과 재연결을 원하고 대출 연장을 요청했으며 서류 준비 상황과 연장 수수료를 문의하고 지점 전화번호 제공을 요구하였다. 상담사는 고객 연락처 확인 후 부재중 전화를 확인하고, 대출 연장 절차와 필요 서류 및 신용 등급에 따른 연장 가능성을 안내했으며, 수수료는 담당자가 안내할 것이라 전달하고, 지점은 대표전화로 연결될 것이며 전화번호를 메모하도록 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

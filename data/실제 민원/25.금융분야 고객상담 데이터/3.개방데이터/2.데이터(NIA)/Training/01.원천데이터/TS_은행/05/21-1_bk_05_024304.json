@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_024304",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1164,
+        "consulting_content": "고객은 계좌 한도 여부 확인을 요청했고 상담사는 한도 계좌임을 안내했다. 고객은 일일 한도와 잔액, 조정 절차를 물었고 상담사는 금액과 영업점, 앱 신청 방법을 설명했다. 고객은 필요한 서류와 대체 증빙을 문의했으며 상담사는 재무제표, 계약서, 매입세금계산서 등과 사업자등록증, 매출전표 등을 제시했다. 마지막으로 상담사는 문자 요약 발송을 완료했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

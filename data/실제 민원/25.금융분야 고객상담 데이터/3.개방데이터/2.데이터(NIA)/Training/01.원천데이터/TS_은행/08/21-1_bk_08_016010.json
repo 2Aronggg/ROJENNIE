@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_016010",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 987,
+        "consulting_content": "고객은 마이너스 통장 남은 한도와 이자율, 연장 절차를 문의하였고 상담사는 연장 신청 기한, 방법을 안내하고, 연장 시 이자율은 기존과 동일하나 변동 가능성을 알렸다. 고객은 연장 알림 설정을 요청하였고 상담사는 문자 알림을 설정해 연장 버튼 활성화 시 즉시 통보하기로 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

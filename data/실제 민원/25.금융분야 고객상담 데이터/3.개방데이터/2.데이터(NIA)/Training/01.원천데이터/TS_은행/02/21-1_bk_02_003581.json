@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_003581",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 839,
+        "consulting_content": "고객은 5천만 원 송금 금액과 다음 주 금요일 입금 예정일을 알리고, 통화가 어려워 추후 연락을 요청하였다. 상담사는 송금 절차 안내를 위해 정보를 확인하고 보안을 검증한 뒤, 담당 부서와 연결 및 고객에게 문자 전송을 약속하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

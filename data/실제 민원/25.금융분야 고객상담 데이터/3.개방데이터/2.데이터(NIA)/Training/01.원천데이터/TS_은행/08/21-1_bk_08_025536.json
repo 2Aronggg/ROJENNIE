@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_025536",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1943,
+        "consulting_content": "고객은 마이너스 통장 연장을 시도했으나 시스템 오류로 불가하다고 문의했으며, 상담사는 사용 실적 부족으로 연장이 제한될 수 있음을 설명하고, 마이너스 상태로 출금 후 재신청 시 가능성과 한도 감액 가능성을 안내하였다. 또한 다른 대출 상품의 금리, 상환 조건을 안내하고 서면 자료를 발송하겠다고 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

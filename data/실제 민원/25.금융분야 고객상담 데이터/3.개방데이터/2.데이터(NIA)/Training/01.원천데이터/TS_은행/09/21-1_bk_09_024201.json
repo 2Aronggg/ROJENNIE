@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_024201",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1579,
+        "consulting_content": "고객은 중구 지점 위치와 최신 잔액 확인 방법을 문의하였고 상담사는 지점 영업시간 안내와 전화 뒷번호 인증 후 실시간 조회 가능하다고 안내하였으며, 고객은 현재 제공되는 권종이 제한적이라 다른 권종 및 상품 전환 절차를 요청하였고 상담사는 별도 신청, 서류 제출이 필요하고 온라인, 방문 신청 가능하며 상황에 맞는 다른 옵션을 제시할 수 있다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

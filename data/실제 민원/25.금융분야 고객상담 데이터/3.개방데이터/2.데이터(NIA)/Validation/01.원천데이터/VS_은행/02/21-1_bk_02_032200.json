@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_032200",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 990,
+        "consulting_content": "고객은 법인 거래의 분양권 입금 확인을 요청하고 은행명, 계좌번호, 입금일, 금액을 제공했으며, 이름 오류를 정정하였다. 상담사는 입금 여부를 조회하고 예금주와 통화를 연결해 확인을 완료한 뒤 서류를 영업일 3일 내 발송하고 추가 서류 필요 시 안내하겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

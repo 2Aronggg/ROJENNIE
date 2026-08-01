@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_023940",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1597,
+        "consulting_content": "고객은 적금 자동이체 변경 여부와 날짜, 금액을 확인하고자 계좌, 본인 정보를 제공하였고 상담사는 본인 인증 후 시스템 조회를 통해 자동이체가 정상적으로 설정되어 있음을 안내하고, 모바일 뱅킹에서 내역 확인 가능함을 알려 주었으며, 업체 확인은 제한적이라 담당 부서 문의 가능함을 안내하고, 필요 시 변경 절차는 언제든 가능하다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_026517",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 629,
+        "consulting_content": "고객은 문자 수신 후 본인확인 및 계좌 비밀번호 입력을 요청했고 상담사는 신원 확인 절차와 비밀번호 입력을 안내하였다. 고객은 만기일 확인과 자동이체 해지, 모바일 연장 여부를 물었고 상담사는 만기 확인, 해지 수수료 없음, 모바일 연장은 앱에서 가능하다고 안내하였다. 고객은 앱 미설치 상태라 앱 설치 방법을 안내받았으며, 설치 후 재연락하겠다고 하였고 상담사는 설치 방법을 설명하고 상담을 종료하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

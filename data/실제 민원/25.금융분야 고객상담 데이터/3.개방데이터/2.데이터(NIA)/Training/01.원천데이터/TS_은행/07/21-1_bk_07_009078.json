@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_009078",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1350,
+        "consulting_content": "고객은 주택 담보 대출 우대 금리 할인 기준을 카드 결제 금액이 아닌 출금 금액으로 확인하고자 문의하였다. 상담사는 출금된 금액이 실적으로 적용되며, 실적은 매월 말일 기준으로 집계되어 다음 달 초에 반영된다고 설명하였다. 우대 금리 적용에는 연체 여부와 대출 잔액 비율이 추가 조건이며, 연체 여부는 온라인 뱅킹 대출 관리 화면에서 실시간으로 확인 가능하다고 안내하였다. 자동이체 실적도 별도 할인 항목으로 인정되어 카드 실적과 동시에 충족하면 할인율이 누적 적용된다고 밝혔다. 중복 적용 제한은 동일 종류 할인에만 적용되며, 실적 확인 주기는 매월 말일 기준임을 전달하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

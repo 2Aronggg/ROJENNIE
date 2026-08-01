@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_023981",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 728,
+        "consulting_content": "고객은 대출 연장을 문의하고 계좌 번호, 비밀번호 등 본인 확인 정보를 제공하였고 상담사는 연장 가능 잔액, 이자율을 조회하고 서류 제출 완료를 확인하였다. 고객은 진행 상황과 추가 확인 사항을 물었고 상담사는 담당자가 ●●월에 연락하고 상환 일정, 변경 금액을 문자, 이메일로 안내할 것이라고 안내하였다. 고객은 최근 수신한 문자의 진위 여부를 문의하였고 상담사는 해당 문자는 은행 공식 알림이며 비밀번호 요구는 없다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

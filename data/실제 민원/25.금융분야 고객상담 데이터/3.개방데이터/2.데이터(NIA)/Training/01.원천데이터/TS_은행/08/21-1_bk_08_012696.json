@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_012696",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1864,
+        "consulting_content": "고객은 대출 연장을 원하며 남은 기간과 연장에 필요한 상환 금액, 기한, 수수료를 확인하였고 상담사는 계좌, 생년월일 확인 후 연장 조건인 ●●●원 상환과 ●월 ●일 기한, 모바일, 문자 결제 방법 및 연 1% 수수료를 안내하였다.."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

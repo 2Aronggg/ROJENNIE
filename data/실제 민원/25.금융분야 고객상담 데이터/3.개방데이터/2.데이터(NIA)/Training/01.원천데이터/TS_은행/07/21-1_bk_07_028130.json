@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_028130",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 783,
+        "consulting_content": "고객은 대출과 신용카드 연동 가능 여부와 필요 서류, 한도 산정 및 상환 일정 안내를 요청하였고 상담사는 계좌, 신분증 확인 후 3개월 급여이체 내역, 신분증 사본이 필요함을 안내하고, 한도는 신용점수, 실적으로 자동 산정되며 상환 일정은 계약서 및 문자로 제공된다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

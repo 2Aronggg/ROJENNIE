@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_008261",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1768,
+        "consulting_content": "고객은 ●월 ●●●일 만기인 사업자 대출 연장 안내 문자를 받아 연장 여부와 상환 방식 변경을 문의하였다. 상담원은 연장 서류 제출 방법과 필요 서류를 안내하고, 현재는 마지막 회차 납부만으로 연장이 필요 없다고 설명하였다. 원리금 균등 상환으로 전환 방법을 어플에서 신청하도록 안내하고, 전환 신청 절차와 처리 기간을 안내하였다. 또한 남은 대출 잔액이 약 ○○○만원이며 12회 남았음을 알려주었고, 조기 상환 수수료는 잔액의 0.5%임을 설명하였다. 금리 변동 보고서를 문자로 수신하도록 설정을 완료하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

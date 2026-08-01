@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_007538",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1337,
+        "consulting_content": "고객은 ★★은행으로 입금이 되지 않아 미납 상황을 문의하였다. 상담원은 입금 내역을 확인하고 입금 일시와 금액을 재확인하도록 요청하였다. 고객은 오늘 3시 분에 소액이 입금됐다고 답변하였다. 상담원은 입금 누락을 확인하고 재전송 절차를 제안하였다. 고객은 재전송을 요청하였으며 처리 결과를 문자와 전화로 안내하겠다고 안내하였다. 이후 진행 상황을 실시간 모니터링하고 입금 확정 시 연락하겠다고 약속하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

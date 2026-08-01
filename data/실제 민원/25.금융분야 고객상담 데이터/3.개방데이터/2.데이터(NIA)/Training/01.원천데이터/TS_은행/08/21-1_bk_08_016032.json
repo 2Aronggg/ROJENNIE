@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_016032",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 2062,
+        "consulting_content": "고객은 대출 만기 연장을 문의하였고 상담사는 계좌, 모바일 앱 연장 신청 방법과 서류 업로드 절차를 안내하고 카카오톡, 문자 안내 발송을 약속했으며, 고객은 향후 공지와 서류를 문자와 이메일로 받기를 원했으므로 상담사는 이를 제공하겠다고 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

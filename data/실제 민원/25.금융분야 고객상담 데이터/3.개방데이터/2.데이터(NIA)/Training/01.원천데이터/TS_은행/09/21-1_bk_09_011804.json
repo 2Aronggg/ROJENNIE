@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_011804",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1147,
+        "consulting_content": "고객은 5천 달러 환전을 원하고 절차와 수수료, 현재 환율을 문의하였고 상담사는 신분증, 계약서 사본 제출과 모바일 앱 업로드 방법을 안내하고, 우대 수수료 적용 후 약 10% 수준임을 설명하였으며, 실시간 환율 문자 전송 및 알림 서비스 신청을 제안하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_001169",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1545,
+        "consulting_content": "고객은 입금이 통장에 반영되지 않아 확인을 요청했고, 상담원은 입금 내역을 조회하고 문자 알림 서비스와 보안 강화 방법을 안내하였다. 또한 상담원은 입금은 영업일 기준 1~2일 내에 반영되며, 비밀번호 입력이 필요함을 안내하였으며 보안을 위해 OTP 인증 추가 설정을 권장했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

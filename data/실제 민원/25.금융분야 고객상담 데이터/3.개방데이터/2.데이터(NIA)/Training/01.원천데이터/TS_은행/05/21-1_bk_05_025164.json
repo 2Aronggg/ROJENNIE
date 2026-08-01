@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_025164",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 880,
+        "consulting_content": "고객은 체크카드 자동 충전이 안 되고 하루 이체 한도가 있는지 문의했으며, 한도 증액 및 다른 카드 전환 방법을 물었고, 해지 및 심사 절차도 확인하고자 하였다. 상담사는 고객 계좌가 한도 계좌로 하루 ●●원 제한이 있음을 안내하고, 한도 초과 시 자동 충전이 안 됨을 설명했으며, 한도 증액은 급여, 거래 실적 심사 필요, 해지는 은행 방문, 서류 제출, 다른 카드 전환은 기존 자동 충전 해지 후 신규 카드 등록을 권고하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

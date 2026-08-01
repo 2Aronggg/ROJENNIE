@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_017221",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1354,
+        "consulting_content": "고객은 아파트 관리비 자동이체가 잔액 부족으로 실패한 사실과 해당 일자 거래내역을 문의하였고 상담사는 계좌 확인 절차를 진행하여 출금 시도 이력을 확인하고, 재시도가 불가함을 안내한 뒤 직접 이체 방법을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

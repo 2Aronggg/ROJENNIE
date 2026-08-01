@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_029638",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 856,
+        "consulting_content": "고객은 오늘 대출 이자 납부를 위해 가상 계좌와 금액을 요청했으며 본인 확인 절차로 생년월일, 계좌 정보를 제공하였고, 상담사는 문자로 가상 계좌 번호와 금액을 발송하고 입금 방법, 마감 시각, 알림톡 안내 등 상세 안내를 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

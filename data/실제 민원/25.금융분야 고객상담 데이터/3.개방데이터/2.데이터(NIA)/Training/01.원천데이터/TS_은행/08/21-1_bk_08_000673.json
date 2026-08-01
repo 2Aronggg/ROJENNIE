@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_000673",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1029,
+        "consulting_content": "고객의 버팀목 전세대출 연장과 관련하여 서류 제출 기한과 장소를 안내하였다. 연장 심사에 필요한 서류로 주택임대차 계약서, 급여 내역서, 신분증 사본 등을 설명하고, 심사 기간은 약 2주 소요되며 결과는 문자 또는 이메일로 안내된다고 설명하였다. 또한 연장 시 이자율과 상환 조건이 변동될 수 있는 사례를 구체적으로 예시로 들어 안내하였으며, 연장 승인 시 기존 계약이 자동으로 연장되고 별도의 계약서 서명은 필요하지 않음을 설명하였다. 마지막으로 고객이 방문해야 할 지점과 방문 시 유의사항을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

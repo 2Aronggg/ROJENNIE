@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_011970",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1032,
+        "consulting_content": "고객은 대출 연체 안내를 요청하고 성명, 생년월일로 본인 확인을 마쳤으며, 계좌 번호 미확인 시 모바일 앱 문자 인증을 안내받았다. 고객은 일시불, 분할 상환 옵션과 연체 이자율, 할인 조건 및 마감 시점을 문의했고, 상담사는 이자율과 할인 조건을 설명하고 지정 시점까지 일시불 상환 시 할인 적용된다고 안내하였다. 또한 추후 전화 시 계좌 번호와 비밀번호를 준비하라고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

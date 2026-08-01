@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_017859",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 856,
+        "consulting_content": "고객은 대출 마이너스 통장 연장을 신청하고 계좌, 성명, 생년월일, 비밀번호를 제공했으며, 어플 사용이 어려워 녹취 부서 연락을 요청하고 서류 준비 의사를 밝혔고, 상담사는 연장은 ★★뱅크 어플에서 계약서 작성 및 서류 업로드가 필요하다고 안내하고, 어플 이용이 어려울 경우 녹취 부서가 별도 안내 전화를 드리겠다고 약속했으며, 서류 제출 후 1~2 영업일 내에 연장이 완료되고 결과를 문자, 앱 알림으로 알려드리겠다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

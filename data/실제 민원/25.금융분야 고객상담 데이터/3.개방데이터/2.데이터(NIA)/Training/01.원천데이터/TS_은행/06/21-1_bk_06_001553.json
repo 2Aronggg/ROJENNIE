@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_001553",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1730,
+        "consulting_content": "고객은 가상 계좌 발급 절차와 필요 서류, 수수료 및 이자 정책을 문의했고, 상담사는 온라인 및 모바일 신청 방법, 각각의 계좌 유형, 연금 전용, 결제용, 투자용 계좌의 자동이체 설정 및 한도와 두가지 추가 본인 확인 인증절차를 안내했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

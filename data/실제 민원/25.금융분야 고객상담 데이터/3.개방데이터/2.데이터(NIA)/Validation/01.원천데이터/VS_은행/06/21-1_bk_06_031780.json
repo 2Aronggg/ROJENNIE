@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_031780",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1431,
+        "consulting_content": "고객은 전자이 아이파크 아파트 중도금 대출의 남은 원금, 이자를 특정 날짜 기준으로 확인하고 문자로 받기를 요청하였고 상담사는 계좌, 신분 확인 후 해당 금액을 산출해 문자와 인증번호로 안내하고, 필요한 서류와 처리 기간을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

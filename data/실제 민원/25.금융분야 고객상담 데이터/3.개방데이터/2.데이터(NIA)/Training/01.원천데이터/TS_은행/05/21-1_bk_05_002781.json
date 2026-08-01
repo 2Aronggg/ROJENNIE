@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_002781",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1041,
+        "consulting_content": "고객은 한도 확인, 유선 한도 해제 가능 여부, 필요 서류, 팩스 및 영업점 방문 절차, 앱 재시도 시 확인 사항, 한도 적용 시점, 향후 한도 변경 방법 등을 문의했고, 상담사는 고객의 이체한도를 확인 후, 한도 상향 신청 절차에 대해 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

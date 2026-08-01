@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_008102",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1077,
+        "consulting_content": "고객은 대출 연장 신청을 위해 팩스로 보낸 서류의 접수 여부와 현재 진행 상황을 문의하였다. 상담사는 담당 부서 연결이 어려워 요청 내용을 전달해 재연락을 안내하고, 서류 접수 현황과 추가 제출이 필요한 서류를 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

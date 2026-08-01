@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_021156",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 922,
+        "consulting_content": "고객은 대출 연장이 안 된다고 문의하고 본인확인 및 계좌 정보를 제공했으며, 연장 신청에 필요한 서류와 모바일 앱 업로드 방법, 연체 시 연체료 및 심사 절차를 안내받았다. 상담사는 대출 승인 상태와 연체 사실을 확인하고, 연장 신청을 위해 서류 제출과 추가 정보 제공을 요청하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

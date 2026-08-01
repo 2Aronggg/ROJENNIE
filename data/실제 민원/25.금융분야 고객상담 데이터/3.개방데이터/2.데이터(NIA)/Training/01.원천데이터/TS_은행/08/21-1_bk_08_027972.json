@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_027972",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 832,
+        "consulting_content": "고객은 비상금 대출 연장 기준과 연체, 신용 연동 여부, 연장 신청 후 결과 확인 방법을 문의했으며, 상담사는 연장은 비대면 전용으로 연체, 신용 점수에 따라 판단되며 고정 기준은 없고 연체 기록과 신용도 검토가 필요하다고 안내하고, 결과는 모바일 앱 알림, 문자 메시지로 확인 가능하다고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

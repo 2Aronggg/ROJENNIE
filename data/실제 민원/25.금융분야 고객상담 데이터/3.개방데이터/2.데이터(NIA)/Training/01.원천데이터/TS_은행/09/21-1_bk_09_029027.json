@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_029027",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1963,
+        "consulting_content": "고객은 대전 두리▲▲ 통장의 환전 신청 가능 여부와 자동 이체 조건, 최소, 최대 금액, 수수료, 환율, 전화 신청 절차 및 처리 시간을 문의하였고 상담사는 해당 통장은 일반 입출금 통장으로 환전 가능하나 일일 5천 달러, 10만 원 최소 금액 제한이 있으며 자동 이체는 제한 없이 진행될 수 있지만 별도 서류는 필요 없고, 수수료는 0.5%, 환율은 실시간 기준이며 전화 신청은 가능하고 결과는 10분 이내에 알려드리겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

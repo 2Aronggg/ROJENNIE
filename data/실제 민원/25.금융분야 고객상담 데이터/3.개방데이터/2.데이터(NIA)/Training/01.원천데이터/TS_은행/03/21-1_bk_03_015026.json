@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_015026",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1497,
+        "consulting_content": "고객은 ★★은행 계좌의 아파트 관리비 자동이체 해지를 요청하고 이미 출금된 금액의 환불 절차를 문의하였고 상담사는 해지가 완료되었음을 확인시켜 주었으며, 남은 금액은 관리사무소에 문의하거나 은행 역이체를 신청하는 방법과 필요한 서류를 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

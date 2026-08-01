@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_015403",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1026,
+        "consulting_content": "고객은 호주 달러 환전 신청 후 지점 방문 절차와 보유 외화 확인, 수수료 및 주말 영업 여부를 문의하였고 상담사는 보유량이 있음을 확인하고 영업시간, 신분증 지참, 순번표, 본인 확인 절차 등을 안내하며, 수수료는 금액의 0.5% 최소 5,000원, 주말 영업은 없다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

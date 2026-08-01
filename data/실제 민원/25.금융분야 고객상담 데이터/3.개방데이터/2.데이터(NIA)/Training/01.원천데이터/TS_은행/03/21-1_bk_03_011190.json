@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_011190",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1327,
+        "consulting_content": "고객은 정기 적금 자동이체가 잔액 부족으로 실패한 점과 한도, 만기 연장, 계좌 변경 절차, 연체 이자율을 문의하였고 상담사는 잔액 충족 시 재시도되고 지연 회차의 만기일이 연장된다고 안내하고, 신분증 사진 전송으로 계좌 변경이 즉시 가능하며 연체 이자율은 연 12%이나 일시적 부족 시 발생하지 않을 수 있다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

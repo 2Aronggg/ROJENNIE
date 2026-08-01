@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_018414",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1012,
+        "consulting_content": "고객은 아파트 담보 대출 이자 차이와 카드 사용 시 포인트 여부를 문의하였고 상담사는 대출이 이자만 납부 중이며 이자는 계좌별 적용 방식과 일일 잔액 변동으로 차이가 난다고 설명하고, 체크카드 사용 시 포인트 적립이 안 된다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

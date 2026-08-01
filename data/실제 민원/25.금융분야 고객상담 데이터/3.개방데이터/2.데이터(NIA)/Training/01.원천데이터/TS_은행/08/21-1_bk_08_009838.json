@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_009838",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1820,
+        "consulting_content": "고객은 전세금 안심 대출 연장을 요청하였다. 상담원은 대출 잔액 약 ●●●만원, 금리 연 3.5%를 확인하고 동일 조건 연장을 안내하였다. 연장 신청에 필요한 서류는 신분증, 전세 계약서, 최근 3개월 급여명세서 및 기존 대출 관련 서류이며, 보험 가입 여부도 확인하였다. 심사 결과는 2~3일 내 문자로 통보될 것이며, 금리 변동 가능성은 시장 상황에 따라 사전 안내될 것이라고 설명하였다. 고객은 다음 주 화요일 오후 2시에 방문 예약을 잡았으며, 방문 전 서류 점검을 요청하였다. 또한 원리금 균등 상환 방식이 유지된다고 안내받았다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

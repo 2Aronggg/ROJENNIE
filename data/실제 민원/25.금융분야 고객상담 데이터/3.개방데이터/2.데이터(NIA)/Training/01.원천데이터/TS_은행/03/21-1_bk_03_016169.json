@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_016169",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1308,
+        "consulting_content": "고객은 청소 업체 자동이체가 중복 차감돼 중재와 해지를 요청하였고 상담사는 자동이체 해지 진행 및 중재 절차 안내와 계좌 확인 후 처리 완료 시 문자로 안내하겠다고 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

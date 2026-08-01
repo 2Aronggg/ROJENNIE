@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_017422",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1133,
+        "consulting_content": "고객은 연금 담보 마이너스 대출 연장 메시지를 우편으로 받고 연장 의사를 밝혔으며, 상담사는 계좌, 신분 확인 후 자동 연장 가능과 연장 수수료 0.5%를 안내하고 동의받아 연장 절차를 완료하고 결과 알림 및 기존 상환 계획 유지와 추가 조정 가능함을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

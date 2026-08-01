@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_030732",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1553,
+        "consulting_content": "고객은 어제 시도한 계좌이체 내역 확인을 요청하였고 상담사는 시스템 조회를 진행했지만 해당 이체 기록이 없다고 안내하였다. 이후 고객은 실시간 이체 알림 서비스와 일일 이체 한도, 수수료 안내를 요청하였고 상담사는 모바일 알림 설정 방법과 한도, 수수료 개요를 설명하고 문자 안내를 제공하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

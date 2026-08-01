@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_008700",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1498,
+        "consulting_content": "고객은 대출 연체 이자 문제로 전화하였으며, 상담사는 고객의 대출 상환 상황을 확인했다. 고객의 대출 이자는 이미 납부되었고, 원금 약 4천만원이 남아있어 매월 300만원씩 12개월 내에 상환이 가능하다고 안내했다. 입금은 인터넷 뱅킹이나 모바일 앱을 통해 할 수 있으며, 입금 후 문자 알림이 발송됩니다. 고객은 조기 상환 시 이자 부담이 줄어들고, 위약금 없이 전액 정산이 가능하다는 설명을 받았다. 추가로 문자 알림 설정을 원하였고, 관련 서류도 이메일로 보내달라고 요청했다. 마지막으로, 고객은 조기 상환을 고려하고 있다고 밝혔다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

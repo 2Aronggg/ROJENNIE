@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_014557",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1721,
+        "consulting_content": "고객은 적금 자동이체가 정상 처리되지 않아 문의하였고 상담사는 한도 초과로 자동이체가 중단된 것을 확인하고 분기별 입금 일정과 지정일 자동 출금 방식을 설명하였다. 고객은 퇴사 후 적금 유지와 계좌 변경을 원한다는 의사를 밝혔고 상담사는 퇴사 후에도 적금 유지 가능하나 계좌 변경 절차를 안내하기로 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

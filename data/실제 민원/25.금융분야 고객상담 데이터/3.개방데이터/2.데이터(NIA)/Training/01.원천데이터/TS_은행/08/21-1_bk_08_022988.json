@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_022988",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1444,
+        "consulting_content": "고객은 전세 대출 만기 확인 및 연장, 이사 시 대출 유지, 조기 상환 문의를 하였고 상담사는 대출 현황 안내, 연장 신청 시기, 서류, 금리 안내, 이사 후 대출 유지, 전환 가능성, 조기 상환 위약금 및 필요 서류를 설명하고 결과를 문자, 이메일로 송부하겠다고 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

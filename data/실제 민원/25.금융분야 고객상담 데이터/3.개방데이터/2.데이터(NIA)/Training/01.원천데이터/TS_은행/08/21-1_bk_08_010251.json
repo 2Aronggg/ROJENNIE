@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_010251",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1021,
+        "consulting_content": "고객은 개인사업자 대출 연장을 요청했으며, 계좌번호와 만기일을 모른다고 답변하였고 상담사는 비대면 카카오톡 서류 제출 방법을 안내하고, 인증서 발급, 재발급 절차와 사진 촬영 제출 옵션을 설명하였다. 고객은 온라인으로 대출 잔액, 이자율 확인을 원했으며, 상담사는 확인 가능함을 알려주고, 연장 신청서와 신분증 사본을 카메라 촬영 후 마감 전날 오후 5시까지 제출하도록 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

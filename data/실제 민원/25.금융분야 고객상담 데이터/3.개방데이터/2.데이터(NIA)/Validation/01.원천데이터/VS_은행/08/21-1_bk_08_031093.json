@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_031093",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1442,
+        "consulting_content": "고객은 대출 연장을 신청하려다 앱 오류가 발생했다고 알렸고, 상담사는 본인 확인을 위해 이름, 생년월일, 계좌번호를 요청한 뒤 확인을 진행하였다. 또한 연장에 필요한 신분증, 소득증명서 제출을 안내하고, 시스템 상 대출 연장 건이 두 건으로 표시되어 추가 확인 후 전화로 결과를 알려 주겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

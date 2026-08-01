@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_011412",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1351,
+        "consulting_content": "고객은 타 은행에서 입금 영수증을 받고도 계좌에 반영되지 않아 확인을 요청하였고, 상담사는 시스템 조회 결과 해당 입금 기록이 없음을 안내하였다. 영수증과 상대 은행 이름을 알려주면 상대 은행과 연계해 재조사하겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_003740",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1033,
+        "consulting_content": "고객은 마이너스 통장 연장과 한도 감액 기준을 물었고 상담사는 사용량에 따라 감액 가능하고 영업점 심사, 서류가 필요함을 안내하였다. 고객은 알림 미수신, 진행 단계, 비용을 물었고 상담사는 카카오톡, 문자, 이메일 재전송, 연장 비용은 기존 수수료와 동일, 이자는 금리 적용이라고 답변하였다. 고객은 연장 후 재감액 가능 여부와 결과 확인 방법을 물었고 상담사는 영업점 재심사와 문자, 이메일, 앱 확인 가능하다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

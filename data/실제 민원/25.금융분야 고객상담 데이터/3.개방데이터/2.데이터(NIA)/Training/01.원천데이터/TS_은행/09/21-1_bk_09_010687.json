@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_010687",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1147,
+        "consulting_content": "고객은 외화 동전 교환을 원하고, 약 150달러 보유를 알리며 지점 안내와 수수료를 문의하였고 상담사는 동전 교환은 특정 영업점에서만 가능하고 영업시간, 위치, 신분증, 거래내역 통장 지참 필요, 수수료 적용을 안내하였으며 방문 전 전화 확인을 권고하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

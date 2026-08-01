@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_024788",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1378,
+        "consulting_content": "고객은 마이너스 대출 연장을 원한다며 계좌, 주민번호, 비밀번호 등 본인 확인 정보를 제공하였고 상담사는 확인 후 연장 가능 시 문자, 알림톡으로 안내하고, 앱 재설치 후 연장 신청을 권유하며 이자율, 상환 일정 변동 유의사항을 전달하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

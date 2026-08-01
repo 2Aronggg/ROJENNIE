@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_028149",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1581,
+        "consulting_content": "고객은 전세대출 연장을 요청했고 상담사는 연장 가능 여부와 지점 방문 서류, 절차를 안내하였다. 고객은 자동이체 설정 가능 여부를 물었고 상담사는 영업시간 내 온라인, 모바일 설정 가능함을 설명하였다. 고객은 다른 은행으로 대환 가능성을 문의했으며 상담사는 대환 상담을 예약해 내일 오전 10시 지점 방문으로 확정하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

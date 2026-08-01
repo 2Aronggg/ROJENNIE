@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_002650",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1435,
+        "consulting_content": "고객은 어제 입금 내역을 확인하고 싶어 했고, 상담사는 계좌 확인 후 입금이 없고 출금만 확인된다고 안내했다. 입금 지연 원인과 처리 시간, 알림 서비스 신청 방법, 타행 입금 절차, 지연 시 조치 방법 등을 설명하고, 특정 날짜에 타행에서 입금된 내역과 카드사 입금 경로를 알려 주었다. 마지막에 재조회 방법과 추가 문의 시 연락을 권유하며 대화를 마무리했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

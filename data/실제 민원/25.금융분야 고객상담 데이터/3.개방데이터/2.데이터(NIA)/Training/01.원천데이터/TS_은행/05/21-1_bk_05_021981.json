@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_021981",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1249,
+        "consulting_content": "고객은 한도 계좌로 설정된 통장의 이체 제한 해지를 요청하고, 급여가 입금 중이며 서류 제출 방법과 전액 출금 가능 여부를 문의했으며, 상담사는 한도 계좌임을 확인하고, 해지에 필요한 서류와 팩스 송부 또는 영업점 방문 절차를 안내했으며, 해지 후 전액 출금 가능하지만 처리 기간 중 제한이 있을 수 있다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

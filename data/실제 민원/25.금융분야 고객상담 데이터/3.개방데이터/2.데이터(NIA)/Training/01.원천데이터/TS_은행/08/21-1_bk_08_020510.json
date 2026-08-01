@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_020510",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1316,
+        "consulting_content": "고객은 대출 연장을 요청하고 추가 수수료 1%와 연장 절차를 문의했으며, 상담사는 금리 심사 후 문자로 결과를 안내하고, 시스템 오류 시 녹취로 연장 처리할 수 있다고 설명하고 오늘 오후 3시까지 담당자가 연락하겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

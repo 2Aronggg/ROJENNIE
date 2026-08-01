@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_002074",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1571,
+        "consulting_content": "고객은 비상금 대출 연장을 원해 절차와 서류, 조건을 문의했고 상담사는 ARS 연결, 계좌, 비밀번호 입력 순서와 연장 불가 사유를 설명했다. 연장이 어려울 경우 신용 대출 전환 옵션과 금리, 기간, 신청 절차를 안내하고, 필요한 서류와 승인 소요 시간, 재신청 방법, 빠른 문의 채널을 안내했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

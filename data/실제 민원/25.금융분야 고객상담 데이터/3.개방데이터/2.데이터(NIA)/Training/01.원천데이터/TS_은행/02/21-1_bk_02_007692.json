@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_007692",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1189,
+        "consulting_content": "고객은 계좌이체를 타은행으로 잘못 송금하여 반환 청구를 요청하였다. 상담원은 해당 은행에 중계 요청을 해야 하며, 접수 후 영업일 기준 3~5일, 승인 후 2~3일 내 입금될 것이라고 안내하였다. 고객은 연락받을 전화번호를 제공하고, 입금 지연 시 재연락을 요청할 수 있다고 확인하였다. 또한 청구 취소는 제한적이며 은행에 직접 요청해야 함을 설명하였다. 고객은 현재 진행 상황을 지켜보겠다고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

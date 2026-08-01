@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_015725",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1313,
+        "consulting_content": "고객은 대출 만기 안내 문자의 상세 내용을 문의하고, 계좌 번호와 신계좌 비밀번호를 제공하였고, 아직 전세 재계약을 하지 않았다고 답변하였다. 상담사는 전세 계약 후 대출 연장을 위해 계약서 등 서류를 준비해 지점에 방문해야 하며, 서류는 만기 이주일 전인 ○월 ○일까지 접수해야 하고, 방문 예약과 수수료, 금리 변동 안내도 제공하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

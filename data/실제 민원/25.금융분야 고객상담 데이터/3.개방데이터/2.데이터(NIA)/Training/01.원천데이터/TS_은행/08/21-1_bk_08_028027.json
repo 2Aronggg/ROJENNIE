@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_028027",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 751,
+        "consulting_content": "고객은 대출 연장을 원한다며 문자 내용 확인과 필요한 서류 여부를 문의하였고 상담사는 계좌 확인 절차 후 연장 승인 조건을 안내하고, 금리는 기존과 동일하게 유지되며 추가 서류는 필요 없다고 답변하였으며, 연장 버튼 클릭 후 약정서 작성 절차와 향후 금리, 혜택 안내 수신 의사를 확인하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

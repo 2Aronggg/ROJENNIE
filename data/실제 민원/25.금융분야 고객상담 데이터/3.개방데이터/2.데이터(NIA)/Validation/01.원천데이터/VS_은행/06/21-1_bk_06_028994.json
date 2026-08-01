@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_028994",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1245,
+        "consulting_content": "고객은 연체 여부 확인을 요청했으나 상담사는 연체 내역이 없음을 안내하고, 자동 이체 설정을 원한다는 요청에 계좌, 휴대폰 정보를 받아 자동 이체를 등록하고 완료 메시지를 발송하겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

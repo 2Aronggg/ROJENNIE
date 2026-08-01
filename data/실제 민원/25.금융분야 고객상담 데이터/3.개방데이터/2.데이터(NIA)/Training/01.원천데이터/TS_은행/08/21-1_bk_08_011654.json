@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_011654",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 659,
+        "consulting_content": "고객은 마이너스 통장 연장 여부를 확인하였고 상담사는 연장이 완료되었으며 6.5% 이자율을 안내하였다. 고객은 상환일과 이자 증가를 물었고 상담사는 상환일은 매월 말일이며 월이자 약 12,000원 증가한다고 답변하였다. 고객은 다른 대출, 적금 상품을 문의하고 조기 상환 위약금을 물었고 상담사는 신용 대출, 정기 적금을 제안하며 0.2% 위약금이 부과된다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

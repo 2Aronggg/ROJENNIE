@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_018245",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 751,
+        "consulting_content": "고객은 주택 담보 대출 이자 출금 예정일을 앞두고 계좌 잔액이 부족한 상황에서 가상 계좌로 납부할 금액과 발급 방법을 문의했고, 상담사는 해당 주택 담보 대출 건에 대한 일회성 가상 계좌를 문자로 안내하며 입금 마감 시점과 자동 청구에 따른 이중 출금 가능성을 설명하고 연체 관련 안내 여부와 추가 문의 사항을 확인하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

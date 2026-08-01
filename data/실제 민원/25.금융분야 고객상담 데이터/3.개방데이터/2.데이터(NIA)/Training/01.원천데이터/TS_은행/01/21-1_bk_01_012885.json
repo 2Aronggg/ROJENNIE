@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_012885",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1188,
+        "consulting_content": "고객은 카톡 알림에 이자 입금 여부를 문의하고 통장에 반영되지 않은 것을 확인했으며, 이자 금액과 수수료 여부를 물었고, 상담사는 이자는 원래 예금 계좌에 자동 입금되며 종이 통장에 실시간 반영되지 않을 수 있다고 안내하고, 이번 달 이자는 12,340원이며 별도 수수료는 없다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

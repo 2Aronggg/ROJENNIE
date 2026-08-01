@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_016954",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 968,
+        "consulting_content": "고객은 아파트 관리비 자동이체 해지를 원하고 두 은행에 등록된 상태와 계좌 정지 사실을 확인하였고, 상담사는 전화, 폰뱅킹 및 모바일 앱을 이용해 해지 신청 및 정지 해제, 재등록을 실시간으로 처리할 수 있으며 수수료는 없다고 안내하였고, 자동이체 재발생 시 앱에서 즉시 해지하고 중복 출금을 방지하기 위해 양쪽 은행 모두 해지해야 하며 오류 시 방문 또는 유선 상담이 필요하다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

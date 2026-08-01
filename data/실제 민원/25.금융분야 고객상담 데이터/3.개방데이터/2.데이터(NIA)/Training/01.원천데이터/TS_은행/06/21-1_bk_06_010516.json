@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_010516",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 2096,
+        "consulting_content": "고객은 자동이체 신청 여부, 등록 일시, 금액, 이자, 수수료, 상환 일정, 가상계좌 입금 방법, 한도 증액, 자동이체 취소, 재등록 등을 문의하였고 상담사는 계좌, 생년월일 확인 후 자동이체가 어제 등록돼 다음 결제일에 적용되며 이자는 동일 일정에 출금된다고 안내하고, 상세 금액, 일정은 문자, 이메일로 제공하며, 가상계좌 입금 절차와 한도 증액 방법, 자동이체 취소, 재등록 방법을 설명하고 전체 상환표를 송부하겠다고 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

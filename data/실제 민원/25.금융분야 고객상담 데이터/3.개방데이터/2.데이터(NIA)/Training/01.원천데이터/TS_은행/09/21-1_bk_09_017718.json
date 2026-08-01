@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_017718",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 680,
+        "consulting_content": "고객은 영업소에서 미화, 엔화 동전 보유 현황 확인과 담당자 연결을 요청하였고 상담사는 현재 재고를 확인 중이며 담당자와 연결해 안내드리겠다고 답변하고, 통장이 없음을 확인해 추가 서류, 절차를 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

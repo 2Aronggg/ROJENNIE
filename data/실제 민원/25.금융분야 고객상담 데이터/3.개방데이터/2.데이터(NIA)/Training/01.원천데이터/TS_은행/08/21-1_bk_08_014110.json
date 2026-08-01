@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_014110",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 727,
+        "consulting_content": "고객은 전세 대출 연장을 문의하고 자금 5천만원, 근무 3년 차를 알리며 연체 없음을 확인하였고, 상담사는 연장은 만기 전 일정 기간에 신청해야 하며 소득증명서와 주민등록등본 제출 후 재연락이 필요하다고 안내하였다.고객은 전세 대출 연장을 문의하고 자금 5천만원, 근무 3년 차를 알리며 연체 없음을 확인하였고, 상담사는 연장은 만기 전 일정 기간에 신청해야 하며 소득증명서와 주민등록등본 제출 후 재연락이 필요하다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

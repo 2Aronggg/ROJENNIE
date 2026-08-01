@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_002105",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1409,
+        "consulting_content": "고객이 대출 서류 제출 및 모바일 앱 연장 절차를 문의하자 상담사는 본인 인증 후 서류 접수 확인 방법과 재제출 절차, 사진 제출 시 유의사항, 모바일 연장 신청 단계, 보안 절차를 안내했다. 또한 재신청 시기와 연장 거절 시 상환 일정 및 신용 영향까지 구체적으로 설명했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

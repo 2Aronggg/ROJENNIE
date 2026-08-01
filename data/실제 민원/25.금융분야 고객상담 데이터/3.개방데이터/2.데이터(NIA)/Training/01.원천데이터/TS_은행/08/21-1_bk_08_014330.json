@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_014330",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1260,
+        "consulting_content": "고객은 은행 계좌를 ARS에 연결하고 비밀번호와 개인정보를 제공하였고 상담사는 연결 완료 후 10% 감액 적용 금액을 확인시켜 주었으며 연장 조건과 납부 방법을 안내하고, 고객은 계좌 이체를 선택해 은행명, 계좌번호를 제공하고 이메일을 알려 연장 완료를 확인하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

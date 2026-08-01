@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_023139",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1040,
+        "consulting_content": "고객은 인터넷 거래내역에 모르는 입금이 있어 확인을 요청하였고 상담사는 계좌 조회를 시도했으나 정확한 입금 출처를 확인할 수 없어 해당 건을 담당 부서에 문의하도록 고객센터로 전화 안내하고, 추후 문자로 결과를 알려드리겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

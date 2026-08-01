@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_028221",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1799,
+        "consulting_content": "고객은 새 계좌 개설 후 급여 이체 실적 미인정 및 쿠폰 혜택 미적용 문제를 제기했고, 상담사는 시스템 조회를 통해 급여가 지정일에 일정 금액 이상 입금되지 않아 실적으로 인정되지 않았음을 안내하였다. 고객은 자동이체 설정을 요청했으며, 상담사는 급여일 정보를 확인하고 자동이체를 성공적으로 설정해 매월 지정일에 이체되도록 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

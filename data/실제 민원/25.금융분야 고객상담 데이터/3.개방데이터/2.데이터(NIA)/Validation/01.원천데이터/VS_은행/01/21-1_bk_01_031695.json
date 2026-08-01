@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_031695",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 791,
+        "consulting_content": "고객은 수취인 이름이 표시되지 않은 송금 내역 조회와 대출 이자 누락 및 연금보험 상품 문의를 하였고 상담사는 계좌, 비밀번호 인증을 요청하고, 송금 상세 정보를 확인 후 연금보험 상품 내용과 가입 조건을 안내하겠다고 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

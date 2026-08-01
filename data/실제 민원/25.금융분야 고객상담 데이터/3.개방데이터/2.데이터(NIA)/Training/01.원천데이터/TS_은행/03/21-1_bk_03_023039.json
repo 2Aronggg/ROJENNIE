@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_023039",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 909,
+        "consulting_content": "고객은 최근 자동이체 출금 의심으로 계좌와 비밀번호를 제공하였고 상담사는 해당 자동이체가 보험사에 등록되었다가 당일 즉시 해지된 사실과 금액이 시도됐으나 취소된 것을 확인해 주었으며, 다른 자동이체는 없다고 안내하고 추가 문의가 없음을 확인하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_002445",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1094,
+        "consulting_content": "고객은 대출 만기일과 연장 가능 여부, 연장 조건, 필요한 서류, 금리 변동 예시, 비대면 연장 절차와 비용, 지점 방문 시 추가 서류 등에 대해 문의했고, 상담원은 만기일을 안내하고 연장 가능 조건, 비대면 신청 방법, 금리 변동 사례, 서류 목록 및 비용을 설명했다. 비대면 연장이 어려울 경우 지점 방문 절차와 추가 서류도 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_005963",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1180,
+        "consulting_content": "고객은 OO은행 지점에서 외화 환전을 신청하고 오늘 오후 3시에 직접 수령 가능한지 확인을 요청하였다. 상담사는 예약이 이미 완료되어 있으며 현금 수령 시 신분증, 신청서 사본 등 서류를 준비해야 한다고 안내하였다. 또한 권종 및 통화 제한으로 지점 방문 상담이 필요함을 설명하고 외환 담당자가 대기하고 있음을 확인하였다. 고객은 준비 후 오후 3시에 방문하겠다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

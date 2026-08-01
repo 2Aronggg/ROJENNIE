@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_030176",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1379,
+        "consulting_content": "고객은 대출 금리 감면을 문의하고 본인 확인을 위해 계좌, 생년월일, 비밀번호를 제공하였고 상담사는 조회 후 카드 사용 실시는 감면 대상이 아니며 출금 실적 기준임을 안내하였다. 고객은 출금 계좌 변경과 최소 월 누적 출금액 충족 필요성을 확인하고, 6개월 실적 확인 방법과 이메일 명세서 발송을 요청하였고 상담사는 온라인 뱅킹 조회법 및 이메일 발송 절차를 설명하고, 신청 절차를 진행하겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

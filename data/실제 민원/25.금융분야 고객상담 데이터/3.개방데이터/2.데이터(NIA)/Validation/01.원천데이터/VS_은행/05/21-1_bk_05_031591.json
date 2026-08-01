@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_031591",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 911,
+        "consulting_content": "고객은 앱에서 일일 누적 금액 한도 조정을 문의했으며, 상담사는 해당 계좌가 금융거래 한도 계좌라 조정이 어렵고 소액으로 나누어 거래하고 매번 인증이 필요하다고 안내하고, 한도 변경은 신규 통장 개설, 복원 또는 스크래핑 심사 신청을 통해 가능하며 영업점 방문 및 예약은 모바일 앱에서 진행하도록 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

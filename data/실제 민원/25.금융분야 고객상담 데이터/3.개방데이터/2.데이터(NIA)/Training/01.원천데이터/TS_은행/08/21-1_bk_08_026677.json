@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_026677",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 808,
+        "consulting_content": "고객은 대출 연장을 요청하고 연장 절차, 서류, 비용을 문의했으며, 앱에서 연장 메뉴가 보이지 않는다며 방법을 물었다. 상담사는 고객의 신원을 확인하고 대출 만기일을 알려 연장 가능성을 안내했으며, 앱 연장은 ●월●일부터 가능하고 메뉴가 표시될 것이라고 설명하고, 연장 시 기존 금리 적용, 수수료 없음, 이자 변동 가능성을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_004203",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1217,
+        "consulting_content": "고객은 모바일 앱으로 대출 연장 신청 후 진행 상황과 화면 반영 여부를 문의하였고 상담사는 본인 인증 후 시스템을 확인하여 연장 계약서 작성일과 한도, 현재 잔액을 안내하고, 자동 이체 미작동으로 결과가 카카오톡으로 발송될 예정이며, 결과 도착까지 지정일까지 기다릴 것을 권고하였다. 고객은 결과 미수신 시 재연락 요청과 이메일 알림 중단을 확인하였고 상담사는 재확인 절차와 추가 문의 시 언제든 연락 가능함을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

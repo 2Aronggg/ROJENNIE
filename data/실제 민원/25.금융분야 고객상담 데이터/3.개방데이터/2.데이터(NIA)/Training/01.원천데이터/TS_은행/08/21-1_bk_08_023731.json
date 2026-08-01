@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_023731",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1130,
+        "consulting_content": "고객은 대출 연장 및 상환 현황 확인을 요청하고 본인 확인을 위해 성명, 생년월일, 계좌 비밀번호를 제공하였고 상담사는 연장 계약서 승인 및 잔액 처리 상황을 안내하고 오늘 만기 상환을 권고하였다. 또한 고객은 서류를 이메일로 받고 알림 서비스를 설정하고 싶다고 요청하였고 상담사는 이메일 발송 및 SMS 알림 설정을 진행하겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

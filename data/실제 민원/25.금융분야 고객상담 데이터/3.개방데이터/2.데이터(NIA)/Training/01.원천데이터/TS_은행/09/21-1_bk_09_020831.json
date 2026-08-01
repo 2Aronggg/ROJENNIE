@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_020831",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1135,
+        "consulting_content": "고객은 위안화 10,000위안을 현찰로 교환하고 1,000,000원 정도를 추가로 환전하고 싶으며 미국 달러 환전 가능 여부도 문의했으며, 상담사는 여권, 신분증, 거래내역서 제출을 조건으로 직접 방문해 현찰 환전이 가능하다고 안내하고, 영업시간 및 절차를 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_026954",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1213,
+        "consulting_content": "고객은 신규 한도 계좌 개설 후 설정된 이체 한도 초과 메시지가 계속 나타나고 한도 상향 및 복원을 원했으며, 필요한 서류와 절차를 문의하였다. 상담사는 해당 한도는 하루 ●●원으로 제한되며 자동 복원되지 않아 신분증, 급여명세서 등 서류 제출 후 영업점 방문 심사를 통해 한도 조정 및 복원이 가능하다고 안내하고, 가까운 ○○지점 위치를 알려주었다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

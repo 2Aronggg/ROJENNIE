@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_020175",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1116,
+        "consulting_content": "고객은 해외 출장 대비 빠른 환전을 원해 온라인 사전 예약 및 1달러, 20달러 등 특정 금액 구입 가능 지점을 문의했고, 가까운 ○○, △△ 지점 재고 확인을 요청하였다. 상담사는 온라인 예약 서비스와 현재 보유 지점 확인 결과 일달러는 제공 어려움, 대체 통화 및 본점 대량 제공 불가를 설명하고, 승인 절차 후 현금 수령 가능함을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

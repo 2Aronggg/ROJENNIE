@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_021752",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1101,
+        "consulting_content": "고객은 가상계좌로 국세를 이체했으나 입금 내역이 시스템에 반영되지 않아 확인을 요청했고, 상담사는 거래 조회와 입금 확인 절차를 안내하고 가상계좌의 예금주가 대표님 이름으로 되어 있는지 확인할 것을 요청하고 담당 부서에 처리 요청 후 결과를 전화, 문자로 알려 주겠다고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

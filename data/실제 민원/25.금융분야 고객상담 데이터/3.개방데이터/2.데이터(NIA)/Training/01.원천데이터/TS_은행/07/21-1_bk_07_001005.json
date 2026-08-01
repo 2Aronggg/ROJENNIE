@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_001005",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1313,
+        "consulting_content": "고객은 대출 우대 금리 적용을 위한 카드 사용 금액 기준과 다른 은행 카드 적용 여부를 문의했다. 또한 자동 반영 여부, 급여 및 적금 입금 시 우대 금리 적용 가능성 등을 질문했다. 상담사는 특정 금액 이상 카드 사용 시 우대 금리가 적용되며, 출금 계좌가 특정은행이면 다른 카드도 가능하다고 설명했다. 이자 계산 방식, 필요 서류, 혜택 연장, 실시간 확인 방법 및 기준 미달 시 조정 방안에 대해서도 안내했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

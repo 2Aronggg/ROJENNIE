@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_022602",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1475,
+        "consulting_content": "고객은 보유 외화와 환전 가능 금액 및 절차를 문의하였고 상담사는 현재 환율, 수수료 안내와 신분증, 환전 금액 준비를 요청하며, 가까운 지점 위치, 영업시간, 주차, 문자 안내 등을 제공하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

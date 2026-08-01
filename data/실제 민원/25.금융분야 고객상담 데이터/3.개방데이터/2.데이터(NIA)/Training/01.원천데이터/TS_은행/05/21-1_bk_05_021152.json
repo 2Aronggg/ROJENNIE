@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_021152",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 931,
+        "consulting_content": "고객은 해외 거주 중 계좌 개설 후 이체, 출금 한도와 체크카드 사용 가능 여부를 문의하였고 상담사는 영업점, 전자금융 한도와 체크카드는 한도 제한 없이 사용 가능함을 안내하고, 해외 결제 시 인증 필요성을 알렸다. 고객은 마일리지 적립 카드 신청 방법을 요청하였고 상담사는 온라인 뱅킹 신청 후 영업일 이내 발급 절차를 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

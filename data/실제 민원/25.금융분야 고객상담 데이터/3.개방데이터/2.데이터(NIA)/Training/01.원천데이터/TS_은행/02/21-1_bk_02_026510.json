@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_026510",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1479,
+        "consulting_content": "고객은 타은행을 통해 두 건의 반환 청구를 별도로 신청하고, 다섯 개 계좌를 해지한 뒤 계좌 번호와 본인 확인 정보를 제공했으며, 반환 금액과 절차를 문의하였고, 상담사는 해당 청구가 타은행 시스템에 등록되어 취소가 어려울 수 있음을 안내하고, 제공된 정보를 토대로 금액을 확인, 절차를 진행하며, 타은행에 결과를 전달하고 지속 모니터링 및 최종 절차와 일정을 안내하겠다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_029332",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1354,
+        "consulting_content": "고객은 만기된 적금 연장 방법과 필요 서류, 카드 사용 금액 확인, 연장이 불가한 경우 신규 적금 가입 및 중도 해지 이자 보전, 알림 서비스 신청을 문의하였고 상담사는 연장 절차는 온라인, 방문 가능하나 해당 상품은 연장 불가함을 안내하고, 신규 적금은 연 2.5% 고정 금리와 최대 0.5% 이자 보전 제공, 카드 결제 시 할인 적용, 알림 서비스는 SMS, 푸시로 제공한다는 안내를 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

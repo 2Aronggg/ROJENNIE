@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_024341",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1265,
+        "consulting_content": "고객은 대출 연장을 원하고 연장 절차와 서류, 수수료, 이자 변동을 문의하였고 상담사는 본인 확인을 위해 계좌, 생년월일, 비밀번호를 물어 인증 후 URL 문자로 고객 확인 등록을 안내하고, 앱 연장 방법, 연장 수수료, 이자 변동, 처리 기간 1~2일 및 결과 통보 방식을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

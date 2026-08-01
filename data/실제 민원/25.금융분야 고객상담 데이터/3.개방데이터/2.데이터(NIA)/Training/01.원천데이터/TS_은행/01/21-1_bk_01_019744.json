@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_019744",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1041,
+        "consulting_content": "고객은 컴퓨터로 연도별 이체내역 조회가 안 된다고 요청했으며, 사업자 통장 해지와 적금 계좌 이체내역 확인도 문의하였다. 상담사는 거래내역 조회 메뉴 이용 방법과 브라우저 캐시 삭제를 안내하고, 사업자 등록증 사본, 최근 3개월 거래내역을 이메일로 제출하도록 요청했으며, 적금 계좌는 동일 방식으로 조회 가능하나 필요 시 별도 명세서 발급 절차를 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

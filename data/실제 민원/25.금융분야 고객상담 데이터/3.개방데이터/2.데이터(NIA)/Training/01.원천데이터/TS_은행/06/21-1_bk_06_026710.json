@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_026710",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 797,
+        "consulting_content": "고객은 대출 상환을 위해 입금 금액과 절차를 문의하였고 상담사는 계좌번호, 성명, 생년월일, 비밀번호 확인을 요청한 뒤, 입금 금액을 안내하고 오늘 밤 11시 30분까지 입금하면 당일 출금 가능하다고 설명하였으며, 입금 후 자동 알림 문자, 이메일 발송 및 1시간 이내 계좌 반영을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

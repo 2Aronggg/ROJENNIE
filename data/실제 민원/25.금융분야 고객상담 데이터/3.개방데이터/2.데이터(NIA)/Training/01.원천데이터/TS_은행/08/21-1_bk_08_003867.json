@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_003867",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1036,
+        "consulting_content": "고객은 마이너스 통장 연장에 필요한 서류와 본인 확인 절차를 문의했으며, 휴대폰 번호 변경 시 지점 방문을 요구했고, 앱 연장 가능 여부와 오류 대응을 물었다. 상담사는 신용 대출 연장은 서류 없이 비대면 앱이나 지점 방문으로 가능하고, 연장 시 본인 확인은 휴대폰 인증, 보안카드 등으로 필수이며, 번호가 바뀐 경우 신분증 지참 후 방문을 권유하고, 앱 오류 시 고객센터 연락을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

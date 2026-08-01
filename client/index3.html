@@ -292,6 +292,24 @@
         font-weight: 950;
       }
 
+      .label-bullet {
+        margin-right: 3px;
+        color: var(--gray);
+        font-family: "IBM Plex Mono", Consolas, "Courier New", monospace;
+        opacity: 0.5;
+      }
+
+      .dev-token {
+        display: inline-flex;
+        margin-left: 4px;
+        color: var(--green-deep);
+        font-family: "IBM Plex Mono", Consolas, "Courier New", monospace;
+        font-size: 0.82em;
+        font-weight: 900;
+        opacity: 0.72;
+        white-space: nowrap;
+      }
+
       .verify-steps {
         display: flex;
         gap: 5px;
@@ -505,7 +523,7 @@
 
       .finding-label {
         display: block;
-        font-family: Georgia, "Times New Roman", "Noto Serif KR", serif;
+        font-family: "IBM Plex Mono", Consolas, "Courier New", monospace;
         font-size: clamp(20px, 1.25vw, 24px);
         font-weight: 950;
       }
@@ -603,6 +621,14 @@
         color: var(--green-deep);
       }
 
+      .meta-trace {
+        margin-left: auto;
+        color: #166534;
+        font-family: "IBM Plex Mono", Consolas, "Courier New", monospace;
+        opacity: 0.7;
+        white-space: nowrap;
+      }
+
       .end-popup {
         position: fixed;
         inset: 24px;
@@ -620,7 +646,7 @@
         opacity: 0;
         transform: scale(0.97);
         backdrop-filter: blur(18px);
-        animation: endPopup 0.9s var(--ease) 10.2s forwards;
+        animation: endPopup 0.9s var(--ease) 9.3s forwards;
         pointer-events: none;
       }
 
@@ -681,7 +707,7 @@
       <header class="header panel">
         <section>
           <div class="badge-row">
-            <span class="agent-badge">AGENT 3 / 4</span>
+            <span class="agent-badge">&lt;/&gt; AGENT 3 / 4</span>
             <span class="eyebrow">Logic Verification</span>
           </div>
           <h1>근거를 요건별로 대입해 무엇이 확인됐는지 가림</h1>
@@ -720,7 +746,7 @@
           </div>
 
           <div class="conditions-list">
-            <p class="section-label">요건별 판단</p>
+            <p class="section-label"><span class="label-bullet">▸</span>요건별 판단 <code class="dev-token">rule_check</code></p>
             <div class="condition-row status-met">
               <span class="cond-badge">●</span>
               <div class="cond-body">
@@ -748,7 +774,7 @@
           </div>
 
           <div class="exceptions-block">
-            <p class="section-label">예외 · 반대사실</p>
+            <p class="section-label"><span class="label-bullet">▸</span>예외 · 반대사실 <code class="dev-token">counter</code></p>
             <div class="exception-line"><span class="ex-icon">—</span><span>확인된 예외 조항 없음</span></div>
             <div class="counterpoint-line"><span class="cp-icon">◆</span><span>유사 사례와 차이: 조건 충족 여부가 아직 미확인</span></div>
           </div>
@@ -793,7 +819,7 @@
           </div>
 
           <div class="conditions-list">
-            <p class="section-label">요건별 판단</p>
+            <p class="section-label"><span class="label-bullet">▸</span>요건별 판단 <code class="dev-token">rule_check</code></p>
             <div class="condition-row status-met">
               <span class="cond-badge">●</span>
               <div class="cond-body">
@@ -821,7 +847,7 @@
           </div>
 
           <div class="exceptions-block">
-            <p class="section-label">예외 · 반대사실</p>
+            <p class="section-label"><span class="label-bullet">▸</span>예외 · 반대사실 <code class="dev-token">counter</code></p>
             <div class="exception-line"><span class="ex-icon">—</span><span>확인된 예외 조항 없음</span></div>
             <div class="counterpoint-line"><span class="cp-icon">◆</span><span>불일치 사실은 확인, 예외 사유는 아직 미확인</span></div>
           </div>
@@ -840,6 +866,7 @@
         <span><b>구현</b> agent/logic_verifier.py</span>
         <span><b>출력 연결</b> server.schemas.VerificationOutput</span>
         <span><b>다음 단계</b> agent/decision_gate.py</span>
+        <span class="meta-trace">trace 62e8fa10 · 61ms · exit 0</span>
       </footer>
     </main>
 
@@ -849,11 +876,13 @@
 
     <button class="replay" type="button" id="replay">Replay</button>
 
+    <script src="agent-api.js"></script>
     <script>
       const replay = document.querySelector("#replay");
       let playTimer = null;
 
       function startPlayback() {
+        window.KBAgentDemo?.renderAgent3(document);
         window.clearTimeout(playTimer);
         document.body.classList.remove("playing");
         playTimer = window.setTimeout(() => {

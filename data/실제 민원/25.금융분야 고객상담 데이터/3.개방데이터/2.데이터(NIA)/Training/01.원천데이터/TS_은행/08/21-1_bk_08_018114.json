@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_018114",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1085,
+        "consulting_content": "고객은 전세 계약 연장을 신청하고 보증금 증액 없이 서류를 준비해 이번 주 내에 영업점을 방문하겠다고 하였고 상담사는 연장 서류를 문자로 발송하고 방문 일정과 필요 서류를 안내하며, 보증금 반환은 계약 종료 후 30일 이내이며 지연 시 금융감독원 신고, 법적 절차를 권고하고, 기존 대출 금리는 고정이라 변동 없음을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

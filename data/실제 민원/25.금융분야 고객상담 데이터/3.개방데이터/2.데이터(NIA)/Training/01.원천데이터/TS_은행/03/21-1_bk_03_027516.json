@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_027516",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 865,
+        "consulting_content": "고객은 출금 계좌 등록 문자 수신 후 등록 여부와 영향, 수수료, 보안, 취소 방법을 문의하였고 상담사는 등록이 정상이며 기존 거래에 제한 없고, 등록은 무료이고 이체 시에만 수수료가 발생한다며 이중 인증, 암호화 등 보안이 적용되고, 모바일 앱, 전화로 언제든 1분 내에 해제 가능하다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

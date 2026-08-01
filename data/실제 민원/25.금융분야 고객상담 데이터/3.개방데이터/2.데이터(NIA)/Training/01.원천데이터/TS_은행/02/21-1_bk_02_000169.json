@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_000169",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1177,
+        "consulting_content": "고객은 입금 확인에 필요한 서류, 모바일 앱 확인 방법 및 정상 처리 확인 시간, 오류 계좌 처리 절차, 영수증 발송 여부와 수수료 등에 대해 질문했고, 상담원은 입금 확인시 필요서류, 처리 여부 확인 방법, 오송금시 대처방안 및 입금 영수증과 수수료에 관해 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

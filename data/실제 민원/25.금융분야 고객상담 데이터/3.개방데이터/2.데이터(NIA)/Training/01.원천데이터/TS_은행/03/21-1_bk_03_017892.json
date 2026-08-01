@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_017892",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1212,
+        "consulting_content": "고객은 문자에 나온 출금 이체 등록 사실을 확인하고 발신 기관 및 앱 사용 여부를 문의했으며, 상담사는 ★★은행에서 발송된 것임을 확인하고, 오픈뱅킹 앱 설치, 보안 인증 절차와 등록 내용이 기존 이체와 별개이지만 중복 시 오류 가능함을 안내하고, 필요 시 취소, 변경 지원을 제안하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

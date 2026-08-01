@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_024051",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1272,
+        "consulting_content": "고객은 파운드 환전을 원하고 ◆◆◆ 지점의 가능 여부와 한도를 문의했으며 약 ●● 원 규모를 개인 계좌로 신청하고자 했고, 상담사는 원화 잔액 부족으로 한도 초과 가능성을 안내하고 내부 심사, 서류 제출이 필요하다고 설명했으며, 신분증, 여권, 통장 사본, 자금출처 증명 서류를 준비해 영업시간에 방문, 예약할 것을 권고하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

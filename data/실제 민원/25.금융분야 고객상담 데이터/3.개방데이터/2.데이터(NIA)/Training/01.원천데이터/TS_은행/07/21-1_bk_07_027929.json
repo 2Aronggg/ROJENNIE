@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_027929",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 800,
+        "consulting_content": "고객은 급여 이체, 카드 사용액 기준 초과 여부 확인과 부족액 처리 방법을 문의했으며, 상담사는 온라인 뱅킹에서 카드 사용 내역 확인 방법과 급여 이체는 매월 입금일에 자동 반영됨을 안내하고, 부족액은 직접 은행 계좌에 입금 후 즉시 출금하도록 하며 가상계좌 사용은 불가하다고 설명했으며, 보조 면제 적용까지 며칠 소요될 수 있음을 알렸다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

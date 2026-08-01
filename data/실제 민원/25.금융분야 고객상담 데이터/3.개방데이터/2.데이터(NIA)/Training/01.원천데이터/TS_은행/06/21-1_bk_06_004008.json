@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_004008",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1184,
+        "consulting_content": "고객은 선납한 이자 외에 원금 납부 여부와 일정, 추가 비용 및 위약금 정보를 문의하였고 상담사는 신원 확인 후 시스템 조회 결과, 이자는 이미 납부됐으며 원금은 지정된 월에 자동 이체될 예정임을 안내하고, 즉시 출금은 불가하고 오후 2시, 4시 이체 가능함을 설명했으며, 조기 상환 시 남은 원금의 2% 위약금이 발생한다는 점을 알려주었다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

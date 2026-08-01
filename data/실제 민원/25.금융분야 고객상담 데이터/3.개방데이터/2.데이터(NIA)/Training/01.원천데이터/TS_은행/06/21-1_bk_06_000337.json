@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_000337",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1843,
+        "consulting_content": "고객은 사업 폐업 후 남은 대출 상환 방법과 조기 상환 수수료, 신용점수 영향, 연장 및 재조정 가능 여부 등을 문의했고, 상담원은 수수료 비율, 서류 제출 방법, 금리, 기간 변동 가능성, 잔액 확인 방법, 지점 방문 예약 절차, 대출 전액 상환 후 보증 해지 절차 등을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_014734",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1050,
+        "consulting_content": "고객은 자동이체 미처리 확인을 요청하였고 상담사는 계좌, 비밀번호 등 자동이체 금액과 오늘 출금 예정을 안내하였다. 고객은 공휴일로 인한 처리 지연을 확인하였고 상담사는 영업일 기준 처리와 다른 자동이체가 없음을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_005786",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1132,
+        "consulting_content": "고객은 매월 30만원 자동이체를 설정하고, 잔액으로 외화 환전을 진행하고자 하였으며, 실시간 환율 적용과 문자 알림을 요청하였다. 은행은 자동이체 설정과 잔액 기반 환전 안내, 실시간 환율 변동 가능성을 설명하고 문자 알림을 활성화하였다. 또한 해외 ATM 현금 인출 가능 여부와 수수료, 환율 차이를 안내하고, 인출 한도를 500만원으로 조정 요청을 접수하여 처리 완료 시 문자로 통보하기로 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

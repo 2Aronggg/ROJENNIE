@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_019352",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1067,
+        "consulting_content": "고객은 전세금 안심 대출 이자 납부와 가상 계좌 발급을 요청하고 입출금계좌번호, 성명, 생년월일, 계좌 비밀번호 등 본인 확인 정보를 제공하였고 상담사는 본인 인증 후 금액과 가상 계좌 정보를 문자로 전송하며 오늘 밤까지 입금 시 자동 이자 납부가 처리된다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

@@ -9,11 +9,25 @@ from pydantic import BaseModel, Field
 Control = Literal["proceed", "amend", "ask", "hold"]
 RoutingMethod = Literal["llm", "rules", "manual"]
 RiskLevel = Literal["low", "medium", "high", "critical"]
+FactSourceType = Literal[
+    "USER_STATED",
+    "SYSTEM_INFERRED",
+    "DOCUMENT_EVIDENCE",
+    "PRECEDENT_REFERENCE",
+]
+InferenceType = Literal["direct_match", "analogical", "unverified"]
+EvidenceRole = Literal[
+    "direct_evidence",
+    "precedent_reference",
+    "procedure_guide",
+    "unknown",
+]
 
 
 class Fact(BaseModel):
     field: str
     value: Any
+    source_type: FactSourceType = "USER_STATED"
     source_ref: str | None = None
     event_date: date | None = None
     recorded_date: date | None = None
@@ -75,9 +89,19 @@ class CaseAnalyzeRequest(BaseModel):
     issues: list[IssueInput] = Field(default_factory=list)
 
 
+class FactProvenanceEntry(BaseModel):
+    field: str
+    value: Any
+    source_type: FactSourceType
+    source_ref: str | None = None
+    status: Literal["confirmed", "conflict", "unresolved"] = "confirmed"
+    confidence: float = Field(default=1.0, ge=0.0, le=1.0)
+
+
 class FactResolution(BaseModel):
     latest: dict[str, Fact] = Field(default_factory=dict)
     conflicts: dict[str, list[str]] = Field(default_factory=dict)
+    provenance: dict[str, list[FactProvenanceEntry]] = Field(default_factory=dict)
 
 
 class Decision(BaseModel):
@@ -97,10 +121,20 @@ class IssueReport(BaseModel):
     generated_by: Literal["llm", "fallback"] = "fallback"
 
 
+class SupportChain(BaseModel):
+    claim: str
+    supporting_evidence: list[str] = Field(default_factory=list)
+    inference_type: InferenceType = "unverified"
+    evidence_role: EvidenceRole = "unknown"
+    allowed_in_final: bool = False
+
+
 class LogicVerification(BaseModel):
     summary: str = ""
     checks: list[str] = Field(default_factory=list)
     unresolved: list[str] = Field(default_factory=list)
+    support_chains: list[SupportChain] = Field(default_factory=list)
+    unsupported_claims: list[str] = Field(default_factory=list)
     generated_by: Literal["llm", "fallback"] = "fallback"
 
 
@@ -176,6 +210,41 @@ class AuditEvent(BaseModel):
     actor: str
     created_at: datetime
     payload: dict[str, Any] = Field(default_factory=dict)
+
+
+class DecisionAuditLog(BaseModel):
+    """구조화된 결정 감시 로그 - 모든 판정마다 기록"""
+    audit_id: str
+    case_id: str
+    issue_id: str
+    event_type: Literal["decision_gate", "fact_resolution", "logic_verification", "content_scope"] = "decision_gate"
+    created_at: datetime
+    decision: Control
+    prior_control: Control | None = None
+    risk_flags: list[str] = Field(default_factory=list)
+    applied_rules: list[str] = Field(default_factory=list)
+    confidence_score: float | None = None
+    false_negative_risk: Literal["low", "medium", "high"] = "low"
+    false_negative_indicators: list[str] = Field(default_factory=list)
+    supporting_evidence: dict[str, Any] = Field(default_factory=dict)
+    reviewed_by: str | None = None
+    review_note: str = ""
+
+
+class IssueValidationLog(BaseModel):
+    """복합 민원 분리 검증 로그"""
+    validation_id: str
+    case_id: str
+    total_issues: int
+    validation_checks: list[str] = Field(default_factory=list)
+    conflicts_detected: list[str] = Field(default_factory=list)
+    causality_chains: list[list[str]] = Field(default_factory=list)
+    duplicates_found: list[str] = Field(default_factory=list)
+    corrections_applied: list[str] = Field(default_factory=list)
+    created_at: datetime
+    is_valid: bool = True
+    severity: Literal["clean", "warning", "critical"] = "clean"
+
 
 
 class ReviewQueueItem(BaseModel):

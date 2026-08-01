@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_015164",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1114,
+        "consulting_content": "고객은 아파트 관리비 자동이체 해지를 요청하고 계좌, 성명, 생년월일, 비밀번호 등 인증 정보를 제공하였고 상담사는 정보를 확인 후 모바일 앱 및 문자 안내 URL을 제공하고, 폰뱅킹 미가입을 안내하며 해지 처리 기간은 영업일 1~2일이며 급여이체는 별도 해지 필요함을 알려주었다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_030268",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1142,
+        "consulting_content": "고객은 안심 전세 대출 연장을 신청하며 부동산 중개 없이 계약 가능 여부, 서류 제출 순서, 수수료 납부 일정, 금리, 월 상환액, 조기 상환 벌금 등을 문의하였고 상담사는 연장 가능, 부동산 중개 불필요, 기존 계약서 사본, 임대인 동의서 제출, 서명 순서는 임대인, 임차인, 은행 담당자, 수수료는 별도 안내, 금리는 연 4.2%, 월 상환액 약 150만원, 조기 상환 시 최소 1개월 이자 벌금이 부과된다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

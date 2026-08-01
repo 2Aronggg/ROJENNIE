@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_024744",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1643,
+        "consulting_content": "고객은 자동 이체 내역을 확인하고 싶다고 요청했으며 상담사는 자동 이체가 등록된 날짜와 담당 번호를 안내하고 전화 문의를 권유하였다. 이후 고객은 카드 결제 중복 청구를 제기했으며 상담사는 결제 일자, 금액을 확인하고 환불 절차를 진행하겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

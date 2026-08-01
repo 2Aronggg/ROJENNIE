@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_008030",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1466,
+        "consulting_content": "고객은 자동이체 실패에 대해 문의하였으며, 은행은 ARS 인증을 진행하였다. 조회 결과, 청년우대 금리 적용으로 월 입금 한도가 초과되어 이체가 제한되었음을 확인하였다. 한도 초과 해소를 위해 기존 자동이체를 취소하고 새로운 금액을 재등록해야한다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

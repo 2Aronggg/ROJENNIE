@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_016151",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 807,
+        "consulting_content": "고객은 계좌 번호 확인과 실물 통장 재발급을 요청하였고 상담사는 계좌 두 개 확인 후 통장 발급 안내와 수수료 안내를 하였다. 고객은 현재 잔액 조회와 알림 설정을 요청하였고 상담사는 잔액을 알려주고 알림 시간을 설정해 주었다. 고객은 자동이체 설정 방법을 문의하였고 상담사는 모바일, 인터넷 뱅킹 절차를 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

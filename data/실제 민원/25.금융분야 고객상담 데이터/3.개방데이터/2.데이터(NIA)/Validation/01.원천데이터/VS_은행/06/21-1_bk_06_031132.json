@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_031132",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1071,
+        "consulting_content": "고객은 대출 연체 이자 납입을 위해 가상계좌 발송과 현재 연체 이자율을 문의하였고, 상담사는 두 건 연체에 대한 가상계좌를 발송하고 입금 마감 시각 및 추가 연체 이자 발생 가능성을 안내하였다. 또한 고객은 자동이체 계좌 변경 가능 여부와 수수료를 물었으며, 상담사는 계좌 변경은 직접 은행 방문으로 가능하고 별도 수수료는 없으며 은행 측 수수료는 고객이 확인해야 함을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

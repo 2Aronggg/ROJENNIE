@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_024018",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 955,
+        "consulting_content": "고객은 청약저축 대출 상환 일정과 연장 문의를 하였고 상담사는 계좌, 신분 확인 후 현재 상환일이 매월 말이며 연장은 가능하다고 안내하고, 연장 시 연 3.5% 이자와 10,000원 수수료가 적용된다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

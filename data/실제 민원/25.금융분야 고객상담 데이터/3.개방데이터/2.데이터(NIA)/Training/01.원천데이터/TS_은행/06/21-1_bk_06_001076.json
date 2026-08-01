@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_001076",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "신규고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1335,
+        "consulting_content": "고객은 대출 계좌와 이자 납부일, 자동이체 금액, 원금 상환 신청 절차, 자동 이체 계좌 변경 등에 대하여 문의했고, 상담사는 고객이 문의한 이자금액 및 원금상환 절차를 설명하고, 대출 잔액 및 변동 금리, 감면 조건을 안내하며 계좌 변경 방법과 자동이체 확인 방법에 대해서 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

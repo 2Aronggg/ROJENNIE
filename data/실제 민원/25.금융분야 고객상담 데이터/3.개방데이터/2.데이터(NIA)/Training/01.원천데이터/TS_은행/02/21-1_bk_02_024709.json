@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_024709",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 838,
+        "consulting_content": "고객은 송금 착오 반환 요청 문자 미수신 및 직접 이체 절차를 문의했으며, 상담사는 거래 확인 후 문자, 앱, 홈페이지 조회 방법과 자동 이체 신청 절차를 안내하고, 필요 시 콜센터 연락을 제안하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

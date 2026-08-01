@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_021814",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1436,
+        "consulting_content": "고객은 환전 수령 일자를 오늘에서 내일로 변경하고 싶다고 요청하였고 상담사는 모바일 앱에서 ‘외화 매매 환전’→‘환전 내역 조회’→‘수령점 등록 변경’ 메뉴로 이동해 달력에서 날짜를 선택하도록 안내하였다. 고객은 신분증 지참과 내일 방문을 확인하였고 상담사는 신분증 제시 필요와 한도, 수수료를 안내하고, 취소는 수령 전까지 전화 또는 앱에서 가능하다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

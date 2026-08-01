@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_011465",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 994,
+        "consulting_content": "고객은 ★★은행 주택청약 종합저축 해지를 원하고 절차와 비용을 문의하였고 상담사는 앱에서 로그인 후 메뉴 → 예금관리 → 해지 순으로 진행하도록 안내하고, 해지 시 수수료, 추가 비용이 없으며 잔액이 입출금통장으로 이체되고 청약통장 가입기간이 소멸된다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

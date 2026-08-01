@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_010354",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1180,
+        "consulting_content": "고객은 월 적금 입금이 누락된 것을 확인하고 이유 확인과 조회를 요청하였고 상담사는 계좌와 적금 내역을 조회한 결과 해당 적금이 이 은행 상품이 아니며 보험 계약일 가능성을 안내하고 보험사 연락처 확인 및 추후 재연락을 권유하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

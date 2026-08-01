@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_027176",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1001,
+        "consulting_content": "고객은 이체한 금액이 잘못 입금된 것 같아 확인을 요청했고, 상담사는 해당 금액이 추가 입금이 불가능한 정기예금이 아닌 과거 가입한 적금 계좌로 정상 입금됐음을 안내하며, 정기예금은 추가 입금이 불가하다고 설명했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

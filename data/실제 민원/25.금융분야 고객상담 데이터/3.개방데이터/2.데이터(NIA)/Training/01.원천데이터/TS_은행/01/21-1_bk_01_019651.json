@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_019651",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1856,
+        "consulting_content": "고객은 전화번호 복구와 입금 확인, 자동이체 일정 및 금액 확인, 계좌 번호, 비밀번호 제공, 인증번호 재전송 요청, 입금 지연 확인 등을 요청하였고 상담사는 계좌 정보 확인 절차 안내, 시스템 조회 후 입금 여부와 자동이체 내역을 확인해 결과를 전달하고, 인증번호 재전송 및 지연 상황 해결 방안을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

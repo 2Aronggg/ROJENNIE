@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_020271",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1535,
+        "consulting_content": "고객은 환전 한도가 낮아 상환이 지연될까 걱정해 한도 상향과 필요한 서류, 소요시간을 문의했고 상담사는 현재 일일 한도가 ●●원이며 온라인 신청 시 신원 인증 후 1~2일 내 적용된다고 안내하고, 영업점 방문 시 실시간 해제가 가능하니 영업시간을 확인하라고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

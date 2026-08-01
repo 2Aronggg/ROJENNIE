@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_018405",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 755,
+        "consulting_content": "고객은 정기예금 만기 확인과 연장 요청을 하였고 상담사는 만기일을 안내하고 연장 금리, 이자 및 자동이체 변경 방법을 설명하였다. 고객은 자동이체 유지와 담보대출 연계 옵션을 문의했으며 상담사는 자동이체 유지 가능과 대출 연계 시 금리 변동을 안내하고, 재예치는 어려우니 추후 온라인 예약을 권유하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

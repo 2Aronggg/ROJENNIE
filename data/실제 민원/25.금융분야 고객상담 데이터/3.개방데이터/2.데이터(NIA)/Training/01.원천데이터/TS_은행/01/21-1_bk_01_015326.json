@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_015326",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 984,
+        "consulting_content": "고객은 입금 여부와 현재 잔액 및 인출 가능 금액을 확인하고자 해서 입금내역과 현재 잔액을 알려드렸다. 입금이 정상적으로 처리된 것을 확인했으며, 입금 지연 시 영업일 기준 1~2일이 소요될 수 있음을 안내드렸다. 또한, 요청하신 최근 3개월 거래 내역을 확인하여 제공하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

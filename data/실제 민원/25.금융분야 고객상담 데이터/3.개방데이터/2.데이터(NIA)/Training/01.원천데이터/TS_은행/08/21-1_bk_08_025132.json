@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_025132",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 928,
+        "consulting_content": "고객은 담보 대출 연장을 위해 본인 확인 정보와 계좌 비밀번호를 제공하고 연장 절차, 소요 시간, 온라인 신청 가능 여부를 문의하였고 상담사는 연장 신청은 가능하며 영업일 1~2일 내 결과가 나오고, 온라인 신청 시 추가 인증이 필요하고 평균 3분 소요된다고 안내하고 문자로 금리 차이 내역을 제공하겠다고 전달하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

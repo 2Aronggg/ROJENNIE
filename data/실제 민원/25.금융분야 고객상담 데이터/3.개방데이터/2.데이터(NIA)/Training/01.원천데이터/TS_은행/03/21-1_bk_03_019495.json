@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_019495",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1428,
+        "consulting_content": "고객은 자동이체 번호 변경으로 해지를 원하고 계좌, 비밀번호 등 본인 확인 정보를 제공했으며, 전화로는 해지가 불가해 영업점 방문을 요구받았다. 상담사는 오픈뱅킹 미가입으로 직접 방문 필요와 산본지점 위치, 신분증 지참 안내를 제공하고, 천호동지점은 없으니 산본지점 방문을 권고하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

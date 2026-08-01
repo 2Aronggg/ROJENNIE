@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_021028",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "80세이상",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 807,
+        "consulting_content": "고객은 대출 연장을 요청하고 연이자율과 상환 방법, 상환 계획표 제공을 요구했으며, 상담사는 비대면 비상금대출 상품 안내와 연이자율 4.5% 설명, 자동이체 설정 방법 안내, 신청 후 심사로 한도, 금리 확인 가능, 이메일, 문자 발송으로 상환 일정표 제공을 약속하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

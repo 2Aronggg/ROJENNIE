@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_023084",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1507,
+        "consulting_content": "고객은 계좌 번호 입력 오류로 3건의 송금을 잘못했으며 환불 접수를 요청하였고 상담사는 거래 내역을 조회하고, 각 건에 대해 자금 반환 청구를 접수하며 영업일 기준 3~5일 소요와 진행 상황 안내를 약속하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_013617",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 849,
+        "consulting_content": "고객은 본인 확인을 위해 성함과 생년월일을 제공하고 계좌 번호를 요구받았으며, 이후 대출 상환 일정 안내를 요청하였다. 상담사는 확인 절차를 진행하고 오늘 신용 대출 약정을 진행한다고 안내했으며, 약정 이자 진행이 만료돼 변경, 취소가 불가능함을 설명하고, 대출 상환 방법에 대해 안내하겠다고 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

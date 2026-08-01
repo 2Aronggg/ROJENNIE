@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_008176",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 2201,
+        "consulting_content": "고객은 ★★은행 계좌에 공단에서 입금된 금액이 확인되지 않아 상세 내역 확인을 요청하였다. 상담원은 자동이체 등록 여부를 조회하였다. 최근 3개월간 자동이체 기록이 없음을 확인하였다. 입금 사유와 입금자 정보를 확인할 수 없으므로 공단 고객센터와 직접 연락하도록 안내하였다. 공단 홈페이지에서 입금 오류 신고메뉴를 이용해 서류를 제출하면 환불 절차가 진행된다고 설명하였다. 추가 문의 시 언제든 전화 가능하다고 마무리하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

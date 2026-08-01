@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_020763",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1531,
+        "consulting_content": "고객은 타행 송금 후 입금이 안 돼 문의하였고 상담사는 송금이 정상 처리됐으며 상대 은행에서 입금 확인을 권하였다. 고객은 수수료와 환불 가능을 물었고 상담사는 수수료는 일반 부과이며 오류 시에만 환불 가능하니 거래 취소, 재이체가 필요하다고 설명하였다. 고객은 은행 방문 시 서류를 제출하겠다고 하였고 상담사는 서류만 있으면 되며 확인서를 이메일로 발송하겠다고 제안하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

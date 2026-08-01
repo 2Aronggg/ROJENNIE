@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_009268",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1524,
+        "consulting_content": "고객은 대출 잔액에 대한 이자 상환 금액과 영점일 프로 기준 계산을 문의하였다. 상담사는 현재 계약 이자율은 변동 시 사전 안내 및 동의를 받으며, 변동 없을 경우 매월 납부액이 동일하고 원금 상환 시 이자 감소한다는 점을 설명하였다. 원금 상환 일정은 인터넷뱅킹, 모바일 앱에서 확인 가능하며, 자동이체 설정도 가능하다고 안내하였다. 고객은 자동이체를 즉시 설정하고자 하여 계좌 정보 확인 후 자동이체가 정상 등록되었다고 확인하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

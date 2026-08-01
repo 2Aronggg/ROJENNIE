@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_018283",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "80세이상",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1015,
+        "consulting_content": "고객은 최근 통장 입금 여부를 확인하고자 계좌번호, 성명, 생년월일을 제공하고 ARS 비밀번호 입력을 시도했으며, 입금 기록이 없다고 답변받아 영업점 방문을 요청했고, 상담사는 계좌 정보를 확인하고 ARS 연결을 안내한 뒤 입금 내역이 없음을 알리고 가까운 영업점과 예약 절차를 안내하여 예약을 진행하겠다고 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_023594",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 981,
+        "consulting_content": "고객은 계좌 변경으로 자동이체가 정상 진행되지 않아 해지 요청 문자를 받았고, 자동이체가 시스템 오류로 취소된 사실을 확인하고 재신청 방법을 문의하였다. 상담사는 자동이체가 모두 취소된 사유를 설명하고, 재신청은 해당 은행의 온라인, 모바일 또는 전화 상담을 통해 진행해야 하며 24시간 이내 반영되고 수수료가 없다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_030254",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 980,
+        "consulting_content": "고객은 적금 만기 후 자동 이체로 추가 입금된 사실과 이자 지급 여부, 자동 이체 해지 방법 및 중도 해지 수수료를 문의하였고, 상담사는 자동 이체가 설정돼 있어 추가 금액에도 이자가 지급되고, 해지는 모바일 앱에서 즉시 가능하며, 중도 해지 시 기본 이자 적용, 수수료 약●●원 발생, 이자는 매월 말일 계산 후 다음 영업일 입금된다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

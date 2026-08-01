@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_017013",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1400,
+        "consulting_content": "고객은 메일로 대출 연체 사실을 확인하고 상담사에게 미납 이자 금액 및 가상계좌 입금을 요청하였으며, 상담사는 신분 및 계좌 정보를 확인한 후 연체 금액이 몇 만 원임을 안내하고, 가상계좌 정보를 문자로 발송하여 신속한 입금을 권유하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

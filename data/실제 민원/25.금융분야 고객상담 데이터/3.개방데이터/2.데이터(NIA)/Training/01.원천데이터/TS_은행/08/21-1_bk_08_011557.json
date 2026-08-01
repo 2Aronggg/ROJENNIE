@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_011557",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 958,
+        "consulting_content": "고객은 전세 보증금 반환 보증 연장 신청 문자 내용과 마감일, 필요 서류를 문의하였고 상담사는 마감일이 ○월 ○일이며 그일까지 신청해야 함을 안내하고, 계약서 사본, 신분증, 입금 내역 제출을 요구했으며, 마감일 이후 연장은 불가하고 신청 완료 시 확인 문자와 승인 여부를 알려드린다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

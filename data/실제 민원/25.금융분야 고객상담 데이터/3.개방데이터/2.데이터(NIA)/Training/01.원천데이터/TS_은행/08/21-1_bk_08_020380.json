@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_020380",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1072,
+        "consulting_content": "고객은 대출 연장 절차와 신청 시점을 물었고 상담사는 연장은 만기 7일 전까지 앱에서 신청 가능하고 신분증, 급여이체 내역만 제출하면 된다고 안내하였다. 고객은 지점 방문 여부와 서류를 문의했으며 상담사는 앱으로 처리 가능하고 방문은 필요 없다고 답변하였다. 고객은 연장 시 이자율 유지와 한도 초과 시 대처법을 물었고 상담사는 기존 이자율이 유지되며 한도 초과 시 별도 대출 심사가 필요하다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

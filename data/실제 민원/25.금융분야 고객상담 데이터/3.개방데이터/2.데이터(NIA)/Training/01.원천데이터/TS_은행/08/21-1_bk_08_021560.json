@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_021560",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1165,
+        "consulting_content": "고객은 인터넷 본인인증 오류와 전화 연결 끊김 등으로 대출 연장에 어려움을 겪었고 연장 절차와 방문 요건을 문의했으며, 상담사는 스마트론 연장은 신분증만 지참해 영업시간 평일에 가까운 지점 방문 또는 모바일 앱으로 가능하고 서류는 추가 없으며, 연장 시 금액은 유지되고 이자만 적용된다고 안내하고, 향후 문제 발생 시 고객센터, 앱 1:1 문의를 이용하라고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

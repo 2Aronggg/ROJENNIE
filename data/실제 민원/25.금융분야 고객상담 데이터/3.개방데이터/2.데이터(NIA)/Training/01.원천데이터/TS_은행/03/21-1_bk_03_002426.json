@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_002426",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1161,
+        "consulting_content": "고객은 대출 서류 제출 후 무단으로 등록된 폰뱅킹 출금 이체 문자에 대해 문의했고, 상담원은 오픈뱅킹 자동이체 등록 사실을 확인하고 해지 절차는 해당 기관에 직접 요청해야 한다고 안내했다. 또한 앱에서 내역 확인 방법, 무단 등록 추적 방법, 보안 설정 강화 방안을 설명하고, 해지 완료 후 재확인 전화를 권장했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_026443",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 967,
+        "consulting_content": "고객은 법인 카드사에서 잘못된 계좌로 송금된 사실을 알려 자금 반환을 요청하였고 상담사는 개인 오류와 달리 법인 경우 영업점 방문이 필요함을 안내하고, 사업자등록증, 위임장 등 서류 제출 후 3~5영업일 내 검토, 결과 통보와 전화, 인터넷뱅킹으로 진행 상황 확인이 가능하다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_024462",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "신규고객",
+        "consulting_client_type": null,
+        "source_length": 1029,
+        "consulting_content": "고객은 희망 브랜치에 등록한 ★★ 저축 계좌를 해지하고 싶다고 요청하였고 상담사는 ‘마이페이지’‑‘계좌 관리’에서 해지 버튼을 누르는 절차와 문자를 제공하였다. 고객은 해지 경로를 문자로 받아 확인하길 원했고 상담사는 확인된 번호로 안내 링크를 발송하였다. 또한 고객은 카카오톡 가상계좌 입금 안내가 은행 발신인지와 해지 시 메시지 삭제 여부를 물었으며 상담사는 알림만 정상이고, 발신자명, 링크로 피싱 여부를 판단하라고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

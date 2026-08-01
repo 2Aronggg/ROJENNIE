@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_026210",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1481,
+        "consulting_content": "고객은 과거 입출금 및 이자 내역을 이메일로 받기를 요청하였고, 계좌 번호와 운전면허증 사진 등 신원 확인을 제공했으며, 요약표와 지원 내역 상세까지 요구하였고, 상담사는 신원 확인 절차를 안내하고 계좌 번호 오류를 재확인한 뒤, 요청 기간의 거래내역 및 이자, 요약표를 영업시간 내에 이메일로 발송하겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

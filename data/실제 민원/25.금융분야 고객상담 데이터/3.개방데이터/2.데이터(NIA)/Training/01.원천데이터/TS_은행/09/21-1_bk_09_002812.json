@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_002812",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1084,
+        "consulting_content": "고객은 모바일 앱을 통해 달러를 현지 통화로 전환하고 싶어 전환 절차, 서류, 현금 수령 방법 등을 문의했다. 상담사는 환전 신청 방법, 현금은 지점에서 직접 수령해야한다는 점, 당일 수령 가능 시간, 수수료와 우대 환율 적용 조건, 온라인과 지점 환전의 차이점, 취소변경 절차 등에 대해 안내했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

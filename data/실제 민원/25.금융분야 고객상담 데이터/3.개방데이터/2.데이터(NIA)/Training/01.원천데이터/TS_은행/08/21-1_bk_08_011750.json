@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_011750",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1096,
+        "consulting_content": "고객은 전세자금 대출 연장을 원하고 계약 연계 서류와 금리 변동, 인하 혜택을 문의하였고 상담사는 연장은 만기 전 일정일부터 진행되며 등기부 등본, 주민등록등본 등 기본 서류와 최근 발급 서류를 준비하도록 안내하고, 금리는 기존과 동일하되 변동 가능성을 설명하며 인하 프로모션을 검토할 수 있다고 안내하였으며, 신청은 만기 10일 전까지 제출하고 진행 상황은 전화, 모바일 뱅킹으로 확인할 수 있다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

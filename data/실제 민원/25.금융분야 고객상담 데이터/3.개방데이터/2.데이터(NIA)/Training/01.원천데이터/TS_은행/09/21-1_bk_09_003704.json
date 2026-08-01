@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_003704",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1393,
+        "consulting_content": "고객은 약 ㅇㅇㅇ원 환전을 원하고 인근 ★★은행 지점 위치와 주차 여부, 오늘 몇 시간 후 가능 여부를 물었으며, 상담사는 재고 확인 후 10분 거리 지점과 영업시간을 안내하고, 예약 및 문자 안내를 제안했으며, 환전 수수료는 0.5%라고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

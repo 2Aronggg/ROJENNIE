@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_027734",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 727,
+        "consulting_content": "고객은 이체 한도 초과 확인과 계좌 정보 조회, 이름, 생년월일 입력 방법, 비밀번호 재입력, 남은 한도 및 ★★페이 이용 가능 여부, 하루 충전 한도와 타행 이체, 이체 수수료 및 한도 초과 시 대체 방법을 문의하였고 상담사는 ARS 입력 안내, 비밀번호 입력 요청, 현재 남은 한도와 ★★페이 이용 가능, 하루 충전, 이체 가능, 수수료 500원 및 대체 방법 등을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_019831",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1063,
+        "consulting_content": "고객은 비대면 대출 연장이 안 되는 이유와 대체 방법을 문의하고, 이메일, 문자 수신, 방문 시간, 필요 서류를 확인했으며, 기존 제출 서류 사용 가능 여부를 물었다. 상담사는 비대면 불가 사유를 설명하고 영업점 방문을 안내하며, 이메일, 문자로 서류 전송 및 방문 시간 가능함을 알려 주고, 신분증, 주민등록등본, 임대차계약서 원본 등 준비 서류를 안내하고, 기존 서류는 재제출 없이 사용 가능하다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

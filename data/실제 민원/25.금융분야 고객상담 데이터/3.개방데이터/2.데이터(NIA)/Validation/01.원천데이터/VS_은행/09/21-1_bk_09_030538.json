@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_030538",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 862,
+        "consulting_content": "고객은 외화 환전과 수수료, 최소 금액을 문의하였고 상담사는 수수료는 0.2%, 최소 5,000원, 최소 환전 금액은 10만원이라고 안내하였다. 고객은 보유 통화가 적고 지점에서 환전이 어려워 온라인, 카드 환전을 제안받았으며, 온라인 신청은 실명 인증 후 금액 입력 시 영업일 1~2시간 내 입금된다고 설명받았다. 또한 고객은 가까운 지점 방문 시간과 절차를 확인하고 상담사는 추가 문의 시 콜센터 이용을 권고하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

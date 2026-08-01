@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_004338",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 903,
+        "consulting_content": "고객은 가상계좌 번호와 대출금액 문자 발송을 요청했고 상담사는 현재 대출 납부일과 금리를 안내하고, 위약금 2%를 문자로 전송하겠다고 답했다. 고객은 변동형 금리 전환을 원했으며 상담사는 온라인, 전화 신청 절차를 안내하고 즉시 전환 신청을 접수해 처리 완료 후 확인 문자를 보내겠다고 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

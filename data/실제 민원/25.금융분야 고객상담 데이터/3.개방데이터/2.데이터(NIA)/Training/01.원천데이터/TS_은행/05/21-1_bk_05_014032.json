@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_014032",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1826,
+        "consulting_content": "고객은 급여 통장 개설 후 한도 해제를 원했으나 출장소 안내를 받았고, 상담사는 비대면 해제가 어려워 영업점 방문이 필요하고 신분증, 급여 입금 확인서, 기존 한도 안내문을 준비하라고 설명하였다. 또한 3개월 이상 입금 내역 확인이 조건이며, 금요일 오후 방문 예약을 잡아 서류 준비를 재확인하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

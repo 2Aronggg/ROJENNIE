@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_012834",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1336,
+        "consulting_content": "고객은 자동이체 해지를 요청하고 본인 확인 정보를 제공하였고 상담사는 계좌, 비밀번호 확인 후 두 건의 자동이체가 활성화돼 있음을 확인하고, 해지는 모바일, 인터넷뱅킹 또는 업체에서 직접 진행해야 함을 안내하고, 처리 소요는 영업일 기준이며 진행 상황은 앱에서 확인 가능하다고 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

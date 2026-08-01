@@ -81,6 +81,5 @@ class P0Tests(unittest.TestCase):
         self.assertEqual(response.json()["issues"][0]["decision"]["control"], "ask")
         self.assertEqual(client.get("/api/v1/cases/case_test").status_code, 200)
 
-
 if __name__ == "__main__":
     unittest.main()

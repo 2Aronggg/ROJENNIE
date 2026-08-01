@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_029014",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1348,
+        "consulting_content": "고객은 의심스러운 알림과 문자에 대해 계좌 정보 노출 여부와 비밀번호 재설정 방법을 문의했으며, 운전면허증 사진 전송 실패 등을 언급하였다. 상담사는 고객 확인 후 앱 사용은 정상이며 비밀번호는 영문, 숫자, 특수문자 조합 8자리 이상으로 설정하도록 안내하고, 사기 문자 위험을 경고한 뒤 최근 1개월 거래 내역을 문자로 전송해 드리겠다고 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_027595",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1059,
+        "consulting_content": "고객은 이자 연체 사실을 확인하고 가상계좌 입금을 요청했으며 문자 알림 신청을 하였고 상담사는 가상계좌 번호와 입금 기한을 안내하고, 입금 확인 시 즉시 상환 처리와 문자 알림을 제공한다는 내용으로 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

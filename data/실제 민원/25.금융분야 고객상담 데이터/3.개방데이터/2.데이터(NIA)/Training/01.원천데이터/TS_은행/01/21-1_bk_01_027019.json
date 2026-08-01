@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_027019",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 2132,
+        "consulting_content": "고객은 새벽 4시경 발생한 미확인 출금 건과 금액 및 카드 연관성을 확인하고자 하였고, 상담사는 제공된 정보를 확인 후 출금 내역을 조회하고, 해당 거래가 ★★카드 자동이체와 연관됨을 안내하며 카드사에 문의하도록 권고하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

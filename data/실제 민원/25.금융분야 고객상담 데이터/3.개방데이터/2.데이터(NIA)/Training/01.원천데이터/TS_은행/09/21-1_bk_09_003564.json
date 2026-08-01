@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_003564",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1745,
+        "consulting_content": "고객은 구공달러 3천달러 이상 환전을 원하고 지점 재고 확인, 신분증 제출, 비대면 계좌 개설 및 앱 이용 우대율 적용, 우대 기간, 수수료 여부, 인근 지점 위치와 주차 정보를 문의하였고 상담사는 해당 지점에 달러 충분히 비치돼 있음과 신분증 지참 필요, 비대면 계좌 개설 절차와 앱 사용 시 ●●% 환율 우대와 3개월 유효 기간을 안내하고, 인근 지점 위치와 무료 주차 안내, 추가 서류, 절차, 수수료 없음 등을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

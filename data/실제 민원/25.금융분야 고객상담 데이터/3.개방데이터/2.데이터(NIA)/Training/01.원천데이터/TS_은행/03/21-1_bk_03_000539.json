@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_000539",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1306,
+        "consulting_content": "고객은 자동이체가 이체되지 않아 월간 입금한도 초과가 원인임을 확인하고, 초과 금액 해소와 입금 방법, 확인 절차, 다른 서비스에 미치는 영향, 자동이체 금액 변경 방법 등을 문의하였다. 상담원은 고객의 한도 초과 금액, 정산 시점, 한도 회복 방법, 입금 확인 문자 수신 소요시간 및 자동이체 금액 변경 절차 등에 대한 상세 안내와 함께 향후 주의사항에 대해서도 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

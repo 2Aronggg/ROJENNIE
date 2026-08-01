@@ -13,3 +13,5 @@ data/complaints/**/complaints.jsonl
 
 # Regenerate with server.rag.embed_corpus. Real Gemini API cost to rebuild.
 server/rag/embeddings.jsonl
+python-3.12.5-amd64.exe
+python-install.log

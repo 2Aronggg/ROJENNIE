@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_031444",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1304,
+        "consulting_content": "고객은 대출 이자 입금 후 연체 표시를 확인하고자 계좌, 신분 정보를 제공했으며, 입금 누락 및 자동이체 금액 부족을 문의하고 전체 납부액 및 남액을 물었다. 상담사는 계좌, 신분 확인 후 시스템 오류로 입금이 반영되지 않았으며 영업일 기준 내일 처리될 것이라고 안내하고, 자동이체 금액 부족으로 결제가 중단됐음을 알려 주었으며, 이번 달 총 납부액과 연체 시 부과되는 이자, 벌금은 약관을 참고하라고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

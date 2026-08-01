@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_003611",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1046,
+        "consulting_content": "고객은 최근 발생한 네 건의 자동이체, 구독 거래 내역과 계좌 비밀번호 확인을 요청했으며, 계좌 번호와 비밀번호를 정확히 제시하지 못했다고 답변하였고, 상담사는 본인 확인을 위해 이름, 생년월일을 물어본 뒤 ARS 연결을 시도했으나 비밀번호 불일치로 확인이 어려워 재입력 또는 지점 방문을 안내하고, 거래 내역 확인 및 분쟁 신청 방법을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

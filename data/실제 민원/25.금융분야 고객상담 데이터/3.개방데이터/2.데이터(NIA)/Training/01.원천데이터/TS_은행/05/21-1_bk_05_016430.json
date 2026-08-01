@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_016430",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 800,
+        "consulting_content": "고객은 한도계좌를 일반계좌로 전환하고자 하였고 상담사는 앱 전환 가능하지만 인터넷 해지 불가 시 영업점 방문 및 신분증, 3개월 거래내역 서류 제출을 안내하였다. 또한 고객은 신규 카드 발급 및 하이브 리들 신청을 문의하였고 상담사는 카드사 문의와 영업점에서 신청서 작성 후 전달 절차를 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

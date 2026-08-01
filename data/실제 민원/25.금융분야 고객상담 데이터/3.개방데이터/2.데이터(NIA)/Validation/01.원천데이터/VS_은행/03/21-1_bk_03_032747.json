@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_032747",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1289,
+        "consulting_content": "고객은 자동이체 금액이 한도 초과로 출금되지 않았다고 문의했고 상담사는 분기, 월 한도를 설명하고, 금액을 모바일 앱에서 변경하도록 안내했으며, 변경은 영업일 기준 24시간 이내 반영되고 이자 계산 유의사항을 전달하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

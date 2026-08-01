@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_007383",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1483,
+        "consulting_content": "고객은 개인사업자 대출 연체 금액 및 다음 납부일 확인을 요청하였다. 상담원은 계좌 번호와 비밀번호를 입력받아 연체 금액은 오늘 기준이며, 다음 납부일은 계약에 따라 정해진 날짜라고 안내하였다. 대출은 원금 균등 상환이며 매월 원금과 이자가 청구된다고 설명하였다. 전액, 부분 상환이 가능하고 자동이체는 모바일 앱이나 전화 신청이 가능하다고 안내하였다. 고객은 전화로 자동이체를 신청하였으며, 즉시 다음 납부일부터 적용된다고 안내하였다. 현재 이자율은 고정이며 변동되지 않는다라고 확인하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

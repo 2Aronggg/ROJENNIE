@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_024855",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1382,
+        "consulting_content": "고객은 대출 상환 누락 통보를 받고 미결제 금액 및 원인 확인을 요청했으며, 계좌, 신분 확인 후 현재 미결제 금액이 ●●●●원이고 잔액 부족으로 자동 이체가 실패했음을 알았다. 고객은 추가 대출 현황과 남은 대출 금액을 물었고, 상담사는 두 건의 대출 잔액과 전액 상환된 전세 대출을 안내하고, 남은 금액 ●●●●원을 다음 결제일에 자동 이체하도록 재설정 가능하다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

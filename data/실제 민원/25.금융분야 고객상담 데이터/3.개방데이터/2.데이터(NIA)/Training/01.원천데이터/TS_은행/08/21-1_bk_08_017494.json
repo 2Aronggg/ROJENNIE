@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_017494",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1517,
+        "consulting_content": "고객은 마이너스 대출 금액 미표시와 연장 시 상환 요구에 혼란을 느끼고, 계좌 확인 절차 후 사용 실적이 없어도 한도가 감소한다는 설명과 연장 방법을 문의하였다. 상담사는 연장 버튼 선택 시 자동 연장이 이루어지고, 한도 상향은 재평가 가능함을 안내하며 연장 수수료는 0.5%이고 이자는 일일 연이자율에 따라 계산된다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

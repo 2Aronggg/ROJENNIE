@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_015190",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 658,
+        "consulting_content": "고객은 이자 상환을 위해 가상계좌 발급을 원하였고, 소요 시간에 대해 상담을 원하였다. 상담사는 실시간 가상계좌를 발송하고, 입금 방법을 안내하며, 자동 이체와 변경 절차는 전화,모바일뱅킹으로 가능하다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

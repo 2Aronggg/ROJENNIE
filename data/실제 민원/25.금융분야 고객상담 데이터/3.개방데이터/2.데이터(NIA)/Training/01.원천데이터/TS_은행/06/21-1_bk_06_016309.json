@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_016309",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1429,
+        "consulting_content": "고객은 내일 예정된 대출 이자 조기 상환을 원하고 계좌, 비밀번호 확인 후 입금 여부와 수수료, 조기 상환 절차를 문의하였고 상담사는 본인 확인, 계좌 조회를 진행한 뒤 아직 납부되지 않았음을 알리고, 조기 상환 시 별도 절차와 비용이 필요함을 안내하였으며, 대환 대출 전환 옵션도 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

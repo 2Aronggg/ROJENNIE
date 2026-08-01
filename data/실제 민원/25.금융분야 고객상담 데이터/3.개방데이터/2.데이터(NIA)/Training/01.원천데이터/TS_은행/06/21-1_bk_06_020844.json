@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_020844",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 885,
+        "consulting_content": "고객은 통장 사본, 청약, 적금, 예금 잔액 증명서 발급을 요청하고, 앱 오류로 발급이 안 된다고 말했으며, 이메일, 팩스로 전송을 원하였다. 상담사는 모바일 앱, PC에서 서류를 발급받는 방법을 안내하고, 오류 시 절차를 설명하며, 본인 휴대폰 번호 확인 후 기존 등록 이메일 주소로 서류를 송부하겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

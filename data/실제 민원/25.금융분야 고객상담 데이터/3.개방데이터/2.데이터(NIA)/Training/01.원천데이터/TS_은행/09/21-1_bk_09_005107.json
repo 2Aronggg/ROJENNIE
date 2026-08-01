@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_005107",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1444,
+        "consulting_content": "고객은 계좌번호, 성명, 생년월일을 제공하고 과거 환전 거래의 환율 변동 원인을 문의하였다. 상담원은 국제 시장, 스프레드에 따른 약 0.2% 차이를 설명하고 현재 최적 환율이 0.15% 낮은 수준임을 안내하였다. 고객은 2,000달러 환전을 요청하여 금액, 통화 확인 후 비밀번호를 입력했고, 상담원은 요청을 접수해 5분 내 완료될 것이라 안내한 뒤 정상적으로 입금되었음을 확인하였다. 향후 환전 참고 자료를 기존 이메일로 발송하겠다고 제안하였으며 고객은 이를 수락하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

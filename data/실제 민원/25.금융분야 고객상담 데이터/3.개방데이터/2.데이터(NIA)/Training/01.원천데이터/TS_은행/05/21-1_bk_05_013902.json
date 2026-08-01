@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_013902",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1345,
+        "consulting_content": "고객은 한도 계좌로 이체가 안 된다고 문의하고 계좌 명칭, 이체 한도, 해제 절차를 물었으며, 상담사는 한도 계좌는 전자금융과 무관하고 일일 한도는 ○○원이며 앱, 창구 제한을 안내하고, 해제 시 필요 서류와 비대면 신청 방법, 영업시간, 비용을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

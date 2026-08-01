@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_003269",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 780,
+        "consulting_content": "고객은 자동이체 설정을 요청하고 잔액 부족으로 일부 금액만 출금된 사실을 확인하고 수수료와 처리 시간을 문의하였다. 상담사는 고객의 정보를 확인하고 자동이체 설정 절차와 월 수수료, 영업일 기준 1~2시간 처리기간 등을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

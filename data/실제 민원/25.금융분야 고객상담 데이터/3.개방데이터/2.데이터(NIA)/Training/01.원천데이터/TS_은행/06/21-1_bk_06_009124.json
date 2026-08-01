@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_009124",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 983,
+        "consulting_content": "고객은 문자 수신 문제와 대출 보증서 관련 미출금 원금 입금 요청을 문의하였다. 계좌번호와 비밀번호를 제공하고, 인출 권한이 없음을 안내받았다. 대출 잔액이 OOO만원이며 매월 O일 자동이체가 설정돼 있음을 확인하였다. 일시 상환은 모바일뱅킹 또는 영업점 방문으로 가능하며, 고객은 200만원 일시 상환을 요청하였다. 비밀번호 확인 후 잔액이 차감돼 남은 금액이 OOO만원이며, 처리 완료 예정임을 안내받았다. 현재 연 이자율은 4.5%이며 변동 시 사전 안내된다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

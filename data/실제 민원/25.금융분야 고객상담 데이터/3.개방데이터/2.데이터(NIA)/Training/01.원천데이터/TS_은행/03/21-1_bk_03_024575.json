@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_024575",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1191,
+        "consulting_content": "고객은 자동이체에 두 개의 계좌가 등록돼 중복 결제 우려라며 해제 절차를 문의했고, 상담사는 온라인, 전화 방식 해제 안내와 필요 정보를 요청하였다. 고객은 정보를 제공했고, 상담사는 즉시 중복 계좌를 해제하고 새 계좌 지정 작업을 수행했으며, 변경이 즉시 반영되어 다음 청구일부터 적용되고 확인 문자를 발송한다는 안내를 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

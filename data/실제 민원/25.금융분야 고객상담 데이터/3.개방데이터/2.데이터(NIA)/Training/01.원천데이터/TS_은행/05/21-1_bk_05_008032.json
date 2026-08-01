@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_008032",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 946,
+        "consulting_content": "한도 계좌로 등록되어 있다면 해지를 진행하셔야 합니다. 우선 ★★은행 앱을 통해 한도 계좌 해제를 시도해 보실 수 있다. 만약 대상 계좌가 아니라고 표시된다면 비대면으로는 처리할 수 없다. 이 경우 해당 계좌의 금융거래 목적을 증빙할 수 있는 자료를 지점으로 팩스 발송하시거나 가까운 ★★은행 영업점을 직접 방문해 제출하셔야 합니다. 해지 절차는 예금주 본인이 직접 방문하셔야 처리됩니다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

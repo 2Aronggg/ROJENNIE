@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_022431",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1180,
+        "consulting_content": "고객은 전세 대출 연장 및 연장료 문의를 하였고 상담사는 연장료는 잔액에 따라 차등 적용되며, 연장 신청은 앱 또는 지점 방문으로 가능하고 필요 서류와 만기일을 확인 후 영업일 2~3일 내에 심사 결과를 알려드린다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

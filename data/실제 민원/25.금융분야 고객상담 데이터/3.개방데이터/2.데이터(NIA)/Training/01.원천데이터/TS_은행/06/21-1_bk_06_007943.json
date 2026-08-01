@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_007943",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1694,
+        "consulting_content": "고객은 대출 이자 연체 금액과 납부 방법을 문의하였다. 상담사는 두 건의 연체 금액을 각각 안내하고, 자동이체 계좌에 입금하면 실시간으로 처리되며 문자 알림이 발송된다고 설명하였다. 연체 이자 감면 가능성을 검토하고, 신분증 사본과 최근 3개월 급여내역서 제출을 요구하였다. 번호 변경 절차를 안내하고, 새 번호로 알림이 전송될 것임을 확인하였다. 가상계좌 번호를 문자로 제공하겠다고 약속하고, 추후 대출 상담 및 금융 관리 팁 제공 의사를 기록하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

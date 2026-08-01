@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_022402",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1031,
+        "consulting_content": "고객은 대출 연장을 요청하고 본인 확인 정보를 제공했으며, 서류 제출 방법, 전자문서 회신, 확인 문자 시점, 거절 시 절차, 대출 잔액, 이자율을 추가로 문의하였고, 상담사는 연장은 비대면 앱으로 신청하고 필요한 서류를 문자로 보내며, 전자문서는 앱에서 서명, 전송하고 확인 문자는 전송 직후 몇 시간 내에 발송된다고 안내했으며, 거절 시 사유와 대안 제시, 잔액, 이자율은 문자로 제공하겠다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

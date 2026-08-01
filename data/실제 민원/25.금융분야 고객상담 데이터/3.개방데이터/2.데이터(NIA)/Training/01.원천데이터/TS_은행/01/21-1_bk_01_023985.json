@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_023985",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 913,
+        "consulting_content": "고객은 마이너스 통장으로 500,000원 이체를 시도했으나 잔액 부족 메시지가 나와 확인을 요청했고, 상담사는 계좌, 비밀번호, 생년월일 등 마이너스 한도와 가능한 일시 대출 안내 및 이체 금액 확인을 제공하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

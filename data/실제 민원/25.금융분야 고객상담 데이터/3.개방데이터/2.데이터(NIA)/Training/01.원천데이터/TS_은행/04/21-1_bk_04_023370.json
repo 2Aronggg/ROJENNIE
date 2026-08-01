@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_023370",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 989,
+        "consulting_content": "고객은 만기 적금 해지가 안돼 문의하고 계좌, 비밀번호 등 중도해지 수수료와 자동 이체 옵션을 물었으며, 상담사는 해지는 승인 후 며칠 소요될 수 있음을 안내하고, 수수료는 계약 비율에 따라 차감된다고 설명한 뒤 지정 계좌로 잔액 자동 이체를 등록하고 영업시간 내 오후 2시 이후에 결과를 연락드리겠다고 응답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

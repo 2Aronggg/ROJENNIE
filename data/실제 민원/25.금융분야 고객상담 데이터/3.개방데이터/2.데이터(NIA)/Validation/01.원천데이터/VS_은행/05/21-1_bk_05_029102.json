@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_029102",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1118,
+        "consulting_content": "고객은 금융거래 한도 계좌 때문에 타행 이체가 안 된다고 문의하고, 서류를 팩스로 보내면 한도 해제가 가능한지 물었으며, 상담사는 신분증 사본, 급여명세표, 재직증명서 등을 팩스로 제출하고 1~2일 내 검토 후 전화로 결과를 통보하며, 방문은 필요 없지만 결과 확인은 전화해야 한다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

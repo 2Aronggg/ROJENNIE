@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_030713",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1122,
+        "consulting_content": "고객은연장신청시점과앱오류등에대해문의하였고상담사는메모가능여부확인후비상금이자율, 해지조건,대출만기일정,연장방법을앱안내와업데이트권장,오류시재시작, 센터문의를안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

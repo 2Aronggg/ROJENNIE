@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_007594",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 849,
+        "consulting_content": "고객은 만기 도래 대출의 상환 연장을 요청하였다. 상담원은 계좌 정보를 확인하고 대출 현황을 조회하였다. 조회 결과 해당 기업 시설 일반 자금 대출은 연장이 불가능하다고 안내하였다. 대신 재조정 옵션을 검토할 수 있음을 제안하고, 담당자가 검토 후 이메일과 연락처로 결과를 송부하겠다고 약속하였다. 고객은 추가 문의가 없음을 확인하였다. 담당자는 검토 후 전화로 안내드리고, 필요 시 추가 서류를 요청하겠다고 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

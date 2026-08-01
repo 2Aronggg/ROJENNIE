@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_019791",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1590,
+        "consulting_content": "고객은 추가 환전 가능 여부와 필요한 금액, 권종을 문의하였고 상담사는 보유 외화 재고 확인 후 즉시 환전 가능 여부와 절차를 안내하였으며, 신분증 지참 시 창구 방문을 권하고, 실시간 환율에 따른 원화 금액과 수수료를 설명하였다. 고객은 안내를 확인하고 결정하겠다고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

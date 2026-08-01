@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_022807",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "80세이상",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1157,
+        "consulting_content": "고객은 ★★은행 자동이체 등록 알림 문자를 받고 출금 시작일과 해지 방법을 문의하였고 상담사는 등록은 안내 메시지이며 다음 달부터 적용되고 정확한 일자는 통신사에 확인해야 한다고 안내하고, 해지는 전화, 인터넷뱅킹으로 가능하며 절차를 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_007829",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1266,
+        "consulting_content": "고객은 비상금 대출 만기 연장을 요청하였으며, 상담원은 본인 확인을 위해 성명, 생년월일, 계좌번호, 비밀번호를 확인하였다. 확인 결과 대출은 비대면 앱에서 만기 전까지 연장 가능함을 안내하였다. 연장 시 기존 연 ㅇㅇ% 금리가 유지되고 상환 일정은 기존과 동일하게 매월 말일 자동 이체로 설정된다고 설명하였다. 연장 절차와 확인서 링크를 문자로 발송하고, 이메일 주소를 확인하여 안내를 전송하기로 하였다. 고객은 연장만 원한다며 추가 문의는 없다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

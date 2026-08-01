@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_029018",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1016,
+        "consulting_content": "고객은 타은행에 150만원 입금 사실을 확인하고 싶어 계좌와 입금일을 알려주었고, 상담사는 본인 명의가 아니면 조회가 불가하다고 안내하며, 해당 은행에 직접 문의하거나 서면 요청서를 제출하라고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

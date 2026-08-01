@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_020780",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1674,
+        "consulting_content": "고객은 예금과 연계한 대출 연장을 신청했으나 시스템 오류로 진행 상황을 확인하고 싶다고 요청하였고 상담사는 본인 확인, 계좌 확인 후 누락 정보를 점검하고 재시도하여 오늘 연장이 완료됐음을 안내하였으며, 추가 서류 없이 기존 금리와 연장된 상환 일정만 적용된다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

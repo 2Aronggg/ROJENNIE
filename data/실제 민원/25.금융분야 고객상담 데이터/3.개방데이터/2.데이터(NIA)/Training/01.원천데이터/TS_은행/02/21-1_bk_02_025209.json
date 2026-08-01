@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_025209",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1282,
+        "consulting_content": "고객은 미성년자 자금 반환을 위해 어머니가 직접 입금하고 싶다며 지점 담당자 통화를 요청했고, 상담사는 반환은 고객센터에서 진행되며 거래일, 금액, 거래번호를 확인하고, 입금 계좌 번호와 은행명을 안내하였다. 고객은 제공된 계좌 번호를 확인하고, 상담사는 입금 후 영업시간 이후 1~2시간 내에 확인 문자 발송과 부모 동의서, 신분증 사본 제출을 요구하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

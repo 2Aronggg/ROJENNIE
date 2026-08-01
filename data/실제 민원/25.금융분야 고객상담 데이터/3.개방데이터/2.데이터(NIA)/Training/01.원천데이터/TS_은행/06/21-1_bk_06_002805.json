@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_002805",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1445,
+        "consulting_content": "고객은 월 이자 납부 및 선납 절차를 문의하며 금액과 필요서류를 확인했다. 상담사는 가상계좌 발급 절차와 입금 확인 방법, 조기상환 시 이자 계산 기준과 금액 산출 예시를 안내했다. 또한 타행 송금 시 유의사항과 신용등급 영향까지 설명하며 상담을 마무리하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

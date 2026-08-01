@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_018016",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 927,
+        "consulting_content": "고객은 전세 대출 연장 신청 및 배우자 동의 상황을 문의했고, 연장 신청이 정상 처리되었으며 금리는 3.5%로 유지된다고 안내받았다. 상담사는 비대면 심사 진행 중이며 추가 서류 요청 시 문자, 카카오톡으로 연락하고, 진행 상황을 카카오톡으로 알려줄 수 있다고 설명하였다. 고객은 소득 증빙 서류를 곧 제출하고 카카오톡 알림을 받기로 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

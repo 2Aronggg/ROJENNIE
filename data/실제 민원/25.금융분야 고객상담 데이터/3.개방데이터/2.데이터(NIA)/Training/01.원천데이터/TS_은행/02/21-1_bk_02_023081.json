@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_023081",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 654,
+        "consulting_content": "고객은 지난 주 자금 반환 신청 현황과 분할 상환 여부를 문의하였고 상담사는 처리 지연과 문자 안내 예정, 분할 상환은 매월 말 자동 이체임을 설명하였다. 고객은 모바일 앱에서 확인 방법을 물었고 상담사는 메인 화면 → 거래 내역 → 자금 반환, 분할 상환 경로를 안내하였다. 고객은 확인 후 추가 문의 없음을 밝혔고 상담사는 마무리 인사를 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

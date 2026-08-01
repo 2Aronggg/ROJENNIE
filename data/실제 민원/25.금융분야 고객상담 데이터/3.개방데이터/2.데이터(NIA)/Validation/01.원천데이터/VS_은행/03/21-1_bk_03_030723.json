@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_030723",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1843,
+        "consulting_content": "고객은 오픈뱅킹 출금 이체 미신청 문자에 대해 확인을 요청하고, 카드사에 연결해 내역을 확인하도록 하였으며, 무단 등록 의심 시 계좌 정지와 비밀번호 변경을 원해 인증 절차를 거쳐 비밀번호를 변경하였다. 상담사는 본인 확인 방법을 안내하고 문자 인증을 진행한 뒤 카드사 연결 및 확인 중임을 전달했으며, 비밀번호 변경 절차를 안내하고 완료를 알려 주었다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

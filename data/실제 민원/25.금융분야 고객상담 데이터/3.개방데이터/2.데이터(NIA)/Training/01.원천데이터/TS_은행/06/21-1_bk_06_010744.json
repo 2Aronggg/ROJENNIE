@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_010744",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1488,
+        "consulting_content": "고객은 현재 이용 중인 마이너스 대출의 감액 금액 및 이자 적용 여부와 월 납부액 내 원금, 이자 구분을 확인하고 문자, 이메일로 상세 내역을 받기를 요청하였고 상담사는 시스템 조회를 통해 감액 포함 원리금 금액을 안내하고, 월 납부액과 원, 이자 비율을 설명한 뒤 문자와 이메일 발송을 약속하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

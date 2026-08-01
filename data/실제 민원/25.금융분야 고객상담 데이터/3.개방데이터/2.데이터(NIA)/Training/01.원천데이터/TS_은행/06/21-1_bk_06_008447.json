@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_008447",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1332,
+        "consulting_content": "고객은 대출 연체 금액 확인 및 오늘 납부 의사를 밝히고, 연체가 신용점수에 미치는 영향과 자동이체 재설정 방법을 문의하였다. 상담원은 연체 금액을 안내하고, 오늘 정상 납부 시 연체 상태가 해제되며 신용기관에 남는 기간이 있을 수 있음을 설명하였다. 또한 연체가 신용점수에 부정적 영향을 줄 수 있음을 알리고, 자동이체는 모바일 앱에서 계좌와 금액을 입력해 등록하면 된다고 안내하였다. 고객은 즉시 설정을 완료하고 상담을 종료하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

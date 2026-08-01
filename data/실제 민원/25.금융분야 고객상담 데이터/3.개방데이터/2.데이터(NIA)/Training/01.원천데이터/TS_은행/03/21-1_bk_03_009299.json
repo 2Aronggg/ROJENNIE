@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_009299",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1736,
+        "consulting_content": "고객은 청년저축 적금 상품에 대해 고객은 입금 정지 상태와 해제 절차, 자동 이체 설정 방법을 문의하였다. 상담사는 정산 기간 및 최대 납입액을 안내하고, 정지 해제 요청을 접수하여 문자 알림으로 결과를 통보하겠다고 설명하였다. 또한 정지 기간 동안 이자는 발생하지 않으며, 해제 후 다음 납입 주기부터 정상 적용된다고 안내하였다. 고객은 문자 알림 서비스를 신청하였으며, 설정이 완료되었다고 전하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

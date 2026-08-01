@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_027885",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1439,
+        "consulting_content": "고객은 최근 몇 달 및 오래된 입출금 거래 내역서를 발급받고 싶으며 직접 방문해 서류와 수수료를 납부하고 우편 발송도 요청하였고, 상담사는 신분증, 위임장 등 필요 서류와 수수료 안내, 방문, 온라인 신청 방법 및 평일 처리, 우편 배송 가능함을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

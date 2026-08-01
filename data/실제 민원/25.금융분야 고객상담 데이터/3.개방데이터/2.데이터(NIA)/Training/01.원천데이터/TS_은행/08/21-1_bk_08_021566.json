@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_021566",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1259,
+        "consulting_content": "고객은 전세대출 만기 연장을 위해 계좌, 비밀번호 확인 후 서류 발송을 요청했고 상담사는 문자로 신청서, 신분증 사본을 보내며 방문 일정을 잡아줄 것을 안내하고, 연장 시 이자율 변동 가능성을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

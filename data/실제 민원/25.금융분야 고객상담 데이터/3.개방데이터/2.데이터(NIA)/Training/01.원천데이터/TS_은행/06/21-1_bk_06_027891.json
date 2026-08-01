@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_027891",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1544,
+        "consulting_content": "고객은 대출 이자 상환을 원한다며 절차와 서류를 문의하였고 상담사는 계좌, 예금주 정보를 요청하고 확인하였다. 고객은 계좌번호, 생년월일을 제공했으며 상담사는 자동이체 연결 및 잔액 확인을 안내하고, 이자 입금 방법과 금액을 알려주었다. 고객은 입금 후 확인을 약속하고 추가 문의 없음을 밝히자 상담사는 운영시간을 안내하며 마무리하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_024412",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 632,
+        "consulting_content": "고객은 ▲▲카드 자동이체 등록 문자 수신 후 의미를 문의하였고 상담사는 해당 문자는 카드사에서 일시 출금 등록일 수 있으며 은행에서는 확인 불가하므로 카드사에 조회, 차단, 재발급을 요청하라고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

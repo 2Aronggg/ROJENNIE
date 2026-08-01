@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_027506",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1852,
+        "consulting_content": "고객은 버팀목 전세자금 대출 연장을 요청하고 서류 목록, 분실 시 대체 제출, 방문 일정, 처리 지연, 금리, 상환 계획을 물었고 상담사는 신분증, 소득증명, 전세계약서 등 필요 서류를 안내하고 분실 시 재발송 절차와 방문 확인을 요청했으며 연장은 만기 30일 전 신청 필요, 현재 검토 중이며 추후 연락 예정, 금리는 고정, 상환은 연장된 만기에 연장된다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

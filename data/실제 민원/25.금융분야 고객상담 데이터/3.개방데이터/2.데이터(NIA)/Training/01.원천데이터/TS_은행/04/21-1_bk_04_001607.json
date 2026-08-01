@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_001607",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1201,
+        "consulting_content": "고객은 적금 만기일과 자동 이체 여부, 중도해지 시 이자 손실, 새로운 적금 상품 추천 등을 문의했고, 상담원은 만기일 안내, 자동 이체 설정 방법, 중도해지 손실 계산, 직장인에게 유리한 상품 및 청년 도약 프로그램 가입 절차를 설명했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

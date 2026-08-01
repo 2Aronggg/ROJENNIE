@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_021824",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 797,
+        "consulting_content": "고객은 이전 아파트 관리비 자동이체를 해지하고 현재 거주 아파트의 자동이체를 새로 등록하고 싶다고 요청했으며, 상담사는 앱에서 해지, 등록이 가능하므로 절차 안내 문자와 환불 처리 기간 정보를 제공하고, 확인 문자와 상세 링크를 발송하겠다고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

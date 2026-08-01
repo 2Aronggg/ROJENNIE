@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_021923",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 850,
+        "consulting_content": "고객은 아파트 대출 연체 상환을 위한 긴급 가상 계좌 발급을 요청하고 필요한 본인 확인 및 계좌 정보를 모두 제공하였고 상담사는 이를 확인 후 가상 계좌 번호를 문자, 알림톡으로 발송하고 입금 기한, 연체 이자, 자동이체 설정 방법 등 중요 유의사항을 충분히 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

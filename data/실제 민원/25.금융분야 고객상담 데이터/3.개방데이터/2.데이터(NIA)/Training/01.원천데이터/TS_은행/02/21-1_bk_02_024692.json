@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_024692",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 940,
+        "consulting_content": "고객은 잘못 송금된 금액의 반환 진행 상황을 확인하고자 했고 상담사는 신청이 정상 접수되었으며 문자로 확인됐음을 알리고, 반환은 상대 예금주의 동의 여부에 따라 진행되고 결과는 문자, 전화로 안내될 것이라고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

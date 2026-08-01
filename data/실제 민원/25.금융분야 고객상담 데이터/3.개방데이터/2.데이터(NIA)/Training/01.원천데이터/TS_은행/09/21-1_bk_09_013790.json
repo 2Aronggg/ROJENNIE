@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_013790",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1044,
+        "consulting_content": "고객은 앱에서 달러 환전 진행 상황과 영수증 확인, 문자 안내를 요청하였고 상담사는 해당 앱의 머니샵에서 내역 조회 및 수령점 등록 방법을 안내하고, 영수증 저장, 이메일 전송 절차와 문자 전송을 위한 연락처 제공을 안내하였다.ㅌ"
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

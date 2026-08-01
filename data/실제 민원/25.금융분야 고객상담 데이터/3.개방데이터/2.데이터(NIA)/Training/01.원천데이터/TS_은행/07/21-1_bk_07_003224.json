@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_003224",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1198,
+        "consulting_content": "고객은 ★★은행에서 받은 대출 우대 금리 실적 충족 안내 메시지의 의미와 신청 가능 여부를 문의하였고 상담사는 부수거래 실적 충족으로 현재 0.% 금리 감면이 적용된다고 설명하고, 추가 감면을 원할 경우 앱에서 금리 인하 신청을 하고 급여이체 확인서, 카드 사용내역, 자동이체 영수증 등을 사진으로 업로드해야 한다고 안내했으며, 집값 하락은 감면에 영향을 주지 않는다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

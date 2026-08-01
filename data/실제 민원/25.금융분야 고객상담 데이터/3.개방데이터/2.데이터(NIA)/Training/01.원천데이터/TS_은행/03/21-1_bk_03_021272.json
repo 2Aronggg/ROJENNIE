@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_021272",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1710,
+        "consulting_content": "고객은 특정일에 동일 금액이 두 번 출금된 것을 확인하고 자동이체 중단을 요청하였고 상담사는 계좌, 비밀번호 인증 후 출금 내역을 조회해 자동이체가 정상적으로 진행된 것을 확인한 뒤, 전화 인증 절차를 통해 자동이체 중단을 처리하고 영업일 기준 반영될 것이라고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_011219",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1156,
+        "consulting_content": "고객은 비상금 대출 연장을 신청하고 연장 가능 대출 종류, 절차, 필요 서류를 문의하였고 상담사는 본인 확인을 진행한 뒤 연장 제한 시점, 온라인, 방문 신청 경로 및 서류, 처리 기간과 금리 변동 여부를 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

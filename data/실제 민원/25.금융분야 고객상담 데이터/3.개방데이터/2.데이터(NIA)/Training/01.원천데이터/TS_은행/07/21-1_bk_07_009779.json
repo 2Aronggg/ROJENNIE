@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_009779",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1517,
+        "consulting_content": "고객은 타은행 대출과 연계된 월 카드 사용액 감면 혜택 확인을 요청하였다. 상담원은 월 ○○○원 이상 결제 시 혜택이 적용된다고 안내하였다. 현재 고객의 결제액이 기준에 미달함을 확인하고 할부금 포함 여부를 문의하였다; 상담원은 할부금도 포함된다고 답변하고 카드사로 연결하였다. 카드사 담당자는 시스템 동기화 지연으로 실제 금액이 반영되지 않았으나 오늘 결제액이 기준을 충족했으며 내일 오전까지 반영될 것이라고 설명하였다. 상담원은 감면 혜택은 월 결제액 기준만 적용되고 연체 시 자동 중단되며 재신청 절차는 필요 없다고 최종 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

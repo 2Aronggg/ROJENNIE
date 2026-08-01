@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_029024",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 744,
+        "consulting_content": "고객은 급여일 변경 여부와 적용 시점을 확인하고자 본인확인을 진행했으며, 현재 급여일이 ○○일이며 다음 영업일부터 반영된다고 문의하였다. 상담사는 계좌 확인 후 급여일이 다음 영업일에 적용된다고 안내하고, 모바일 앱, 센터에서 실시간 확인 가능함을 알려주었으며, 비밀번호, 공인인증서 요구는 사기 가능성이 높으니 주의하라고 경고하고, 자동이체 변경은 온라인 뱅킹에서 절차를 진행하면 된다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

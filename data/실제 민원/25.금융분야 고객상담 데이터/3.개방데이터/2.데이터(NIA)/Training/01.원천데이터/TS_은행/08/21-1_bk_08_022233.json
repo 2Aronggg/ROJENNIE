@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_022233",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1682,
+        "consulting_content": "고객은 전세자금 대출 만기와 연장 여부를 확인하고, 지점 담당자와 직접 통화가 필요한지, 자동 처리되는지 문의했으며 연장 의사가 없음을 밝혔고, 상담사는 대출 현황과 위약금 안내, 질권 설정 및 상환 절차를 설명하고, 필요한 서류와 처리 기간, 온라인 신청 가능 여부를 안내하며 최종 확인은 지점에서 진행될 것이라고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

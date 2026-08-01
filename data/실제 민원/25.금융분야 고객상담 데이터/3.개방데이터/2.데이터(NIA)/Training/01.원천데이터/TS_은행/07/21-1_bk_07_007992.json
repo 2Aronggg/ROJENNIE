@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_007992",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1850,
+        "consulting_content": "고객은 주택청약 저축을 해지하고 대출 원리금 상환에 활용하고자 하였으며, 상담원은 청약 해지는 가능하나 대출과 직접 연계는 안 된다고 안내하였다. 조기 상환 시 잔액 0.5% 수수료가 발생한다는 점을 설명하고, 해지, 상환을 즉시 진행하였다. 현재 변동형 금리는 연 3.2%이며, 고정 전환 시 연 3.5%와 잔액 0.3% 수수료가 적용된다고 안내하였다. 고객은 고정 전환을 요청하였고, 전환 신청을 접수하였다. 추가로 자유 적금을 추천하고 가입을 처리하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

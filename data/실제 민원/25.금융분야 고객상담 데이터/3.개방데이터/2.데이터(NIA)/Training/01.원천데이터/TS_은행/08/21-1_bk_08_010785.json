@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_010785",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 817,
+        "consulting_content": "고객은 대출금 만기 연장을 문의하고 계좌번호와 성명, 생년월일 등 개인정보를 제공하였고 상담사는 연장 방법, 알림톡 안내 및 필요 서류와 제출 기한을 설명하였다. 고객은 서류 제출 기한을 물었고 상담사는 ○월 ○일까지 제출하면 된다고 안내하였다. 고객은 추가 문의가 없다고 답변하고 상담사는 안내를 완료하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

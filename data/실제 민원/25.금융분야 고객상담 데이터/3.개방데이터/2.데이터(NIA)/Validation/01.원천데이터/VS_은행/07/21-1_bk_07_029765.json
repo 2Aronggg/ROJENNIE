@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_029765",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1019,
+        "consulting_content": "고객은 대출 신청 전 승인 여부와 우대 금리 조건을 문의하였고 상담사는 현재 승인 상태이며, ★★은행 출금 실적이 우대 금리와 부수거래 감면에 포함된다고 안내하였다. 고객은 원리금균등분할상환과 일시상환 차이를 확인하고 우대 금리 적용 기간이 12개월이며 실적 자동 확인으로 연장이 가능함을 물었고 상담사는 각각의 상환 방식 설명과 적용 기간, 자동 적용 절차를 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

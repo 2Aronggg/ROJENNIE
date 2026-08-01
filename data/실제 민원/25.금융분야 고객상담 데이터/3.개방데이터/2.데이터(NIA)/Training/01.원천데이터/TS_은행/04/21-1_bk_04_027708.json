@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_027708",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 706,
+        "consulting_content": "고객은 적금 만료 문자에 따라 전화했으며, 상담사는 만기 해지와 입금 일정, 재투자 금리, 기간을 안내하고 온라인 가입이 불가해 전화 가입만 가능함을 설명한 뒤, 문자로 상품 정보를 받겠다고 안내하였다.고객은 적금 만료 문자에 따라 전화했으며, 상담사는 만기 해지와 입금 일정, 재투자 금리, 기간을 안내하고 온라인 가입이 불가해 전화 가입만 가능함을 설명한 뒤, 문자로 상품 정보를 받겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

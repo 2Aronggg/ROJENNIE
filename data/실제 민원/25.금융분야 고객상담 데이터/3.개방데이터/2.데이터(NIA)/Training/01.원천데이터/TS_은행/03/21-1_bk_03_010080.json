@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_010080",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1125,
+        "consulting_content": "고객은 자동이체 해지 후 재등록 절차와 필요 서류, 소요 시간을 문의하였고 상담사는 기존 설정 초기화와 새 신청 필요성을 안내하였다. 고객은 즉시 해지 확인 메일 및 문자 안내를 요청하였고 상담사는 확인 메일 발송과 문자로 진행 상황 및 확인 코드를 전달하겠다고 약속하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_002210",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 918,
+        "consulting_content": "고객은 이자만 납부 후 가상계좌 발급을 요청하고 본인 확인에 동의했으며, 상담사는 확인 후 문자로 가상계좌 정보와 입금 안내를 제공하였다. 또한 고객은 3개월 대출 연장을 문의했으며, 상담사는 잔액, 수수료 등 연장 조건을 확인하고 상세 내용을 문자로 송부하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

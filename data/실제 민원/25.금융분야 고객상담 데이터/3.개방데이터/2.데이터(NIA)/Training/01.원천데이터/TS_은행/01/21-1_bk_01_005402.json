@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_005402",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1359,
+        "consulting_content": "고객은 적금 해지 및 금액, 이자율 문의를 하였으며, 해지계산서 번호 12345를 확인하였다. 상담사는 연 2.3% 이자율, 만기일 2026년 5월 말, 자동 이체 설정을 안내하였다. 중도 해지 시 잔액 1% 위약금이 발생한다는 점을 설명하고, 위약금 없이 해지하려면 계약 만기까지 유지해야 함을 전달하였다. 어플에서 해지 신청 버튼을 이용해 절차를 진행하도록 안내하고, 입력 정보 확인 후 해지 신청이 완료되었으며 확인 메일은 10분 이내 발송된다고 안내하였다. 메일 미도착 시 재발송 요청 방법을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

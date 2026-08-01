@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_004205",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 772,
+        "consulting_content": "고객은 적금 만기일과 자동 연장 옵션, 중도 해지 수수료를 문의하였고 상담사는 자동 연장은 기존 금리와 동일하며 변경은 방문 필요함을 안내하였다. 고객은 인증 번호 입력을 시도했으나 시간 초과로 폐기되었고 상담사는 휴대폰으로 재발송을 제안하고, 앱 사용이 어려울 경우 방문, 인터넷 뱅킹으로 계좌 확인 및 문의 가능하다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_001082",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1812,
+        "consulting_content": "고객은 대출 연장을 위해 필요한 서류와 절차, 수수료, 이자 변동, 심사 기간 등을 문의했고, 상담원은 대출 연장 신청 서류 목록과 제출 방법, 심사 진행 방법, 연장 승인 후 상환 일정 변경 등을 안내했다. 또한 상담원은 서류 제출 마감 기한과 거절 사유 유형, 연장 신청 거절시 재신청 절차에 대해서도 안내했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_010367",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "80세이상",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1239,
+        "consulting_content": "고객은 모든 자동이체 해지를 요청하였고 상담사는 모바일 앱, 문자 안내로 해지 절차를 설명하였다. 고객은 문자 안내를 받아 해지를 진행하고 남은 금액 즉시 이체를 요구하였으며 상담사는 즉시 이체를 진행하겠다고 답하였다. 고객은 해지 완료 확인을 받았고 상담사는 확인 문자와 최종 일자를 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

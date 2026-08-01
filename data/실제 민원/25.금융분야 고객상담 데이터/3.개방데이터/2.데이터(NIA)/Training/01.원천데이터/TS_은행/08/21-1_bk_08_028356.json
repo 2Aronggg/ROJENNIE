@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_028356",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 624,
+        "consulting_content": "고객은 마이너스 통장 연장을 문의하고 중도금 대출이 연장에 미치는 영향 및 문자 안내 여부 등을 물었고, 상담사는 연장 심사는 외부기관에서 진행되며 결과는 영업일 2~3일 내 문자로 안내되고 신용, 소득, 부채 등으로 한도가 결정된다고 설명했으며, 대출 영향 및 중도 해지 기준은 확인이 어렵다고 답변하고 연체 시 이자율 상승 등을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

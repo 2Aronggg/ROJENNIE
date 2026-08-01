@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_021127",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 842,
+        "consulting_content": "고객은 대출 연장 신청을 위해 공동 인증서를 이미 발급받았고, 연장 절차와 필요 서류 안내를 요청했으며, 서류 도착 시점도 물었다. 상담사는 연장 접수는 별도 절차이며, 전용 사이트, 앱에서 서류 제출 후 심사 후 결과와 연락이 온다고 안내하고, 서류는 빠른 시일 내에 발송될 예정이라고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

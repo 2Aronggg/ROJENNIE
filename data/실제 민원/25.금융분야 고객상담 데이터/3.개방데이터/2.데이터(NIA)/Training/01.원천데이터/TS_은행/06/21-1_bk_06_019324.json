@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_019324",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1028,
+        "consulting_content": "고객은 쿠폰으로 대출 이자 납부 요청 문자를 받고 마이너스 통장에 일부 납부가 가능한지 문의하였고 상담사는 계좌, 생년월일, 비밀번호를 요청하여 확인하였다. 상담사는 현재 잔액을 조회하고, 잔액 부족 시 자동 연체 처리될 수 있음을 안내하고, 부분 납부 시 남은 금액에 대한 추가 이자와 납부 일정 등을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

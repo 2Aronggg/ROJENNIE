@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_010323",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1041,
+        "consulting_content": "고객은 등록된 자동이체를 취소하고자 하였고 상담사는 모바일 앱에서 자동이체 관리 메뉴를 이용해 해지하는 방법을 단계별로 안내하고, 필요 시 문자 링크를 전송하여 직접 변경하도록 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

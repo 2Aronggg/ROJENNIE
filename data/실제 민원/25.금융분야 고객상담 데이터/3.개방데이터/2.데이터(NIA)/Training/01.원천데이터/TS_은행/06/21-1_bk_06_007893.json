@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_007893",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1197,
+        "consulting_content": "고객은 현재 원금, 이자를 가상계좌로 입금받아 대출 상환을 조기에 진행하고자 하였으며, 상담사는 가상계좌 번호와 금액을 문자로 발송하고, 입금 시 실시간 알림 및 일회성 이용 가능 시간을 안내하였다. 또한 입금 확인 절차와 영수증 발송 옵션을 설명하고, 고객은 문자 알림만으로 충분하다고 답변하였다. 최종적으로 추가 문의 사항이 없음을 확인하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

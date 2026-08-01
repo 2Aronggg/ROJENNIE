@@ -1,12 +1,22 @@
 from __future__ import annotations
 
 import unittest
+from datetime import date
 
-from server.agents.focal_builder import build_issue_input
+from server.agents.focal_builder import build_issue_input, extract_facts
 from server.agents.facts import missing_facts, resolve_facts
 
 
 class FocalBuilderTests(unittest.TestCase):
+    def test_extracted_facts_carry_a_recorded_date_for_bitemporal_resolution(self) -> None:
+        # recorded_date가 비어 있으면 resolve_facts()의 "최신값" 비교가 전부 date.min
+        # 동률이 되어 리스트 순서에 우연히 의존한다 - 이걸 막는 게 목적이다.
+        facts = extract_facts("예금 계좌에서 12만원을 인출하려는데 계속 거부돼요.")
+
+        self.assertTrue(facts)
+        for fact in facts:
+            self.assertEqual(fact.recorded_date, date.today())
+
     def test_builds_transaction_focal_with_amount_and_unclear_target(self) -> None:
         issue = build_issue_input(
             issue_id="issue_001",

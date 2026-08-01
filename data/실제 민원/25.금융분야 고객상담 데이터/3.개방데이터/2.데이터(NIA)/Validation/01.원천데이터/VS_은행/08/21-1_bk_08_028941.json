@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_028941",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1894,
+        "consulting_content": "고객은 전세 대출 연장 서류와 방문, 우편 제출 가능 여부를 문의하고 계좌, 본인 정보를 제공하였다. 상담사는 신분증, 갱신 임대차계약서, 최근 등기부등본, 가족관계증명서 4가지 서류를 안내하고, 방문 제출 또는 우편 원본, 사본 동봉 가능함을 설명하였다. 서류 검토는 2~3일, 구비 시 5일 이내 연장 계약이 완료되며 문자로 통보한다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

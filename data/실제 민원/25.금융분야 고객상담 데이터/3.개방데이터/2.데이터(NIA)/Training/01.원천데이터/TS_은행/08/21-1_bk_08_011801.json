@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_011801",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 915,
+        "consulting_content": "고객은 개인사업자 공동대표 명의 대출 연장을 요청하고 비대면 절차와 서류 제출 방법을 문의하였고 상담사는 연장은 가능하나 배우자 동의서가 필요하고, 비대면 전자서명, 앱 설치, 서류 촬영, 업로드 절차와 만기 전 제출 기한을 안내하였다. 또한 상담사는 연장 승인 후 기존 대출 계좌로 자동 이체가 이루어짐을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

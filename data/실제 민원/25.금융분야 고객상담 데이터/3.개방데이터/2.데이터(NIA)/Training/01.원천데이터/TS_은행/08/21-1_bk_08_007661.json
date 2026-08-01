@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_007661",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1229,
+        "consulting_content": "고객은 마이너스 통장 연장 신청 중 감면 금리 옵션을 놓친 상황이라 기존 승인 건을 취소하고 재신청해야 함을 문의하였다. 상담원은 현재 승인 건이 대기 중이며 옵션 미선택 상태임을 확인하고, 취소 후 재신청 시 금리 옵션 체크와 12개월 연장 시 연체 이자 면제 혜택을 선택할 수 있다고 안내하였다. 취소 처리는 진행되며 완료 시 문자로 안내될 것이라고 전달하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

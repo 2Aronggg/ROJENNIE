@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_006552",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 632,
+        "consulting_content": "고객은 대출 이자 납입 후 연체 여부를 확인하고 금리 변동 및 조기 상환 절차를 문의했다. 상담사는 납입이 정상 반영 중이며, 연체는 없다고 안내했다. 또한 변동 금리 상품의 금리를 안내하고, 조기 상환 수수료를 설명했다. 고객이 6개월 내 조기 상환 시 이자 절감이 가능하다고 안내하고, 상환 절차와 확인 방법을 설명했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

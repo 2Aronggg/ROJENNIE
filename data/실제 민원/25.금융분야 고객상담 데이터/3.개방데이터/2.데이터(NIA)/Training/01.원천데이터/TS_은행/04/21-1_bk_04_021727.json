@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_021727",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 601,
+        "consulting_content": "고객은 적금 만기일과 입금일, 만기 시 수령 금액을 문의했으며 자동이체 해지를 원했다. 상담사는 계좌 확인 후 만기일 다음 영업일에 입금된다고 안내하고, 예상 금액을 확인해 주겠다고 답했으며, 자동이체 해지는 영업점 방문이 필요하다고 안내했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_018437",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 860,
+        "consulting_content": "고객은 전세 대출 연장 시 한도, 주급, 보증금 처리와 추가 상환, 청년버팀목 혜택 유지 여부를 물었고, 이름을 알려 담당 부서 연결을 요청하였다. 상담사는 정책 변경에 따른 심사 기준, 필요 서류, 보증금 유지 방안을 설명하고, 청년버팀목 혜택은 유지되며 추가 상환이 필요할 수 있다고 안내한 뒤, 담당 부서 연결이 어려워 메모를 남겨 연락하겠다고 전달하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

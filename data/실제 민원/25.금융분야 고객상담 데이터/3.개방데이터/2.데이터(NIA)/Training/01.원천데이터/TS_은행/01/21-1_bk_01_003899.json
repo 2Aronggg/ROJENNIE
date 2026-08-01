@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_003899",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 0,
+        "consulting_content": "고객은 인터넷뱅킹으로 일반 입금 내역 조회를 물었고 상담사는 ARS 이용을 안내하였다. 고객은 금액 제외 일자, 상대 정보만 원했으며 상담사는 해당 기능이 없어 영업점 방문을 권고하였다. 고객은 발급 소요 시간, 지점 위치를 물었고 상담사는 5분 이내 처리 가능하고 인근 지점을 안내하였다. 고객은 서류와 수수료를 확인했으며 상담사는 통장, 신분증만 필요하고 비용은 무료이며 암호화 제공한다고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

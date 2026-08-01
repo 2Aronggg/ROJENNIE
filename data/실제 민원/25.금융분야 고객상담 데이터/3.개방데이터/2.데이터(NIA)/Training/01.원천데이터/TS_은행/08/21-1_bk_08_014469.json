@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_014469",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 691,
+        "consulting_content": "고객은 연장 신청 처리 여부와 승인 시점을 확인하기 위해 전화했으며, 상담사는 계좌 확인 후 모든 작성이 완료됐고 연장 신청은 영업일 1~2일 내 승인될 예정이며 처리 결과는 문자, 이메일로 안내된다고 안내하였고, 고객은 메일 내용 확인 후 추가 문의 없음을 밝혀 종료하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

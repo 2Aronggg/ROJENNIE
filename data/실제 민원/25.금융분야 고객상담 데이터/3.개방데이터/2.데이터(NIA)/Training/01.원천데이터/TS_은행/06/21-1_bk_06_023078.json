@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_023078",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1472,
+        "consulting_content": "고객은 주택담보대출 이자, 원금 현황과 납부 일정 문의하고 자동이체 신청을 요청했으며, 대출 잔액 조회와 금리 변동 가능성도 물었다. 상담사는 현재 이자는 매월 말일이며 자동이체는 전화 인증 후 계좌, 금액 확인으로 즉시 설정 가능하고, 모바일 앱에서 잔액 조회 가능함을 안내하고, 현재 금리는 고정이며 변동 옵션은 별도 신청 필요하다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_019590",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 739,
+        "consulting_content": "고객은 전세 대출 연장을 원하고 서류를 이메일로 받기를 요청했으며 보증보험 여부와 조기 상환 위약금도 문의하였고 상담사는 연장 가능 일자를 안내하고, 이메일, 문자, 팩스로 서류 전송 가능함을 알려주며 2~3일 심사 후 결과를 문자로 통보하고, 보증보험은 대출에 포함돼 있다고 설명하고, 금리는 기존과 동일하나 조정 시 별도 안내, 조기 상환 위약금은 남은 기간 비율에 따라 부과된다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

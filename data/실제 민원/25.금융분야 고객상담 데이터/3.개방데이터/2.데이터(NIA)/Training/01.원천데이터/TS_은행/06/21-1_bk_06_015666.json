@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_015666",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 688,
+        "consulting_content": "고객은 대출 원리금 자동이체와 관련해 문자로 이자 완납 요청을 받아 혼란을 호소하였고 상담사는 납부가 이미 완료되어 연체가 없음을 확인하고 자동이체 정상 여부와 월말 출금 확인 문자 제공을 안내하였다. 고객은 향후 알림 확인 절차를 문의하였고 상담사는 매월 말 출금 확인 문자와 상환 내역 확인만 하면 된다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

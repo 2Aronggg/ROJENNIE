@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_021690",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 988,
+        "consulting_content": "고객은 마이너스 통장 연장을 요청하고 계좌번호, 성명, 생년월일, 비밀번호 등을 제공했으며, 상담사는 본인 확인 절차 후 스마트폰 앱 또는 영업점 방문을 통한 연장 방법과 고객 확인 등록 안내, 연장 시 기존 이자율 유지와 전자서명 절차를 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

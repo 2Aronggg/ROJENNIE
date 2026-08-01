@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_013288",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 2243,
+        "consulting_content": "고객은 대출 이자 일정, 금액, 조건을 문의하였고 상담사는 회차, 금액 확인과 자동이체 설정, 연체료, 재계산 안내를 하였다. 고객은 본인 확인을 위해 계좌, 주민등록, 비밀번호 제공을 요청하였고 상담사는 정보를 요구해 확인 절차를 진행하고, 해지 서류, 절차와 자동이체 방법을 추가로 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

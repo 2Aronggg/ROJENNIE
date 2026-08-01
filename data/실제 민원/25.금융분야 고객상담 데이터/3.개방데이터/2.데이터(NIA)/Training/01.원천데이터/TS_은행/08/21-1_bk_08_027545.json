@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_027545",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 519,
+        "consulting_content": "고객은 대출 연장을 요청하고 계좌 번호, 비밀번호 등 본인 확인 정보를 제공하였고 상담사는 연장은 내일부터 신청 가능하고 연 12% 이자, 연 1% 수수료를 안내하며, 신분증, 급여통장 사본을 이메일로 보내면 검토 후 문자로 승인 결과를 알려주겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

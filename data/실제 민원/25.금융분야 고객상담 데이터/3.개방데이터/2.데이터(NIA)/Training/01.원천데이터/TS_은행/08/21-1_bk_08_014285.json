@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_014285",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 950,
+        "consulting_content": "고객은 대출 연장 절차와 필요 서류, 일정, 이자율 등을 문의하였고 상담사는 성명, 주민등록번호 뒷자리, 대출번호 확인 후 10% 이자율 적용과 조기 상환 시 위약금 안내, 담당자 연결을 위해 연락처를 받아 추후 연락하겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

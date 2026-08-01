@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_026737",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 939,
+        "consulting_content": "고객은 착오 송금 반환을 요청했으나 비밀번호 입력 횟수 초과로 비대면 처리가 불가하다고 하였고 상담사는 신분증, 주소 확인 서류, 인증서 등 준비물 안내와 영업점 방문 필요 및 처리 기간 1~3일을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

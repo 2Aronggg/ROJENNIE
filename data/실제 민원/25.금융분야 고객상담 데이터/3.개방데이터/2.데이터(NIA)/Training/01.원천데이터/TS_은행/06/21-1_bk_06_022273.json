@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_022273",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 2280,
+        "consulting_content": "고객은 대출 이자 미납 금액을 확인하고 입금을 원했으며, 상담사는 계좌 번호와 미납 금액을 안내하고 직접 입금해야 함을 설명하고, 카드, 온라인, 모바일 결제 방법을 제시하며 연체 이자만 발생하고 수수료는 없다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

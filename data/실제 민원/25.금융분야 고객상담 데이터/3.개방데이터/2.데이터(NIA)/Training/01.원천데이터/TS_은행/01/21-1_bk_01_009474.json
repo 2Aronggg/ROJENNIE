@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_009474",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1306,
+        "consulting_content": "고객은 송금인 정보가 없는 급여 입금 내역의 발신자를 확인하고자 문의하였다. 상담원은 고객 신원 확인 후 입금 사실을 확인하고, 타행 급여 이체는 송금인명이 표시되지 않을 수 있음을 안내하였다. 발신자 확인을 위해 회사 인사, 급여팀에 은행 코드 조회를 요청하고, ‘급여 이체 확인 요청서’ 양식을 문자로 발송해 주겠다고 제안하였다. 또한 계좌 상태는 정상이며, 차액 발생 시 즉시 연락을 권고하고, 모바일 앱 설치 및 초기 설정 지원을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

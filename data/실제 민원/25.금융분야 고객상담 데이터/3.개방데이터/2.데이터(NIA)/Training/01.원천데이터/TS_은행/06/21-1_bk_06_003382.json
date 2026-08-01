@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_003382",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 914,
+        "consulting_content": "고객은 부재중 전화와 계좌 입력 어려움을 호소하고 개인정보를 제공했으며 상담사는 ARS, 문자 인증을 안내하고 입력 방법을 재설명하여 거래 내역을 확인해 알려 주었고, 고객은 추가 문의 없음을 밝히고 상담사는 이벤트 진행 및 당첨 안내를 제공하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

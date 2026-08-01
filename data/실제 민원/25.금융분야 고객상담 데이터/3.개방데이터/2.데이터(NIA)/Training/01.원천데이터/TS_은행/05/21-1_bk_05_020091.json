@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_020091",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1794,
+        "consulting_content": "고객은 새 통장으로 이체한도 상향 및 퇴직연금 안내를 요청했으며, 한도 해지를 위해 재직증명서와 최근 3개월 급여 입금 내역 제출이 필요하다고 안내받았다. 상담사는 현재 거래내역이 없어 즉시 해지 불가와 서류 제출, 이메일 전송 절차, 인터넷뱅킹에서 급여 내역 확인 방법을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

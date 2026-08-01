@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_031500",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 976,
+        "consulting_content": "고객은 모바일 뱅킹 이체한도와 해제 방법을 문의했고 상담사는 일일, 월별 한도 금액을 안내하고 비대면 어플 신청 및 서류 제출 절차를 설명한 뒤 문자와 이메일로 안내 자료를 송부하겠다고 하였으며, 추가로 대출 상품 안내를 제공하겠다고 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

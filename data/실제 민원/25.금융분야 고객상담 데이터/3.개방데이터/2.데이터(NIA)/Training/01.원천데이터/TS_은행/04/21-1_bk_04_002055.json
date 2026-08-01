@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_002055",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1685,
+        "consulting_content": "고객은 주택 보험 만기 후 재가입 절차, 자동 해지 여부, 기존 보장 및 특약 유지 가능성, 다른 상품으로의 전환 시 필요 서류 및 소요 기간, 만기 전 해지 시 환급금 계산 방식, 계좌 확인 방법, 간편 인증 방식, 온라인 처리 가능 여부 등을 문의하였고, 상담사는 모바일 앱과 전화 상담을 통한 보험 재가입 절차, 서류 제출 방식, 인증 수단, 처리 시간 등에 대해 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_026561",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 792,
+        "consulting_content": "고객은 주택청약 적금을 전화 해지 가능한지 물었고, 상담사는 전화 해지는 불가하니 영업점 방문이나 스마트폰 앱, 인터넷 이용을 안내하였다. 고객은 수수료 없음을 확인하고, 앱 해지 절차와 재가입은 별도 신청이 필요함을 물었으며, 상담사는 앱에서 해지 신청하면 처리되고, 재가입은 별도 신청이 필요하다고 답변하였다. 고객은 영업점 방문해 해지하겠다고 말했고, 상담사는 서류 확인 후 처리해 주겠다고 응답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

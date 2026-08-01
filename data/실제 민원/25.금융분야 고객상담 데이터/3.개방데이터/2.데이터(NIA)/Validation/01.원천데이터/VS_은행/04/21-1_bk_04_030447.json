@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_030447",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1584,
+        "consulting_content": "고객은 청약 계좌 해지를 원하고 인터넷, 스마트뱅킹 미가입이라 영업점 방문을 요구하였고, 상담사는 전자금융 미가입 시 직접 방문이 필요하며 신분증만 지참하면 된다고 안내하고 영업시간, 자동이체 중단 및 잔액 반환 절차도 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

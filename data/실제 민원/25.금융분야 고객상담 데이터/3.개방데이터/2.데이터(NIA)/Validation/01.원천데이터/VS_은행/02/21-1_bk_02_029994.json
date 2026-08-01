@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_029994",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 2034,
+        "consulting_content": "고객은 착오 송금 진행 상황과 상대방 전화번호 제공을 요청하고 본인 확인을 위해 주민등록번호와 거래내역을 제공하였고, 승인 완료 시 입금 시점을 문의하였다. 상담사는 확인 절차 필요성을 안내하고 현재 건은 보류 상태이며 승인 후 영업일 1~2일 내 입금될 것이라고 설명하고, 실시간 문자, 전화 안내와 전화번호 제공이 불가함을 알리며 사과하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_015982",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1225,
+        "consulting_content": "고객은 자동이체 납입일 연체 여부와 결제 정상 처리 여부, 신용점수 영향 및 자동이체, 문자 알림 설정을 요청하였고 상담사는 결제가 완료됐음을 확인하고 연체가 신용에 큰 영향을 주지 않음을 안내하며, 확인증을 문자, 이메일로 송부하고 모바일 앱에서 자동이체와 결제 알림 설정 방법을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

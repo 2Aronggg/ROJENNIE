@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_029093",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1156,
+        "consulting_content": "고객은 송금 시 예금주명을 다른 이름으로 기재한 후 수취인 계좌에 정상 입금 여부와 입금 지연 시 조치를 문의하였고, 상담사는 계좌, 비밀번호 인증 후 이체 금액, 입금 통장 표시 내용을 확인해 정상 입금임을 안내하고, 입금 지연 시 거래 조회, 취소, 재송금 및 수취인 확인을 권고하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

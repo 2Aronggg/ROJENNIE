@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_024215",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 2796,
+        "consulting_content": "고객은 리얄, 페소 등 외환 보유 여부와 수수료, 환율 안내를 요청하고, 온라인 예약 방법과 거래 가능 시간, 필요 서류 및 영수증 이메일 발송을 문의하였고, 상담사는 해당 지점의 보유 현황을 확인해 즉시 거래 가능함을 알려주고, 수수료, 환율 정보를 제공하며 모바일 앱에서 외환 거래 예약 절차와 신분증, 계좌, 외환신청서 등 준비 서류를 안내하고, 오후 3시 거래 가능 및 영수증을 이메일로 발송하겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

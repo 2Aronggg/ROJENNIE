@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_013937",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1210,
+        "consulting_content": "고객은 대출 연체 통보를 받고 금액을 확인하고 출금을 요청하였고 상담사는 계좌, 신분 확인 후 연체 금액과 이자 내역을 안내하고 일시불, 분할 상환 옵션을 제시하며 오늘 중 출금을 진행한다는 절차를 설명하였다.●●●●●●●●●●●●"
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_026696",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 930,
+        "consulting_content": "고객은 적금 만기 알림을 받고 자동 재거래 입금을 문의했으며 계좌, 생년월일을 제공해 본인 확인을 마쳤고, 재투자 옵션과 금리 높은 자유적금을 안내받았으며 자동 이체 설정 방법을 안내받고, 만기 금액의 세금 면제 여부를 확인하였다. 상담사는 자동 입금 연결, 재투자, 상품 안내, 자동 이체 절차 설명, 세금 안내를 제공하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

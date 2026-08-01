@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_001602",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1557,
+        "consulting_content": "고객은 보험 자동이체 현황 확인, 실패 시 재설정, 일시 중지와 금액 변경 절차, 이메일 전송 방법, 알림 서비스 신청 등을 문의했고, 상담사는 계좌 확인 결과와 자동이체 설정 변경시 모바일 뱅킹 이용 방법, 주의사항, 이메일을 통한 이체 내역 수신 방법 등에 대해 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

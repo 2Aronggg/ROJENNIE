@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_029262",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 992,
+        "consulting_content": "고객은 대출 이율 조정과 카드 실적 조건, 카드 종류 제한 여부, 계좌 개설 필요성, 온라인 신청 절차, 상환 일정, 연체료, 제출 서류를 문의했으며, 상담사는 카드 종류에 제한 없고 계좌가 필요함을 안내하고, 온라인 신청 후 확인 절차와 자동 이체 상환 방식을 설명하며, 연체 시 이자, 수수료 부과와 신분증, 소득증명, 통장 사본 제출 방법을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_024569",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1227,
+        "consulting_content": "고객은 대출 관련 본인 확인 및 계좌 정보를 제공하고 입금 방법을 문의하였고 상담사는 계좌, 생년월일 확인 절차를 진행하고, 금액, 가상계좌 안내 및 입금 마감 시간을 알려주며, 필요 시 추가 설명을 제공하겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_024322",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 959,
+        "consulting_content": "고객은 대출 만기 연장을 원했으나 인터넷 본인 확인이 안돼 전화 문의를 하였고 상담사는 계좌, 신분 확인 절차와 앱에서 연장 약정 및 신분증 업로드 방법을 안내하고 메뉴얼 URL을 문자로 전송하였다. 고객은 안내대로 진행해 연장 신청이 가능함을 확인했으며, 상담사는 휴대폰 번호를 받아 문자 안내를 제공하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_000925",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1247,
+        "consulting_content": "고객은 가계 대출 연장을 원해 필요한 서류와 비대면 제출 절차, 누락 시 처리 방법, 이자율 변동, 상환 관리 팁, 수수료 종류 등을 문의했고 대출 연장에 필요한 서류 목록 , 단계별 비대면 방법, 서류 보완 기간, 이자율 조정 범위, 자동이체와 알림 서비스 활용법, 수수료 항목을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

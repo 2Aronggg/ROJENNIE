@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_001343",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1958,
+        "consulting_content": "고객은 전세 자금 대출 재계약을 위해 필요한 서류와 신청 방법을 문의하고, 온라인과 방문 신청의 차이점, 이자율 선택 시 장단점, 급히 처리하는 최단 절차 등을 안내받았다. 상담사는 대출 재계약시 필요 서류 목록, 모바일 앱 이용 절차, 고정 및 변동 금리 비교, 긴급 처리 방법 등을 구체적으로 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

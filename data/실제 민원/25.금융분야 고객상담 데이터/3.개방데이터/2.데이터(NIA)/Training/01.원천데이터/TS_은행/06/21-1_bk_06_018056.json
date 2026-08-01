@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_018056",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1524,
+        "consulting_content": "고객은 이번달 대출 이자를 문의하고 본인확인 절차와 계좌 번호 제공을 요청했으며, 계좌 비밀번호를 입력해 인증을 완료하였다. 상담사는 휴대전화, 주민등록번호 확인 후 계좌 정보를 받아 이자와 두 건 대출의 합산 금액을 안내하고, 자동이체 방법 및 수수료 없음을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

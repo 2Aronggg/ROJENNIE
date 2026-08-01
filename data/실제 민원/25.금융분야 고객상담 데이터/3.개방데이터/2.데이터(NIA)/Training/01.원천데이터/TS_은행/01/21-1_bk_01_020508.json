@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_020508",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1353,
+        "consulting_content": "고객은 모르는 사람에게 금액을 송금받았으나 계좌에 입금되지 않았다고 신고하고, 상담사는 고객 정보를 확인하고 시스템 조회를 시도했지만 입금 내역을 확인하지 못했으며, 해당 건은 ★★은행을 통해 진행된 것으로 판단해 직접 은행에 연락해 중계 확인을 요청하라고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_007676",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1543,
+        "consulting_content": "고객은 어제 입금된 금액 및 입금자 정보를 확인하고자 하였으며, 상담원은 중계 은행 조회를 진행하여 입금액 ㅇㅇㅇ원, 입금자 명의 ●●●을 확인하였다. 입금은 정상 처리되었으나 중계 확인을 위해 해당 은행에 추가 문의를 권고하였다. 이어 고객은 대출 상품 현황을 문의하였고, 상담원은 기존 거래 기반 대출 한도 ㅇㅇㅇ만원, 금리 ㅇ.ㅇ%, 5년 상환 시 월 상환액 ㅇㅇㅇ원을 안내하고 서면 발송을 제안하였다. 고객은 이메일 전송을 요청하였으며, 상담원이 발송을 완료하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

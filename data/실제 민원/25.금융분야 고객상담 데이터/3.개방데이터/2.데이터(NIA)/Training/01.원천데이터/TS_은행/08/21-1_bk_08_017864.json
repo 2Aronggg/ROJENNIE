@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_017864",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 706,
+        "consulting_content": "고객은 연장 신청 알림 문자에 대해 문의하고 대출 연장 여부와 담당팀 연결을 요청했으며, 메모 전달과 연락 번호 제공을 원하였다. 상담사는 문자를 확인하고 대출, 마이너스 통장 담당팀으로 연결을 시도하며, 계좌 확인 후 메모를 전달하고 담당팀 전화번호와 상담 일정 안내를 제공하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

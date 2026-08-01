@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_025102",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1031,
+        "consulting_content": "고객은 연장 신청 후 필요한 서류 제출 방법, 마감일, 이자, 한도 변동 여부 등을 문의했으며, 상담사는 사업자 대출임을 확인하고 카카오톡 링크 및 팩스 제출 안내와 마감은 만기 7일 이내, 이자는 기존 유지, 변동 가능성, 한도는 유지되며 지연 시 연장 승인이 보류될 수 있음을 설명하고 서류를 팩스로 보내면 확인 전화를 드리겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

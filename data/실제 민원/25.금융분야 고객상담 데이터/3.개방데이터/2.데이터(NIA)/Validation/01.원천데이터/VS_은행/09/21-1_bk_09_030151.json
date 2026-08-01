@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_030151",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 666,
+        "consulting_content": "고객은 달러 환전 예약 및 보유량, 지점, 즉시 수령 가능 여부, 신분증 필요 여부, 현재 환율, 수수료, 영업시간 외 수령, 추가 서류, 예약 취소 방법을 문의하였고 상담사는 해당 지점에 보유량이 있으며 변동 가능함을 안내하고, 신분증만 있으면 수령 가능, 환율은 전일 마감 기준, 스프레드 적용, 수수료는 금액 비율 적용, 별도 비용 없음, 영업시간 외에는 다음 영업일에 수령 가능, 별도 서류는 없고 서명만 요구, 취소는 전화, 방문 가능하고 비용 없다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_011640",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1042,
+        "consulting_content": "고객은 전세자금 대출 만기 연장을 문의하고 계좌, 생년월일, 비밀번호를 확인했으며, 연장 수수료와 필요 서류, 제출 방법, 처리 기간을 물었고, 상담사는 신원 확인 후 수수료는 잔액에 따라 차등 적용됨을 안내하고 서류 원본을 지점에 직접 제출해야 하며 영업일 3~5일 내 처리된다고 설명하고 기본 서류를 문자로 전송하고 추가 문의 시 콜센터 이용을 권유하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

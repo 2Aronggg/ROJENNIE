@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_025013",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1047,
+        "consulting_content": "고객은 예금 만기와 금액, 재투자 조건을 문의하고, 전화 사기의 여부와 수수료, 세금 안내, 온라인 해지 신청 가능 여부를 물었고, 상담사는 만기 축하와 함께 금액 확인 중임을 알리고 담당 부서가 재연락할 것이라 안내했으며, 안심할 수 있다고 설명하고 수수료, 세금 정보를 제공하며 재투자 상품을 제안하고 온라인 해지 신청 방법을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

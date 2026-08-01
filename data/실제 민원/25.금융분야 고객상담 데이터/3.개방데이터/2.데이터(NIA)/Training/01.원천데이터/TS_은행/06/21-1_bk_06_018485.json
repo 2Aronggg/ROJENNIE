@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_018485",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1571,
+        "consulting_content": "고객은 연체 금액 확인과 계좌 번호, 신분증 부재로 인증 방법을 물었고, 휴대폰 번호와 모바일 운전면허증을 제공해 인증을 요청하였다. 상담사는 이름, 생년월일 확인 후 앱, 문자 인증을 제시하고, 문자로 인증 번호를 보내 입력을 안내했으며, 부분 비밀번호를 확인하였다. 고객은 비밀번호를 알려주고 인증 연결을 승인해 연체 금액, 이자, 납부 기한 및 화면 재시작 방법을 물었다. 상담사는 금액, 이자, 기한을 안내하고 재시작 절차를 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_004290",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 876,
+        "consulting_content": "고객은 지난달 적금 자동이체가 이번달에 출금되지 않아 계좌 확인 및 본인 확인을 요청했고, 상담사는 계좌, 생년월일, 비밀번호 확인 후 자동출금이 정상 처리될 예정이며, 출금 실패 시 영업일 다음날 재시도한다고 안내하고, 조기 해지 시 위약금 및 이자 차감이 발생한다는 정보를 제공하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_030811",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 960,
+        "consulting_content": "고객은 대출 만기일 확인을 요청하고 계좌번호, 비밀번호를 제공했으며, 두 담보 대출의 자동 연장 상황과 오류 여부, 즉시 납입 가능성, 서류 필요성을 물어 이메일로 연장 내역을 받기를 요청하였다. 상담사는 첫 대출은 매월 자동 연장돼 현재 만기일이 업데이트됐고, 두 번째 대출은 지정일에 만기이며 자동 연장 금액은 지정 계좌에서 이체하면 된다고 안내했으며, 별도 서류는 필요 없고 정기 조회를 권고한 뒤 이메일로 상세 내역을 발송하겠다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

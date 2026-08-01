@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_002828",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1086,
+        "consulting_content": "고객은 카드와 은행 계좌를 연동해 확인한 자동이체 내역과 관련해 송금처, 상품 종류, 금액, 수수료 및 해지 절차 등을 문의했고, 상담원은 해당 계좌와 관련해 청약저축 자동이체임을 확인하고 조회, 변경, 환불 방법을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

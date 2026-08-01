@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_009231",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1459,
+        "consulting_content": "고객은 대출 상환일 연장을 요청하였다. 상담원은 연장은 불가능하다고 안내하였다. 현재 대출 잔액이 ○○○원임을 확인하고 이를 기준으로 연장 여부를 재검토하겠다고 제안하였다. 대신 만기 연장은 모바일 앱을 통해 신청 가능하다고 설명하였다. 연장이 어려울 경우 상환 일정 조정 및 부분 상환 옵션을 제공한다는 안내를 하였다. 고객은 부분 상환을 선택하고 절차 안내를 받았다. 온라인 뱅킹 ‘대출 관리’ 메뉴에서 신청하면 된다고 안내하였다. 필요 시 추가 문의는 언제든지 전화로 지원하겠다고 마무리하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_027860",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 693,
+        "consulting_content": "고객은 월 거래내역서를 팩스로 받기를 요청했고, 상담사는 계좌 정상 여부 확인 후 주민등록번호 앞자리와 휴대폰 번호를 요구해 인증 절차를 진행하고, ARS 연결, 번호 입력을 안내하여 인증이 완료되면 5~10분 이내에 팩스를 전송하고 문자로 확인 메시지를 발송한다는 안내를 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

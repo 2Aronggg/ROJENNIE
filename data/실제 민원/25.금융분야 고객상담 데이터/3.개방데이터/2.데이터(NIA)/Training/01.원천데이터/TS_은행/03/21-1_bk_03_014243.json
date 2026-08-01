@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_014243",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1176,
+        "consulting_content": "고객은 ★★카드 자동이체 해지를 요청하고 본인 확인 정보를 제공하였고 상담사는 해지 절차가 카드사에서만 가능함을 안내하고 필요 시 은행 방문을 권고하였으며, 추가 문의는 없다고 확인하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

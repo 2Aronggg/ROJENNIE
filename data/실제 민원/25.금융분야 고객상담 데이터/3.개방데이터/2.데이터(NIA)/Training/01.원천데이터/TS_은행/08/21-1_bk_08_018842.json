@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_018842",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 802,
+        "consulting_content": "고객은 마이너스 통장 연장을 요청하고 본인 확인 및 전화번호를 제공했으며, 녹취를 통한 연장 접수를 동의하고 결과를 이메일로 받기를 원하였다. 상담사는 연장 만기일과 연 5.4% 금리 적용 및 변동 가능성을 안내하고, 어플, 녹취 중 녹취로 진행한다는 안내와 함께 연장 신청을 접수했으며, 결과는 문자와 기존 이메일로 통보될 예정이라고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

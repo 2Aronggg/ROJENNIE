@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_014411",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1136,
+        "consulting_content": "고객은 ★★카드 결제 대금 자동 이체 실패 원인을 문의했다. 상담사는 본인 확인 결과, 고객 계좌에 '입금 금지' 및 '지급 정지' 상태가 설정되어 있어 비대면 거래가 제한되었음을 확인했다. 해당 상태 해제 및 자동 이체 문제를 해결하려면 전화로는 불가능하며, 신분증을 지참하고 가까운 영업점을 방문해야 함을 안내받았다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

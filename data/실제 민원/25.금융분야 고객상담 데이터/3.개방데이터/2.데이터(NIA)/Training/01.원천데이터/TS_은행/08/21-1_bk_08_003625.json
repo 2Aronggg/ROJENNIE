@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_003625",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 957,
+        "consulting_content": "고객은 대출 연장 신청 후 일부 서류만 제출된 상황을 확인하고 추가 서류 제출 기한과 알림 방법, 수수료 부과 방식을 문의하였고 상담사는 현재 소득, 세금 증명서만 제출된 상태이며, 부족 서류는 요청일 기준 5일 이내 사진, 팩스로 제출해야 승인이 진행된다고 안내하고, 문자, 이메일 중 문자 수신이 빠르다고 안내했으며, 연장 수수료는 대출금액의 0.5%이며 승인 후 자동 차감돼 별도 결제 필요 없다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

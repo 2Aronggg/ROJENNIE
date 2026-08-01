@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_021916",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 728,
+        "consulting_content": "고객은 마이너스 통장 연장을 문의하고 연장 신청이 자동으로 진행 중이며 승인 시 문자와 약정서 작성 링크를 받는다고 했고, 상담사는 연장 신청이 자동으로 들어가 담당 지점에서 금리 심사 중이라고 안내하고, 승인 시 최신 금리와 위약금은 약정서에 따라 부과될 수 있음을 설명하며, 약정서는 모바일 웹 링크로 작성 가능하다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

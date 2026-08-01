@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_032096",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1150,
+        "consulting_content": "고객은 대출 연체 사실을 알리고 연체 이자율 및 상환 방법, 유예 기간 신청 가능 여부 등을 문의하였고 상담사는 연체 일자를 확인하고 이자율은 기본 금리와 연체 일수에 따라 가산된다고 안내하며, 일시, 분할, 자동이체 등 상환 옵션과 절차를 설명하고, 신용 상황에 따라 유예 기간 검토 가능함을 알려주었으며, 전액 상환은 스마트폰 뱅킹에서 가능하다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_019879",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1436,
+        "consulting_content": "고객은 전세 자금 대출 연장을 요청하고 만기일을 알려주며 연장 가능 여부와 서류 제출 기한을 물었고, 상담사는 대출 종류와 만기를 확인하고 시스템 검토가 필요함을 안내한 뒤 디지털 연장 URL 발송 및 신분증, 급여내역, 계약서 사본 제출을 요구하며 제출 기한은 만기 7일 전이라고 설명하고, 승인이 어려울 경우 재융자 옵션을 제시하겠다고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

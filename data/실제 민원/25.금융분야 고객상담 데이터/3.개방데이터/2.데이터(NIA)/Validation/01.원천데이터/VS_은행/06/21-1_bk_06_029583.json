@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_029583",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1079,
+        "consulting_content": "고객은 대출 연체 문자에 대해 확인을 요구하고, 연체 금액, 분할 상환, 이자 면제 옵션을 문의했으며, 빠른 처리를 위해 오늘 오후 2시 이후 담당자 연결 예약을 요청하였다. 상담사는 연체 사실을 확인하고, 분할 상환 신청 절차와 서류 제출 방법을 안내하며, 지정 시간에 담당자가 전화하도록 예약을 잡아 주고, 사기 문자 가능성을 경고하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

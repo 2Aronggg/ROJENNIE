@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_004009",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 881,
+        "consulting_content": "고객은 급여 이체 확인 및 금리 감면을 위한 체크카드 사용 조건을 물었고 상담사는 본인 명의 ★★카드만 가능하고 지역화폐는 제외된다고 안내하였다. 고객은 인터넷, 모바일에서 사번, 계좌 입력으로 급여 조회가 가능하다고 답변받았으며, 카드 사용액이 기준 미달 시 해당 월 감면이 안 되고 다음 달 충족 시 가능하다고 설명하였다. 고객은 다른 대출에도 동일 조건 적용을 확인했으며 상담사는 모두 동일하다고 답변하였다. 상담사는 금리 감면 신청은 매월 말 자동 처리되고 결과는 문자로 안내된다고 추가 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

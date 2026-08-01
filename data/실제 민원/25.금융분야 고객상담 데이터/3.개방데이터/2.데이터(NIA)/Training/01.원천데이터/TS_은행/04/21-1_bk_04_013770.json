@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_013770",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1109,
+        "consulting_content": "고객은 만기된 적금을 인터넷, 폰뱅킹으로 해지하려 했으나 비대면 해지가 불가하다고 하여 가까운 영업점 방문을 요청하였고 상담사는 전자금융 해지는 지점 방문이 필요하고 신분증 지참을 안내하였다. 고객은 전자금융 수수료와 혜택에 대해 문의하였고 상담사는 소액 결제 수수료 면제와 적금 자동이체 금리우대 혜택을 설명하고, 모바일 앱에서 신청 방법 및 확인 절차를 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

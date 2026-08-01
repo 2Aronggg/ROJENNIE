@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_000516",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1428,
+        "consulting_content": "고객은 입금 여부와 거래 일시, 금액, 카드 정보를 확인하고자 성함, 거래번호, 카드 뒷자리 등을 제공하였고 상담사는 입금 내역을 재검토하고 카드사 문의, 환불, 재입금 절차 및 확인 소요 시간 등을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

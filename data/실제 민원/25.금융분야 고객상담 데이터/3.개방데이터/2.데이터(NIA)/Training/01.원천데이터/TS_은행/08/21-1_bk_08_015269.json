@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_015269",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 810,
+        "consulting_content": "고객은 비상금대출 연장을 요청하고 연장 절차, 수수료, 연장 횟수 및 기타 대출 가능 여부를 문의하였고 상담사는 연장은 만기 후 문자 URL을 통해 진행 가능하며, 수수료는 대출액의 0.5% 최소 1만원, 최대 두 번까지 7일 간격을 두어야 한다고 안내하고, 추가 대출은 신용 등급에 따라 가능하다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

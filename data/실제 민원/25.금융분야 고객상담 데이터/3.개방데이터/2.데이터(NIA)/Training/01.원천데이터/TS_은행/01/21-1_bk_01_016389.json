@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_016389",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1702,
+        "consulting_content": "고객은 통장 거래 내역 및 현재 잔액 조회와 급여 입금 확인을 요청하였고 상담사는 계좌 번호, 인증 정보를 확인하고 잔액을 안내하며 입금 내역이 없음을 알려주고, 급여 입금 시점과 지연 시 대처 방법을 설명하고 알림 서비스 설정을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

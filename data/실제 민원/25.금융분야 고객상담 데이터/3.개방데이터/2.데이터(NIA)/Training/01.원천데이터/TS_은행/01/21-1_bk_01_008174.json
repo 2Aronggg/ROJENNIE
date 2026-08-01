@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_008174",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 876,
+        "consulting_content": "고객은 타인으로부터 입금된 금액이 계좌에 반영되지 않았다며 문의하였다. 상담원은 계좌번호, 비밀번호, 생년월일 등 본인 확인 절차를 진행한 후 시스템 조회 결과 오늘 입금된 건은 ●●●●원 한 건뿐임을 확인하였다. 추가 입금은 없으며, 영업시간 외 입금은 영업일 마감 후 1~2시간 이내 반영될 수 있음을 안내하였다. 고객에게 다음 날 오전에 재확인하도록 권고하고, 입금 알림 문자 서비스를 신청하도록 제안하여 서비스가 등록되었음을 알렸다. 고객은 추가 문의 없음을 확인하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

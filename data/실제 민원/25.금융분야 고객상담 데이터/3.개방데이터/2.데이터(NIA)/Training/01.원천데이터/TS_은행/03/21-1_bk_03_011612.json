@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_011612",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1681,
+        "consulting_content": "고객은 자동 이체 문자에 대해 문의하고 동일 납부자 번호가 두 번 등록된 이유를 물었으며, 상담사는 계좌, 비밀번호 등 자동 이체 내역을 확인하고, 두 번 등록되었음을 확인하였다. 중복 등록 사유는 해당 은행에 직접 문의하도록 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

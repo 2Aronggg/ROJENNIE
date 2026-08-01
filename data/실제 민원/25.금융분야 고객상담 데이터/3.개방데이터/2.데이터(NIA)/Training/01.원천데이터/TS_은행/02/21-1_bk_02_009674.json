@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_009674",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1433,
+        "consulting_content": "고객은 아파트 관리비 납부를 ★★은행 계좌로 했으나 입출금 내역이 확인되지 않아 문의하였다. 상담원은 입금 계좌 번호와 입금 일시, 금액을 확인하고 중계 연결을 시도하였다. 중계 연결이 정상적으로 이루어져 입금 금액이 확인되었으며, 관리비 납부가 완료되었다고 안내하였다. 추후 문의 시 콜센터 전화번호와 모바일 앱 이용 방법을 제공하고, 영수증을 문자로 발송해 주겠다고 제안하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

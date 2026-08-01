@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_019604",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1570,
+        "consulting_content": "고객은 자동이체 등록 문자 수신 후 본인 확인을 진행하고 등록, 해지 내역을 문의했으며, 상담사는 시스템 조회 결과 일시 등록 후 오류로 즉시 해지된 사실을 안내하고, 향후 자동이체 차단 및 보안 설정 방법을 설명하였다. 고객은 안내에 만족하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

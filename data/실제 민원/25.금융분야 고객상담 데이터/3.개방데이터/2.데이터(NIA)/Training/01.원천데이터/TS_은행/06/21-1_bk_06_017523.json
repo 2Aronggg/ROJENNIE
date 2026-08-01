@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_017523",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 940,
+        "consulting_content": "고객은 이자 정보를 문자로 받고 싶다며 본인 확인 및 계좌, 비밀번호를 제공하였고 상담사는 확인 절차 후 문자 서비스 동의를 요청하여 동의가 완료되었으며, 현재 이자율 변동 없고 다음 결제일은 계약서에 명시된 대로 자동 이체될 것임을 안내하고 자동이체 변경 의사는 없다고 고객이 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

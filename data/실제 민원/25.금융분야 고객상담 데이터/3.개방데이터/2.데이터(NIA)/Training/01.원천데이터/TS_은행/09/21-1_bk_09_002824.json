@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_002824",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1052,
+        "consulting_content": "고객은 엔화 환전 내역과 잔액을 확인하고 마지막 환전 일시, 금액, 환율, 수수료 여부, 현금 인출 가능 여부와 절차, 우대 환율 혜택 등에 대해 질문하였다. 상담원은 환전 내역에 대한 상세 정보를 제공하고, 현금 인출 신청 절차와 필요한 서류, 우대 혜택을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

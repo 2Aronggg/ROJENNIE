@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_023648",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1284,
+        "consulting_content": "고객은 앱에서 이체한도 해지를 시도했으나 ‘대상 아님’ 메시지가 나타나 해지를 요청하였고, 상담사는 급여통장임을 확인 후 재직증명서 또는 급여명세서 중 하나와 신분증을 지참해 영업점 방문해 해제 절차를 진행하도록 안내하였으며, 일회, 일일 이체 한도는 각각 ○○원, ○○원임을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

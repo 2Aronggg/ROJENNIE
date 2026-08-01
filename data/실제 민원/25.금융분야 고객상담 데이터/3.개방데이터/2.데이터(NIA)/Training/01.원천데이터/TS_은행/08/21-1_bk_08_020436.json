@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_020436",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 761,
+        "consulting_content": "고객은 어머니 대출 연장을 위해 대리인으로 전화해 필요한 서류와 절차를 문의하였고 상담사는 본인 확인이 필요하므로 직접 전화하거나 영업점, 고객센터에 연락하도록 안내하고, 연장 옵션 및 수수료 안내 자료를 우편으로 보내드리겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

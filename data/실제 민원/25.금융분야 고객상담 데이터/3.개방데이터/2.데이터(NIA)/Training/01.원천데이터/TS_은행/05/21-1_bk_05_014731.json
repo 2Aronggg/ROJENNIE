@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_014731",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 831,
+        "consulting_content": "고객은 한도 계좌에서 바로 출금해 환전하려 했으나 앱에서 거래 제한이 나타난다고 문의하였고 상담사는 계좌가 한도 전용이라 지점 방문, 해지 신청이 필요하다고 안내하였으며, 거래 가능 한도가 ●●●원임을 알려주고, 공항 인근 지점 위치와 영업시간, 전화 예약 방법을 설명하였다. 고객은 안내대로 진행하겠다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

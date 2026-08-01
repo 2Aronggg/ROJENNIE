@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_020506",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 863,
+        "consulting_content": "고객은 어제와 오늘 계좌이체가 되지 않아 문의하였고 상담사는 거래 내역을 조회하여 수취인 계좌 이상 및 시스템 점검 가능성을 안내하고, 수취인 은행에 연락해 계좌 상태 확인 및 제한 여부 점검을 권고하였으며, 추가 문의 없음을 확인하고 OTP, 실시간 알림 서비스 안내를 제공하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

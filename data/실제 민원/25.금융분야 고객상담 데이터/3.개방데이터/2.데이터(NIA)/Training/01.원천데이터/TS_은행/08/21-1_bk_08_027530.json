@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_027530",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1593,
+        "consulting_content": "고객은 대출 연장 문자 확인과 본인 확인을 요청하였고 상담사는 확인 절차를 진행하고 발신이 은행임을 안내하였다. 고객은 IRP, 저축 금리 감면 적용과 연장 승인 후 안내 방법을 문의하였고 상담사는 적용과 승인 시 문자, 이메일 안내 및 영업점 서류 발송을 설명하였다. 고객은 문의 없음을 밝히었고 상담사는 사기 문자 주의와 향후 서비스 이용을 권고하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

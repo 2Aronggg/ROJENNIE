@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_022315",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 794,
+        "consulting_content": "고객은 파운드 환전 가능과 금액을 물었고 상담사는 재고 충분과 계좌 없음을 확인 후 현찰 찾기와 예약 절차를 안내하였다. 고객은 여권, 운전면허증 중 하나만 있으면 된다고 물었고 상담사는 하나만 있으면 된다고 답하고 수수료는 0.5%, 0.2%라고 알려주었다. 고객은 내일 오전 10시 예약을 요청했으며 상담사는 전화 예약 가능함을 알려 시간에 예약을 확정하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

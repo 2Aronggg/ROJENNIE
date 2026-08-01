@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_028540",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 900,
+        "consulting_content": "고객은 마이너스 통장 연장 자동 여부를 물었고 상담사는 연장 심사 완료 후 금리 결재 시 비대면 안내가 발송돼 모바일로 신청 가능하다고 답변하였다. 고객은 적금 연계로 이자율 낮추고 자동 적용을 원했으며 상담사는 만기 후 일정 금액 이상 납부 시 자동 금리 우대가 적용되고, 연장 거부 시 영업점 방문, 전화로 의사 표시 후 만기일에 일시 상환해야 함을 안내하였다. 또한 연장 후 원래 금리로 회복은 불가능하고 재대출을 고려해야 한다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

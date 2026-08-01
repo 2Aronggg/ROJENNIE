@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_016121",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1526,
+        "consulting_content": "고객은 대출 연장 서류를 앱에서 촬영, 업로드가 안 된다고 문의하였고 상담사는 계좌, 신분 확인 후 앱 버전, 기기 호환 문제 가능성을 제시하며 JPEG 형식 촬영 및 캐시 초기화를 권고하였다. 고객은 팩스로 서류를 제출하고자 하였고 상담사는 팩스 번호를 안내하고 1~2일 이내 검토 후 연락하겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

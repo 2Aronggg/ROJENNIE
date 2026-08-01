@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_011356",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1107,
+        "consulting_content": "고객은 마이너스 신용대출 자동 연장을 요청하였고 상담사는 연장은 현재 진행이 어렵고 영업점 심사 후 문자, 이메일로 안내드리며, 약정서 작성은 문자 링크로 진행하도록 안내하였다. 고객은 금리 변동 시 사전 안내를 요청하였고 상담사는 현재 금리 6.5%이며 변동 시 최소 7일 전 사전 안내와 당일 알림을 제공한다는 점을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

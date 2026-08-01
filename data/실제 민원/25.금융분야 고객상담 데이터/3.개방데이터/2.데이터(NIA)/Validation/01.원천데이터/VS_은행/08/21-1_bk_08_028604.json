@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_028604",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 0,
+        "consulting_content": "고객은 비상금 대출 연장을 원해 계좌와 비밀번호를 제공해 본인 확인을 하였고 상담사는 만기일을 확인 후 연장은 ★★ 앱에서 만기일 기준 특정일 이후에만 가능하다고 안내하였으며, 연장 가능 여부는 신용 변동에 따라 실시간 검토된다고 설명하고, 신용 점수 하락 시 거절 가능성과 기존 대출 유지, 다른 상품 전환 등 대체 방안을 제시하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

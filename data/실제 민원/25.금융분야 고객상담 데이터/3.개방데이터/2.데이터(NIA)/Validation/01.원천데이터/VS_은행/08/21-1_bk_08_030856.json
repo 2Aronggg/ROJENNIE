@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_030856",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1200,
+        "consulting_content": "고객은 마이너스 통장 연장 문자 수신 및 오류 여부를 문의하고, 계좌, 생년월일, 핸드폰 등 본인 확인 정보를 제공하였고, 상담사는 시스템 조회 후 연장 신청에 필요한 서류와 비밀번호 확인을 요청했으며, 연장 진행 상황은 담당 부서에서 확인 중이라고 안내하고, 카드 연장 여부는 카드사에 직접 문의하도록 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

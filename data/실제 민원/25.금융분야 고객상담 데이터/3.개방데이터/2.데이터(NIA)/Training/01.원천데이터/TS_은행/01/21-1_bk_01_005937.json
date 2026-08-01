@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_005937",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1135,
+        "consulting_content": "고객은 입금 내역은 보이지만 잔액이 즉시 반영되지 않아 사용 가능 여부를 문의했고, 상담사는 잔액 반영 지연이 일시적으로 발생할 수 있음을 설명하며 인증 후 상태를 확인하고 다른 계좌로의 이체를 지원했으며, 향후 지연 방지를 위해 알림 설정 방법을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

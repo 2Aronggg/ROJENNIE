@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_023659",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 968,
+        "consulting_content": "고객은 자동이체 미처리 사유를 문의하고 계좌, 비밀번호 확인을 진행했으며, 상담사는 분기 입금 한도 초과로 출금이 안 됨을 안내하고, 추가 입금 또는 자동이체 금액 감소, 타 은행 송금, 모바일뱅킹 등 대안을 제시하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

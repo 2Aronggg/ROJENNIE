@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_013565",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1635,
+        "consulting_content": "고객은 마이너스 통장 연장 문의와 영업점 방문 의사를 밝히고 본인 확인 정보를 제공하였고 상담사는 연장 가능 여부와 필요 서류, 현재 잔액 및 상환 금액, 연 12% 금리와 변동 가능성을 안내하였으며, 방문 시 준비사항을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

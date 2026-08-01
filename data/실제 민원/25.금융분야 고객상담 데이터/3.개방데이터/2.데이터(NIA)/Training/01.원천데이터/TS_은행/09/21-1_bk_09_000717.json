@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_000717",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1245,
+        "consulting_content": "고객은 환전을 원해 가까운 지점, 한도, 예약 방법, 필요 서류, 수수료, 환율 알림 및 해외 카드 사용 등에 대해 질문했고, 상담원은 고객과 가까운 영업점 위치, 환전 한도, 사전 예약 절차, 서류와 수수료 안내, 실시간 환율 알림 설정 방법, 카드 사용 가능 여부 등에 대해 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

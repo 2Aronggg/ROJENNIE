@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_003249",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1714,
+        "consulting_content": "고객은 대출 이자 자동이체 정상 여부와 오늘 이체 진행을 확인하고자 했고 상담사는 시스템 조회를 진행하여 오늘 자동이체가 예정대로 처리될 것임을 안내하고, 잔액 안내와 함께 사전 알림 서비스 신청을 제안하여 고객은 이를 신청하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

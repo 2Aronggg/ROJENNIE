@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_023170",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1373,
+        "consulting_content": "고객은 대출 연장을 위해 계좌 번호와 개인정보를 제공하였고 상담사는 입출금 계좌 정보를 재요청하였다. 고객은 정보를 전달받아 모바일 앱에서 연장 버튼을 누르라는 안내를 받았으며, 부분 상환 가능 여부를 물었을 때 상담사는 만기 전 상환 가능하고 서류를 제공하겠다고 답했다. 상담사는 연장 절차 링크를 문자로 전송하고 완료 시 안내하겠다고 말했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_001006",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1441,
+        "consulting_content": "고객은 모바일 뱅킹 이용 중 이체 한도가 제한된 이유와 한도 해제 절차를 문의했다. 상담사는 한도 계좌의 개념과 해제 방법, 방문 및 팩스 신청 절차, 필요한 서류, 처리 기간, 예약제 이용 방법 등을 단계별로 안내했다. 최종적으로 고객은 안내에 따라 영업점 방문을 통해 해제 신청을 진행하기로 했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

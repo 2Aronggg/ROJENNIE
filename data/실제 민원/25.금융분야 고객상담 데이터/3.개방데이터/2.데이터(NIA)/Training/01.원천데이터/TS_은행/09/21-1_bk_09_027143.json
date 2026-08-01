@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_027143",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1382,
+        "consulting_content": "고객은 현재 본점 고객센터인지 확인하고 스위스 프랑 등 외화 환전 가능 여부와 지폐, 동전 매입, 일일 한도, 방문 준비물 등을 문의하였고 상담사는 스위스 프랑은 지폐만 매입 가능하고 동전은 매입되지 않으며, 영업시간, 신분증, 외화 지폐, 동전 준비를 안내하고 일일 최대 5천만 원 환전 가능함을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

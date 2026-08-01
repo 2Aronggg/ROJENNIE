@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_004760",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 650,
+        "consulting_content": "고객은 자동이체 미출금 여부를 확인하고 계좌, 비밀번호 등 본인 확인을 하였고 상담사는 오늘 중 출금될 예정이라고 안내하였다. 고객은 대출 잔액, 남은 회차를 문의하였고 상담사는 잔액 1,500만원, 남은 24회를 알려주었다. 고객은 연체 방지 알림 서비스를 신청하고 문자 수신을 선택하였고 상담사는 신청을 완료하고 알림을 제공하겠다고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_000882",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1075,
+        "consulting_content": "고객은 건강보험 공단 자동이체 내역과 취소 및 재시도 시점, 확인 방법, 필요 서류, 잔액 조회, 다른 은행으로 이전 절차, 오류 환불 시점 등을 문의했다. 상담원은 공단 시스템 특성상 상세 내역은 직접 제공하기 어렵고, 공단 홈페이지, 앱, 전화로 확인하고 서류를 준비해 문의할 것을 안내했으며, 추가로 통장 잔액 확인 방법, 타은행 자동이체 이전 신청 절차, 자동이체 오류 발생시 환불 시점 등에 대해서도 설명했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

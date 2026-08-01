@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_019007",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 902,
+        "consulting_content": "고객은 대출 월 상환액이 궁금하다고 문의했으며, 계좌, 생년월일, 비밀번호 등 본인 확인을 진행하였다. 상담사는 대출이 만기 일시 상환 방식이며 매월 이자만 납부되는 점과 이자 금액, 납부일을 안내하고, 자동 이체 설정을 위해 연락처, 이메일을 요청, 등록하였다. 또한 조기 상환 위약금이 기간, 이자율에 따라 달라진다고 설명하고, 전체 상환 일정표를 이메일로 송부하겠다고 약속하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

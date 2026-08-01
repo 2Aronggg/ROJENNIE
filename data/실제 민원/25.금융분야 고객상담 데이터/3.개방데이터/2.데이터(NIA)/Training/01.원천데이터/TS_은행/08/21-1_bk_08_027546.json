@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_027546",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1407,
+        "consulting_content": "고객은 대출 만기 연장을 요청하고 계좌번호, 성명, 생년월일, 비밀번호를 제공해 본인 확인을 마쳤으며, 연장에 필요한 서류와 모바일 앱 제출 방식을 안내받고 이를 선택하였다. 고객은 서류 준비 일정이 미정이라 답하고, 시스템 오류와 인증서 부재로 팩스, 우편 제출 및 인증서 재발급 안내를 받았다. 상담사는 서류 제출 방법, 3일 마감, 검토 절차와 오류 시 대체 방안을 설명하고, 진행 일정을 조정하겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

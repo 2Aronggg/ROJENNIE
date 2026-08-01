@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_014467",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1214,
+        "consulting_content": "고객은 영업시간과 엔화 환전 가능 시점, 연장 여부, 전화 이체 가능성, 환전 수수료 및 신분증 요구사항을 문의하였고 상담사는 영업시간은 09시~16시이며 16시까지 환전 가능하고 연장은 제한될 수 있음을 안내하고, 전화 이체는 제공되지 않으며 수수료는 금액에 따라 차등 적용되고 신분증은 주민등록증, 운전면허증, 외화여권 중 하나가 필요함을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

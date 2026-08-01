@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_001795",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1427,
+        "consulting_content": "고객은 에너지 지원금과 관련된 입금 시기, 확인 방법, 본인 확인 절차 등에 대해 문의하고, 개인사업자를 위한 추가 혜택, 세금 신고 시 비과세 여부, 향후 지원 프로그램 수신 방법을 문의했다. 상담원은 입금 일정과 확인 방법을 안내하고, 본인 확인 절차와 계좌 번호 모를 경우 대안을 제시했다. 또한 사업자 전용 대출, 캐시백 상품, 비과세 처리 방법, 알림 설정을 통한 최신 지원 프로그램 수신 방법에 대해 설명했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

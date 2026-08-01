@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_002804",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 2014,
+        "consulting_content": "고객은 대출 상환 연장 방법과 조건, 서류 제출 및 심사 기간, 금리 변동 예시, 동시에 새로운 대출 신청 시 신용 점수 영향, 보증금 납부 방식과 자동 이체 주의사항, 한도 증액 조회 방법 등에 대해 문의했고, 상담원은 자동 연장과 직접 신청 차이, 필요한 서류와 심사 일정, 금리 변동 범위, 신용 점수 영향, 보증금 납부 절차와 자동 이체 주의점, 인터넷뱅킹을 통한 한도 증액 확인 방법 등을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

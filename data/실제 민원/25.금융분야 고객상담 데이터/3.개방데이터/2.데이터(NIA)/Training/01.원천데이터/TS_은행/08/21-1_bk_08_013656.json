@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_013656",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1122,
+        "consulting_content": "고객은 기존 대출 연장 시 일시 상환을 원했으나 중도금 대출로 전환된 상황을 설명하고 남은 원금, 이자 적용 및 자동이체, 조기 상환 위약금 확인을 요청하였고 상담사는 현재 대출 잔액, 이자율, 월별 상환 일정 등을 안내하고, 자동이체 설정 방법과 온라인 뱅킹에서 위약금 시뮬레이션 가능함을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

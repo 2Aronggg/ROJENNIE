@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_029466",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 929,
+        "consulting_content": "고객은 퇴직연금 아이알피 자동이체 종료일 조회, 연장, 금액 감소, 해지를 요청했으며 상담사는 종료일이 2026년 12월까지임을 안내하고, 연장은 1개월 전 모바일 앱, 전화 신청 가능과 서류 안내, 금액은 해당 메뉴에서 수정 방법을 설명하며, 해지는 해지 버튼 위치와 절차 및 해지 후 24시간 이내 재확인 필요성을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

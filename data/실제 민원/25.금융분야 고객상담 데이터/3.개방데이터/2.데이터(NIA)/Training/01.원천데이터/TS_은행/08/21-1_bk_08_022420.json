@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_022420",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 926,
+        "consulting_content": "고객은 전세자금 대출 연장을 원하고 조건 변경이 없다고 답했으며 연장 신청 마감일과 디지털 연장 여부를 물었고, 앱에서 연장 절차와 필요 서류를 문의하였다. 상담사는 연장은 만기 전, 후 모두 가능하나 심사 추가 가능성을 안내하고, 신청은 만기 전부터 가능하며 디지털 연장은 앱에서 본인 확인, 서류 업로드로 진행 가능하고, 금리는 기존 계약대로 적용된다고 설명했으며, 방문 서류 제출 시점도 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

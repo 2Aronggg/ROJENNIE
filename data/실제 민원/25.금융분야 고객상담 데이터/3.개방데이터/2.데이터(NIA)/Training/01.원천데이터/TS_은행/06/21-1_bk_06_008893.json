@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_008893",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1377,
+        "consulting_content": "고객은 기업 대출 이자가 통장에서 출금되지 않아 입금 후 출금 절차와 시점을 문의했다. 상담사는 자동이체 처리 방식과 출금 일정, 수수료 여부를 안내했다. 또한 이메일 확인 및 정산 결과 전달 방법을 확인하고, 자동이체 일정과 보안 유의사항까지 설명하며 상담을 마무리했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

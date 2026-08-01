@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_029624",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1638,
+        "consulting_content": "고객은 대출 이자가 오늘까지 빠지지 않아 연체 가능성을 우려하고 신용 등급 영향 및 회복 방안을 문의했으며, 계좌번호, 비밀번호 등 인증 정보를 제공하고 인터넷뱅킹 확인 방법을 요청하였다. 상담사는 연체 시 추가 이자, 연체료 부과와 신용 등급 하락 위험을 설명하고, 정기 납부와 연체 방지를 통해 신용 회복이 가능함을 안내하며, 시스템 확인 후 결과를 문자로 전달하고 인터넷뱅킹에서 대출 관리 메뉴로 실시간 확인할 수 있다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_011747",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1264,
+        "consulting_content": "고객은 전세 대출 연장을 신청하고 계좌, 생년월일 등 정보를 제공하였고 상담사는 신용 조회 후 연장 가능 시 문자로 안내한다며 현재 조회 진행 중이라고 답하였다. 고객은 조기 상환과 금리 재조정 절차를 문의하였고 상담사는 해당 절차와 서류 필요를 설명하였다. 고객은 내일 오전 10시 방문을 요청하였고 상담사는 예약을 완료하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

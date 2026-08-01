@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_012394",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 951,
+        "consulting_content": "담당자에게 언제쯤 연락을 받을 수 있는지 궁금하시면 보통 1~2일 내에 연락드리지만 상황에 따라 다소 지연될 수 있다고 안내드리겠다. 다른 문의 사항이 더 없으시고 아니요 지금은 괜찮으시면 추가로 대출 연장 시 유의하실 점과 필요 서류에 대해 간단히 안내드리며 이자율이 변동되는지 궁금하시면 현재 연장 신청 시 기존 이자율이 유지되며 별도 변동이 없다고 알려드리고 담당자 분 성함과 전화 연결 시도해 드리겠다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

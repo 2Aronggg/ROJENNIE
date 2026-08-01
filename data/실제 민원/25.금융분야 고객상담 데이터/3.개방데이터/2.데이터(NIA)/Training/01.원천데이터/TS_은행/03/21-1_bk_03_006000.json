@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_006000",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1239,
+        "consulting_content": "고객은 적금 자동 이체 통장의 잔액 부족으로 이체가 실패한 점을 문의했다. 상담원은 출금 통장에 금액을 입금하면 잔액이 확보될 때 자동 이체가 재시도됨을 안내했다. 잔액 부족 알림 서비스 신청을 제안하여, 고객의 신청에 따라 서비스를 즉시 활성화했다. 이어서 현재 진행 중인 적금 금리 우대와 적립 포인트 혜택을 설명하고, 포인트 사용 방법을 안내했다. 중도 해지 시 특정 비율의 수수료가 부과됨을 정보 제공했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

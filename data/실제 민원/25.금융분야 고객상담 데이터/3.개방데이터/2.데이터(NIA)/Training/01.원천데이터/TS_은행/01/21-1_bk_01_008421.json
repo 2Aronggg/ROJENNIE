@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_008421",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1167,
+        "consulting_content": "고객은 입출금 거래내역 서류에 표시된 입금 계좌와 실제 계좌가 달라 확인을 요청하였다. 상담사는 거래 일시, 금액을 조회해 외부 계좌 입금 사실을 확인하고, 계좌 번호는 보안상 안내하지 못한다며 인터넷뱅크 ‘입금 상세’ 메뉴 이용을 안내하였다. 서류를 스캔하여 이메일로 보내면 1~2일 내 검토 후 결과를 통보하고, 급한 경우 신속 검토를 약속하였다. 또한 입금 알림 서비스를 모바일 앱에서 설정하도록 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

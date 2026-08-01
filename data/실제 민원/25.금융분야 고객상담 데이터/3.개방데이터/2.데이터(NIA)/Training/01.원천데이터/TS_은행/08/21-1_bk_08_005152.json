@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_005152",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1553,
+        "consulting_content": "고객은 기업대출 연장을 요청하였다. 상담원은 약정 조회 및 제출 서류로는 사업자등록증, 공구증명서, 재무제표, 신분증이 필요 하다 설명하였으며, 심사기준, 기존 금리와 상환 방식, 연장 승인 시 약정서와 상환 일정표 발송, 조기상환 시 위약금 없이 원금과 이자를 지정 계좌로 이체함에 대해 안내 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

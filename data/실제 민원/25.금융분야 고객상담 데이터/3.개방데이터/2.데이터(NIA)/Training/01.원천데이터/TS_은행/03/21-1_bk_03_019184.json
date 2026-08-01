@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_019184",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 881,
+        "consulting_content": "고객은 자동이체 등록 문자를 받고 본인 거래가 아니라고 주장하며 취소와 보안 조치를 요구하였고 상담사는 신원 확인 후 해당 자동이체를 오늘 중으로 정지하고 비밀번호 3개월마다 변경, 복합 문자 사용을 권고하며, 인증 메일 미발송을 확인해 시스템 오류 가능성을 설명하고, 향후 유사 시도 시 알림 설정 및 관련 부서 문의를 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

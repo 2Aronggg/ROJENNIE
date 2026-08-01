@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_029129",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1386,
+        "consulting_content": "고객은 자동 이체 출처 확인을 요청하고 입금 일시, 금액, 이름을 제공했으며, 추가로 금액 표시 오류와 출처 불명에 대해 문의하였다. 상담사는 시스템 조회로 이체 상태와 지역을 확인하고, 출처가 학교임을 안내한 뒤 분쟁 신청 절차와 필요 서류를 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

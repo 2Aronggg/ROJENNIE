@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_002449",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1268,
+        "consulting_content": "고객은 적금 자동이체가 정상적으로 진행되지 않은 이유, 잔액 및 이체 예정 금액 확인 방법, 공인인증 필요 여부, 자동이체 한도 초과 사유, 한도 증액 및 일정 변경 방법, 금리 해제 시 영향, 모바일 앱을 통한 자동이체 설정 절차를 문의하였고, 상담사는 본인 인증 및 시스템 재설정 절차, 자동이체 실패 원인, 한도 조정 및 일정 변경 방법, 금리 해제 시 금리 변동과 수수료 여부, 모바일 앱을 통한 자동이체 설정 과정을 단계별로 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

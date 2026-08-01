@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_017379",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1148,
+        "consulting_content": "고객은 배송비 명목으로 송금했으나 입금자명이 다르게 표시돼 취소, 수정 가능 여부를 문의하였고 상담사는 이미 이체된 경우 메모 변경, 취소는 불가하나 착오 송금 반환 접수를 도와줄 수 있으며, ★★은행에 협조해 3~5영업일 내 회복될 것이라고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

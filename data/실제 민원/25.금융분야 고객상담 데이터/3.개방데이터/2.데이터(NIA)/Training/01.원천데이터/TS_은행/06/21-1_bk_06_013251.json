@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_013251",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1569,
+        "consulting_content": "고객은 대출 이자 연체와 가상계좌 입금을 요청하고, 월 상환액을 30만원으로 조정하고자 하였고 상담사는 가상계좌 번호와 입금 기한을 안내하고, 연체료 방지를 위해 즉시 입금할 것을 권고하였으며, 선택한 30만원 옵션을 시스템에 반영하고 변경 내용을 문자, 이메일로 발송하기로 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

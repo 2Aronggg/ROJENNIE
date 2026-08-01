@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_015939",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1390,
+        "consulting_content": "고객은 대출 만기 연장을 문의하고 연장 시 금리 변동 및 필요 서류를 물었으며 전자 서명 방법까지 안내받고 서류 제출 후 신청하겠다고 하였고 상담사는 연장은 가능하나 전산 조회 지연을 안내하고 연장 시 고정 금리가 변동형으로 전환될 수 있음을 설명하고 신분증, 계약서 사본 제출 및 모바일 앱 전자 서명 절차를 안내했으며 추가로 맞춤형 주택담보, 소액 신용대출 상품을 제안하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

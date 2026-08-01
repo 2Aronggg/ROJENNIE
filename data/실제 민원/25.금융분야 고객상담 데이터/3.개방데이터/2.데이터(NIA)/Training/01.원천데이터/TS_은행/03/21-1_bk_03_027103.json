@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_027103",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1409,
+        "consulting_content": "고객은 자동이체 등록 문자를 받고 업체를 확인하고 싶다고 요청했으며, 계좌 번호와 비밀번호를 입력하였다. 상담사는 본인 확인 절차와 계좌 번호 제공을 안내하고, 자동이체 등록 기관을 확인했으나 상세 정보를 제공할 수 없어 해당 기관 연락처를 문자로 전송하였다. 고객은 연락처를 받아 확인하고, 직접 신청한 것이 아니므로 기관에 취소를 요청하고 비밀번호 변경을 고려하겠다고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_013917",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1202,
+        "consulting_content": "고객은 신용대출 만기 연장 방법과 연장 주기, 수수료, 이자 변동을 문의하였고 상담사는 연장은 1~12개월 가능하며 최소 1개월, 기존 이자율 유지와 연장 수수료는 기간에 따라 달라진다고 안내하고 3개월 연장을 진행하였다. 고객은 조기 상환 시 발생할 수 있는 비용을 물었고 상담사는 조기 상환 수수료가 계약서에 명시되어 있음을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_016578",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1095,
+        "consulting_content": "고객은 한도 계좌 해제를 위해 계좌 번호와 본인 확인 정보를 제공하고, 급여이체 목적 서류를 팩스로 제출하고자 하며 문자로 팩스 번호와 필요 서류 목록을 요청하였고, 상담사는 계좌와 급여이체 목적을 확인하고, 서류 제출 방법 및 팩스 번호를 문자로 안내하며 처리 소요 기간은 영업점에 따라 3~5일이며 심사 후 진행될 것이라고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

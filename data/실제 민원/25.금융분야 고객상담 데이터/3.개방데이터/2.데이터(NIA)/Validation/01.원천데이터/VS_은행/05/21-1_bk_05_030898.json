@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_030898",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 2173,
+        "consulting_content": "고객은 아파트 담보 대출 신청 중 계좌 연결 인증 오류로 계좌번호, 성명, 생년월일, 비밀번호를 제공하며 본인 확인을 요청하였고 상담사는 인증을 진행하고 거래 한도 제한 해제 안내를 문자와 홈페이지로 제공하며 영업점 방문도 안내하였다. 고객은 금리 적용 시점과 변동 가능성을 문의하였고 상담사는 기본 금리에 가산 금리 적용 방식과 정책 금리 변동 시점을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

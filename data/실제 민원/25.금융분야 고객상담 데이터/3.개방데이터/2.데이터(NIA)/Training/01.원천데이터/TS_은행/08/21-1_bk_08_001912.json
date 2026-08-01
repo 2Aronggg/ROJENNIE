@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_001912",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1223,
+        "consulting_content": "고객은 전세 대출 만기 연장을 원해 연장 절차와 필요 서류, 비용, 금리 변동, 소요 기간 등을 문의했고 상담사는 고객의 기존 대출 계약서 연장 방법과 새로운 계약서 작성 시 요구되는 서류, 수수료, 금리 유지 여부, 처리 기간 및 주의사항을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_002611",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1295,
+        "consulting_content": "고객이 대출 연장 절차, 서류, 금리 변동, 수수료, 신용점수 영향 등을 문의하자 상담사는 신분증, 소득증명서, 대출계약서 제출 필요성을 안내하고, 비대면 제출 방식으로 공동 인증서 또는 사진 업로드, 처리 기간 3~5영업일, 금리 상승 폭인 0.2~0.5%P, 신용 영향, 연체 위험 등을 구체적으로 설명했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

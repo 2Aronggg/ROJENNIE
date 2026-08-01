@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_029874",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 948,
+        "consulting_content": "고객은 대출 연장 신청 후 금리, 금액 및 기존 상환금 처리와 온라인 신청 가능 여부를 문의하였고 상담사는 현재 연장 금리와 변동 사항을 안내하고, 기존 상환금은 유지되며 연장 기간 이자는 새 금리 적용 후 일할 계산된다고 설명했으며, 서류는 모두 제출돼 최종 승인만 남았고 오늘 오후 3시까지 문자로 결과를 알려주겠다고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_019981",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1757,
+        "consulting_content": "고객은 잘못된 계좌로 이체한 사실을 알리고 반환 청구를 요청했으며, 본인 확인 및 계좌 정보 제공을 진행하였다. 상담사는 이체 취소는 불가하나 반환 청구 절차를 안내하고, ARS 본인 확인, 금액, 동의 확인 후 청구를 접수했으며, 반환 소요 기간과 거절 시 법적 조치 가능성을 설명하고, 향후 송금 실수 방지 방법을 제시하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

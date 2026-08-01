@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_006860",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1285,
+        "consulting_content": "고객은 IRP 연금저축 계좌의 자동이체 금액을 조정하고자 해지 후 새로운 금액을 설정하려는 의사를 밝혔다. 상담사는 온라인, 모바일 앱에서 자동이체 관리 메뉴로 해지 및 금액 수정이 가능하고, 해지 시 기존 적립금은 계좌에 그대로 남는다고 안내하였다. 또한 최소 금액 확인 방법, 급여이체 연동 설정 절차, 기존 예약 이체 확인 필요사항을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

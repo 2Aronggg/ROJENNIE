@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_008606",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1569,
+        "consulting_content": "고객은 급여 입금 내역 확인을 요청하였고, 상담원은 2023년 1~15일 중 5일 입금 기록을 안내하였다. 추가로 2022년 11~12월 급여 입금 두 건을 조회해 출처가 ‘OO기업 급여’임을 전달하였다. 상세 명세서는 영업점 방문 시 발급 가능하고, 방문 예약 없이 신분증 지참 후 바로 방문할 수 있음을 안내하였다. 자동이체 해지는 영업점 또는 모바일뱅킹에서 가능함을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

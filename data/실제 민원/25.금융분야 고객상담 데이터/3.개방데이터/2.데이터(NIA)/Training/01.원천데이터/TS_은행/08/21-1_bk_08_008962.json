@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_008962",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1463,
+        "consulting_content": "고객은 만기 도래 대출로 인해 연장이 아닌 신규 대출(대환) 진행이 필요하다는 안내를 받고, 문자로 받은 비대면 대환 신청 링크 오류로 문의했다. 상담사는 현재 연장은 진행 중이나 대환을 원할 경우 비대면 신청이 필요하다고 설명하고, 링크 오류는 캐시 삭제 후 재시도를 안내했으며, 대환 시 금리는 인하 가능하고 잔액은 유지되며 서류 제출과 전자서명이 필요하다고 안내했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

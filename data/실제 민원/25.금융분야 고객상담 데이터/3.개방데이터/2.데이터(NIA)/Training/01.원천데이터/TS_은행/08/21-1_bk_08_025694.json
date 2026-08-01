@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_025694",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1318,
+        "consulting_content": "고객은 대출 연장 가능 여부와 일정, 이자율 변동 및 연장 횟수 제한을 문의하고 문자 확인을 요청하였고 상담사는 계좌 조회를 시도했으며, 현재 처리되지 않았음을 안내하고 서류 준비를 권고하고, 연장은 가능하나 이자율은 변동될 수 있고 연장 횟수는 정책에 따라 제한됨을 설명하고, 상세 안내문을 문자로 보내겠다고 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

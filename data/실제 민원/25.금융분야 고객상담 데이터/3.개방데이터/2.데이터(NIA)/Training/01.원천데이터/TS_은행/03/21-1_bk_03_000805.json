@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_000805",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1310,
+        "consulting_content": "고객은 자동이체 실패 원인과 재신청 절차, 비밀번호 보안, 실패 내역 확인 방법, 입금 기한 및 연체 시 불이익 등을 문의하였다. 상담원은 잔액 부족, 계좌 제한, 보류 중인 거래 등 세부 원인을 설명하고, 재신청 방법, 보안 주의사항, 조회 방법, 입금 마감 시점과 연체 위험을 안내하고, 비영업일 이체 연기 처리 절차와 자동이체 설정 변경 방법에 대해서도 추가로 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

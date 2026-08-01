@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_002963",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "신규고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1406,
+        "consulting_content": "고객은 일일 이체 한도 증액 관련 온라인과 영업점 신청 방법, 필요 서류, 처리 기간, 우선 처리 비용, 한도 적용 시점, 실제 이체 한도 예시, 문제 발생 시 모바일 문의 방법, 24시간 상담 가능 여부를 문의했고, 상담사는 고객이 문의한 한도 증액 신청 절차에 대해 안내했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

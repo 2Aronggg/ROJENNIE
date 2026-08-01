@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_027183",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 2661,
+        "consulting_content": "고객은 대출 이자와 출금 제한에 대해 상세 설명을 요구하고, 현금 부족으로 인출이 안 된 상황을 언급했으며, 예상과 다른 차감액에 대한 계산 방식을 문의하였다. 상담사는 이자 산정 방식, 출금 한도, 자동이체 조정 및 연체 여부 등을 안내하고, 추가 입금 옵션과 향후 문의 시 문자 안내를 제공하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

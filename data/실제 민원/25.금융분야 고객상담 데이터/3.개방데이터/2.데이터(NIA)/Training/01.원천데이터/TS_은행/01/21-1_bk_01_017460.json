@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_017460",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1054,
+        "consulting_content": "고객은 입출금 통장에 이자 지급 메시지를 받아 상세 내역과 금액을 문의하였고 상담사는 현재 잔액 및 지급된 이자 금액을 안내하고, 기본, 특별 이자 종류를 설명하였다"
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_006904",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 508,
+        "consulting_content": "고객은 주택담보대출 미납금 입금 여부와 금액을 문의했고 상담사는 미납 내역을 조회했다. 상담사는 미납일자와 금액을 확인해 문자로 가상 계좌 정보를 발송하고, 입금 기한 및 이중 출금 방지 주의사항에 대해서 안내했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

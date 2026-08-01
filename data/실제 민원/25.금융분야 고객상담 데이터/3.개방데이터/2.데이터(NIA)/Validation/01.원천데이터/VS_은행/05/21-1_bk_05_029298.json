@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_029298",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1070,
+        "consulting_content": "고객은 외환 한도 제한으로 남편에게 송금하고자 하며 필요한 서류와 방문 예약을 요청하였고 상담사는 소득 증빙, 거래 내역 등 서류 안내와 오늘 오후 3시 방문 예약을 확정하고, 서류 목록을 문자로 전달하겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

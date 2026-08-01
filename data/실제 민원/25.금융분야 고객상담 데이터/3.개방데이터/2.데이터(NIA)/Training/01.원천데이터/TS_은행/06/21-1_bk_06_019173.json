@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_019173",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 936,
+        "consulting_content": "고객은 대출 이자 금액 확인 및 가상 계좌 발급을 요청하고, 성명, 연락처, 본인 확인 정보를 제공하였고, 상담사는 고객선터로 연결해 가상계좌 발급을 안내하고,예약 접수를 하였다. 계좌 확인 절차 안내, 문자 수신 방법 제시, 1시간 이내 무료 발급 및 무수수료 안내 후 신속 처리 약속을 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

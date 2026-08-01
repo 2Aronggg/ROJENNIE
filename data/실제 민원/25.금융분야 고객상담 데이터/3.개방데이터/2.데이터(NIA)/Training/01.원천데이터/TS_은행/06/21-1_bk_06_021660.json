@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_021660",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1301,
+        "consulting_content": "고객은 연체 항목 확인과 미납금액 문의를 했고 상담사는 계좌 조회, 미납금액과 추가 납부 방법을 안내하였다. 고객은 자동이체 설정을 요청했으며 상담사는 인증 후 자동이체를 설정하고 인출일을 ○일로 알려 주었다. 고객은 연체 알림 SMS 수신을 원했고 상담사는 설정을 완료하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

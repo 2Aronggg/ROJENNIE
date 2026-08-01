@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_017089",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1103,
+        "consulting_content": "고객은 적금 잔액과 소상공인 대출 이자 환급금 금액을 문의하였고 상담사는 계좌 번호, 성명, 생년월일 확인 후 시스템 조회를 통해 환급액 ●●원과 적금 잔액을 확인해 알려주었으며, 환급금은 영업일 기준 3일 이내 입금될 예정이라고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

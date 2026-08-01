@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_007433",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1871,
+        "consulting_content": "고객은 기초생활수급자를 위한 압류 방지 통장에 월 이체 한도 제한이 걸려 부모에게 송금이 불가함을 문의하였다. 상담원은 한도 해제는 모바일 뱅킹 ‘한도 해제 신청’ 메뉴에서 신분증, 수급 확인서 등을 업로드하여 1~2일 내 검토가 진행된다고 안내하였다. 해제가 어려울 경우 다른 은행 계좌 이용이나 신규 통장 개설을 권고하고, 신규 통장은 영업점 방문 또는 온라인 신청 시 신분증, 주소 확인 서류가 필요하다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

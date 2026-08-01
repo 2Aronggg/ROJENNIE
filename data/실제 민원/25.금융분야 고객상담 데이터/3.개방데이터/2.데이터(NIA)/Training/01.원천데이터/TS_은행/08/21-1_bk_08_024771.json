@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_024771",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 645,
+        "consulting_content": "고객은 대출 연장을 위해 사업자등록증명원, 소득, 부가세, 국, 지방세 증명서 발급 방법과 소요 시간을 물었고 상담사는 홈택스 또는 관할 세무서 방문 시 신분증, 사업자등록증 사본을 제출하면 당일~2일 내 발급 가능하다고 안내했으며, 연장 신청서와 최근 3개월 재무제표도 함께 제출해야 함을 알려주었다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

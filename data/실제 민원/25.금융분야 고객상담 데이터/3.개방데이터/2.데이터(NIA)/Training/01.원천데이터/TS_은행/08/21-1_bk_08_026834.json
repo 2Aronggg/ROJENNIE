@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_026834",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1571,
+        "consulting_content": "고객은 대출 연장 여부를 확인하고자 전화했으며 상담사는 시스템 조회 결과 연장이 아직 완료되지 않았음을 안내하고, 비대면 채널을 통해 직접 연장하도록 URL을 문자로 보내주었다. 고객은 처리 기간과 서류 필요 여부, 연장 시 기존 금리 유지 여부를 문의했으며 상담사는 각각 영업일 1~2일 소요, 서류 제출 불필요, 기존 금리 동일 적용을 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

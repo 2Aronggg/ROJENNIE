@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_027715",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1113,
+        "consulting_content": "고객은 내일 환전 수령 시간을 문의하고 7시 30분 방문 가능 여부와 당일 신용 수령 전환, 다른 지점 이용 가능성, 현재 환율, 수수료 정보를 요청하였고 상담사는 영업시간 안내, 앱 변경 절차 안내, 타 지점은 동일 절차 적용 불가, 실시간 환율 확인 및 수수료는 별도 없음을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

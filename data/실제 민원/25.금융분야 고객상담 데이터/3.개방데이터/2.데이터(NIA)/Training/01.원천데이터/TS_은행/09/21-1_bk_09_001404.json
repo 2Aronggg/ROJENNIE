@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_001404",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1145,
+        "consulting_content": "고객은 특정 금액을 바트로 환전하려는 의사를 밝히고 환율, 수수료, 한도, 예약 방법, 현금 수령 절차, 환불,취소 정책 등 다섯 가지 이상의 구체적인 질문을 하였다. 상담원은 실시간 환율 변동, 최소 수수료, 일일 한도, 24시간 고정 환율 예약, QR코드 기반 현금 수령, 취소 수수료 등 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

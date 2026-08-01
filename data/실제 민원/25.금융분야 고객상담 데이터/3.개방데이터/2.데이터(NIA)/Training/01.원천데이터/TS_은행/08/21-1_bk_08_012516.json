@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_012516",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1126,
+        "consulting_content": "객님, 특정 월 특정일에 카카오톡이 발송되었다. 발송된 메시지에 포함된 링크를 통해 연장 신청 절차를 확인하실 수 있다. 만기 도래한 대출 연장을 원하시면 특정 어플에서 간편 서류 제출로 연장 심사를 신청하실 수 있다. 어플 이용이 어려우시면 사진 촬영 후 업로드하시거나 대출 받으신 특정 지점으로 서류를 팩스로 발송하여 연장 심사를 신청하실 수 있다.문자를 받지 못하셨을땐 재발송 하여 보내드립니다. 특정 어플로 간편하게 신청하시거나 팩스로 발송하실 수 있도록 안내해 드리겠다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_006436",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1553,
+        "consulting_content": "고객은 신용대출 만기 연장 신청 시 오류 코드가 발생해 재신청 방법을 문의하였다. 상담사는 오류 원인이 중복 신청임을 확인하고, 기존 신청이 처리되지 않았을 경우 재신청 또는 담당자 연결 옵션을 제시하였다. 고객은 재신청을 선택하였으며, 상담사는 앱에서 연장 신청을 다시 진행하도록 안내하고, 완료 시 문자와 앱 알림으로 결과가 통보된다고 설명하였다. 이후 고객은 추가 문의가 없음을 확인하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

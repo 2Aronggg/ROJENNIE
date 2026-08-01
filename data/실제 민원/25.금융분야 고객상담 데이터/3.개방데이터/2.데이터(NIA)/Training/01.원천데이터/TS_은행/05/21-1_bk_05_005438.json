@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_005438",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1240,
+        "consulting_content": "고객은 비대면 계좌 개설 시 설정된 이체 한도 해지를 원하였다. 상담사는 한도 해제는 영업점 방문 및 서류 제출이 필요하다고 안내하고, 급여 명세서, 재직증명서 중 하나와 신분증을 지참하도록 설명하였다. 방문 시 일일 이체 가능 금액은 ●●원이며, 카드 이체 한도와 수수료는 별도 안내 후 문자로 발송하였다. 해제 절차는 서류 확인 후 영업일 기준 처리되며, 평일 9시~18시 영업시간에 오후 2시 방문 예약을 완료하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

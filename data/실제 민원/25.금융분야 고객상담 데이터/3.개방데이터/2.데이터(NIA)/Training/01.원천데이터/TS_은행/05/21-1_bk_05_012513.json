@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_012513",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "신규고객",
+        "consulting_client_type": null,
+        "source_length": 1108,
+        "consulting_content": "고객은 이체한도 해제를 원했지만 직장가입자 아님으로 제한된다고 안내받아 서류 제출을 요구받고, 상담사는 공과금 영수증, 신분증, 소득증명서 등을 지점에 제출하고 다른 지점에서도 문의할 것을 권고했으며, 해제 승인 시 하루 내에 한도 상향이 적용되고 온라인으로 확인 가능하다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

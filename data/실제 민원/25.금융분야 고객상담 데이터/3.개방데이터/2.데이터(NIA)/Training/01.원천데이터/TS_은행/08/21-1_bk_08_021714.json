@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_021714",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 948,
+        "consulting_content": "고객은 마이너스 통장 만기일과 추가 사용 가능 여부, 최근 한도 감소와 제휴 문제를 문의하고 오후 연락 및 이메일 안내를 요청하였다. 상담사는 만기일과 이월 금액을 알려주고, 기존 상품 종료로 신규 상품 전환 필요와 영업점 방문, 신청 절차를 설명했으며, 한도 증액은 비대면 신청 가능함을 안내하고, 담당자가 오후에 전화하고 FAQ를 이메일로 송부하겠다고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

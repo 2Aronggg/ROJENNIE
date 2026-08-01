@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_026669",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1034,
+        "consulting_content": "고객은 카드에 유로화를 충전해 현금처럼 사용할 수 있는지 문의하였고 상담사는 제휴 어플을 통해 전자적으로 외화를 충전하고 해당 카드와 연동해 해외 결제, 인출이 가능하다고 안내하였다. 고객은 충전 절차와 지점 방문, 온라인 가능 여부를 물었고 상담사는 원화 계좌를 어플에 연결, 입금 후 원하는 통화로 환전, 충전하는 단계와 지점 환전 안내, 수수료, 한도 확인을 권고하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

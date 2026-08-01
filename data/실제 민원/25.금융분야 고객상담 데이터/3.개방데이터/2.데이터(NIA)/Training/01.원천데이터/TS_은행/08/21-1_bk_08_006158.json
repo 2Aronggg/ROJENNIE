@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_006158",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1275,
+        "consulting_content": "고객은 문자로 받은 대환 한도 제한 및 대출 연장 안내의 진위 여부를 확인하고자 하였다. 상담원은 고객의 신용, 마이너스 대출 여부를 확인하고 연장은 모바일 앱을 통해 가능하다고 안내하였다. 연장 신청 절차와 필요 서류 및 한도 초과 시 추가 보증 서류를 설명하였다. 상담원은 연장 진행 링크가 포함된 문자를 발송하고, 문자를 수신 가능한 스마트폰 여부를 확인하였다. 또한 현재 마이너스 대출 잔액이 약 ○○○만원이며 다음 상환일은 ○월 ○일임을 알려주었다. 연장 완료 시 상환 일정이 자동 연장되고 승인 결과는 문자와 이메일로 전달될 것임을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

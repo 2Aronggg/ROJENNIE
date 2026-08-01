@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_027077",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1128,
+        "consulting_content": "고객은 모바일 앱으로 대출 연장을 신청하고 계좌, 생년월일, 비밀번호를 제공한 뒤 비대면 서류를 업로드했으며, 상담사는 신청 접수 확인, 심사 소요 2~3일 안내, 서류 검토 진행 및 결과를 문자, 앱 알림으로 통보하고, 승인 시 계약서와 암호 설정 안내를 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

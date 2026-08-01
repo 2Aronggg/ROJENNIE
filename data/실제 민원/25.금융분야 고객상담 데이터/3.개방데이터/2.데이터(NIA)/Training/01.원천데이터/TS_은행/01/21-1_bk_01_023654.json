@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_023654",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1060,
+        "consulting_content": "고객은 타은행에서 입금된 금액과 출처 확인 및 잔액 반영을 요청하고, 본인 확인을 위해 이름, 생년월일, 주민등록번호, 계좌번호, 비밀번호를 제공했으며, 입금 일시, 금액을 알려주었다. 상담사는 제공된 정보를 바탕으로 계좌 조회를 진행하고, 추가 인증으로 신분증 사진 전송을 요청한 뒤 전송 방법을 안내하고, 입금 확인 후 금액을 고객 계좌에 바로 반영하겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

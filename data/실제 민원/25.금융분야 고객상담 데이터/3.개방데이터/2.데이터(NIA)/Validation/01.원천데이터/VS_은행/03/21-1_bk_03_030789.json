@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_030789",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1341,
+        "consulting_content": "고객은 자동 이체 금액을 현재 설정액에서 다른 금액으로 변경하고 싶다고 요청하였고 상담사는 앱에서 변경 가능함을 안내하고, 인터넷뱅킹 메뉴 진입 방법을 단계별로 설명하였다. 고객은 자동 이체 메뉴 확인 및 금액 수정 절차를 진행하겠다고 말했으며, 상담사는 화면에서 금액을 입력하고 저장하면 문자, 이메일 알림이 전송되고 수수료는 없으며, 영업시간은 평일 9시~18시임을 알려 주었다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

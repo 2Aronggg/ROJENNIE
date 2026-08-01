@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_007168",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1085,
+        "consulting_content": "고객은 다음 달 만기인 비상금대출 연장을 요청하였다. 상담원은 계좌와 비밀번호를 확인하고, 해당 대출은 만기 후 일정 일수 내에만 연장이 가능하므로 현재는 연장 시점이 도래하지 않았다고 안내하였다. 연장 가능 시점에 문자와 URL을 발송해 앱에서 연장 절차를 진행"
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

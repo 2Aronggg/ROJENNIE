@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_022247",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 760,
+        "consulting_content": "고객은 대출 만기 안내 문자를 받고 연장 절차와 비용, 재융자 가능 여부를 문의하였고 상담사는 계좌, 신분 확인 후 사업자 대출 만기와 연장 일정을 안내하고, 서류 없이 신청 가능함을 설명하며, 수수료는 계약 조건에 따라 다르니 문자 링크 확인 또는 문의를 권고하고, 추가 대출 상품은 상담원 연결을 제안하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_004372",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1297,
+        "consulting_content": "고객은 마이너스 통장 대출 연장을 전화로 신청하고자 했고 상담사는 연장 가능 여부를 검증하였다. 고객은 연장 제한 사유를 확인하고 해지, 재신청을 문의했으며 상담사는 만기 초과로 연장이 어려워 약정 해지를 안내하고, 비대면 앱을 통한 해지 및 새 대출 신청 절차를 설명하였다. 고객은 안내에 따라 앱 이용을 진행하기로 하였고 상담사는 추가 문의 여부를 확인하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

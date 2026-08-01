@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_009832",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1114,
+        "consulting_content": "고객은 동선동 지점에서 엔화 환전을 원하고 영업시간, 가능 통화, 연락 방법, 필요 서류, 예약, 한도, 보유량 등을 문의하였고 상담사는 영업시간 내 현찰 매입 가능, 사전 예약 권장, 신분증 지참, 보유량은 방문 시 최종 확인, 문자, 전화 서비스 안내, 수수료, 보안 절차 등을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

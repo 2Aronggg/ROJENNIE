@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_031464",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 2148,
+        "consulting_content": "고객은 ★★은행 연결 오류와 계좌 미인식 문제를 제기했으며, 계좌 번호, 생년월일, 비밀번호 재입력 등 본인 확인 절차를 진행하였다. 상담사는 시스템 로그 조회, ARS 인증 안내, 비밀번호 재입력 요청, 은행에 문제 전달을 수행하고, 최종적으로 계좌가 정상 인식됨을 확인하고 문제 해결을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

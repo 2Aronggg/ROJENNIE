@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_026682",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 888,
+        "consulting_content": "고객은 대출 연장을 원해 연장 절차와 필요 금액, 시점을 문의했으며 조기 상환 가능 여부도 물었고, 상담사는 모바일 앱 신청 방법, 현금 준비 불필요, 현재는 연장 신청 시점이 아니며 만기일 후 문자 안내 후 가능함을 안내하고, 조기 상환 시 잔여 이자, 위약금 발생 가능성을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

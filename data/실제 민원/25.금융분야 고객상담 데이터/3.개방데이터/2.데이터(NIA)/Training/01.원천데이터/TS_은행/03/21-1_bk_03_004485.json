@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_004485",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1318,
+        "consulting_content": "고객은 카드 자동이체 미등록 건과 오늘 출금된 의심 거래를 확인하고자 정보를 제공하고 조회를 요청하였고 상담사는 거래 내역을 조회해 자동이체가 폰뱅킹으로 등록된 사실을 안내하고, 미등록 거래에 대해 분쟁 처리 신청 절차와 필요 서류, 소요 시간을 설명한 뒤 신청을 진행하겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

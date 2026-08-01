@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_004139",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1069,
+        "consulting_content": "고객은 동전 환전 및 구입 절차와 서류, 실시간 환율, 수수료, 계좌 개설 및 재고 확인을 요청하였고 상담사는 필요한 서류 안내, 현재 환율 제공, 수수료 설명, 계좌 개설 절차와 재고 확인 방법을 안내하고, 해당 지점 재고 부족 시 다른 지점에 문의하도록 권유하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

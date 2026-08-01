@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_019428",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1810,
+        "consulting_content": "고객은 대출 우대 금리 미적용을 문의했고 상담사는 계좌 정보를 요청하였다. 고객은 정보를 제공하고 부수거래, 카드 실적 확인을 요구했으며, 상담사는 실적을 검증해 부수거래와 카드 사용이 충족됐음을 안내하였다. 이후 고객은 우대 금리 적용 시점과 조건을 물었고 상담사는 매월 말 실적 기준 적용, 미충족 시 금리 상승을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

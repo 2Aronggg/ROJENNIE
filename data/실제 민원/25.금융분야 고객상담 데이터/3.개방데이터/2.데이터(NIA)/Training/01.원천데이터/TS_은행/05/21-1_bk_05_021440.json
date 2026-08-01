@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_021440",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 941,
+        "consulting_content": "고객은 한도 제한 계좌 해지를 요청했으며, 상담사는 거래내역 이메일 전송 및 서류 제출을 안내하고, 급여, 소득 증빙이 없을 경우 영업점 방문이 필요하다고 설명하였다. 고객은 이메일 주소를 확인하고 서류를 미리 보내겠다고 하였고, 상담사는 방문 전 서류를 이메일로 받아 현장 절차를 신속히 진행할 수 있다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

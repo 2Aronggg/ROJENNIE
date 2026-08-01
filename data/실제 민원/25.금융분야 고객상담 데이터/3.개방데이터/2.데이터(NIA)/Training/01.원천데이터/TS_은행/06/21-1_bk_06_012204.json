@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_012204",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 845,
+        "consulting_content": "고객은 대출 이자 미납 여부와 입금 상황을 확인하고자 계좌 정보를 제공하였고 상담사는 입금이 정상 처리되었음을 안내하고, 대출 상환 일정 변경 가능 여부와 적용 시점을 설명하였으며, 현재 이자율은 고정이며 변동되지 않음을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

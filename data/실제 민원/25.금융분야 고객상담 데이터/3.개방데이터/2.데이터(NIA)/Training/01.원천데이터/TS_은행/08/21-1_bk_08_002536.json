@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_002536",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1097,
+        "consulting_content": "고객이 마이너스 통장 만기 연장 절차, 금리 심사 기간, 추가 비용, 계약서 수령 및 서명 방법, 신용 영향, 취소 절차, 유의사항 등을 문의하자 상담사는 금리 심사 2일 내 완료, 연장 수수료 및 금리 상승 가능성, 앱 내 전자 서명 및 미리보기 제공, 통합 계좌 관리, 연체 시 신용 영향, 승인 전 취소 가능, 서명 전 조항 검토 권고 등을 명확히 안내했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

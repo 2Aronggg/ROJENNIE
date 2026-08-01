@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_018315",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1665,
+        "consulting_content": "고객은 계좌 번호와 개인정보를 제공하여 잔액 조회를 요청하였고 상담사는 잔액이 0원이며 ▲▲ 카드가 연체 중임을 안내하였다. 고객은 연체 금액과 적금 정보를 확인하고 해결 방안을 원하였고 상담사는 연체 금액 확인 절차와 신용 정보는 별도 기관에서 확인해야 함을 설명하고, 필요한 정리 절차와 추가 문의 시 연락을 권유하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

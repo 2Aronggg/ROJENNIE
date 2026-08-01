@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_017420",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1010,
+        "consulting_content": "고객은 대출 연장 심사에 필요한 서류 접수 현황을 문의했으며, 소득증명서는 준비됐고 거주확인서와 임대차계약서를 메일로 송부하겠다고 답했다. 상담사는 계좌, 비밀번호 확인 후 연장 심사 진행 중이며, 주민등록등본 사본을 ‘거주확인_성함’ 파일명으로 5MB 이하 메일 첨부해 보내라고 안내하고, 서류 모두 도착 시 영업점에서 최종 심사 후 2~3일 내에 결과를 통보하겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

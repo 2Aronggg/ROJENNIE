@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_006132",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1012,
+        "consulting_content": "고객에게 인터넷뱅킹의 자동이체 관리 메뉴에서 아파트관리비 자동이체를 조회, 변경, 해지할 수 있는 절차를 안내하였으며, 해지 메뉴 선택 후 해지 완료 문구 확인 및 목록 재조회 방법까지 설명하였다. 또한 화면 반영이 지연될 수 있어 새로 고침 또는 재로그인을 통해 정상 반영 여부를 확인하도록 안내하였고, 고객이 재로그인 후 자동이체 항목이 사라진 것을 확인해 해지 처리 완료를 확인하였으며, 향후 다른 자동이체도 동일한 방식으로 관리할 수 있음을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_030009",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1575,
+        "consulting_content": "고객은 대출 연체 및 채권 관련 문자 수신 사실을 문의하고 본인 확인 정보를 제공하였고 상담사는 확인 절차를 진행하며 계좌 출금 상황을 점검하고 추가 검증에 시간이 필요함을 안내하고, 최종 결과를 곧 알려주겠다고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

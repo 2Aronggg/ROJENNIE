@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_023154",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1023,
+        "consulting_content": "고객은 대출 한도 약정 기간 종료 문자를 받고 현재 상황을 문의하였고 상담사는 계좌, 성명, 생년월일을 확인한 뒤 마이너스 통장 사용 중단 상태이며 연장은 모바일 뱅킹을 통해 가능하다고 안내하였다. 고객은 전화 연장을 원하여 담당 부서 연결을 요청하였고 상담사는 녹취 요청 및 담당 부서 연결을 진행하고 추후 연락을 약속하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

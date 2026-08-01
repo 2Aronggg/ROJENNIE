@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_024874",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 2670,
+        "consulting_content": "고객은 계좌 확인과 대출 연계 여부를 문의했으며, 계좌 번호, 비밀번호 제공을 요구받았고 여러 차례 인증 번호 입력을 시도했지만 인증이 실패해 다른 인증 수단과 재연락을 요청하였고, 상담사는 본인 확인을 위해 계좌 정보와 생년월일 앞자리, 휴대폰 인증을 안내하고, 입력 오류와 신호 문제를 설명하며, 직접 입력이 필요함을 강조하고, 인증이 계속 안 될 경우 다른 번호로 재시도하거나 재연락을 약속하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

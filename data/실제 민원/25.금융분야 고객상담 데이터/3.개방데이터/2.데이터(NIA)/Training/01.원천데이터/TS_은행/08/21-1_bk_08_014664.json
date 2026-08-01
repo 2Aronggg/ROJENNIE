@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_014664",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1343,
+        "consulting_content": "고객은 대출 연장을 요청하고 계좌, 비밀번호 등 본인 확인 정보를 제공하였고 상담사는 확인 후 연장 문자는 아직 발송되지 않았으며 금리는 기존과 동일하게 유지된다고 안내하였다. 고객은 연장 시 별도 서류가 필요 없고, 문자에 포함된 링크 클릭만으로 간단히 완료된다고 확인하였으며, 조기 상환은 전화 또는 온라인으로 신청 가능하다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

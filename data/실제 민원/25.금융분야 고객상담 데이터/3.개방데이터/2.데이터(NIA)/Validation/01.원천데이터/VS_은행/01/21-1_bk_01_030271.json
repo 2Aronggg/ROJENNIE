@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_030271",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 2135,
+        "consulting_content": "고객은 계좌 번호 없이 잔액 조회를 요청하고 본인 확인을 위해 주민등록번호 앞자리, 성명, 비밀번호 입력 등 대체 인증을 진행하였고 상담사는 인증 절차를 완료한 뒤 현재 잔액과 최근 출금 내역을 안내하였다. 고객은 카드 결제 금액 확인 및 변경 절차를 문의하여 상담사는 카드사 연결을 제안, 연결하고, 통화 종료 후 요약본 SMS와 비밀번호 변경 방법을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_014966",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 2222,
+        "consulting_content": "고객은 자동이체 해지 후에도 일정 금액이 출금되는 문제와 출금일 차이를 문의하였고 상담사는 계좌와 자동이체 내역을 확인하여 만기일 이후 처리되지 않은 것을 확인하였다. 고객은 다음 달부터 자동이체 재개와 직접 입금이 필요함을 안내받았고 상담사는 문자, 이메일 알림 서비스와 요약본 발송을 설정해 제공하기로 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

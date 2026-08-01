@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_016895",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1158,
+        "consulting_content": "고객은 통장 잔액과 최근 출금 여부, 분실 후 찾은 카드 사용 가능 여부 및 연금 이체 누락을 확인하고자 정보를 제공하였고 상담사는 최근 출금은 문자수수료만 있었으며 추가 출금, 입금이 없고 카드가 정상이며 연금 이체가 누락된 것으로 확인하여 현재 잔액은 미반영 상태임을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

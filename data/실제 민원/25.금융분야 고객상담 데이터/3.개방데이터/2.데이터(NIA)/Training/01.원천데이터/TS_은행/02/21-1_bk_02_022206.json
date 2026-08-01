@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_022206",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1726,
+        "consulting_content": "고객은 ★★은행으로 잘못 이체된 금액을 반환 청구하고자 하였고 상담사는 송금 일자, 금액, 계좌 정보를 확인한 뒤 본인 인증을 진행하고, 자금 반환 청구를 등록하여 처리 절차와 소요 시간을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

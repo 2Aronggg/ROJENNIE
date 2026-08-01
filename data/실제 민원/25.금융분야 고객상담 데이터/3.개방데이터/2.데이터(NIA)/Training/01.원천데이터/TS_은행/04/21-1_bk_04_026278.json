@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_026278",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 898,
+        "consulting_content": "고객은 모바일 앱으로 적금, 예적금, 일반예금을 해지하고 싶다고 요청했으며, 상담사는 ‘예적금’ 메뉴에서 해지 절차를 진행하도록 안내하고, 해지는 가능하지만 이자 미수령 및 위약금이 발생할 수 있음을 설명하였다. 고객은 위약금 계산 방법을 물었고, 상담사는 남은 기간 비율에 따라 차감된 금액을 해지 화면에서 확인할 수 있다고 답변하였다. 고객은 해지 후 새로운 적금 상품 상담을 원했으며, 상담사는 금리 상승을 반영한 고정, 자유 적금 옵션을 제시하고, 해지 완료 후 알림 및 전화 상담으로 맞춤형 상품 안내를 제공하겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

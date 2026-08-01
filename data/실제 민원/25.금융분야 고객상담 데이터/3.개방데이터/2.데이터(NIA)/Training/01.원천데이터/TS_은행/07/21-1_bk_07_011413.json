@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_011413",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1266,
+        "consulting_content": "고객은 대출금 입금 및 적금 상황을 확인하고 대출 상환 일정, 금리, 자동이체 설정을 문의하였고 상담사는 계좌, 비밀번호를 받아 적금 신규 가입 및 금리 적용일을 안내하고, 대출 상환 방식, 자동이체 방법을 설명하였다. 고객은 대출금 입금 및 적금 상황을 확인하고 대출 상환 일정, 금리, 자동이체 설정을 문의하였고 상담사는 계좌, 비밀번호를 받아 적금 신규 가입 및 금리 적용일을 안내하고, 대출 상환 방식, 자동이체 방법을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

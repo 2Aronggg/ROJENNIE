@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_002178",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 883,
+        "consulting_content": "고객은 백바 트 소액 환전을 원하고 인터넷뱅킹 이용을 언급했으며, 신분증만 있으면 되는지 문의하였고 상담사는 지점 보유 현황과 일일 한도 500만원, 영업시간을 안내하였으며, 고객은 오늘 오후 3시 ◆◆지점 방문 예약을 원했으며, 상담사는 앱에서 환전 신청, 예약 방법과 수수료 우대, 확인 문자, 알림 제공을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

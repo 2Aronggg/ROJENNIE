@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_005287",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1392,
+        "consulting_content": "고객은 대출 연장 신청 문자를 받고 연장 가능 여부를 확인하고자 요청하였다. 상담사는 대출은 연체, 신용 문제 없을 경우 월 단위 자동 연장이 가능하며, 현재 이자율이 유지된다고 안내하였다. 연장 처리 후 새로운 만기일과 결과를 문자로 안내할 예정이며, 스마트폰 뱅킹 앱에서 연장 여부와 금리 변동 알림을 설정하도록 권장하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

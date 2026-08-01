@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_019768",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 2219,
+        "consulting_content": "고객은 신용대출 연장 조건과 절차, 자동 연장 시 금리 변동 및 수수료 여부를 문의하였고 상담사는 연장 신청 방법과 금리, 조건은 AI 자동심사 시점에 확정된다고 안내하고, 연장 결과는 문자로 제공하겠으며 취소는 온라인으로 가능하다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

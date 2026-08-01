@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_032527",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1576,
+        "consulting_content": "고객은 자동이체가 진행되지 않아 확인을 요청하고, 계좌 정보와 비밀번호를 제공하였고 상담사는 시스템 점검 후 자동이체 지연 안내와 청년특별금리, 분리당 한도, 자동이체 설정 방법을 설명하고, 한도 금액을 안내한 뒤 변경, 해지 방법을 알려주었으며, 고객은 만족한다고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

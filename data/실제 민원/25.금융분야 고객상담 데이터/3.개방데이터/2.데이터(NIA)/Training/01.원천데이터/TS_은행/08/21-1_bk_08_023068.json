@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_023068",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 809,
+        "consulting_content": "고객은 대출 마이너스 통장 연장 및 한도 확인을 위해 계좌번호와 비밀번호를 제공했으며 잔액과 연장 가능 여부를 물었고, 상담사는 대출 한도가 ○○원, 잔액 유지 시 연장 가능함을 안내하고 상환일은 매월 말일, 이자율은 연 4.5%라고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

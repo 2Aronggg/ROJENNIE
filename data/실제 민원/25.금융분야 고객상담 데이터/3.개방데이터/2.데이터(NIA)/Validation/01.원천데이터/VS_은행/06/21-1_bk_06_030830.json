@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_030830",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1342,
+        "consulting_content": "고객은 대출 연체 금액, 이자를 물었고 상담사는 확인 중이라 안내하였다. 고객은 계좌번호를 모른다고 하자 상담사는 주민등록번호, 거래일로 확인 가능하다고 설명하였다. 고객은 가상계좌 발급을 요구했지만 상담사는 개인사업자 상품이라 불가하고 자동이체, 방문 결제 등 대체 방법을 제시하였다. 고객은 입금 마감일, 알림을 물었고 상담사는 영업일 1시간 이내 입금 확인 및 알림을 제공한다는 답변을 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

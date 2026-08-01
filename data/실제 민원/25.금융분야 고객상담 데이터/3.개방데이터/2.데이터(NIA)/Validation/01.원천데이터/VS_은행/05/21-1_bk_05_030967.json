@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_030967",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 666,
+        "consulting_content": "고객은 한도 계좌라 이체가 안 된다고 문의하고 한도 초과 시 조치와 수수료 정책을 물었으며, 상담사는 계좌가 하루 ●●원 거래 가능함을 안내하고, 한도 초과 시 추가 비용과 기본 수수료를 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

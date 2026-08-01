@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_009734",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 941,
+        "consulting_content": "고객은 전세대출 연장을 위해 필요한 서류와 절차를 문의하였다. 상담원은 신분증, 대출계약서 사본을 먼저 제출하면 담당자가 검토하고 나머지 서류와 만기 통보 일자를 안내한다며 설명하였다. 또한 연장 시 고정, 변동 금리 선택이 가능함을 알려주고, 고객은 고정 금리 연장을 원한다는 의사를 밝혀 서류 준비 후 재연락하겠다고 답하였다. 고객은 서류가 준비되면 언제든 연락하라며 상담을 마무리하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

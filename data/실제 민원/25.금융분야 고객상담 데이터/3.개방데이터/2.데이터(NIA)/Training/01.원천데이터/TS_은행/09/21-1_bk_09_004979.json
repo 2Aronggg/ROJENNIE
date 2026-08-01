@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_004979",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 748,
+        "consulting_content": "고객은 캐나다달러와 미국달러 환전을 원하고, 해당 지점에 재고가 있는지 확인을 요청했으며, 오후 3시 방문 예약과 신분증, 통장 지참을 안내받았다. 상담사는 캐나다달러, 미국달러 보유 사실을 확인하고, 수수료 0.5%와 현금만 가능함을 안내하며, 예약을 잡아주고 다른 통화 가능 여부도 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

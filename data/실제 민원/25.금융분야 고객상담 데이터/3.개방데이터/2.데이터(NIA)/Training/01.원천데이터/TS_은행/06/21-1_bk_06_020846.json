@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_020846",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1273,
+        "consulting_content": "고객은 대출 원리금 상환을 위해 가상 계좌 발급을 요청했고 상담사는 계좌 생성 절차와 필요 정보를 안내하였다. 고객은 성명, 생년월일, 비밀번호를 제공하고 여러 차례 입력 오류를 겪었으며, 상담사는 재입력 및 비밀번호 재설정을 제안하였다. 최종적으로 상담사는 가상 계좌 번호를 문자로 전송하고 납부 기한 및 입금 방법을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

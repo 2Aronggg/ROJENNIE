@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_015948",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 948,
+        "consulting_content": "고객은 일일 이체 한도 초과 문제를 제기하였고 상담사는 현재 계좌는 하루 ●●원 한도이며, 앱에서 확인, 한도 해제는 어플 메뉴 이용, 유선 변경 불가, 서류 제출, 심사 필요, 급송 시 영업점 방문, 체크카드, ATM 이용 가능, 해제 신청은 영업일 1~2일 소요, 일정 거래, 신용등급에 따라 자동 상향 가능하다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

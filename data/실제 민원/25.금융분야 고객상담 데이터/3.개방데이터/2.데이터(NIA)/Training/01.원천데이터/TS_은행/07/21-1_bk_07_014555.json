@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_014555",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 992,
+        "consulting_content": "고객은 청약 통장 해지 후 오늘 재가입과 결제일 지정, 적금 입금 절차 및 조기 해지 위약금 문의를 하였고 상담사는 해지 후 즉시 재가입 시 금리 혜택이 지연될 수 있음과 모든 적금, 청약 통장은 입금이 필요함을 안내하고, 현재 계약은 6개월 남아 위약금이 약 5% 적용된다고 알려 주었다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

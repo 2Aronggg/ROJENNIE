@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_014000",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 810,
+        "consulting_content": "고객은 자동이체 알림 문자와 미등록 계좌 등록 사실을 확인하고 계좌 도용 여부를 의심하여 해당 계좌 해지를 요청하였고 상담사는 고객의 휴대폰 번호와 생년월일을 확인하고, 등록 기록이 없음을 확인한 뒤 무단 등록 차단 및 즉시 해지를 진행하겠다고 안내하였으며, 자동이체 중단 시 결제 누락 및 연체료 발생 가능성을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

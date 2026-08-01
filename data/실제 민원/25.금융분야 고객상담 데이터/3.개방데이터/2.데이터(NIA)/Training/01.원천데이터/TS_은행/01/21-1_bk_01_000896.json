@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_000896",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1647,
+        "consulting_content": "고객이 사업자 통장 입금 내역이 숫자만 표시돼 확인을 요청하고 상담사는 입금자를 조회해 해당 상황에 대해 설명했다. 상담사는 고객이 질문한 입금자 코드와 실제 기업명 차이, 수수료, 해외 비용, 알림 서비스 등에 대해 답변했다. 마지막으로 입금자 코드 매핑 요청을 진행하며, 요청 진행 상황 실시간 확인 가능 여부를 안내했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

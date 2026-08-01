@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_023681",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 963,
+        "consulting_content": "고객은 전세 자금 대출 연장을 위해 신청 절차와 필요 서류를 문의하였고 상담사는 연장 신청은 문자 안내에 따라 진행해야 하며, 주민등록증, 계약서, 급여 내역 등 서류 제출과 계좌 확인 절차를 안내하고, 신용 조회 후 결과를 문자로 통보하겠다고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

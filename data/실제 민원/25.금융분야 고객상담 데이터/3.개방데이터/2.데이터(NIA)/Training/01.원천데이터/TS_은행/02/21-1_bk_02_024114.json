@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_024114",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1884,
+        "consulting_content": "고객은 〇월〇일 송금 일자와 금액, 거래 고유 번호 등을 제공하여 송금 진행 상황을 확인하고 추가 정보를 요청하였고 상담사는 해당 정보를 기반으로 시스템 검색, 내역 조회, 입금 지연 안내, 담당 부서 연결, 등록 지연 원인 파악 등을 차례로 진행하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

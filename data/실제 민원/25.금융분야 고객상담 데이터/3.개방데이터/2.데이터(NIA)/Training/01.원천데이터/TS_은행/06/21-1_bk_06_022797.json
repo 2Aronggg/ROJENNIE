@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_022797",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 794,
+        "consulting_content": "고객은 연체 대출 상환을 위해 외화 통장 자동이체를 요청했고, 자동이체 시간과 최소 잔고 등을 문의하였다. 상담사는 자동이체 가능 여부와 연체 이자 계산 방식, 출금 시간 및 최소 잔고 조건을 안내하고, 즉시 자동이체 설정을 진행해 확인 문자를 발송하겠다고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

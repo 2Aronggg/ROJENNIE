@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_017816",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1749,
+        "consulting_content": "고객은 대출 연장을 위해 남은 금액만 가상계좌에 입금하면 되는지, 입금 마감 시점과 부분 상환 가능 여부를 문의하였고 상담사는 가상계좌 입금 시 연장이 완료된다고 안내하고, 입금 마감은 오늘 밤 11시 30분이며 입금 후 문자로 확인 및 영수증 발송이 가능하고, 필요 시 부분 상환도 가능하다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

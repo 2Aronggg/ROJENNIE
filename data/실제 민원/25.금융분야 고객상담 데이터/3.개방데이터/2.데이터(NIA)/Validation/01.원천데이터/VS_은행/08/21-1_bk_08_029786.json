@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_029786",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1011,
+        "consulting_content": "고객은 만기 대출을 상환하고 연장을 원한다며 연장 절차와 서류 제출 방법을 문의하였고, 상담사는 신분증, 급여내역, 계약서 사본 제출을 안내하고, 사진 전송 또는 지점 방문 방법을 설명했으며, 현재 금리는 변동 없고 약정서에 조정 가능함을 알려 주고, 연장 담당 부서와 전화 예약 및 연락 절차도 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_024936",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1753,
+        "consulting_content": "고객은 매칭 지원금 입금 계좌 확인을 요청하고 적금 만기 해지를 알리며 계좌번호, 성명, 생년월일, 비밀번호를 제공하였다. 상담사는 비밀번호를 검증하고, 입력된 계좌가 매칭 지원금 입금 대상임을 확인해 알려 주었으며, 입금은 영업일 기준 2~3일 이내에 처리된다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

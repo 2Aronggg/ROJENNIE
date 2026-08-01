@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_010716",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 926,
+        "consulting_content": "고객은 이체 한도 초과로 인한 이체 불가와 한도 일시 증액, 해지 절차, ATM, 모바일 이체 및 이메일 알림 방법을 문의하였고 상담사는 현재 한도는 고정되어 있어 증액은 불가하나 해지는 모바일, 웹 뱅킹에서 신청 가능하고, ATM, 창구 이용 시 한도 내 출금, 이체 가능하며, 이체 완료 시 이메일 알림이 자동 발송된다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

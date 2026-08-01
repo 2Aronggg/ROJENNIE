@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_017293",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1074,
+        "consulting_content": "고객은 마이너스 대출 전액 상환 후 남은 이자, 부대비용과 해지 절차를 문의하였고 상담사는 남은 금액이 ●●원이며 일시불 결제로 온라인 뱅킹에서 결제 시 즉시 해지되고 계좌는 유지된다고 안내하였으며, 해지 후 일정 기간 후 재신청 가능함을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

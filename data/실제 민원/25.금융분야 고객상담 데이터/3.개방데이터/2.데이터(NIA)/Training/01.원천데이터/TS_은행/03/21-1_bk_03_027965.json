@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_027965",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 579,
+        "consulting_content": "고객은 자동이체된 휴대폰 요금 내역을 확인하고 싶다고 하였고 상담사는 거래 상세는 확인 불가하므로 해당 업체에 문의하고 거래 일자, 금액을 알려줄 것을 안내하였다. 고객은 추가 문의 없다고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_018899",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1222,
+        "consulting_content": "고객은 대출 연장 절차와 필요 서류, 금리 확정 시점 및 통보 방법을 문의하였고 상담사는 연장은 금리 확정 후 진행되며, 서류는 신분증 사본과 3개월 거래내역서이며, 금리 변동 시 문자, 이메일로 안내한다는 내용과 연장 신청 시 문자 도착 시 링크 클릭 또는 재연락을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

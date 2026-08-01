@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_004526",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1223,
+        "consulting_content": "고객은 자동이당 이체 일자를 정확히 알고 싶다고 요청하였고 상담사는 매월 지정된 일에 영업시간 내 자동으로 이체되며 금액, 계좌는 설정대로 처리되고 수수료는 없다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

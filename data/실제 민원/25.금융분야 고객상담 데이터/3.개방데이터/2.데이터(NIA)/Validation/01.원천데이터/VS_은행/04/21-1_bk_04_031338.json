@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_031338",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1385,
+        "consulting_content": "고객은 만기된 적금 해지와 재투자 방법을 문의하였고 상담사는 상품 정보와 동일 금리 자동 연장, 금리 변동 상품 선택 가능 등을 안내하였으며, 복리 적금이 아님을 설명하고 어플에서 가장 높은 금리 상품을 확인하도록 권유하였다. 고객은 어플 이용을 선택하고 추가 문의 없음을 밝혔으며 상담사는 상담 종료를 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

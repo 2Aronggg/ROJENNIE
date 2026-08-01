@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_004633",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 998,
+        "consulting_content": "고객은 비상금 대출의 한도 제한 해지가 안돼 이체가 제한된 상황이라 앱 시도 후 ‘대상 아님’ 메시지를 받았고, 추가 서류 제출을 위해 영업점 방문 예약을 요청하였다. 상담사는 한도 해지는 영업점 방문 후 신분증, 급여명세서, 통장 사본, 카드 사용실적 등 서류를 제출하고 심사받아야 하며, 금요일 오후 2시 예약을 확정하고, 심사 후 2~3일 내에 해지 여부를 통보하고 해지 시 바로 사용 가능하다고 안내하고, 해지 불가 시 대출 이전이나 신용대출 검토를 제안하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

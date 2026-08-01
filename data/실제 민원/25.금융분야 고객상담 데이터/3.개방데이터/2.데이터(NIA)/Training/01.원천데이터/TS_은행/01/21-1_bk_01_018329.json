@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_018329",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 779,
+        "consulting_content": "고객은 다른 곳에서 본인 통장으로 입금됐다는 문자를 받지 못했다며 입금 확인을 요청하였고 상담사는 내부 조회를 진행했지만 해당 일자에 입금 내역이 없다고 안내하였으며, 다른 날짜와 자동 이체 내역 확인을 제안하였다. 고객은 자동 이체 내역 확인을 요청하고 추가 문의는 없다고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

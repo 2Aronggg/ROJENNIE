@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_003200",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1046,
+        "consulting_content": "고객은 연체 금액 확인을 요청하고 계좌번호, 성명, 생년월일을 제공했으며, 인터넷 뱅킹으로 상환 의사를 밝혔고 상담사는 시스템 조회 후 미납 금액과 납부된 금액을 안내하고, 연체 이자와 수수료 발생 여부를 설명한 뒤 입금 마감 시간과 인터넷 뱅킹 이용 방법을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

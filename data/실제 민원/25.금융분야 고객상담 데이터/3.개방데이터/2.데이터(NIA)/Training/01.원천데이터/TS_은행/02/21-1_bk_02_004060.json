@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_004060",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1262,
+        "consulting_content": "고객은 법인 통장으로 가상계좌에 잘못 송금했으며 계좌 번호 확인과 반환 절차를 요청했고, 송금 영수증과 본인 확인 서류를 이메일로 보내겠다고 하였다. 상담사는 계좌 조회 후 반환 접수를 안내하고, ★★은행에 반환 요청을 해야 함을 설명하며, 영업일 기준 1~2일 내에 환불 완료 후 문자, 이메일로 안내한다는 내용으로 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

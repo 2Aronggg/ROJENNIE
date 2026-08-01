@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_031376",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 901,
+        "consulting_content": "고객은 대출 연장 절차와 방법을 문의하고 계좌 번호를 제공했으며 서류 제출 방식을 물었고, 상담사는 시스템 조회 후 연장은 지정 지점에서 진행 중이며 승인 시 문자, 전화로 안내하고 전자문서 제출 가능하다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

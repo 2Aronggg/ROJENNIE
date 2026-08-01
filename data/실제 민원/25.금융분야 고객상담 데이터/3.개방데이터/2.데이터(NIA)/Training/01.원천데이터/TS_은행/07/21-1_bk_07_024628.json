@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_024628",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1850,
+        "consulting_content": "고객은 담보 대출의 우대 금리 적용 여부와 조건, 감면 혜택 금액, 비율, 조기 상환 시 기간 연장 여부, 대출 연장 시 이자율 변동을 문의하였고 상담사는 신원 확인 후 시스템 조회를 통해 현재 우대 금리 미적용, 감면 혜택 영점임을 안내하고, 조기 상환 시 기간 연장되지 않으며 연장 시 이자율 변동 가능성을 설명하고 추가 혜택은 없음을 알려 주었다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_022727",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1038,
+        "consulting_content": "고객은 대출 만기 연장 문의와 절차 확인을 위해 대출 종류와 지점 정보를 제공하고 연장 신청 현황을 확인하고자 하였고 상담사는 대출 종류와 지점을 확인한 뒤 연장 가능 일자와 필요 서류, 비대면 제출 링크를 안내하며 결과는 문자, 이메일로 통보한다는 안내를 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

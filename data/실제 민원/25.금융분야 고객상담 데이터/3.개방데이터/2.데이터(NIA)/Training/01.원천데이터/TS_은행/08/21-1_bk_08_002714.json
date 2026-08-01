@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_002714",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1279,
+        "consulting_content": "고객은 전세 대출 연장을 위해 서류, 소득 증명, 온라인 제출, 심사 기간, 금리 상환 변동, 자동이체, 유의사항 등을 문의했다. 상담사는 대출 연장 서류, 소득 증명 예시, 제출 방법, 심사 기간, 통보 방식, 금리 상환 조정, 자동이체, 유의사항에 대해서 설명했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

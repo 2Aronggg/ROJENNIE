@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_019974",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1138,
+        "consulting_content": "고객은 이체 후 잔액이 영원으로 표시되는 문제와 카드 출금 내역 확인을 요청하였고 상담사는 계좌 정보를 확인해 정상 처리됐음을 안내하고, 취소, 환불은 카드사 문의 필요와 서류 제출을 안내하였다. 고객은 비밀번호 변경을 원했으며 상담사는 보안 인증 후 온라인 뱅킹에서 변경 가능함을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

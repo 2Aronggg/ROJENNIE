@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_003492",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 976,
+        "consulting_content": "고객은 홈뱅킹 이체 한도 상승을 요청했으며, 상담사는 한도 상향을 위해 최근 3개월 급여내역서, 공과금 증명서 등 소득 증빙 서류가 필요하고, 원본 또는 전자서명 포함 PDF를 지점에 제출하거나 모바일 앱에서 신청하면 자동 심사 후 결과를 문자로 안내받을 수 있다고 안내하였다. 또한 해당 신청 메뉴는 어제부터 이용 가능하니 바로 신청 가능하다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_022958",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1091,
+        "consulting_content": "고객은 카카오톡으로 받은 민생 금융 캐시백 입금 내역을 확인하고 싶다며 계좌 번호를 기억하지 못하고 여러 계좌가 있음을 알렸고, 상담사는 ARS 고객 보유 계좌를 조회해 해당 입금이 특정 계좌에만 이루어졌음을 문자로 안내하고, 향후 입금 알림 설정 방법을 설명하며 세금 신고 가이드 문서를 문자로 보내겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

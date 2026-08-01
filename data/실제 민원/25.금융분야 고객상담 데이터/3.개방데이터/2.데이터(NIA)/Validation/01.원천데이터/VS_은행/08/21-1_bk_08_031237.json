@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_031237",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1249,
+        "consulting_content": "고객은 대출 연장 비대면 신청을 문의하고 계좌번호, 비밀번호 입력을 요청했으며, 상담사는 계좌 연결, 조회 진행을 안내하고, 담당자 연결이 어려워 메모 전달 및 서류 발송 방안을 제시하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

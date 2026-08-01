@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_006875",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 2263,
+        "consulting_content": "비대면 외환계좌 개설은 기존에 등록된 사업자 정보가 남아 있을 경우 제한되며, 신분증 사본과 폐업 증명서를 제출하면 사업자 표시가 해제되어 계좌 개설이 가능합니다. 외화는 기존 외환계좌에서 새로 개설된 계좌로 직접 이체할 수 있으며, 이체 시점의 환율이 적용되고 한도와 수수료는 모바일 앱의 외환 서비스 메뉴나 상담을 통해 확인할 수 있다. 환율 변동이 우려되면 환율 고정 서비스를 신청할 수 있으며, 해당 서비스는 앱에서 직접 또는 상담원을 통해 진행할 수 있다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

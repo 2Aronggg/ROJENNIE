@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_024070",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1127,
+        "consulting_content": "고객은 전세자금 대출 연장 신청 시 배우자 인증이 모바일에서 안 돼 배우자 명의 핸드폰이 없으면 지점 방문을 요구했고, 상담사는 배우자 본인 핸드폰으로만 인증 가능하므로 방문 동의 절차와 전세 계약서, 급여 내역서, 주민등록증 등 서류 준비를 안내하고, 승인 후 영업일 2~3일 내 입금 및 이자율 유지, 방문 예약 방법을 알려 주었다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

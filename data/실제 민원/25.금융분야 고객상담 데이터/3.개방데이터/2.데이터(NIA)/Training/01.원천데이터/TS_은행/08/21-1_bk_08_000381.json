@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_000381",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1457,
+        "consulting_content": "고객이 대출 연장 절차와 필요한 서류, 방문해야 할 지점, 보험 연장 가능 여부, 비용 및 심사 결과 안내 방법 등을 문의하자, 상담원은 고객 정보 확인 절차부터 서류 준비 방법, 지점 방문 및 예약 과정, 보험 자동 연장 여부, 심사 일정과 결과 통보 방식, 그리고 부결 시 가능한 대안까지 단계별로 구체적으로 설명하며 안내했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

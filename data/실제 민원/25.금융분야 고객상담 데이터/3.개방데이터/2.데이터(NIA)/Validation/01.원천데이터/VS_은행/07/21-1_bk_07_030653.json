@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_030653",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 0,
+        "consulting_content": "고객은 아파트론 우대 금리 적용을 위한 적금, 청약 상품의 최소 납입액과 납입 기한을 문의했으며, 상담사는 해당 금액이 ●●원 이상이며 계약서에 명시된 마감일까지 입금하면 모바일, 인터넷 뱅킹으로 가능하고 자동으로 우대 금리가 적용된다고 안내하고, 추가 신용카드 포인트 적립 혜택도 제공한다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

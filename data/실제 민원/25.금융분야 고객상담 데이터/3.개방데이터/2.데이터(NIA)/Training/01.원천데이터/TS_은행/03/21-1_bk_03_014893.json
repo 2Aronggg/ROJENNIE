@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_014893",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1322,
+        "consulting_content": "고객은 자동이체 신청 내역 해지를 원하고 이메일 안내를 요청하였고 상담사는 은행에 직접 연락해 해지 절차를 진행하도록 안내하고, 이메일로 해지 안내를 발송하겠다고 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

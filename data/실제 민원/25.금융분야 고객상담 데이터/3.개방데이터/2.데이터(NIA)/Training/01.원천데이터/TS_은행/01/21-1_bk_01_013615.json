@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_013615",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1868,
+        "consulting_content": "고객은 어제부터 오늘까지 입출금 내역 중 특정 금액이 차감된 것을 확인하고 싶으며 실시간 잔액 확인 방법을 문의하였고 상담사는 계좌 번호와 비밀번호를 받아 거래 내역을 조회하고 해당 금액이 정상 차감됐으며 모바일 앱 실시간 조회와 알림 서비스를 안내하였으며, 추가 문의 시 문자로 상담 요약을 발송하겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

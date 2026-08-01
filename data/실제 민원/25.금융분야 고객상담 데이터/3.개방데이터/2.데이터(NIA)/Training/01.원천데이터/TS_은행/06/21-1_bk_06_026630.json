@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_026630",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 2185,
+        "consulting_content": "고객은 금리 상승으로 인한 대출 이자 금액과 적용 금리를 확인하고자 계좌번호, 생년월일, 비밀번호 등 본인 확인 정보를 제공하였고 상담사는 정보를 조회해 현재 잔액, 총액, 적용 금리를 안내하고 포함 항목, 할인 조건을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_018049",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1298,
+        "consulting_content": "고객은 통장에서 출금된 거래와 적금, 예금 만기 및 잔액을 확인하고 싶다고 요청하였고 상담사는 계좌 확인 후 출금 내역, 월 납입액, 만기 적금, 내일 만기 적금, 현재 총 예금액 약 7천억을 안내하며 이익 발생 여부를 설명하였다.고객은 통장에서 출금된 거래와 적금, 예금 만기 및 잔액을 확인하고 싶다고 요청하였고 상담사는 계좌 확인 후 출금 내역, 월 납입액, 만기 적금, 내일 만기 적금, 현재 총 예금액 약 7천억을 안내하며 이익 발생 여부를 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

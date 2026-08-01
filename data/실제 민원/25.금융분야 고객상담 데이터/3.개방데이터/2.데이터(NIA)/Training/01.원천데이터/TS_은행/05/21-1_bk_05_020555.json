@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_020555",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1643,
+        "consulting_content": "고객은 계좌 이체 한도 변경을 시도했으나 계좌가 금융거래 한도 계좌로 고정돼 하루 ●●원만 이체 가능하다고 확인했고, 비대면 해제가 불가하다고 들어 영업점 방문을 요청하였고 상담사는 현재 한도는 전자금융, 앱, 자동화기기에서 ●●원, 영업점에서 ●●원까지 가능하다고 안내하고, 한도 상향은 영업점 방문 시 서류 제출 후 1~2일 내 처리된다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

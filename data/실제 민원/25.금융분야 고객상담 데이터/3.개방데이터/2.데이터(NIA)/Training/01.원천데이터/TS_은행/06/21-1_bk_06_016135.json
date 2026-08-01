@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_016135",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1001,
+        "consulting_content": "고객은 대출 원리금 상환 내역 이상을 제기하고 계좌번호, 생년월일 등 본인 확인을 반복 요청했으며, 잔액 부족으로 추가 납부 금액이 발생함을 알렸다. 상담사는 계좌 확인을 재요청하고, 부족액을 입금하면 처리 및 확인 메일이 발송될 것이라 안내하였다. 고객은 조기 상환 절차와 수수료 안내를 요청하였고, 상담사는 영업일 1~2일 내 조회 후 상세 안내가 가능하다고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

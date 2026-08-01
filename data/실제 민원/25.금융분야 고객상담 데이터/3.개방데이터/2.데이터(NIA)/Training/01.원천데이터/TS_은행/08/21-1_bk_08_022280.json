@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_022280",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1039,
+        "consulting_content": "고객은 전화가 안 되고 기록 확인 차 계좌번호, 비밀번호 등 본인 확인 정보를 제공하였고 상담사는 계좌 만기 정보를 확인해 남은 일수를 안내하고, 모바일 앱을 통한 마이너스 통장 연장이 가능함을 설명하며 연장 절차와 필요 서류를 안내하고, 승인까지 1~2일 소요와 알림 확인 방법을 알려 주었으며 추가 수수료는 없다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

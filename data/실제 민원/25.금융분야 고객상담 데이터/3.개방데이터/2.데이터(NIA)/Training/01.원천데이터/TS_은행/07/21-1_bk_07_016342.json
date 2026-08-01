@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_016342",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1585,
+        "consulting_content": "고객은 청약 불입 실적이 우대 금리 적용되지 않아 확인을 요청하였고 상담사는 청약 불입 내역과 자동이체 등록 여부를 검토하고, 필요 시 담당 부서 연결 및 방문 상담을 제안하였다. 고객은 방문 일시를 요청하였고 상담사는 다음 주 화요일 오후 2시 예약을 완료하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

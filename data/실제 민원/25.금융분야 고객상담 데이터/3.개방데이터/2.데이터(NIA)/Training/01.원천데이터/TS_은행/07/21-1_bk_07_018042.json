@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_018042",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1591,
+        "consulting_content": "고객은 급여이체 실적, 대출 상환, 청약 금액 등 조건 충족 여부와 추가 혜택을 문의하였고 상담사는 급여이체가 충족되고 대출 상환 내역이 확인돼 모든 조건이 만족됨을 안내하고, 최대 할인율 적용 결과와 예상 절감액을 설명했으며, 별도 서류 없이 온라인으로 신청 가능하고 현재 추가 프로모션은 없다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

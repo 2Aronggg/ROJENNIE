@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_025291",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 881,
+        "consulting_content": "고객은 대출 원금, 이자, 연체액 포함 전체 잔액을 조회하고 이자만 납부하는 유예를 요청했으며 계좌번호, 비밀번호를 제공하였다. 상담사는 잔액을 안내하고, 이자만 납부 시 원금 유지와 분할 상환 유예는 영업점 방문, 서류 제출이 필요함을 설명하고, 최대 유예 기간은 심사 후 통보된다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

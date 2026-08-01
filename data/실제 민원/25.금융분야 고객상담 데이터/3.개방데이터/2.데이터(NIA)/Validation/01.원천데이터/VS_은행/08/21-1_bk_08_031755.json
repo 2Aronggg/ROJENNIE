@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_031755",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1169,
+        "consulting_content": "고객은 대출 연장을 위해 본인 확인 및 입출금계좌번호, 생년월일, 성함, 비밀번호를 제공했으며 서류 제출 방법과 마감일을 문의하였고, 상담사는 확인 절차를 진행하고 서류 요청이 시스템에 없음을 안내한 뒤 마감일은 문자에 명시된 날짜이며 제출 후 2~3일 내 결과를 통보한다는 정보를 제공하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

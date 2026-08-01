@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_031270",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1024,
+        "consulting_content": "고객은 동생에게 금액을 이체했으나 입금이 안 된다고 문의하였고 상담사는 거래내역을 조회해 입금이 확인됐으며 영업일 기준 1~2시간 내 반영된다고 안내하고 향후 문제 시 콜센터 연락을 권유하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

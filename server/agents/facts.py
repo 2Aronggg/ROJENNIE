@@ -4,7 +4,7 @@ import json
 from collections import defaultdict
 from datetime import date
 
-from ..schemas import Fact, FactResolution
+from ..schemas import Fact, FactProvenanceEntry, FactResolution
 
 
 # 원문 정규식 스캔으로 추출되는 필드는 한 문장에 값이 여러 개인 것이 정상이라
@@ -25,10 +25,15 @@ def resolve_facts(facts: list[Fact]) -> FactResolution:
 
     latest: dict[str, Fact] = {}
     conflicts: dict[str, list[str]] = {}
+    provenance: dict[str, list[FactProvenanceEntry]] = {}
     for field, candidates in grouped.items():
         values = {_value_key(fact.value) for fact in candidates}
         if len(values) > 1 and field not in MULTI_VALUE_FIELDS:
             conflicts[field] = sorted(values)
+            status = "conflict"
+        else:
+            status = "confirmed"
+
         latest[field] = max(
             candidates,
             key=lambda fact: (
@@ -36,7 +41,29 @@ def resolve_facts(facts: list[Fact]) -> FactResolution:
                 fact.event_date or date.min,
             ),
         )
-    return FactResolution(latest=latest, conflicts=conflicts)
+
+        provenance[field] = [
+            FactProvenanceEntry(
+                field=fact.field,
+                value=fact.value,
+                source_type=_source_type(fact.source_ref),
+                source_ref=fact.source_ref,
+                status=status,
+                confidence=fact.confidence,
+            )
+            for fact in sorted(candidates, key=lambda fact: (fact.recorded_date or fact.event_date or date.min, fact.event_date or date.min), reverse=True)
+        ]
+    return FactResolution(latest=latest, conflicts=conflicts, provenance=provenance)
+
+
+def _source_type(source_ref: str | None) -> str:
+    if source_ref is None:
+        return "unknown"
+    if source_ref.startswith("mock"):
+        return "mock_data"
+    if source_ref.startswith("user"):
+        return "user_input"
+    return source_ref
 
 
 def missing_facts(required: list[str], resolution: FactResolution) -> list[str]:

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_013220",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 2041,
+        "consulting_content": "고객은 ●월 ●●●일 계좌에서 출금된 ● ●원이 송금된 내역을 확인하고, 자신이 보낸 적이 없다며 이체 경위를 문의했다. 상담사는 해당 금액이 핸드폰으로 송금된 것을 확인하고, 상대방 업체의 사업자 정보와 거래 목적을 추정하여 안내했다. 고객은 최종적으로 보청기 관련 거래가 맞을 것임을 확인하고 추가 문의 없이 상담을 마쳤다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

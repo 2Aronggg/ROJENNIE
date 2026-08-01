@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_004896",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 939,
+        "consulting_content": "고객은 대출 만기 연장을 원하고 계좌 인증을 위해 전화번호로 문자 인증번호를 입력했으며 연장 수수료와 위약금 안내를 요청했고 연장 신청 절차와 처리 기간을 물었다. 상담사는 인증번호 전송 및 입력을 안내하고, 연장 수수료 0.2%, 위약금 1%를 설명한 뒤 무자서 연장팀에 신청을 연결해 주겠다고 제안했으며, 신청 후 영업일 기준 1~2일 이내 결과를 안내한다는 답변을 제공하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

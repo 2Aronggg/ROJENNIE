@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_030214",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1190,
+        "consulting_content": "고객은 아파트 관리비 송금을 요청하며 사무소 주소, 은행, 계좌, 예금주, 금액, 입금일을 제공하였고 상담사는 제공 정보를 확인, 입금 지연 안내, 사용 목적, 서류 준비를 요청한 뒤 관리 사무소와 연결해 동호수 확인을 도와주었다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

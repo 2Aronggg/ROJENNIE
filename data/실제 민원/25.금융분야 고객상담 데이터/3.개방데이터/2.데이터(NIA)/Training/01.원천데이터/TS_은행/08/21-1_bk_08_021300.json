@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_021300",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 772,
+        "consulting_content": "고객은 모바일 앱에서 대출 연장을 시도했으나 오류가 발생해 기존 연장을 취소하고 재신청해야 한다는 안내를 받았고, 성명, 생년월일, 계좌번호, 비밀번호 등 본인 확인 절차를 진행하였다. 상담사는 추가 검증이 필요하다고 안내하고, 최신 앱 사용을 권장하며 검토 결과를 추후 연락드리겠다고 말했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

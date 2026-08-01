@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_014798",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 726,
+        "consulting_content": "고객은 자동이체 재등록을 요청하고 해지 여부를 확인하였으며, 상담사는 자동이체 재등록에 필요한 지로, 관리, 납부자 번호와 앱 조회 방법을 안내하고, 오류 시 연체 위험을 주의시키며, 가스회사에 문의하도록 권고하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

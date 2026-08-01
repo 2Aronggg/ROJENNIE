@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_003572",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1144,
+        "consulting_content": "고객은 영업 중단된 사업자 계좌에서 자동이체된 연금이 출금되는 문제를 제기하고 중지, 이체 신청 절차와 서류 발송 방법을 문의하였고 상담사는 퇴직연금 부서로 연결해 신청서 다운로드 또는 우편 발송 안내와 3~5일 처리, 우편 후 2일 내 서류 도착 및 3일 내 처리 등을 설명하고, 오후 3시 연락 예약 및 연락처 확인을 진행하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

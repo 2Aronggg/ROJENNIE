@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_003494",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1470,
+        "consulting_content": "고객은 전세 자금 대출 금리 감면 부족을 확인해 달라 요청했고 상담사는 고객의 급여계좌, 적금, 제휴카드 실적을 조회해 현재 금리는 3.0%이며, 이번달 적금 납입이 누락돼 감면이 적용되지 않았음을 안내하고, 적금 납입을 완료하면 최대 0.3% 추가 감면이 가능하다고 설명한 뒤 문자로 상세 내용을 보내겠다고 제안했으며, 고객은 이를 수락하고 추가 문의 없음을 확인하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

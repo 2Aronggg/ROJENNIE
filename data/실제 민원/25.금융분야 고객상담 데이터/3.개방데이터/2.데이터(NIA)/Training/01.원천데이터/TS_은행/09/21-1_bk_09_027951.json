@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_027951",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 889,
+        "consulting_content": "고객은 송금, 환전을 위해 400달러와 256,000원 환전을 요청했고, 환율 변동 시 처리와 일일 한도 여부를 문의하였다. 상담사는 신분증 지참 후 영업점 방문을 안내하고, 수수료 우대, 1~2시간 내 처리, 완료 시 문자 알림을 제공한다는 내용으로 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

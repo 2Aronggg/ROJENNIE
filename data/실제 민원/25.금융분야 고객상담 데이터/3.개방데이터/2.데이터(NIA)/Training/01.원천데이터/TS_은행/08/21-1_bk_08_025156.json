@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_025156",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 880,
+        "consulting_content": "고객은 마이너스 통장 대출 연장을 문의하고 절차, 서류와 본인 확인을 요청했으며, 성명, 생년월일, 계좌 정보를 제공하였다. 상담사는 확인 후 연장은 스마트론 상품으로 직접 연장이 어렵고, 연장 담당 부서에 전화 예약을 남겨 전화로 처리하도록 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

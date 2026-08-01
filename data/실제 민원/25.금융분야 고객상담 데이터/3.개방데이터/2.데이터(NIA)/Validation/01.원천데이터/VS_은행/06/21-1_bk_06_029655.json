@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_029655",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 907,
+        "consulting_content": "고객은 사업자 대출의 원리금 상환 방식과 이자 청구 상황을 확인하고 계좌 번호 변경을 요청했으며, 본인 확인 절차를 진행하였다. 상담사는 대출 계약을 조회하고 현재 고객이 이자만 납부 중이며 원금은 아직 파악되지 않아 추가 검토가 필요함을 안내하고, 원금 상환 시점 및 예상 이자 비용을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

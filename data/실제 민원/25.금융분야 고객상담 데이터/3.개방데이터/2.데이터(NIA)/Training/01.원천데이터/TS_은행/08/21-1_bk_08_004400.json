@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_004400",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1653,
+        "consulting_content": "고객은 상환일 확인과 계좌 번호 검증, 대출 연장 신청 및 필요한 서류와 오류 처리 방법, 처리 기간 및 완료 확인 문자를 요청하였고 상담사는 계좌 정보를 재확인하고 연장 시 기존 이자율 유지와 서류 제출 방법, 오류 시 코드 제공, 처리 기간은 영업일 3~5일이며 완료 시 문자, 이메일로 확인 메시지를 발송한다는 안내를 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

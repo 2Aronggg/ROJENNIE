@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_024774",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1355,
+        "consulting_content": "고객은 지점에서 10달러를 받았으며 이를 100달러로 교환하고자 하였고, 상담사는 원칙적으로 권종 교환이 불가하나 예외 확인을 위해 거래 일시, 직원명, 신분증 등 서류를 요청하고 검토 후 승인 시 수수료 없이 영업일 기준 다음 날 지점에서 수령 가능하다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

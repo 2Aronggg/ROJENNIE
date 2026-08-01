@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_029364",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1200,
+        "consulting_content": "고객은 대출 연장 신청 후 상환일 변경과 한도, 분할 납부, 연장 후 이자율 및 취소 방법을 문의하였고 상담사는 최초 실행일은 변경 불가함을 안내하고, 변경 절차와 가능 범위, 연장 시 적용되는 이자 변동, 수수료, 분할 납부 계획 안내 및 취소는 신청일 기준 영업일 내 연락 시 가능하다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

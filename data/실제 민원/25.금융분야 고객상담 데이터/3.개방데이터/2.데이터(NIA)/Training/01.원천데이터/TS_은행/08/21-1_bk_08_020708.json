@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_020708",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 2955,
+        "consulting_content": "고객은 대출 만기 연장을 원해 전화했고, 상담사는 계좌 정보 입력을 안내하고, 서명 미완료를 사진 전송 요청하였다. 연장은 자동 처리되어 만기일이 연장되고, 새로운 상환 일정, 이자율을 이메일로 받겠다고 안내했으며, 고객은 별다른 문의 없이 종료하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

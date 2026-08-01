@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_022004",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 944,
+        "consulting_content": "고객은 대출 연장을 문의하고 본인 인증을 위해 이름, 생년월일, 휴대폰, 계좌 비밀번호 입력을 거부했으며, 대출 금액, 남은 원리금 등을 제공하였다고 상담사는 인증 절차를 안내하고, 연장은 최대 5년까지 가능하나 조건에 따라 달라진다고 설명한 뒤 연장 신청 진행을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

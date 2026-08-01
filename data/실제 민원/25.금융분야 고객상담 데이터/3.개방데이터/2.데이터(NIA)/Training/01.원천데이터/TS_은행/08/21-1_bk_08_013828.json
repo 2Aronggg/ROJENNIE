@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_013828",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1547,
+        "consulting_content": "고객은 대출 연장을 신청하고 잔액, 만기, 필요 서류를 문의하였고 상담사는 대출 종류, 만기일을 안내하고, 금리 확정 및 심사 결과를 영업시간 내 문자로 알려드리겠으며, 문자 수신 시 앱에서 연장 절차를 진행하도록 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

@@ -1,0 +1,199 @@
+{
+  "mode": "text-only",
+  "top_k": 5,
+  "chunks": "data\\corpus\\all.jsonl",
+  "index_source": "jsonl:data\\corpus\\all.jsonl",
+  "total": {
+    "n": 42,
+    "hits": 40,
+    "misses": 2,
+    "recall": 0.9523809523809523
+  },
+  "sections": [
+    {
+      "label": "cases",
+      "n": 16,
+      "hits": 14,
+      "misses": 2,
+      "recall": 0.875,
+      "miss_details": [
+        {
+          "label": "cases",
+          "query": "회사 이사가 퇴임한 뒤에도 재직 중 보증한 채무의 책임을 계속 져야 하는지 판례가 있나요",
+          "expected_doc_id": "e0420f4d6ed2",
+          "acceptable_doc_ids": [
+            "e0420f4d6ed2"
+          ],
+          "top_results": [
+            {
+              "rank": 1,
+              "doc_id": "27b68c3a4c56",
+              "chunk_id": "27b68c3a4c56-c3",
+              "doc_type": "case",
+              "path": "kca:cases/kca/kca_1000242897.html",
+              "page": 1,
+              "section": "사용하지 않은 신용카드대금 청구취소 요구",
+              "score": 0.3117,
+              "match_type": "full_text",
+              "effective_from": null,
+              "effective_to": null,
+              "snippet": "제19조에 명시한 비밀번호 유출에 대한 회원의 과실 부분을 이 건 관련 비밀번호 유출에도 적용이 가능하며, 승인절차에서 카드회원 비밀번호 앞 두 자리가 입력되었으므로 부정사용자가 알고 있었다고 봄이 상당하여 청구인은 선량한 관리자의 의무를 태만이 한 중대한 과실이있다고 하는 점에 대해서는 · 카드의 비밀번호는 4자리 숫자"
+            },
+            {
+              "rank": 2,
+              "doc_id": "32e8d57f4d56",
+              "chunk_id": "32e8d57f4d56-c4",
+              "doc_type": "case",
+              "path": "kca:cases/kca/kca_1000954458.html",
+              "page": 1,
+              "section": "변호사 선임료 일부 환급 요구",
+              "score": 0.208,
+              "match_type": "full_text",
+              "effective_from": null,
+              "effective_to": null,
+              "snippet": "반한다고 볼 만한 특별한 사정이 있는 경우에는 예외적으로 상당하다고 인정되는 범위 내의 보수액만을 청구할 수 있다고 보아야 하므로(대법원 2002. 4. 12. 선고 2000다501490판결) 피신청인이 실제로 수행한 사무 처리의 정도에 따라 환급 여부를 판단해 보면, 신청외 '○진용'이 신청인을 고소한 사건에 대해서는 "
+            },
+            {
+              "rank": 3,
+              "doc_id": "39fda846a14f",
+              "chunk_id": "39fda846a14f-c3",
+              "doc_type": "case",
+              "path": "kca:cases/kca/kca_1000671690.html",
+              "page": 1,
+              "section": "신용카드 할부금 환급 및 청구 취소 요구",
+              "score": 0.208,
+              "match_type": "full_text",
+              "effective_from": null,
+              "effective_to": null,
+              "snippet": "통지하였고 그로 인하여 휴대폰 통화권을 제공하지 못하였으므로(매도인은 휴대폰 통화권을 충전하였기 때문에 정상적으로 계속 사용할 수 있다는 취지로 통지문에 기재하였지만 신청인은 그와 같은 통지문을 받을 때까지 통화권을 사용한 실적이 전혀 없었을 뿐만 아니라 알려준 전화번호 '080-384-****'로는 이미 통화 불능한 상"
+            },
+            {
+              "rank": 4,
+              "doc_id": "e816b5f7a15c",
+              "chunk_id": "e816b5f7a15c-c1",
+              "doc_type": "case",
+              "path": "local:cases/10_(여전)_중고차 시세를 면밀히 확인하고 중고차 담보 대출을 신청해야 합니다..hwp",
+              "page": 1,
+              "section": "10_(여전)_중고차 시세를 면밀히 확인하고 중고차 담보 대출을 신청해야 합니다.",
+              "score": 0.1993,
+              "match_type": "full_text",
+              "effective_from": null,
+              "effective_to": null,
+              "snippet": "<분쟁사례> 실제 중고차 가치보다 과도한 대출을 실행하였는지에 대한 분쟁 사례 < 민원유형 : 여신전문 – 담보 – 담보제도 ▣ 민원내용 여신전문금융회사(캐피탈 등, 이하 ‘여전사’)가 중고차 담보대출을 취급하는 과정에서 담보 차량에 사고 이력이 있었는데도 담보 평가를 소홀히 하여 실제 가치에 비해 과다한 대출을 실행한 "
+            },
+            {
+              "rank": 5,
+              "doc_id": "efd04f35e89d",
+              "chunk_id": "efd04f35e89d-c1",
+              "doc_type": "case",
+              "path": "kca:cases/kca/kca_1001099015.html",
+              "page": 1,
+              "section": "변액유니버셜보험의 연금보험으로 전환 요구",
+              "score": 0.1989,
+              "match_type": "full_text",
+              "effective_from": null,
+              "effective_to": null,
+              "snippet": "[사건개요] 신청인은 2005. 5. 16. 피신청인의 무배당○○변액유니버셜보험을 가입하여 유지하던 중 투자실적 등이 좋지 않아 보험료 납입을 중단한 상황에서 일반연금보험으로 전환을 요청하자, 피신청인은 약관 내용에 없는 계약 후 7년이 경과하지 않았다는 이유로 이를 거부함. [당사자주장] 가. 신청인(소비자) 신청인은 "
+            }
+          ]
+        },
+        {
+          "label": "cases",
+          "query": "대출 만기 연장했더니 금리가 갑자기 너무 많이 올랐어요",
+          "expected_doc_id": "01c1817ae095",
+          "acceptable_doc_ids": [
+            "01c1817ae095"
+          ],
+          "top_results": [
+            {
+              "rank": 1,
+              "doc_id": "9a8f26f047cb",
+              "chunk_id": "9a8f26f047cb-c1",
+              "doc_type": "case",
+              "path": "local:cases/7_(은행)_아파트 중도금대출 실행시 금리조건과 변동 주기 등을 확인해야 합니다.hwp",
+              "page": 1,
+              "section": "7_(은행)_아파트 중도금대출 실행시 금리조건과 변동 주기 등을 확인해야 합니다",
+              "score": 0.3173,
+              "match_type": "full_text",
+              "effective_from": null,
+              "effective_to": null,
+              "snippet": "<분쟁사례> 아파트 중도금대출 금리가 과도하게 인상되었다는 민원 < 민원유형 : 은행 – 대출 – 대출금리 및 제수수료 ▣ 민원내용 은행에서 실행한 아파트 중도금대출 금리가 1회차 대비 2회차에 과도하게 인상되었고, 가산금리가 같은 지역 다른 단지에 비해 너무 높게 산정되었다며 이에 대출금리 인하를 요청 ▣ 쟁점 대출금리"
+            },
+            {
+              "rank": 2,
+              "doc_id": "0b0fec36b804",
+              "chunk_id": "0b0fec36b804-p2-c2",
+              "doc_type": "product",
+              "path": "local:products/loan/대출거래약정서_가계용_2024-10.pdf",
+              "page": 2,
+              "section": "제2조",
+              "score": 0.1845,
+              "match_type": "full_text",
+              "effective_from": null,
+              "effective_to": null,
+              "snippet": "경우 은행은 영업점 게시판, 인터넷 매체 등을 통해 고시하기로 합니다. ③ 대출실행일에 결정된 대출이자율은 다음 각 호와 같이 변동됩니다. 1. 제1조 제7항의 「변동금리」 또는 「혼합금리」 대출의 대출기간 만료일 이내 가. 「MOR」에 연동하는 대출 : 대출실행일부터 매 「금리재산정주기」가 도래하는 날에 제2항에 의해 "
+            },
+            {
+              "rank": 3,
+              "doc_id": "b72d35f3d616",
+              "chunk_id": "b72d35f3d616-p1-c1",
+              "doc_type": "product",
+              "path": "local:products/loan/내집마련_디딤돌_대출상품설명서_2026-01.pdf",
+              "page": 1,
+              "section": "제4조(비용의 부담)",
+              "score": 0.1845,
+              "match_type": "full_text",
+              "effective_from": "2026-01-01",
+              "effective_to": "2027-12-31",
+              "snippet": "1540048 1540048 (2026. 01. 01 개정) 2. 대출 이자율￭ 고정금리 : 대출실행 시 결정한 금리가 대출거래약정서에서 정한 기간 동안 동일하게 적용되는 금리입니다.￭ 10년 고정 후 변동금리 : 대출실행 할 때 결정된 금리가 10년동안 동일하게 적용되고, 그 이후 국토교통부 고시 기준금리가 변경될 경우"
+            },
+            {
+              "rank": 4,
+              "doc_id": "aa1e89d00d18",
+              "chunk_id": "aa1e89d00d18-p1-c1",
+              "doc_type": "product",
+              "path": "local:products/loan/전월세_반환보증_상품비교팝업.pdf",
+              "page": 1,
+              "section": "page:1",
+              "score": 0.1561,
+              "match_type": "full_text",
+              "effective_from": null,
+              "effective_to": null,
+              "snippet": "상품명 국민주택기금 만기대환 주택전 세자금대출 KB 주택전세자금대출 (은행재 원 협약보증) 징검다리전세자금보증 주택전 세자금대출 상품특징 주택도시기금 전세자금대출 만기 대환을 위한 전세자금 대출상품 전세 신규입주 또는 계약갱신 을 하시는 고객님께 최고 임 차보증금의 80%까지 한국주 택금융공사 보증서 담보로 지 원하는 대"
+            },
+            {
+              "rank": 5,
+              "doc_id": "894463660603",
+              "chunk_id": "894463660603-p2-c1",
+              "doc_type": "product",
+              "path": "local:products/savings/쓱KB쇼핑적금특약0429.pdf",
+              "page": 2,
+              "section": "page:2",
+              "score": 0.1444,
+              "match_type": "full_text",
+              "effective_from": null,
+              "effective_to": null,
+              "snippet": "제 7 조 우대금리 만기해지 계좌가 다음의 우대금리 제공조건을 충족한 경우 가입일 당시 영업점 및 KB국민은행 홈페이지에 게시한 우대금리를 적용합니다. 항목 적용조건 신규 우대금리 (연 1.0%p) - 적금 신규 전일 기준 최근 1 년 주 1)동안 KB 국민은행 상품 주 2)을 보유하지 않았거나 “입출금이 자유로운 예금”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "products",
+      "n": 20,
+      "hits": 20,
+      "misses": 0,
+      "recall": 1.0,
+      "miss_details": []
+    },
+    {
+      "label": "guides",
+      "n": 6,
+      "hits": 6,
+      "misses": 0,
+      "recall": 1.0,
+      "miss_details": []
+    }
+  ]
+}

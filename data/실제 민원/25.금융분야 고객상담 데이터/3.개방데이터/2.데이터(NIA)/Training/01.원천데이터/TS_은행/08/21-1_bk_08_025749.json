@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_025749",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1911,
+        "consulting_content": "고객은 신용공유, 적금, 송금 정보 조회 신청 후 인증 번호 입력 위치와 처리 여부를 확인하고 대출 연장 및 앱 내 인증 절차 안내를 요청하였고 상담사는 각 서비스 절차와 필요한 서류를 안내하고, 인증 번호는 문자 6자리이며 앱 하단 메뉴를 통해 입력하는 방법을 단계별로 설명하고, 추가 문의 시 담당 부서 연결을 제안하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

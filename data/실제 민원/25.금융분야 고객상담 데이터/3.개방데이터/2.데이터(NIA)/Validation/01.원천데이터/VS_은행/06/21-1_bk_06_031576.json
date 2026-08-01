@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_031576",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 746,
+        "consulting_content": "고객은 대출 이자 납입을 놓쳐 가상계좌 발급을 요청했고 상담사는 계좌번호, 비밀번호를 받아 가상계좌 발급 절차와 입금 기한, 금액을 안내하였다. 고객은 대출 만기일을 물었고 상담사는 해당 일자를 알려주었으며, 조기 상환 의사를 밝혀 조기상환 수수료가 남은 원리금의 1%임을 안내하고 서면으로 상세 내역을 보내겠다고 했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

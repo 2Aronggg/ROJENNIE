@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_018989",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1765,
+        "consulting_content": "고객은 자동이체 내역 조회와 보증보험 자동이체 해지를 요청했으며 계좌번호 기억이 안 나는 등 본인 확인에 어려움을 겪었고, 상담사는 부분 정보와 생년월일을 받아 7건 내역을 안내하고 해지 여부를 확인했으며, 알림 서비스 설정 방법을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

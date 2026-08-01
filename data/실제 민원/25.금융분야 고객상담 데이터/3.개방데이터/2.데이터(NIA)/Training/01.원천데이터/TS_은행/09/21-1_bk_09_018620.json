@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_018620",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1512,
+        "consulting_content": "고객은 외환통장에 1천 달러를 현금 인출하고자 지점 방문 가능 여부와 1% 수수료를 물었고 상담사는 영업시간에 신분증 지참 시 인출 가능하고 수수료 차감 금액을 지급한다며 안내하였다. 고객은 수수료 절감을 위해 온라인 환전을 원했으며 상담사는 앱에서 환율 적용으로 별도 수수료 없이 원화 계좌로 입금되는 절차와 이체 한도, 인증 필요를 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

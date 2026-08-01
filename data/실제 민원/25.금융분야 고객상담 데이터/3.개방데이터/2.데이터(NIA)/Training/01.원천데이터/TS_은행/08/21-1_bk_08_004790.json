@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_004790",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1380,
+        "consulting_content": "고객은 대출 연장을 위해 서류를 핸드폰으로 전송하는 방법을 문의했으며, 본인확인 절차와 비밀번호 요구 등 인증 문제를 제시하였다. 상담사는 계좌 비밀번호, 보안카드 등 인증 방법을 안내하고, 사업자, 신용 대출별 필요 서류와 사진, PDF 전송 방식을 설명했으며, 연장 신청 후 영업일 2~3일 내 처리된다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_004359",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 687,
+        "consulting_content": "고객은 이자 관련 문자를 요청하고 성명, 생년월일을 제공했으며, 스팸 여부 확인 후 문자 재전송을 받았고 정상 전송을 확인하였다. 상담사는 신원 확인 후 문자 재전송을 안내하고 스팸 확인을 권유하며 전송 결과를 확인시킨 뒤, 추가 문의 여부를 물어보고 신규 적금 상품 간단 설명을 제안하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

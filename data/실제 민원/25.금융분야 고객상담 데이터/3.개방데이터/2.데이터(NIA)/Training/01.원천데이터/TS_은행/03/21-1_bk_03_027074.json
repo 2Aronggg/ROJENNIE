@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_027074",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 763,
+        "consulting_content": "고객은 ★★카드 자동이체와 계좌 등록을 전화로 요청하고, 수수료, 결제일, FAQ, 취소 방법, 전화번호를 문의했으며, 상담사는 카드, 계좌 정보 제공 및 전화, 어플 등록 안내, 수수료는 없고 이자, 연체료 가능성 설명, 결제일은 매월 말일이라 안내하고, 취소는 어플, 전화로 가능함을 알려 주고, 고객센터 전화번호는 홈페이지에서 확인 가능하다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

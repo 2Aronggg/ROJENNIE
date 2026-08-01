@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_019731",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1284,
+        "consulting_content": "상담사에게 고객은 운영 자금 대출 연장을 원하고 이자율 변동, 추가 비용, 필요 서류, 절차를 문의했으며, 상담사는 고객에게 연장 신청 후 서류 제출, 심사를 거쳐 금리를 확인하고, 심사 기간은 며칠이며 신용 점수 변동은 크지 않다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_014610",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 728,
+        "consulting_content": "고객은 대출 만기 연장을 요청하고 계좌, 본인 확인 정보를 제공하였고 상담사는 연장 신청은 문자 수신 후 버튼 클릭으로 진행되며 절차와 기한을 안내하고, 연장 외 조기 상환, 금리 변동 옵션을 간략히 설명하고, 현재 상환 일정은 매월 말일 자동 이체임을 알려주었다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

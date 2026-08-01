@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_028443",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1355,
+        "consulting_content": "고객은 어제 적금이 출금, 재입금된 내역과 한도 초과 여부를 확인하고 자동이체 금액 조정을 요청했으며 위약금 상세 내역을 이메일로 보내달라고 하였고 상담사는 적금은 분기당 한도가 있어 초과 입금은 자동 거절됨을 안내하고, 자동이체 금액을 변경하도록 타기관에 문의할 것을 권고하며, 현재 입금 내역과 남은 한도를 알려주고 알림 확인 방법을 설명한 뒤 위약금은 계약 기간에 따라 부과될 수 있음을 안내하고 이메일 발송을 약속하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_011273",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1353,
+        "consulting_content": "고객은 최근 자동 이체로 인한 출금 내역 확인과 푸시 알림의 이유 안내를 요청하였고 상담사는 계좌 정보 확인 후 시스템 조회 결과 자동 이체가 등록되지 않았음을 안내했다. 푸시 알림 또한 발송 내역이 없어 타 은행, 서비스 가능성을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_031159",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1421,
+        "consulting_content": "고객은 전세 대출 연장 신청을 위해 모바일 앱에 임대차계약서 PDF를 첨부하려 했으나 버튼이 비활성화돼 재시도와 캐시 삭제 후에도 진행되지 않아 도움을 요청하였고 상담사는 파일 확인, 시스템 점검을 안내하고, 현재 점검 중임을 전달한 뒤 전화 재연락 가능 여부와 오후 3시 이후 연락 시간을 확인하여 유선으로 연장 절차를 진행하겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

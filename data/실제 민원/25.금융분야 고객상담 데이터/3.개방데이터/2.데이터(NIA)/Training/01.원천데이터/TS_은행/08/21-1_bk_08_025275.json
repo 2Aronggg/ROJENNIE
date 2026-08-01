@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_025275",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 841,
+        "consulting_content": "고객은 주택 가격 인정 비율 하향 조정과 대출 연장 시 월 상환액 변동 및 보증서 갱신 거절 가능성을 문의하였고 상담사는 금리, 비율 변동으로 월 상환액이 재심사 후 조정될 수 있으며, 보증서 미갱신 시 연장이 어려울 수 있다고 안내하고, 소득 증빙, 감정평가서 제출을 요구하며, 관리점 연결 및 절차 안내를 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

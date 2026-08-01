@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_027507",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1438,
+        "consulting_content": "고객은 ●월●일 만기되는 적금을 정기예금으로 전환하고 금리 및 해지 절차를 문의하였고 상담사는 적금임을 확인하고 전환 절차를 진행한다는 안내와 기존 금리는 만기까지 유지, 이후 낮은 금리 적용을 설명하고, 방문 또는 모바일 해지 방법과 필요한 서류, 인증 절차를 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

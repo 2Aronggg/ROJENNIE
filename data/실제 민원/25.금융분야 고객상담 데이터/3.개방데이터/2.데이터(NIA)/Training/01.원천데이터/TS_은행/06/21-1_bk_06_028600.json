@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_028600",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1551,
+        "consulting_content": "고객은 오늘 인출된 공과금 내역과 자동이체 변경 여부를 확인하고자 하였고 상담사는 대출 원리금 상환 내역, 잔액, 납부 일정 등을 안내하였다. 고객은 남은 금액과 향후 상환 계획을 물었고 상담사는 현재 잔액과 원리금 차감 방식을 설명하고 자동이체 해지 절차를 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

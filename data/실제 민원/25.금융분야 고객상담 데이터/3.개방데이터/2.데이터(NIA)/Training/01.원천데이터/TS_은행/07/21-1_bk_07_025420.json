@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_025420",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 894,
+        "consulting_content": "고객은 개인 대출 연장 및 급여 자동이체 확인을 요청하였고 상담사는 연장 절차는 자동으로 처리되며 부수거래 체크는 필요 없다고 안내하였다. 고객은 조기 상환 위약금 산정 방식과 제출 서류를 문의하였고 상담사는 남은 기간 비례 계산과 신청서, 신분증 사본 제출이면 된다고 답변하였다. 고객은 안내대로 진행하겠다고 확인하였고 상담사는 자동 급여이체 변동 없음을 재확인하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

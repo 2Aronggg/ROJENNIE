@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_008821",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1005,
+        "consulting_content": "고객은 타은행 대출 이자 납부를 위해 이번 달 가상계좌 발급을 요청하였다. 상담원은 성명, 주민번호 앞자리, 출금계좌 정보를 확인하고 문자, 이메일 인증을 진행하여 인증을 완료하였다. 가상계좌 번호와 오늘 입금 마감 시각을 문자로 전송하고, 입금 시 자동 다음 달 이자 납부가 진행된다고 안내하였다. 고객은 매월 자동 가상계좌 생성 옵션을 신청하였으며"
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

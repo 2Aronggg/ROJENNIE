@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_011760",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1129,
+        "consulting_content": "월●●일 ● 어째 세시 십일분에 예금 입금 예적금 만기 안내 차 전화하셨구요. 해당 일자와 시간에 맞춰 안내드리겠다. 지금 문자를 한번 확인해 드리겠다. ●●●일 날 문자도 가셨을 거에요. 문자를 확인하고 상세 내용을 전달드리겠다.만료 건으로 되지 않으셔서 연락이 되지 않으셔서 이자도 가셨구요. 지금 만기는 ●●●일로 확인되세요. 현재 남은 일수와 이자 정산 방법을 안내드리겠다. 일반 입출금 통장으로 만기시에 자동으로 입금되세요. 입금 일정과 금액을 다시 한번 확인해 드리겠습니"
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

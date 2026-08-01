@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_018036",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1472,
+        "consulting_content": "고객은 현재 대출 만기와 비대면 신규 대출, 연장 상품의 금리, 상환 조건을 문의하고 서류 목록 및 방문 일정을 요청하였고 상담사는 스마트론 연장 안내, 필요 서류와 화요일 오후 2시 방문 예약을 잡아주며 금리 변동은 신용등급, 시장 상황에 따라 달라진다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

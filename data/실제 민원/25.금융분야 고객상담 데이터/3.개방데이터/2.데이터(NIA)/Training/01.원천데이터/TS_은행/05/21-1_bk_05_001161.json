@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_001161",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1393,
+        "consulting_content": "고객이 재직증명서 제출 후 개설한 계좌의 한도 조회와 변경, 해지, 비밀번호 재설정 절차를 문의하였고, 상담사는 온라인과 전화 모두에서 한도 확인이 가능하다고 안내하였다. 또, 한도 증액을 위한 서류 제출 방법과 팩스 절차, 오류 발생 시 대응 방안, 해지 후 잔액 처리와 대출, 적금 유지 여부, 비밀번호 재설정 방법까지 단계별로 설명했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_015800",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1187,
+        "consulting_content": "고객은 등록된 이메일 주소 오류로 대출 원금, 이자 상환 내역을 받지 못한다며 새로운 이메일로 변경을 요청하였고 상담사는 고객 정보를 확인 후 이메일을 즉시 변경하고 확인 메일을 발송하였으며, 이후부터 정상 전송될 것이라고 안내하고 ARS 연결 및 월말 내역 미수신 시 모바일 뱅킹 조회 방법을 추가로 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

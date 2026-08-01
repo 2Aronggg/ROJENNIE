@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_028061",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1062,
+        "consulting_content": "고객은 자동이체 날짜 변경을 시도했으나 오류와 화면 표시 문제로 진행되지 않아 방문 및 전화 처리를 요청했고, 상담사는 날짜는 월말, 급여 이체 등 제한이 있음을 안내하고, 모바일 앱에서 관리 메뉴 진입 방법을 설명하며 직접 변경이 불가능할 경우 영업점 방문이나 문자 안내를 권유하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

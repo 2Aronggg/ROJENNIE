@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_011999",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1074,
+        "consulting_content": "고객은 한도 계좌 서류를 팩스로 보내고 싶으며 필요한 서류와 신분증 사본 여부를 문의하였고 상담사는 해당 지점이 팩스 수신 가능하다고 안내하고 서류와 신분증을 함께 팩스한 뒤 전화로 연락하면 신속히 검토가 진행된다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

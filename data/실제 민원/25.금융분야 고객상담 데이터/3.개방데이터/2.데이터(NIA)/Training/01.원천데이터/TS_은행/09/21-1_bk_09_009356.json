@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_009356",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1017,
+        "consulting_content": "고객은 달러 환전 시 권종 선택 및 온라인 예약 방법을 문의하였다. 상담원은 권종은 지점 방문 시 요청해야 하며, 대형 권종부터 우선 제공된다고 안내하였다. 소액 권종도 요청 가능하나 재고 상황에 따라 대체 권종을 제시한다는 설명을 제공하였다. 온라인 예약은 모바일 앱의 해당 메뉴에서 가능하며, 성명, 연락처, 원하는 권종, 금액을 입력하면 문자로 확인받을 수 있다고 안내하였다. 방문 시 신분증만 지참하면 되며, 평일 오후 방문 시 대기 시간이 짧다고 답변하였다. 급한 경우 사전 전화 문의로 우선 순위 조정이 가능하다고 추가 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

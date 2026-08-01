@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_019264",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1072,
+        "consulting_content": "고객은 급히 목돈이 필요해 상품의 일회성 출금 가능 여부와 최소 잔액, 수수료 등을 문의하였고 상담사는 최소 잔액 유지와 약정 이자, 해지 수수료 적용을 안내하고 주민센터 문의를 권유하였다. 고객은 계약 만기 시 지원금 수령 가능 여부와 절차를 물었고 상담사는 계약서에 따라 지원금이 지급되며 주민센터에 계약서 번호와 신분증 사본을 제출해 확인하도록 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

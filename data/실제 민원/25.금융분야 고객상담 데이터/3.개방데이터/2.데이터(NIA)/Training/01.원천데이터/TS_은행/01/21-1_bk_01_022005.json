@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_022005",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 898,
+        "consulting_content": "고객은 본인 확인을 위해 계좌번호, 비밀번호, 성명, 생년월일을 제공하고, 승인되지 않은 2023년 5월 10일 오후 3시 금액 ●●●삼분 출금을 신고하였고, 상담사는 신원 확인 후 해당 출금이 ING, VI, OK와 연계된 자동이체임을 조회, 확인하고, 고객이 승인하지 않았음을 확인한 뒤 추가 문의 여부를 물어 마무리하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_004562",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1092,
+        "consulting_content": "고객은 일일 이체 한도 초과로 이체가 안 된다고 문의했으며, 한도 제한 해제 방법과 절차를 물었고, 상담사는 해당 계좌가 거래 목적 증빙이 없을 경우 하루 ●●원까지만 이체 가능하다고 설명하고, 급여 입금, 자동이체 등 이용 이력 확보 또는 3~5일 심사, 영업점 방문 시 서류 제출 후 30분 내 임시 해제 가능하다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_005776",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1419,
+        "consulting_content": "고객은 이체 한도 증액이 제한되어 있어 한도 계좌의 한도 증액과 해치 벙법에 대해 문의했다. 상담사는 한도계좌의 증액은 불가능하고 일반계좌의 전환을 안내하며 전환을 위해 영업점 방문 또는 팩스로 서류 제출과 결과 통보 기간, 모바일 뱅킹 앱 업데이트를 안내했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

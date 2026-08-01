@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_013533",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1320,
+        "consulting_content": "고객은 대출 연장을 위해 필요한 서류를 문의하고 계좌, 본인 확인 정보를 제공하였고, 상담사는 계좌 확인 후 소득 금액 증명원이 없으면 연장이 제한된다고 안내하였다. 고객은 주민센터에서 발급받은 증명서를 가지고 있으며, 상담사는 해당 기관에 직접 문의하도록 권고하였다. 고객은 추가 서류로 최근 3개월 급여 명세서와 주민등록증 사본을 준비하겠다고 하였고, 상담사는 오늘 오후 2시 방문 예약을 잡아주겠다고 확인하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

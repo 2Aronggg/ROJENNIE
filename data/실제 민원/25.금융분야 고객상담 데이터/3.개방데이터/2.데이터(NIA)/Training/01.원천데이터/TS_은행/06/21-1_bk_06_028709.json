@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_028709",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1491,
+        "consulting_content": "고객은 가상 계좌 정보를 문자로 받기를 요청하고 본인 확인을 위해 이름, 생년월일, 비밀번호를 제공했으며, 비밀번호 오류로 재시도 후 상담사는 ARS 연결을 통해 계좌를 조회하고 대출 중인 사실과 가상 계좌는 일회성 발급이라 정기 발송이 불가함을 안내하고, 입금 마감 시각과 잔액 확인 방법을 설명했으며, 고객센터 연락 어려움을 사과하고 보안 주의와 추후 새 계좌 발급 필요성을 전달하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

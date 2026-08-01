@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_010733",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 960,
+        "consulting_content": "고객은 고정 금리 대출이 변동 금리로 전환되는 이자 차액과 적금 연계 우대 조건, 복리 적금 중도 해지 패널티를 문의하였고 상담사는 변동 금리 차액은 잔액, 기준금리 기준으로 앱에서 확인 가능하며, 우대는 기존, 신규 적금 일정 금액 유지 시 적용된다고 안내하고, 중도 해지는 남은 기간 비례 이자 차감이라고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

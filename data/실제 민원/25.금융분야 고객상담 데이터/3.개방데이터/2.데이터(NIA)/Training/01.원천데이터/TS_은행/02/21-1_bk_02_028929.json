@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_028929",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1096,
+        "consulting_content": "고객은 영업점 연금 전달이 안돼 반환이 지연된 상황을 확인하고, 예상 입금 시점과 온라인 뱅킹 조회 방법을 문의하였고 상담사는 거래 번호, 일자, 금액을 확인 후 반환 처리 현황을 조회하고, 3~5 영업일 내 입금 가능성을 안내하며 온라인 뱅킹 조회 절차를 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

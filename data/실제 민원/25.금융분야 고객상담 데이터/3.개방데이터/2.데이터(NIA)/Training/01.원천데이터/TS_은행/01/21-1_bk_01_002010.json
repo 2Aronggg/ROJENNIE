@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_002010",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1464,
+        "consulting_content": "고객은 자동 이체 설정 확인 방법 및 자동이체 실패 방지 방법, 재설정 방법에 대해서 문의하였고, 상담사는 자동이체 실패 이유에 대해서 설명하고, 자동이체 재설정 방법, 자동이체 일정 변경 방법 및 자동이체 취소 방지 방법에 대해서 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

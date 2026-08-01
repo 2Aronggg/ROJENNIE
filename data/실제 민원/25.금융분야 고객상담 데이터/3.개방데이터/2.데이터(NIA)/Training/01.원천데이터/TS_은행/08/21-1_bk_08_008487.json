@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_008487",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1307,
+        "consulting_content": "고객은 마이너스 대출 연장을 문의하였으며, 대출 만기와 연장 금리 심사가 완료되었음을 안내받았다고 보고하였다. 연장은 모바일 앱 신청 또는 녹취 부서 접수를 통해 진행 가능하다고 설명하였다. 문자로 진행 상황을 받아보겠다고 동의하였으며, 등록된 휴대폰 번호를 확인하였다. 또한 상환 부담 완화를 위해 대출 기간 연장을 원한다는 의사를 밝히고, 신분증 사본 및 급여 내역 등 추가 서류 제출이 필요함을 안내하였다. 이후 필요 시 언제든지 연락하라는 안내로 상담을 종료하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

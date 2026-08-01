@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_015677",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1473,
+        "consulting_content": "고객은 문정 지점에서 대규모 달러 환전을 원하고 금액, 통화 종류, 권종 제한 및 필요 서류를 문의하였고 상담사는 실시간 시세에 따라 금액 제한이 있으며 현장 방문 시 신분증, 거주 확인 서류가 필요하고 상한선은 ●●원, 수수료는 0.5%임을 안내하고 추가 문의 시 연락을 권유하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

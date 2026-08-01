@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_028608",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1556,
+        "consulting_content": "고객은 입금 확인이 안돼 카드 종류와 입출금 여부를 문의했고 상담사는 본인 확인 절차 후 계좌, 비밀번호 입력을 안내하여 입금 내역을 확인, 금액이 정상 처리됐다고 답변하였다. 고객은 출금 제한 여부를 추가로 물었고 상담사는 타행 기기 이용으로 일시적 제한 가능성을 설명하였다. 이후 고객은 해외 이용 시 주의사항을 요청했고 상담사는 통화 전환 신청, 한도, 수수료 안내를 제공하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

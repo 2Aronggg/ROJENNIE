@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_023132",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 606,
+        "consulting_content": "고객은 성함, 주민등록번호, 연락처를 제공하고, 연금 계좌를 변경한 후 이번 달 연금이 입금되지 않았다고 신고했으며, 은행에서 연금 기관에 직접 확인할 수 없으니 해당 기관에 문의하도록 안내받고, 확인 절차에 3~5일 소요될 수 있음을 안내받았고, 이후 전화 연결 방법을 안내받아 추가 문의 없이 통화를 종료하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

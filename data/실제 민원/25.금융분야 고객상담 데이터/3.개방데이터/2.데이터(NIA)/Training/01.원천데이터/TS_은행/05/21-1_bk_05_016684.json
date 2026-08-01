@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_016684",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1665,
+        "consulting_content": "고객은 한도 계좌 해제를 원하고 현재 계좌가 보안 조치로 제한된 상황임을 설명하며 신분증, 거래내역서 등 서류를 준비해 방문하겠다고 하였고 상담사는 한도 계좌는 일일 이체 한도만 적용되는 계좌이며 해제는 전화가 아닌 지점 방문이 필요하고, 해제 후에도 기본 일일 이체 한도가 유지되며 증액 신청이 가능하다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_021098",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1787,
+        "consulting_content": "고객은 아이 청약 저축 통장의 계좌 번호와 자동이체 상태를 확인하고자 했으며, 계좌 번호 확인 방법과 보호자 인증 절차, 인터넷뱅킹 로그인 방법을 문의하였고, 상담사는 보안 정책상 전화로 번호 제공이 불가하므로 인터넷뱅킹 로그인 후 상단 메뉴에서 계좌조회 및 자동이체 관리 방법을 안내하고, 보호자 인증은 주민등록증, 휴대폰 인증으로 진행한다는 설명과 자동이체 미등록 시 신규 등록 절차를 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

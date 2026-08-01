@@ -67,6 +67,77 @@ def redact_pii(value: str) -> tuple[str, int]:
     return redacted, count
 
 
+# 프롬프트에 "단정적 결론·보상액 추정을 쓰지 마라"고 지시하는 것만으로는 LLM이 그
+# 지시를 어겨도 걸러낼 방법이 없다. PII처럼 후처리 시점에 실제로 걸러낸다 - 이 목록에
+# 걸리면 해당 텍스트 전체를 버리고 호출부가 자기 fallback으로 대체하게 한다.
+# 13개 규칙 + 확장 규칙을 모든 LLM 출력에 적용
+FORBIDDEN_CLAIM_PATTERNS: tuple[str, ...] = (
+    # 금지된 법적 결론
+    "법적 결론",
+    "법률상",
+    "위법입니다",
+    "불완전판매입니다",
+    "계약위반입니다",
+    
+    # 보상·배상 추정 (금지)
+    "보상액",
+    "배상액",
+    "배상비율",
+    "책임비율",
+    "보상받",
+    "배상받",
+    "환급될 것",
+    "환급됩니다",
+    "환급받을",
+    
+    # 자동 외부제출 지시 (금지)
+    "자동 제출",
+    "외부 제출",
+    "제출하겠습니다",
+    "신청하겠습니다",
+    "접수하겠습니다",
+    
+    # 부정확한 법적 조언
+    "소송을 권장",
+    "민사소송을",
+    "형사고소를",
+    "손해배상청구를",
+    "가압류를",
+    
+    # 명백한 거짓/환상
+    "반드시 성공",
+    "확실히",
+    "100% 받을",
+)
+
+
+def sanitize_llm_text(value: str) -> str:
+    """Drop LLM-authored text that crosses into legal conclusions or compensation estimates.
+
+    Returns "" (not a partial edit) when a forbidden pattern is found, so callers
+    fall back to their own deterministic template instead of shipping a
+    half-redacted sentence.
+    
+    Used across ALL LLM output paths:
+    - report_composer.py
+    - logic_verification.py
+    - rag_query.py (검색어 생성)
+    - Any future LLM stages
+    """
+    text = value.strip()
+    if not text:
+        return ""
+    lowered = text.lower()
+    if any(pattern.lower() in lowered for pattern in FORBIDDEN_CLAIM_PATTERNS):
+        return ""
+    return text
+
+
+def sanitize_llm_texts(values: list[str]) -> list[str]:
+    """Apply sanitization to a list of texts, filtering out empty results."""
+    return [item for item in (sanitize_llm_text(value) for value in values) if item]
+
+
 def _strip_additional_properties(schema: Any) -> Any:
     """Gemini Developer API rejects additionalProperties in response schemas."""
     if isinstance(schema, dict):

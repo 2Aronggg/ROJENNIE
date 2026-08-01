@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_008110",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1046,
+        "consulting_content": "고객은 전세 대출 만기 연장을 원하며 계약서 촬영, 업로드 절차와 필요 서류를 문의하였다. 상담사는 연장 신청은 연장 체크 후 계약서 사진을 문자 또는 이메일, 앱을 통해 전송해야 한다고 안내하였다. 전송 오류 시 이메일 또는 앱 업로드 방법을 제시하였다. 연장 승인 결과는 영업일 기준 1~2일 내에 문자로 통보되며, 승인 거절 시 기존 상환, 재대출 옵션을 제안한다는 내용도 전달하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

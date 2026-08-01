@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_025561",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1275,
+        "consulting_content": "고객은 잘못된 송금으로 자금 반환 신청을 하고 계좌, 본인 확인을 완료했으며 처리 기간을 문의했으며, 상담사는 계좌, 본인 확인을 받고 처리 절차와 영업일 3~5일 소요를 안내하고, 해외 송금 분쟁 처리팀으로 연결해 상세 안내를 제공하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

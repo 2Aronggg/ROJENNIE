@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_016774",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1604,
+        "consulting_content": "고객은 대출 상품 및 상환 계획, 이자 납입 현황과 청약저축으로의 자동 이체 오류를 확인하고 싶다고 요청하였고 상담사는 대출 조회, 이자 미납 여부 확인, 청약저축 이체 내역 검토 및 오류 해결 절차를 안내하고, 금리 변동 및 조기 상환 절차도 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_000534",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1566,
+        "consulting_content": "고객은 대출 만기 연장을 문의하며 연장 절차, 신청 채널, 금리 적용 방식, 소요 시간, 수수료 및 신용 점수 영향 등에 대해 질문하였다. 상담원은 각 항목에 대해 설명하고 모바일 앱, 인터넷 뱅킹, 영업점 방문 중 가장 빠른 방법을 안내하며 ARS 연결을 통해 연장 신청을 진행하도록 도와주었다. 현재는 관리점에서 금리 심사가 진행 중이며 승인 후 문자 안내를 받으면 연장을 완료할 수 있다고 전했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_000282",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1273,
+        "consulting_content": "고객은 사업자 대출 연장을 원해 필요한 서류와 제출 방법을 문의했고, 상담사는 대출 연장신청을 위한 모바일 앱 경로, 사진 촬영 요령, 인증서 발급 절차 등을 안내했다. 또한 연장 심사 기준과 결과 통보 시점, 부정적 결과 시 대처 방안 등에 대해서도 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

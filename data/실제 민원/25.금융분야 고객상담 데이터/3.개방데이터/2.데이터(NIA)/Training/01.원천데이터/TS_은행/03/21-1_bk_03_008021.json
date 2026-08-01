@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_008021",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1286,
+        "consulting_content": "고객은 전화상으로 자동이체 해지를 원하였다. 상담사는 전화로는 해지가 불가능하고 인터넷, 모바일 뱅킹을 이용해야 한다고 안내하였다. 해지 절차는 로그인 후 자동이체 관리 메뉴에서 해지 버튼을 눌러 확인하면 완료된다고 설명하였다. 해지 시 수수료는 일반적으로 부과되지 않으며, 상품별 약관을 확인하라고 전달하였다. 현재 고객 계좌에 두 건의 자동이체가 등록되어 있으며, 고객은 ★★은행으로의 자동이체만 해지하기를 원하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_030737",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 939,
+        "consulting_content": "고객은 마이너스 통장 이용 조건과 카드 실적 할인 기준을 문의했으며, 신용, 체크카드 사용액과 자동이체 금액을 합산해 ●●●원 이상이면 혜택이 적용된다고 상담사는 안내하였다. 고객은 자동이체 금액이 변동될 경우 혜택이 중단될 수 있음을 확인하고, 별도 신청 절차 없이 자동이체 설정만으로 할인과 마이너스 통장 연계 혜택이 없음을 상담사는 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_001952",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1254,
+        "consulting_content": "고객은 통장에서 확인되지 않은 자동이체에 대해 문의했고, 상담사는 해당 코드가 외부 업체와 연결된 자동이체임을 설명하며 시작 시점과 해지,이전 절차를 안내했다. 잔액부족 시 자동이체 자동이체 처리방식과 연체료 여부, 비밀번호 재설정 방법, 일시 중지 절차도 알려 주었다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

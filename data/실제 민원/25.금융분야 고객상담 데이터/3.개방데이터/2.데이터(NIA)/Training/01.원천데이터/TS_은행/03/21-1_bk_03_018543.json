@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_018543",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1404,
+        "consulting_content": "고객은 자동이체 출금이 오늘 처리된 것을 확인하고 잔액 부족 이력 및 날짜 변경을 문의했으며 상담사는 오늘 잔액 충족으로 이체가 정상 처리됐고 이전 누적 부족이 원인이라고 답변하였다. 고객은 자동이체 해지와 재등록, 수수료 여부 및 일일 한도 초과 시 처리를 물었고 상담사는 수수료 없이 즉시 해지 가능하고 24시간 내 재등록 가능하며, 앱에서 해지, 재등록 후 날짜 수정이 가능하고 한도 초과 시 잔액 부족으로 실패해 알림이 전송된다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

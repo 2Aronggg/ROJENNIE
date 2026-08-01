@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_011921",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1462,
+        "consulting_content": "고객은 사업자 통장 개설과 한도 증액 방법을 물었고 상담사는 서류는 영업점 방문 또는 팩스로 제출 가능하고 신청서 양식은 이메일로 송부한다는 안내를 하였다. 고객은 필요 서류와 팩스 번호를 물었고 상담사는 사업자등록증, 신분증, 매출증명서, 팩스 번호를 알려주었다고 하였다. 고객은 대출 연계와 영업점 예약, 카드센터 연결을 요청하였고 상담사는 연계 검토 후 오후 2시로 예약 잡아주고 연결해 주었다고 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_007578",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1251,
+        "consulting_content": "고객은 가상 임차인 계좌에 입금된 금액과 일자를 확인하고자 하였으며, 해당 입금이 ★★은행을 통해 이루어졌다고 진술하였다. 또한 잘못 송금된 금액의 원금 회수를 위한 절차와 필요한 서류 제출을 문의하였다. 상담원은 입금 내역 확인을 위해 거래일자, 금액 재제시와 계좌번호 확인을 요청하고, 통장 사본을 이메일로 송부하도록 안내하였다. 회수 절차는 관련 부서에 이관 후 진행되며, 처리 결과는 추후 통보한다는 안내를 제공하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

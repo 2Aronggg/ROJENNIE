@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_016103",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 928,
+        "consulting_content": "고객은 전세 대출 연장 방법과 서류 제출, 이자율, 상환 방식 변동 여부, 연장 완료 알림을 문의하였고 상담사는 연장은 조건 변경 없을 시 디지털 신청 가능하며, 최근 3개월 급여 내역서와 거주 확인 서류를 앱에 사진 업로드하도록 안내하고, 이자율과 상환 방식은 기존대로 유지된다고 설명했으며, 연장 승인 시 앱과 휴대폰으로 알림이 발송된다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

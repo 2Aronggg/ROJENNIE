@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_010025",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1365,
+        "consulting_content": "고객은 연체 미납 안내 문자 수신 경위와 현재 연체 여부, 추가 이체의 처리 내역을 문의했고, 상담사는 미납 일부로 일시 연체 후 상환 완료임을 안내하고 자동이체 등록, 오전 이체 시간대 지정, 재이체 옵션 및 납부 알림 설정 방법을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

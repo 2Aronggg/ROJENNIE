@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_005305",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 2011,
+        "consulting_content": "고객은 송금 한도 초과와 대출 한도 증액을 문의하였다. 상담원은 현재 송금 한도가 ●●원이며 일일, 일회성 한도를 안내하고, 1천만원으로 상향 조정 신청 후 보안 인증을 진행하여 한도를 조정하였다. 또한 대출 한도는 현재 ●●●●원이며 사용 가능한 여유가 ●●원임을 확인하고, 소득 증빙, 급여 내역, 등기부 등본 등 서류를 온라인으로 제출하면 영업일 1~2일 내에 심사 후 증액이 반영된다고 안내하였다. 두 한도는 별도 신청 절차가 필요하나 동시에 진행할 수 있음을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

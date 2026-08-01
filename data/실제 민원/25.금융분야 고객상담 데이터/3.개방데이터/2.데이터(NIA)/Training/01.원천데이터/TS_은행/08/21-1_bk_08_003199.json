@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_003199",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1184,
+        "consulting_content": "고객은 마이너스 통장 한도, 사용 현황 및 연장 절차와 서류를 문의하고 본인 확인 정보를 제공했으며, 연장 승인이 진행 중임을 확인하고 승인 시 문자로 안내받고 금리는 승인 후 확정된다고 안내받았다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

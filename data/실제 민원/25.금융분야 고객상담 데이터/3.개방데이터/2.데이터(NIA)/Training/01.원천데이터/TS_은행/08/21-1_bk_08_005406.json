@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_005406",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1216,
+        "consulting_content": "고객은 마이너스 통장 연장을 문의하였고, 상담원은 자동 연장은 불가하며 직접 신청해야 한다고 안내하였다. 잔액과 만기일을 전달하고, 기존 이율 유지 및 연장 수수료 발생을 설명하였다. 신청은 인터넷뱅킹,모바일 앱 또는 문자 링크로 가능하며, 미이행 시 연체 이자,연체료가 발생할 수 있다고 경고하였다. 연장은 비대면으로만 가능함을 재차 강조하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

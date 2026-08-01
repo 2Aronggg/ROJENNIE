@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_031978",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1304,
+        "consulting_content": "고객은 연체 이자, 원금 조회와 자동이체 일자 확인을 요청하였고 상담사는 계좌 확인, 본인확인 후 연 10% 가산이자 적용과 자동이체 오늘 처리 예정임을 안내하였으며, 연체 해소 시점과 잔액이 남을 경우 추가 입금 또는 재조정 옵션을 설명하고 오늘 절차가 완료됐음을 알렸다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

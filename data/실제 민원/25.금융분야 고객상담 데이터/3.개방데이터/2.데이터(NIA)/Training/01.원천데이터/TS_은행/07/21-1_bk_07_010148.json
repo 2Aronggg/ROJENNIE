@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_010148",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "신규고객",
+        "consulting_client_type": null,
+        "source_length": 1760,
+        "consulting_content": "고객은 대출 실행 후 부수거래 실적 조건, 가입 시기, 필요 서류 및 카드 결제 기준을 문의하였고 상담사는 대출일 기준 30일 내 실적 충족, 소득증명서, 신분증 제출, 신용, 체크카드 〇〇원 이상 사용 시 실적 반영 등을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

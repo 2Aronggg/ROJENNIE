@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_000034",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1408,
+        "consulting_content": "고객은 성인용 공인인증서가 만료되어 재발급 방법을 문의하였다. 상담사는 로그인 제한 해제 후 재발급 가능, 이체 정지 확인 방법, 모바일 앱을 통한 온라인 신청 절차, 필요 서류, 처리 기간, 비용 및 즉시 발급 옵션, 인증서 연동 방법 등을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

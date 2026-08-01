@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_021492",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1206,
+        "consulting_content": "고객은 마이너스 대출 연장 승인이 되었는지 확인하고 절차와 이자율을 문의하였고 상담사는 현재 금리 5.4% 적용, 승인 시 2~3일 내 비대면 약정서 작성 절차와 추가 납입 금액 없음 등을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

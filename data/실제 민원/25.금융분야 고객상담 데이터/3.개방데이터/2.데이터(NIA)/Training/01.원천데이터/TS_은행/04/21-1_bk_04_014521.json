@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_014521",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1515,
+        "consulting_content": "고객의 청약 종합저축 통장 해지 문의에 따라 앱 내 예금 관리 메뉴 진입 방법과 해지 예정 조회 절차를 안내하였다. 화면 전환 오류와 간편 로그인, 인증서 문제 여부를 확인하도록 설명하였고, 투자 화면 등 불필요한 화면은 뒤로가기를 통해 이동하도록 안내하였다. 해지 버튼이 보이지 않거나 온라인 진행이 불가한 경우 신분증과 통장, 도장을 지참해 지점을 방문해야 처리 가능함을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

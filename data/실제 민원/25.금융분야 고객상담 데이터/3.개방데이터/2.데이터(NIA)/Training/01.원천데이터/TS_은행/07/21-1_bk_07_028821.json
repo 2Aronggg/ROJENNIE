@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_028821",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1338,
+        "consulting_content": "고객은 대출 이자 차이와 감면 조건을 확인하고자 본인 확인 및 계좌, 생년월일 정보를 제공하였고 상담사는 계좌 확인 후 금리 상승 및 급여 입금 여부를 검증하여 현재 급여 미충족으로 감면이 보류됨을 안내하고, 대체 소득 증빙 제출 및 다음 체크일 이후 차감 적용 가능성을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

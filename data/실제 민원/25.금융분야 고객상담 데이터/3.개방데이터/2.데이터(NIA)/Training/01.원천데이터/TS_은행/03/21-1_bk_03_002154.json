@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_002154",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1196,
+        "consulting_content": "고객은 자동이체가 지정일에 이뤄지지 않아 원인을 문의했고, 은행은 한도 초과와 미납으로 인해 자동이체가 중단됐다고 설명했다. 미납 금액을 조기에 입금하고, 한도 내에서 자동이체를 재개하도록 안내했으며, 금액, 일자 변경, 다른 적금 상품 전환, 해지 절차 등에 대한 상세 안내도 제공했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

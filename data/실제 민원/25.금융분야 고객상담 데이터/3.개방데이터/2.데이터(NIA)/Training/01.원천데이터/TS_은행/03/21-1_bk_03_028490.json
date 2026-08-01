@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_028490",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1254,
+        "consulting_content": "고객은 자동 이체 중지일과 계좌 확인, 연장 신청 시점 등을 문의하고, 인터넷뱅킹 미사용 여부와 계좌 유지 여부를 확인했으며, 연장 진행을 요청하였다. 상담사는 자동 이체 중지일을 확인하고, 계좌, 전화, 성명 확인 후, 인터넷뱅킹을 사용하지 않아도 계좌는 유지되며 연장은 정지 예정일 최소 7일 전까지 가능하다고 안내하고, 즉시 연장 절차를 진행해 완료 후 문자로 통보하겠다고 응답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

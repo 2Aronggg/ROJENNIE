@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_002942",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 2725,
+        "consulting_content": "고객은 자동이체 신청 문자에 혼란을 느껴 신청 여부, 기관 코드 의미, 해지 및 환불 절차, 보안 조치 등을 문의했고, 상담원은 거래 내역 확인 방법, 기관 확인 절차, 해지 및 환불 단계, 사기 방지와 보안 강화 방법, 모바일 앱과 전화 상담 시 준비 사항, 이메일 알림 전환 설정 등을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

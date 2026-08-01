@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_001023",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1665,
+        "consulting_content": "고객은 통장 연결 문제와 대출 이자 계산 불가 상황을 해결하기 위해 가상 계좌 발급 절차와 입금 방법을 문의했고, 상담원은 번호 입력, 문자 인증, 비밀번호 보안, 입금 최소 단위와 마감 시간, 자동이체 잔고에 따른 입금 거부 조건 등을 안내하였다. 상담원은 추가로 입금 후 실시간 확인, 차액 이월, 수수료 없음, 마감 시간 초과 시 다음 영업일 처리 등에 대한 내용도 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

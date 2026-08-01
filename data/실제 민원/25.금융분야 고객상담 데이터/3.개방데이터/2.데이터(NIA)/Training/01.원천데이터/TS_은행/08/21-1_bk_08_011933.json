@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_011933",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1535,
+        "consulting_content": "고객은 기업 대출 연장 현황 확인을 요청하고 본인 확인, 문자, ARS 인증 및 비밀번호 입력을 하였고 상담사는 인증 후 대출 존재와 연장 적용, 새로운 만기일을 안내하였다. 고객은 보증보험 비대면 처리와 현재 이자율, 차환 가능 여부를 문의하였고 상담사는 비대면 가능 여부와 4.5% 이자율, 차환은 별도 심사 필요함을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

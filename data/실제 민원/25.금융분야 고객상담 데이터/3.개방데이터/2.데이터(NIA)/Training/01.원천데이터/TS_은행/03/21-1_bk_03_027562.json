@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_027562",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 842,
+        "consulting_content": "고객은 자동이체 발생과 중단 절차를 문의하였고 상담사는 해당 이체가 정상 등록, 출금됐음을 확인하고, 계좌 관리 메뉴 또는 전화 신청 시 본인 확인 및 경우에 따라 서면 신청이 필요함을 안내했으며, 일반적으로 수수료는 없으나 기관에 따라 발생할 수 있다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

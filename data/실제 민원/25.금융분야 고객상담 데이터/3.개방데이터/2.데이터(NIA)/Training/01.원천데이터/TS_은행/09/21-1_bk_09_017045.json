@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_017045",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "80세이상",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1644,
+        "consulting_content": "고객은 원화 환전을 원하고 VIP 등급에 따른 수수료 우대 적용 여부와 필요한 서류, 지점 서비스 제공 여부, 환전 한도 및 영업시간을 문의하였고 상담사는 VIP 고객에게 수수료 % 우대 적용을 안내하고 신분증 등 서류 지참 및 영업점 방문 절차를 설명하며, 해당 지점 서비스 중단을 알려주고 환전 한도는 등급별로 차등 적용됨을 안내하고 영업시간은 평일 9시~18시라고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

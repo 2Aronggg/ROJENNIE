@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_016126",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 627,
+        "consulting_content": "고객은 위안화 매수를 원하고 내일 지점 방문 절차와 필요 서류를 문의하였고 상담사는 외화 매수 가능 금액 변동, 실시간 환율 적용, 신분증, 외화거래신청서, 법인통장 사본을 문자로 서류 안내하고 영업점에 방문 시 준비하도록 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

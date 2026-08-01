@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_022823",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1349,
+        "consulting_content": "고객은 부수거래 조건 문의를 위해 입출금 통장 번호와 생년월일, 비밀번호를 제공하여 본인확인을 진행하였고 상담사는 확인 후 ★★카드 10만원 이상 결제 시 혜택이 적용된다고 안내하였으며, 금리 적금이나 주택청약 중 하나만 충족하면 되고 주택청약을 해지해도 혜택이 유지된다고, 타은행 적금은 별도 조건이라 현재 혜택에 영향을 주지 않는다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

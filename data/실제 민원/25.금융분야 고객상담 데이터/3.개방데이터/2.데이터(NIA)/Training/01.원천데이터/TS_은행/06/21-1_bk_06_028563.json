@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_028563",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1142,
+        "consulting_content": "고객은 대출 관련 출금, 이자 납부 확인과 카드 발송 일정, 다음 이자 납부일을 문의하였고 상담사는 오늘 출금, 이자 납부 완료를 안내하고, 카드 발송은 영업일 기준 3~5일 소요됨을 알려주었으며, 다음 이자 납부일은 2025‑12‑15이며 온라인 뱅킹, 명세서로 이자 내역 확인 가능하다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

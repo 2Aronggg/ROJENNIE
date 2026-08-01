@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_013480",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1345,
+        "consulting_content": "고객은 대출 만기 연장을 문의하였고 상담사는 본인 확인 절차를 안내하였다. 고객은 계좌 비밀번호 입력이 어려워 다른 인증 방법을 요청하였고 상담사는 대체 인증을 제시하였다. 고객은 비대면 연장이 제한되는 상품임을 확인하고 서류를 문자로 받기를 원했으며 상담사는 서류 발송 및 방문, 우편 제출 방법을 안내하였다. 고객은 우편 제출 의사를 밝히고 상담사는 관리점 주소를 제공하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

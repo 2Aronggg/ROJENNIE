@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_013017",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1354,
+        "consulting_content": "고객은 모바일 앱으로 연장 신청이 안 된다고 문의하고 약정서 미작성 및 문자 재발송을 요청하였고 상담사는 약정서를 전화상에서 작성해야 함을 안내하고, 연장 절차 링크가 포함된 문자를 재발송하며, 앱 오류 시 캐시 삭제, 업데이트, 재설치를 권고하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

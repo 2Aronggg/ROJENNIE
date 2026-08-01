@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_028407",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1067,
+        "consulting_content": "고객은 가상계좌 번호가 표시되지 않아 입금이 어려움과 금액을 나눠 보낼 수 없다고 문의했으며, 새로운 가상계좌 발급 절차와 대출 상환 방법을 요청하였다. 상담사는 가상계좌는 정확한 금액으로만 입금 가능하고, 재발급은 앱 인증 후 즉시 가능하다고 안내하고, 상환은 앱, 웹에서 진행 가능하며 오늘 영업시간 내 처리해 드리겠다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

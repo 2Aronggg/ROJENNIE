@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_004571",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1854,
+        "consulting_content": "고객은 O체한도 변경을 요청하고 서류 제출 방법과 반영 시점을 문의하였고 상담사는 신원 확인 후 앱 메뉴 안내와 서류 제출 방법을 설명하고, 서류 검토 후 영업일 기준 며칠 내에 한도 변경이 적용된다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

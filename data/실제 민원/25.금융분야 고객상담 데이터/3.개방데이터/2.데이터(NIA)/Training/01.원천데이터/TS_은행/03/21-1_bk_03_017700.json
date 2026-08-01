@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_017700",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1297,
+        "consulting_content": "고객은 연금 자동이체 해지를 원하고 카드 교체를 위해 먼저 해지를 요청했으며, 상담사는 자동이체 해지는 보안 매체와 폰뱅킹 가입이 필요하다고 안내하고, 고객의 폰뱅킹 미가입 및 인증 오류를 확인한 뒤 영업점 방문 또는 앱에서 해지 절차를 수행하도록 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

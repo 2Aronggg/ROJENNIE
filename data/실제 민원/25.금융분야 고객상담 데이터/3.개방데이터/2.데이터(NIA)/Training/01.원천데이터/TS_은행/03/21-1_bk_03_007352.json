@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_007352",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1950,
+        "consulting_content": "고객은 고정 적립식 적금 자동 이체가 실패한 이유를 문의하였다. 은행은 이체일이 15일이며 해당일 입금이 없어 보류됐다고 안내하였다. 고객은 이체일을 20일로 변경 요청했고, 은행은 시스템에 반영하여 다음 이체부터 20일에 진행될 것이라고 확인하였다. 자동 이체 실패 시 문자 알림 서비스를 설정하도록 안내하고, 고객은 문자 알림을 선택하였다. 고객은 매월 5천원 자동 적립 펀드 가입을 원해 설정을 완료하고, 중도 해지 시 수수료, 이자 손실이 발생할 수 있음을 고지하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_009580",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1279,
+        "consulting_content": "고객은 기존에 설정해 둔 자동 이체가 실행되지 않는다며 문의하였다. 상담원은 계좌 조회를 진행하였고, 출금 계좌 잔액 부족으로 이체가 실패한 것으로 확인하였다. 고객에게 입출금 통장에 해당 금액을 입금하면 자동 이체가 재시도된다고 안내하였다. 입금 방법은 모바일 뱅킹의 입금 메뉴 또는 지점 방문을 권장하였다. 또한 자동 이체 실패 시 문자 알림 서비스를 설정하도록 안내하였다. 고객은 안내에 따라 입금 및 알림 설정을 진행하기로 하였으며 추가 문의는 없다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

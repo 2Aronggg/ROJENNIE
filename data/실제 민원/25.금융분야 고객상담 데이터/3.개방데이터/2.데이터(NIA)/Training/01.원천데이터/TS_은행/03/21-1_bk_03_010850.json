@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_010850",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 2129,
+        "consulting_content": "고객은 월급 자동이체 금액 변경을 요청했으나 본인 확인이 어려워 계좌 확인을 거부하였고 상담사는 전화로는 변경이 불가하므로 인터넷뱅킹 또는 모바일 앱에서 자동이체 관리 메뉴로 금액을 수정하고 인증 절차를 거치라고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

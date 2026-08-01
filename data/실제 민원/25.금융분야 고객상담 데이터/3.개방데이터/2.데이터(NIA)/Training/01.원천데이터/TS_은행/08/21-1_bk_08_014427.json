@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_014427",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1480,
+        "consulting_content": "고객은 전세대출 연장을 원해 연장 절차와 필요 서류, 비용을 문의하였고 상담사는 연장은 영업점 방문, 주민등록증, 급여명세서, 계약서 사본 필요하며, 이자, 수수료는 별도 안내 예정이라며 서류와 일정 안내 문자를 발송하고 방문을 요청하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

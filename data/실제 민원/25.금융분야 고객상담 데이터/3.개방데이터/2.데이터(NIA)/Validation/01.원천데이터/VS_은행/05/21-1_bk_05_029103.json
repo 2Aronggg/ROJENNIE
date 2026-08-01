@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_029103",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1442,
+        "consulting_content": "고객은 대표님의 개인 급여 통장 한도 해제를 위해 필요한 서류와 절차를 문의하고 전화번호를 제공했으며 처리 기간과 수수료 여부를 물었고, 상담사는 계좌가 개인 통장임을 확인하고 영업점 방문, 서류 제출이 필요함을 안내하며 문자로 서류 목록을 보내고, 처리 기간은 3~5영업일, 수수료는 없다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_018671",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1112,
+        "consulting_content": "고객은 계좌번호, 성명, 생년월일 등 본인 확인 정보를 제공하였고 상담사는 연체 없음을 안내하였다. 고객은 납부 금액, 마감일을 물었고 상담사는 금액 변동 가능성과 상환 방식을 설명하였다. 고객은 자동이체 설정을 요청했고 상담사는 절차를 문자로 안내하였다. 고객은 조기 상환 수수료를 문의했으며 상담사는 잔액 기준 1% 정도 발생한다는 정보를 제공하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

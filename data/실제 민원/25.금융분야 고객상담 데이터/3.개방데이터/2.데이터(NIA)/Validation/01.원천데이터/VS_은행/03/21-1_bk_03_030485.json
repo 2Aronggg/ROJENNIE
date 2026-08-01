@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_030485",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1238,
+        "consulting_content": "고객은 자동이체 등록 사실을 몰라 확인을 요청했고 상담사는 본인 확인을 위해 계좌번호, 생년월일, 비밀번호 입력을 안내하고, 해당 이체가 디지털 OOO 조폐 공사와의 정상 거래임을 확인해 안심시키며, 필요 시 해당 기관에 문의하도록 권고하고 문자 인증을 진행하겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

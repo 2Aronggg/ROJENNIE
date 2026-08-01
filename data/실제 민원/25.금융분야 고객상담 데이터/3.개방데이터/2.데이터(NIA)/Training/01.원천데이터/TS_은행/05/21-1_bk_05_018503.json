@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_018503",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1395,
+        "consulting_content": "고객은 금융거래 한도 해제를 위해 영업점 방문 시 재직증명서 필요 여부와 대체 서류, 팩스 가능 지점, 처리 기간 및 급행 요청 방법을 문의하였고 상담사는 재직증명서, 급여명세서, 원천징수 영수증 중 하나면 충분하고, 영업점 방문 또는 최초 개설 지점 팩스로 제출 가능하며, 심사는 3~5영업일 소요, 급행은 전화, 이메일로 요청 가능하고 비용은 무료라고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

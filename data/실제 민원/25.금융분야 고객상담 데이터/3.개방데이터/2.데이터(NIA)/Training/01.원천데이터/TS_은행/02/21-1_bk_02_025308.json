@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_025308",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1153,
+        "consulting_content": "고객은 상담원에게 입금 일시, 금액, 동호수 미기재 문제를 확인하고 문자로 결과를 받기를 요청하였고 상담사는 고객에게 입금 및 입금한 사람의 신원 확인 절차를 안내하고, 관련 부서에 확인 후 문자 전송 및 향후 주의사항으로 동호수 기재를 권고하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

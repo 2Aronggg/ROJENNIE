@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_008804",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1200,
+        "consulting_content": "고객은 카드 발급과 보험 자동이체 해지를 요청하였다. 상담사는 자동이체 해지는 해당 은행 앱의 메뉴 → 자동이체 → 조회, 변경, 해지 진행해야 함을 안내하였다. 카드 발급은 신청일 기준 영업일 3일 이내에 우편으로 발송되며, 발송 완료는 앱 알림 및 문자로 확인 가능하다고 설명하였다. 카드 수령 후 비밀번호는 동봉 안내서 또는 앱 보안 메뉴에서 영문, 숫자 조합으로 변경할 수 있다고 안내하였다. 해지된 자동이체는 동일 계좌, 금액으로 새로 등록하면 되며, 등록 절차는 앱 이체 메뉴에서 자동이체 선택 후 입력, 승인만 하면 간단하다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

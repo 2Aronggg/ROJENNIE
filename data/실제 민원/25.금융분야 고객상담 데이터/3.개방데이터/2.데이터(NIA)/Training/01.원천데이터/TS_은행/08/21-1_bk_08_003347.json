@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_003347",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1686,
+        "consulting_content": "고객은 마이너스 통장 한도와 연장 절차를 문의하였고 상담사는 현재 만기일과 연장에 필요한 정확한 입금액을 알려 오늘 입금하면 연장이 완료되고, 지연 시 연체, 추가 이자가 발생한다는 점을 설명하였다. 고객은 승인 기간과 지점 방문 가능 여부를 물었고 상담사는 영업일 기준 1~2일 소요와 가까운 지점 방문을 통한 상담도 가능하다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

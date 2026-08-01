@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_004048",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1370,
+        "consulting_content": "고객은 기업 대출 연장을 인터넷뱅킹으로 시도했으나 여신 한도 소진으로 신청 메뉴가 보이지 않아 방법을 문의했고, 상담사는 계좌, 비밀번호 확인 후 연장 신청 링크를 문자로 발송하고, 추가 문의 시 연락처 안내 및 방문 예약 가능함을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

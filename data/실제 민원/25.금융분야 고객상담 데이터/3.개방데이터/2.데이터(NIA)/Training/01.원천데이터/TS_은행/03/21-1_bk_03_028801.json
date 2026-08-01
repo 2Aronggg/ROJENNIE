@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_028801",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 868,
+        "consulting_content": "고객은 자동이체 등록 안내 문자를 받고 해당 업체를 모른다며 확인을 요청했고 상담사는 고객의 전화번호를 받아 앱 내 신청 기간 및 자동이체 내역 확인 방법을 안내하고, 해지, 변경은 앱 설정에서 가능하다고 설명하였다. 또한 자동이체는 인터넷뱅킹 이용을 권유하고, 대출 상품 안내는 홈페이지, 앱 확인 및 상담 연결 가능하다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

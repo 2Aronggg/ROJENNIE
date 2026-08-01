@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_010380",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 972,
+        "consulting_content": "고객은 원금 금액, 이자 계산 방식, 월별 상환액, 조기 상환 위약금, 자동 이체 설정을 문의하였고 상담사는 원금은 ●●원, 변동 금리 적용, 매월 원금은 계약대로이며 이자는 원금 감소에 따라 감소하고 조기 상환 시 위약금이 발생할 수 있음을, 자동 이체는 모바일 앱, 인터넷 뱅킹으로 설정 가능하다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

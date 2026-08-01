@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_000187",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1319,
+        "consulting_content": "고객이 대출 연장 신청 시 발생하는 시스템 오류로 문의하였고, 상담사는 시스템 점검으로 인한 일시 제한임을 안내했다. 점검이 완료되어 연장 신청이 정상 승인되었으며, 이 과정에서 필요 서류, 최대 12개월 연장 가능, 금리 변동폭 및 연장 신청 거절 시 대안 등 관련 조건을 설명했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

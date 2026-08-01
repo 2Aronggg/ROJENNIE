@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_017569",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1306,
+        "consulting_content": "고객은 대출 금리 인하 조건과 최소 급여 입금액, 인증 시 제출 서류를 문의하였고 상담사는 급여가 연속 3개월 이상 일정 금액 이상 입금되어야 하며, 적금, 카드 인증 시 최근 3개월 이내 신분증 사본과 거래내역서를 제출해야 한다고 안내하고, 인증은 모바일 앱 문자 링크로 진행하고 서류는 앱 내 업로드하면 영업일 1~2일 내 검토 후 결과를 통보한다는 절차를 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

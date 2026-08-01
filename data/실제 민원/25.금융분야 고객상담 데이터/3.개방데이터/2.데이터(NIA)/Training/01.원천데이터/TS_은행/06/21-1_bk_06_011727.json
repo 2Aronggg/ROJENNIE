@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_011727",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "신규고객",
+        "consulting_client_type": null,
+        "source_length": 1481,
+        "consulting_content": "고객은 카드 결제일 알림이 없어 금액을 몰라 자동이체가 어려워 대출 정보 통지 서비스 등록을 요청하였고 상담사는 계좌 확인 후 문자, 카톡 알림을 즉시 등록하고 결제 금액, 원금, 이자를 안내하였으며 자동결제 할인 혜택과 상담 기록 문자 수신을 안내하고 비밀번호 변경 방법을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_027106",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1334,
+        "consulting_content": "고객은 대출 입금이 확인되지 않아 입금 확인 및 처리 시간을 문의했고, 상담사는 계좌, 문자, SMS 인증을 진행하고, 입금 확인은 영업시간 기준 1~2시간 이내이며, 대출 상환은 자동이체, 인터넷뱅킹, 모바일 앱 등으로 가능하다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

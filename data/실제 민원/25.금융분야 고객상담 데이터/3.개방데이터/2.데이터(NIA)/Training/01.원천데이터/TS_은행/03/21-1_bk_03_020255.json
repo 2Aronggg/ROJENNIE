@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_020255",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1387,
+        "consulting_content": "고객은 아파트 관리비 자동이체 해지를 요청하고, 해지 절차와 재등록 방법을 문의하였고 상담사는 스마트뱅킹 앱을 통한 자동이체 해지 방법을 안내하고, 카드사 연동 해지 필요성을 설명하며, 해지 후 재등록은 앱에서 신규 설정하면 된다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

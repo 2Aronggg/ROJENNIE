@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_032070",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1003,
+        "consulting_content": "고객은 우편으로 받은 두 건의 대출 만기 연장을 문의하고 계좌 정보를 제공했으며, 연장된 대출의 이자율은 기존과 동일하고 기준 금리 변동 시 차액 정산을 안내받고, 상환 방법 변경은 전화, 인터넷뱅킹으로 신청 가능하고 영업일 1~2일 내 적용된다는 설명을 들었고, 상담사는 연장 일정과 자동 연장 여부, 추가 요금 없음 등을 확인, 안내하며 상담을 종료하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

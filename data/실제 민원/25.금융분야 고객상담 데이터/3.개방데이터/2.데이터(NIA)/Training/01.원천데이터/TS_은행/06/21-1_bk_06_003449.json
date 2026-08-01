@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_003449",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1075,
+        "consulting_content": "고객은 연체 대출 이자, 원금 금액과 입금 방법을 문의하였고 상담사는 연체 금액, 연 15% 이자율, 가상계좌, 모바일, 방문 납부 가능 및 자동이체 현황을 안내하였다. 고객은 만기일과 연장 시 금리 변동 가능성을 물었고 상담사는 만기일을 알려주며 연장 심사 결과에 따라 금리 유지, 변동 가능함을 설명하였다. 고객은 입금 후 영수증 발송을 요청했으며 상담사는 문자, 이메일, 온라인으로 영수증을 제공한다는 답변을 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

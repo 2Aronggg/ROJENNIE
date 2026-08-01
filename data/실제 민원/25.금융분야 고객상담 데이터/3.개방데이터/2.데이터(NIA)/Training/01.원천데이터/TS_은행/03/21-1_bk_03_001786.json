@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_001786",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1474,
+        "consulting_content": "고객은 기존 자동이체 현황을 확인하고 새로운 자동이체 신청, 한도 설정, 알림 서비스 활성화, 재시도 옵션 조정, 일정 변경 및 해지 절차 등에 대해 문의했으며, 상담원은 각각의 절차와 조건을 설명하고 필요한 설정을 바로 적용해 주었다. 마지막에 수수료 정책을 안내하고 상담을 마무리하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

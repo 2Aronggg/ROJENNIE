@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_018977",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1417,
+        "consulting_content": "고객은 전세 대출 만기 연장을 문의하고 연장 가능 여부, 필요 서류, 심사 기간, 금리, 수수료 변동 및 계약서 제출 여부를 물었고, 상담사는 임대인 협의 필요, 기존 계약서 가능 여부, 소득, 통장 증빙 서류 제출, 영업점 방문 또는 보관 안내와 심사 5~7일 소요, 금리, 수수료 변동 설명 및 기존 상환 방식 유지 가능성을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

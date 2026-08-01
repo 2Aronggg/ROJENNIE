@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_030531",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1228,
+        "consulting_content": "고객은 대출 이자 자동이체가 안돼 문의하고 계좌, 비밀번호, 생년월일을 제공해 본인 확인을 하였고 상담사는 입금 확인 후 오늘 영업시간 내 자동이체가 진행될 예정이며 금액이 일치함을 안내하고, 연체 안내 메일 발송 및 자동이체 실패 시 다음 영업일 재시도와 문자 통보 절차를 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

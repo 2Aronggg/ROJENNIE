@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_023664",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1276,
+        "consulting_content": "고객은 이사로 인한 관리비 자동이체 해지를 오늘까지 진행하고 싶다고 요청했으며, 잔액 확인 및 출금 여부를 우려하였다. 상담사는 앱, 홈페이지에서 해지 방법을 안내하고, 오늘 출금될 수 있으니 잔고를 비워두고, 해지 마감일은 ●●일까지이며 출금 시 2일 이내 환불 절차를 안내하고, 상세 절차를 문자로 전송하겠다고 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

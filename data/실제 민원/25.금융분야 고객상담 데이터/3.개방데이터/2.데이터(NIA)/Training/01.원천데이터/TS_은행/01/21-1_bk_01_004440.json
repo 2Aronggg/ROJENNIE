@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_004440",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1406,
+        "consulting_content": "고객은 출금 내역을 확인하고 계좌 잠금, 비밀번호 재설정을 요청하였고 상담사는 계좌, 거래 내역을 조회하고, 계좌 잠금 요청을 접수해 인증 코드를 발송, 인증을 완료한 뒤 새로운 비밀번호 설정 절차를 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

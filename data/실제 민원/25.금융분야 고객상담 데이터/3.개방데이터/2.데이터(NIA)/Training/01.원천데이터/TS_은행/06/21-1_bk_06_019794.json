@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_019794",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1938,
+        "consulting_content": "고객은 대출 연체 이자와 금액 차이를 확인하고 이자 계산, 납부 일정, 자동이체 변경 및 낮은 금리 신규 상품을 문의하였고 상담사는 계좌 확인 후 이자 내역을 설명하고 차액을 해명한 뒤 자동이체 변경 가능과 금리 낮은 상품을 제안하며 상세 안내를 문자, 이메일로 발송하겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_026006",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1402,
+        "consulting_content": "고객은 문자 대출 안내를 받고 사용 금액, 남은 한도, 이자, 연장 절차, 필요 서류, 현금 상품을 문의하였고 상담사는 사용 금액과 남은 한도가 약 ○○○원임을 알려주고, 이자는 사용액에 따라 변동돼 제시 가능하다고 안내했으며, 연장은 전화, 인터넷뱅킹으로 가능하며 신분증, 급여내역서 필요하다고 설명하고, 급히 현금이 필요할 경우 소액 대출 상품이 제공된다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

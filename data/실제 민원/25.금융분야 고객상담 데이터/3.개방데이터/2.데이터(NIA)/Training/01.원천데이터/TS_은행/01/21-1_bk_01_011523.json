@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_011523",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1303,
+        "consulting_content": "고객은 만기된 투자 상품의 거래내역 확인을 요청하였고 상담사는 앱 로그인 상태를 확인한 뒤 메뉴, 전체계좌, 해지계좌 순으로 안내하여 해당 계좌 상세 화면에서 해지 일자, 금액, 거래내역을 확인하도록 하였다. ●●●●●●●●●●●●●●"
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

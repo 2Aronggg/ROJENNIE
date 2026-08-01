@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_022077",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 915,
+        "consulting_content": "고객은 대출 상환 절차와 남은 금액을 문의하였고 상담사는 잔액을 안내하고 가상계좌 정보를 문자로 발송하였다. 고객은 안내받은 가상계좌로 오늘 지정 금액을 입금하겠다고 하였고 상담사는 입금 방법과 마감 시간을 설명하였다. 고객은 향후 재대출 가능 여부를 물었고 상담사는 현재 상환 상황과 신용 점수에 따라 추후 안내드리겠다고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

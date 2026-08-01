@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_006043",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1531,
+        "consulting_content": "고객은 기존 대출 상환에 사용 중인 통장을 이용할 수 없어 가상계좌 발급을 요청하였다. 상담원은 해당 대출 상품은 가상계좌 발급이 불가하다고 안내하고, 다른 개인통장을 입금계좌로 등록하여 온라인 상환이 가능하도록 처리하였다. 고객은 제공받은 계좌번호와 예금주명을 전달하였으며, 금요일 입금을 예정하였다고 확인하였다. 또한 현재 이자율은 계약 시 고정이며 변동되지 않으며, 조기상환 시 위약금 발생 가능성을 설명하였다. 조기상환은 영업점 방문, 전화 또는 향후 온라인 신청이 가능하다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

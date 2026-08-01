@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_029545",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 955,
+        "consulting_content": "고객은 모바일 연금 이체를 일반계좌로 전환하고 싶다고 요청했으며, 상담사는 현재 계좌가 하루 출금 한도 ●●원인 제한계좌이며 전환은 앱 확인 후 서류 제출, 영업점 방문이 필요하다고 안내하고, 직접 방문이 가장 편리하다고 권유하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_025004",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 905,
+        "consulting_content": "고객은 ARS에 계좌 번호와 비밀번호를 입력해 연결된 증권 계좌를 조회하고자 하였고 상담사는 계좌가 증권 계좌임을 확인해 입금, 거래 방법을 안내하였다. 고객은 수수료 적용 기준과 영업시간을 문의하였고 상담사는 100만 원 이하 0.15%, 초과 0.12% 등 설명하고, 입금 후 실시간 거래 가능 및 보안 강화 방안을 제시하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_010865",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1209,
+        "consulting_content": "고객은 부정 인출 사실을 알렸고 상담사는 거래 내역 확인, 환불 절차는 영업일 3~5일 내 진행 및 문자 안내, OTP, 거래 알림 서비스 신청을 안내하고 현재 잔액 및 최근 입출금 내역을 문자로 제공하였으며, 상담을 종료하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

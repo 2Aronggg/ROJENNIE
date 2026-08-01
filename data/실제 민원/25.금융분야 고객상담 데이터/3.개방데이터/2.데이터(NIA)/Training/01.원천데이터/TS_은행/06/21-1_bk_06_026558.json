@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_026558",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 793,
+        "consulting_content": "고객은 대출금 결제 방법을 문의하였고 상담사는 본인 확인을 위해 ARS 연결, 개인정보, 비밀번호 입력을 요청하였다. 고객은 이름, 생년월일, 주소와 비밀번호를 제공하였고 상담사는 가상계좌 번호와 입금 마감 시각, 일회성 사용, 잔액 비우기 안내를 하였다. 고객은 입금 확인 시점과 영수증 발송 방법을 물었고 상담사는 실시간 확인과 문자 영수증 전송을 안내하고 알림 서비스 신청을 받아들였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

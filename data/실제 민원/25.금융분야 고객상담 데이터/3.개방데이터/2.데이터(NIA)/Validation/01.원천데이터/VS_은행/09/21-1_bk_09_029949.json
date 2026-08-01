@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_029949",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1265,
+        "consulting_content": "고객은 입금 일자와 금액을 확인하고 수령 날짜, 지점 변경을 시도했으나 온라인 화면에서 날짜 선택이 안 보여 상담사는 로그인 재시도 후 거래 선택, 수정 화면 이용을 안내하고, 최소 24시간 전 변경 요청과 오늘 방문 필요성을 설명했다. 또한 신분증만 있으면 별도 서류 없이 지정 날짜, 지점에서 수령 가능하다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

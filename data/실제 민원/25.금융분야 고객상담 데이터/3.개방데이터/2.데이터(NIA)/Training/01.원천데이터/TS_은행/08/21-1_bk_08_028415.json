@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_028415",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1326,
+        "consulting_content": "고객은 전세 대출 잔액, 이자율 확인과 계약 연장 서류, 링크 제공, 조기 상환 수수료와 연장 결과 시점, 카카오톡 알림을 요청하였다. 상담사는 잔액, 이자율을 안내하고 모바일 연장 신청 링크와 서류 리스트를 전달했으며, 조기 상환 수수료는 원금 1%임을 설명하고 연장 결과는 영업일 2~3일 내 문자, 이메일, 카카오톡으로 알려드리겠다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

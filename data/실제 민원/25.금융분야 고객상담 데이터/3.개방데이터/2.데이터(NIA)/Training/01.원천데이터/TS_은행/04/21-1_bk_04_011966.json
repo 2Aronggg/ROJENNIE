@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_011966",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1528,
+        "consulting_content": "고객님께서 납입하신 ●원으로 원금은 ●원이며, 현재까지 발생한 이자는 ●원으로 이미 입금된 상태입니다. 해당 금액이 입금된 계좌는 별도로 관리되고 있다. 추가 확인이 필요하시면 알려 주세요. 잠시만 기다려 주시면 시스템에서 해당 계좌 정보를 조회하여 정확히 안내해 드리겠다. 확인 결과, 입금된 계좌에서는 현재 ●원 입금이 완료된 것으로 보입니다. 이 내용이 맞는지 다시 한 번 확인해 주시겠습니까?자동 연장 서비스를 이용하시면 만기일에 자동으로 동일 금액이 재투자되며, 별도 신청 없이 진행됩니다. 자세한 조건은 약관에 명시되어 있으니 필요 시 안내해 드리겠다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

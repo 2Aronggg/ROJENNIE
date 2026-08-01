@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_003946",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1112,
+        "consulting_content": "고객은 대출 원리금 자동이체가 아직 출금되지 않아 입금 시점과 영업시간 영향을 문의했고, 상담사는 입금 마감 시각까지 입금하면 영업시간과 무관하게 자동 출금이 진행되며, 출금 간격은 시스템에 따라 몇 분씩 차이날 수 있고, 취소는 전화, 앱으로 간단히 가능하며 연체 시 약관 기준 이자가 적용된다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

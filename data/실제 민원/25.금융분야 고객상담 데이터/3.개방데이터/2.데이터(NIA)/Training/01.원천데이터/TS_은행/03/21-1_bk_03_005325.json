@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_005325",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1513,
+        "consulting_content": "고객은 스마트폰으로 자동 이체 등록을 시도했으나 계좌 번호 오류가 발생했다. 상담원은 자동 이체 등록이 인터넷뱅킹이나 영업점에서만 가능함을 안내했다. 고객은 에이알에스 연결 후 화면에 금액 입력 오류가 나타났음을 보고했다. 상담원은 정수 입력과 계좌 번호 재확인을 요구했으며, 시스템 점검 가능성을 언급했다. 고객이 온라인 해결을 원하자 모바일 앱에서 재시도하도록 권유받았으며, 오류 화면 캡처를 전송하면 담당팀이 검토 후 연락하겠다고 안내했다.전송후 고객님께 전송이 확인되었다. 담당 팀이 검토 후 연락드리겠다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

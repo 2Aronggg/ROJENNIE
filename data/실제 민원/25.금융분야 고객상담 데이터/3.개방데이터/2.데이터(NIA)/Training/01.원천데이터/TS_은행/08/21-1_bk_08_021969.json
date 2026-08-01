@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_021969",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 541,
+        "consulting_content": "고객은 전세 대출 연장 가능 여부와 절차를 문의했으며, 상담사는 연장은 자동이 아니며 계약서 등 서류 제출 후 영업점 심사로 진행된다고 안내하고, 필요 서류와 방문 예약 방법을 설명하였다. 고객은 서류를 준비해 방문 일정을 잡겠다고 답했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

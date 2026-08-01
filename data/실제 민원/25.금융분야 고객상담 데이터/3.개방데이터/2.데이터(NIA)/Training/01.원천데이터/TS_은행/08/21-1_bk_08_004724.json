@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_004724",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1173,
+        "consulting_content": "고객은 신용대출 연장을 신청했으나 부수거래 감면 조건을 체크하지 않아 적용 여부를 확인하고, 금리 적용 시점과 연장 수수료, 조기상환 비용을 문의했으며, 상담사는 연장은 진행 중이며 부수거래 선택은 영향 없고, 금리는 조건 충족 시 적용, 연장 수수료는 없고 조기상환 수수료는 계약 비율에 따라 발생한다는 점을 안내하고, 상세 내역을 이메일로 송부하겠다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

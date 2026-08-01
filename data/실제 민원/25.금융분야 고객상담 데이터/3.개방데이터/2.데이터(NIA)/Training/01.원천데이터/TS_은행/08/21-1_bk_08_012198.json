@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_012198",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 788,
+        "consulting_content": "고객은 비대면 연장 신청 절차와 필요 서류, 공인인증서, 간편 심사 방법, 결과 확인 시기 및 연장 초과 시 불이익을 문의하였고 상담사는 신분증 사본, 재무제표, 계약서 등 서류와 앱 업로드, 선택 옵션 안내, 영업일 기준 며칠 이내 알림, 문자, 이메일 통보, 연체료 부과 및 대출 한도 영향 가능성을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

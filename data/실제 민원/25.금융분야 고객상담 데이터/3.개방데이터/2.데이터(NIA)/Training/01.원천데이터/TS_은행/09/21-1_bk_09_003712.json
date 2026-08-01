@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_003712",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 774,
+        "consulting_content": "고객은 엔화 환전 가능 여부와 금액, 카드 결제, 환율, 신분증, 앱 사용 등을 문의했으며, 상담사는 현금 환전 시 우대 적용, 1엔당 10원 환율 안내, 지점 방문 시 신분증, 앱으로 출금, 환전 가능, 기타 외화는 달러, 유로, 파운드 제공을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

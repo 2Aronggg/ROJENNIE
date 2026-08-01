@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_027336",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 797,
+        "consulting_content": "고객은 엔화 현금 교환을 원하고 신분증 제출 방식, 모바일 팩스 가능 여부, 현재 환율, 수수료, 예약 여부 등을 문의하였고 상담사는 실물 신분증만 인정하고 모바일 팩스는 불가하며, 환율은 실시간 변동, 수수료는 별도 없고, 예약 없이도 영업시간 내 방문 가능하지만 대기 시간 가능성을 안내하고 FAQ 확인을 권장하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

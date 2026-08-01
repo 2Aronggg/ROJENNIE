@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_016187",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 925,
+        "consulting_content": "고객은 재개발 이주비용 대출 만기 연장을 원하고 문자, 카카오톡 안내가 도착하지 않았다고 문의하였고 상담사는 연장 안내는 문자, 카카오톡 또는 웹, 앱 신청 가능하며, 필요 시 영업점 방문 및 서류 제출을 안내하고, 연락 지연 시 전화 확인을 권고하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

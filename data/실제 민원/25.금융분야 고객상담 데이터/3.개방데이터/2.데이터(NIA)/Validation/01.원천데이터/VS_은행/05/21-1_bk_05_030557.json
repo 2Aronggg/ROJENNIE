@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_030557",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 695,
+        "consulting_content": "고객은 한도 계좌 해제를 원하고 앱에서 오류가 발생했다고 알렸으며, 개인임을 확인하였다. 상담사는 앱 최신 버전 업데이트 후 재시도 권고와 오류 시 URL 문자 전송을 안내하고, 신분증, 주민등록등본, 계약서 사본을 사진으로 문자 첨부해 제출하도록 요청했으며, 서류 도착 후 영업일 2~3일 내 처리될 것이라고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

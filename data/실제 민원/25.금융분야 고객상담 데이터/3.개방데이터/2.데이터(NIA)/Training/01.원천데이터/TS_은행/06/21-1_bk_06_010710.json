@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_010710",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1118,
+        "consulting_content": "고객은 성명, 생년월일을 제공하고 계좌 비밀번호 입력을 요청받았으며, 대출 자동이체 일정과 잔액 충분성을 확인하고 미납 우려가 없음을 확인하였다고 답변하였고, 상담사는 고객 신원 확인 후 비밀번호 입력 안내, 시스템 연동 대기 안내, 자동이체 출금 시점 및 잔액 충분성을 설명하고 미납 위험이 없음을 확답하며 추가 문의 없음을 확인하고 종료하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_002676",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1117,
+        "consulting_content": "고객은 사업자 대출 연장을 위해 필요한 서류와 절차를 문의했고, 상담원은 서류를 문자로 보내겠다고 안내했다. 이어서 상담원은 대출 연장 처리 기간, 수수료, 신용 등급 영향, 온라인 신청 방법 등에 대해서도 설명했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

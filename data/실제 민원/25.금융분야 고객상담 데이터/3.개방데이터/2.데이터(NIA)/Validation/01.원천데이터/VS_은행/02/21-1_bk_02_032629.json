@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_032629",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1294,
+        "consulting_content": "고객은 잘못된 계좌로 이체된 금액에 대해 자금 반환 청구 절차와 필요 서류, 소요 시간을 문의하였고 상담사는 타행환 자금 청구 접수를 안내하고 영업일 3~5일 내 은행 전달, 예금주 연락, 정지 계좌 시 반환 제한 및 거절 시 서면 사유 제공, 재청구, 법적 절차 검토 가능이라고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

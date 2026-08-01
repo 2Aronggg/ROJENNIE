@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_031094",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1762,
+        "consulting_content": "고객은 재직증명서를 팩스로 송부하고 계좌 이체 한도 상향을 요청했으며, 성명, 생년월일, 비밀번호 등 본인 확인 정보를 제공하였고, 상담사는 서류 접수 확인 후 압구정 지점에 심사 요청을 진행하고, 한도는 기존 대비 20% 상향 가능하나 최종 결과는 영업점에서 2~3일 내에 문자, 전화로 안내될 예정이라고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

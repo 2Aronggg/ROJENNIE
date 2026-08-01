@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_015409",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1192,
+        "consulting_content": "고객은 사업자 대출 연장 절차 중 시스템 오류로 진행 상황을 확인하고자 하였고 상담사는 서류 제출이 완료되었음을 알려주며 검토 중임을 안내하고, 결과는 영업일 2~3일 내에 통보되고 수수료는 잔액의 0.5%이며, 취소 시 전화, 인터넷뱅킹으로 신청하면 된다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

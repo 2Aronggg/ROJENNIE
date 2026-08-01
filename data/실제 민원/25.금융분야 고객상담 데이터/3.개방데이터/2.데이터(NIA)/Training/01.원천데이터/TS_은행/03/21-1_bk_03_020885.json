@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_020885",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1332,
+        "consulting_content": "고객은 자동이체 미이체를 신고하고 계좌, 금액, 출금일 정보를 제공했으며, 상담사는 계좌와 잔액을 확인하고 설정 오류와 시스템 오류 가능성을 설명한 뒤 내부 검증을 2시간 이내에 완료하고 오후 4시까지 연락하겠다고 약속하고, 수동 이체 방법도 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

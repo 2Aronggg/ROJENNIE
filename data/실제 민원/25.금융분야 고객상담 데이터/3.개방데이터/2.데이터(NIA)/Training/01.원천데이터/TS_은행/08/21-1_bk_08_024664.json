@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_024664",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1389,
+        "consulting_content": "고객은 대출 연장 절차와 지점 방문 필요 여부를 문의하였고 상담사는 고객센터 연결을 안내하였다. 고객은 계좌번호와 생년월일 등 본인 확인 정보를 제공하고 비밀번호 재입력을 진행하였고 상담사는 인증을 확인하고 연장 대상 대출을 확인하였다. 고객은 연장 가능 기한과 필요 서류를 안내받았으며 문자 발송을 요청하였고 상담사는 연장 안내 문자를 발송하겠다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

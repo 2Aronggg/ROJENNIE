@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_016347",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 575,
+        "consulting_content": "고객은 대출을 신청할 때 에는 어떻게 대출을 해야하는지 알고 싶고,납입 누락으로 연체 후 강제 상환 처리 여부와 신용, 대출 제한을 문의하였고 상담사는 조회 결과 정상 납부 처리와 연체 기록 없음, 신용 점수 변동 최소, 대출 제한 없음을 안내하고 신용조회 이용을 권고하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

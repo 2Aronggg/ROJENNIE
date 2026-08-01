@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_020682",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 2643,
+        "consulting_content": "고객은 대출 상환 연장을 요청하고 계좌, 비밀번호 등 본인 확인 정보를 제공했으며, 연장 시 이자율 변동 가능성을 문의하고 문자 안내를 원했다. 상담사는 신원 확인 후 연장 가능 금액과 일부 한도 감액을 안내하고, 자동 연장 처리와 이자율 변동 가능성을 설명한 뒤 문자 발송을 약속하며 업무를 완료했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

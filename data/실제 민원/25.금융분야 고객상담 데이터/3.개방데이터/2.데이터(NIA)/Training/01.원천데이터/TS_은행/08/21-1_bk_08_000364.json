@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_000364",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1377,
+        "consulting_content": "고객이 대출 연장을 문의하자 상담원이 비대면 상품 특성상 모바일 앱을 통한 연장 절차와 필요한 인증, 연장 가능 기간, 이자율 변동, 승인 알림 방법, 취소 절차 및 상환 일정 변경 등을 안내하였다. 고객은 안내를 이해하고 연장을 진행하기로 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

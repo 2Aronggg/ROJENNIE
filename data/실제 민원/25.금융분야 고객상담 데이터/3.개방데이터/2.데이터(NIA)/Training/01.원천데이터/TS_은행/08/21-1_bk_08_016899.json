@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_016899",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1625,
+        "consulting_content": "고객은 대출 연장 문의와 계좌 확인, 본인 인증을 요청하였고 상담사는 계좌, 비밀번호 확인 후 연장 가능 일자와 수수료를 안내하였다. 고객은 필요한 서류와 심사 기간, 이자율 변동 여부를 물었고 상담사는 신분증, 급여내역, 계약서 등 서류와 2~3일 소요, 기존 이자율 유지 및 비대면 절차를 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

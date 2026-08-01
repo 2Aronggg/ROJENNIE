@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_014932",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1038,
+        "consulting_content": "고객은 적금 만기 처리 방법을 문의하였고 상담사는 본인 확인을 위해 성명, 생년월일 등 정보를 요청하였다. 고객은 계좌 번호를 모른다고 답변하였고 상담사는 온라인 뱅킹 확인 및 계좌 번호, 비밀번호 인증이 필요함을 안내하였다. 고객은 자동 재투자 옵션과 조건을 문의하였고 상담사는 자동 재투자 가능성과 신청 절차를 추후 안내하겠다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

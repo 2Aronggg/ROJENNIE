@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_012339",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 998,
+        "consulting_content": "고객은 모르는 송금을 받아 상황을 문의하고 입금 시각, 금액, 예금주 정보를 제공하였고 상담사는 거래 조회 및 타은행 협조를 통한 자금 회수 안내와 차단 조치를 제안하였으며, 비밀번호 변경 후 보안 강화로 2단계 인증 설정, 정기적 보안 문자 확인, 공인인증서, OTP 분리 보관 등을 권고하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

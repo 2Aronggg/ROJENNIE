@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_014633",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 899,
+        "consulting_content": "고객은 자동 상환이 이중으로 처리돼 잔액 부족을 문의하였고 상담사는 계좌 확인 후 남은 대출 잔액을 안내하고 오늘 중에 추가 상환이 진행될 것이라 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

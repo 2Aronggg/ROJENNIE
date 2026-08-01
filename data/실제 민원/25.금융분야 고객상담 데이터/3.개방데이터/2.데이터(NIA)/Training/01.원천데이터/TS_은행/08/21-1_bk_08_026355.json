@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_026355",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1324,
+        "consulting_content": "고객은 개인 대출 연장을 문의하고 신분증, 급여내역서 제출 방법과 담당 부서 연결을 요청했으며, 오후 2시 연락을 지정하였다. 상담사는 연장에 필요한 서류를 안내하고, 부서 연결이 어려워 메모를 남겨 지정 시간에 담당자가 2~3일 내에 연락하도록 조치하였고, 처리 소요 시간을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_011015",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1058,
+        "consulting_content": "고객은 체크카드 해외 이용으로 인한 출금 지연과 환율, 수수료를 문의하였고 상담사는 금액이 홀딩 처리되어 2~3일 내 출금되고 환율은 거래일 기준 마진 0.5%, 수수료 1.5%임을 안내하였으며, 상세 내역을 문자, 이메일로 발송하고 알림 서비스를 설정하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

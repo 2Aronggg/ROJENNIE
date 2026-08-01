@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_022375",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 920,
+        "consulting_content": "고객은 신용구매자금 대출 연장을 위해 필요한 서류와 절차를 문의했으며, 서류를 문자로 받고 싶다고 요청했고, 상담사는 신분증, 주민등록등본, 급여명세서, 기존계약서 등 4가지 서류를 지참해 가까운 지점 방문 신청해야 한다고 안내하고, 연장 신청은 대출 명의자만 직접 방문해야 하며 배우자 동의서가 있으면 비대면도 가능하다고 설명했으며, 추가 보증, 담보, 비용은 없고 이자율은 기존과 동일하다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

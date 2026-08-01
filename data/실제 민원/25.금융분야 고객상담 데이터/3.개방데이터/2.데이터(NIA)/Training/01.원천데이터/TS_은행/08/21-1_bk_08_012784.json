@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_012784",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1185,
+        "consulting_content": "고객은 대출 연장 시 적용 이자율과 변동 가능성을 문의하고, 필요한 서류 및 회신 방법, 진행 일정 등을 요청하였고 상담사는 이자율은 연장 기간, 신용 등급, 금리 상황에 따라 달라진다고 안내하고, 기본 서류를 문자로 발송하며 링크 또는 팩스로 회신하도록 설명하고, 서류 제출 후 3~5일 내 심사 결과를 알려드리고 연장 후 상환 일정이 재조정된다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

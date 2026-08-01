@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_030772",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 877,
+        "consulting_content": "고객은 외화 현금 대리 수령이 불가함, 영업시간 외 온라인 환전 후 방문 절차, 대기 시간, 대리 입금 불가, 카드 분실 신고, 재발급, 환율, 수수료, 방문 서류를 문의하였다. 상담사는 예금주 본인 신분증 지참 직접 방문 필요, 영업시간 내 방문 권고, 대리 거래 불가, 분실 시 즉시 신고, 재발급 안내, 실시간 환율 확인 및 0.5%, 5,000원 최소 수수료 설명, 신분증, 통장 사본 준비를 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

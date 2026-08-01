@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_024970",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 928,
+        "consulting_content": "고객은 이자 납부와 연체 이자 및 상환 옵션을 문의하였고 상담사는 연체 이자는 연 5%이며 최소 10만원 납부 시 해제된다고 안내하였으며, 자동 이체 설정이 가능하다고 설명하고 오늘 바로 진행하겠다고 제안하였고, 고객은 자동 이체를 오늘 바로 진행하겠다고 요청하였고 상담사는 모바일 앱, 전화 인증 절차를 통해 설정해드리겠다고 응답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

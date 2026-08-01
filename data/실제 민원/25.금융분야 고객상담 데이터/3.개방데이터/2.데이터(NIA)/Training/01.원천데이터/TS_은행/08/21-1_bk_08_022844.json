@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_022844",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 836,
+        "consulting_content": "고객은 전세 계약 연장 후 계약서를 재작성하고 필요한 서류를 준비해야 하는지 문의하였고 상담사는 기존 대출 정보와 연장 내용 기재, 서류 제출을 안내하였다. 고객은 고정형 금리와 원리금 균등분할 상환을 원한다며 금액을 물었고 상담사는 연 4.2% 고정 금리와 월 약 150만원 상환액을 예시로 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

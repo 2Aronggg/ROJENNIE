@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_016935",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 916,
+        "consulting_content": "고객은 300만원을 달러로 환전하고자 지점 방문 및 신분증 지참 여부를 문의하였고 상담사는 지점에 현금 보유를 확인하고 신분증 지참 시 가능함을 안내하며 모바일 앱을 통한 환전 신청 및 수수료 우대, 실시간 환율 확인 방법을 제시하였다. 고객은 여행자 보험에 대해 질문하였고 상담사는 해외 의료비, 도난, 파손 보장을 포함한 보험 상품과 앱 가입 절차를 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_029221",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 682,
+        "consulting_content": "고객은 전세 자금 대출 연장을 문의하고 서류 제출 후 담당자와 연락이 안 된 상황을 알려 주었으며, 진행 상황 확인을 요청하였다. 상담사는 고객의 연장 처리 현황을 조회해 연장이 완료됐으며 지점에서 최종 승인됐다고 안내하고, 보증 보험 적용과 보증료 납부, 추가 대출 및 카드 현금서비스 이용 제한 등 주의사항을 전달하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

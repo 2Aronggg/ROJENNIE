@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_005834",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1754,
+        "consulting_content": "고객은 대출 연장을 원하며 연장 절차를 문의했다. 상담사는 본인 확인 절차 후 해당 대출이 앱에서 직접 연장 신청이 가능한 상품임을 안내했으나, 현재 영업점에서 금리 협의가 완료되지 않아 진행이 어려운 상황임을 설명했다. 이후 추가 서류 제출 방법, 전화 상담원의 화면 공유를 통한 앱 이용 지원, 연장 신청 접수 및 승인 예상 시점 등에 대해 안내했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

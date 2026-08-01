@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_026904",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1792,
+        "consulting_content": "고객은 마이너스 통장 연장과 필요한 서류, 절차, 연장 가능 일자를 문의하고 전화 연결이 어려워 다른 연락 방법을 요청하였으며, 상담사는 계좌, 비밀번호 확인 후 연장 신청은 만기 후 지정일에 어플로 가능하고 신분증, 급여내역 제출을 안내하며, 금리 변경 및 추가 대출 가능 여부도 설명하겠다고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_005784",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1070,
+        "consulting_content": "고객은 ○월 ○일에 본인 계좌에서 ○○원 이체했으나 수취 은행에서 입금을 확인하지 못했다는 문의를 제기하였다. 상담원은 이체 내역을 확인한 결과, 이체는 정상 처리되었으나 수취 은행에서 보류 중일 가능성이 있음을 안내하였다. 고객에게 이체 확인증을 이메일, 팩스, 모바일 앱 등으로 전달하고 수취 은행에 직접 문의하도록 권고하였다. 확인증 양식은 이메일로 송부하겠다고 약속하였다. 향후 동일 문제 방지를 위해 이체 전 수취인 계좌 정보를 재확인할 것을 권장하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

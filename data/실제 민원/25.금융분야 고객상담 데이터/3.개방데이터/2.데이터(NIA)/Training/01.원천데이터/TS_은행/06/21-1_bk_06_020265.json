@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_020265",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1861,
+        "consulting_content": "고객은 대출 상환 일정 조정을 문의하고 계좌번호 없이 앱 로그인으로 본인 확인을 진행했으며, 문자 인증을 완료하였다. 상담사는 대출 잔액과 조기 상환, 위약금 여부를 안내하고, 연체 방지 유예 기간 및 금리 변동에 따른 상환액 변화를 제시하겠다고 밝혔다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

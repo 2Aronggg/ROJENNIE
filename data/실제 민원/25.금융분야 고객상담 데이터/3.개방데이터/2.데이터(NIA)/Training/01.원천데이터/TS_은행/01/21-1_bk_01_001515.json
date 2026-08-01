@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_001515",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1692,
+        "consulting_content": "고객은 해지 환급금 입금 지연에 대해 문의하며, 입금 한도와 계좌 복구를 요청했고, 상담원은 고객의 계좌 상태를 확인 후 입금 한도, 환급금 입금 시기, 계좌 복구 단계별 소요 시간, 인증 방법 및 대체 방안, 상품 전환 가능 여부, 이자율 등에 대해 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_001230",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1185,
+        "consulting_content": "고객은 인터넷으로 대출 연장을 시도하며, 제출 서류, 금리 변동 시점, 승인 소요 기간, 상환 일정 변경 여부 등을 문의하였고, 상담사는 본인 확인을 진행하고, 연장 신청시 필요 서류인 전입 세대 확인서 등 제출 서류와 온라인 업로드 방법, 이자율 변동 및 변동 금리 적용 시점, 연장 승인 절차 및 일정, 전화 신청 가능 여부 등을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

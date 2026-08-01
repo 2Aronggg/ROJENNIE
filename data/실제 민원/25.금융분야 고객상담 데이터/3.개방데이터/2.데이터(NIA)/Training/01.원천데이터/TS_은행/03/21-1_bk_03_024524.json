@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_024524",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1057,
+        "consulting_content": "고객은 청약 저축 자동이체 등록 오류로 전화 신청을 요청했고 상담사는 쿠폰은 필요 없으며 청약 담당 부서로 연결해 주겠다고 안내하고, 오후 3시에 콜백을 잡아 연락드리겠다고 약속하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

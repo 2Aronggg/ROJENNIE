@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_002589",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1317,
+        "consulting_content": "고객은 달러 환전을 원하며 환전 사전 신청 방법, 수수료 및 우대 환율 조건 등에 대해 문의했다. 상담사는 고객의 환전 신청 절차와 앱 사용 방법, 방문 환전 가능 여부, 환전 수수료 부과 방법과 우대 환율 적용 방법, 환전 가능 통화의 종류 및 걸리는 시간, 신흥 시장 통화 환전에 대해서 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

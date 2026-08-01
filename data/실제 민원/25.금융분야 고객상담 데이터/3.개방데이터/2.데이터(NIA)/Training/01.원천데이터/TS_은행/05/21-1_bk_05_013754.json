@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_013754",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1077,
+        "consulting_content": "고객은 일일 한도 계좌의 이체 한도 초과와 한도 해제 방법을 문의하였고, 상담사는 일일 한도는 별도이며 앱에서 확인, 해제 요청이 가능하지만 승인 여부는 영업점 검토 후 2일 이내 처리된다고 안내하고, 영업점 방문 시 신분증 지참을 권고했으며, 해제는 무료라고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

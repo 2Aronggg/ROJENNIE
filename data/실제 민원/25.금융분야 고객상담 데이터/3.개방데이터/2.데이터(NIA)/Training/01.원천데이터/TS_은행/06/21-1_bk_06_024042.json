@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_024042",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 880,
+        "consulting_content": "고객은 자동 이체가 안돼 직접 대출 상환을 시도했으며 잔액 부족을 이유로 미납액을 문의했고, 상담사는 계좌, 비밀번호를 확인하고 당월 출금이 정상 처리됐으며 부족분이 없음을 안내하고, 향후 상환 알림 서비스 신청 방법을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

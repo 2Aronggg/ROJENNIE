@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_031564",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1083,
+        "consulting_content": "고객은 아파트관리비 자동이체 해지를 요청하고 어플에서 해지 경로와 사유 입력 방법, 해지 완료 통보 및 미납금 처리, 재설정 방법을 문의하였고 상담사는 어플 내 '이체, 결제'→'자동이체 관리' 순서와 해지 절차, 사유는 자유 입력, 완료 시 문자, 이메일 발송, 해지 전 청구금은 기존대로 결제되고 이후 직접 결제 필요, 새 자동이체 등록 방법을 안내하였으며 추가 문의 없음을 확인하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

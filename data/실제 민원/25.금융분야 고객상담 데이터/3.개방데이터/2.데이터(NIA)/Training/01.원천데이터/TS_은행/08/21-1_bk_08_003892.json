@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_003892",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1422,
+        "consulting_content": "고객은 비상금대출 연장 절차와 이자율을 물었고 상담사는 모바일 앱, URL 클릭으로 연장 가능하고 서류 안내하였다. 고객은 추가 대출 가능 여부를 물었고 상담사는 담보 대출이라 증액 어려워 다른 상품을 제안하였다. 고객은 정기예금, 적금 금리와 가입 조건을 요청했으며 상담사는 연 3.5%, 1년 정기예금과 연 2.8%, 월 적금 금리를 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

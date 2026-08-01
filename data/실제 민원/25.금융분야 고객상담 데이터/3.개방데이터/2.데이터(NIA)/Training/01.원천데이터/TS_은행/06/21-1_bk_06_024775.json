@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_024775",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1021,
+        "consulting_content": "고객은 연체 문자 수신 후 대출 조회를 요청하였고 상담사는 ARS 본인확인 후 한 건이 미납임을 알려 오늘까지 납부 금액과 자동이체 계좌를 안내하였다. 고객은 해당 계좌로 입금하겠다고 답했으며 상담사는 모바일, 인터넷 뱅킹 이용 가능을 추가 안내하고, 문의 없음을 확인하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

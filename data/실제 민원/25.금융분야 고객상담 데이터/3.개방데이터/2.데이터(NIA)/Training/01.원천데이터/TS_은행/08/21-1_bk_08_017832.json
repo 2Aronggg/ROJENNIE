@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_017832",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1740,
+        "consulting_content": "고객은 ★★ 대출 심사 완료 카톡을 받고 실행 절차와 필요 서류, 대환 대출 전환 의사를 문의하였고 상담사는 본인 확인을 위해 계좌, 생년월일 등을 요청하고 확인 후 약정 권한 부재와 지점 연결 필요, 대환 절차와 소요 기간, 비교표 제공을 안내하였으며 담당 지점으로 연결해 진행하겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

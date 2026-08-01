@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_017851",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 716,
+        "consulting_content": "고객은 급여통장 개설 후 이체한도 제한 해제를 문의했으며, 상담사는 앱 해제 시도 불가와 서류 제출 필요 및 지점 방문을 안내하고, 신분증과 선택한 서류를 지참하면 영업일 기준 이틀 내 결과를 알려드리며 수수료는 없다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

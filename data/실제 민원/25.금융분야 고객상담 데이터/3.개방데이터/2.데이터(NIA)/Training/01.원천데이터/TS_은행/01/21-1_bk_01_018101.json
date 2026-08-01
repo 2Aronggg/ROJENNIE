@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_018101",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1486,
+        "consulting_content": "고객은 모바일 뱅킹 송금 내역과 수신 은행, 금액, 날짜를 확인하고 해외송금 내역까지 조회를 요청했으며 운영 시간을 문의하였고 상담사는 계좌, 생년월일 등 해당 거래를 조회해 ★★은행 송금 사실을 확인하고 해외송금 조회를 진행하겠다고 안내했으며, 고객센터 운영 시간을 오후 6시까지라고 알려 주었다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

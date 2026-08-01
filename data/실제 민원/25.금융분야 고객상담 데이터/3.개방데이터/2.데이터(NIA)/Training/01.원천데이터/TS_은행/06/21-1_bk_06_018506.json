@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_018506",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1019,
+        "consulting_content": "고객은 단기 연체 이력 확인을 요청하였고 상담사는 계좌, 비밀번호 인증을 진행하였다. 고객은 연체가 30일 내 한 차례 발생했음을 확인하고 문자 상세 정보를 받겠다고 동의하였고 상담사는 기존 번호로 발송을 약속하였다. 고객은 연체 면제 신청을 원하며 신분증 사본과 급여 내역서 제출을 약속하였고 상담사는 서류 접수 후 신속히 처리하겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_019529",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 799,
+        "consulting_content": "고객은 기업 대출 연장 서류를 ★★은행 백마지점에 팩스로 송부했으며 담당자 수신 여부와 심사 진행 상황을 확인하고자 했고, 상담사는 담당자에게 연결해 확인을 진행하고 서류는 정상 접수, 심사 중이며, 결과는 영업일 3~5일 내에 전화와 서면으로 안내드리겠다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

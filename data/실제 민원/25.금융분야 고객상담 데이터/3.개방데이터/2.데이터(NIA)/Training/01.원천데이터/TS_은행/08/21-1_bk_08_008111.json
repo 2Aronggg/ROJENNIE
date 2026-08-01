@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_008111",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1343,
+        "consulting_content": "고객은 대출 만기 연장을 신청한 후 카카오톡으로 납부 금액 안내 문자를 받아 연장 처리 여부와 납부 금액의 의미를 문의하였다. 상담사는 해당 대출이 이미 만기 연장 처리 완료되었으며 안내 문자는 연장 처리 전 발송된 것이라고 설명하고, 만기일과 월 상환액이 기존 조건과 동일하게 유지됨을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

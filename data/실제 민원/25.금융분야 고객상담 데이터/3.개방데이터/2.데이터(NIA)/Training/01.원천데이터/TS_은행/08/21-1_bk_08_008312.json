@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_008312",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1543,
+        "consulting_content": "고객은 마이너스 통장 만기 연장을 요청하였고, 6개월 추가 연장을 신청하였다. 연장 시 기존 변동금리와 자동이체 일정이 유지된다는 안내를 받았으며, 전화 인증으로 연장 계약을 체결하였다. 연장 후 상환 방식은 기존과 동일하고 추가 대출 한도 확대는 필요 없다고 답하였다. 이어 적금 상품에 대해 문의하여 변동금리형 적금을 선택하고, 매월 10만원을 1년 동안 자동이체로 적립하는 계약을 체결하였다. 이후 별도 문의 사항이 없어 상담을 종료하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

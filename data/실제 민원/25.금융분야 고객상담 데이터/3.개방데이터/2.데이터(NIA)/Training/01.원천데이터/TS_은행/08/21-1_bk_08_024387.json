@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_024387",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1210,
+        "consulting_content": "고객은 대출 만기 연장을 위해 서류 제출 방법과 일정, 모바일 앱 이용 절차, 소상공인 플러스게 제도 대상 여부, 연장 비용 결제 시점을 문의하였고 상담사는 사업자 대출임을 확인하고 서류는 방문 또는 모바일 앱으로 제출 가능하다고 안내하며, 필요 서류와 링크를 문자로 보내겠다고 하고, 심사 후 상환 계획 및 비용 안내를 제공하며 결제 시점은 비용 발생 시 안내된 대로 진행하면 된다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

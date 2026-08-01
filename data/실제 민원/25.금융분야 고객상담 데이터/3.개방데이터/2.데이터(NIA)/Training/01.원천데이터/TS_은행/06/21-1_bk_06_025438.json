@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_025438",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1681,
+        "consulting_content": "고객은 연금보험 이자를 선납하고자 원금, 이자 금액과 가상계좌 발급을 요청했으며, 입금 마감시간이 11시 30분임을 확인하고 금리 변동 시 기존 납입액은 유지된다는 설명을 들었다. 상담사는 가상계좌와 금액을 문자로 제공하고 정확한 입금과 원단위 금액 요구, 마감 이후 자동취소 가능성, 입금 전 취소 및 영업일 3일 이내 환불 절차를 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

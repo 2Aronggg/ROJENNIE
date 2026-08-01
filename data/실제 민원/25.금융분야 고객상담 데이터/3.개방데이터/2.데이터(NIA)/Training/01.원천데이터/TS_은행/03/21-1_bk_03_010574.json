@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_010574",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1466,
+        "consulting_content": "고객은 자동이체 등록 문자 수신 후 사실 확인과 차단을 요청하였고 상담사는 전화번호, 계좌 정보 제공을 받아 본인 인증을 진행하고 내부 시스템 조회 및 금액 확인이 불가함을 안내하였다. 이후 고객의 차단 요청에 일회용 인증번호 입력을 받아 자동이체 등록을 차단하고 상담을 종료하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

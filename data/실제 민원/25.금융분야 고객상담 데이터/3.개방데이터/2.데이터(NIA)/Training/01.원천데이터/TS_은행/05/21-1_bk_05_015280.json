@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_015280",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 735,
+        "consulting_content": "고객은 한도 계좌 해제를 요청하였고 상담사는 대포 통장 정책에 따라 신분증 사본과 급여 명세서, 카드 사용 내역서 중 하나 제출을 안내하였다. 고객은 서류를 우편으로 보내겠다고 했으나 직접 영업점을 방문해 해지할 예정이라고 하였고 상담사는 방문 시 해지 절차, 자동이체 해제 필요, 일일 비대면 이체 한도 및 잔액 자동 이체 정보를 제공하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

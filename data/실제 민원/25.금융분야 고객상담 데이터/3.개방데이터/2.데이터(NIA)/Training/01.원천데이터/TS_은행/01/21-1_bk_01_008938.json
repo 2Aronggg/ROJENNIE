@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_008938",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1489,
+        "consulting_content": "고객은 입금이 계좌에 반영되지 않아 확인을 요청하였다. 상담원은 입금 내역을 조회하여 금액이 청약 계좌에 입금된 것을 확인하고, 일부 출금 가능하다고 안내하였다. 고객은 문자 인증을 선택하여 인증 코드를 입력함으로써 출금 절차를 완료하였다. 상담원은 나머지 금액은 청약 계좌에 그대로 유지된다고 설명하고 청약 부서 연결이 어려워 추후 연락을 약속하고 상담을 종료하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

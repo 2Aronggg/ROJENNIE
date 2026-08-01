@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_010330",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 974,
+        "consulting_content": "고객은 자동 이체 미처리 문제를 제기하고 본인 확인 정보를 제공하였고 상담사는 계좌와 금액을 확인한 뒤, 마이너스 대출이 연결된 통장이라 18시 이후 잔액 충분 시 재처리될 예정이며 처리 완료 시 문자 알림을 제공한다는 안내를 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_007374",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1698,
+        "consulting_content": "고객은 ★★은행의 주택담보대출 원리금 미납으로 가상계좌 입금을 요청하였다. 상담원은 본인 인증 후 가상계좌 번호와 금액을 문자로 발송하고, 입금은 영업시간 내 실시간 반영된다고 안내하였다. 다음 상환일은 ●●●일이며 자동이체가 불가할 경우 동일 금액을 가상계좌에 입금하면 자동 인식된다고 설명하였다. 입금 확인 문자를 받지 못하면 콜센터에 재연락하도록 안내하였다. 또한 대출 연장은 가능하나 연장 조건, 추가 금리 검토가 필요하고, 신청 시 신분증 사본과 최근 소득증빙이 필요하다고 안내하였다. 검토 결과는 추후 문자, 전화로 통보하기로 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

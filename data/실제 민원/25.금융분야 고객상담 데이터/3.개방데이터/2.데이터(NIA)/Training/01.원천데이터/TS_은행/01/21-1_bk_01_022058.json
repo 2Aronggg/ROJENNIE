@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_022058",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1330,
+        "consulting_content": "고객은 자동이체 현황 확인과 일시 중지를 요청하였고 상담사는 계좌, 생년월일 확인 후 자동이체가 존재함을 안내하고 앱에서 일시 중지 방법을 설명하였다. 고객은 최근 입금 내역을 문의하였고 상담사는 입금 일자, 금액 및 거래처 정보를 제공하였다. 또한 해지 시 위약금이 없음을 안내하고 만족한다는 평가를 받았다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

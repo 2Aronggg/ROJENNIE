@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_004488",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1007,
+        "consulting_content": "고객은 주택 담보 대출 연체와 가상 계좌 입금 안내를 요청하였고 상담사는 연체 금액과 입금 계좌를 문자로 발송하고, 입금 확인 시 카카오톡, 문자, 이메일로 알림을 약속하였다. 고객은 입금 후 전화 안내를 원하고 자동이체 변경 및 상환 유예 옵션 검토를 요청하였고 상담사는 입금 확인 후 담당자가 전화로 안내하고, 유예, 분할 상환 가능성을 담당자 상담을 통해 설명하겠다고 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

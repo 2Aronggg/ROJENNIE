@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_004911",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1144,
+        "consulting_content": "고객은 타행 자동이체 문자 수신 사실을 알리지 않았으며, 등록 내역이 없다고 답변하였고 상담사는 자동이체는 앱 등록 시 발생하며 해지는 전화 또는 앱 이용을 안내하고, 계정 보호를 위해 비밀번호 변경 및 2단계 인증 설정 방법을 설명하였다. 또한 의심 거래는 차단, 신고하도록 권고하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

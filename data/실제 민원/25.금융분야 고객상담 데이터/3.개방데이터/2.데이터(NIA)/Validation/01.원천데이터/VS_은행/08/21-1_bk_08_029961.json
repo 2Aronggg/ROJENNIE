@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_029961",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 0,
+        "consulting_content": "고객은 전세 대출 연장 서류를 확인하고 제출 방법 및 검토 소요 시간을 문의하였고 상담사는 서류는 지점 방문 또는 문자 안내로 제출 가능하며 검토는 영업일 기준 며칠 소요된다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

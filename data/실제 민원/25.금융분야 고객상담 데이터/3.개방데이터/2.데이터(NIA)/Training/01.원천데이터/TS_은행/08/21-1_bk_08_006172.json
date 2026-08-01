@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_006172",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1314,
+        "consulting_content": "고객은 저신용 대출 연장을 요청하였으며, 상담원은 계좌, 신분 확인 후 비대면 연장 가능 상품임을 안내하였다. 심사 완료 시 알림톡으로 계약서 작성 안내가 전송되고, 앱에서 서류 제출, 계약서 작성 후 자동 승인 여부가 판단된다고 설명하였다. 현재 금리는 유지되지만 신용 상황에 따라 소폭 변동 가능하며, 변동 시 알림톡 및 전화로 안내한다는 점을 전달하였다. 연장 계약 관련 추가 문의는 영업시간 내 전화 상담 예약이 가능하다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

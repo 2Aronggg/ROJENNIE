@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_020667",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 3124,
+        "consulting_content": "고객은 연장 서류 제출 후 진행 상황과 추가 서류, 자동이체, 지연 시 조치, 확인 메일 내용을 문의하였고 상담사는 계좌, 신분 확인 후 심사는 2~3일 소요이며 추가 서류는 필요 없고 자동이체는 모바일, 인터넷 뱅킹에서 설정 가능, 지연 시 전화 문의를 권고하고 연장 완료 시 계약서 사본 포함 확인 메일을 발송한다는 안내를 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

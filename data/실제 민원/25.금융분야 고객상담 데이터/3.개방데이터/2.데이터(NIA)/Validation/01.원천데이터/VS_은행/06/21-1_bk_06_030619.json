@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_030619",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1581,
+        "consulting_content": "고객은 대출 연체 금액 확인 및 자동 출금 여부를 문의했고 상담사는 계좌 확인 후 연체 금액 ●●●원과 자동 출금 일정을 안내하고, 가상계좌 송금 또는 모바일 앱 자동 이체를 오늘 오후 5시까지 입금하도록 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

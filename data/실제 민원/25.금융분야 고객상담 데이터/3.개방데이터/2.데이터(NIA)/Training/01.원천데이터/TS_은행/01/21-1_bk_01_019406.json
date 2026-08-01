@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_019406",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1204,
+        "consulting_content": "고객은 거래내역 확인을 위해 본인 확인 정보를 제공하고 오늘 새벽 4시 출금 건을 문의하였고 상담사는 계좌, 비밀번호 확인 후 해당 거래는 카드사에 문의해야 한다고 안내하고 카드사 담당자를 연결해 결과가 정상 처리됐으며 환불 가능 여부와 절차를 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_024860",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1124,
+        "consulting_content": "고객은 잔액 부족으로 대출금을 가상계좌로 납부하고 싶다고 요청했으며, 상담사는 대출상품이 가상계좌 발행이 불가함을 안내하고 자동이체 계좌로 이미 납부가 처리됐다고 알려주었다. 고객은 추가 납부가 없음을 확인하고 다음 달에 동일 상품으로 가상계좌 발행이 가능하다는 설명을 듣고 동의하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

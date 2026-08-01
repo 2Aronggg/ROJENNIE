@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_010223",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 839,
+        "consulting_content": "고객은 IRP 계좌 자동이체를 취소하고 이미 출금된 금액을 반환받고자 하였고 상담사는 해당 계좌는 출금이 불가하므로 회수 불가능하고 향후 이체만 중단 가능함을 안내하였다. 고객은 모바일 해지 여부와 영업점 방문 서류를 문의하였고 상담사는 모바일 해지는 제한되고 영업점 방문 시 신분증, 계약서, 신청서 원본을 제시해야 함을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

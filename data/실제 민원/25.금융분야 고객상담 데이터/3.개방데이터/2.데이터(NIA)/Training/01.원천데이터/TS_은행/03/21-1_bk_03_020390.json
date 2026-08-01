@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_020390",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1302,
+        "consulting_content": "고객은 공단 급여이체와 은행 자동이체 구분을 문의하고, 계좌 인증 절차를 진행했으며, 입금 지연 원인을 확인하고자 하였고, 상담사는 인증 안내, 자동이체 내역 확인, 공단 급여이체는 수수료 없고 영업일 기준 지연될 수 있음을 설명하고, 추가 문의 없음을 확인하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

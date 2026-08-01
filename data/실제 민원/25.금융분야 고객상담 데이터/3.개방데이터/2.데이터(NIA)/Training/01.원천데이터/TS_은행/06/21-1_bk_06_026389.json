@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_026389",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1450,
+        "consulting_content": "고객은 대출 이자 미납 금액과 이중 출금 여부를 문의하였고 상담사는 계좌 확인 후 금액을 안내하고 자동이체 설정 방법을 설명하였다. 고객은 연체 이자, 수수료와 조기상환 수수료를 물었고 상담사는 각각 2%p 가산, 월 10만원, 원금 1%, 최소 5만원이라고 안내하였다. 고객은 조기상환 의사를 밝히고 보안문자 123456을 입력하였으며 상담사는 출금 진행 및 확인 메일 발송을 약속하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

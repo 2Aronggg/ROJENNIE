@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_030498",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 914,
+        "consulting_content": "고객은 대출 이자 납부를 위한 가상 계좌와 금액 확인을 요청하였고 상담사는 본인 확인을 위해 성명, 생년월일을 요구하였다. 고객은 계좌 번호 확인이 어려워 다른 인증 방법을 물었고 상담사는 앱, 대체 인증을 안내하였다. 고객은 앱 사용에 제한이 있어 재인증이 필요하다고 답하고 가상 계좌 발급을 원한다며 추후 연락하겠다고 하였으며, 상담사는 확인 후 가상 계좌 정보를 제공하겠다고 안내하였다. 고객은 빠른 처리를 요청했고 상담사는 추가 문의 시 도움을 약속하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

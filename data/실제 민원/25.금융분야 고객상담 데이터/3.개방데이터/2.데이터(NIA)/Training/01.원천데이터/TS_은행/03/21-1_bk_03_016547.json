@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_016547",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 962,
+        "consulting_content": "고객은 자동이체 해지 후 업체에 통보 신청 방법을 몰라 문의하였고 상담사는 은행 내부에서만 해지되며 별도 통보는 고객이 직접 해야 함을 안내하고, 이메일 안내문 발송을 제안하여 발송하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

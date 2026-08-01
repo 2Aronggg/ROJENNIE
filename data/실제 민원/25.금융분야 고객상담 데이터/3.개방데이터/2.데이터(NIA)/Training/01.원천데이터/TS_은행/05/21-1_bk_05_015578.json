@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_015578",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1711,
+        "consulting_content": "고객은 이체 한도 초과 문제 해결을 위해 한도 제한 해제를 요청하였고 상담사는 계좌가 한도 제한 계좌임을 안내하고 해제 절차로 급여 명세서, 고용주 확인서 제출 및 지점 방문 또는 팩스 전송 선택을 제시했으며, 비용이 없고 영업일 3~5일 소요된다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

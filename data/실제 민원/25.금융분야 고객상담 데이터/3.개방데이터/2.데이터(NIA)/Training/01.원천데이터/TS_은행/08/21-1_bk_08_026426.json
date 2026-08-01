@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_026426",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 922,
+        "consulting_content": "고객은 대출 연장을 요청하고 계좌, 성명, 생년월일 등 본인 확인 정보를 제공하였고 상담사는 모바일 앱을 통한 연장 신청 안내와 기존 대출을 그대로 연장하려면 한도, 상환 검토 후 자동 심사가 진행된다고 설명하였다. 또한 심사 결과는 영업일 1~2일 내에 통보되며, 입금 비율 충족 시 승인 가능성이 높다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_012942",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1784,
+        "consulting_content": "고객은 이체 한도를 문의하였고 상담사는 계좌 번호, 이름, 생년월일, 비밀번호를 입력받아 일일 이체 한도가 ○○원임을 안내하고 초과 시 제한 및 조정 방법과 모바일 앱 확인 방법을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

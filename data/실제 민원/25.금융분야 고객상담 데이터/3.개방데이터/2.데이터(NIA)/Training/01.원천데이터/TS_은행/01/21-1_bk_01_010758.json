@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_010758",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 872,
+        "consulting_content": "고객이 입출금통장 거래정지로 인해 자동이체 재설정이 불가능할 시 해결 방법에 대해 문의하였고 상담사는 먼저 입출금통장 거래정지 해제 절차와, 거래정지 해제 승인 후 온라인, 모바일 앱을 통해 자동이체를 재설정 하는 방법에 대해 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

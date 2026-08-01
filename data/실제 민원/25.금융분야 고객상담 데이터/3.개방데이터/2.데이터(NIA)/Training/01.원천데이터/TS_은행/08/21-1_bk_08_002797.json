@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_002797",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1388,
+        "consulting_content": "고객은 대출 연장을 문의하고 만기일을 알려주었으며 알림톡을 확인하지 못했다고 답하고, 개인정보와 휴대폰 번호를 제공하고 재발송 방법을 물었고, 연장 신청 마감 시기와 수수료, 금리 변동 여부를 확인하였다. 상담사는 알림톡 미전달을 안내하고 문자, 알림톡 중 선택 가능하도록 재발송을 약속하며, 모바일 앱, 공동인증서, 간편 서류 제출 등 신청 방법을 설명하고, 마감 기한을 강조하며 수수료 발생과 금리 유지, 추가 비용 없음을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

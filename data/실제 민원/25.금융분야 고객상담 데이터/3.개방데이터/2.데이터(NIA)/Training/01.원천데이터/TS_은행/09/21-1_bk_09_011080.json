@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_011080",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 749,
+        "consulting_content": "고객은 환전 가능한 지점을 문의하였고 상담사는 인근 지점 및 금액 보유 상황을 안내하였으며, 고객은 필요한 서류를 물었고 상담사는 신분증, 여권, 운전면허, 거래내역서를 요구하였다. 또한 고객은 오늘 환율 변동을 물었고 상담사는 실시간 조회 방법을 안내하였으며, 고객은 주말 환전 가능 여부를 질문하였고 상담사는 영업은 없으나 온라인 신청 가능함을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

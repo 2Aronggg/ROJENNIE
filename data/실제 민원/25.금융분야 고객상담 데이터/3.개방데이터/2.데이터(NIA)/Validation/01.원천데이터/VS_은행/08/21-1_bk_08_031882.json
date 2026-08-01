@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_031882",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1245,
+        "consulting_content": "고객은 청약 담보 대출 연장 여부와 비용을 문의하였고 상담사는 자동 연장되며 별도 비용이 없다고 안내하였다. 고객은 만기일을 제공하고 본인 확인 절차에 계좌, 생년월일, 비밀번호를 입력하였고 상담사는 정보를 검증 후 세 건 대출 모두 연장 완료임을 확인해 주었다. 고객은 추가 문의가 없다고 답변하였고 상담사는 추후 안내와 FAQ 제공을 약속하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

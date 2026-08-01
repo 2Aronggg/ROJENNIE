@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_013599",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1372,
+        "consulting_content": "고객은 대출 우대 금리 적용 조건과 카드 실적 인정 기준을 문의하였고 상담사는 대출 금액, 상환기간에 따른 우대 금리 여부와 월 누적 금액 기준을 설명하고, 체크카드도 동일하게 실적 인정됨을 안내하며, 온라인 및 지점 신청 절차를 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

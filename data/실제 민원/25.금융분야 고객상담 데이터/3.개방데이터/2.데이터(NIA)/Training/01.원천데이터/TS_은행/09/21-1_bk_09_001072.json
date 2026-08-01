@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_001072",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1483,
+        "consulting_content": "고객은 모바일 앱에서 환전이 안 되는 문제와 지점 방문 환전 절차, 수수료, 한도, 사전 예약, 현금 수령 방법, 다른 지점 외화 확보, 환율 알림 서비스 등에 대해 문의하였다. 상담사는 모바일 제한 사유와 지점별 운영 상황과 사전 예약 및 환율 알림 설정 방법을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

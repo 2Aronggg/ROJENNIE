@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_007335",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1496,
+        "consulting_content": "고객은 주택담보대출 금리 감면 조건으로 ★★카드 사용액 기준과 자동이체 설정 여부를 문의하였다. 상담사는 자동이체 미설정 시 감면 제한이 있으며 설정 방법을 안내하고, 카드 종류는 무관하고 포인트 혜택은 금리와 별도임을 설명하였다. 또한 사용 금액 확인 방법과 문자 알림 설정, 감면 적용을 위한 연체, 신용, 중도상환 없음 등 기본 조건을 안내하고, 신청을 진행해 영업일 1~2일 내 결과를 문자, 이메일로 통보하기로 하였다. 고객은 기존 대출 잔액, 남은 기간 및 신규 대출 조건을 추가로 문의하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

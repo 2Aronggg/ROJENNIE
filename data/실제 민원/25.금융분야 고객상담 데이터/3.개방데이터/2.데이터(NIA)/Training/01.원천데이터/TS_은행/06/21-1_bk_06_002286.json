@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_002286",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1880,
+        "consulting_content": "고객은 대출 연체금 입금을 위해 가상계좌 발급과 사용 방법을 문의했고, 상담사는 가상계좌의 개념, 발급 절차, 입금 방법, 확인 절차 및 보안 주의사항을 안내하였다. 고객은 또한 연체금액을 확인하며, 입금기한과 입금 확인 방법, 타용도 사용가능여부를 문의하였으며 상담사는 고객의 연체금액과 확인 방법, 타용도로 사용 불가함을 안내했다. 최종적으로 고객은 상담사의 안내에 따라 가상계좌를 발급 받아 입금을 진행하기로 했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

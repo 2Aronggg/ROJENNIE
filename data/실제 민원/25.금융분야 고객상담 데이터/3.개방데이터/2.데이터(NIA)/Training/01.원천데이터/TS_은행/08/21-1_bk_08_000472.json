@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_000472",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1493,
+        "consulting_content": "고객은 신혼부부 전세자금 대출 연장을 모바일로 신청하고 싶어 하고, 본인 확인 절차와 필요 서류, 보증금 증가 시 대출 한도 변동 여부, 처리 기간, 문자 안내 방법 등을 문의했다. 상담사는 모바일 연장 가능성을 확인하고, 서류 목록과 보안 절차, 방문 시 준비사항을 안내했으며, 문자로 결과를 알려드리겠다고 답변했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

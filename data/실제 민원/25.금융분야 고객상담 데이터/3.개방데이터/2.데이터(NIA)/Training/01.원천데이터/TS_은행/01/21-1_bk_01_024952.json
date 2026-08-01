@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_024952",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1684,
+        "consulting_content": "고객은 가입 가능 여부와 입금 내역 조회를 요청하며 조회 시점을 지정하였다. 상담사는 지정 기간의 입금 거래만 확인되었다고 답변했으며, 결과를 문자로 요약해 보내겠다고 안내하고 처리 소요 시간을  안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

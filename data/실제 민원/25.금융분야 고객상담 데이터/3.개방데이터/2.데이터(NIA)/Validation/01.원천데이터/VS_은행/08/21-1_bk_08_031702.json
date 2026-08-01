@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_031702",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1177,
+        "consulting_content": "고객은 대출 만기 연장을 문의하고 계좌번호, 성명, 생년월일, 비밀번호를 제공했으며 연장 절차와 경로를 요청했으며, 상담사는 대출 만기일을 확인하고 URL 및 모바일 앱을 통한 연장 신청 방법, 수수료, 이자율을 안내하고, 연장 완료 시 문자 확인을 약속하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

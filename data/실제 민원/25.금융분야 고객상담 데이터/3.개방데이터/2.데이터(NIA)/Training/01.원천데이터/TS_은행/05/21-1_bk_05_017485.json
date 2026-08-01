@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_017485",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "20~29세",
+        "consulting_client": "신규고객",
+        "consulting_client_type": null,
+        "source_length": 992,
+        "consulting_content": "고객은 이체한도 해제 문의를 하였고 상담사는 한도 제한 해제는 급여 입금 등 거래 목적 확인 시 가능하며, 신분증, 거래내역, 자금출처 서류 제출 후 심사한다는 안내와 영업점 방문, 예약 절차를 제시하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

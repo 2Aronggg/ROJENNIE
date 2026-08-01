@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_017985",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 944,
+        "consulting_content": "고객은 마이너스 통장 대출의 부수거래 금리 감면이 카드 사용 중지 후 반영되지 않아 확인을 요청하고, 신분증 사진, 거래내역서 제출을 동의했으며, 상담사는 고객 정보를 확인하고 시스템 조회 후 결과를 문자로 안내하고, 추가 서류 회신을 요청하여 처리하겠다고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

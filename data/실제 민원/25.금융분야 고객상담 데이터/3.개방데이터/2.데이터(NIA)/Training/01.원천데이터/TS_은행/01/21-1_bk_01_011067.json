@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_011067",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 913,
+        "consulting_content": "고객은 민생 금융 캐시백 입금 일자와 수령 조건을 문의하였고 상담사는 계좌를 조회하여 입금은 매월 말일에 자동 정산되며 연 2회 지급되고 지연 시 3영업일 이내 재조정된다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_008193",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 796,
+        "consulting_content": "고객은 기존에 달러와 바트 환전을 신청한 후 공항에서 수령하고자 변경을 요청하였다. 상담사는 출발 공항을 확인하고, 지정된 공항 근처 환전소에서 영업일 오전 6시부터 밤 9시까지 신분증을 제시하면 수령 가능하다고 안내하였다. 또한 ★★은행 어플의 외환 메뉴에서 내역 조회 후 수령점 등록, 변경을 선택하면 간편하게 변경이 완료된다고 설명하였다. 수수료는 기존 환전과 동일하게 적용되며 추가 비용은 발생하지 않는다고 전달하였다. 마지막으로 공항 환전소 영업시간이 제한될 수 있으니 사전 확인을 권고하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_015243",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1447,
+        "consulting_content": "고객은 자동 입금, 이체 중단 여부와 잔액 부족 여부를 확인하고 재개 방법을 문의하였고 상담사는 현재 자동 이체가 정상 진행 중이며 잔액이 충분함을 확인하고, 모바일 뱅킹에서 이체 관리 메뉴의 재개 버튼을 눌러 재개할 수 있다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

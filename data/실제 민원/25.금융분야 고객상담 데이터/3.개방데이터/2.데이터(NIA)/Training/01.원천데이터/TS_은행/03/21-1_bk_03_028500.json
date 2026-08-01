@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_028500",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1112,
+        "consulting_content": "고객은 자동이체가 잔액 부족으로 미처리됐다고 문의하였고, 상담사는 현재 은행이 ★★은행임을 확인하고, 출금 전 잔액 확보와 지정 시간 입금을 권고했으며, 자동이체의 실패 시 다음 영업일 재시도와 문자 알림을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_026979",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 867,
+        "consulting_content": "고객은 대출 연장을 요청하고 본인 확인을 위해 생년월일, 핸드폰 인증, 계좌 비밀번호를 제공하였고 상담사는 인증 완료 후 연장 가능 금액, 이자율을 안내하고 전자 서명 절차를 설명했으며, 고객이 전화로 진행을 원해 상담사는 담당 부서가 전화 연락을 잡아줄 것이라고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

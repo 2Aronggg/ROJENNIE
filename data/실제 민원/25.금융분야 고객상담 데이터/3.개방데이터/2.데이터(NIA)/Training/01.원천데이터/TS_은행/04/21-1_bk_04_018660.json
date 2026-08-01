@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_018660",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1573,
+        "consulting_content": "고객은 내일 적금 해지를 요청하고 중도 해지 시 혜택, 이율 차이와 급여 입금 연계 여부를 묻고, 입금되지 않은 금액과 이전 안내 차이를 지적하며 본인 확인 및 계좌, 비밀번호 입력을 요구하였다. 상담사는 해지 절차와 중도 해지 시 우대 금리 중단, 현재 이율 안내, 급여 입금은 해당 기관에 문의 필요함을 설명하고, 본인 확인 방법과 앱 입력 절차를 안내한 뒤 확인 후 전화 연락 시간을 물어 처리 결과를 전달하겠다고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

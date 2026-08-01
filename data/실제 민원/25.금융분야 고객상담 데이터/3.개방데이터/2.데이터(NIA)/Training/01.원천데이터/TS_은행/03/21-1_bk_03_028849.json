@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_028849",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1026,
+        "consulting_content": "고객은 아파트 관리비 자동이체 해지를 신청했으며 이번 달 이체가 되지 않도록 확인을 요청하였고, 상담사는 시스템 조회 결과 해지가 정상 처리되어 이번 달 자동이체가 진행되지 않으며 별도 절차가 필요 없다고 안내하고, 계좌, 신분 확인 절차를 진행한 후 추가 문의가 없음을 확인하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_025570",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1087,
+        "consulting_content": "고객은 전세자금 대출 연장을 모바일로 신청하려 했지만 가족관계증명서, 임대차계약서, 신분증 사본이 없고 서류 제출 방법을 문의했으며, 상담사는 해당 서류를 사진으로 촬영해 5MB 이하 JPEG, PDF 형식으로 업로드 가능하고, 온라인 본인인증 후 비대면으로 진행할 수 있다고 안내하고, 계좌 확인 절차를 진행하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

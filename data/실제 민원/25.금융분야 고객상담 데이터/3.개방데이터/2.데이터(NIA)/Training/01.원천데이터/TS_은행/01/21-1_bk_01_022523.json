@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_022523",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1546,
+        "consulting_content": "고객은 ★★페이 앱에서 친구에게 송금하려 금액을 입력하고 확인을 눌렀으며, 보이스피싱 경고 메시지가 나타난 이유를 문의하였고, 상담사는 서비스 이용 절차와 보안 확인, 추가 인증 방법, 계좌 확인 절차를 안내하고 필요 시 센터 연락 방법도 알려 주었다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

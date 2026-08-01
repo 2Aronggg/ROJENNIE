@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_032187",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1456,
+        "consulting_content": "고객은 앱으로 대출 연장을 신청하며 임대차 계약서와 임대차 신고필증, 전입 세대 확인서 발급, 업로드 방법과 필요 서류를 문의했고 상담사는 서류 목록, 발급 소요 시간 및 앱 사진 제출 절차를 안내하였다. 고객은 휴대폰 번호와 인증 번호 변경을 요청했고 상담사는 새 번호 반영 및 인증 재절차 진행을 약속하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

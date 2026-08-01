@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_003513",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 927,
+        "consulting_content": "고객은 대출 진행 여부와 연장, 이자율 변동 및 재대출 옵션을 문의하고 이메일로 절차를 받기를 요청했으며, 상담사는 스크래핑, 약정 미완료를 안내하고, 현재 대출은 서류 검토 중이며 3~5일 내 결과를 알려줄 것, 연장은 유선 신청이 어려워 연장 상품 이용을 권고하고, 이자율은 고정이라 변동 불가, 재대출 가능성을 설명한 뒤 이메일 주소를 알려주면 절차 서류를 송부하겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

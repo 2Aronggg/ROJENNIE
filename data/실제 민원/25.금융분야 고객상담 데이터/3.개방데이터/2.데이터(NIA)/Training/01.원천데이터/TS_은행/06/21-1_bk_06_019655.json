@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_019655",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 731,
+        "consulting_content": "고객은 대출 관련 문의와 전자문서 수신을 원한다며 계좌 비밀번호를 입력하고, 이메일이 없음을 알려 새 이메일을 제공하였다. 상담사는 본인 확인 절차를 진행하고, 가상계좌 입금 안내와 전자문서, 팩스 전송 옵션을 설명한 뒤, 제공된 이메일을 등록하여 대출 진행 상황을 문자, 이메일로 안내하겠다고 응답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

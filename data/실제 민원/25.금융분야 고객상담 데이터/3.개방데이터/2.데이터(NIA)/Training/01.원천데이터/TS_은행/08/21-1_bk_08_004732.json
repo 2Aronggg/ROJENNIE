@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_004732",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1210,
+        "consulting_content": "고객은 대출 연장을 급히 요청하고 본인 확인을 위해 계좌번호, 생년월일, 비밀번호를 제공하였고, 상담사는 확인 후 연장 서류 제출 방법을 안내하며 지점 방문 또는 팩스 전송을 제시했으나 팩스 전송이 어려워 지점 담당자 연결 및 메모 남기기로 하였으며, 추후 영업일 기준 1~2일 내에 회신될 것이라고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

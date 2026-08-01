@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_021460",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 674,
+        "consulting_content": "고객은 폰뱅킹 이체 확인증, 영수증 발급 방법을 문의하고 영업점 방문 및 전화, 이메일 요청 가능 여부를 물었으며, 상담사는 확인증은 별도 발급되지 않으며 영업점 방문 시 신분증 제시 후 영수증 발급 가능하고, 모바일 앱은 조회만 가능하다고 안내하고, 주말 방문 가능과 사전 전화 예약을 권유하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

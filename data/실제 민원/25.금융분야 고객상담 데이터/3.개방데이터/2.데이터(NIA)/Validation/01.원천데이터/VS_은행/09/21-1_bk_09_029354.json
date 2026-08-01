@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_029354",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1011,
+        "consulting_content": "고객은 여행을 위해 8천 달러 환전을 원하고, 어플을 통한 신청 절차와 수수료 면제 여부를 문의하였고, 상담사는 어플에서 신분증 촬영, 계좌 연결 후 환전 신청이 가능하고, 우대 환율 적용 및 수수료 할인 혜택을 안내하며, 방문 시 창구에서도 동일 우대 적용 가능하다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

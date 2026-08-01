@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_025403",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1274,
+        "consulting_content": "고객은 IRP 해지 시 금리 변동, 위약금, 절차를 물었고 상담사는 IRP가 우대에 적용되지 않아 위약금이 없으며 온라인, 영업점에서 3일 내 처리된다고 답변하였다. 고객은 금리 우대 조건, 적금 납입 기한, 조기 상환 혜택을 물었고 상담사는 급여이체, 적금, 청약, 제휴카드가 우대이며, 적금이 지정일 내 납입하면 다음 달 금리에 반영되고, 조기 상환 시 경우에 따라 우대 유지 또는 재계산될 수 있음을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

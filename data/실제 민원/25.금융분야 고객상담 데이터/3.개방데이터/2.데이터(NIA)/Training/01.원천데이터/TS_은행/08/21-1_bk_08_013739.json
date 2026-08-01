@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_013739",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1095,
+        "consulting_content": "고객은 신용 회복 지원 관련 지속적인 전화, 문자 수신에 차단을 요청하고 차단 적용 시점을 문의하였고 상담사는 자동 연락임을 설명하고 차단 신청을 접수해 24시간 이내 적용될 것이라 안내하였으며, 온라인 뱅크에서 신용 회복 현황 조회 방법도 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

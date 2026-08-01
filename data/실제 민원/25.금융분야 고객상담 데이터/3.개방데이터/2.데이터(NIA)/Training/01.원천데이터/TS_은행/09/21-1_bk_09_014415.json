@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_014415",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 847,
+        "consulting_content": "고객은 출국 전 외화 통장에서 현찰을 인출하려고 하며, 인출 금액과 서류, 수수료, 방문 가능 시간을 문의하였고 상담사는 영업점 영업시간, 필요 서류, 수수료 0.5%, 최소5천원, 오후 5시 방문 가능 및 사전 전화 권장 등을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

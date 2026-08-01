@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_013936",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1492,
+        "consulting_content": "고객은 정기 적금, 정기 예금의 만기일 확인과 대출 이자와의 겹침, 자동 해지 및 입금 절차를 문의하였고 상담사는 만기일에 자동 이체, 해지가 이루어지고 이자 차감 여부와 일정 확인 방법을 안내하였으며 모바일 앱에서 설정 확인이 가능하다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

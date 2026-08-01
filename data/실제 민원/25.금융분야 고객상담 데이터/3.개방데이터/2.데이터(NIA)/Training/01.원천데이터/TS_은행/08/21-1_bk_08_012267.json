@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_012267",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1526,
+        "consulting_content": "고객은 대출 상환 연장을 원하고 만기일, 금액 확인 및 필요한 서류를 문의하였고 상담사는 대출 종류와 잔액을 확인하고 연장 절차, 필요 서류, 처리 기간, 이자율 적용 방식을 안내하였다. OOOOOOOOOOOOOOOOOO"
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_007789",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1146,
+        "consulting_content": "고객은 상현 지점에서 대만 달러 환전 가능 여부를 문의하였다. 은행은 해당 지점에 충분한 보유량이 있으나 방문 시점에 변동될 수 있음을 안내하고 신분증, 현금 지참을 요구하였다. 보유량이 제한된 ★★은행 대신 인근 ◆◆◆ 지점을 추천하고 영업시간을 안내하였다. 대만 달러 환전 수수료는 금액의 0.5%이며 최소 5,000원임을 설명하고, 고객이 제시한 금액에 대한 수수료와 최종 결제액을 제시하였다. 진행을 위해 현금과 신분증을 지참하도록 재차 안내하였다. 환율은 1대만 달러당 40원이며 실시간 확인은 모바일 앱에서 가능함을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

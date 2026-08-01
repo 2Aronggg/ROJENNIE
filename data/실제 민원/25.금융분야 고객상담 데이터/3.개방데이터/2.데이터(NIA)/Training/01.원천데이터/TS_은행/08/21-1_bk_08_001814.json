@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_001814",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1313,
+        "consulting_content": "고객은 대출 납입 일정과 이자 내역, 변동 기준, 연장 신청 절차, 모바일 보안 인증 방식, 연체 시 추가 비용, 문자 재발송 방법 등을 문의했다. 상담사는 이자 금액과 이자율 변동 예시를 안내하고, 연장 신청 단계와 서류, 연체 이자 계산 방식, 문자 재발송 절차를 설명했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

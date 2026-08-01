@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_027467",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1568,
+        "consulting_content": "고객은 신규 통장을 개설했으나 계좌 정보가 일치하지 않아 확인을 요청했고, 상담사는 계좌 번호, 생년월일, 비밀번호 확인 절차를 안내하였다. 고객은 조기 해지 시 발생하는 수수료와 필요 서류, 그리고 기존 계좌 유지 후 다른 상품으로 전환 가능한지 문의하였고, 상담사는 수수료는 계약 기간에 따라 다르며 신분증, 통장 사본, 해지 신청서가 필요하고, 전환이 가능함을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

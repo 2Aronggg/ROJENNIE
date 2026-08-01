@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_018353",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1242,
+        "consulting_content": "고객은 모르는 사람에게 잘못 입금된 금액의 반환을 신청했으며, 착오 송금 반환 절차와 앱 동의 방법, 영업일 기준 1~2일 소요 및 담당자 연락을 안내받았다. 상담사는 신분 확인, 반환 메뉴 안내, 동의 절차 및 처리 일정, 담당자 전화 안내 등을 제공하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

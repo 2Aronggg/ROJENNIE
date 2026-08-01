@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_023870",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1128,
+        "consulting_content": "고객은 자동이체 금액이 표시되지 않고 영구 설정 여부를 문의했으며 대출 한도, 금리와 추후 연락 시간을 요청하였고 상담사는 자동이체는 기관을 통해 영구 등록돼 앱에서 수정, 확인이 어려우니 기관 문의 또는 영업점 방문, 전화가 필요하다고 안내하고, 대출 한도는 최대 5천만 원, 금리는 연 3.5~5%이며 신청은 온라인으로 가능하고, 오후 3시 이후 전화 연락을 약속받았다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

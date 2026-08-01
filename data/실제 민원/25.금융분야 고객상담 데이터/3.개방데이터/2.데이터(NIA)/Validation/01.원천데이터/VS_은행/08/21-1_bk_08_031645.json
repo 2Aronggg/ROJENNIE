@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_031645",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1303,
+        "consulting_content": "고객은 신용대출 연장을 문의하고 계좌, 비밀번호를 입력했으며 연장 신청이 완료됐음을 확인하고 연장 금리와 조기상환 절차를 물었고, 상담사는 연장은 기존 연 이율 유지이며 추가 금리 없음을 안내하고, 조기상환은 영업점 방문 또는 전화 접수 후 잔액 정산 후 계약 종료라고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

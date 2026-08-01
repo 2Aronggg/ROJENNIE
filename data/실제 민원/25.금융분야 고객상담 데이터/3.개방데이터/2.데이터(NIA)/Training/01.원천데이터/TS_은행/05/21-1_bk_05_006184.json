@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_006184",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1485,
+        "consulting_content": "고객은 모바일 뱅킹 이체 한도 초과로 거래가 불가함을 문의하였고, 상담사는 계좌가 금융거래 한도 계좌로 지정되어 있어 전자금융 및 창구 거래 한도를 안내하였다. 한도 해제를 위해 신분증과 거래 목적 증빙 서류를 지참해 영업점 방문이 필요함을 설명하였으며, 자동이체, 급여 입금 등 사용 목적이 없을 경우 해제가 제한될 수 있음을 안내하였다. 모바일 앱에서는 일시적 한도 증액 신청이 가능하나 자동 심사 기준에 따라 승인 여부가 결정되며, 거절 시 영업점 방문이 필요함을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

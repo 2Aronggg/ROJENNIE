@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_022370",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 756,
+        "consulting_content": "고객은 기존 대출 금리 인하와 새 카드의 복리 적용 여부, 연체 시 이자 방식, 조기 상환 수수료, 전세자금 대출 조건을 문의하였고 상담사는 새 카드도 동일 실적 적용, 연체는 단리, 조기 상환 수수료는 0.5%, 전세자금 대출은 보증금 80%까지 연 3.5% 금리, 원리금 균등 상환이라고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_001192",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1122,
+        "consulting_content": "고객은 개인사업자 대출의 만기일 확인과 연장 방법을 문의하였고, 상담사는 만기일을 안내하고 카카오 알림톡을 통한 비대면 연장 신청 절차, 필요 서류, 승인 소요 기간, 이자율 변동 가능성 및 자동이체 계좌 유지 가능 여부를 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

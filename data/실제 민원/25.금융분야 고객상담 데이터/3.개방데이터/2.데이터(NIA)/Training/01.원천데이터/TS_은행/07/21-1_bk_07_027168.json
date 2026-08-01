@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_027168",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 864,
+        "consulting_content": "고객은 대출 실행일과 절차, 우대 금리 적용을 위한 적금 가입 및 유지 조건을 문의했으며, 즉시 가입 가능 여부와 모바일 앱 이용 방법도 물었다. 상담사는 대출은 내일 실행되며, 우대 금리는 일정 금액 이상 적금을 납입하고 유지하면 적용되고, 오늘 가입도 가능하다고 안내하고, 모바일 앱 설치, 로그인 절차를 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_020215",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1022,
+        "consulting_content": "고객은 엔화 환전 수수료 및 실제 적용 금액, 최소, 최대 환전 한도, 신분증 요구 사항, 처리 시간을 문의하였고 상담사는 수수료 1.7% 포함, 우대 적용, 최소 〇〇원, 최대 〇〇원, 주민등록증, 운전면허, 여권 등 필요, 영업시간 내 실시간 처리됨을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

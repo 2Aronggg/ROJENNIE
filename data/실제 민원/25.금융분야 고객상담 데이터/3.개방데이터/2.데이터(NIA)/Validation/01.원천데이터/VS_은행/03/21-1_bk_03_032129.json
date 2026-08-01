@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_032129",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1903,
+        "consulting_content": "고객은 자동이체 미처리와 출금 시점, 알림 문자, 실패 시 대처, 다른 계좌 설정 가능 여부를 문의하고 본인확인 정보를 제공했다. 상담사는 신원 확인 후 잔고 충분함을 확인하고, 자동이체는 오전 9시~12시 사이에 처리되며 12시경에 출금될 예정이라고 안내했으며, 출금 완료 시 문자 알림과 실패 시 재처리 절차, 다른 계좌 설정 가능함을 설명했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

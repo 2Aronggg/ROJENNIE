@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_020515",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1200,
+        "consulting_content": "고객은 청약저축을 담보로 대출을 받고 연장 및 상환 방법을 문의하였고 상담사는 대출 금액, 연장 일정, 상환일, 자동이체 등 상환 방법을 안내하고, 현재 고정 이자율 적용과 추가 수수료는 없으며 조기상환 시 위약금이 발생할 수 있다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_014585",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1082,
+        "consulting_content": "고객은 대출 연장 및 이자 납부 방식, 잔액과 위약금 확인 등을 문의하였고 상담사는 계좌 확인 후 연장 대상 금액과 현재 잔액을 안내하고, 이자만 납부하는 방법과 금액을 설명하였다. 고객은 온라인 뱅킹에서 위약금을 확인하는 방법과 금리 변동 시 절차를 물었고 상담사는 모바일 앱 ‘대출 관리’‑‘상환, 위약금 조회’ 메뉴를 안내하고, 금리 변동 시 재계약 절차와 서류 안내가 추후 제공될 것이라고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_012619",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "80세이상",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1516,
+        "consulting_content": "고객이 달러 환전 방법과 절차를 문의했고, 상담사는 인터넷, 모바일을 통한 비대면 환전과 지점 방문 환전의 차이를 설명하고, 환율 우대 조건 및 수수료 기준을 안내하였다. 또한 지점 보유 외화 확인, 신분증, 외화계좌 확인서, 거래내역서 등 필요 서류와 운영시간 등을 안내했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

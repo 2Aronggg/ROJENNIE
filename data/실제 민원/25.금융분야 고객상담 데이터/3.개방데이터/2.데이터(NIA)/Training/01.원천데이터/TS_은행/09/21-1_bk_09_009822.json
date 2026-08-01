@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_009822",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1484,
+        "consulting_content": "고객은 대만달러 환전 가능 여부와 필요 금액을 문의하였다. 상담사는 해당 금액의 재고가 있으며 방문일에 재고 확인이 가능하다고 안내하였다. 은행 거래 여부와 관계없이 신분증과 원화 현금만 지참하면 환전이 가능하다고 설명하였다. 우대율은 적용되지 않으며 수수료는 별도 부과되지 않는다고 전달하였다. 대만달러는 현금으로만 인출 가능하고 카드 지급은 지원되지 않는다고 안내하였다. 방문 전 전화로 재고 확인을 요청하면 대기 시간을 최소화할 수 있다고 권고하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

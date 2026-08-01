@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_003831",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1982,
+        "consulting_content": "고객은 문자에 표시된 자동이체 내역을 확인하고 싶다고 문의하였고 상담사는 시스템 조회를 통해 해당 주식회사와 사업자 번호 등을 안내하였다. 고객은 해지 방법을 물었고 상담사는 영업점 방문, 전화 상담, 모바일 앱 해지 가능 및 해지 안내 URL 문자 발송을 제안하였다. 고객은 해지 확인 메일 여부를 확인하고 싶어했으며 상담사는 해지 완료 시 이메일, 문자 확인이 가능하다고 답변하였다. 고객은 사기 의심 거래 신고 절차를 문의하였고 상담사는 고객보호센터 신고 및 경찰 접수 안내를 제공하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

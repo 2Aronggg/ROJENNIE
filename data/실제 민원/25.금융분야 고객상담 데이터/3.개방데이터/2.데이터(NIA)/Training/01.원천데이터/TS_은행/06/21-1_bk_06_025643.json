@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_025643",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1171,
+        "consulting_content": "고객은 대출 이자 출금이 잔액 부족으로 일부만 처리된 상황을 설명하고, 자동이체 설정 및 연체 여부 확인을 요청하였고, 상담사는 계좌, 성명, 생년월일, 비밀번호 등 자동이체 가능 여부를 점검하고 연체 여부는 현재 확인되지 않았으며 추후 안내하겠다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

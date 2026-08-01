@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_015346",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 705,
+        "consulting_content": "고객은 호주 달러 환전 예약과 어플, 인터넷뱅킹 이용 방법, 기업 페이지 예약 불가, 예약 취소 및 일일 한도 등을 문의하였고 상담사는 인터넷, 앱 예약 가능, 외환 메뉴 신청 절차와 우대 수수료, 기업 뱅킹에서는 해당 메뉴 사용 불가, 동일 메뉴에서 취소 가능, 수수료 없음, 한도는 등급에 따라 차등 적용된다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

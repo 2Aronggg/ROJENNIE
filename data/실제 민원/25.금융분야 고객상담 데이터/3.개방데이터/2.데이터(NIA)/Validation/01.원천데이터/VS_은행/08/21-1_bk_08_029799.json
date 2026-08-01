@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_029799",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1568,
+        "consulting_content": "고객은 아버지의 담보 대출 연장 안내 전화를 받아 필요한 절차와 서류, 이자율 변동 여부를 문의하였고 상담사는 대출 조회가 필요하다고 안내하며 주민등록증, 등본, 소득증명서 준비와 지점 방문 예약을 권고하고, 연장 시 이자율은 계약에 따라 유지되거나 변동될 수 있음을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

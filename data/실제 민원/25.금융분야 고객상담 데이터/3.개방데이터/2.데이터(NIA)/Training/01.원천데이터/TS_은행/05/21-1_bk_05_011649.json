@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_011649",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1592,
+        "consulting_content": "고객은 예약 이체 시 한도 계좌 메시지가 나타나 문의했으며, 직장인 신분과 급여 입금 계좌임을 확인하고 재직증명서 제출을 요구받아 영업점 방문 또는 모바일 앱을 통한 한도 상향 신청 방법을 안내받았고, 이를 시도해 보겠다고 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_004188",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "80세이상",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1055,
+        "consulting_content": "고객은 의심스러운 출금 내역 확인을 요청했고 상담사는 본인 확인을 위해 계좌 번호와 비밀번호 입력을 안내했으나 오류가 발생해 비밀번호 재등록을 진행하였다. 이후 상담사는 계좌 일시 정지를 제안하고 고객은 이를 승인했으며, 신원 확인 절차 진행 방법을 안내받았다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

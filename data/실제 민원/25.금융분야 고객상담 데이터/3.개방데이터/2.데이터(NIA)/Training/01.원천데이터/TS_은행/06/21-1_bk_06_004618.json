@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_004618",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1507,
+        "consulting_content": "고객은 어음 금액 차이와 대출 연체 상황, 상환 일정 확인, 비밀번호 재인증, 적금 만기 연장 등을 문의하였고 상담사는 금리, 수수료 내역 안내, 연체 시 신용등급 하락, 재조정 절차, 모바일, 전화로 잔액 확인 방법, 비밀번호 오류 시 재시도 및 보안센터 안내, 적금 연장 시 금리 검토 안내, 담당 부서 연락처 및 상담 시간 제공, 메모 저장 및 확인 메일 발송 등을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

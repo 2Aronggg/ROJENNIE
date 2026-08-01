@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_009213",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1244,
+        "consulting_content": "김민수 고객은 주택담보대출 신청 시 필요한 조건과 카드 연동 여부를 문의하였다. 상담원은 급여 3개월 이상 일정액 입금, 적금 보유, 지정 카드 사용이 필요하다고 안내하고, 일반 체크, 포인트 적립 카드 중 선택 가능하다고 설명하였다. 카드 발급은 신청 후 1주일 이내 우편 발송이며, 비밀번호 설정 후 사용 가능하다고 안내하였다. 대출 심사는 3~5일 소요되고 결과는 문자, 전화로 통보하였다. 추가 서류로 신분증 사본과 거주지 확인서가 필요하고 전자문서 제출이 가능하다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

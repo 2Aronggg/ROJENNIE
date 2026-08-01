@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_019508",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1481,
+        "consulting_content": "고객은 15시, 19시 출금 내역과 대출 갱신, 보증료 관련 상세 확인을 요청하였고 상담사는 거래 로그 확인, 계좌 확인 절차 안내, 보증 서류 검토 및 결과 안내를 약속하였다. 또한 고객은 출금 알림 서비스 신청을 원했으며 상담사는 신청 양식 작성 및 즉시 활성화 방법을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

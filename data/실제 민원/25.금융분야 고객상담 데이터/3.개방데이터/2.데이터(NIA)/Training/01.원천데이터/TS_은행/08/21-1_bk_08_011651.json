@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_011651",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1372,
+        "consulting_content": "고객은 비상금 대출 상환 확인과 미수 이자 여부를 문의하고 계좌, 비밀번호를 제공했으며, 추가 송금을 시도하였다. 상담사는 계좌 확인 후 미수 이자가 남았음을 알려주고, 즉시 입금 시 해결 가능하나 만료로 즉시 처리 어려움을 전달하고, 연체료와 자동이체 설정 안내를 제공하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_005431",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1946,
+        "consulting_content": "고객은 신용대출 만기 연장을 원하고, 앱 오류와 업데이트 방법과 인증 번호와 비밀번호를 입력해 연장 신청을 완료하고, 계약서와 확인 문자가 이메일, 문자로 발송될 것이라고 확인하였다. 상담사는 최신 버전 업데이트를 안내하고, 연장 절차는 대출 관리,만기 연장 메뉴를 이용한다며 설명하였다. 연장 신청 시 본인 인증 후 6개월 연장과 자동 이체 설정을 진행한다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

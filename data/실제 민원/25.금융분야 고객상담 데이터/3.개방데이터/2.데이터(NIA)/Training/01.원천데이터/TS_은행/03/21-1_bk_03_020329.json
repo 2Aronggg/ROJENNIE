@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_020329",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 805,
+        "consulting_content": "고객은 ISA 계좌에 자동이체를 등록하려 했지만 요구불 오류가 발생했다고 알렸고 상담사는 해당 계좌가 신탁 계좌라 요구불 자동이체가 불가하므로 신탁, 적금 메뉴에서 등록하도록 안내했으며, 등록 방법과 최소 입금액, 주기 등을 설명하고 신탁 상품의 연 0.2% 관리수수료를 알려 주었다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

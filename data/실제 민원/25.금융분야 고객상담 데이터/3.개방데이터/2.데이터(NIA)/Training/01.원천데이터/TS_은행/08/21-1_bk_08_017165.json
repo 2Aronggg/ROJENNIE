@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_017165",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1017,
+        "consulting_content": "고객은 마이너스 통장 만기와 연장 절차를 문의하였고 상담사는 계좌 확인 후 연장 처리 및 확인 방법을 안내하였다. 고객은 조기 상환 수수료 발생 여부를 물었고 상담사는 수수료가 잔액의 1%이며 문자, 앱, 이메일로 안내된다고 설명하였다. 고객은 이메일 전송을 요청하였고 상담사는 이메일 주소를 확인하고 상세 내역을 발송하겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

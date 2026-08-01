@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_014625",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1012,
+        "consulting_content": "고객은 만기된 예금의 이자를 조회하고 새로운 적금 상품 안내를 요청하였고 상담사는 계좌, 비밀번호 확인 후 이자 금액과 지급액을 안내하고, 현재 적금 상품 및 가입 절차와 금리 변동을 설명하고 가입 절차는 온라인 신청 또는 전화 신청이 가능하며, 필요 서류와 본인 확인 절차에 대해 안내했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

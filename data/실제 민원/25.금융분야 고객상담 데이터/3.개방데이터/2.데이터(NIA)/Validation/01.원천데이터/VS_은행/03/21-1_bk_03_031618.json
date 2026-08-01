@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_031618",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1049,
+        "consulting_content": "고객은 아파트관리비 자동이체 해지를 요청하였고 상담사는 콜센터에서는 해지가 불가하니 모바일, 인터넷뱅킹 이용을 안내하고 화면 메뉴 선택, 해지 절차를 설명하였다. 고객은 해지 확인 문자 발송 시점을 물었고 상담사는 5분 이내 발송 및 해지 일시, 잔액 정보를 포함한다고 답변하였다. 또한 재설정 방법과 다른 자동이체 조회 방법을 안내하고, 추가 문의 시 전화, 앱 채팅 이용 가능하다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

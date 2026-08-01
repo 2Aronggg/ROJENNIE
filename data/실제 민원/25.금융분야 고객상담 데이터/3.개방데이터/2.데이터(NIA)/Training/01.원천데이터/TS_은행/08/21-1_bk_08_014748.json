@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_014748",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 998,
+        "consulting_content": "고객은 기존 일시 대출과 신규 기업 운전 일반 자금 대출의 연장 절차, 금리, 상환 일정, 필요 서류, 심사 결과 시점을 문의하였고 상담사는 계좌, 신분 확인 후 비대면 연장 신청 안내와 금리는 기준 금리 연동, 신용 등급에 따라 변동, 서류는 신분증, 급여내역, 기존 계약서 사본이며 전자 제출 가능, 심사 결과는 영업일 며칠 이내에 문자, 이메일로 통보한다는 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

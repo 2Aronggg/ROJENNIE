@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_012531",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1297,
+        "consulting_content": "고객은 대출 연장을 위해 서류를 제출했으나 추가 서류 촬영이 누락된 상태를 확인하고 계좌, 인적 정보를 제공하였고, 입금 시점을 다음 주 초로 요청하였다. 상담사는 제출 서류가 모두 접수되었음을 확인하고, 현재 대출이 만기 처리 중이며 2~3영업일 내에 입금될 예정임을 안내하고, 추가 문의 없음을 확인하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

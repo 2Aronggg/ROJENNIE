@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_011140",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 861,
+        "consulting_content": "고객은 적금 누적액, 예상 이자, 중도 인출 손실, 해지 수수료 등을 물었고 상담사는 총 납입액, 누적 적립액, 연이율, 예상 이자를 알려주며, 중도 인출 시 이자 0.5% 차감, 해지 수수료 최소 1만원이라고 안내하였다. 고객은 신분증, 계좌 비밀번호를 지참해 방문해 해지 절차를 진행하겠다고 하였고 상담사는 신분증 제시 시 담당 직원이 즉시 처리해 드린다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

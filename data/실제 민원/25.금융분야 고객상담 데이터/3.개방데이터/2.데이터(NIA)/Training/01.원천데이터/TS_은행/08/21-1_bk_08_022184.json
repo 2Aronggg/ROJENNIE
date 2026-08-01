@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_022184",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 826,
+        "consulting_content": "고객은 기존 대출 연장을 원하고 연장 안내 문자와 서류 재제출 필요를 물었으며, 상담사는 문자 수신 후 방문해 서류 심사, 재제출이 필요하다고 안내하였다. 고객은 금리, 상환 일정 변동 여부와 수수료, 서류 목록을 문의했으며, 상담사는 금리는 동일, 상환 일정 유지, 수수료는 약 0.5%이고, 신분증, 계약서, 임대차 계약서, 보증서 사본을 원본, 사본 각각 제출하도록 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

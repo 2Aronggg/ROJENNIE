@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_029838",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "신규고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 803,
+        "consulting_content": "고객은 ★★ 통장의 이체 한도가 낮아 증액을 원하고 필요한 서류, 절차, 수수료, 급송 대안 및 해제 반영 시간을 문의하였고 상담사는 한도는 시스템 규정에 따라 우선 적용되며 증액은 서류 제출 후 심사, 영업점 방문 또는 온라인 신청으로 가능하고, 필요한 서류는 발신 번호로 전송해 지참하도록 안내했으며, 수수료는 이체액에 따라 부과되고 요금은 영업점 책자에 명시, 급한 경우 실시간 계좌이체, 모바일뱅킹을 이용할 수 있다고 설명하고, 해제 승인 후 영업일 1~2일 내에 시스템에 반영되어 문자 안내가 제공된다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

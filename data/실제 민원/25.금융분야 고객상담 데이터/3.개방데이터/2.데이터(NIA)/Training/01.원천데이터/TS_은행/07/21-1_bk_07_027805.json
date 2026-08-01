@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_027805",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 845,
+        "consulting_content": "고객은 청약통장 가입 및 6개월 이상 적금 유지 사실을 알리고 주담대 적용 여부를 문의하였고 상담사는 계좌, 생년월일 확인 후 청약, 적금 요건을 검토하여 현재 자동이체가 설정돼 있으나 이번 달 실적 미반영으로 적용되지 않았음을 안내하고, 필요한 서류와 심사 기간을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

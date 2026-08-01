@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_025614",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 911,
+        "consulting_content": "고객은 500,000원을 A은행에 송금했으나 금액이 맞지 않는다며 전화번호와 송금 일시, 수취인 정보를 제공하였고, 상담사는 고객 신원 확인 후 계좌와 잔액을 조회해 차이를 안내하고, 자동이체 설정 방법과 송금 처리 시간, 다음 영업일 입금 확인 가능 여부를 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

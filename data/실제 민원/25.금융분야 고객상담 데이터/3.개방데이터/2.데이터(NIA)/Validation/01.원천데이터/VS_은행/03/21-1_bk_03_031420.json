@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_031420",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1610,
+        "consulting_content": "고객은 카드 미발송과 자동이체 잔액 부족, 이중 출금 문제를 제기하였고 상담사는 카드 발급 지연을 확인하고 자동이체 보류 상태와 잔액 부족을 안내하며, 이중 출금 환불은 카드사에 문의하면 3~5일 내 처리된다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

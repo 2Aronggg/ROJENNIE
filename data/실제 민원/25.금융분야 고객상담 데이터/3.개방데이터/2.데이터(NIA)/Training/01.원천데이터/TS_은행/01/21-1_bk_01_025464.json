@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_025464",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 823,
+        "consulting_content": "고객은 오늘 오전 출금 내역을 확인하고 싶다고 요청하였고 상담사는 자동이체 출금임을 안내하고 해지는 타행 앱에서 해야 함을 설명하였다. 고객은 해외 결제 의심을 제기하였고 상담사는 해당 결제를 일시 정지하고 카드 재발급을 제안하여 신청을 완료하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

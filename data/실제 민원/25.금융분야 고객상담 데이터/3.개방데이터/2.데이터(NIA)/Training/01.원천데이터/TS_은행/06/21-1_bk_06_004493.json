@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_004493",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 783,
+        "consulting_content": "고객은 계좌 정지로 대출금 출금이 어려워 확인 후 대출 상환일 변경 및 수수료 문의, 조기 상환 절차와 대출 현황 문자 서비스를 요청하였고 상담사는 신원 확인 후 계좌 정보를 받고, 상환일 변경은 은행 방문 필요와 0.1% 수수료 안내, 조기 상환은 신청서 제출 절차와 수수료 차등 적용을 설명하고, 매월 말 대출 잔액, 이자 문자 안내를 등록해 바로 진행하겠다고 응답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

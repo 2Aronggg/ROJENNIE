@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_004262",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1056,
+        "consulting_content": "고객은 계좌와 이체 한도 상향 절차를 문의했으며 제한 확인 후 한도 해제 필요를 안내받고, 상담사는 ARS 연결, 개인정보 확인, 한도 해제 URL을 문자로 전송해 진행하도록 안내하고, 고객은 링크를 따라 한도 해제를 완료해 기본 일회, 일일 이체 한도가 적용됐다고 확인했으며, 추가 문의 없음을 밝혔고 상담사는 필요 시 온라인 뱅킹이나 전화로 재조정 가능하다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

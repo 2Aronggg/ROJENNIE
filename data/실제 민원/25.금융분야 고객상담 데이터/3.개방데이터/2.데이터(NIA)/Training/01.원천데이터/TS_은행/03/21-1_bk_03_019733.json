@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_019733",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 892,
+        "consulting_content": "고객은 자동이체 현황, 해지, 출금실패, 건수 차이, 이전 절차, 정상 확인, 수수료, 재등록, 알림 서비스 등 여러 문의를 하였고 상담사는 해지 여부 조회 방법, 출금실패 표시, 중복 표시 설명, 이전 절차와 주의사항, 실시간 확인 방법, 수수료 없음 및 즉시 재등록 가능, 알림 설정 방법 등을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_001958",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1212,
+        "consulting_content": "고객은 대출 만기 연장 가능 여부, 모바일 어플을 통한 연장 신청 방법, 연장 절차와 서류 제출 방식, 심사 결과 확인 방법, 연장 마감일, 이자율 변동, 상환 일정 변경, 신청 취소 및 전화 접수 가능 여부, 수수료 발생 여부를 문의했으며, 상담사는 어플을 통한 연장 신청 절차와 심사 과정, 서류 제출 경로, 결과 확인 방법, 연장 신청 기한, 이자율 적용 방식, 상환 일정 변경 안내, 취소 및 전화 신청 절차 등에 대해 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

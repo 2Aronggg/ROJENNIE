@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_023343",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 937,
+        "consulting_content": "고객은 입금 담보 대출 이자 금액을 문의하고 본인 확인을 위해 생년월일, 휴대폰 뒷자리를 제공하였고 상담사는 확인 후 월 이자 약 ●●●원임을 안내했으며, 조기 상환 수수료는 계약서에 따라 다르고 1년 미만 잔여 시 면제된다고 설명하고, 신용, 전세자금 대출 금리와 조건을 추가로 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

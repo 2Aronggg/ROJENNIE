@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_025444",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 857,
+        "consulting_content": "고객은 ●●● 지점의 출금, 체크카드 서비스 부재와 송금 가능 여부, 루피아 환전 및 적금 잔액 환전 절차, 지점 연락처와 영업시간, 주말 영업을 문의하였다. 상담사는 해당 지점은 출금, 체크카드 불가, 송금은 직접 문의 권고, 루피아 환전은 ●●원 이하 가능, 초과 시 절차 필요, 적금 환전도 한도 초과 시 별도 절차 필요하다고 안내하고, 전화번호와 상세 안내를 문자로 보내며, 평일 9시~18시, 토요일 9시~14시 영업 및 환전 가능하다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

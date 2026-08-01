@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_026884",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1649,
+        "consulting_content": "고객은 대출 연장 시 이자 적용과 절차, 필요 서류를 문의하였고 상담사는 연장 시 원금, 이자 재계산, 신분증, 거래내역서 필요와 ARS, 앱 인증 방법을 안내하였다. 고객은 계좌 비밀번호 입력을 거부하고 문자, 앱 링크 전송을 요청했으며 최장 연장 기간과 수수료 0.5%를 물었고 상담사는 해당 기간, 수수료 정보를 제공하고, 연장 완료 시 문자, 앱 알림을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

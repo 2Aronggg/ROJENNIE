@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_000910",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1133,
+        "consulting_content": "고객은 정기적금 만기일 확인과 만기 금액 자동 이체 방법을 문의했으며, 상담사는 계좌 입력, 인증 후 금액과 일자 설정으로 가능하다고 안내했다. 또한 입력 오류, 부분 이체, 모바일 입금, 조기 해지 위약금, 이자 지급, 개인정보 변경 방법 등을 문의했고, 상담사는 각각 재입력 가능, 금액 지정 설정, 계좌 등록 후 자동 입금, 계약 비율에 따른 위약금 차감, 만기 이자 지급, 본인 인증 후 변경 가능하다고 설명했다. 마지막으로 자동 이체 설정이 완료되어 만기일에 자동 입금이 진행된다고 안내했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

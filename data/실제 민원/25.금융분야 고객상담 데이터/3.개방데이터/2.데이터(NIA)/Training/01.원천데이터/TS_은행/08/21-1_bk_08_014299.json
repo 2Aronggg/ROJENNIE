@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_014299",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1073,
+        "consulting_content": "고객은 대출 연장을 요청하고 소득 증빙 서류와 본인 확인을 위해 계좌, 비밀번호를 제공하였고 상담사는 연장에 필요한 서류 안내와 앱 신청 방법을 설명하고, 평가 절차와 금리 변동을 안내한 뒤 전담 부서에 전화 연결 및 추후 연락을 약속하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

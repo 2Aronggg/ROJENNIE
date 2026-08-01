@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_032454",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1157,
+        "consulting_content": "고객은 대출 연장을 위해 계좌 번호와 연락처를 입력하고 본인 확인 질문에 답했으며 서류를 준비하겠다고 하였고 상담사는 계좌 입력 안내와 10만원 이상 거래 확인을 요청하고, 신분증, 소득증명, 통장 사본 등 필요 서류를 안내한 뒤 다음 주 화요일 오전 10시 방문 상담을 제안하고 예약 없이 영업시간 내 방문 가능함을 알려 주었다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

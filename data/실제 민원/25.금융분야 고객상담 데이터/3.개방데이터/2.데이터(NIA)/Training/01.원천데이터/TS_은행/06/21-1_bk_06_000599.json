@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_000599",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1331,
+        "consulting_content": "고객은 대금 연체 상황을 확인하고 가상계좌 입금 및 연체 이자 감면 방법을 문의했다. 상담원은 대금 연체 현황을 안내하고 가상계좌 발급, 입금 절차, 자동이체 주의사항, 이자 감면 조건 및 필요 서류, 알림 서비스 신청 방법을 설명했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

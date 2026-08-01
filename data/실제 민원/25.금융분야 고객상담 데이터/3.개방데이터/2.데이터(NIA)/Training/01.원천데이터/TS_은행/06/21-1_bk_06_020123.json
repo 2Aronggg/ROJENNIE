@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_020123",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1389,
+        "consulting_content": "고객은 대출 보증 관련 이자, 원금 차감 여부와 납입 일정, 조기상환 수수료, 연체 시 처리 방안을 문의하였고 상담사는 이자는 매월 납부되고 원금은 거치기간 종료 후 상환됨을 안내하고, 조기상환 시 남은 원금의 일정 비율 수수료가 발생한다는 점과 연체 시 가산 이자 및 유예 기간 검토 가능함을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

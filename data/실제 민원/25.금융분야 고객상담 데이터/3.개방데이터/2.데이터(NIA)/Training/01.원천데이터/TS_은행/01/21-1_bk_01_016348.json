@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_016348",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1101,
+        "consulting_content": "고객은 자녀 연금 통장의 자동이체 금액 조정 및 잔액, 이자, 세금 현황 문의와 SMS 알림 서비스 신청을 요청하였고 상담사는 자동이체 금액 변경 가능 안내, 현재 잔액, 연 2.5% 이자, 비과세 기준 설명, SMS 알림 신청 및 이메일 발송 절차를 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

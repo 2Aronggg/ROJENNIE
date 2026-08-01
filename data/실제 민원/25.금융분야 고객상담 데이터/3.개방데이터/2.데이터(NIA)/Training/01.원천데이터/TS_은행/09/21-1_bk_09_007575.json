@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_007575",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1689,
+        "consulting_content": "고객은 공항에서 달러 현찰 환전을 원하며 환전 수수료와 우대 적용 여부를 문의하였다. 상담원은 스마트폰 앱을 통한 사전 신청 시 우대 쿠폰 적용과 실버 등급 ●% 우대를 안내하고 신청은 최소 2시간 전까지 필요하다고 설명하였다. 안드로이드 폰에 앱 설치, 인증 방법과 실시간 환율 확인 위치를 안내하고 신분증 지참을 요구하였다. 1,000달러 환전 시 예상 수수료와 결제 원화 금액을 제공하며 오늘 저녁 7시까지 공항 수령 예약을 완료하였다. 문자로 경로와 확인 정보를 전송하였으며 추가 문의 없음을 확인하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

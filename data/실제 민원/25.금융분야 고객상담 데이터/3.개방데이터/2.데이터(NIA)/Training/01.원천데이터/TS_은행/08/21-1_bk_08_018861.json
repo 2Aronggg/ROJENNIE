@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_018861",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 733,
+        "consulting_content": "고객은 대출 연장을 원하고 서류 재제출 여부와 금리 변동, 온라인 신청 가능 여부, 결과 통보 시기를 물었고 상담사는 서류 제출 필요와 금리 변동 가능성, 온라인 신청 방법 안내, 심사 결과는 2~3 영업일 내에 문자, 이메일로 알려드린다고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

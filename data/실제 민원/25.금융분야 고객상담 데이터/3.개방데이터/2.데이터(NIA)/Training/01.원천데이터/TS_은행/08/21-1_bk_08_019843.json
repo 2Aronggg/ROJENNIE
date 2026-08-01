@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_019843",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1255,
+        "consulting_content": "고객은 마이너스 통장 연장 후 한도 감소와 일시납 상환 가능 여부를 문의했으며, 상담사는 연장 약정이 이미 완료돼 일시납 전환이 어렵고 현재는 월별 상환만 가능하다고 안내하고, 연장 취소, 재심사는 약정 종료 전까지만 가능하다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

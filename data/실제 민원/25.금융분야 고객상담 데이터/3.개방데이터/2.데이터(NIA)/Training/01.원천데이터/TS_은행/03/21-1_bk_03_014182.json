@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_014182",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1239,
+        "consulting_content": "고객은 자동이체를 타행으로 변경했으나 미처리 문자 수신 후 계좌번호를 모른다고 말하고 휴대폰 번호 인증을 요청하여 인증번호와 이름, 비밀번호를 입력하였고, 상담사는 인증 절차를 진행하고 기존 은행의 자동이체 해지를 확인했으며 현재 별도 조치가 필요 없고 해지는 영업일 기준 1~2일 내에 반영된다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

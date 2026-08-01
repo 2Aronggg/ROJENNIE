@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_023060",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 967,
+        "consulting_content": "고객은 모바일 앱에서 대출 연장을 시도했으나 오류 코드가 계속 발생해 업데이트, 캐시 삭제, 재로그인까지 시도했지만 해결되지 않았고, 전화 상담을 원한다고 알렸으며, 상담사는 전산 부서에 확인 후 1~2시간 내에 오류를 해결하고 문자로 진행 상황을 안내하겠다고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

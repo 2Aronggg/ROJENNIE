@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_026989",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1393,
+        "consulting_content": "고객은 대출 연장 신청 진행 상황과 스마트폰 인증서 내보내기, OTP 미수신 문제를 문의했고, 서류는 정상 업로드됐으나 추가 제출 여부와 담당자 연결을 요청하였다. 상담사는 신원 확인 후 시스템을 검토해 현재 대출 잔액 변동과 서류 상태를 안내하고, 필요 시 추가 서류 제출 및 영업점 담당자 연결을 시도했으며, 연락처를 받아 2~3일 내 결과를 문자, 전화로 통보하고 OTP 미수신 시 문자 수신 설정 점검, 재전송을 권고하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

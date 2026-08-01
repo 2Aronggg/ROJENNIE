@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_001782",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1155,
+        "consulting_content": "고객은 대출 연장 절차와 필요한 서류, 신청 방법, 마감일 이후 처리 방식, 담당 과장 휴가 시 대체 절차 등에 대해 문의하였다. 상담원은 모바일 앱을 통한 연장 신청 방법, 서류 제출 방법, 알림 확인 방법, 수수료 안내 및 승인 후 상환 일정 변경 등을 설명하고, 과장 복귀 시 추가 절차가 없음을 알려 주었다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

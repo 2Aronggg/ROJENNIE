@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_011134",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 791,
+        "consulting_content": "고객은 후리 드라이브 회사에 대한 자동이체 일시 정지를 요청하였고 상담사는 기관 자동이체는 일시 정지가 불가하므로 해지 후 재등록이 필요함을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

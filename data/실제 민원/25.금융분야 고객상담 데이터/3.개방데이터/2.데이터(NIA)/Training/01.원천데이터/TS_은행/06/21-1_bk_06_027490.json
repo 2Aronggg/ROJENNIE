@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_027490",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1114,
+        "consulting_content": "고객은 대출 이자 납입일 및 가상계좌, 금액을 문의하고 본인 확인 정보를 제공했으며 비밀번호를 입력하였고, 상담사는 전산 조회 후 ●월 ●일이 납입일임을 확인하고 해당 일자에 입금할 금액과 일회성 가상계좌 정보를 문자로 발송하며, 재발송 불가와 이중 출금 주의 등을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

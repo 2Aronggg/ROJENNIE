@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_017839",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1667,
+        "consulting_content": "고객은 1,000달러 환전을 원하고 가능한 지점, 보유량 확인, 신분증, 여권 제시 방법, 어플 신청 절차, 실시간 환율, 수수료 문의를 하였고 상담사는 보유량 확인 중임을 알리고 다른 지점 가능 여부와 신분증, 여권 지참 안내, 어플 메뉴를 통한 간편 신청 방법, 영업시간, 공항 수령 절차와 전산 연동 안내, 실시간 환율, 수수료는 어플에서 확인 가능함을 설명하며 영수증은 문자, 이메일 발송 가능하다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

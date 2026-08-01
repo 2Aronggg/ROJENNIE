@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_010453",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 967,
+        "consulting_content": "고객은 버팀목 전세 자금 대출 연장을 문의하고 계좌, 비밀번호를 제공하였고 상담사는 연장 만기일, 연장 서류 문자 발송, 연장 후 금리 5.6%와 월 상환액 증가 약 2~3만원, 신청 절차는 서류 제출 후 3~5영업일 내 심사 완료이며 조기 상환은 가능하나 수수료 발생 가능하다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_015418",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1166,
+        "consulting_content": "고객은 거치식 예금 만기일 처리와 방문 일정 조정을 문의하였고 상담사는 만기 자동 처리와 방문 가능함을 안내하고 해당 부서 연결 및 전화 상담을 제안하였다. 고객은 연락처를 제공하였고 상담사는 담당자가 추후 연락 및 모바일 앱 안내를 제공하겠다고 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

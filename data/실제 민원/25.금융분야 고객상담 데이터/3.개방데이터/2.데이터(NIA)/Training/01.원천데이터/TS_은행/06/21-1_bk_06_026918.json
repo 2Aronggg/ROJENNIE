@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_026918",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 819,
+        "consulting_content": "고객은 오늘 이자, 원금 납부와 자동이체 출금 시점, 잔액 확인 및 문자 미수신, 오류 여부를 문의하였고 상담사는 계좌 잔액을 조회하고, 자동이체는 영업시간 외 다음 영업일에 처리되며 오늘 중 완료될 예정이라고 안내하고, 충분한 입금과 기존 자동이체 확인을 권고하며 현재 수수료는 없다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

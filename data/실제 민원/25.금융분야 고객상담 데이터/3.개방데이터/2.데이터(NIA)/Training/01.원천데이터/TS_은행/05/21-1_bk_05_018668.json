@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_018668",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1425,
+        "consulting_content": "고객은 사업자 통장이 한도계좌여서 한도 해제에 필요한 서류를 문의하고 방문 준비를 원했으며, 상담사는 사업자등록증, 신분증, 최근 매출 증빙 중 하나를 문자로 안내하고, 해당 서류만 지점에 지참하면 심사 후 이용 가능하다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

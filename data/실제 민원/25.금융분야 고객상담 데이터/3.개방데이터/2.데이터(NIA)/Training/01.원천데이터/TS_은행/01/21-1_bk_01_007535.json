@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_007535",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1623,
+        "consulting_content": "고객은 계좌 비밀번호를 여러 차례 틀려 잔액 조회가 불가능해 현재 잔고 확인 방법을 문의했고, 상담사는 비밀번호 오류 상태에서는 잔액 안내가 불가함을 설명하며 모바일 앱을 통한 비밀번호 재등록 경로와 앱 인증이 어려울 경우 지점 방문 재등록 방법을 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

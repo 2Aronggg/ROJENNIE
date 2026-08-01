@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_04_024904",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 887,
+        "consulting_content": "고객은 앱으로 입출금 계좌 해지를 원했으며 다른 계좌가 없고 미결제 이체와 이자 정산을 확인하지 못했다고 하였다. 상담사는 이자 정산이 완료돼야 해지가 가능하고 전화 해지는 어렵다며 신분증, 모바일 인증을 지참하고 방문해야 한다고 안내하고, 내일 오후 방문 일정을 잡았다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "만기,연장/해지,수신"
+    }
+}

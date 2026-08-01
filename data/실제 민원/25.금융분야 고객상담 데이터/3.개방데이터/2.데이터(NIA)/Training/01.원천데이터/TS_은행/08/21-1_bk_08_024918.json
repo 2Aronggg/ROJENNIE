@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_024918",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1257,
+        "consulting_content": "고객은 모바일로 대출 만기 연장을 시도하고 전산 확인을 요청했으며, 상담사는 연장 여부를 조회했지만 약정서 미작성으로 연장이 제한된다고 안내하고, 고객은 재신청 및 약정서 작성 후 다시 진행하기로 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

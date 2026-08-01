@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_007387",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1114,
+        "consulting_content": "고객은 보유 외화인 달러와 유로를 카드에 연동하고자 하였으며, 기존 ★★ 카드에서는 외화 충전이 불가함을 안내받았다고 하였다. 상담사는 원화 계좌 잔액 500만원으로 유로 200만원 환전이 가능하며, 환율, 수수료 적용 후 차감 금액이 약 231만원이 된다고 설명하였다. 고객은 환전 진행을 승인"
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

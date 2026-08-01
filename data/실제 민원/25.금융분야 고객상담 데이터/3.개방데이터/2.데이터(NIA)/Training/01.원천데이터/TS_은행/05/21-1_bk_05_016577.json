@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_016577",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1084,
+        "consulting_content": "고객은 한도 계좌 해지를 원하고 앱 시도 후 비대면이 불가하다고 알려져 영업점 방문을 요청하였고 상담사는 공공 데이터 증빙 필요와 영업점 방문 시 신분증, 거래내역 제출, 수수료 없음, 해지 후 잔액 출금 및 다른 은행 이전 절차를 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

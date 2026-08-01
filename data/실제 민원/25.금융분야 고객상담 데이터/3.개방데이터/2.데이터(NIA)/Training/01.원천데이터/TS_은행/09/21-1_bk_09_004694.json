@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_004694",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1015,
+        "consulting_content": "고객은 300달러 환전을 원해 근처 지점 여부와 영업시간, 주차 등을 문의하였고 상담사는 해당 지점에 재고가 충분하니 신분증과 원화 지참 후 영업시간 내에 방문하면 가능하고, 계좌가 없어도 신청 가능하며 영업시간은 9시~18시이며 주차는 협소하니 대중교통 이용을 권유하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

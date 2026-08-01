@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_016349",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1062,
+        "consulting_content": "고객은 대출 만기가 다가와 연장 및 금리 감면을 문의하였고 상담사는 대출 만기를 확인하고 연장 심사가 진행 중이며 심사 완료 시 휴대폰 문자, 앱 알림, 이메일로 통보하고, 금리는 재산정될 것이며 급여이체, 적금, 체크카드 이용 등 조건 충족 시 감면 가능하다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

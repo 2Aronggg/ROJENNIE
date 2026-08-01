@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_025898",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1125,
+        "consulting_content": "고객은 법인 계좌에 입금된 건에 대해 중계 요청과 연체 금액, 이자 확인을 요청하였고 상담사는 계좌와 입금 내역을 확인한 뒤 중계 처리를 진행하고, 연체 정보를 조회해 안내하며, 중계는 영업일 기준 1~2일 내 처리되고 결과는 문자로 통보될 것이라고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

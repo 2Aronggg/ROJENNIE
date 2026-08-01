@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_012646",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1813,
+        "consulting_content": "고객은 대출 이자, 납부일 사전 심사와 연체 내역 확인, 신용대출 조건 자료를 문자로 요청하고 직접 납부 및 방문 예약을 문의하였고 상담사는 계좌, 연체 정보를 조회, 정리하고, 연체 상세 내역과 상환 일자를 안내한 뒤 문자로 자료를 송부하고 직접 납부, 방문 절차를 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

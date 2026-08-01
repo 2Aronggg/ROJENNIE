@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_028763",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1439,
+        "consulting_content": "고객은 대출 연장 서류 제출 방법과 앱 스크래핑 오류에 대해 문의하였고 상담사는 앱 업로드가 안 될 경우 사진 촬영 업로드 또는 서류 출력 후 영업점 방문, 팩스 전송을 안내하였으며, 공인인증서 등록 확인과 최신 버전 점검을 요청하고, 배터리 부족으로 인한 오류 가능성을 알려 재충전 후 재시도하도록 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

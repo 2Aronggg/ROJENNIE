@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_000894",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1597,
+        "consulting_content": "고객은 신용 대출 조기 상환과 연장 가능 여부, 금리 조건, 신청 절차, 필요 서류, 상환 일정, 금리 우대 혜택, 전자 서명 및 계약서 수령 방식 등을 문의 하였고, 상담사는 조기 상환 수수료 기준, 한도 산정 방식, 금리 상환 옵션, 자동이체 급여 이체에 따른 우대 혜택, 계약서 전자 발송까지 각 항목에 대해 단계별로 안내 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

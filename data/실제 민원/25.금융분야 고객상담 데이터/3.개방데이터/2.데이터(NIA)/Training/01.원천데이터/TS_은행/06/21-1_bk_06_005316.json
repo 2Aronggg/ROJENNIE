@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_005316",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1463,
+        "consulting_content": "고객은 기존 주택담보대출의 상환 일정 및 이자율 변동 여부를 문의하였다. 상담원은 이자율이 고정이며 조기상환 시 원금의 0.5% 수수료가 발생한다는 점을 안내하였다. 조기상환 절차는 입금 신청이며, 입금 마감은 영업일 오후 5시라고 설명하였다. 고객은 납부일을 15일에서 20일로 변경하고자 하였고, 상담원은 다음 달부터 적용되며 신청은 전화 또는 인터넷뱅킹으로 가능하다고 안내하였다. 변경 신청을 접수하고 문자 안내가 이루어질 것이라고 확인하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

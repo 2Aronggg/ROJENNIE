@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_013473",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1088,
+        "consulting_content": "고객은 대출 이자 납입일에 입금했음에도 연체 문자 수신 사실을 확인하고 정확한 금액 및 이자율, 할인 혜택을 문의하였고 상담사는 입금 확인 절차와 연체 금액, 이자율을 안내하고 일시불 상환 시 5% 할인 가능함을 설명하였으며 자동이체 계좌 변경 방법을 요청받아 새로운 계좌 정보를 받아 즉시 변경 절차를 진행하기로 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

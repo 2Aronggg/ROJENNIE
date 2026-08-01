@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_009194",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1768,
+        "consulting_content": "고객은 계좌 변경 후 ★★카드 자동이체 등록 여부를 확인하고자 전화하였다. 상담원은 해당 카드의 자동이체가 존재하지 않음을 안내하였다. 자동이체는 모바일 모바일 뱅킹 앱을 실행한 후 이체, 결제 메뉴를 선택하고 자동이체 관리를 눌러 주세요. 신규 자동이체 등록 화면에서 이체 금액과 일자를 입력하고, 보안 인증을 위해 비밀번호와 문자로 전송되는 인증번호를 입력하면 등록이 완료됩니다. 인증번호 수신에 대한 비용은 발생하지 않으며, 문자만 수신하면 됩니다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

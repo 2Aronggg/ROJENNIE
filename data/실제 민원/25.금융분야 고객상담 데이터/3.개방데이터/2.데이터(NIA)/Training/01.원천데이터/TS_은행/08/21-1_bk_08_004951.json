@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_004951",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1018,
+        "consulting_content": "고객은 담보 대출 연장을 위해 필요한 서류와 방문 예약 절차, 서류 제출 방법 및 이자율 유지 여부를 문의하였고 상담사는 버팀목 전용 창구 예약을 안내하고, 계약서, 신분증, 소득증명, 등기부 등본을 요구하며, 방문, 우편, 팩스, 앱 사진 업로드 모두 가능하나 원본 확인 시 방문이 필요함을 설명하고, 연장 시 기존 이자율이 유지된다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

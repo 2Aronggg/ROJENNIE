@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_026421",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 926,
+        "consulting_content": "고객은 만기된 대출 계좌의 거래내역 조회 방법을 찾고자 했고 상담사는 인터넷뱅킹 메인 화면 오른쪽 상단 대출, 예금 탭에서 대출 조회 메뉴로 이동해 계좌 번호 입력 후 조회하도록 안내하였다. 고객은 만기 일자와 상환 내역, 잔액 0을 확인하고 만족하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

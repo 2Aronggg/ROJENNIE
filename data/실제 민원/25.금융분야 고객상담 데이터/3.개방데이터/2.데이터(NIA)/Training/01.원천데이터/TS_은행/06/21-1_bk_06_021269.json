@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_021269",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 794,
+        "consulting_content": "고객은 이자 빠져나간다는 문자에 대해 문의하고 마이너스 통장과 무관하다고 주장했으며, 계좌번호, 성명, 생년월일, 비밀번호 확인을 요청받아 제공하였다. 상담사는 전세 대출 이자임을 안내하고, 마이너스 이용이 없으므로 이자 발생이 없음을 설명했으며, 추가 대출 여부를 확인하고 상담을 종료하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

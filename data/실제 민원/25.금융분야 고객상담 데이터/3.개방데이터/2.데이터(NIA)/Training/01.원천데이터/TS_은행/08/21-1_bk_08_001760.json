@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_001760",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1904,
+        "consulting_content": "고객은 사업자 대출 만기 연장을 원해 앱을 통한 간편 신청 방법과 필요한 서류, 인증서 발급 절차를 문의했으며, 상담원은 앱에서 연장 절차, 자동 서류 업로드, 인증서 없이도 팩스, 사진 제출 가능, 심사 기간, 결과 통보 방식, 이자율 변동 시점, 상환 일정 조정 등을 안내하고 오류 시 대처 방법과 영업점 방문 필요 상황을 설명했다"
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

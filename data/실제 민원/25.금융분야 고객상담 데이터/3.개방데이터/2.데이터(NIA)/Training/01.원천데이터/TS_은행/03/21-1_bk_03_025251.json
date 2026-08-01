@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_025251",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 975,
+        "consulting_content": "고객은 IRP 계좌 자동이체 종료와 수수료 여부를 문의하였고 상담사는 기간 만료를 확인하고, 재등록을 위한 경로를 문자로 발송하겠다고 안내하였다. 고객은 경로 발송을 요청하고, 상담사는 즉시 문자 발송을 완료했으며, 고객은 확인 후 진행하겠다고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

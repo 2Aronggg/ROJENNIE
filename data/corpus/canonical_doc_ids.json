@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "description": "Canonical document groups for duplicate or equivalent KB corpus documents. Keys are non-canonical doc_ids and values are canonical doc_ids.",
+  "canonical_by_doc_id": {
+    "4e8137fa6fa6": "41b2b8383a71",
+    "c96654dd4ae6": "41b2b8383a71",
+    "f881da33b78f": "41b2b8383a71"
+  },
+  "groups": [
+    {
+      "canonical_doc_id": "41b2b8383a71",
+      "label": "예금거래기본약관",
+      "equivalent_doc_ids": [
+        "41b2b8383a71",
+        "4e8137fa6fa6",
+        "c96654dd4ae6",
+        "f881da33b78f"
+      ],
+      "reason": "동일 약관 계열 PDF가 파일명/수집본 차이로 여러 doc_id를 가진다."
+    }
+  ]
+}

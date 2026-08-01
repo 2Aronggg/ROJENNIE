@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_028978",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "70~79세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 887,
+        "consulting_content": "고객은 해외 여행 후 환전 입금 여부와 카드 결제 내역 확인을 요청하였고 상담사는 계좌번호와 본인 확인 절차를 안내하며, 신분증, 카드 뒷자리 제시 시 거래내역 조회가 가능하다고 답하였다.상담사는 고객님 해외에서 사용한 카드 결제 내역은 별도 조회가 가능합니다. 확인을 위해서는 고객님의 신분증과 카드 번호 뒷자리를 알려주셔야 하며, 이를 통해 정상적으로 처리되었는지 확인해 드릴 수 있다 하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

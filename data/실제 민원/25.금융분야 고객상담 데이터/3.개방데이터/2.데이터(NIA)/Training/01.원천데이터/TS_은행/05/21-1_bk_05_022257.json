@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_022257",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "신규고객",
+        "consulting_client_type": null,
+        "source_length": 1242,
+        "consulting_content": "고객은 급여 입금용 통장의 거래 한도 제한 해제를 요청했고 상담사는 한도 조정을 위해 신분증 사본, 급여명세서 제출을 안내하고, 서류를 관리점 팩스로 전송 후 영업점 방문을 권유하며 본인 확인 절차와 계좌 정보 제공을 요청하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

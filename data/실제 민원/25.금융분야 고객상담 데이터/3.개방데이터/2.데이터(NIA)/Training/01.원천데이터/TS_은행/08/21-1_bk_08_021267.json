@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_021267",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 865,
+        "consulting_content": "고객은 개인 대출 연장을 요청하고 대출 잔액 5천만원, 남은 기간 2년을 알렸으며, 주민등록번호와 휴대폰 번호 등 본인 확인 정보를 제공하였다. 상담사는 계좌 번호 확인 방법을 안내하고, 연장 신청에 필요한 최근 급여 내역서와 재직 증명서를 이메일로 보내도록 요청했으며, 검토 후 내일 오후에 결과를 연락하겠다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

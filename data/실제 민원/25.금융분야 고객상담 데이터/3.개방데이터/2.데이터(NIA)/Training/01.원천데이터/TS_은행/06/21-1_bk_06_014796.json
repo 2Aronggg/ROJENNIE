@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_014796",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1202,
+        "consulting_content": "고객은 조기 상환 수수료와 총 상환액 계산, 스마트폰을 통한 일부 상환 및 자동이체 영향 등을 문의하였고 상담사는 수수료는 비율 적용이며 금액은 계산 가능함을 안내하고, 모바일 앱, 가상계좌로 부분 상환이 가능하고 선납 시 자동이체가 취소되어 다음 달에 기존 금액이 청구된다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

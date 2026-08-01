@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_009899",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1197,
+        "consulting_content": "고객은 사고, 사망 시 대출 원리금이 자동 출금되길 원했으나 마이너스 통장이라 출금이 지연된다고 문의하였다. 상담원은 자동이체 계좌를 확인하고 출금은 오후 6시 이후 진행된다고 안내하였다. 고객은 계좌 변경을 요청하여 △△은행 123‑456‑7890으로 변경 절차를 시작하였으며, 기존 자동이체 해지 및 신규 설정은 영업일 기준 1~2일 소요되고 그 사이 출금이 지연될 수 있다고 설명하였다. 출금이 오늘 6시 이후에도 이루어지지 않을 경우 다음 영업일 오전에 재시도되며, 문제 시 재연락을 요청하였다. 추가 대출, 연체, 보험 문의는 없다고 확인하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

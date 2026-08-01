@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_030033",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 898,
+        "consulting_content": "고객은 정기예금으로 대출 이자 감면을 원하고 조건, 중도해지 비용을 물었으며 상담사는 최소 ●●개월, 월 ●●원, 대출 한도 80% 이하일 때 적용되고, 중도해지 시 일할 계산 이자 반환, 감면 차감이 있을 수 있다고 안내하였다. 고객은 재가입 시기를 물었고 상담사는 다음 달 안에 원하는 날짜에 가입하고 매월 납입하면 된다고 답변하였다. 고객은 서류와 절차를 이메일, 문자로 받고 싶다며 상담사는 웹뱅크, 앱에서 양식 다운로드 후 전화 상담 시 제출하면 처리 시간이 단축된다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

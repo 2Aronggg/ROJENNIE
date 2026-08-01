@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_09_021377",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1424,
+        "consulting_content": "고객은 싱가폴달러를 원화로 환전했으나 입금이 확인되지 않아 절차와 진행 상황을 문의하였고 상담사는 신원 확인 후 비대면 환전 제한, 앱 이체 여부 확인, 관련 부서 확인 중임을 안내하고, 필요 시 고객센터 전화, 이메일 안내를 제공하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "환전문의"
+    }
+}

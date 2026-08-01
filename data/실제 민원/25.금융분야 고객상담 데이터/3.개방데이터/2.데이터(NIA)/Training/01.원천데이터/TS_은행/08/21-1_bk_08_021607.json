@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_021607",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 687,
+        "consulting_content": "고객은 본인 확인을 위해 성명, 생년월일, 계좌번호, 비밀번호를 제공하였고 상담사는 대출 만기와 현재 금리 심사 진행을 안내하였다. 고객은 연장 시 기존 금리와 상환일 유지 여부를 확인하고 싶어 했으며 상담사는 기존 금리 유지가 기본이며 변동 시 문자로 알릴 것, 상환일은 그대로 유지된다고 답변하였다. 또한 연장 완료 후 문자 미수신 시 24시간 이내에 고객센터에 연락하도록 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

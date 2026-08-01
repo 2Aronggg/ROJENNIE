@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_027606",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1290,
+        "consulting_content": "고객은 보험 자동이체를 시도하면서 인증 번호 오류와 계좌 문제를 호소했으며, 계좌 정보, 잔액, 본인 확인을 요구받았다. 상담사는 계좌, 잔액 확인, 인증 번호 재전송, ARS 연결 안내 및 은행 방문을 권고하고, 자동이체 설정 절차를 재시도하도록 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

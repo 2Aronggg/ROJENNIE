@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_025041",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 2527,
+        "consulting_content": "고객은 자동이체 취소를 요청하고 본인 확인을 위해 이름, 여권, 계좌 정보를 제공하였고 상담사는 확인 후 해지 절차는 모바일 앱에서 직접 취소하거나 전화 안내 가능하다고 안내했으며, 연락처 오류로 즉시 처리 어려움을 호소한 고객에게 추후 안내 문자를 보내겠다고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

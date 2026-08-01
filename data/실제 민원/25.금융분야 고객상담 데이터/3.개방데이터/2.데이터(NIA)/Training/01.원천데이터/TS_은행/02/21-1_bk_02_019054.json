@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_02_019054",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1022,
+        "consulting_content": "고객은 잘못된 계좌로 송금한 사실을 알리고 반환을 요청했으며, 상담사는 착오송금 반환 제도와 신청 절차를 안내하고 처리 기간 및 상대방 동의 여부에 따른 결과, 동의 없을 경우 법적 절차 안내를 제공하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "중계요청/착오송금"
+    }
+}

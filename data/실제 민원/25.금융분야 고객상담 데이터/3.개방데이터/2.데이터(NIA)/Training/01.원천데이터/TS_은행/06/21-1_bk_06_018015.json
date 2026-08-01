@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_018015",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1272,
+        "consulting_content": "고객은 대출 연체 금리, 원리금 상환 금액과 가상계좌 번호를 요청했으며 상담사는 개인정보 확인 후 ARS 연결, 문자 발송으로 안내했다. 고객은 가상계좌 입금 기한, 보안과 앱에서 이자, 원리금 동시 납입 가능 여부, 입금 확인 시점을 물었고 상담사는 일회성 계좌와 자동 처리 안내 및 입금 즉시 시스템 반영, 30분 이내 문자 알림을 제공한다고 답하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

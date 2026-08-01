@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_03_031380",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1216,
+        "consulting_content": "고객은 현재 이용 중인 적금의 자동 이체 금액, 잔액 확인과 추가 입금 방법, 한도, 월 납입액 증액 및 앱 변경 절차, 중도해지 수수료와 연이율, 적용 이자율을 문의하였고 상담사는 자동 이체 금액, 한도는 ●●원 이하이며 추가 입금, 금액 증액은 모바일 뱅킹, 콜센터에서 가능하고, 한도 초과 시 승인이 필요함을 안내하고, 중도해지는 계약 기간에 따라 수수료가 적용되고 연이율은 약 2%이며 동일하게 적용된다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "자동이체조회"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_019221",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1102,
+        "consulting_content": "고객은 ★★은행에서 폰뱅킹으로 ▲▲은행에 금액을 송금했으나 수취인 계좌에 입금되지 않아 확인을 요청하였고 상담사는 ARS 연결을 진행하고 송금 내역을 조회해 정상 송금됨을 확인한 뒤 영업시간 기준 1~2시간 내 입금될 것임을 안내하고, 입금 지연 시 재문의하도록 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

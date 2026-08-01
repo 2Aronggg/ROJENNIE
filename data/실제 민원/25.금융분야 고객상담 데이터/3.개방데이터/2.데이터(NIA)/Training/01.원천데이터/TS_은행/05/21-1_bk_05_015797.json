@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_015797",
+        "source_date": 202505,
+        "client_gender": "여",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1396,
+        "consulting_content": "고객은 계좌이체 한도 해제 절차를 문의하고 인터넷뱅킹에서 예적금‑예금 관리‑한도 해제 메뉴를 따라가며 공공 마이 데이터 동의와 인증을 진행하였고 상담사는 단계별 안내와 동의 방법, 인증 입력, 해지 완료 확인을 제공하여 한도 해제가 완료되었다고 안내하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

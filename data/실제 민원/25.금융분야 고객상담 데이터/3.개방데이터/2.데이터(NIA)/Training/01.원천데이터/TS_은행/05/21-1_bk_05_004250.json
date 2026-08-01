@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_004250",
+        "source_date": 202506,
+        "client_gender": "여",
+        "client_age": "20~29세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1362,
+        "consulting_content": "고객은 자격 득실 확인서를 팩스로 송부하고 급여 지급 계좌의 한도 계좌 전환을 요청했으며, 모바일 이체가 안 된 문제와 진행 상황을 문자로 안내받기를 원했다. 상담사는 계좌가 ◆◆◆ 지점에 등록된 것을 확인하고, 전환에 필요한 서류와 절차를 안내하며, 서류 검토 및 전환 처리를 진행하고 결과를 문자로 알려주겠다고 답변했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

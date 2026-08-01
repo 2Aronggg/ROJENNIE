@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_01_021773",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1223,
+        "consulting_content": "고객은 입금 출처 확인을 요청하고 계좌번호, 성명, 생년월일, 비밀번호를 제공하였고 상담사는 시스템 조회를 진행하여 해당 연금 이벤트 입금이 은행에서 정상적으로 처리된 것임을 확인, 입금 일자, 금액을 안내하였으며, 추가 문의 없음을 확인하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "거래내역/잔액조회"
+    }
+}

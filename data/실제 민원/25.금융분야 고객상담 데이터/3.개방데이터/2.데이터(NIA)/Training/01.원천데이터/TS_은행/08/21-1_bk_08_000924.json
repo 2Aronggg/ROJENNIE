@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_000924",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1087,
+        "consulting_content": "고객은 대출 연장 시 금리와 절차, 서류, 상환 일정, 우대 조건 등에 대해 문의하였고, 상담사는 현재 금리 수준, 예상 금리 산정 방식, 필요한 계좌 인증 절차, 연장 후 자동 상환 일정 및 조기 상환 가능성, 우대 금리 적용 기준 등에 대해 구체적으로 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

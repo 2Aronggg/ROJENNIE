@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_023958",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 944,
+        "consulting_content": "고객은 비대면 계좌 한도 해제를 원하고 급여 통장 사용 목적을 밝히며 재직증명서와 신분증을 지점 방문 또는 팩스로 제출하거나 모바일 앱으로 사진 업로드 신청할 수 있음을 문의하였고 상담사는 방문 시 서류 확인 후 즉시 처리 가능 여부 안내, 팩스 번호 제공 및 영업일 2일 소요 안내, 앱 신청 방법 및 진행 상황 문자 안내 등을 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

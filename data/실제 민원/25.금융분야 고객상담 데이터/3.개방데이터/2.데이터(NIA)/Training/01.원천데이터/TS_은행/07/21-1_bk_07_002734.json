@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_07_002734",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 1775,
+        "consulting_content": "고객은 대출 우대 금리 등록 여부, 확인 방법, 적용 조건, 카드 실적 기준과 미충족 시 재등록 방법을 문의했다. 또한 미반영된 지난 달 결제 내역 확인, 추가 결제 금액, 재신청 서류, 이자 차감 시점, 다른 우대 금리 상품의 차이점을 질문했다. 상담사는 우대 금리 미적용 상태와 카드 실적 미달을 알렸다. 또한 미반영된 지난 달 내역 재검증 및 수동 적용 가능성을 안내하고, 추가 결제 금액, 재신청 서류, 이자 차감 시점, 프리미엄 우대 금리 상품을 설명했다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "부수거래금리감면"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_019749",
+        "source_date": 202506,
+        "client_gender": "남",
+        "client_age": "60~69세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 941,
+        "consulting_content": "고객은 대출 연장 신청 현황과 필요 서류, 금리, 상환 방식 등을 문의하였고 상담사는 만기일과 현재 심사 진행 상황을 안내하고, 소득증명서와 최근 3개월 거래내역이 필요함을 알려 주었으며, 금리는 기존과 동일하고 상환은 기존과 같이 매월 원리금 균등이며 조기 상환도 가능하다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}

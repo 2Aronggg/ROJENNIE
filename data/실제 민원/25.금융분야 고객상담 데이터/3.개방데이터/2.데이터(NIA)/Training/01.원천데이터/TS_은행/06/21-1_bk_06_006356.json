@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_06_006356",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "50~59세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1751,
+        "consulting_content": "고객은 ★★은행 대출에 대한 문자 안내를 받고 상환 일정 및 조기 상환 방법을 문의하였다. 상담원은 대출 원금, 이자 상환 방식, 거치 기간 종료 후 원리금 상환, 조기 상환 시 이자 절감 및 수수료 비율을 설명하였다. 신청 절차는 모바일 뱅킹 또는 방문을 통해 가능하며 필요 서류는 신분증과 계약서 사본이라고 안내하였다. 연체 시 연체이자, 연체료가 부과되고 신용등급에 영향을 줄 수 있음을 안내하였다. 해당 대출이 지역 신용보증재단 보증 대출임을 확인하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "이자/연체금액"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_05_021144",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "40~49세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": "개인사업자",
+        "source_length": 1227,
+        "consulting_content": "고객은 입금거래 한도 계좌 해지를 원하고 서류와 절차를 물었고 상담사는 직전 연도 재무제표, 전자세금계산서, 납세증명서 중 하나와 신청서만 준비하면 된다고 안내하였다. 고객은 등록증 필요 여부와 해지 후 수수료, 잔액 이체, 거래내역 조회를 요청하였고 상담사는 등록증은 필요 없고 해지 수수료는 없으며 잔액 이체는 사전 요청, 해지 후 일정 기간 온라인, 서면으로 내역 조회 가능하다고 답변하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "금융거래한도/비대면한도계좌"
+    }
+}

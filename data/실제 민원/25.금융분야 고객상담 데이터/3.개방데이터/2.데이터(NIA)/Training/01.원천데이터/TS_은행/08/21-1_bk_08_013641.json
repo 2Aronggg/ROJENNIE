@@ -1,0 +1,17 @@
+{
+    "source": {
+        "source_institution": "하나은행",
+        "source_id": "21-1_bk_08_013641",
+        "source_date": 202505,
+        "client_gender": "남",
+        "client_age": "30~39세",
+        "consulting_client": "기존고객",
+        "consulting_client_type": null,
+        "source_length": 839,
+        "consulting_content": "고객은 정기 기회 사다리 대출 연장 기간과 금리 변경 여부, 수수료 금액을 문의하였고 상담사는 연장 신청에 필요한 신분증 사본과 급여 내역서 제출을 안내하고, 제출 기한은 영업일 기준 3일이며, 추가 이자, 수수료는 대출 잔액의 1.5%에 해당하는 약 45,000원으로 다음 이체일에 자동 차감된다고 설명하였다."
+    },
+    "consulting": {
+        "consulting_category": "은행",
+        "consulting_topic": "대출문의(만기/연장/조회등)"
+    }
+}
