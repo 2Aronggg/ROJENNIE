@@ -75,7 +75,9 @@ def get_index() -> SearchIndex:
     global _INDEX
     if _INDEX is None:
         index_path = CHUNKS_PATH if CHUNKS_PATH.exists() else FALLBACK_CHUNKS_PATH
-        _INDEX = SearchIndex.from_data_dir(DATA_DIR, chunks_path=index_path)
+        # Glossary is display-only (served separately via /dictionary/search) and
+        # never a decision source, so it never belongs in the search index at all.
+        _INDEX = SearchIndex.from_data_dir(DATA_DIR, chunks_path=index_path, exclude_doc_types=frozenset({"glossary"}))
     return _INDEX
 
 
