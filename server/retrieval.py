@@ -60,6 +60,9 @@ class SearchIndex:
                 score=round(score, 4),
                 snippet=chunk.text[:280],
                 effective_from=chunk.effective_from,
+                content_type=chunk.content_type,
+                parse_status=chunk.parse_status,
+                risk_flags=chunk.risk_flags,
             )
             for score, chunk in ranked[:top_k]
         ]

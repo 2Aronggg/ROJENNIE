@@ -17,12 +17,12 @@
 
 ## P1
 
-- [ ] Vector Search와 Full-Text Search 결합
-- [ ] 사건 그래프에 날짜·금액·문서·답변 관계 저장
-- [ ] `POST /api/v1/cases/{case_id}/review` 구현
-- [ ] 문서 변경 감지와 재색인
-- [ ] 규정 시행일 변경 알림
-- [ ] 근거·모델 출력·사용자 수정 이력 audit log
+- [x] Vector Search와 Full-Text Search 결합
+- [x] 사건 그래프에 날짜·금액·문서·답변 관계 저장
+- [x] `POST /api/v1/cases/{case_id}/review` 구현
+- [x] 문서 변경 감지와 재색인
+- [x] 규정 시행일 변경 알림
+- [x] 근거·모델 출력·사용자 수정 이력 audit log
 
 ## A가 B에게 제공할 계약
 
@@ -36,3 +36,4 @@
 
 - [ ] 공식 분쟁조정·민원 사례 원문 수집
 - [ ] 공식 민원 절차·제출서류 정보 수집
+- [ ] 보험 범위를 유지할 경우 보험 문서 수집

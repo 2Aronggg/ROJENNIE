@@ -17,23 +17,25 @@ from pypdf import PdfReader
 from .schemas import DocumentChunk
 
 
-PDF_DIRS = {
-    "공통규정": ("law", ["공통"]),
-    "예금 상품 설명서": ("product_manual", ["예금"]),
-    "KB은행_상품_data": ("product_manual", ["예금"]),
-    "KB_예금_data": ("product_manual", ["예금"]),
-    "KB_예금": ("product_manual", ["예금"]),
-    "KB_ 적금_data": ("product_manual", ["적금"]),
-    "KB_적금": ("product_manual", ["적금"]),
-    "KB_펀드_data": ("product_manual", ["펀드"]),
-    "KB_펀드": ("product_manual", ["펀드"]),
-    "펀드 상품 설명서": ("product_manual", ["펀드"]),
-}
+PRODUCT_KEYWORDS = (
+    ("대출", "product_manual", ["대출"]),
+    ("여신", "product_manual", ["대출"]),
+    ("예금", "product_manual", ["예금"]),
+    ("적금", "product_manual", ["적금"]),
+    ("펀드", "product_manual", ["펀드"]),
+    ("ELS", "product_manual", ["ELS"]),
+    ("ISA", "product_manual", ["예금"]),
+)
+LAW_KEYWORDS = ("공통규정", "법안", "금융소비자", "은행법", "자본시장")
+CASE_KEYWORDS = ("금감원", "판례", "분쟁", "민원")
+
 DATE_RE = re.compile(r"(?<!\d)(20\d{2})[.\-/](\d{1,2})[.\-/](\d{1,2})(?!\d)")
 FILENAME_DATE_RE = re.compile(r"(20\d{6})")
-EFFECTIVE_RE = re.compile(r"\[시행\s*(20\d{2})\.\s*(\d{1,2})\.\s*(\d{1,2})\.\]")
-SECTION_RE = re.compile(r"제\s*\d+조(?:의\d+)?(?:\([^\n)]{1,80}\))?")
-HWP_TEXT_RE = re.compile(r"[가-힣A-Za-z0-9][가-힣A-Za-z0-9\s.,!?%()ㆍ·:\-~\[\]「」『』제호]+")
+EFFECTIVE_RE = re.compile(r"\[?시행\s*(20\d{2})\.\s*(\d{1,2})\.\s*(\d{1,2})\.\]?")
+SECTION_RE = re.compile(r"제\s*\d+조(?:의\s*\d+)?(?:\([^\n)]{1,80}\))?")
+HWP_TEXT_RE = re.compile(r"[가-힣A-Za-z0-9][가-힣A-Za-z0-9\s.,!?%()ㆍ·\-~\[\]『』「」:;]+")
+TABLE_SPLIT_RE = re.compile(r"\t+|\s{2,}")
+TABLE_HINT_RE = re.compile(r"(금리|이자|수수료|상환|기간|한도|담보|보증|연체|비율|율|금액|원|%|개월|년)")
 
 
 def _to_date(year: str, month: str, day: str) -> date | None:
@@ -62,12 +64,21 @@ def _doc_id(relative_path: Path) -> str:
 
 def _metadata(file_path: Path, data_dir: Path) -> tuple[str, str, list[str], str, date | None]:
     relative = file_path.relative_to(data_dir)
-    folder = relative.parts[0]
-    doc_type, products = PDF_DIRS.get(folder, ("unknown", ["미분류"]))
-    if "금감원_판례" in relative.parts:
+    haystack = " ".join(relative.parts)
+    doc_type = "unknown"
+    products = ["미분류"]
+
+    if any(keyword in haystack for keyword in LAW_KEYWORDS):
+        doc_type, products = "law", ["공통"]
+    if any(keyword in haystack for keyword in CASE_KEYWORDS):
         doc_type, products = "fss_case", _case_products(relative.name)
-    if folder in {"펀드 상품 설명서", "KB_펀드_data", "KB_펀드"} and "ELS" in file_path.name.upper():
-        products = ["ELS"]
+    for keyword, candidate_doc_type, candidate_products in PRODUCT_KEYWORDS:
+        if keyword in haystack:
+            doc_type, products = candidate_doc_type, candidate_products
+            break
+    if "ELS" in haystack.upper():
+        doc_type, products = "product_manual", ["ELS"]
+
     return _doc_id(relative), doc_type, products, f"local:{relative.as_posix()}", _date_from_filename(file_path.name)
 
 
@@ -75,9 +86,11 @@ def _case_products(name: str) -> list[str]:
     upper_name = name.upper()
     if "ELS" in upper_name:
         return ["ELS"]
-    if any(keyword in name for keyword in ("금투", "펀드", "투자", "신탁", "ETF")):
+    if any(keyword in name for keyword in ("펀드", "투자", "자산", "손실", "ETF")):
         return ["펀드"]
-    if any(keyword in name for keyword in ("예금", "통장", "은행")):
+    if any(keyword in name for keyword in ("대출", "여신", "상환", "담보")):
+        return ["대출", "공통"]
+    if any(keyword in name for keyword in ("예금", "통장", "적금")):
         return ["예금", "공통"]
     return ["공통"]
 
@@ -100,14 +113,61 @@ def _chunks(text: str, max_chars: int = 1400) -> Iterable[str]:
         yield " ".join(current)
 
 
+def _table_cells(line: str) -> list[str]:
+    cells = [cell.strip(" |") for cell in TABLE_SPLIT_RE.split(line.strip()) if cell.strip(" |")]
+    if len(cells) >= 2:
+        return cells
+    if "|" in line:
+        return [cell.strip() for cell in line.strip("| ").split("|") if cell.strip()]
+    return []
+
+
+def _looks_like_table_line(line: str) -> bool:
+    cells = _table_cells(line)
+    if len(cells) < 2:
+        return False
+    return len(cells) >= 3 or bool(TABLE_HINT_RE.search(line))
+
+
+def _table_groups(page_text: str) -> list[list[list[str]]]:
+    groups: list[list[list[str]]] = []
+    current: list[list[str]] = []
+    for raw_line in page_text.splitlines():
+        line = re.sub(r"\s+", " ", raw_line).strip() if "\t" not in raw_line else raw_line.strip()
+        if _looks_like_table_line(line):
+            current.append(_table_cells(line))
+            continue
+        if len(current) >= 2:
+            groups.append(current)
+        current = []
+    if len(current) >= 2:
+        groups.append(current)
+    return groups
+
+
+def _markdown_table(rows: list[list[str]]) -> tuple[str, str, list[str]]:
+    width = max(len(row) for row in rows)
+    normalized = [row + [""] * (width - len(row)) for row in rows]
+    header = normalized[0]
+    body = normalized[1:]
+    markdown = [
+        "| " + " | ".join(header) + " |",
+        "| " + " | ".join("---" for _ in header) + " |",
+    ]
+    markdown.extend("| " + " | ".join(row) + " |" for row in body)
+    parse_status = "ok"
+    risk_flags: list[str] = []
+    if len({len(row) for row in rows}) > 1:
+        parse_status = "uncertain"
+        risk_flags.append("table_parse_uncertain")
+    return "\n".join(markdown), parse_status, risk_flags
+
+
 def _chunks_from_pages(file_path: Path, data_dir: Path, pages: list[str], max_chars: int = 1400) -> list[DocumentChunk]:
     doc_id, doc_type, products, source, published_at = _metadata(file_path, data_dir)
     document_text = "\n".join(pages)
-
-    # 파일명에 날짜가 없으면 본문 날짜를 보조값으로 사용한다.
     published_at = published_at or _date_from_text(document_text)
 
-    # 법령의 시행일은 문서 전체에 적용한다. 종료일은 원문에서 확인하지 못하면 추정하지 않는다.
     effective_from = None
     for page_text in pages:
         candidate = _date_from_text(page_text, EFFECTIVE_RE)
@@ -133,6 +193,28 @@ def _chunks_from_pages(file_path: Path, data_dir: Path, pages: list[str], max_ch
                     page=page_number,
                     section=section,
                     text=chunk_text,
+                    content_type="text",
+                    parse_status="ok",
+                )
+            )
+        for table_number, rows in enumerate(_table_groups(text), start=1):
+            markdown, parse_status, risk_flags = _markdown_table(rows)
+            chunks.append(
+                DocumentChunk(
+                    doc_id=doc_id,
+                    chunk_id=f"{doc_id}-p{page_number}-t{table_number}",
+                    path=source,
+                    doc_type=doc_type,
+                    product=products,
+                    source="local",
+                    published_at=published_at,
+                    effective_from=effective_from,
+                    page=page_number,
+                    section=f"{section} / table:{table_number}",
+                    text=markdown,
+                    content_type="table",
+                    parse_status=parse_status,
+                    risk_flags=risk_flags,
                 )
             )
     return chunks
@@ -223,7 +305,7 @@ def write_jsonl(chunks: Iterable[DocumentChunk], output: Path) -> int:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Extract local PDF documents into RAG chunks")
+    parser = argparse.ArgumentParser(description="Extract local documents into RAG chunks")
     parser.add_argument("--data-dir", type=Path, default=Path("data"))
     parser.add_argument("--output", type=Path)
     args = parser.parse_args()

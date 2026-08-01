@@ -1154,6 +1154,7 @@
 
     <button class="replay" type="button" id="replay">Replay</button>
 
+    <script src="agent-api.js"></script>
     <script>
       const replay = document.querySelector("#replay");
       let playTimer = null;
@@ -1185,6 +1186,7 @@
       }
 
       function startPlayback(root = document) {
+        window.KBAgentDemo?.renderAgent2(root);
         window.clearTimeout(playTimer);
         clearCaseTimers();
         resetCaseSearch(root);

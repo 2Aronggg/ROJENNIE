@@ -312,6 +312,81 @@
         margin: 0;
       }
 
+      .backend-caption {
+        display: inline-flex;
+        width: fit-content;
+        align-items: center;
+        gap: 6px;
+        margin-top: 5px;
+        padding: 4px 7px;
+        border: 1px solid rgba(180, 35, 44, 0.22);
+        border-radius: 999px;
+        color: #8b2f34;
+        background: rgba(255, 255, 255, 0.72);
+        font-family: Consolas, "Courier New", monospace;
+        font-size: 8px;
+        font-weight: 900;
+        letter-spacing: 0;
+        line-height: 1;
+        opacity: 0;
+        transform: translateY(4px);
+        animation: slideIn 0.36s var(--ease) 1.05s forwards;
+      }
+
+      .backend-trace {
+        display: grid;
+        gap: 5px;
+        margin-top: auto;
+        padding: 9px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 12px;
+        background: #21130f;
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08), 0 10px 22px rgba(91, 45, 10, 0.16);
+        color: #ffe8c7;
+        opacity: 0;
+        transform: translateY(8px);
+        animation: slideIn 0.45s var(--ease) 5.25s forwards;
+      }
+
+      .trace-step {
+        display: grid;
+        grid-template-columns: 18px minmax(0, 1fr);
+        gap: 7px;
+        align-items: start;
+        min-width: 0;
+        padding: 0;
+      }
+
+      .trace-step::before {
+        color: #ffb86b;
+        content: ">";
+        font-family: Consolas, "Courier New", monospace;
+        font-size: 10px;
+        font-weight: 900;
+        line-height: 1.25;
+      }
+
+      .trace-step code {
+        display: block;
+        color: #ffd29a;
+        font-family: Consolas, "Courier New", monospace;
+        font-size: 10px;
+        font-weight: 900;
+        line-height: 1.12;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .trace-step span {
+        display: block;
+        margin-top: 2px;
+        color: rgba(255, 232, 199, 0.68);
+        font-size: 9px;
+        font-weight: 750;
+        line-height: 1.18;
+      }
+
       .hl {
         padding: 1px 4px 4px;
         border-radius: 5px;
@@ -813,6 +888,8 @@
             <p class="stage-name">민원 분리</p>
           </div>
 
+          <span class="backend-caption">router._issue_spans(prompt) -> issue spans</span>
+
           <div class="statement">
             <span class="customer-label">최예지 씨의 실제 소비자 민원</span>
             <p>
@@ -900,6 +977,12 @@
               </div>
 
               <p class="missing-item">누락 정보: 가입 시 안내 자료, 현재 수수료 명세</p>
+              <div class="backend-trace" aria-label="Case Builder function trace">
+                <div class="trace-step"><code>build_case_request()</code><span>prompt -> CaseAnalyzeRequest</span></div>
+                <div class="trace-step"><code>split_prompt_to_issues()</code><span>2 issue spans detected</span></div>
+                <div class="trace-step"><code>_build_issue()</code><span>issue_id + issue_type</span></div>
+                <div class="trace-step"><code>build_issue_input()</code><span>focal, target, facts</span></div>
+              </div>
             </article>
           </section>
         </article>
@@ -928,6 +1011,7 @@
 
     <button class="replay" type="button" id="replay">Replay</button>
 
+    <script src="agent-api.js"></script>
     <script>
       const replay = document.querySelector("#replay");
       let playTimer = null;

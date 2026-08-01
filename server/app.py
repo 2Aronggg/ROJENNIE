@@ -4,6 +4,7 @@ from pathlib import Path
 from uuid import uuid4
 
 from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 
 from .facts import missing_facts, resolve_facts
 from .retrieval import SearchIndex
@@ -13,6 +14,13 @@ from .schemas import CaseAnalysis, CaseAnalyzeRequest, Decision, IssueAnalysis, 
 ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = ROOT / "data"
 app = FastAPI(title="Financial Consumer Protection Agent API", version="0.1.0")
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=False,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 CASE_STORE: dict[str, CaseAnalysis] = {}
 _INDEX: SearchIndex | None = None
 

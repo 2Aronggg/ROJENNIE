@@ -28,6 +28,9 @@ class EvidenceRef(BaseModel):
     score: float
     snippet: str
     effective_from: date | None = None
+    content_type: str = "text"
+    parse_status: str = "ok"
+    risk_flags: list[str] = Field(default_factory=list)
 
 
 class DocumentChunk(BaseModel):
@@ -44,6 +47,9 @@ class DocumentChunk(BaseModel):
     page: int
     section: str | None = None
     text: str
+    content_type: str = "text"
+    parse_status: str = "ok"
+    risk_flags: list[str] = Field(default_factory=list)
 
 
 class IssueInput(BaseModel):

@@ -41,12 +41,15 @@
         --line-strong: rgba(0, 0, 0, 0.12);
         --shadow-soft: 0 2px 12px rgba(0, 0, 0, 0.06);
         --shadow-card: 0 8px 22px rgba(0, 0, 0, 0.09);
-        --toast-bg: #3a3a3c;
         --hold-bg: var(--kb-gray-label);
         --proceed-bg: var(--kb-ink);
+        --state-unresolved: var(--kb-gray-label);
+        --state-partial: #8b6b3d;
+        --state-resolved: var(--brand-yellow);
+        --state-resolved-deep: var(--brand-yellow-deep);
         --content-x: 20px;
         --content-top: 126px;
-        --content-bottom: 104px;
+        --content-bottom: 110px;
         --card-pad-y: 14px;
         --card-pad-x: 16px;
         --radius-card: 16px;
@@ -473,6 +476,37 @@
         transform: translateX(-50%);
       }
 
+      .hero-stickers .sticker:nth-child(4) {
+        left: 78px;
+        bottom: 206px;
+        width: 48px;
+        height: 48px;
+        animation-name: stickerPop, stickerDriftB;
+        animation-delay: 1.42s, 1.78s;
+        animation-duration: 0.45s, 2.65s;
+      }
+
+      .hero-stickers .sticker:nth-child(5) {
+        right: 84px;
+        bottom: 244px;
+        width: 46px;
+        height: 46px;
+        animation-name: stickerPop, stickerDriftA;
+        animation-delay: 1.68s, 2.02s;
+        animation-duration: 0.45s, 2.95s;
+      }
+
+      .hero-stickers .sticker:nth-child(6) {
+        left: 50%;
+        bottom: 168px;
+        width: 44px;
+        height: 44px;
+        animation-name: stickerPop, stickerDriftC;
+        animation-delay: 1.92s, 2.22s;
+        animation-duration: 0.45s, 2.75s;
+        transform: translateX(-50%);
+      }
+
       .flow-sticker {
         position: absolute;
         z-index: 3;
@@ -491,13 +525,6 @@
         width: 62px;
         animation-delay: 1.35s, 1.82s;
         animation-duration: 0.45s, 2.9s;
-      }
-
-      .flow-sticker--analysis {
-        right: 34px;
-        top: 102px;
-        width: 66px;
-        animation-delay: 18s, 18.5s;
       }
 
       .flow-sticker--final {
@@ -850,6 +877,13 @@
         filter: brightness(0.96);
       }
 
+      .send-icon {
+        display: block;
+        width: 19px;
+        height: 19px;
+        object-fit: contain;
+      }
+
       .typing-cursor {
         display: inline-block;
         width: 2px;
@@ -999,11 +1033,60 @@
       .cards--fill {
         height: 100%;
         min-height: 0;
-        grid-template-rows: minmax(0, 1fr) minmax(0, 1fr);
-        align-content: stretch;
-        gap: 16px;
-        padding-top: 18px;
-        padding-bottom: 10px;
+        grid-template-rows: auto auto minmax(0, 1fr);
+        align-content: start;
+        gap: 12px;
+        padding-top: var(--content-top);
+        padding-bottom: var(--content-bottom);
+      }
+
+      .cards-guide {
+        display: grid;
+        gap: 5px;
+        text-align: left;
+      }
+
+      .cards-guide b {
+        color: var(--text-main);
+        font-family: var(--font-headline);
+        font-size: 20px;
+        line-height: 1.22;
+        letter-spacing: -0.025em;
+      }
+
+      .cards-guide span {
+        color: var(--text-sub);
+        font-size: 13px;
+        line-height: 1.42;
+      }
+
+      .cards-connector {
+        display: flex;
+        min-height: 68px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: transparent;
+        background: linear-gradient(140deg, #fff7c5 0%, var(--brand-yellow) 34%, var(--brand-yellow-deep) 72%, #9a6500 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        filter: drop-shadow(0 10px 18px rgba(95, 60, 0, 0.14));
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 28px;
+        font-style: italic;
+        font-weight: 700;
+        line-height: 0.92;
+        text-align: center;
+      }
+
+      .cards-connector span {
+        display: block;
+      }
+
+      .cards-stack {
+        display: grid;
+        align-self: start;
+        gap: 14px;
       }
 
       .issue-select-card {
@@ -1023,14 +1106,15 @@
         transform: translateY(22px);
         transform-origin: top center;
         animation: cardFlipIn 0.7s var(--ease) forwards;
+        transition: border-left-color 0.5s ease, transform 0.34s cubic-bezier(0.34, 1.56, 0.64, 1), filter 0.2s ease-out, box-shadow 0.24s ease-out;
       }
 
       .issue-select-card--els {
-        border-left-color: var(--hold-bg);
+        border-left-color: var(--state-unresolved);
       }
 
       .issue-select-card--refund {
-        border-left-color: var(--brand-yellow-deep);
+        border-left-color: var(--state-unresolved);
       }
 
       .card-number-badge {
@@ -1066,6 +1150,24 @@
         object-fit: contain;
       }
 
+      .card-arrow {
+        display: grid;
+        flex: 0 0 28px;
+        width: 28px;
+        height: 28px;
+        place-items: center;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.72);
+      }
+
+      .card-arrow img {
+        display: block;
+        width: 18px;
+        height: 18px;
+        object-fit: contain;
+        transform: rotate(180deg);
+      }
+
       .card-body {
         display: grid;
         align-content: center;
@@ -1092,12 +1194,6 @@
         line-height: 1.45;
       }
 
-      .card-arrow {
-        color: #c7c7cc;
-        font-size: 24px;
-        font-weight: 400;
-      }
-
       .issue-select-card--els {
         animation-delay: 22.15s;
       }
@@ -1107,11 +1203,10 @@
       }
 
       .cards--fill .issue-select-card {
-        min-height: 0;
-        height: 100%;
+        min-height: 136px;
         align-items: center;
         gap: 16px;
-        padding: 24px 20px;
+        padding: 16px 18px;
         border-left-width: 5px;
       }
 
@@ -1138,8 +1233,8 @@
       }
 
       .cards--fill .card-title {
-        margin: 4px 0 0;
-        font-size: 21px;
+        margin: 3px 0 0;
+        font-size: 19px;
       }
 
       .cards--fill .card-desc {
@@ -1161,22 +1256,24 @@
         font-family: var(--font-headline);
         font-size: 12px;
         font-weight: 700;
+        transition: background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease;
       }
 
       .hold,
-      .status-badge--pending { background: var(--hold-bg); }
-      .proceed { background: var(--proceed-bg); }
+      .status-badge--pending { background: var(--state-unresolved); }
+      .proceed { background: var(--state-resolved-deep); }
       .status-badge--ready {
+        color: var(--surface);
+        background: var(--state-unresolved);
+      }
+
+      .status-badge--resolved {
         color: var(--kb-ink);
-        background: var(--brand-yellow);
+        background: var(--state-resolved);
       }
 
       .status-badge--ready.just-completed {
-        animation: completePing 0.6s ease-out 22.08s both;
-      }
-
-      .scene-5 .status-badge--ready.just-completed {
-        animation-delay: 38.45s;
+        animation: none;
       }
 
       .scene-complete .status-badge,
@@ -1185,7 +1282,7 @@
       }
 
       .tappable {
-        transition: transform 0.18s ease-out, filter 0.18s ease-out, box-shadow 0.18s ease-out;
+        transition: transform 0.34s cubic-bezier(0.34, 1.56, 0.64, 1), filter 0.2s ease-out, box-shadow 0.24s ease-out;
       }
 
       .tappable:hover,
@@ -1199,18 +1296,40 @@
       }
 
       .tappable.pressed {
-        transform: scale(0.97);
-        filter: brightness(0.96);
+        transform: scale(0.945);
+        filter: brightness(0.98) saturate(1.06);
       }
 
       .issue-select-card.card-focused {
-        transform: scale(1.02);
-        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+        box-shadow: 0 12px 26px rgba(245, 166, 35, 0.16);
       }
 
       .issue-select-card.card-focused.pressed {
-        transform: scale(1.02);
-        filter: brightness(0.98);
+        border-left-color: var(--brand-yellow);
+        transform: scale(0.945);
+        box-shadow: 0 0 0 5px rgba(255, 203, 5, 0.16), 0 16px 30px rgba(245, 166, 35, 0.22);
+        filter: brightness(1.01) saturate(1.08);
+      }
+
+      .issue-select-card.tappable::after {
+        position: absolute;
+        inset: auto auto 50% 50%;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(255, 203, 5, 0.34) 0%, rgba(255, 203, 5, 0.2) 42%, rgba(255, 203, 5, 0) 72%);
+        content: "";
+        opacity: 0;
+        pointer-events: none;
+        transform: translate(-50%, 50%) scale(0.2);
+      }
+
+      .issue-select-card.tappable.pressed::after {
+        animation: cardRipple 0.58s ease-out forwards;
+      }
+
+      .issue-select-card.sibling-react {
+        animation: siblingCardReact 0.42s ease-out both;
       }
 
       .entry-trace {
@@ -1621,24 +1740,18 @@
         animation: none;
       }
 
-      .scene-5 .cards {
-        grid-template-rows: 1fr 1fr;
-        align-content: stretch;
-        gap: 18px;
-      }
-
-      .scene-5 .issue-select-card {
-        min-height: 0;
-        height: 100%;
-      }
-
       .scene-5 .issue-select-card--els {
         filter: saturate(0.9);
       }
 
       .scene-5 .issue-select-card--refund {
-        transform: scale(1.025);
+        border-left-color: var(--state-partial);
         box-shadow: var(--shadow-card);
+      }
+
+      .scene-5 .issue-select-card--refund .status-badge--ready {
+        color: var(--surface);
+        background: var(--state-partial);
       }
 
       .final {
@@ -1650,10 +1763,10 @@
 
       .final-copy h2 {
         font-family: var(--font-headline);
-        max-width: calc(100% - 54px);
-        font-size: 25px;
+        max-width: calc(100% - 48px);
+        font-size: 24px;
         font-weight: 700;
-        line-height: 1.25;
+        line-height: 1.27;
       }
 
       .headline-number {
@@ -1661,6 +1774,7 @@
         font-weight: 800;
         font-variant-numeric: tabular-nums;
         letter-spacing: -0.01em;
+        white-space: nowrap;
       }
 
       .final-copy {
@@ -1687,7 +1801,10 @@
       }
 
       .summary-card {
-        padding: var(--card-pad-y) var(--card-pad-x);
+        display: grid;
+        gap: 8px;
+        padding: 16px 18px;
+        border-radius: var(--radius-card);
         opacity: 0;
         transform: translateX(18px);
         animation: rightIn 0.55s var(--ease) forwards;
@@ -1709,73 +1826,92 @@
       .summary-card.pending { transform: translateY(-18px); animation-name: topIn; }
       .summary-card:nth-child(1) { animation-delay: 52.3s; }
       .summary-card:nth-child(2) { animation-delay: 52.9s; }
-      .summary-card:nth-child(3) { animation-delay: 53.5s; }
 
       .summary-card b {
         display: flex;
         align-items: center;
-        gap: 7px;
+        gap: 8px;
         color: var(--text-main);
         font-family: var(--font-headline);
         font-size: var(--type-card-title);
         font-weight: 700;
+        line-height: 1.25;
       }
 
       .summary-card span {
         display: block;
-        margin-top: 6px;
+        margin-top: 0;
         color: var(--text-sub);
         font-family: var(--font-body);
         font-size: var(--type-body);
-        line-height: var(--text-line-height-body);
+        line-height: 1.48;
+      }
+
+      .summary-card .mini-icon {
+        width: 22px;
+        height: 22px;
+        flex: 0 0 22px;
       }
 
       .final-status {
         display: inline-flex;
         width: fit-content;
         align-items: center;
-        margin-bottom: 8px;
-        padding: 4px 12px;
+        margin-bottom: 0;
+        padding: 5px 12px;
         border-radius: var(--radius-pill);
         color: var(--surface);
         font-family: var(--font-headline);
         font-size: 12px;
         font-weight: 700;
+        transition: background-color 0.5s ease, color 0.5s ease;
       }
 
       .final-status.resolved {
-        background: var(--proceed-bg);
+        color: var(--kb-ink);
+        background: var(--state-resolved);
       }
 
       .final-status.pending {
-        background: var(--hold-bg);
+        background: var(--state-unresolved);
       }
 
       .final-meta {
         display: grid;
         gap: 4px;
-        margin-top: 9px;
+        margin-top: 0;
         color: var(--text-body);
         font-family: var(--font-body);
         font-size: var(--type-sub);
-        line-height: var(--text-line-height-body);
+        line-height: 1.42;
       }
 
       .final-meta strong {
         font-family: var(--font-body);
-        font-size: 14px;
+        font-size: 13px;
         font-variant-numeric: tabular-nums;
       }
 
       .final-link {
         display: inline-flex;
+        align-items: center;
+        gap: 5px;
         width: fit-content;
-        margin-top: 10px;
+        margin-top: 0;
         color: var(--text-main);
         font-family: var(--font-body);
         font-size: 13px;
         font-weight: 700;
+        line-height: 1.35;
         text-decoration: none;
+      }
+
+      .final-link-icon {
+        display: block;
+        flex: 0 0 15px;
+        width: 15px;
+        height: 15px;
+        object-fit: contain;
       }
 
       .final-actions {
@@ -1876,7 +2012,7 @@
         position: absolute;
         left: 6px;
         right: 6px;
-        bottom: 6px;
+        bottom: 12px;
         z-index: 30;
         display: grid;
         grid-template-columns: repeat(5, 1fr);
@@ -1946,9 +2082,9 @@
       }
 
       .replay {
-        position: fixed;
-        top: 18px;
-        right: 18px;
+        position: absolute;
+        top: -999px;
+        right: -999px;
         z-index: 103;
         padding: 8px 12px;
         border: 1px solid var(--line-strong);
@@ -1980,23 +2116,21 @@
       }
 
       .clicker.active {
-        animation: tapOnce 0.5s var(--ease) forwards;
+        animation: none;
       }
 
       .clicker-ring {
         position: absolute;
         inset: 0;
-        border: 2px solid rgba(245, 166, 35, 0.82);
+        border: 0;
         border-radius: 50%;
-        background: radial-gradient(circle at 38% 32%, rgba(255, 255, 255, 0.94), rgba(255, 212, 42, 0.28) 56%, rgba(245, 166, 35, 0.3));
-        box-shadow: 0 8px 20px rgba(245, 166, 35, 0.2), inset 0 1px 4px rgba(255, 255, 255, 0.88);
-        transition: background 0.18s ease, border-color 0.18s ease, transform 0.18s ease;
+        background: transparent;
+        box-shadow: none;
       }
 
       .clicker.active .clicker-ring {
-        border-color: var(--kb-ink);
-        background: radial-gradient(circle at 34% 28%, #fff 0 18%, var(--brand-yellow) 42%, var(--brand-yellow-deep) 100%);
-        animation: tapGradient 0.5s var(--ease) forwards;
+        background: transparent;
+        animation: none;
       }
 
       .clicker-dot {
@@ -2006,38 +2140,13 @@
         width: 8px;
         height: 8px;
         border-radius: 50%;
-        background: var(--brand-yellow-deep);
+        background: transparent;
+        opacity: 0;
         transform: translate(-50%, -50%);
       }
 
       .clicker.active .clicker-dot {
-        background: var(--kb-ink);
-      }
-
-      .destination-label {
-        position: absolute;
-        top: 112px;
-        left: 50%;
-        z-index: 39;
-        max-width: calc(100% - 40px);
-        padding: 8px 16px;
-        border-radius: 20px;
-        color: #fff;
-        background: var(--kb-ink);
-        font-family: var(--font-body);
-        font-size: 13px;
-        font-weight: 700;
-        opacity: 0;
-        pointer-events: none;
-        transform: translateX(-50%);
-        transition: opacity 0.25s ease-out;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-      }
-
-      .destination-label.show {
-        opacity: 1;
+        background: transparent;
       }
 
       @keyframes phoneScene {
@@ -2189,11 +2298,6 @@
         50% { opacity: 0.85; }
       }
 
-      @keyframes completePing {
-        0% { box-shadow: 0 0 0 0 rgba(255, 188, 0, 0.4); }
-        100% { box-shadow: 0 0 0 12px rgba(255, 188, 0, 0); }
-      }
-
       @keyframes goldSweep {
         from { background-position: center 100%; }
         to { background-position: center 0%; }
@@ -2237,6 +2341,17 @@
         48% { transform: scale(0.92); filter: saturate(1.18) brightness(1.04); }
         100% { transform: scale(1); filter: saturate(1); }
       }
+
+      @keyframes cardRipple {
+        0% { opacity: 0; transform: translate(-50%, 50%) scale(0.2); }
+        18% { opacity: 1; }
+        100% { opacity: 0; transform: translate(-50%, 50%) scale(18); }
+      }
+
+      @keyframes siblingCardReact {
+        0%, 100% { transform: scale(1); filter: brightness(1); }
+        42% { transform: scale(0.982); filter: brightness(1.025) saturate(1.03); }
+      }
     </style>
   </head>
   <body>
@@ -2256,6 +2371,9 @@
               <img class="sticker" src="assets/rojennie-icons/shield.png" alt="" />
               <img class="sticker" src="assets/rojennie-icons/chat.png" alt="" />
               <img class="sticker" src="assets/rojennie-icons/bank.png" alt="" />
+              <img class="sticker" src="assets/rojennie-icons/document.png" alt="" />
+              <img class="sticker" src="assets/rojennie-icons/checklist.png" alt="" />
+              <img class="sticker" src="assets/rojennie-icons/coin.png" alt="" />
             </div>
             <img class="flow-sticker flow-sticker--splash" src="assets/rojennie-stickers/hello.png" alt="" />
             <div>
@@ -2292,7 +2410,7 @@
                 </div>
               </div>
             </div>
-            <div class="input-bar"><span><img class="input-icon" src="assets/rojennie-icons/menu.png" alt="" /></span><span>궁금한 점을 입력해 주세요.</span><span class="send">›</span></div>
+            <div class="input-bar"><span><img class="input-icon" src="assets/rojennie-icons/menu.png" alt="" /></span><span>궁금한 점을 입력해 주세요.</span><span class="send"><img class="send-icon" src="assets/rojennie-icons/check.png" alt="" /></span></div>
           </div>
         </section>
 
@@ -2303,7 +2421,6 @@
                 <img class="loading-ring-icon" src="assets/rojennie-icons/search.png" alt="" />
               </div>
               <p class="loading-label">민원 분석 중</p>
-              <img class="flow-sticker flow-sticker--analysis" src="assets/rojennie-stickers/done.png" alt="" />
             </div>
             <div class="steps">
               <div class="step"><img class="step-icon" src="assets/rojennie-icons/checklist.png" alt="" /><span class="step-num">01</span><b class="reveal-line" style="animation-delay:16.75s">상품과 사건 분리</b><span class="step-detail">민원 분리</span></div>
@@ -2316,26 +2433,30 @@
 
         <section class="scene scene-3 scene-list">
           <div class="scene-inner cards cards--fill">
-            <article class="issue-select-card issue-select-card--els tappable" data-tap-label="예금 만기 이자 카드 → 상세 화면">
-              <span class="card-number-badge">1</span>
-              <span class="card-emoji"><img src="assets/rojennie-icons/bank.png" alt="" /></span>
-              <div class="card-body">
-                <span class="status-badge status-badge--pending">추가 정보 필요</span>
-                <p class="card-title">예금 만기 이자</p>
-                <p class="card-desc text-tier-secondary"><strong>안내받은 예상 이자</strong>를 확인해야 차이를 계산할 수 있습니다.</p>
-              </div>
-              <span class="card-arrow">›</span>
-            </article>
-            <article class="issue-select-card issue-select-card--refund tappable" data-tap-label="적금 우대금리 카드 → 상세 화면">
-              <span class="card-number-badge">2</span>
-              <span class="card-emoji"><img src="assets/rojennie-icons/percent.png" alt="" /></span>
-              <div class="card-body">
-                <span class="status-badge status-badge--ready just-completed">리포트 생성됨</span>
-                <p class="card-title">적금 우대금리</p>
-                <p class="card-desc text-tier-secondary">연결된 금융정보와 약관 기준으로 <strong>처리 결과</strong>를 만들었습니다.</p>
-              </div>
-              <span class="card-arrow">›</span>
-            </article>
+            <div class="cards-guide"><b>문의가 2개로 나뉘었어요</b><span>각 카드를 눌러 필요한 확인 절차를 이어갑니다.</span></div>
+            <div class="cards-connector" aria-label="Key Buddy"><span>Key</span><span>Buddy</span></div>
+            <div class="cards-stack">
+              <article class="issue-select-card issue-select-card--els tappable" data-tap-label="예금 만기 이자 카드 → 상세 화면">
+                <span class="card-number-badge">1</span>
+                <span class="card-emoji"><img src="assets/rojennie-icons/bank.png" alt="" /></span>
+                <div class="card-body">
+                  <span class="status-badge status-badge--pending">추가 정보 필요</span>
+                  <p class="card-title">예금 만기 이자</p>
+                  <p class="card-desc text-tier-secondary"><strong>안내받은 예상 이자</strong>를 확인해야 차이를 계산할 수 있습니다.</p>
+                </div>
+                <span class="card-arrow"><img src="assets/rojennie-icons/back.png" alt="" /></span>
+              </article>
+              <article class="issue-select-card issue-select-card--refund tappable" data-tap-label="적금 우대금리 카드 → 상세 화면">
+                <span class="card-number-badge">2</span>
+                <span class="card-emoji"><img src="assets/rojennie-icons/percent.png" alt="" /></span>
+                <div class="card-body">
+                  <span class="status-badge status-badge--ready just-completed">리포트 생성됨</span>
+                  <p class="card-title">적금 우대금리</p>
+                  <p class="card-desc text-tier-secondary">연결된 금융정보와 약관 기준으로 <strong>처리 결과</strong>를 만들었습니다.</p>
+                </div>
+                <span class="card-arrow"><img src="assets/rojennie-icons/back.png" alt="" /></span>
+              </article>
+            </div>
           </div>
         </section>
 
@@ -2367,26 +2488,30 @@
 
         <section class="scene scene-5 scene-list">
           <div class="scene-inner cards cards--fill">
-            <article class="issue-select-card issue-select-card--els">
-              <span class="card-number-badge">1</span>
-              <span class="card-emoji"><img src="assets/rojennie-icons/bank.png" alt="" /></span>
-              <div class="card-body">
-                <span class="status-badge status-badge--pending">추가 정보 필요</span>
-                <p class="card-title">예금 만기 이자</p>
-                <p class="card-desc text-tier-secondary"><strong>예상 이자</strong> 답변을 기다립니다.</p>
-              </div>
-              <span class="card-arrow">›</span>
-            </article>
-            <article class="issue-select-card issue-select-card--refund tappable" data-tap-label="적금 우대금리 카드 → 상세 화면">
-              <span class="card-number-badge">2</span>
-              <span class="card-emoji"><img src="assets/rojennie-icons/percent.png" alt="" /></span>
-              <div class="card-body">
-                <span class="status-badge status-badge--ready just-completed">리포트 생성됨</span>
-                <p class="card-title">적금 우대금리</p>
-                <p class="card-desc text-tier-secondary"><strong>약관과 금융정보</strong>로 처리 결과를 생성했습니다.</p>
-              </div>
-              <span class="card-arrow">›</span>
-            </article>
+            <div class="cards-guide"><b>처리 상태를 다시 정리했어요</b><span>완료된 카드는 리포트로 확인할 수 있습니다.</span></div>
+            <div class="cards-connector" aria-label="Key Buddy"><span>Key</span><span>Buddy</span></div>
+            <div class="cards-stack">
+              <article class="issue-select-card issue-select-card--els">
+                <span class="card-number-badge">1</span>
+                <span class="card-emoji"><img src="assets/rojennie-icons/bank.png" alt="" /></span>
+                <div class="card-body">
+                  <span class="status-badge status-badge--pending">추가 정보 필요</span>
+                  <p class="card-title">예금 만기 이자</p>
+                  <p class="card-desc text-tier-secondary"><strong>예상 이자</strong> 답변을 기다립니다.</p>
+                </div>
+                <span class="card-arrow"><img src="assets/rojennie-icons/back.png" alt="" /></span>
+              </article>
+              <article class="issue-select-card issue-select-card--refund tappable" data-tap-label="적금 우대금리 카드 → 상세 화면">
+                <span class="card-number-badge">2</span>
+                <span class="card-emoji"><img src="assets/rojennie-icons/percent.png" alt="" /></span>
+                <div class="card-body">
+                  <span class="status-badge status-badge--ready just-completed">리포트 생성됨</span>
+                  <p class="card-title">적금 우대금리</p>
+                  <p class="card-desc text-tier-secondary"><strong>약관과 금융정보</strong>로 처리 결과를 생성했습니다.</p>
+                </div>
+                <span class="card-arrow"><img src="assets/rojennie-icons/back.png" alt="" /></span>
+              </article>
+            </div>
           </div>
         </section>
 
@@ -2420,7 +2545,7 @@
           <div class="scene-inner final">
             <div class="final-copy">
               <img class="flow-sticker flow-sticker--final" src="assets/rojennie-stickers/done.png" alt="" />
-              <h2 class="headline">적금 리포트는 생성됐고, 예금은 <span class="headline-number">1개</span> 답변만 더 필요해요</h2>
+              <h2 class="headline">적금 리포트는 생성됐고,<br />예금은 <span class="headline-number">1개</span> 답변만 더 필요해요</h2>
               <p class="subtitle text-tier-secondary">처리 가능한 건 리포트로 저장하고, 부족한 사실은 질문으로 남깁니다.</p>
               <div class="final-actions">
                 <span class="gold-button">생성된 민원 보기</span>
@@ -2436,7 +2561,7 @@
                   <strong>근거: 우대금리 조건 조항</strong>
                   <strong>저장 위치: 생성된 민원</strong>
                 </div>
-                <span class="final-link">근거 후보자료 보기 ▸ 적금 약관, 내 금융정보</span>
+                <span class="final-link"><img class="final-link-icon" src="assets/rojennie-icons/document.png" alt="" />근거 후보자료 보기 · 적금 약관, 내 금융정보</span>
               </div>
               <div class="summary-card pending">
                 <span class="final-status pending">추가 정보 필요</span>
@@ -2446,11 +2571,7 @@
                   <strong>확인된 실제 입금액: 279,180원</strong>
                   <strong>추가 질문: 예상 이자 금액</strong>
                 </div>
-                <span class="final-link">예금 약관 보기 ▸ 이자 계산 및 지급 기준</span>
-              </div>
-              <div class="summary-card">
-                <b><img class="mini-icon" src="assets/rojennie-icons/shield.png" alt="" />데이터 연결</b>
-                <span>브라우저는 서버 결과만 받고, MCP 호출은 FastAPI가 처리합니다.</span>
+                <span class="final-link"><img class="final-link-icon" src="assets/rojennie-icons/document.png" alt="" />예금 약관 보기 · 이자 계산 및 지급 기준</span>
               </div>
             </div>
           </div>
@@ -2472,7 +2593,6 @@
       </div>
 
       <div id="clicker" class="clicker"><div class="clicker-ring"></div><div class="clicker-dot"></div></div>
-      <div id="destination-label" class="destination-label"></div>
       <div class="progress-line" aria-hidden="true"></div>
       <div class="home-indicator" aria-hidden="true"></div>
       <button class="replay" type="button" id="replay">Replay</button>
@@ -2517,14 +2637,6 @@
         timelineTimers.push(timer);
       }
 
-      function showDestinationLabel(text) {
-        const el = document.getElementById("destination-label");
-        if (!el) return;
-        el.textContent = text;
-        el.classList.add("show");
-        queueTimer(() => el.classList.remove("show"), 1200);
-      }
-
       async function playOutroLogo() {
         const seq = document.querySelector(".outro-stage");
         if (!seq) return;
@@ -2533,7 +2645,7 @@
         await wait(3200);
       }
 
-      async function performTap({ selector, targetLabel }) {
+      async function performTap({ selector }) {
         if (sceneAdvanceInProgress) return;
         sceneAdvanceInProgress = true;
 
@@ -2555,12 +2667,20 @@
         clicker.classList.remove("active");
         void clicker.offsetWidth;
         clicker.classList.add("active");
+        const siblingCards = target.matches(".issue-select-card")
+          ? Array.from(target.closest(".cards-stack")?.querySelectorAll(".issue-select-card") || []).filter((card) => card !== target)
+          : [];
         target.classList.add("card-focused");
         target.classList.add("pressed");
+        siblingCards.forEach((card) => {
+          card.classList.remove("sibling-react");
+          void card.offsetWidth;
+          card.classList.add("sibling-react");
+        });
 
-        await wait(500);
+        await wait(620);
         target.classList.remove("pressed");
-        showDestinationLabel(targetLabel);
+        siblingCards.forEach((card) => card.classList.remove("sibling-react"));
         await wait(720);
         clicker.classList.remove("active");
         sceneAdvanceInProgress = false;
@@ -2593,21 +2713,18 @@
         queueTimer(() => {
           performTap({
             selector: ".scene-1 .send",
-            targetLabel: "문의 전송 → Key Buddy 응답",
           });
         }, 9400);
 
         queueTimer(() => {
           performTap({
             selector: ".scene-3 .issue-select-card--els",
-            targetLabel: "예금 만기 이자 카드 → 상세 화면",
           });
         }, 25250);
 
         queueTimer(() => {
           performTap({
             selector: ".scene-5 .issue-select-card--refund",
-            targetLabel: "적금 우대금리 카드 → 상세 화면",
           });
         }, 39550);
 
