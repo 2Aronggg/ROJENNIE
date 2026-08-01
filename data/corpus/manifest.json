@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-07-30T17:36:33.488517+00:00",
+  "generated_at": "2026-08-01T10:35:24.292230+00:00",
   "embedding_status": "not_generated",
   "retrieval": "full_text_with_optional_vector_score",
   "corpora": {
     "regulations": 63620,
     "products": 941,
-    "cases": 12,
+    "cases": 21,
     "glossary": 538
   },
   "documents": {
     "regulations": 139,
     "products": 136,
-    "cases": 12,
+    "cases": 16,
     "glossary": 1
   },
-  "total_chunks": 65111,
+  "total_chunks": 65120,
   "authoritative_for_decision": [
     "regulations",
     "products",
