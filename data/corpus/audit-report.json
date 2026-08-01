@@ -1,0 +1,390 @@
+{
+  "file": "data/corpus/all.jsonl",
+  "generated_at": "2026-08-01T16:55:40.788Z",
+  "thresholds": {
+    "very_short_text_below": 30,
+    "too_long_text_above": 3000
+  },
+  "totals": {
+    "lines": 65223,
+    "invalid_json": 0,
+    "empty_text": 0,
+    "very_short_text": 9323,
+    "too_long_text": 0,
+    "duplicate_chunk_id": 0,
+    "duplicate_text": 58830,
+    "missing_doc_id": 0,
+    "missing_chunk_id": 0,
+    "missing_path": 0,
+    "missing_doc_type": 0,
+    "missing_product": 0,
+    "missing_effective_date": 1247,
+    "likely_broken_text": 8,
+    "embedding_null": 65223
+  },
+  "by_doc_type": {
+    "law": {
+      "count": 63620,
+      "empty_text": 0,
+      "very_short_text": 9303,
+      "too_long_text": 0,
+      "missing_product": 0,
+      "missing_effective_date": 10,
+      "embedding_null": 63620,
+      "duplicate_text": 58694,
+      "likely_broken_text": 0
+    },
+    "product_manual": {
+      "count": 917,
+      "empty_text": 0,
+      "very_short_text": 17,
+      "too_long_text": 0,
+      "missing_product": 0,
+      "missing_effective_date": 551,
+      "embedding_null": 917,
+      "duplicate_text": 136,
+      "likely_broken_text": 7
+    },
+    "rate_table": {
+      "count": 24,
+      "empty_text": 0,
+      "very_short_text": 3,
+      "too_long_text": 0,
+      "missing_product": 0,
+      "missing_effective_date": 24,
+      "embedding_null": 24,
+      "duplicate_text": 0,
+      "likely_broken_text": 0
+    },
+    "case": {
+      "count": 124,
+      "empty_text": 0,
+      "very_short_text": 0,
+      "too_long_text": 0,
+      "missing_product": 0,
+      "missing_effective_date": 124,
+      "embedding_null": 124,
+      "duplicate_text": 0,
+      "likely_broken_text": 0
+    },
+    "glossary": {
+      "count": 538,
+      "empty_text": 0,
+      "very_short_text": 0,
+      "too_long_text": 0,
+      "missing_product": 0,
+      "missing_effective_date": 538,
+      "embedding_null": 538,
+      "duplicate_text": 0,
+      "likely_broken_text": 1
+    }
+  },
+  "products": {
+    "공통": 64166,
+    "예금": 313,
+    "적금": 543,
+    "ELS": 101,
+    "펀드": 274,
+    "ISA": 16,
+    "대출": 114
+  },
+  "length_summary": {
+    "law": {
+      "min": 4,
+      "p50": 358,
+      "p90": 1303,
+      "p99": 1399,
+      "max": 1399
+    },
+    "product_manual": {
+      "min": 6,
+      "p50": 1106,
+      "p90": 1398,
+      "p99": 1399,
+      "max": 1399
+    },
+    "rate_table": {
+      "min": 11,
+      "p50": 1225,
+      "p90": 1397,
+      "p99": 1398,
+      "max": 1399
+    },
+    "case": {
+      "min": 103,
+      "p50": 1394,
+      "p90": 1398,
+      "p99": 1399,
+      "max": 1399
+    },
+    "glossary": {
+      "min": 75,
+      "p50": 396,
+      "p90": 556,
+      "p99": 788,
+      "max": 1158
+    }
+  },
+  "examples": {
+    "invalid_json": [],
+    "empty_text": [],
+    "very_short_text": [
+      {
+        "line": 151,
+        "chunk_id": "4f23fb6ef237-p20-c2",
+        "doc_type": "law",
+        "length": 11,
+        "text": "정하는 행위를 한 때"
+      },
+      {
+        "line": 497,
+        "chunk_id": "c2ed72db7b0d-p166-c2",
+        "doc_type": "law",
+        "length": 17,
+        "text": "3. 감봉 4. 견책 5. 경고"
+      },
+      {
+        "line": 588,
+        "chunk_id": "c2ed72db7b0d-p213-c2",
+        "doc_type": "law",
+        "length": 15,
+        "text": "제341조의4까지”로 한다."
+      },
+      {
+        "line": 589,
+        "chunk_id": "1ad44851f4ec-c1",
+        "doc_type": "law",
+        "length": 6,
+        "text": "제1장 총칙"
+      },
+      {
+        "line": 594,
+        "chunk_id": "1ad44851f4ec-c6",
+        "doc_type": "law",
+        "length": 17,
+        "text": "제2장 개인금융채권의 연체 관리"
+      },
+      {
+        "line": 603,
+        "chunk_id": "1ad44851f4ec-c15",
+        "doc_type": "law",
+        "length": 23,
+        "text": "제3장 개인금융채권의 추심 시 준수사항 등"
+      },
+      {
+        "line": 604,
+        "chunk_id": "1ad44851f4ec-c16",
+        "doc_type": "law",
+        "length": 21,
+        "text": "제1절 개인금융채권의 추심 시 준수사항"
+      },
+      {
+        "line": 616,
+        "chunk_id": "1ad44851f4ec-c28",
+        "doc_type": "law",
+        "length": 25,
+        "text": "제2절 채권금융회사등의 추심 위탁 시 준수사항"
+      },
+      {
+        "line": 621,
+        "chunk_id": "1ad44851f4ec-c33",
+        "doc_type": "law",
+        "length": 8,
+        "text": "제4장 채무조정"
+      },
+      {
+        "line": 629,
+        "chunk_id": "1ad44851f4ec-c41",
+        "doc_type": "law",
+        "length": 6,
+        "text": "제5장 보칙"
+      }
+    ],
+    "too_long_text": [],
+    "duplicate_chunk_id": [],
+    "duplicate_text": [
+      {
+        "line": 643,
+        "chunk_id": "b140e8627d7a-c1",
+        "first_chunk_id": "1ad44851f4ec-c1",
+        "doc_type": "law"
+      },
+      {
+        "line": 644,
+        "chunk_id": "b140e8627d7a-c2",
+        "first_chunk_id": "1ad44851f4ec-c2",
+        "doc_type": "law"
+      },
+      {
+        "line": 645,
+        "chunk_id": "b140e8627d7a-c3",
+        "first_chunk_id": "1ad44851f4ec-c3",
+        "doc_type": "law"
+      },
+      {
+        "line": 646,
+        "chunk_id": "b140e8627d7a-c4",
+        "first_chunk_id": "1ad44851f4ec-c4",
+        "doc_type": "law"
+      },
+      {
+        "line": 647,
+        "chunk_id": "b140e8627d7a-c5",
+        "first_chunk_id": "1ad44851f4ec-c5",
+        "doc_type": "law"
+      },
+      {
+        "line": 648,
+        "chunk_id": "b140e8627d7a-c6",
+        "first_chunk_id": "1ad44851f4ec-c6",
+        "doc_type": "law"
+      },
+      {
+        "line": 649,
+        "chunk_id": "b140e8627d7a-c7",
+        "first_chunk_id": "1ad44851f4ec-c7",
+        "doc_type": "law"
+      },
+      {
+        "line": 650,
+        "chunk_id": "b140e8627d7a-c8",
+        "first_chunk_id": "1ad44851f4ec-c8",
+        "doc_type": "law"
+      },
+      {
+        "line": 651,
+        "chunk_id": "b140e8627d7a-c9",
+        "first_chunk_id": "1ad44851f4ec-c9",
+        "doc_type": "law"
+      },
+      {
+        "line": 652,
+        "chunk_id": "b140e8627d7a-c10",
+        "first_chunk_id": "1ad44851f4ec-c10",
+        "doc_type": "law"
+      }
+    ],
+    "missing_doc_type": [],
+    "missing_product": [],
+    "missing_effective_date": [
+      {
+        "line": 1,
+        "chunk_id": "b000cc27cb25-p1-c1",
+        "doc_type": "law",
+        "path": "local:regulations/loan/은행여신거래기본약관_가계용.pdf"
+      },
+      {
+        "line": 2,
+        "chunk_id": "b000cc27cb25-p1-c2",
+        "doc_type": "law",
+        "path": "local:regulations/loan/은행여신거래기본약관_가계용.pdf"
+      },
+      {
+        "line": 3,
+        "chunk_id": "b000cc27cb25-p1-c3",
+        "doc_type": "law",
+        "path": "local:regulations/loan/은행여신거래기본약관_가계용.pdf"
+      },
+      {
+        "line": 4,
+        "chunk_id": "b000cc27cb25-p1-c4",
+        "doc_type": "law",
+        "path": "local:regulations/loan/은행여신거래기본약관_가계용.pdf"
+      },
+      {
+        "line": 5,
+        "chunk_id": "b000cc27cb25-p1-c5",
+        "doc_type": "law",
+        "path": "local:regulations/loan/은행여신거래기본약관_가계용.pdf"
+      },
+      {
+        "line": 6,
+        "chunk_id": "b000cc27cb25-p2-c1",
+        "doc_type": "law",
+        "path": "local:regulations/loan/은행여신거래기본약관_가계용.pdf"
+      },
+      {
+        "line": 7,
+        "chunk_id": "b000cc27cb25-p2-c2",
+        "doc_type": "law",
+        "path": "local:regulations/loan/은행여신거래기본약관_가계용.pdf"
+      },
+      {
+        "line": 8,
+        "chunk_id": "b000cc27cb25-p2-c3",
+        "doc_type": "law",
+        "path": "local:regulations/loan/은행여신거래기본약관_가계용.pdf"
+      },
+      {
+        "line": 9,
+        "chunk_id": "b000cc27cb25-p2-c4",
+        "doc_type": "law",
+        "path": "local:regulations/loan/은행여신거래기본약관_가계용.pdf"
+      },
+      {
+        "line": 10,
+        "chunk_id": "b000cc27cb25-p2-c5",
+        "doc_type": "law",
+        "path": "local:regulations/loan/은행여신거래기본약관_가계용.pdf"
+      }
+    ],
+    "likely_broken_text": [
+      {
+        "line": 64479,
+        "chunk_id": "4c659bc5eee9-p15-c1",
+        "doc_type": "product_manual",
+        "path": "local:products/savings/글로벌스타적금설명서(다국어).pdf",
+        "preview": "15 「KB Global Star 零存整取」产品说明 1 产品名称及特点 ▪ 产品名称: KB Global Star 零存整取 ▪ 产品特点: 专为外国人打造的专属产品，提供工资、信用卡还款以及跨境汇款优惠利率。 2 交易条件 类 别 内 容 开户办理 对象 ▪ 经过实名认证的外国公民(每人限开一个账户) ㅇ 个"
+      },
+      {
+        "line": 64480,
+        "chunk_id": "4c659bc5eee9-p16-c1",
+        "doc_type": "product_manual",
+        "path": "local:products/savings/글로벌스타적금설명서(다국어).pdf",
+        "preview": "16 优惠利率 (税前， 截至 2026.5.29) ▪ 最高年利率 3.5%p ※ 适用开户办理当日分行及KB 国民银行网站公布的优惠利率。 ※ 对于符合规定条件的账户，优惠利率自办理开户之日起至合同到期日前一天生效 (中途终止则不适用)。 类别 规定条件 代发工资 优惠利率 (年 利 率1.0%p) 自 零 存 整"
+      },
+      {
+        "line": 64481,
+        "chunk_id": "4c659bc5eee9-p16-c2",
+        "doc_type": "product_manual",
+        "path": "local:products/savings/글로벌스타적금설명서(다국어).pdf",
+        "preview": "(税前， 截至 2026.5.29) ▪ 最低年利率 2.0%~最高年利率 5.5% ㅇ 最 高 利 率 包 含办 理 开 户 时分 行 及KB国民银行网站 上 公 布 的 所 有优惠 利 率 。 ▪ 利率优惠券 ㅇ 如 办 理 开 户 时 已 使 用 利 率 优 惠 券 ， 则 该 优 惠 券 的 优 惠 利 率 可"
+      },
+      {
+        "line": 64482,
+        "chunk_id": "4c659bc5eee9-p17-c1",
+        "doc_type": "product_manual",
+        "path": "local:products/savings/글로벌스타적금설명서(다국어).pdf",
+        "preview": "17 ㅇ 如 中 途 终 止 ， 优 惠 券 的 优 惠 利 率 则 不 适 用 。 到期利息 计算方法 (计算依据) ▪ 对于每笔存款，自存款日起至到期日前一天止这段期间将按约定利率计算利息总额 (不足 1 韩元的，将向下取整)。 ▪ [每笔存款到期利息计算公式] 存款金额X 约定利率X 天数(存款日~到期日前一天)"
+      },
+      {
+        "line": 64483,
+        "chunk_id": "4c659bc5eee9-p18-c1",
+        "doc_type": "product_manual",
+        "path": "local:products/savings/글로벌스타적금설명서(다국어).pdf",
+        "preview": "18 中途终止利 息 计算方法 (计算依据) ▪ 对于每笔存款金额，自存款日起至中途终止日前一天止这段期间将按各存款期限 中途终止利率计算利息总额(不足 1 韩元的，将向下取整)。 ▪ [每笔存款的中途终止利息计算公式] 存款金额X 基本利率X 各存款期限适用利率(50~90%) X 已过月数 / 合同月数 存款人保障"
+      },
+      {
+        "line": 64484,
+        "chunk_id": "4c659bc5eee9-p19-c1",
+        "doc_type": "product_manual",
+        "path": "local:products/savings/글로벌스타적금설명서(다국어).pdf",
+        "preview": "19 ▪ 在存款余额证明发放当日，余额不得发生变动，例如存款、取款或转账。 自动转账 ▪ 可从其他金融机构的账户进行自动转账 。在这种情况下， 须向该金融机构提出申 请。 ▪ 单笔自动转账金额范围为 1,000 ~ 500,000 韩元。 ▪ [KB国民银行跨账户自动转账] ㅇ 自动转账服务截止至到期日前一个工作日，此"
+      },
+      {
+        "line": 64485,
+        "chunk_id": "4c659bc5eee9-p20-c1",
+        "doc_type": "product_manual",
+        "path": "local:products/savings/글로벌스타적금설명서(다국어).pdf",
+        "preview": "20  如存单被用作《反电信金融欺诈及追回损失特别法》所界定的涉嫌欺诈的交易账户或 欺诈账 户，则可能受到金融交易限制，例如转账和汇款延迟或暂停支取。 3 注意事项  线上渠道开立的账户无法在开户当日进行线上注销。  依据《金融消费者保护法》第19条第1款及该法实施令第14条第1款和第3款的规定，在解释产品 之前"
+      },
+      {
+        "line": 65157,
+        "chunk_id": "1563ae2d7898-c472",
+        "doc_type": "glossary",
+        "path": "local:dictionary/fine_financial_glossary.csv",
+        "preview": "국제회계감사감독기구회의 [IFIAR : International Forum of Independent Audit Regulators]: 국제회계감사감독기구회의는 2006년 9월 프랑스 파리에서 열린 회의에서 설립된 이후 매년 2회의 총회, 1회의 워크�事�개최하고 있다. 국제회계감사감독"
+      }
+    ]
+  }
+}

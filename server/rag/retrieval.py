@@ -15,10 +15,16 @@ from ..schemas import DocumentChunk, EvidenceRef
 TOKEN_RE = re.compile(r"[\uac00-\ud7a3A-Za-z0-9]+")
 COMMON_PRODUCT = "\uacf5\ud1b5"
 RRF_K = 60
+CASE_INTENT_TOKENS = {"case", "cases", "dispute", "판례", "사례", "분쟁", "조정", "청구", "보상"}
+PRODUCT_INTENT_TOKENS = {"상품", "약관", "특약", "설명서"}
 
 
 def _tokens(text: str) -> set[str]:
     return {token.lower() for token in TOKEN_RE.findall(text)}
+
+
+def _compact(text: str) -> str:
+    return "".join(TOKEN_RE.findall(text)).lower()
 
 
 def _text_key(text: str) -> str:
@@ -47,6 +53,43 @@ def _corpus_for(chunk: DocumentChunk) -> str:
     if path.startswith("products/"):
         return "products"
     return "other"
+
+
+def _metadata_text(chunk: DocumentChunk) -> str:
+    path = chunk.path.split(":", 1)[-1].replace("\\", "/")
+    filename = Path(path).stem
+    return " ".join(
+        part
+        for part in (filename, chunk.section or "", " ".join(chunk.product))
+        if part
+    )
+
+
+def _metadata_hints(text: str) -> set[str]:
+    hints: set[str] = set()
+    suffixes = ("상품설명서", "설명서", "특약", "약관", "상품")
+    for token in _tokens(text):
+        compact = _compact(token)
+        if len(compact) < 4:
+            continue
+        hints.add(compact)
+        without_date = re.sub(r"\d{4,}$", "", compact)
+        if len(without_date) >= 4:
+            hints.add(without_date)
+        for suffix in suffixes:
+            if suffix in without_date:
+                stem = without_date.split(suffix, 1)[0]
+                if len(stem) >= 4:
+                    hints.add(stem)
+    return hints
+
+
+def _intent(query_tokens: set[str]) -> str | None:
+    if query_tokens & CASE_INTENT_TOKENS:
+        return "cases"
+    if query_tokens & PRODUCT_INTENT_TOKENS:
+        return "products"
+    return None
 
 
 def load_jsonl(path: Path) -> list[DocumentChunk]:
@@ -123,11 +166,18 @@ class SearchIndex:
         self.source = source
         self._active_today: tuple[date, frozenset[int]] | None = None
         self._token_sets: list[set[str]] = []
+        self._metadata_token_sets: list[set[str]] = []
+        self._compact_metadata: list[str] = []
+        self._metadata_hints: list[set[str]] = []
         self._token_index: dict[str, set[int]] = defaultdict(set)
         self._document_frequency: Counter[str] = Counter()
         for index, chunk in enumerate(chunks):
             tokens = _tokens(chunk.text)
+            metadata = _metadata_text(chunk)
             self._token_sets.append(tokens)
+            self._metadata_token_sets.append(_tokens(metadata))
+            self._compact_metadata.append(_compact(metadata))
+            self._metadata_hints.append(_metadata_hints(metadata))
             for token in tokens:
                 self._token_index[token].add(index)
                 self._document_frequency[token] += 1
@@ -199,6 +249,17 @@ class SearchIndex:
         else:
             candidate_indices = set(range(len(self.chunks)))
 
+        compact_query = _compact(query)
+        if compact_query:
+            for index, compact_metadata in enumerate(self._compact_metadata):
+                if len(compact_metadata) >= 4 and (
+                    compact_metadata in compact_query or compact_query in compact_metadata
+                ):
+                    candidate_indices.add(index)
+                    continue
+                if any(hint in compact_query for hint in self._metadata_hints[index]):
+                    candidate_indices.add(index)
+
         # as_of=None disables date filtering entirely below (`if as_of and ...`
         # short-circuits), so only prune when a date was actually given -
         # pruning on a None as_of would silently start filtering candidates
@@ -215,10 +276,12 @@ class SearchIndex:
         }
         idf_total = sum(query_idf.values()) or 1.0
         ranked: list[tuple[float, str, DocumentChunk, str]] = []
+        intent = _intent(query_tokens)
         for index in candidate_indices:
             chunk = self.chunks[index]
+            corpus = _corpus_for(chunk)
             # Glossary is a display corpus, not a legal or contractual decision source.
-            if _corpus_for(chunk) == "glossary":
+            if corpus == "glossary":
                 continue
             if product and product not in chunk.product and COMMON_PRODUCT not in chunk.product:
                 continue
@@ -230,10 +293,30 @@ class SearchIndex:
             tokens = self._token_sets[index]
             weighted_overlap = sum(query_idf[token] for token in query_tokens if token in tokens)
             text_score = weighted_overlap / idf_total if query_tokens else 0.0
+            metadata_score = 0.0
+            metadata_tokens = self._metadata_token_sets[index]
+            metadata_overlap = sum(query_idf[token] for token in query_tokens if token in metadata_tokens)
+            if metadata_overlap:
+                metadata_score += min(0.22, (metadata_overlap / idf_total) * 0.18)
+            compact_metadata = self._compact_metadata[index]
+            if compact_metadata and compact_query:
+                if compact_metadata in compact_query:
+                    metadata_score += 0.24
+                elif compact_query in compact_metadata:
+                    metadata_score += 0.2
+            matched_hints = [hint for hint in self._metadata_hints[index] if hint in compact_query]
+            if matched_hints:
+                longest_hint = max(len(hint) for hint in matched_hints)
+                metadata_score += 0.85 if longest_hint >= 6 else 0.32
+            if "상품설명서" in compact_query:
+                if "상품설명서" in compact_metadata:
+                    metadata_score += 0.18
+                elif "특약" in compact_metadata:
+                    metadata_score -= 0.12
             vector_score = 0.0
             if query_embedding and chunk.embedding:
                 vector_score = max(0.0, _cosine(query_embedding, chunk.embedding))
-            if not text_score and not vector_score:
+            if not text_score and not vector_score and not metadata_score:
                 continue
 
             if text_score and vector_score:
@@ -249,16 +332,32 @@ class SearchIndex:
                 score += 0.18
             elif product and COMMON_PRODUCT in chunk.product:
                 score += 0.04
+            score += metadata_score
+            if intent == corpus:
+                score += 0.14
+            elif intent == "cases" and corpus == "products":
+                score -= 0.04
+            elif intent == "products" and corpus == "cases":
+                score -= 0.22
             ranked.append((score, chunk.chunk_id, chunk, match_type))
 
         ranked.sort(key=lambda item: (-item[0], item[1]))
         results: list[EvidenceRef] = []
         seen: set[str] = set()
-        for score, _, chunk, match_type in ranked:
+        seen_chunks: set[str] = set()
+        seen_docs: set[str] = set()
+
+        def add_result(score: float, chunk: DocumentChunk, match_type: str, *, allow_same_doc: bool = False) -> bool:
+            if chunk.chunk_id in seen_chunks:
+                return False
+            if not allow_same_doc and chunk.doc_id in seen_docs:
+                return False
             key = _text_key(chunk.text)
             if key in seen:
-                continue
+                return False
             seen.add(key)
+            seen_chunks.add(chunk.chunk_id)
+            seen_docs.add(chunk.doc_id)
             results.append(
                 EvidenceRef(
                     doc_id=chunk.doc_id,
@@ -273,6 +372,24 @@ class SearchIndex:
                     match_type=match_type,
                 )
             )
+            return len(results) >= top_k
+
+        if intent:
+            quota = max(1, math.ceil(top_k * 0.4))
+            for score, _, chunk, match_type in ranked:
+                if _corpus_for(chunk) != intent:
+                    continue
+                if add_result(score, chunk, match_type) or len(results) >= quota:
+                    break
+
+        for score, _, chunk, match_type in ranked:
+            if add_result(score, chunk, match_type):
+                break
+            if len(results) >= top_k:
+                break
+        for score, _, chunk, match_type in ranked:
+            if add_result(score, chunk, match_type, allow_same_doc=True):
+                break
             if len(results) >= top_k:
                 break
         return results
