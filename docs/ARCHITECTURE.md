@@ -21,7 +21,48 @@ KB Key Buddy는 금융 앱 안에서 사용자의 금융정보와 민원 내용�
 - 실제 계좌 조회·이체·해지·환불·민원 접수
 - 대출 승인 또는 고객 신용도 판단
 - 금융회사의 법적 책임·배상 여부 확정
-- Supabase 연동
+- Supabase 영구 저장 연결(서버에서 `SUPABASE_PERSISTENCE=true`일 때 활성화)
+
+## 기술 스택 및 배포 구조
+
+### 기술 스택
+
+| 영역 | 기술 | 역할 |
+| --- | --- | --- |
+| Client | React 19, Vite, @xyflow/react | 민원 상담·트리·리포트·마이 페이지·관리자 화면 |
+| API | FastAPI, Uvicorn, Pydantic | 브라우저 요청 검증과 전체 파이프라인 오케스트레이션 |
+| LLM | Gemini API, google-genai | 라우팅·RAG 질의·논리 검증·리포트 초안 |
+| LLM 보호 | LLM Policy Gateway | 개인정보 마스킹, 허용 단계 확인, JSON 검증, fallback |
+| 금융 Tool | Python MCP SDK, Finance MCP | 현재 사용자 가상 금융정보·계산 조회 |
+| RAG | pypdf, JSONL corpus, IDF·RRF 검색 | 규정·약관·상품설명서·사례 검색 |
+| 앱 저장소 | Supabase PostgreSQL | 사용자·민원·리포트·검토·감사 로그 영구 저장 |
+| 데모 금융 원장 | SQLite Mock Bank | CUST-001의 가상 예금·적금·대출·거래 데이터 |
+
+Supabase에는 1차로 profiles, cases, case_issues, reviews, audit_logs 테이블을 만들었습니다. `server/supabase_store.py`가 REST API로 민원·검토·감사 로그를 저장하고, 서버 재시작 후 개별 민원을 복원합니다. 연결은 `SUPABASE_PERSISTENCE=true`일 때만 켜지며, 기본값은 로컬 데모와 테스트를 위한 메모리 저장입니다.
+
+### Vercel 배포 목표
+
+Vercel을 배포 대상으로 사용합니다. Vercel은 React/Vite 정적 클라이언트와 Python Runtime 기반 FastAPI Function을 함께 지원하므로, 먼저 하나의 저장소에서 다음 구성을 검증합니다. [Vercel FastAPI 공식 문서](https://vercel.com/docs/frameworks/backend/fastapi)
+
+~~~text
+사용자 브라우저
+        ↓
+Vercel
+  ├─ React/Vite Client
+  └─ FastAPI Python Function
+        ├─ Supabase: 민원·리포트·검토·감사 로그
+        ├─ RAG corpus: 읽기 전용 배포 파일
+        └─ Finance MCP inprocess: 가상 금융정보 조회
+~~~
+
+배포 시 원칙:
+
+- Supabase를 민원·리포트·검토·감사 로그의 영구 저장소로 사용한다.
+- SQLite는 쓰기 저장소로 사용하지 않고 가상 금융 원장의 읽기용 데이터로만 유지한다.
+- Finance MCP는 서버 내부 inprocess 모드를 사용하고, 별도 stdio 프로세스 의존성을 배포 경로에 넣지 않는다.
+- RAG corpus는 배포 번들 크기와 초기화 시간을 확인한 뒤 포함하며, 커지면 Object Storage나 별도 RAG 서버로 분리한다.
+- Client 환경변수에는 VITE_API_BASE만 두고, Supabase 서버 키와 Gemini 키는 브라우저에 노출하지 않는다.
+- Vercel Function의 번들 크기·실행시간·RAG 응답시간 테스트를 통과하지 못하면 Client는 Vercel에 두고 FastAPI만 별도 서버로 분리한다.
 
 ## 2. 전체 흐름
 

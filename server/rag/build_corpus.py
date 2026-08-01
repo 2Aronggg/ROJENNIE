@@ -50,32 +50,55 @@ def _read_csv(path: Path) -> tuple[list[str], list[dict[str, str]]]:
         return reader.fieldnames or [], list(reader)
 
 
-def _case_records(data_dir: Path) -> list[dict[str, object]]:
-    path = data_dir / "cases" / "cases.csv"
-    if not path.exists():
+def _case_row_records(row: dict[str, object]) -> list[dict[str, object]]:
+    text = str(row.get("text") or "").strip()
+    if not text or row.get("status") not in {"", "ok", None}:
         return []
-    _, rows = _read_csv(path)
+    source = str(row.get("source") or "local").strip() or "local"
+    source_file = str(row.get("source_file") or "case")
+    case_key = source_file if source == "local" else f"{source}/{source_file}"
+    doc_id = _id(f"cases/{case_key}")
+    product = str(row.get("product") or "공통").strip() or "공통"
+    # KCA-style crawled rows carry richer provenance than the local HWP
+    # extracts (which only have title/product); pass through whatever exists.
+    metadata = {
+        key: row.get(key, "")
+        for key in ("source_url", "authority_level", "institution", "category", "case_id", "collected_at")
+    }
     records: list[dict[str, object]] = []
-    for row in rows:
-        text = (row.get("text") or "").strip()
-        if not text or row.get("status") not in {"", "ok", None}:
-            continue
-        source_file = row.get("source_file") or "case"
-        doc_id = _id(f"cases/{source_file}")
-        product = (row.get("product") or "공통").strip() or "공통"
-        for number, text_chunk in enumerate(_chunks(text), start=1):
-            chunk = DocumentChunk(
-                doc_id=doc_id,
-                chunk_id=f"{doc_id}-c{number}",
-                path=f"local:cases/{source_file}",
-                doc_type="case",
-                product=[product],
-                source="local",
-                page=1,
-                section=row.get("title") or None,
-                text=text_chunk,
-            )
-            records.append(_record(chunk, "cases", source_file=source_file, format=row.get("format", "")))
+    for number, text_chunk in enumerate(_chunks(text), start=1):
+        chunk = DocumentChunk(
+            doc_id=doc_id,
+            chunk_id=f"{doc_id}-c{number}",
+            path=f"{source}:cases/{case_key}",
+            doc_type="case",
+            product=[product],
+            source=source,
+            page=1,
+            section=str(row.get("title") or "") or None,
+            text=text_chunk,
+        )
+        records.append(_record(chunk, "cases", source_file=source_file, format=row.get("format", ""), **metadata))
+    return records
+
+
+def _case_records(data_dir: Path) -> list[dict[str, object]]:
+    cases_dir = data_dir / "cases"
+    records: list[dict[str, object]] = []
+
+    csv_path = cases_dir / "cases.csv"
+    if csv_path.exists():
+        _, rows = _read_csv(csv_path)
+        for row in rows:
+            records.extend(_case_row_records(row))
+
+    for jsonl_path in sorted(cases_dir.glob("*.jsonl")):
+        with jsonl_path.open(encoding="utf-8") as handle:
+            for line in handle:
+                if not line.strip():
+                    continue
+                records.extend(_case_row_records(json.loads(line)))
+
     return records
 
 

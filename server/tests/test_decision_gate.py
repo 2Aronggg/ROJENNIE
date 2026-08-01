@@ -55,6 +55,20 @@ class DecisionGateTests(unittest.TestCase):
 
         self.assertEqual(decision.control, "amend")
 
+    def test_amend_outranks_ask_per_prd_priority(self) -> None:
+        # PRD 12장: hold > amend > ask > proceed. A vague complaint that both
+        # exposes an account number (amend) and is missing facts (ask) must
+        # resolve to amend, not silently drop the PII-confirmation step.
+        decision = apply_decision_gate(
+            _issue(
+                missing_facts=["거래일"],
+                decision=Decision(control="ask", risk_flags=["missing_facts"]),
+                content_scope={"requires_user_confirmation": True, "masked_fields": ["account_number"]},
+            )
+        )
+
+        self.assertEqual(decision.control, "amend")
+
 
 if __name__ == "__main__":
     unittest.main()

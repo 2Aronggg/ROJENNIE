@@ -41,7 +41,7 @@ class PipelineTests(unittest.TestCase):
         issue_view = result.response_view.issues[0]
 
         self.assertNotIn("789012", issue_request.text)
-        self.assertEqual(issue_view.status, "ask")
+        self.assertEqual(issue_view.status, "amend")
         self.assertEqual(issue_view.masked_fields, ["phone_number", "account_number"])
         self.assertIn("개인정보 마스킹 또는 제출 범위 확인이 필요합니다.", issue_view.decision_reasons)
 

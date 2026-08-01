@@ -5,7 +5,7 @@ from pydantic import BaseModel, Field
 from server.schemas import IssueAnalysis
 
 
-CONTROL_PRIORITY = {"proceed": 0, "amend": 1, "ask": 2, "hold": 3}
+CONTROL_PRIORITY = {"proceed": 0, "ask": 1, "amend": 2, "hold": 3}  # PRD 12장: hold > amend > ask > proceed
 HIGH_RISK_ISSUES = {"명의도용"}
 HOLD_RISK_FLAGS = {"fact_conflict", "identity_theft", "unauthorized_transaction", "fraud_suspected"}
 AMEND_RISK_FLAGS = {"pii_detected", "masking_required", "scope_review_required"}

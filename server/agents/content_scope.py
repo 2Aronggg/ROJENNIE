@@ -29,6 +29,20 @@ CARD_RE = re.compile(r"(?<!\d)(\d{4})[- ]?(\d{4})[- ]?(\d{4})[- ]?(\d{4})(?!\d)"
 ACCOUNT_RE = re.compile(r"(?<!\d)(\d{2,6})-(\d{2,6})-(\d{2,8})(?!\d)")
 AUTH_CODE_RE = re.compile(r"(?:인증번호|보안코드|OTP|비밀번호)\s*[:：]?\s*([A-Za-z0-9]{4,12})", re.IGNORECASE)
 
+# LLM-routed text can arrive already redacted by LLMPolicyGateway's own output
+# masking (server/policy/gateway.py) - by the time this function sees it, the
+# raw pattern is gone and its own regexes above find nothing. Without this,
+# an LLM-routed complaint with an exposed account number never sets
+# requires_user_confirmation, silently skipping the amend review that the
+# rule-routed path (which runs on unredacted text) correctly triggers.
+GATEWAY_PLACEHOLDER_FIELDS: tuple[tuple[str, str], ...] = (
+    ("[주민번호]", "resident_registration_number"),
+    ("[카드번호]", "card_number"),
+    ("[계좌번호]", "account_number"),
+    ("[전화번호]", "phone_number"),
+    ("[이메일]", "email"),
+)
+
 EXCLUDED_FIELDS = [
     "password",
     "security_card",
@@ -71,6 +85,10 @@ def apply_content_scope(text: str) -> ScopeResult:
     masked, changed = AUTH_CODE_RE.subn(lambda m: m.group(0).replace(m.group(1), "*" * len(m.group(1))), masked)
     if changed:
         masked_fields.append("auth_or_password")
+
+    for placeholder, field in GATEWAY_PLACEHOLDER_FIELDS:
+        if placeholder in text:
+            masked_fields.append(field)
 
     masked_fields = _dedupe(masked_fields)
     warnings = ["민감정보가 감지되어 표시용 텍스트에서 마스킹했습니다."] if masked_fields else []
