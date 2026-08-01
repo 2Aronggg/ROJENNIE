@@ -36,6 +36,11 @@ VALIDITY_RE = re.compile(
     r"(20\d{2})\s*[.\-/]\s*(\d{1,2})\s*[.\-/]\s*(\d{1,2})"
 )
 SECTION_RE = re.compile(r"제\s*\d+조(?:의\d+)?(?:\([^\n)]{1,80}\))?")
+PAREN_RE = re.compile(r"\([^)]*\)")
+# 4자리 이상 붙어있는 숫자만 노이즈(날짜/문서ID)로 본다 - "스타적금3"처럼 1~2자리
+# 상품 회차 번호는 상품명의 일부라서 남겨야 한다.
+TRAILING_NOISE_RE = re.compile(r"[_\-\s]*\d{4,}[\d_\-\s]*$")
+NAME_NOISE_SUFFIXES = ("상품설명서", "설명서", "특약", "약관", "상품")
 
 
 def _to_date(year: str, month: str, day: str) -> date | None:
@@ -85,6 +90,31 @@ def _metadata(pdf_path: Path, data_dir: Path) -> tuple[str, str, list[str], str,
     return _doc_id(relative), doc_type, products, f"local:{relative.as_posix()}", _date_from_filename(pdf_path.name)
 
 
+def _product_name_from_filename(stem: str) -> str:
+    """파일명에서 상품 고유명을 뽑아낸다.
+
+    상품설명서 PDF는 폴더 단위로 뭉뚱그린 product 카테고리(예금/적금)만
+    갖고 있어서, "KB 스타적금3"처럼 정확한 상품을 물으면 같은 카테고리
+    안의 다른 상품 문서와 구분할 신호가 없었다(원인2). 다행히 파일명
+    자체가 상품명을 거의 그대로 담고 있어 본문 파싱 없이 이걸로 채운다.
+    """
+    name = PAREN_RE.sub("", stem).strip()
+    for _ in range(3):
+        stripped = TRAILING_NOISE_RE.sub("", name)
+        if stripped != name:
+            name = stripped
+            continue
+        matched = False
+        for suffix in NAME_NOISE_SUFFIXES:
+            if name.endswith(suffix) and len(name) > len(suffix):
+                name = name[: -len(suffix)]
+                matched = True
+                break
+        if not matched:
+            break
+    return name.strip("_- ")
+
+
 def _chunks(text: str, max_chars: int = 1400) -> Iterable[str]:
     text = _clean_text(text)
     if not text:
@@ -123,10 +153,21 @@ def extract_pdf_chunks(pdf_path: Path, data_dir: Path, max_chars: int = 1400) ->
     if effective_from is None and doc_type == "product_manual":
         effective_from, effective_to = _validity_period(document_text)
 
+    product_name = (
+        _product_name_from_filename(pdf_path.stem)
+        if doc_type in {"product_manual", "rate_table"}
+        else None
+    )
+
     chunks: list[DocumentChunk] = []
     for page_number, text in enumerate(pages, start=1):
         section_match = SECTION_RE.search(text)
-        section = section_match.group(0) if section_match else f"page:{page_number}"
+        if section_match:
+            section = section_match.group(0)
+        elif product_name:
+            section = product_name
+        else:
+            section = f"page:{page_number}"
         for chunk_number, chunk_text in enumerate(_chunks(text, max_chars), start=1):
             chunks.append(
                 DocumentChunk(

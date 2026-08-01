@@ -145,6 +145,9 @@ def reindex(data_dir: Path, output: Path) -> int:
     return write_jsonl(iter_document_chunks(data_dir), output)
 
 
+_NAME_SIGNAL_DOC_TYPES = frozenset({"product_manual", "rate_table"})
+
+
 class SearchIndex:
     def __init__(self, chunks: list[DocumentChunk], *, source: str = "memory"):
         self.chunks = chunks
@@ -153,12 +156,22 @@ class SearchIndex:
         self._token_sets: list[set[str]] = []
         self._token_index: dict[str, set[int]] = defaultdict(set)
         self._document_frequency: Counter[str] = Counter()
+        # 상품설명서는 폴더 단위 카테고리(예금/적금)만으로는 "KB 스타적금3"처럼
+        # 같은 카테고리의 다른 상품과 구분이 안 된다. ingest.py가 파일명에서 뽑은
+        # 상품명을 section에 채워두므로, 그 상품명 자체를 토큰화해 캐싱하고
+        # search()에서 별도 가중치를 준다. 상품 문서만 대상이라(전체의 1.4%) 매
+        # 기동마다 즉석 형태소 분석해도 무시할 만한 비용이다.
+        self._name_tokens: list[set[str] | None] = []
         for index, chunk in enumerate(chunks):
             tokens = set(chunk.tokens) if chunk.tokens is not None else _tokens(chunk.text)
             self._token_sets.append(tokens)
             for token in tokens:
                 self._token_index[token].add(index)
                 self._document_frequency[token] += 1
+            if chunk.doc_type in _NAME_SIGNAL_DOC_TYPES and chunk.section and not chunk.section.startswith("page:"):
+                self._name_tokens.append(_tokens(chunk.section))
+            else:
+                self._name_tokens.append(None)
 
     def _active_indices(self, target: date) -> frozenset[int]:
         """Indices of chunks whose effective-date bounds include `target`.
@@ -277,6 +290,13 @@ class SearchIndex:
                 score += 0.18
             elif product and COMMON_PRODUCT in chunk.product:
                 score += 0.04
+            name_tokens = self._name_tokens[index]
+            if name_tokens:
+                name_overlap = query_tokens & name_tokens
+                if name_overlap:
+                    # 카테고리(예금/적금) 보너스보다 크게 줘서, 같은 카테고리
+                    # 안에서도 정확히 이름이 겹치는 상품이 확실히 위로 온다.
+                    score += 0.35 * (len(name_overlap) / len(name_tokens))
             ranked.append((score, chunk.chunk_id, chunk, match_type))
 
         ranked.sort(key=lambda item: (-item[0], item[1]))
