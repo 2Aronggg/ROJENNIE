@@ -17,6 +17,7 @@ COMMON_PRODUCT = "\uacf5\ud1b5"
 RRF_K = 60
 CASE_INTENT_TOKENS = {"case", "cases", "dispute", "판례", "사례", "분쟁", "조정", "청구", "보상"}
 PRODUCT_INTENT_TOKENS = {"상품", "약관", "특약", "설명서"}
+GUIDE_INTENT_TOKENS = {"안내", "민원", "접수", "칭찬", "불만", "처리", "회신", "홈페이지", "소비자보호", "영업일"}
 
 
 def _tokens(text: str) -> set[str]:
@@ -48,6 +49,8 @@ def _corpus_for(chunk: DocumentChunk) -> str:
         return "glossary"
     if chunk.doc_type == "case" or path.startswith("cases/"):
         return "cases"
+    if chunk.doc_type == "guide" or path.startswith("guides/"):
+        return "guides"
     if chunk.doc_type == "law" or path.startswith(("regulations/", "공통규정/")):
         return "regulations"
     if path.startswith("products/"):
@@ -84,7 +87,19 @@ def _metadata_hints(text: str) -> set[str]:
     return hints
 
 
-def _intent(query_tokens: set[str]) -> str | None:
+def _intent(query: str, query_tokens: set[str]) -> str | None:
+    compact_query = _compact(query)
+    guide_signals = {"민원", "접수", "칭찬", "불만", "처리", "회신", "소비자보호", "영업일"}
+    case_signals = {"판례", "사례", "분쟁", "조정", "청구", "보상"}
+    product_signals = {"상품", "약관", "특약", "설명서"}
+    if any(signal in compact_query for signal in guide_signals):
+        return "guides"
+    if any(signal in compact_query for signal in case_signals):
+        return "cases"
+    if any(signal in compact_query for signal in product_signals):
+        return "products"
+    if query_tokens & GUIDE_INTENT_TOKENS:
+        return "guides"
     if query_tokens & CASE_INTENT_TOKENS:
         return "cases"
     if query_tokens & PRODUCT_INTENT_TOKENS:
@@ -260,6 +275,12 @@ class SearchIndex:
                 if any(hint in compact_query for hint in self._metadata_hints[index]):
                     candidate_indices.add(index)
 
+        intent = _intent(query, query_tokens)
+        if intent == "guides":
+            candidate_indices.update(
+                index for index, chunk in enumerate(self.chunks) if _corpus_for(chunk) == "guides"
+            )
+
         # as_of=None disables date filtering entirely below (`if as_of and ...`
         # short-circuits), so only prune when a date was actually given -
         # pruning on a None as_of would silently start filtering candidates
@@ -276,7 +297,6 @@ class SearchIndex:
         }
         idf_total = sum(query_idf.values()) or 1.0
         ranked: list[tuple[float, str, DocumentChunk, str]] = []
-        intent = _intent(query_tokens)
         for index in candidate_indices:
             chunk = self.chunks[index]
             corpus = _corpus_for(chunk)
@@ -334,11 +354,13 @@ class SearchIndex:
                 score += 0.04
             score += metadata_score
             if intent == corpus:
-                score += 0.14
+                score += 0.45 if intent == "guides" else 0.14
             elif intent == "cases" and corpus == "products":
                 score -= 0.04
             elif intent == "products" and corpus == "cases":
                 score -= 0.22
+            elif intent == "guides" and corpus in {"products", "cases", "regulations"}:
+                score -= 0.35
             ranked.append((score, chunk.chunk_id, chunk, match_type))
 
         ranked.sort(key=lambda item: (-item[0], item[1]))

@@ -1,12 +1,12 @@
 {
   "file": "data/corpus/all.jsonl",
-  "generated_at": "2026-08-01T16:55:40.788Z",
+  "generated_at": "2026-08-01T17:30:26.155Z",
   "thresholds": {
     "very_short_text_below": 30,
     "too_long_text_above": 3000
   },
   "totals": {
-    "lines": 65223,
+    "lines": 65225,
     "invalid_json": 0,
     "empty_text": 0,
     "very_short_text": 9323,
@@ -18,9 +18,9 @@
     "missing_path": 0,
     "missing_doc_type": 0,
     "missing_product": 0,
-    "missing_effective_date": 1247,
+    "missing_effective_date": 1249,
     "likely_broken_text": 8,
-    "embedding_null": 65223
+    "embedding_null": 65225
   },
   "by_doc_type": {
     "law": {
@@ -67,6 +67,17 @@
       "duplicate_text": 0,
       "likely_broken_text": 0
     },
+    "guide": {
+      "count": 2,
+      "empty_text": 0,
+      "very_short_text": 0,
+      "too_long_text": 0,
+      "missing_product": 0,
+      "missing_effective_date": 2,
+      "embedding_null": 2,
+      "duplicate_text": 0,
+      "likely_broken_text": 0
+    },
     "glossary": {
       "count": 538,
       "empty_text": 0,
@@ -80,7 +91,7 @@
     }
   },
   "products": {
-    "공통": 64166,
+    "공통": 64168,
     "예금": 313,
     "적금": 543,
     "ELS": 101,
@@ -116,6 +127,13 @@
       "p90": 1398,
       "p99": 1399,
       "max": 1399
+    },
+    "guide": {
+      "min": 147,
+      "p50": 147,
+      "p90": 147,
+      "p99": 147,
+      "max": 1398
     },
     "glossary": {
       "min": 75,
@@ -379,7 +397,7 @@
         "preview": "20  如存单被用作《反电信金融欺诈及追回损失特别法》所界定的涉嫌欺诈的交易账户或 欺诈账 户，则可能受到金融交易限制，例如转账和汇款延迟或暂停支取。 3 注意事项  线上渠道开立的账户无法在开户当日进行线上注销。  依据《金融消费者保护法》第19条第1款及该法实施令第14条第1款和第3款的规定，在解释产品 之前"
       },
       {
-        "line": 65157,
+        "line": 65159,
         "chunk_id": "1563ae2d7898-c472",
         "doc_type": "glossary",
         "path": "local:dictionary/fine_financial_glossary.csv",
