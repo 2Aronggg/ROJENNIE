@@ -5,7 +5,7 @@ import json
 import time
 from pathlib import Path
 
-from .build_corpus import _case_records
+from .build_corpus import _case_records, _guide_records
 from .embeddings import BATCH_SIZE, embed_texts
 from .retrieval import load_jsonl
 
@@ -27,7 +27,11 @@ def _candidates(data_dir: Path, chunks_path: Path) -> list[tuple[str, str]]:
     display corpus, never used as decision evidence, so it's skipped."""
     pairs = [(chunk.chunk_id, chunk.text) for chunk in load_jsonl(chunks_path)]
     pairs.extend((record["chunk_id"], str(record["text"])) for record in _case_records(data_dir))
-    return pairs
+    pairs.extend((record["chunk_id"], str(record["text"])) for record in _guide_records(data_dir))
+    unique: dict[str, str] = {}
+    for chunk_id, text in pairs:
+        unique.setdefault(str(chunk_id), str(text))
+    return list(unique.items())
 
 
 def embed_corpus(data_dir: Path, chunks_path: Path, output: Path, *, resume: bool = True) -> dict[str, int]:
