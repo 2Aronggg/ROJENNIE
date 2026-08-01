@@ -226,7 +226,7 @@
 
       .stage {
         display: grid;
-        grid-template-columns: 1.24fr 132px 1.24fr;
+        grid-template-columns: 1.34fr 124px 1.12fr;
         gap: 13px;
         min-height: 0;
       }
@@ -237,15 +237,15 @@
         min-width: 0;
         min-height: 0;
         flex-direction: column;
-        gap: 10px;
-        padding: 18px;
+        gap: 12px;
+        padding: 20px;
         opacity: 0;
       }
 
       .splitter {
-        display: grid;
-        grid-template-rows: auto auto minmax(0, 1fr) auto;
-        gap: 8px;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
         background: rgba(255, 253, 248, 0.72);
         transform: translateX(-26px);
         animation: leftIn 0.7s var(--ease) 1.2s forwards;
@@ -288,21 +288,23 @@
 
       .statement {
         align-self: stretch;
-        min-height: 0;
-        padding: 12px 13px;
+        height: auto;
+        min-height: auto;
+        flex: 0 0 auto;
+        padding: 16px 18px;
         border: 1px solid rgba(180, 35, 44, 0.2);
         border-radius: 18px;
         background: rgba(255, 253, 248, 0.76);
         font-family: Georgia, "Times New Roman", "Noto Serif KR", serif;
-        font-size: clamp(14px, 0.88vw, 16px);
+        font-size: clamp(16px, 1vw, 19px);
         font-weight: 760;
-        line-height: 1.3;
+        line-height: 1.44;
       }
 
       .customer-label {
         display: inline-flex;
-        margin-bottom: 7px;
-        padding: 4px 8px;
+        margin-bottom: 8px;
+        padding: 5px 9px;
         border-radius: 999px;
         color: #fff;
         background: var(--red-main);
@@ -315,100 +317,9 @@
         margin: 0;
       }
 
-      .backend-caption {
-        display: inline-flex;
-        width: 100%;
-        max-width: 100%;
-        align-items: center;
-        gap: 6px;
-        margin-top: 0;
-        padding: 4px 6px;
-        border: 1px solid rgba(180, 35, 44, 0.22);
-        border-radius: 999px;
-        color: #8b2f34;
-        background: rgba(255, 255, 255, 0.72);
-        font-family: Consolas, "Courier New", monospace;
-        font-size: 8px;
-        font-weight: 900;
-        letter-spacing: 0;
-        line-height: 1.15;
-        overflow-wrap: anywhere;
-        word-break: break-word;
-        opacity: 0;
-        transform: translateY(4px);
-        animation: slideIn 0.36s var(--ease) 1.05s forwards;
-      }
-
-      .backend-trace {
-        display: grid;
-        flex: 0 0 auto;
-        gap: 4px;
-        margin-top: 0;
-        padding: 7px;
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        border-radius: 12px;
-        background: #21130f;
-        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08), 0 10px 22px rgba(91, 45, 10, 0.16);
-        color: #ffe8c7;
-        opacity: 0;
-        transform: translateY(8px);
-        animation: slideIn 0.45s var(--ease) 5.25s forwards;
-      }
-
-      .backend-trace::before {
-        display: block;
-        padding-bottom: 2px;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-        color: rgba(255, 232, 199, 0.76);
-        content: "case_builder.py  /  trace";
-        font-family: Consolas, "Courier New", monospace;
-        font-size: 8px;
-        font-weight: 900;
-        line-height: 1;
-      }
-
-      .trace-step {
-        display: grid;
-        grid-template-columns: 12px minmax(0, 1fr);
-        gap: 5px;
-        align-items: start;
-        min-width: 0;
-        padding: 0;
-      }
-
-      .trace-step::before {
-        color: #ffb86b;
-        content: ">";
-        font-family: Consolas, "Courier New", monospace;
-        font-size: 9px;
-        font-weight: 900;
-        line-height: 1.25;
-      }
-
-      .trace-step code {
-        display: block;
-        color: #ffd29a;
-        font-family: Consolas, "Courier New", monospace;
-        font-size: 8.5px;
-        font-weight: 900;
-        line-height: 1.12;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-      }
-
-      .trace-step span {
-        display: block;
-        margin-top: 2px;
-        color: rgba(255, 232, 199, 0.68);
-        font-size: 8px;
-        font-weight: 750;
-        line-height: 1.18;
-      }
-
       .hl {
-        padding: 1px 4px 4px;
-        border-radius: 5px;
+        padding: 2px 5px 5px;
+        border-radius: 6px;
         background-repeat: no-repeat;
         background-position: left 88%;
         background-size: 0 0.62em;
@@ -430,14 +341,18 @@
       .split-results {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 8px;
-        margin-top: 0;
+        gap: 10px;
+        flex: 0 0 auto;
+        margin-top: 18px;
       }
 
       .problem-card {
+        display: flex;
         min-width: 0;
-        padding: 10px;
+        flex-direction: column;
+        padding: 12px 14px;
         border-radius: 14px;
+        box-shadow: 0 10px 22px rgba(91, 45, 10, 0.09);
         opacity: 0;
         transform: translateY(12px);
       }
@@ -456,12 +371,12 @@
 
       .problem-num {
         display: inline-grid;
-        width: 30px;
-        height: 30px;
+        width: 26px;
+        height: 26px;
         place-items: center;
-        border-radius: 10px;
+        border-radius: 9px;
         color: #fff;
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 950;
       }
 
@@ -474,9 +389,9 @@
       }
 
       .problem-card h2 {
-        margin: 6px 0 5px;
-        font-size: clamp(14px, 0.92vw, 17px);
-        line-height: 1.1;
+        margin: 8px 0 10px;
+        font-size: clamp(14px, 0.84vw, 16px);
+        line-height: 1.16;
       }
 
       .one h2 {
@@ -488,23 +403,32 @@
       }
 
       .field {
-        margin: 4px 0 0;
-        padding: 5px 6px;
+        display: flex;
+        flex: 1 1 0;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 0 8px;
+        padding: 8px 9px;
         border-radius: 8px;
         background: rgba(255, 253, 248, 0.72);
       }
 
+      .field:last-child {
+        margin-bottom: 0;
+      }
+
       .field b {
         display: block;
+        margin-bottom: 3px;
         color: #8a6b44;
         font-family: Consolas, "Courier New", monospace;
-        font-size: 8.5px;
+        font-size: 9px;
         font-weight: 900;
       }
 
       .field span {
         color: var(--charcoal);
-        font-size: clamp(10px, 0.66vw, 12px);
+        font-size: clamp(11px, 0.68vw, 13px);
         font-weight: 850;
         line-height: 1.18;
       }
@@ -572,7 +496,7 @@
       .builder-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 11px;
+        gap: 28px;
         min-height: 0;
       }
 
@@ -581,9 +505,10 @@
         min-width: 0;
         min-height: 0;
         flex-direction: column;
-        gap: 6px;
-        padding: 11px;
-        border-radius: 16px;
+        gap: 16px;
+        padding: 22px;
+        border-radius: 22px;
+        box-shadow: 0 16px 34px rgba(91, 45, 10, 0.1);
       }
 
       .focal-card.one {
@@ -600,14 +525,14 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 9px;
+        gap: 12px;
       }
 
       .focal-title {
         margin: 0;
-        font-size: clamp(14px, 0.9vw, 17px);
+        font-size: clamp(18px, 1.12vw, 22px);
         font-weight: 950;
-        line-height: 1.1;
+        line-height: 1.16;
       }
 
       .focal-card.one .focal-title {
@@ -619,37 +544,37 @@
       }
 
       .mini-id {
-        padding: 4px 7px;
+        padding: 7px 10px;
         border-radius: 999px;
         color: #fff;
         background: var(--orange-main);
         font-family: Consolas, "Courier New", monospace;
-        font-size: 9px;
+        font-size: 11px;
         font-weight: 900;
         white-space: nowrap;
       }
 
       .focal-section {
-        padding-top: 6px;
+        padding-top: 12px;
         border-top: 1px dashed rgba(217, 119, 6, 0.28);
       }
 
       .section-label {
-        margin: 0 0 5px;
+        margin: 0 0 12px;
         color: var(--orange-deep);
         font-family: "IBM Plex Mono", Consolas, "Courier New", monospace;
-        font-size: clamp(10px, 0.68vw, 12px);
+        font-size: clamp(13px, 0.82vw, 15px);
         font-weight: 950;
       }
 
       .candidate {
         display: flex;
         justify-content: space-between;
-        gap: 6px;
-        margin-bottom: 4px;
-        padding: 6px 7px;
+        gap: 12px;
+        margin-bottom: 12px;
+        padding: 14px 16px;
         border: 1px solid rgba(116, 113, 108, 0.18);
-        border-radius: 9px;
+        border-radius: 14px;
         background: rgba(255, 255, 255, 0.48);
         opacity: 0;
         transform: translateY(8px);
@@ -680,13 +605,13 @@
 
       .cand-name {
         color: var(--charcoal);
-        font-size: clamp(10px, 0.68vw, 12px);
+        font-size: clamp(14px, 0.88vw, 16px);
         font-weight: 900;
       }
 
       .cand-example {
         color: var(--gray);
-        font-size: clamp(8.5px, 0.56vw, 10px);
+        font-size: clamp(12px, 0.76vw, 14px);
         font-style: italic;
         font-weight: 750;
         text-align: right;
@@ -702,14 +627,15 @@
 
       .target-line {
         display: grid;
-        grid-template-columns: 72px 1fr;
-        gap: 6px;
-        margin: 4px 0;
-        padding: 6px 7px;
-        border-radius: 8px;
+        grid-template-columns: 92px 1fr;
+        gap: 12px;
+        margin: 12px 0;
+        padding: 14px 16px;
+        border-radius: 14px;
         background: rgba(217, 119, 6, 0.08);
-        font-size: clamp(9.5px, 0.62vw, 11px);
+        font-size: clamp(13px, 0.82vw, 15px);
         font-weight: 850;
+        line-height: 1.28;
       }
 
       .target-line:nth-of-type(2) { animation-delay: 6.15s; }
@@ -721,14 +647,15 @@
       }
 
       .missing-item {
-        margin: 5px 0 0;
-        padding: 8px 10px;
+        margin: auto 0 0;
+        padding: 18px 20px;
         border: 1px dashed rgba(180, 35, 44, 0.34);
-        border-radius: 10px;
+        border-radius: 16px;
         color: var(--red-main);
         background: rgba(252, 232, 232, 0.42);
-        font-size: clamp(12px, 0.78vw, 15px);
+        font-size: clamp(14px, 0.88vw, 16px);
         font-weight: 900;
+        line-height: 1.36;
         animation-delay: 6.9s;
       }
 
@@ -785,31 +712,6 @@
         padding: 5px 9px;
         border-radius: 999px;
         background: linear-gradient(145deg, var(--red-main), var(--orange-main));
-      }
-
-      .console-log {
-        position: absolute;
-        right: 20px;
-        bottom: 44px;
-        z-index: 5;
-        width: 280px;
-        padding: 8px 10px;
-        border-radius: 8px;
-        color: #8fe0a8;
-        background: rgba(11, 20, 32, 0.92);
-        box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
-        font-family: "IBM Plex Mono", Consolas, "Courier New", monospace;
-        font-size: 8.5px;
-        line-height: 1.7;
-        pointer-events: none;
-      }
-
-      .log-line {
-        overflow: hidden;
-        opacity: 0;
-        animation: fadeIn 0.25s ease-out forwards;
-        text-overflow: ellipsis;
-        white-space: nowrap;
       }
 
       .end-popup {
@@ -908,8 +810,6 @@
             <p class="stage-name">민원 분리</p>
           </div>
 
-          <span class="backend-caption">router._issue_spans(prompt) -> issue spans</span>
-
           <div class="statement">
             <span class="customer-label">최예지 씨의 실제 소비자 민원</span>
             <p>
@@ -997,24 +897,10 @@
               </div>
 
               <p class="missing-item">누락 정보: 가입 시 안내 자료, 현재 수수료 명세</p>
-              <div class="backend-trace" aria-label="Case Builder function trace">
-                <div class="trace-step"><code>build_case_request()</code><span>prompt -> CaseAnalyzeRequest</span></div>
-                <div class="trace-step"><code>split_prompt_to_issues()</code><span>2 issue spans detected</span></div>
-                <div class="trace-step"><code>_build_issue()</code><span>issue_id + issue_type</span></div>
-                <div class="trace-step"><code>build_issue_input()</code><span>focal, target, facts</span></div>
-              </div>
             </article>
           </section>
         </article>
       </section>
-
-      <div class="console-log">
-        <div class="log-line" data-delay="1.4">&gt; case_builder.split(text) → 2 issues</div>
-        <div class="log-line" data-delay="2.9">&gt; case_builder.build_focal(issue_001) → 3 candidates</div>
-        <div class="log-line" data-delay="3.4">&gt; case_builder.build_focal(issue_002) → 3 candidates</div>
-        <div class="log-line" data-delay="6.0">&gt; case_builder.resolve_target(issue_001) → confirmed</div>
-        <div class="log-line" data-delay="6.5">&gt; case_builder.resolve_target(issue_002) → confirmed</div>
-      </div>
 
       <footer class="json-strip panel">
         <span class="stack-frame">at case_builder.py:47 in build_case()</span>
@@ -1031,7 +917,6 @@
 
     <button class="replay" type="button" id="replay">Replay</button>
 
-    <script src="agent-api.js"></script>
     <script>
       const replay = document.querySelector("#replay");
       let playTimer = null;
@@ -1053,9 +938,6 @@
       function startPlayback(root = document) {
         window.clearTimeout(playTimer);
         clearFocalTimers();
-        root.querySelectorAll(".log-line").forEach((line) => {
-          line.style.animationDelay = `${line.dataset.delay || 0}s`;
-        });
         document.body.classList.remove("playing");
         playTimer = window.setTimeout(() => {
           document.body.classList.add("playing");
