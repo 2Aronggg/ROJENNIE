@@ -160,8 +160,6 @@ def _status_for(issue: IssueAnalysis) -> str:
 
 
 def _status_description(issue: IssueAnalysis, status: str) -> str:
-    if status == "hold" and issue.target.get("support_status") == "unsupported":
-        return "현재 지원 범위에 없는 상품이라 자동 답변하지 않고 Human Review로 보냅니다."
     if status == "ask" and issue.missing_facts:
         return "다음 사실이 확인되어야 근거 검색과 판단을 이어갈 수 있습니다."
     return STATUS_DESCRIPTIONS[status]

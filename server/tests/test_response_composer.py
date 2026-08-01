@@ -19,7 +19,7 @@ class ResponseComposerTests(unittest.TestCase):
                     product="예금",
                     issue_type="인출제한",
                     focal={"type": "transaction"},
-                    target={"support_status": "supported"},
+                    target={},
                     facts=[Fact(field="amount", value="12만원", source_ref="user_input")],
                     missing_facts=["거래일", "금융회사명", "거부 사유 안내", "추가 질문"],
                     fact_resolution=FactResolution(),
@@ -43,7 +43,7 @@ class ResponseComposerTests(unittest.TestCase):
                     product="펀드",
                     issue_type="환매지연",
                     focal={"type": "transaction"},
-                    target={"support_status": "supported"},
+                    target={},
                     facts=[],
                     missing_facts=["환매 신청일"],
                     fact_resolution=FactResolution(),
@@ -64,30 +64,17 @@ class ResponseComposerTests(unittest.TestCase):
         self.assertEqual(view.issues[1].evidence, [])
         self.assertTrue(all(item.startswith("issue_") for item in view.closing["now"]))
 
-    def test_hold_for_unsupported_or_identity_theft(self) -> None:
+    def test_hold_for_identity_theft(self) -> None:
         case = CaseAnalysis(
             case_id="case_hold",
-            prompt="보험 또는 명의도용",
+            prompt="명의도용",
             issues=[
-                IssueAnalysis(
-                    issue_id="issue_001",
-                    product="공통",
-                    issue_type="지원제외_보험",
-                    focal={"type": "human_review"},
-                    target={"support_status": "unsupported"},
-                    facts=[],
-                    missing_facts=[],
-                    fact_resolution=FactResolution(),
-                    evidence_refs=[],
-                    decision=Decision(control="ask", risk_flags=["evidence_insufficient"]),
-                    next_steps=[],
-                ),
                 IssueAnalysis(
                     issue_id="issue_002",
                     product="예금",
                     issue_type="명의도용",
                     focal={"type": "identity_or_auth_record"},
-                    target={"support_status": "supported"},
+                    target={},
                     facts=[],
                     missing_facts=["인증 기록"],
                     fact_resolution=FactResolution(),
@@ -100,9 +87,8 @@ class ResponseComposerTests(unittest.TestCase):
 
         view = compose_case_response(case)
 
-        self.assertEqual([issue.status for issue in view.issues], ["hold", "hold"])
+        self.assertEqual([issue.status for issue in view.issues], ["hold"])
         self.assertTrue(all(issue.human_review for issue in view.issues))
-        self.assertIn("Human Review", view.issues[0].status_description)
 
     def test_composer_exposes_masked_fields_from_focal_scope(self) -> None:
         case = CaseAnalysis(
@@ -114,7 +100,7 @@ class ResponseComposerTests(unittest.TestCase):
                     product="예금",
                     issue_type="인출제한",
                     focal={"type": "transaction", "content_scope": {"masked_fields": ["account_number"], "requires_user_confirmation": True}},
-                    target={"support_status": "supported", "is_unclear": False},
+                    target={"is_unclear": False},
                     facts=[],
                     missing_facts=[],
                     fact_resolution=FactResolution(),

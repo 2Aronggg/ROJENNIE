@@ -14,12 +14,12 @@ class P0Tests(unittest.TestCase):
     def test_fact_conflict_keeps_latest(self) -> None:
         result = resolve_facts(
             [
-                Fact(field="amount", value=100, recorded_date=date(2026, 1, 1)),
-                Fact(field="amount", value=120, recorded_date=date(2026, 1, 2)),
+                Fact(field="실제 지급 금액", value=100, recorded_date=date(2026, 1, 1)),
+                Fact(field="실제 지급 금액", value=120, recorded_date=date(2026, 1, 2)),
             ]
         )
-        self.assertEqual(result.latest["amount"].value, 120)
-        self.assertIn("amount", result.conflicts)
+        self.assertEqual(result.latest["실제 지급 금액"].value, 120)
+        self.assertIn("실제 지급 금액", result.conflicts)
 
     def test_search_returns_product_evidence(self) -> None:
         index = SearchIndex(
@@ -38,6 +38,27 @@ class P0Tests(unittest.TestCase):
         )
         results = index.search("예금 계약해지", product="예금")
         self.assertEqual(results[0].chunk_id, "chunk1")
+
+    def test_boilerplate_shared_across_documents_is_returned_once(self) -> None:
+        shared = "이 설명서는 금융소비자 보호에 관한 법률에 따른 유의 사항을 안내합니다."
+        index = SearchIndex(
+            [
+                DocumentChunk(
+                    doc_id=f"doc{n}",
+                    chunk_id=f"chunk{n}",
+                    path=f"products/deposit/product{n}.pdf",
+                    doc_type="product_manual",
+                    product=["예금"],
+                    source="test",
+                    page=1,
+                    text=shared,
+                )
+                for n in range(1, 4)
+            ]
+        )
+
+        results = index.search("유의 사항 안내", product="예금", top_k=5)
+        self.assertEqual(len(results), 1)
 
     def test_api_analyze_and_get(self) -> None:
         app_module._INDEX = SearchIndex([])

@@ -10,3 +10,6 @@ client/dist/
 # Regenerate these local RAG artifacts with server.build_corpus.
 data/corpus/*.jsonl
 data/complaints/**/complaints.jsonl
+
+# Regenerate with server.rag.embed_corpus. Real Gemini API cost to rebuild.
+server/rag/embeddings.jsonl

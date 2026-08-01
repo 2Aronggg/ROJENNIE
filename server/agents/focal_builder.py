@@ -8,7 +8,6 @@ from server.schemas import Fact, IssueInput
 
 
 SUPPORTED_PRODUCTS = {"예금", "적금", "대출", "펀드", "ELS", "공통"}
-UNSUPPORTED_PRODUCTS = {"보험"}
 
 INSTITUTION_KEYWORDS = (
     "국민은행",
@@ -48,8 +47,12 @@ REQUIRED_FACTS_BY_ISSUE: dict[str, list[str]] = {
     "상환금액오류": ["대출 실행일", "상품명", "상환 예정 금액", "실제 상환 금액", "상환 내역"],
     "중도상환수수료": ["대출 실행일", "상품명", "중도상환일", "중도상환수수료", "수수료 안내 여부"],
     "연체이자산정": ["상품명", "연체 발생일", "연체이자", "연체 내역", "금융회사 답변"],
-    "지원제외_보험": ["Human Review"],
 }
+
+# missing_facts()가 문자열 완전일치로 대조하므로, required_facts에는 이 어휘만 들어와야 한다.
+KNOWN_FACT_FIELDS: frozenset[str] = frozenset(
+    field for fields in REQUIRED_FACTS_BY_ISSUE.values() for field in fields
+) | {"상품 유형", "사건일"}
 
 FOCAL_TYPES_BY_ISSUE = {
     "계약해지_지연": "contract",
@@ -143,36 +146,23 @@ def build_focal(
         "source_refs": ["user_input"],
         "content_scope": content_scope or {},
     }
-    if raw_product in UNSUPPORTED_PRODUCTS:
-        focal["unsupported_product"] = raw_product
-        focal["type"] = "human_review"
     return focal
 
 
 def build_target(text: str, raw_product: str | None) -> dict:
     institution = _extract_institution(text)
-    if raw_product in UNSUPPORTED_PRODUCTS:
-        return {
-            "subject": "Human Review",
-            "action_target": None,
-            "is_unclear": False,
-            "reason": f"{raw_product}은 현재 자동 분석 지원 범위가 아닙니다.",
-            "support_status": "unsupported",
-        }
     if institution:
         return {
             "subject": institution,
             "action_target": f"{institution} 민원창구",
             "is_unclear": False,
             "reason": None,
-            "support_status": "supported",
         }
     return {
         "subject": "금융회사",
         "action_target": None,
         "is_unclear": True,
         "reason": "금융회사명이 확인되지 않아 접수 대상을 확정하지 않았습니다.",
-        "support_status": "supported",
     }
 
 
@@ -267,6 +257,4 @@ def _fact_value(facts: list[Fact], field: str) -> str | None:
 
 
 def _primary_object(product: str, issue_type: str) -> str:
-    if issue_type.startswith("지원제외"):
-        return issue_type
     return f"{product} {issue_type}" if issue_type != "미분류" else product

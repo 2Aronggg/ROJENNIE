@@ -21,6 +21,11 @@ def _tokens(text: str) -> set[str]:
     return {token.lower() for token in TOKEN_RE.findall(text)}
 
 
+def _text_key(text: str) -> str:
+    """상품설명서마다 반복되는 정형 문구는 doc_id가 달라도 같은 근거다."""
+    return " ".join(text.split())
+
+
 def _cosine(left: list[float], right: list[float]) -> float:
     if not left or not right or len(left) != len(right):
         return 0.0
@@ -116,6 +121,7 @@ class SearchIndex:
     def __init__(self, chunks: list[DocumentChunk], *, source: str = "memory"):
         self.chunks = chunks
         self.source = source
+        self._active_today: tuple[date, frozenset[int]] | None = None
         self._token_sets: list[set[str]] = []
         self._token_index: dict[str, set[int]] = defaultdict(set)
         self._document_frequency: Counter[str] = Counter()
@@ -126,9 +132,36 @@ class SearchIndex:
                 self._token_index[token].add(index)
                 self._document_frequency[token] += 1
 
+    def _active_indices(self, target: date) -> frozenset[int]:
+        """Indices of chunks whose effective-date bounds include `target`.
+
+        ~96% of regulation chunks are expired versions kept only so a
+        historically-dated complaint can still find the regulation that was
+        in force then. For the common case (as_of is today) a wide query term
+        can still pull thousands of those expired chunks into the per-token
+        candidate union, only to be dropped one by one in the loop below by
+        the exact same date check. Intersecting with this precomputed,
+        day-cached set prunes them before the loop instead of during it -
+        same IDF base (self._document_frequency, len(self.chunks) - both
+        computed over the full corpus, unchanged), so scores are identical to
+        an unpruned scan; only which candidates get visited changes.
+        """
+        if self._active_today is None or self._active_today[0] != target:
+            active = frozenset(
+                index
+                for index, chunk in enumerate(self.chunks)
+                if not (chunk.effective_from and chunk.effective_from > target)
+                and not (chunk.effective_to and chunk.effective_to < target)
+            )
+            self._active_today = (target, active)
+        return self._active_today[1]
+
     @classmethod
-    def from_jsonl(cls, path: Path) -> "SearchIndex":
-        return cls(load_jsonl(path), source=f"jsonl:{path}")
+    def from_jsonl(cls, path: Path, *, exclude_doc_types: frozenset[str] = frozenset()) -> "SearchIndex":
+        chunks = load_jsonl(path)
+        if exclude_doc_types:
+            chunks = [chunk for chunk in chunks if chunk.doc_type not in exclude_doc_types]
+        return cls(chunks, source=f"jsonl:{path}")
 
     @classmethod
     def from_data_dir(
@@ -136,11 +169,14 @@ class SearchIndex:
         data_dir: Path,
         *,
         chunks_path: Path | None = None,
+        exclude_doc_types: frozenset[str] = frozenset(),
     ) -> "SearchIndex":
         if chunks_path and chunks_path.exists() and not needs_reindex(data_dir, chunks_path):
-            index = cls.from_jsonl(chunks_path)
+            index = cls.from_jsonl(chunks_path, exclude_doc_types=exclude_doc_types)
             if index.chunks:
                 return index
+        # iter_document_chunks never yields glossary/case rows - those are synthesized
+        # separately by build_corpus.py - so no filtering needed on this fallback path.
         return cls(list(iter_document_chunks(data_dir)), source=f"data:{data_dir}")
 
     def search(
@@ -162,6 +198,13 @@ class SearchIndex:
             )
         else:
             candidate_indices = set(range(len(self.chunks)))
+
+        # as_of=None disables date filtering entirely below (`if as_of and ...`
+        # short-circuits), so only prune when a date was actually given -
+        # pruning on a None as_of would silently start filtering candidates
+        # that the per-candidate checks were never going to filter anyway.
+        if as_of == date.today():
+            candidate_indices &= self._active_indices(as_of)
 
         query_idf = {
             token: math.log1p(
@@ -209,21 +252,30 @@ class SearchIndex:
             ranked.append((score, chunk.chunk_id, chunk, match_type))
 
         ranked.sort(key=lambda item: (-item[0], item[1]))
-        return [
-            EvidenceRef(
-                doc_id=chunk.doc_id,
-                chunk_id=chunk.chunk_id,
-                path=chunk.path,
-                page=chunk.page,
-                section=chunk.section,
-                score=round(score, 4),
-                snippet=chunk.text[:280],
-                effective_from=chunk.effective_from,
-                effective_to=chunk.effective_to,
-                match_type=match_type,
+        results: list[EvidenceRef] = []
+        seen: set[str] = set()
+        for score, _, chunk, match_type in ranked:
+            key = _text_key(chunk.text)
+            if key in seen:
+                continue
+            seen.add(key)
+            results.append(
+                EvidenceRef(
+                    doc_id=chunk.doc_id,
+                    chunk_id=chunk.chunk_id,
+                    path=chunk.path,
+                    page=chunk.page,
+                    section=chunk.section,
+                    score=round(score, 4),
+                    snippet=chunk.text[:280],
+                    effective_from=chunk.effective_from,
+                    effective_to=chunk.effective_to,
+                    match_type=match_type,
+                )
             )
-            for score, _, chunk, match_type in ranked[:top_k]
-        ]
+            if len(results) >= top_k:
+                break
+        return results
 
     def search_many(
         self,
@@ -267,16 +319,15 @@ class SearchIndex:
             score = 0.7 * evidence.score + 0.3 * (rrf / max_rrf)
             fused.append((score, evidence))
         fused.sort(key=lambda item: (-item[0], item[1].chunk_id))
-        return [
-            evidence.model_copy(update={"score": round(score, 4)})
-            for score, evidence in fused[:top_k]
-        ]
-
-    def date_notices(self, as_of: date) -> list[str]:
-        notices: set[str] = set()
-        for chunk in self.chunks:
-            if chunk.effective_from and chunk.effective_from > as_of:
-                notices.add(f"future_effective:{chunk.doc_id}:{chunk.effective_from.isoformat()}")
-            if chunk.effective_to and chunk.effective_to < as_of:
-                notices.add(f"expired:{chunk.doc_id}:{chunk.effective_to.isoformat()}")
-        return sorted(notices)
+        # 질의마다 같은 문구의 다른 사본이 1위로 뽑힐 수 있어 융합 후 한 번 더 거른다.
+        results: list[EvidenceRef] = []
+        seen: set[str] = set()
+        for score, evidence in fused:
+            key = _text_key(evidence.snippet)
+            if key in seen:
+                continue
+            seen.add(key)
+            results.append(evidence.model_copy(update={"score": round(score, 4)}))
+            if len(results) >= top_k:
+                break
+        return results

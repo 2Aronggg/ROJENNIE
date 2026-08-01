@@ -9,13 +9,13 @@ from typing import Any, Literal
 
 from pydantic import BaseModel, Field
 
-from server.agents.focal_builder import build_issue_input
+from server.agents.focal_builder import KNOWN_FACT_FIELDS, build_issue_input
 from server.policy.gateway import LLMPolicyGateway
 from server.schemas import CaseAnalyzeRequest, IssueInput
 
 
 LOGGER = logging.getLogger(__name__)
-RouteProduct = Literal["예금", "적금", "대출", "펀드", "ELS", "보험", "공통"]
+RouteProduct = Literal["예금", "적금", "대출", "펀드", "ELS", "공통"]
 
 
 class LLMRouteIssue(BaseModel):
@@ -36,7 +36,7 @@ ROUTER_SYSTEM_PROMPT = """당신은 금융 소비자 민원 Issue Splitter다.
 사용자 문장을 독립적으로 처리해야 하는 민원 이슈 목록으로 분해한다.
 
 규칙:
-- 허용 상품은 예금, 적금, 대출, 펀드, ELS, 보험, 공통이다.
+- 허용 상품은 예금, 적금, 대출, 펀드, ELS, 공통이다.
 - 상품과 쟁점이 다르고 필요한 규정·증빙·해결 조치가 다를 때만 분리한다.
 - 같은 사건의 원인과 결과는 하나의 이슈로 유지한다.
 - issue_type은 짧은 한국어 식별자로 작성한다. 법적 결론을 단정하지 않는다.
@@ -50,7 +50,6 @@ ROUTER_SYSTEM_PROMPT = """당신은 금융 소비자 민원 Issue Splitter다.
 PRODUCT_KEYWORDS: tuple[tuple[str, tuple[str, ...]], ...] = (
     ("ELS", ("ELS", "지수연계")),
     ("펀드", ("펀드", "환매", "운용보수", "보수")),
-    ("보험", ("보험", "보험금", "환급금")),
     ("대출", ("대출", "대출금", "대출금리", "원리금", "중도상환수수료", "대출 잔액")),
     ("적금", ("적금", "자동이체", "우대조건")),
     ("예금", ("예금", "정기예금", "계좌", "통장", "지급정지")),
@@ -90,7 +89,6 @@ ISSUE_RULES: tuple[tuple[str, tuple[str, ...]], ...] = (
 _EXTRA_TYPE_HINTS: tuple[tuple[str, str], ...] = (
     ("연체이자과다", "연체이자가 과도하게 부과됨"),
     ("채권추심과다", "과도한 추심 연락·독촉"),
-    ("지원제외_보험", "보험 상품 민원"),
     ("미분류", "위 어디에도 해당하지 않을 때"),
 )
 ISSUE_TYPES: tuple[str, ...] = (
@@ -104,7 +102,7 @@ def _issue_type_guide() -> str:
     lines.extend(f"- {name}: {hint}" for name, hint in _EXTRA_TYPE_HINTS)
     return "\n".join(lines)
 
-SPLIT_RE = re.compile(r"(?:[.!?。]\s+)|(?:요\.\s+)|(?:니다\.\s+)|(?:,\s*(?=(?:예금|적금|대출|펀드|ELS|보험)))|\s*(?:아 그리고|그리고 마지막으로|그런데|게다가|또|그리고)\s*")
+SPLIT_RE = re.compile(r"(?:[.!?。]\s+)|(?:요\.\s+)|(?:니다\.\s+)|(?:,\s*(?=(?:예금|적금|대출|펀드|ELS)))|\s*(?:아 그리고|그리고 마지막으로|그런데|게다가|또|그리고)\s*")
 
 
 def build_case_request(
@@ -188,8 +186,13 @@ def split_prompt_to_issues_llm(prompt: str, *, client: Any | None = None) -> lis
             issue = issue.model_copy(update={"focal": {**issue.focal, **routed.focal, "source": "agent.focal_builder.llm"}})
         if routed.target:
             issue = issue.model_copy(update={"target": {**issue.target, **routed.target}})
-        if routed.required_facts:
-            issue = issue.model_copy(update={"required_facts": routed.required_facts})
+        # LLM은 "가입금액 1,000만원"처럼 값이 박힌 문장을 돌려주기도 한다. 그런 항목은
+        # 영원히 미충족으로 남아 사용자가 이미 말한 사실을 다시 묻게 되므로 버린다.
+        extra_facts = [field for field in routed.required_facts if field in KNOWN_FACT_FIELDS]
+        if extra_facts:
+            issue = issue.model_copy(
+                update={"required_facts": list(dict.fromkeys([*issue.required_facts, *extra_facts]))}
+            )
         issues.append(issue)
     return issues
 
@@ -292,8 +295,6 @@ def _classify_product(text: str) -> str | None:
 
 
 def _classify_issue_type(text: str, product: str | None) -> str:
-    if product == "보험":
-        return "지원제외_보험"
     if product == "대출":
         if any(keyword in text for keyword in ("중도상환수수료", "중도상환 수수료")):
             return "중도상환수수료"

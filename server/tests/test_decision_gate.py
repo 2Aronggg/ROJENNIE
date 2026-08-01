@@ -12,7 +12,7 @@ def _issue(**overrides) -> IssueAnalysis:
         "product": "예금",
         "issue_type": "인출제한",
         "focal": {},
-        "target": {"support_status": "supported", "is_unclear": False},
+        "target": {"is_unclear": False},
         "facts": [],
         "missing_facts": [],
         "fact_resolution": FactResolution(),
@@ -55,18 +55,19 @@ class DecisionGateTests(unittest.TestCase):
 
         self.assertEqual(decision.control, "amend")
 
-    def test_unsupported_product_goes_to_hold(self) -> None:
+    def test_amend_outranks_ask_per_prd_priority(self) -> None:
+        # PRD 12장: hold > amend > ask > proceed. A vague complaint that both
+        # exposes an account number (amend) and is missing facts (ask) must
+        # resolve to amend, not silently drop the PII-confirmation step.
         decision = apply_decision_gate(
             _issue(
-                product="공통",
-                issue_type="지원제외_보험",
-                target={"support_status": "unsupported"},
-                decision=Decision(control="ask", risk_flags=["evidence_insufficient"]),
+                missing_facts=["거래일"],
+                decision=Decision(control="ask", risk_flags=["missing_facts"]),
+                content_scope={"requires_user_confirmation": True, "masked_fields": ["account_number"]},
             )
         )
 
-        self.assertEqual(decision.control, "hold")
-        self.assertTrue(decision.human_review)
+        self.assertEqual(decision.control, "amend")
 
 
 if __name__ == "__main__":

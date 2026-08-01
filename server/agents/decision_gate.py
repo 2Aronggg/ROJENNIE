@@ -5,8 +5,8 @@ from pydantic import BaseModel, Field
 from server.schemas import IssueAnalysis
 
 
-CONTROL_PRIORITY = {"proceed": 0, "amend": 1, "ask": 2, "hold": 3}
-HIGH_RISK_ISSUES = {"명의도용", "지원제외_보험"}
+CONTROL_PRIORITY = {"proceed": 0, "ask": 1, "amend": 2, "hold": 3}  # PRD 12장: hold > amend > ask > proceed
+HIGH_RISK_ISSUES = {"명의도용"}
 HOLD_RISK_FLAGS = {"fact_conflict", "identity_theft", "unauthorized_transaction", "fraud_suspected"}
 AMEND_RISK_FLAGS = {"pii_detected", "masking_required", "scope_review_required"}
 LOW_CONFIDENCE_THRESHOLD = 0.6
@@ -29,7 +29,7 @@ def assess_risk(
 ) -> tuple[str, list[str]]:
     flags = set(risk_flags)
     reasons = sorted(flags)
-    if target.get("support_status") == "unsupported" or issue_type in HIGH_RISK_ISSUES or HOLD_RISK_FLAGS & flags:
+    if issue_type in HIGH_RISK_ISSUES or HOLD_RISK_FLAGS & flags:
         return "critical", reasons or ["high_risk_issue"]
     if "fact_conflict" in flags:
         return "high", reasons
@@ -53,14 +53,6 @@ def apply_decision_gate(issue: IssueAnalysis) -> GateDecision:
         GateDecision(control=issue.decision.control, reasons=["A API baseline decision"])
     ]
 
-    if issue.target.get("support_status") == "unsupported":
-        candidates.append(
-            GateDecision(
-                control="hold",
-                reasons=["현재 지원 범위에 없는 상품이므로 Human Review가 필요합니다."],
-                human_review=True,
-            )
-        )
     if issue.issue_type in HIGH_RISK_ISSUES:
         candidates.append(
             GateDecision(
