@@ -79,7 +79,9 @@ def compose_issue_report(
         used_evidence = [chunk_id for chunk_id in draft.used_evidence_chunk_ids if chunk_id in evidence_ids]
         if not reasoning:
             raise ValueError("Gemini returned an empty report reason")
-        return IssueReport(
+        return _scope_report(
+            issue,
+            IssueReport(
             complaint_content=_sanitize_text(draft.complaint_content) or _complaint_content(issue),
             issue=_sanitize_text(draft.issue) or issue.issue_type,
             processing_result=processing_result or reasoning,
@@ -89,6 +91,7 @@ def compose_issue_report(
             reasoning=reasoning,
             follow_up_actions=_sanitize_actions(actions or fallback.follow_up_actions),
             generated_by="llm",
+            ),
         )
     except Exception as exc:
         LOGGER.warning("LLM report generation failed; using fallback: %s", exc)
@@ -110,7 +113,7 @@ def _fallback_report(issue: IssueAnalysis) -> IssueReport:
     else:
         reasoning = "확인된 사실과 직접 연결되는 근거자료가 부족해 판단을 확정하기 어렵습니다."
         actions = issue.next_steps or ["관련 계약·거래 자료 제출"]
-    return IssueReport(
+    return _scope_report(issue, IssueReport(
         complaint_content=_complaint_content(issue),
         issue=issue.issue_type,
         processing_result=reasoning,
@@ -120,7 +123,7 @@ def _fallback_report(issue: IssueAnalysis) -> IssueReport:
         reasoning=reasoning,
         follow_up_actions=actions[:5],
         generated_by="fallback",
-    )
+    ))
 
 
 def _complaint_content(issue: IssueAnalysis) -> str:
@@ -139,3 +142,58 @@ def _sanitize_cautions(values: list[str]) -> list[str]:
 
 def _sanitize_actions(values: list[str]) -> list[str]:
     return sanitize_llm_texts(values)
+
+
+FORBIDDEN_CONCLUSION_PATTERNS = (
+    "배상 가능",
+    "배상액",
+    "보상받을 수",
+    "은행 잘못",
+    "은행의 잘못",
+    "위법",
+    "책임이 있습니다",
+    "책임이 인정",
+    "당신도 받을 수",
+    "반드시 지급",
+)
+
+
+def _scope_report(issue: IssueAnalysis, report: IssueReport) -> IssueReport:
+    processing_result = _limit_claim_scope(report.processing_result)
+    reasoning = _limit_claim_scope(report.reasoning)
+    cautions = [_limit_claim_scope(value) for value in report.consumer_cautions]
+    actions = [_limit_claim_scope(value) for value in report.follow_up_actions]
+
+    if _has_precedent_only_support(issue):
+        precedent_caution = "유사 사례는 참고용이며, 현재 사안의 결론은 확인된 사실과 직접 근거 범위 안에서만 안내됩니다."
+        if precedent_caution not in cautions:
+            cautions = [precedent_caution, *cautions]
+
+    if issue.logic_verification.unsupported_claims and issue.decision.control == "proceed":
+        processing_result = "확인된 사실과 직접 근거가 부족해 결론을 확정하지 않고 추가 확인이 필요합니다."
+
+    return report.model_copy(
+        update={
+            "processing_result": processing_result,
+            "reasoning": reasoning,
+            "consumer_cautions": cautions[:5],
+            "follow_up_actions": actions[:5],
+        }
+    )
+
+
+def _limit_claim_scope(value: str) -> str:
+    if not value:
+        return value
+    if any(pattern in value for pattern in FORBIDDEN_CONCLUSION_PATTERNS):
+        return "확인된 사실 기준으로 안내할 수 있는 범위만 정리하며, 단정적인 책임 판단은 추가 검토가 필요합니다."
+    return value
+
+
+def _has_precedent_only_support(issue: IssueAnalysis) -> bool:
+    evidence_chains = [
+        chain for chain in issue.logic_verification.support_chains if chain.supporting_evidence
+    ]
+    return bool(evidence_chains) and all(
+        chain.evidence_role == "precedent_reference" for chain in evidence_chains
+    )

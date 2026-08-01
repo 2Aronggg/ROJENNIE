@@ -9,11 +9,25 @@ from pydantic import BaseModel, Field
 Control = Literal["proceed", "amend", "ask", "hold"]
 RoutingMethod = Literal["llm", "rules", "manual"]
 RiskLevel = Literal["low", "medium", "high", "critical"]
+FactSourceType = Literal[
+    "USER_STATED",
+    "SYSTEM_INFERRED",
+    "DOCUMENT_EVIDENCE",
+    "PRECEDENT_REFERENCE",
+]
+InferenceType = Literal["direct_match", "analogical", "unverified"]
+EvidenceRole = Literal[
+    "direct_evidence",
+    "precedent_reference",
+    "procedure_guide",
+    "unknown",
+]
 
 
 class Fact(BaseModel):
     field: str
     value: Any
+    source_type: FactSourceType = "USER_STATED"
     source_ref: str | None = None
     event_date: date | None = None
     recorded_date: date | None = None
@@ -77,7 +91,7 @@ class CaseAnalyzeRequest(BaseModel):
 class FactProvenanceEntry(BaseModel):
     field: str
     value: Any
-    source_type: str
+    source_type: FactSourceType
     source_ref: str | None = None
     status: Literal["confirmed", "conflict", "unresolved"] = "confirmed"
     confidence: float = Field(default=1.0, ge=0.0, le=1.0)
@@ -106,10 +120,20 @@ class IssueReport(BaseModel):
     generated_by: Literal["llm", "fallback"] = "fallback"
 
 
+class SupportChain(BaseModel):
+    claim: str
+    supporting_evidence: list[str] = Field(default_factory=list)
+    inference_type: InferenceType = "unverified"
+    evidence_role: EvidenceRole = "unknown"
+    allowed_in_final: bool = False
+
+
 class LogicVerification(BaseModel):
     summary: str = ""
     checks: list[str] = Field(default_factory=list)
     unresolved: list[str] = Field(default_factory=list)
+    support_chains: list[SupportChain] = Field(default_factory=list)
+    unsupported_claims: list[str] = Field(default_factory=list)
     generated_by: Literal["llm", "fallback"] = "fallback"
 
 

@@ -25,6 +25,8 @@ HOLD_RISK_FLAGS = {
     "evidence_contradiction",
     "insufficient_temporal_clarity",
     "institutional_ambiguity",
+    "unsupported_claim",
+    "unverified_claim",
 }
 AMEND_RISK_FLAGS = {"pii_detected", "masking_required", "scope_review_required"}
 LOW_CONFIDENCE_THRESHOLD = 0.6
@@ -107,6 +109,15 @@ def apply_decision_gate(issue: IssueAnalysis) -> GateDecision:
         candidates.append(GateDecision(control="ask", reasons=["처리 대상 금융회사 또는 접수 대상이 불명확합니다."]))
     if issue.missing_facts:
         candidates.append(GateDecision(control="ask", reasons=["핵심 사실이 부족합니다."]))
+    support_risks = _logic_support_risks(issue)
+    if support_risks:
+        candidates.append(
+            GateDecision(
+                control="ask",
+                reasons=support_risks,
+                human_review="unverified_claim" in support_risks,
+            )
+        )
     if issue.routing_confidence is not None and issue.routing_confidence < LOW_CONFIDENCE_THRESHOLD:
         candidates.append(
             GateDecision(
@@ -125,7 +136,7 @@ def apply_decision_gate(issue: IssueAnalysis) -> GateDecision:
     all_reasons = [reason for item in candidates for reason in item.reasons]
     
     # False negative 위험도 계산
-    risk_flags = set(issue.decision.risk_flags)
+    risk_flags = set(issue.decision.risk_flags) | set(support_risks)
     false_negative_risk, false_negative_indicators = _assess_false_negative_risk(
         control=decision.control,
         prior_control=issue.decision.control,
@@ -155,6 +166,8 @@ def apply_decision_gate(issue: IssueAnalysis) -> GateDecision:
             "risk_level": issue.risk_level,
             "missing_facts_count": len(issue.missing_facts),
             "evidence_count": len(issue.evidence_refs),
+            "support_chain_count": len(issue.logic_verification.support_chains),
+            "unsupported_claims": issue.logic_verification.unsupported_claims,
         },
     )
     
@@ -245,6 +258,22 @@ def _requires_user_confirmation(issue: IssueAnalysis) -> bool:
         or focal_scope.get("requires_user_confirmation")
         or focal_scope.get("masked_fields")
     )
+
+
+def _logic_support_risks(issue: IssueAnalysis) -> list[str]:
+    risks: list[str] = []
+    chains = issue.logic_verification.support_chains
+    if issue.logic_verification.unsupported_claims:
+        risks.append("unsupported_claim")
+    if any(chain.inference_type == "unverified" for chain in chains):
+        risks.append("unverified_claim")
+    evidence_chains = [chain for chain in chains if chain.supporting_evidence]
+    only_precedent = bool(evidence_chains) and all(
+        chain.evidence_role == "precedent_reference" for chain in evidence_chains
+    )
+    if only_precedent and issue.decision.control == "proceed":
+        risks.append("precedent_only_support")
+    return _dedupe(risks)
 
 
 def _dedupe(values: list[str]) -> list[str]:
