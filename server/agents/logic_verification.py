@@ -8,7 +8,7 @@ from typing import Any
 from pydantic import BaseModel, Field
 
 from server.agents.router import _llm_enabled
-from server.policy.gateway import LLMPolicyGateway
+from server.policy.gateway import LLMPolicyGateway, sanitize_llm_text, sanitize_llm_texts
 from server.schemas import IssueAnalysis, LogicVerification
 
 
@@ -53,9 +53,9 @@ def verify_issue_logic(
         if not response.text:
             raise ValueError("Gemini returned no logic verification")
         draft = LLMLogicDraft.model_validate_json(response.text)
-        summary = draft.summary.strip()
-        checks = [item.strip() for item in draft.checks if item.strip()][:5]
-        unresolved = [item.strip() for item in draft.unresolved if item.strip()][:5]
+        summary = sanitize_llm_text(draft.summary)
+        checks = sanitize_llm_texts(draft.checks)[:5]
+        unresolved = sanitize_llm_texts(draft.unresolved)[:5]
         if not summary:
             raise ValueError("Gemini returned an empty logic summary")
         return LogicVerification(

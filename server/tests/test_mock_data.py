@@ -50,6 +50,25 @@ class MockDataTests(unittest.TestCase):
         self.assertEqual(client.get("/mock/accounts/LOAN-001/repayments").json()[0]["amount"], 565_000)
         self.assertEqual(client.get("/mock/accounts/LOAN-001/notice-history").json(), [])
 
+    def test_resolver_facts_carry_event_and_recorded_dates(self) -> None:
+        # opened_at/maturity_at 등 필드값 자체가 날짜인 사실은 event_date로도 남아야
+        # resolve_facts()의 최신값 비교가 date.min끼리의 우연한 순서가 아니라 실제
+        # 시점 비교가 된다.
+        with tempfile.TemporaryDirectory() as directory:
+            resolver = MockCustomerDataResolver(MockBankClient(Path(directory) / "mock.sqlite3"))
+            context = resolver.resolve("CUST-001")
+
+        issue = build_case_request("정기예금 만기 이자가 예상과 다릅니다.", use_llm=False).issues[0]
+        facts = resolver.facts_for_issue(issue, context)
+
+        joined_date = next(fact for fact in facts if fact.field == "가입일")
+        self.assertEqual(str(joined_date.event_date), joined_date.value)
+        self.assertIsNotNone(joined_date.recorded_date)
+
+        rate_fact = next(fact for fact in facts if fact.field == "실제 적용 금리")
+        self.assertIsNone(rate_fact.event_date)
+        self.assertIsNotNone(rate_fact.recorded_date)
+
     def test_loan_is_resolved_into_case_facts(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             resolver = MockCustomerDataResolver(MockBankClient(Path(directory) / "mock.sqlite3"))

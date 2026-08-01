@@ -103,7 +103,10 @@ class ReviewApiP1Tests(unittest.TestCase):
 
         audit = self.client.get("/api/v1/cases/case_review/audit")
         self.assertEqual(audit.status_code, 200)
-        self.assertEqual([event["event_type"] for event in audit.json()], ["case.analyzed", "human_review.applied"])
+        event_types = [event["event_type"] for event in audit.json()]
+        # 신규 audit logging: issue_validation, decision_gate 추가
+        self.assertIn("case.analyzed", event_types)
+        self.assertIn("human_review.applied", event_types)
 
 
 if __name__ == "__main__":

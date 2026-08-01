@@ -8,7 +8,7 @@ from typing import Any
 from pydantic import BaseModel, Field
 
 from server.agents.router import _llm_enabled
-from server.policy.gateway import LLMPolicyGateway
+from server.policy.gateway import LLMPolicyGateway, sanitize_llm_texts
 from server.schemas import IssueInput
 
 
@@ -68,7 +68,7 @@ def build_rag_query(
         if not response.text:
             raise ValueError("Gemini returned no RAG query")
         draft = RAGQueryDraft.model_validate_json(response.text)
-        terms = [term.strip() for term in draft.terms if term.strip()][:12]
+        terms = sanitize_llm_texts(draft.terms)[:12]
         if not terms:
             raise ValueError("Gemini returned no RAG terms")
         return RAGQuery(

@@ -74,9 +74,19 @@ class CaseAnalyzeRequest(BaseModel):
     issues: list[IssueInput] = Field(default_factory=list)
 
 
+class FactProvenanceEntry(BaseModel):
+    field: str
+    value: Any
+    source_type: str
+    source_ref: str | None = None
+    status: Literal["confirmed", "conflict", "unresolved"] = "confirmed"
+    confidence: float = Field(default=1.0, ge=0.0, le=1.0)
+
+
 class FactResolution(BaseModel):
     latest: dict[str, Fact] = Field(default_factory=dict)
     conflicts: dict[str, list[str]] = Field(default_factory=dict)
+    provenance: dict[str, list[FactProvenanceEntry]] = Field(default_factory=dict)
 
 
 class Decision(BaseModel):
@@ -175,6 +185,41 @@ class AuditEvent(BaseModel):
     actor: str
     created_at: datetime
     payload: dict[str, Any] = Field(default_factory=dict)
+
+
+class DecisionAuditLog(BaseModel):
+    """구조화된 결정 감시 로그 - 모든 판정마다 기록"""
+    audit_id: str
+    case_id: str
+    issue_id: str
+    event_type: Literal["decision_gate", "fact_resolution", "logic_verification", "content_scope"] = "decision_gate"
+    created_at: datetime
+    decision: Control
+    prior_control: Control | None = None
+    risk_flags: list[str] = Field(default_factory=list)
+    applied_rules: list[str] = Field(default_factory=list)
+    confidence_score: float | None = None
+    false_negative_risk: Literal["low", "medium", "high"] = "low"
+    false_negative_indicators: list[str] = Field(default_factory=list)
+    supporting_evidence: dict[str, Any] = Field(default_factory=dict)
+    reviewed_by: str | None = None
+    review_note: str = ""
+
+
+class IssueValidationLog(BaseModel):
+    """복합 민원 분리 검증 로그"""
+    validation_id: str
+    case_id: str
+    total_issues: int
+    validation_checks: list[str] = Field(default_factory=list)
+    conflicts_detected: list[str] = Field(default_factory=list)
+    causality_chains: list[list[str]] = Field(default_factory=list)
+    duplicates_found: list[str] = Field(default_factory=list)
+    corrections_applied: list[str] = Field(default_factory=list)
+    created_at: datetime
+    is_valid: bool = True
+    severity: Literal["clean", "warning", "critical"] = "clean"
+
 
 
 class ReviewQueueItem(BaseModel):
