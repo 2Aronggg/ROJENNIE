@@ -1,23 +1,24 @@
 {
-  "generated_at": "2026-08-01T17:22:07.710192+00:00",
-  "embedding_status": "not_generated",
-  "embedded_chunks": 0,
+  "generated_at": "2026-08-01T19:18:39.924478+00:00",
+  "embedding_status": "generated",
+  "embedded_chunks": 65226,
+  "tokenized_chunks": 65226,
   "retrieval": "full_text_with_optional_vector_score",
   "corpora": {
-    "regulations": 63620,
-    "products": 941,
-    "cases": 124,
+    "regulations": 64218,
+    "products": 947,
+    "cases": 59,
     "guides": 2,
     "glossary": 538
   },
   "documents": {
-    "regulations": 139,
-    "products": 136,
-    "cases": 49,
+    "regulations": 144,
+    "products": 139,
+    "cases": 29,
     "guides": 1,
     "glossary": 1
   },
-  "total_chunks": 65225,
+  "total_chunks": 65764,
   "authoritative_for_decision": [
     "regulations",
     "products",

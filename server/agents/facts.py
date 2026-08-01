@@ -57,13 +57,14 @@ def resolve_facts(facts: list[Fact]) -> FactResolution:
 
 
 def _source_type(source_ref: str | None) -> str:
-    if source_ref is None:
-        return "unknown"
-    if source_ref.startswith("mock"):
-        return "mock_data"
-    if source_ref.startswith("user"):
-        return "user_input"
-    return source_ref
+    """source_ref를 FactSourceType enum 값으로 변환한다.
+
+    옛 구현은 "user_input"/"mock_data" 같은 자유 문자열을 반환해
+    FactProvenanceEntry의 Literal 검증에서 전부 터졌다(머지 후 테스트 14건 실패).
+    """
+    if source_ref and source_ref.startswith("user"):
+        return "USER_STATED"
+    return "SYSTEM_INFERRED"
 
 
 def missing_facts(required: list[str], resolution: FactResolution) -> list[str]:

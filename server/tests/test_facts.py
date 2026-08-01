@@ -30,7 +30,7 @@ class ResolveFactsConflictTest(unittest.TestCase):
         self.assertIn("product_name", resolution.provenance)
         self.assertEqual(resolution.conflicts["product_name"], ["\"예금\"", "\"적금\""])
         self.assertEqual(resolution.provenance["product_name"][0].status, "conflict")
-        self.assertEqual(resolution.provenance["product_name"][0].source_type, "user_input")
+        self.assertEqual(resolution.provenance["product_name"][0].source_type, "USER_STATED")
 
 
 if __name__ == "__main__":

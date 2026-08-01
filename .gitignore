@@ -15,3 +15,4 @@ data/complaints/**/complaints.jsonl
 server/rag/embeddings.jsonl
 python-3.12.5-amd64.exe
 python-install.log
+server/rag/chunks.jsonl
