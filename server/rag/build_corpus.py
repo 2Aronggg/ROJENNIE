@@ -106,7 +106,26 @@ def _glossary_records(data_dir: Path) -> list[dict[str, object]]:
     return records
 
 
-def build_corpus(data_dir: Path, chunks_path: Path, output_dir: Path) -> dict[str, object]:
+def _embeddings_cache(path: Path) -> dict[str, list[float]]:
+    if not path.exists():
+        return {}
+    cache: dict[str, list[float]] = {}
+    with path.open(encoding="utf-8") as handle:
+        for line in handle:
+            if not line.strip():
+                continue
+            row = json.loads(line)
+            cache[row["chunk_id"]] = row["embedding"]
+    return cache
+
+
+def build_corpus(
+    data_dir: Path,
+    chunks_path: Path,
+    output_dir: Path,
+    *,
+    embeddings_path: Path = Path("server/rag/embeddings.jsonl"),
+) -> dict[str, object]:
     chunks = load_jsonl(chunks_path) if chunks_path.exists() else list(iter_document_chunks(data_dir))
     grouped: dict[str, list[dict[str, object]]] = {
         "regulations": [],
@@ -121,6 +140,18 @@ def build_corpus(data_dir: Path, chunks_path: Path, output_dir: Path) -> dict[st
     grouped["cases"].extend(_case_records(data_dir))
     grouped["glossary"].extend(_glossary_records(data_dir))
 
+    embeddings = _embeddings_cache(embeddings_path)
+    embedded_count = 0
+    if embeddings:
+        for corpus, records in grouped.items():
+            if corpus == "glossary":
+                continue  # display-only, never embedded
+            for record in records:
+                vector = embeddings.get(str(record["chunk_id"]))
+                if vector is not None:
+                    record["embedding"] = vector
+                    embedded_count += 1
+
     output_dir.mkdir(parents=True, exist_ok=True)
     all_records: list[dict[str, object]] = []
     counts: dict[str, int] = {}
@@ -134,7 +165,8 @@ def build_corpus(data_dir: Path, chunks_path: Path, output_dir: Path) -> dict[st
 
     manifest = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
-        "embedding_status": "not_generated",
+        "embedding_status": "generated" if embeddings else "not_generated",
+        "embedded_chunks": embedded_count,
         "retrieval": "full_text_with_optional_vector_score",
         "corpora": counts,
         "documents": documents,
@@ -155,8 +187,13 @@ def main() -> None:
     parser.add_argument("--data-dir", type=Path, default=Path("data"))
     parser.add_argument("--chunks", type=Path, default=Path("server/rag/chunks.jsonl"))
     parser.add_argument("--output-dir", type=Path, default=Path("data/corpus"))
+    parser.add_argument("--embeddings", type=Path, default=Path("server/rag/embeddings.jsonl"))
     args = parser.parse_args()
-    print(json.dumps(build_corpus(args.data_dir, args.chunks, args.output_dir), ensure_ascii=False, indent=2))
+    print(json.dumps(
+        build_corpus(args.data_dir, args.chunks, args.output_dir, embeddings_path=args.embeddings),
+        ensure_ascii=False,
+        indent=2,
+    ))
 
 
 if __name__ == "__main__":

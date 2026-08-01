@@ -17,7 +17,8 @@ from .agents.rag_query import build_rag_query
 from .agents.report_composer import DECISION_LABELS, compose_issue_report
 from .agents.decision_gate import apply_decision_gate, assess_risk
 from .agents.question_builder import expected_interest_question
-from .agents.router import _load_dotenv, build_case_request
+from .agents.router import _llm_enabled, _load_dotenv, build_case_request
+from .rag.embeddings import embed_query
 from .agents.facts import missing_facts, resolve_facts
 from .finance.mock_data import MockBankClient
 from .agents.logic_graph import build_logic_graph
@@ -440,10 +441,12 @@ def _analyze_issue(
             missing.append("가상 계약 데이터")
 
     rag_query = build_rag_query(issue, use_llm=use_llm_rag)
+    query_embedding = embed_query(rag_query.text) if _llm_enabled(use_llm_rag) else None
     evidence = get_index().search_many(
         rag_query.variants or [rag_query.text],
         product=issue.product,
         as_of=request.as_of or date.today(),
+        query_embedding=query_embedding,
     )
 
     risk_flags: list[str] = []
