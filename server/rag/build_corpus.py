@@ -8,7 +8,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from .ingest import _chunks, iter_document_chunks
-from .retrieval import load_jsonl
+from .retrieval import load_jsonl, tokenize_many
 from ..schemas import DocumentChunk
 
 
@@ -175,6 +175,18 @@ def build_corpus(
                     record["embedding"] = vector
                     embedded_count += 1
 
+    # 형태소 분석을 빌드 시점에 한 번만 계산해 캐싱한다. SearchIndex가 매번
+    # 다시 계산하면 서버 기동마다 수 분이 걸린다(실측, retrieval.tokenize_many
+    # 참고). glossary는 검색 인덱스에서 아예 제외되므로 계산하지 않는다.
+    tokenized_count = 0
+    for corpus, records in grouped.items():
+        if corpus == "glossary" or not records:
+            continue
+        texts = [str(record["text"]) for record in records]
+        for record, tokens in zip(records, tokenize_many(texts)):
+            record["tokens"] = tokens
+            tokenized_count += 1
+
     output_dir.mkdir(parents=True, exist_ok=True)
     all_records: list[dict[str, object]] = []
     counts: dict[str, int] = {}
@@ -190,6 +202,7 @@ def build_corpus(
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "embedding_status": "generated" if embeddings else "not_generated",
         "embedded_chunks": embedded_count,
+        "tokenized_chunks": tokenized_count,
         "retrieval": "full_text_with_optional_vector_score",
         "corpora": counts,
         "documents": documents,

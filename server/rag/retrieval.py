@@ -2,7 +2,6 @@ from __future__ import annotations
 
 import json
 import math
-import re
 from collections import Counter, defaultdict
 from datetime import date
 from pathlib import Path
@@ -12,13 +11,42 @@ from .ingest import iter_document_chunks, write_jsonl
 from ..schemas import DocumentChunk, EvidenceRef
 
 
-TOKEN_RE = re.compile(r"[\uac00-\ud7a3A-Za-z0-9]+")
 COMMON_PRODUCT = "\uacf5\ud1b5"
 RRF_K = 60
 
+# \uba85\uc0ac\ub958(NNG/NNP/NNB/NR)\uc640 \uc678\ub798\uc5b4\u00b7\uc22b\uc790(SL/SN)\ub9cc \ub0a8\uae34\ub2e4. \uc870\uc0ac(JKS/JX/...)\ub098 \uc5b4\ubbf8\ub97c
+# \ud3ec\ud568\ud558\uba74 "\uc801\uae08\uc744"\uacfc "\uc801\uae08"\uc774 \ub2e4\ub978 \ud1a0\ud070\uc774 \ub418\uc5b4 \uc815\ud655 \uc77c\uce58 \uac80\uc0c9\uc774 \uae68\uc9c4\ub2e4 - \uc2e4\uce21\uc73c\ub85c
+# \ud655\uc778\ub41c \uc0c1\ud488\uc124\uba85\uc11c recall \uc800\ud558\uc758 \uc8fc\ub41c \uc6d0\uc778.
+_CONTENT_TAGS = frozenset({"NNG", "NNP", "NNB", "NR", "SL", "SN"})
+_kiwi = None
+
+
+def _kiwi_instance():
+    global _kiwi
+    if _kiwi is None:
+        from kiwipiepy import Kiwi
+
+        _kiwi = Kiwi(num_workers=-1)
+    return _kiwi
+
+
+def _morphs_to_tokens(morphs) -> set[str]:
+    return {morph.form.lower() for morph in morphs if morph.tag in _CONTENT_TAGS}
+
 
 def _tokens(text: str) -> set[str]:
-    return {token.lower() for token in TOKEN_RE.findall(text)}
+    """\uc9c8\uc758 \uc2dc\uc810 \ub4f1, \uc0ac\uc804 \uacc4\uc0b0\ub41c \ud1a0\ud070\uc774 \uc5c6\uc744 \ub54c \uc4f0\ub294 \ub2e8\uac74 \ud615\ud0dc\uc18c \ubd84\uc11d."""
+    return _morphs_to_tokens(_kiwi_instance().tokenize(text))
+
+
+def tokenize_many(texts: Sequence[str]) -> list[list[str]]:
+    """corpus \ube4c\ub4dc \uc2dc \ubc30\uce58\ub85c \ubbf8\ub9ac \uacc4\uc0b0\ud574 \uce90\uc2f1\ud558\uae30 \uc704\ud55c \uba40\ud2f0\uc2a4\ub808\ub4dc \ud1a0\ud070\ud654.
+
+    65,000\uac1c \uccad\ud06c\ub97c \uac74\ubcc4\ub85c tokenize()\ud558\uba74 \uc11c\ubc84 \uae30\ub3d9\ub9c8\ub2e4 3\ubd84 \ub118\uac8c \uac78\ub9b0\ub2e4
+    (\uc2e4\uce21). corpus \ube4c\ub4dc \uc2dc \ud55c \ubc88\ub9cc \uacc4\uc0b0\ud574 DocumentChunk.tokens\uc5d0 \uc800\uc7a5\ud574\ub450\uba74
+    SearchIndex.__init__\uc740 \uadf8 \uacb0\uacfc\ub97c \uadf8\ub300\ub85c \uc77d\uae30\ub9cc \ud574\uc11c \ube60\ub974\ub2e4.
+    """
+    return [sorted(_morphs_to_tokens(result)) for result in _kiwi_instance().tokenize(list(texts))]
 
 
 def _text_key(text: str) -> str:
@@ -126,7 +154,7 @@ class SearchIndex:
         self._token_index: dict[str, set[int]] = defaultdict(set)
         self._document_frequency: Counter[str] = Counter()
         for index, chunk in enumerate(chunks):
-            tokens = _tokens(chunk.text)
+            tokens = set(chunk.tokens) if chunk.tokens is not None else _tokens(chunk.text)
             self._token_sets.append(tokens)
             for token in tokens:
                 self._token_index[token].add(index)

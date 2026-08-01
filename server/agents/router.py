@@ -55,6 +55,17 @@ PRODUCT_KEYWORDS: tuple[tuple[str, tuple[str, ...]], ...] = (
     ("예금", ("예금", "정기예금", "계좌", "통장", "지급정지")),
 )
 
+# 상품을 못 찾아 "공통"으로 떨어진 문의 중, 아예 다른 업권(보험 등)이라 우리가
+# 절대 매칭시킬 수 없는 경우를 구분한다. 이게 없으면 "정보가 더 필요합니다"를
+# 영원히 반복하며 RAG/LLM 호출만 낭비한다 (평가 중 실측 확인됨).
+OUT_OF_SCOPE_KEYWORDS: tuple[tuple[str, tuple[str, ...]], ...] = (
+    ("보험", ("보험금", "보험료", "실손보험", "상해보험", "종신보험", "자동차보험", "보험 가입", "보험사", "보험 계약")),
+    ("상조", ("상조", "장례")),
+    ("신용카드", ("신용카드", "체크카드", "카드대금", "카드 할부")),
+    ("법률서비스", ("변호사 선임", "소송비용", "법률상담")),
+)
+OUT_OF_SCOPE_ISSUE_TYPE = "지원상품아님"
+
 ISSUE_RULES: tuple[tuple[str, tuple[str, ...]], ...] = (
     ("명의도용", ("명의도용", "모르는", "신청한 적", "본인인증 없이", "저도 모르는 사이", "내가 신청하지 않은", "비인가")),
     ("계약해지_지연", ("해지 신청", "해지하려", "해지하러", "처리가 안", "처리를 안", "미뤄지고")),
@@ -89,6 +100,7 @@ ISSUE_RULES: tuple[tuple[str, tuple[str, ...]], ...] = (
 _EXTRA_TYPE_HINTS: tuple[tuple[str, str], ...] = (
     ("연체이자과다", "연체이자가 과도하게 부과됨"),
     ("채권추심과다", "과도한 추심 연락·독촉"),
+    (OUT_OF_SCOPE_ISSUE_TYPE, "보험·상조·카드·법률서비스 등 본 서비스가 다루지 않는 상품/서비스 문의"),
     ("미분류", "위 어디에도 해당하지 않을 때"),
 )
 ISSUE_TYPES: tuple[str, ...] = (
@@ -193,7 +205,7 @@ def split_prompt_to_issues_llm(prompt: str, *, client: Any | None = None) -> lis
             issue = issue.model_copy(
                 update={"required_facts": list(dict.fromkeys([*issue.required_facts, *extra_facts]))}
             )
-        issues.append(issue)
+        issues.append(_apply_out_of_scope(issue, text))
     return issues
 
 
@@ -255,7 +267,7 @@ def _build_issue(index: int, text: str) -> IssueInput:
     raw_product = _classify_product(text)
     issue_type = _classify_issue_type(text, raw_product)
     raw_product = raw_product or _infer_product_from_issue(issue_type)
-    return build_issue_input(
+    issue = build_issue_input(
         issue_id=f"issue_{index:03d}",
         product=raw_product or "공통",
         issue_type=issue_type,
@@ -264,6 +276,7 @@ def _build_issue(index: int, text: str) -> IssueInput:
         routing_method="rules",
         routing_confidence=0.8 if raw_product else 0.6,
     )
+    return _apply_out_of_scope(issue, text)
 
 
 def _issue_spans(prompt: str) -> list[str]:
@@ -292,6 +305,29 @@ def _has_new_issue_signal(text: str) -> bool:
 
 def _classify_product(text: str) -> str | None:
     return next((product for product, keywords in PRODUCT_KEYWORDS if any(keyword in text for keyword in keywords)), None)
+
+
+def _out_of_scope_label(text: str) -> str | None:
+    return next((label for label, keywords in OUT_OF_SCOPE_KEYWORDS if any(keyword in text for keyword in keywords)), None)
+
+
+def _apply_out_of_scope(issue: IssueInput, text: str) -> IssueInput:
+    """공통으로 분류된 이슈가 보험 등 아예 다른 업권이면 issue_type을 덮어쓴다.
+
+    라우팅 방식(rules/llm)에 상관없이 마지막에 한 번만 거치는 공통 지점이라,
+    LLM이 이 라벨을 스스로 고르지 못해도 여기서 잡힌다.
+    """
+    if issue.product != "공통":
+        return issue
+    label = _out_of_scope_label(text)
+    if not label:
+        return issue
+    return issue.model_copy(
+        update={
+            "issue_type": OUT_OF_SCOPE_ISSUE_TYPE,
+            "focal": {**issue.focal, "out_of_scope_category": label},
+        }
+    )
 
 
 def _classify_issue_type(text: str, product: str | None) -> str:

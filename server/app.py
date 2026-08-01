@@ -17,8 +17,9 @@ from .agents.rag_query import build_rag_query
 from .agents.report_composer import DECISION_LABELS, compose_issue_report
 from .agents.decision_gate import apply_decision_gate, assess_risk
 from .agents.question_builder import expected_interest_question
-from .agents.router import _llm_enabled, _load_dotenv, build_case_request
+from .agents.router import OUT_OF_SCOPE_ISSUE_TYPE, _llm_enabled, _load_dotenv, build_case_request
 from .rag.embeddings import embed_query
+from .rag.pgvector import SupabaseVectorStore
 from .agents.facts import missing_facts, resolve_facts
 from .finance.mock_data import MockBankClient
 from .agents.logic_graph import build_logic_graph
@@ -29,8 +30,10 @@ from .schemas import (
     CaseAnalysis,
     CaseAnalyzeRequest,
     Decision,
+    FactResolution,
     IssueAnalysis,
     IssueInput,
+    IssueReport,
     ReviewRequest,
     ReviewResponse,
     ReviewQueueItem,
@@ -69,6 +72,7 @@ MOCK_BANK_CLIENT = MockBankClient()
 FINANCE_MCP_CLIENT = FinanceMCPClient()
 CUSTOMER_DATA_RESOLVER = MockCustomerDataResolver(FINANCE_MCP_CLIENT)
 SUPABASE_STORE = SupabaseStore()
+SUPABASE_VECTOR_STORE = SupabaseVectorStore(SUPABASE_STORE)
 
 
 def get_index() -> SearchIndex:
@@ -423,6 +427,48 @@ def _fallback_issue(request: CaseAnalyzeRequest) -> IssueInput:
     )
 
 
+def _analyze_out_of_scope_issue(issue: IssueInput) -> IssueAnalysis:
+    """보험 등 미지원 상품 문의는 RAG 검색·LLM 호출 없이 바로 안내한다.
+
+    실측해보니 이런 문의도 정상 경로를 그대로 타면 "정보가 더 필요합니다"를
+    반복하며 RAG 검색과 LLM 호출(로직 검증, 리포트 작성)을 매번 낭비했다.
+    """
+    category = issue.focal.get("out_of_scope_category") or "해당 상품"
+    message = (
+        f"본 서비스는 예금·적금·대출·펀드 관련 민원만 처리합니다. "
+        f"{category} 관련 문의는 해당 금융회사 또는 금융감독원(국번없이 1332)으로 문의해 주세요."
+    )
+    result = IssueAnalysis(
+        issue_id=issue.issue_id,
+        product=issue.product,
+        issue_type=issue.issue_type,
+        routing_confidence=issue.routing_confidence,
+        routing_method=issue.routing_method,
+        focal=issue.focal,
+        target=issue.target,
+        fact_resolution=FactResolution(),
+        decision=Decision(control="ask", risk_flags=["unsupported_product"]),
+        risk_level="low",
+        next_steps=[message],
+        content_scope={"mode": "summary", "requires_user_confirmation": False},
+        report=IssueReport(
+            complaint_content=issue.text,
+            issue=f"{category} 관련 문의",
+            processing_result=message,
+            current_decision="지원 상품 아님",
+            reasoning=message,
+            generated_by="fallback",
+        ),
+    )
+    gate = apply_decision_gate(result)
+    return result.model_copy(
+        update={
+            "decision": Decision(control=gate.control, risk_flags=result.decision.risk_flags),
+            "human_review_required": gate.human_review,
+        }
+    )
+
+
 def _analyze_issue(
     issue: IssueInput,
     request: CaseAnalyzeRequest,
@@ -431,6 +477,8 @@ def _analyze_issue(
     use_llm_rag: bool | None = None,
     use_llm_logic: bool | None = None,
 ) -> IssueAnalysis:
+    if issue.issue_type == OUT_OF_SCOPE_ISSUE_TYPE:
+        return _analyze_out_of_scope_issue(issue)
     mock_facts = CUSTOMER_DATA_RESOLVER.facts_for_issue(issue, customer_data)
     facts = [*issue.facts, *mock_facts]
     resolution = resolve_facts(facts)
@@ -443,13 +491,26 @@ def _analyze_issue(
             missing.append("가상 계약 데이터")
 
     rag_query = build_rag_query(issue, use_llm=use_llm_rag)
-    query_embedding = embed_query(rag_query.text) if _llm_enabled(use_llm_rag) else None
-    evidence = get_index().search_many(
-        rag_query.variants or [rag_query.text],
-        product=issue.product,
-        as_of=request.as_of or date.today(),
-        query_embedding=query_embedding,
+    vector_enabled = SUPABASE_VECTOR_STORE.enabled
+    query_embedding = (
+        embed_query(rag_query.text)
+        if vector_enabled or _llm_enabled(use_llm_rag)
+        else None
     )
+    if vector_enabled:
+        evidence = SUPABASE_VECTOR_STORE.search(
+            query_embedding,
+            product=issue.product,
+            as_of=request.as_of or date.today(),
+            top_k=5,
+        )
+    else:
+        evidence = get_index().search_many(
+            rag_query.variants or [rag_query.text],
+            product=issue.product,
+            as_of=request.as_of or date.today(),
+            query_embedding=query_embedding,
+        )
 
     risk_flags: list[str] = []
     if missing:
@@ -573,7 +634,8 @@ def analyze_case(request: CaseAnalyzeRequest) -> CaseAnalysis:
         )
         issues = routed_request.issues or [_fallback_issue(request)]
     customer_data = CUSTOMER_DATA_RESOLVER.resolve(request.customer_id)
-    get_index()  # 워커 스레드 경쟁 전에 인덱스를 1회만 빌드
+    if not SUPABASE_VECTOR_STORE.enabled:
+        get_index()  # 로컬 fallback 사용 시에만 인덱스를 빌드
     use_llm = None if not request.issues else False
     with ThreadPoolExecutor(max_workers=min(len(issues), 4)) as pool:
         analyzed = list(

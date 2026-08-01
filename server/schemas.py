@@ -49,6 +49,7 @@ class DocumentChunk(BaseModel):
     section: str | None = None
     text: str
     embedding: list[float] | None = None
+    tokens: list[str] | None = None
 
 
 class IssueInput(BaseModel):

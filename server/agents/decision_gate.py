@@ -6,7 +6,7 @@ from server.schemas import IssueAnalysis
 
 
 CONTROL_PRIORITY = {"proceed": 0, "ask": 1, "amend": 2, "hold": 3}  # PRD 12장: hold > amend > ask > proceed
-HIGH_RISK_ISSUES = {"명의도용"}
+HIGH_RISK_ISSUES = {"명의도용", "지원상품아님"}
 HOLD_RISK_FLAGS = {"fact_conflict", "identity_theft", "unauthorized_transaction", "fraud_suspected"}
 AMEND_RISK_FLAGS = {"pii_detected", "masking_required", "scope_review_required"}
 LOW_CONFIDENCE_THRESHOLD = 0.6
