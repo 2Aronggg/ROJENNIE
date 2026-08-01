@@ -184,6 +184,7 @@ class SearchIndex:
         self._metadata_token_sets: list[set[str]] = []
         self._compact_metadata: list[str] = []
         self._metadata_hints: list[set[str]] = []
+        self._compact_text: list[str] = []
         self._token_index: dict[str, set[int]] = defaultdict(set)
         self._document_frequency: Counter[str] = Counter()
         for index, chunk in enumerate(chunks):
@@ -193,6 +194,7 @@ class SearchIndex:
             self._metadata_token_sets.append(_tokens(metadata))
             self._compact_metadata.append(_compact(metadata))
             self._metadata_hints.append(_metadata_hints(metadata))
+            self._compact_text.append(_compact(chunk.text))
             for token in tokens:
                 self._token_index[token].add(index)
                 self._document_frequency[token] += 1
@@ -265,6 +267,7 @@ class SearchIndex:
             candidate_indices = set(range(len(self.chunks)))
 
         compact_query = _compact(query)
+        compact_terms = {term for term in (_compact(token) for token in query_tokens) if len(term) >= 4}
         if compact_query:
             for index, compact_metadata in enumerate(self._compact_metadata):
                 if len(compact_metadata) >= 4 and (
@@ -273,6 +276,10 @@ class SearchIndex:
                     candidate_indices.add(index)
                     continue
                 if any(hint in compact_query for hint in self._metadata_hints[index]):
+                    candidate_indices.add(index)
+                    continue
+                compact_text = self._compact_text[index]
+                if compact_text and any(term in compact_text for term in compact_terms):
                     candidate_indices.add(index)
 
         intent = _intent(query, query_tokens)
@@ -333,6 +340,9 @@ class SearchIndex:
                     metadata_score += 0.18
                 elif "특약" in compact_metadata:
                     metadata_score -= 0.12
+            compact_overlap = sum(1 for term in compact_terms if term in self._compact_text[index])
+            if compact_overlap:
+                metadata_score += min(0.24, compact_overlap * 0.045)
             vector_score = 0.0
             if query_embedding and chunk.embedding:
                 vector_score = max(0.0, _cosine(query_embedding, chunk.embedding))

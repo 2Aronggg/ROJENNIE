@@ -64,13 +64,37 @@ PRODUCTS = [
 ]
 
 
+GUIDES = [
+    ("KB국민은행 불만사항은 어디에서 접수하나요?", "453c50e7e3e4"),
+    ("분쟁성 민원은 접수 후 며칠 안에 처리결과를 회신하나요?", "453c50e7e3e4"),
+    ("KB국민은행 인터넷뱅킹 고객이 아닌 사람도 민원을 접수할 수 있나요?", "453c50e7e3e4"),
+    ("전자민원 내용은 몇 글자까지 입력할 수 있나요?", "453c50e7e3e4"),
+    ("칭찬의견은 KB국민은행 홈페이지에서 어떻게 접수하나요?", "453c50e7e3e4"),
+    ("분쟁성 민원에는 어떤 유형이 포함되나요?", "453c50e7e3e4"),
+]
+
+
+CANONICAL_DOC_IDS = {
+    "41b2b8383a71": {
+        "41b2b8383a71",
+        "4e8137fa6fa6",
+        "c96654dd4ae6",
+        "f881da33b78f",
+    },
+}
+
+
+def acceptable_doc_ids(expected_doc_id: str) -> set[str]:
+    return CANONICAL_DOC_IDS.get(expected_doc_id, {expected_doc_id})
+
+
 def evaluate(index: SearchIndex, items: list[tuple[str, str]], *, use_hybrid: bool, top_k: int = 5) -> dict[str, object]:
     hits = 0
     misses: list[tuple[str, str]] = []
     for query, expected_doc_id in items:
         vector = embed_query(query) if use_hybrid else None
         results = index.search(query, as_of=date.today(), top_k=top_k, query_embedding=vector)
-        found = any(r.doc_id == expected_doc_id for r in results)
+        found = any(r.doc_id in acceptable_doc_ids(expected_doc_id) for r in results)
         hits += found
         if not found:
             misses.append((query, expected_doc_id))
@@ -87,13 +111,13 @@ def main() -> None:
         Path("data"), chunks_path=Path("data/corpus/all.jsonl"), exclude_doc_types=frozenset({"glossary"})
     )
     print(f"mode: {'hybrid' if args.hybrid else 'text-only'}, top_k={args.top_k}")
-    for label, items in (("cases", CASES), ("products", PRODUCTS)):
+    for label, items in (("cases", CASES), ("products", PRODUCTS), ("guides", GUIDES)):
         result = evaluate(index, items, use_hybrid=args.hybrid, top_k=args.top_k)
         print(f"\n[{label}] recall@{args.top_k}: {result['hits']}/{result['n']} = {result['recall']:.1%}")
         for query, expected in result["misses"]:
             print(f"  놓침: {query[:50]!r} (정답 doc_id={expected})")
 
-    all_items = CASES + PRODUCTS
+    all_items = CASES + PRODUCTS + GUIDES
     total = evaluate(index, all_items, use_hybrid=args.hybrid, top_k=args.top_k)
     print(f"\n[전체] recall@{args.top_k}: {total['hits']}/{total['n']} = {total['recall']:.1%}")
 

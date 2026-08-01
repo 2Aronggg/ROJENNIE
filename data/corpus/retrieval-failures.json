@@ -4,100 +4,26 @@
   "chunks": "data\\corpus\\all.jsonl",
   "index_source": "jsonl:data\\corpus\\all.jsonl",
   "total": {
-    "n": 36,
-    "hits": 32,
-    "misses": 4,
-    "recall": 0.8888888888888888
+    "n": 42,
+    "hits": 40,
+    "misses": 2,
+    "recall": 0.9523809523809523
   },
   "sections": [
     {
       "label": "cases",
       "n": 16,
-      "hits": 13,
-      "misses": 3,
-      "recall": 0.8125,
+      "hits": 14,
+      "misses": 2,
+      "recall": 0.875,
       "miss_details": [
-        {
-          "label": "cases",
-          "query": "임대인이 임차인에게 갱신 거절 통지를 했는지 여부를 다룬 판례를 찾고 싶어요",
-          "expected_doc_id": "99dd4fa31af5",
-          "top_results": [
-            {
-              "rank": 1,
-              "doc_id": "4fd0eb229fd8",
-              "chunk_id": "4fd0eb229fd8-c1",
-              "doc_type": "case",
-              "path": "local:cases/9_(은행)_신용상태 개선이 경미한 경우 금리인하 요구권이 수용되지 않을 수 있습니다..hwp",
-              "page": 1,
-              "section": "9_(은행)_신용상태 개선이 경미한 경우 금리인하 요구권이 수용되지 않을 수 있습니다.",
-              "score": 0.1047,
-              "match_type": "full_text",
-              "effective_from": null,
-              "effective_to": null,
-              "snippet": "<분쟁사례> 은행 신용대출 금리인하요구 거절 관련 사례 < 민원유형 : 은행 – 여신 – 대출금리 관련 ▣ 민원내용 신청인은 부채 감소(대출금 일부 상환) 및 개인신용평점 상승 등의 사유로 은행에 신용대출 금리인하를 신청하였으나 은행에서는 별다른 사유 없이 인하를 거절 ▣ 쟁점 신청인의 신용상태 개선이 금리인하 사유에 해"
-            },
-            {
-              "rank": 2,
-              "doc_id": "b140e8627d7a",
-              "chunk_id": "b140e8627d7a-c37",
-              "doc_type": "regulation",
-              "path": "api:regulations/law_api/개인금융채권의 관리 및 개인금융채무자의 보호에 관한 법률 시행령_20251001_278137.json",
-              "page": 1,
-              "section": "채무조정의 거절",
-              "score": 0.0878,
-              "match_type": "full_text",
-              "effective_from": "2025-10-01",
-              "effective_to": null,
-              "snippet": "제30조(채무조정의 거절) ① 법 제36조제1항제4호에서 \"대통령령으로 정하는 경우\"란 다음 각 호의 경우를 말한다. 1. 개인금융채권의 소멸시효가 완성된 경우 2. 그 밖에 채무조정을 거절할 필요가 있는 경우로서 금융위원회가 정하여 고시하는 경우 ② 채권금융회사등은 법 제36조제1항에 따라 채무조정의 요청을 거절하는 경"
-            },
-            {
-              "rank": 3,
-              "doc_id": "ebee465b7f60",
-              "chunk_id": "ebee465b7f60-c42",
-              "doc_type": "regulation",
-              "path": "api:regulations/law_api/개인금융채권의 관리 및 개인금융채무자의 보호에 관한 법률_20260102_277235.json",
-              "page": 1,
-              "section": "채무조정의 거절",
-              "score": 0.0878,
-              "match_type": "full_text",
-              "effective_from": "2026-01-02",
-              "effective_to": null,
-              "snippet": "제36조(채무조정의 거절) ① 채권금융회사등은 다음 각 호의 경우에는 제35조에 따른 채무조정의 요청을 제37조에 따라 처리하지 아니하고 거절할 수 있다. 1. 제35조제1항 각 호의 경우 2. 개인금융채무자가 제35조제3항에 따른 채권금융회사등의 수정ㆍ보완 요청에 3회 이상 따르지 아니한 경우 3. 개인금융채무자의 변제"
-            },
-            {
-              "rank": 4,
-              "doc_id": "0243146fcb95",
-              "chunk_id": "0243146fcb95-p6-c1",
-              "doc_type": "product",
-              "path": "local:products/savings/맑은하늘적금상품설명서260724.pdf",
-              "page": 6,
-              "section": "page:6",
-              "score": 0.079,
-              "match_type": "full_text",
-              "effective_from": "2026-07-24",
-              "effective_to": "2028-06-30",
-              "snippet": "이 상품은 KB 국민은행 수신상품부(P)에서 관리하는 상품입니다. 본 상품에 대한 문의사항 또는 민원 상담이 필요하시면 영업점, 고객센터(1588-9999) 또는 인터넷 홈페이지 (www.kbstar.com), 금융감독원 민원상담센터(국번없이 1332) 또는 e-금융민원센터(www.fcsc.kr)를 통해 문의주시기 바랍니"
-            },
-            {
-              "rank": 5,
-              "doc_id": "0b0fec36b804",
-              "chunk_id": "0b0fec36b804-p11-c1",
-              "doc_type": "product",
-              "path": "local:products/loan/대출거래약정서_가계용_2024-10.pdf",
-              "page": 11,
-              "section": "제14조",
-              "score": 0.079,
-              "match_type": "full_text",
-              "effective_from": null,
-              "effective_to": null,
-              "snippet": "(6-5) E009–266(210×297) NCR지 (2024. 10 개정) K11 제14조 인지세의 부담 ① 이 약정서 작성에 따른 인지세는 각 50%씩 본인과 은행이 부담합니다. ② 제1항에 의하여 본인이 부담하기로 한 인지세를 은행이 대신 지급한 경우에는 은행여신거래기본약관(가계용) 제4조에 준하여 갚기로 합니다. "
-            }
-          ]
-        },
         {
           "label": "cases",
           "query": "회사 이사가 퇴임한 뒤에도 재직 중 보증한 채무의 책임을 계속 져야 하는지 판례가 있나요",
           "expected_doc_id": "e0420f4d6ed2",
+          "acceptable_doc_ids": [
+            "e0420f4d6ed2"
+          ],
           "top_results": [
             {
               "rank": 1,
@@ -107,7 +33,7 @@
               "path": "kca:cases/kca/kca_1000242897.html",
               "page": 1,
               "section": "사용하지 않은 신용카드대금 청구취소 요구",
-              "score": 0.1717,
+              "score": 0.3117,
               "match_type": "full_text",
               "effective_from": null,
               "effective_to": null,
@@ -115,59 +41,59 @@
             },
             {
               "rank": 2,
-              "doc_id": "0a5e2f4915a4",
-              "chunk_id": "0a5e2f4915a4-p2-c1",
-              "doc_type": "product",
-              "path": "local:products/deposit/입출금이자유로운예금약관.pdf",
-              "page": 2,
-              "section": "제4조",
-              "score": 0.1448,
+              "doc_id": "32e8d57f4d56",
+              "chunk_id": "32e8d57f4d56-c4",
+              "doc_type": "case",
+              "path": "kca:cases/kca/kca_1000954458.html",
+              "page": 1,
+              "section": "변호사 선임료 일부 환급 요구",
+              "score": 0.208,
               "match_type": "full_text",
               "effective_from": null,
               "effective_to": null,
-              "snippet": "2 ③ 통장이「전기통신금융사기 피해방지 및 피해금 환급에 관한 특별법」에서 정의한 사기이용계좌로 사용될 경우, 통장 명의인에 대한 계좌개설 및 현금카드 발급, 해당 통장의 인출∙이체한도 축소 등 금융거래를 제한할 수 있습니다. 제 6 조 수표·어음금 지급 및 지급위탁 취소 ① 은행은 제4조 제1항에 따라 내어준 수표나 어"
+              "snippet": "반한다고 볼 만한 특별한 사정이 있는 경우에는 예외적으로 상당하다고 인정되는 범위 내의 보수액만을 청구할 수 있다고 보아야 하므로(대법원 2002. 4. 12. 선고 2000다501490판결) 피신청인이 실제로 수행한 사무 처리의 정도에 따라 환급 여부를 판단해 보면, 신청외 '○진용'이 신청인을 고소한 사건에 대해서는 "
             },
             {
               "rank": 3,
-              "doc_id": "ebee465b7f60",
-              "chunk_id": "ebee465b7f60-c49",
-              "doc_type": "regulation",
-              "path": "api:regulations/law_api/개인금융채권의 관리 및 개인금융채무자의 보호에 관한 법률_20260102_277235.json",
+              "doc_id": "39fda846a14f",
+              "chunk_id": "39fda846a14f-c3",
+              "doc_type": "case",
+              "path": "kca:cases/kca/kca_1000671690.html",
               "page": 1,
-              "section": "채권금융회사등에 대한 조치 등",
-              "score": 0.1402,
+              "section": "신용카드 할부금 환급 및 청구 취소 요구",
+              "score": 0.208,
               "match_type": "full_text",
-              "effective_from": "2026-01-02",
+              "effective_from": null,
               "effective_to": null,
-              "snippet": "제42조(채권금융회사등에 대한 조치 등) ① 금융위원회는 「금융위원회의 설치 등에 관한 법률」 제38조에 따른 검사 대상 기관 중 채권금융회사등이 별표 각 호의 어느 하나에 해당하는 경우에는 해당 채권금융회사등에 시정을 명하거나 주의 또는 경고 조치를 할 수 있다. ② 금융위원회는 채권추심회사가 별표 각 호의 어느 하나에"
+              "snippet": "통지하였고 그로 인하여 휴대폰 통화권을 제공하지 못하였으므로(매도인은 휴대폰 통화권을 충전하였기 때문에 정상적으로 계속 사용할 수 있다는 취지로 통지문에 기재하였지만 신청인은 그와 같은 통지문을 받을 때까지 통화권을 사용한 실적이 전혀 없었을 뿐만 아니라 알려준 전화번호 '080-384-****'로는 이미 통화 불능한 상"
             },
             {
               "rank": 4,
-              "doc_id": "5e01c434ff49",
-              "chunk_id": "5e01c434ff49-c69",
-              "doc_type": "regulation",
-              "path": "api:regulations/law_api/금융소비자 보호에 관한 법률_20260102_277247.json",
+              "doc_id": "e816b5f7a15c",
+              "chunk_id": "e816b5f7a15c-c1",
+              "doc_type": "case",
+              "path": "local:cases/10_(여전)_중고차 시세를 면밀히 확인하고 중고차 담보 대출을 신청해야 합니다..hwp",
               "page": 1,
-              "section": "퇴임한 임원 등에 대한 조치내용 통보",
-              "score": 0.1326,
+              "section": "10_(여전)_중고차 시세를 면밀히 확인하고 중고차 담보 대출을 신청해야 합니다.",
+              "score": 0.1993,
               "match_type": "full_text",
-              "effective_from": "2026-01-02",
+              "effective_from": null,
               "effective_to": null,
-              "snippet": "제53조(퇴임한 임원 등에 대한 조치내용 통보) 금융위원회(제52조에 따라 조치를 하거나 조치를 할 것을 요구할 수 있는 금융감독원장을 포함한다)는 금융상품판매업자등의 퇴임한 임원 또는 퇴직한 직원이 재임 또는 재직 중이었더라면 제52조에 따른 조치를 받았을 것으로 인정되는 경우에는 그 받았을 것으로 인정되는 조치의 내용"
+              "snippet": "<분쟁사례> 실제 중고차 가치보다 과도한 대출을 실행하였는지에 대한 분쟁 사례 < 민원유형 : 여신전문 – 담보 – 담보제도 ▣ 민원내용 여신전문금융회사(캐피탈 등, 이하 ‘여전사’)가 중고차 담보대출을 취급하는 과정에서 담보 차량에 사고 이력이 있었는데도 담보 평가를 소홀히 하여 실제 가치에 비해 과다한 대출을 실행한 "
             },
             {
               "rank": 5,
-              "doc_id": "c05b64e01f66",
-              "chunk_id": "c05b64e01f66-p7-c1",
-              "doc_type": "product",
-              "path": "local:products/savings/KB청년미래적금상품설명서.pdf",
-              "page": 7,
-              "section": "page:7",
-              "score": 0.1325,
+              "doc_id": "efd04f35e89d",
+              "chunk_id": "efd04f35e89d-c1",
+              "doc_type": "case",
+              "path": "kca:cases/kca/kca_1001099015.html",
+              "page": 1,
+              "section": "변액유니버셜보험의 연금보험으로 전환 요구",
+              "score": 0.1989,
               "match_type": "full_text",
-              "effective_from": "2026-06-22",
-              "effective_to": "2028-05-31",
-              "snippet": "(계속) 정부기여금 ▪ 정부기여금의 산정 ① 정부기여금은 가입신청(가입자격조회신청) 시 실시하는 개인소득 확인결과에 따라 매칭비율이 결정되어 만기까지 적용 ② 정부기여금 산정 기준금액은 청년미래적금의 매월 및 연간 저축한도 적용 ▪ 우대형 소득요건에 해당하는 중소기업 재직자, 신규 취업자 ① [표 1]의 중소기업은 「중소"
+              "effective_from": null,
+              "effective_to": null,
+              "snippet": "[사건개요] 신청인은 2005. 5. 16. 피신청인의 무배당○○변액유니버셜보험을 가입하여 유지하던 중 투자실적 등이 좋지 않아 보험료 납입을 중단한 상황에서 일반연금보험으로 전환을 요청하자, 피신청인은 약관 내용에 없는 계약 후 7년이 경과하지 않았다는 이유로 이를 거부함. [당사자주장] 가. 신청인(소비자) 신청인은 "
             }
           ]
         },
@@ -175,6 +101,9 @@
           "label": "cases",
           "query": "대출 만기 연장했더니 금리가 갑자기 너무 많이 올랐어요",
           "expected_doc_id": "01c1817ae095",
+          "acceptable_doc_ids": [
+            "01c1817ae095"
+          ],
           "top_results": [
             {
               "rank": 1,
@@ -253,88 +182,18 @@
     {
       "label": "products",
       "n": 20,
-      "hits": 19,
-      "misses": 1,
-      "recall": 0.95,
-      "miss_details": [
-        {
-          "label": "products",
-          "query": "예금거래기본약관에서 예금주는 어떻게 정의되나요",
-          "expected_doc_id": "41b2b8383a71",
-          "top_results": [
-            {
-              "rank": 1,
-              "doc_id": "4e8137fa6fa6",
-              "chunk_id": "4e8137fa6fa6-p1-c1",
-              "doc_type": "product",
-              "path": "local:products/deposit/예금거래기본약관20250207.pdf",
-              "page": 1,
-              "section": "제1조(적용범위)",
-              "score": 0.85,
-              "match_type": "full_text",
-              "effective_from": null,
-              "effective_to": null,
-              "snippet": "예금거래기본약관 이 예금거래기본약관(이하 “이 약관”이라 합니다)은 주식회사 국민은행(이하 “은행”이라 합니다)과 거래처 (또는 예금주)가 서로 믿음을 바탕으로 예금거래를 빠르고 틀림없이 처리하는 한편, 서로의 이해관계를 합 리적으로 조정하기 위하여 기본적이고 일반적인 사항을 정한 것입니다. 은행은 이 약관을 영업점에 놓"
-            },
-            {
-              "rank": 2,
-              "doc_id": "c96654dd4ae6",
-              "chunk_id": "c96654dd4ae6-p2-c1",
-              "doc_type": "product",
-              "path": "local:products/deposit/예금거래기본약관_5586329411498782 (1).pdf",
-              "page": 2,
-              "section": "제7조(예금이 되는 시기)",
-              "score": 0.85,
-              "match_type": "full_text",
-              "effective_from": null,
-              "effective_to": null,
-              "snippet": "할 수 있습니다. ② 거래처는 현금이나 증권으로 계좌송금(거래처가 개설점 이외에서 자기 계좌에 입금하거나, 제3자가 개설점 또는 다른 영업점이나, 다른 금융기관에서 거래처 계좌에 입금하는 것) 하거나, 계좌 이체(거래 처의 신청에 따라 은행이 특정계좌에서 자금을 출금하여 같은 은행 또는 다른 은행의 다른 계좌에 입 금하는"
-            },
-            {
-              "rank": 3,
-              "doc_id": "f881da33b78f",
-              "chunk_id": "f881da33b78f-p2-c2",
-              "doc_type": "product",
-              "path": "local:products/deposit/예금거래기본약관20250207 (16).pdf",
-              "page": 2,
-              "section": "제7조(예금이 되는 시기)",
-              "score": 0.85,
-              "match_type": "full_text",
-              "effective_from": null,
-              "effective_to": null,
-              "snippet": "바꾼 이율을 적용합니다. ④ 변동이율을 적용하는 거치식·적립식예금은 최초 거래시 이율적용방법을 통장, 전산통신기기 등으로"
-            },
-            {
-              "rank": 4,
-              "doc_id": "e4a7cc721de8",
-              "chunk_id": "e4a7cc721de8-p1-c1",
-              "doc_type": "product",
-              "path": "local:products/deposit/외화예금거래기본약관_8330999660887375.pdf",
-              "page": 1,
-              "section": "page:1",
-              "score": 0.2405,
-              "match_type": "full_text",
-              "effective_from": null,
-              "effective_to": null,
-              "snippet": "「외화예금거래기본약관」 이 약관은 예금주와 국민은행(이하 \"은행\"이라 한다)과의 외화예금거래에 적용되며 은행은 이 약관을 모든 영업점에 비치하고 예금주는 영업시간 중 언제나 이 약관을 열람하거나 그 사본교부를 신청할 수 있다. 제 1 장 외화예금 총칙 제 1 조 적용범위 이 약관은 다음 각 호의 거래에 적용하기로 한다. "
-            },
-            {
-              "rank": 5,
-              "doc_id": "4e8137fa6fa6",
-              "chunk_id": "4e8137fa6fa6-p3-c1",
-              "doc_type": "product",
-              "path": "local:products/deposit/예금거래기본약관20250207.pdf",
-              "page": 3,
-              "section": "제9조의2(휴면예금 및 출연)",
-              "score": 0.85,
-              "match_type": "full_text",
-              "effective_from": null,
-              "effective_to": null,
-              "snippet": "표시하며, 변동이율을 적용하는 적립식예금은 이율을 바꾼 때마다 바뀐 이율을 통장에 기록하거나 전산 통신기기 등으로 안내합니다. ⑤ 거래처가 실제 받는 이자는 제1항에 따라 셈한 이자에서 소득세법 등 관계법령에 따라 원천징수한 세액을 뺀 금액입니다. 제9조의2(휴면예금 및 출연) ① 은행은 예금이 다음 각 호에 해당할 때에"
-            }
-          ]
-        }
-      ]
+      "hits": 20,
+      "misses": 0,
+      "recall": 1.0,
+      "miss_details": []
+    },
+    {
+      "label": "guides",
+      "n": 6,
+      "hits": 6,
+      "misses": 0,
+      "recall": 1.0,
+      "miss_details": []
     }
   ]
 }

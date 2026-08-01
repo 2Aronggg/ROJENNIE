@@ -20,7 +20,7 @@ from typing import Any
 
 from server.rag.embeddings import embed_query
 from server.rag.retrieval import SearchIndex
-from server.tests.evaluate_retrieval import CASES, PRODUCTS
+from server.tests.evaluate_retrieval import CASES, GUIDES, PRODUCTS, acceptable_doc_ids
 
 
 def _preview(text: str, limit: int = 180) -> str:
@@ -54,6 +54,8 @@ def _doc_type_from_path(path: str) -> str:
         return "regulation"
     if normalized.startswith("dictionary/"):
         return "glossary"
+    if normalized.startswith("guides/"):
+        return "guide"
     return "unknown"
 
 
@@ -71,7 +73,8 @@ def analyze_items(
     for query, expected_doc_id in items:
         vector = embed_query(query) if use_hybrid else None
         results = index.search(query, as_of=date.today(), top_k=top_k, query_embedding=vector)
-        found_rank = next((rank for rank, result in enumerate(results, start=1) if result.doc_id == expected_doc_id), None)
+        expected_doc_ids = acceptable_doc_ids(expected_doc_id)
+        found_rank = next((rank for rank, result in enumerate(results, start=1) if result.doc_id in expected_doc_ids), None)
         if found_rank is not None:
             hits += 1
             continue
@@ -81,6 +84,7 @@ def analyze_items(
                 "label": label,
                 "query": query,
                 "expected_doc_id": expected_doc_id,
+                "acceptable_doc_ids": sorted(expected_doc_ids),
                 "top_results": [_result_dict(result, rank) for rank, result in enumerate(results, start=1)],
             }
         )
@@ -137,6 +141,7 @@ def main() -> None:
     sections = [
         analyze_items(index, "cases", CASES, top_k=args.top_k, use_hybrid=args.hybrid),
         analyze_items(index, "products", PRODUCTS, top_k=args.top_k, use_hybrid=args.hybrid),
+        analyze_items(index, "guides", GUIDES, top_k=args.top_k, use_hybrid=args.hybrid),
     ]
     total_n = sum(section["n"] for section in sections)
     total_hits = sum(section["hits"] for section in sections)
