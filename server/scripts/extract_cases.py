@@ -11,22 +11,28 @@ from xml.etree import ElementTree
 
 import olefile
 
+from server.agents.router import PRODUCT_KEYWORDS
+
 
 PARA_TEXT = 0x43
-PRODUCT_RE = re.compile(r"^\(([^)]+)\)")
 
 
 def _clean_text(value: str) -> str:
     return re.sub(r"[ \t]+", " ", value).strip()
 
 
-def _product_from_name(name: str) -> str:
-    match = PRODUCT_RE.match(name)
-    if match:
-        return match.group(1)
-    if "대출" in name:
-        return "대출"
-    return ""
+def _classify_product(text: str) -> str | None:
+    return next((product for product, keywords in PRODUCT_KEYWORDS if any(k in text for k in keywords)), None)
+
+
+def _product_for_case(title: str, text: str) -> str:
+    """Bank case filenames prefix an issuer type like "(은행)", not a product -
+    a 은행 case can just as easily be about a loan or a deposit. Classify from
+    the actual content instead, title first since it names the core subject
+    more precisely than a full-text scan (which often also mentions a related
+    product only in passing, e.g. a deposit-seizure case that mentions the
+    loan default which triggered it)."""
+    return _classify_product(title) or _classify_product(text) or "공통"
 
 
 def _decompress_body(data: bytes) -> bytes:
@@ -112,7 +118,7 @@ def write_cases(input_dir: Path, output: Path) -> int:
             "source_file": path.name,
             "format": path.suffix.lower().lstrip("."),
             "title": path.stem,
-            "product": _product_from_name(path.name),
+            "product": "",
             "text": "",
             "status": "ok",
             "error": "",
@@ -124,6 +130,7 @@ def write_cases(input_dir: Path, output: Path) -> int:
         except Exception as exc:  # keep one bad source from losing all cases
             row["status"] = "error"
             row["error"] = f"{type(exc).__name__}: {exc}"
+        row["product"] = _product_for_case(row["title"], row["text"])
         rows.append(row)
 
     output.parent.mkdir(parents=True, exist_ok=True)
