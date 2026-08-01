@@ -1,4 +1,12 @@
 .env
-.env.*
-*.env
-docs/.env
+.venv/
+server/*.sqlite3
+server/**/*.sqlite3
+__pycache__/
+*.py[cod]
+client/node_modules/
+client/dist/
+
+# Regenerate these local RAG artifacts with server.build_corpus.
+data/corpus/*.jsonl
+data/complaints/**/complaints.jsonl

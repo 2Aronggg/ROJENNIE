@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-07-30T14:24:33.115940+00:00",
+  "generated_at": "2026-07-30T17:36:33.488517+00:00",
   "embedding_status": "not_generated",
   "retrieval": "full_text_with_optional_vector_score",
   "corpora": {
-    "regulations": 63610,
-    "products": 846,
+    "regulations": 63620,
+    "products": 941,
     "cases": 12,
     "glossary": 538
   },
   "documents": {
-    "regulations": 138,
-    "products": 127,
+    "regulations": 139,
+    "products": 136,
     "cases": 12,
     "glossary": 1
   },
-  "total_chunks": 65006,
+  "total_chunks": 65111,
   "authoritative_for_decision": [
     "regulations",
     "products",
