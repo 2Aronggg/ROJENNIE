@@ -4,10 +4,12 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
+    "demo": "node serve-demos.mjs",
     "dev": "vite --host 0.0.0.0",
     "build": "vite build"
   },
   "devDependencies": {
+    "playwright": "^1.62.1",
     "vite": "^7.0.0"
   },
   "dependencies": {
