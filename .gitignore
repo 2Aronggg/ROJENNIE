@@ -25,3 +25,5 @@ python-3.12.5-amd64.exe
 python-install.log
 server/rag/chunks.jsonl
 >>>>>>> e11d3ba8296a3fd7ba7d6143abed7de0bbda7be6
+
+.claude/settings.local.json
