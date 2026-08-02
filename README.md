@@ -1,126 +1,100 @@
 # KB Key Buddy
 
-금융 소비자의 복합 민원을 이해하고, 사용자의 **내 금융정보**, 약관·상품설명서·사례 RAG, Finance MCP를 함께 확인해 처리 결과와 후속 절차를 안내하는 금융 소비자 보호 에이전트입니다.
+**예금·적금·대출 민원을 입력하면, 내 계좌 기록과 현행 규정을 대조해 근거와 함께 답합니다.**
 
-현재 MVP는 예금·적금·대출을 지원하며, 실제 은행 내부 시스템 대신 로컬 Mock Bank와 Finance MCP를 사용합니다.
+금융 소비자가 겪은 문제를 민원 단위로 나누고, 사용자의 실제 계약·거래 이력과 규정·약관·분쟁조정 사례를 함께 확인해서 "무엇이 확인됐고 무엇이 부족한지"를 근거와 함께 알려주는 서비스입니다.
 
-현재 코드 기준 아키텍처는 [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md), 구현 과정과 시행착오는 [docs/IMPLEMENTATION_HISTORY.md](docs/IMPLEMENTATION_HISTORY.md)를 참고하세요.
+## 하는 것 / 하지 않는 것
 
-### 저장소 구성
+| 한다 | 하지 않는다 |
+|---|---|
+| 복합 민원을 상품별 이슈로 분리 | 법적 책임·배상 여부 확정 |
+| 내 계약·거래·금리·안내 이력과 대조 | 민원 자동 접수·외부 제출 |
+| 현행 규정·약관·사례에서 근거 검색 | 계좌·계약 변경 |
+| 근거를 인용한 리포트 생성 | 사건 당시(과거) 규정 기준 판단 |
+| 정보가 부족하면 되묻고, 위험하면 사람에게 넘김 | 법률 자문 |
 
-- `server/finance/mock_bank.sqlite3`: 데모용 가상 고객·계약·거래·상환·금리·안내 이력을 저장하는 로컬 SQLite 파일입니다.
-- 위 데이터는 실제 고객이나 실제 은행 내부 데이터가 아니며, 현재 가상 고객 `CUST-001`에 연결됩니다.
-- `Finance MCP`는 이 SQLite를 직접 노출하지 않고 읽기 전용 금융 Tool로 감쌉니다.
-- 로컬 단일 프로세스 데모라면 SQLite로 충분하지만, 실제 배포를 전제로 하면 `Supabase` 연결이 필요합니다. 다중 사용자 로그인, 서버 재시작 후 민원·검토·감사 로그 보존, 여러 인스턴스 간 공유를 담당하게 합니다.
-- 첫 단계에서는 민원·리포트·검토·감사 로그와 사용자 정보만 Supabase로 옮기고, 가상 금융 원장과 RAG 원천 문서·corpus는 기존 저장 방식을 유지할 수 있습니다.
-- Supabase로 이전하더라도 RAG 원천 문서·corpus는 별도 관리하고, 에이전트가 사용하는 Finance MCP Tool 계약은 유지합니다.
+지원 상품은 **예금·적금·대출**입니다. 보험·카드·상조 등은 범위 밖임을 명시적으로 안내합니다.
 
-## 서비스 소개
+근거 검색은 **오늘 시행 중인 규정**을 기준으로 합니다. 과거 시점 기준 판단은 지원하지 않습니다(필요해지면 `build_corpus --keep-expired`로 과거 개정판까지 포함한 corpus를 다시 만들 수 있습니다).
 
-KB Key Buddy는 금융 소비자가 겪은 복합적인 금융 문제를 민원 단위로 나누고, 내 금융정보와 관련 규정·약관·판례를 함께 확인해 이해하기 쉬운 처리 결과를 제공하는 서비스입니다.
-
-주요 기능:
-
-- 예금·적금·대출 관련 복합 민원 자동 분류
-- 사용자의 금융 계약·거래·금리·상환 정보 확인
-- 사건 발생 시점에 맞는 규정·약관·상품설명서·사례 검색
-- 근거 자료를 확인할 수 있는 민원 리포트 생성
-- 민원 흐름을 한눈에 보는 트리 UI와 상담 화면
-- 금융 용어를 쉽게 설명하는 사전 기능
-- 완료 민원, 진행 상태, 내 금융 상황을 확인하는 마이 페이지
-
-처리 결과는 `민원내용`, `처리결과`, `소비자 유의사항`, `후속 절차`로 구성하며, 법적 책임이나 배상 여부를 임의로 확정하지 않고 필요한 경우 추가 확인 또는 상담원 검토로 연결합니다.
-
-## 핵심 구조
+## 처리 흐름
 
 ```text
-사용자 로그인·내 금융정보 조회 동의
-        ↓
-사용자 문의 입력
-        ↓
-Case Builder Agent
- ├─ Issue Splitter
- ├─ Focal Builder
- └─ 필수 사실 추출
-        ↓
-FastAPI 오케스트레이터
-        ↓
-Finance MCP Server
- ├─ 내 금융정보 조회
- ├─ 거래·금리·안내 이력 조회
- ├─ 대출·상환 정보 조회
- └─ 이자 계산
-        ↓
-Evidence & Decision Agent
- ├─ 사용자 진술·내 금융정보 대조
- ├─ RAG 후보 관련성 검증
- ├─ 시점 기반 규정·약관 RAG
- └─ Logic Verification
-        ↓
-Deterministic Policy Gate
- ├─ proceed: 판단 가능
- ├─ ask: 핵심 정보 추가 확인
- ├─ amend: 입력·증빙 보완
- └─ hold: 고위험·전문가 검토
-        ↓
-Response Agent
- ├─ 민원내용
- ├─ 처리결과
- ├─ 소비자 유의사항
- └─ 제출 서류·후속 절차
+민원 입력
+  → 이슈 분리          Case Builder (LLM, 실패 시 규칙 기반)
+  → 내 금융정보 조회    Finance MCP → Mock Bank
+  → 근거 검색          형태소 기반 텍스트 + 벡터 하이브리드 RAG
+  → 논리 검증          근거가 결론을 실제로 뒷받침하는지 확인
+  → 판단               Decision Gate (LLM 아님, 결정적 규칙)
+  → 리포트             민원내용·처리결과·유의사항·후속절차
 ```
 
-MCP는 새 에이전트가 아닙니다. 기존 조회·검색·계산 함수를 LLM이 호출할 수 있도록 연결하는 도구 계층입니다. RAG의 원천 문서는 계속 `data/`에 있고, `search_evidence` MCP Tool이 기존 RAG 검색 함수를 호출합니다.
+판단 상태는 `proceed`(안내 가능) / `ask`(추가 확인 필요) / `amend`(개인정보 정리 필요) / `hold`(사람 검토)이며, **LLM은 문장만 쓰고 이 상태를 뒤집지 못합니다.**
 
-## MCP Tools
+## 안전 장치
 
-초기 Finance MCP는 읽기 전용으로 구성합니다.
-
-```text
-get_my_profile()
-get_my_products()
-get_my_transactions(account_id)
-get_my_rate_history(account_id)
-get_my_notice_history(account_id)
-search_evidence(query, product_type)
-get_evidence(evidence_id)
-calculate_interest(principal, rate, days, tax_rate)
-```
-
-고객 ID는 LLM이나 사용자가 입력하지 않습니다. 로그인 세션의 가상 고객 `CUST-001`을 서버가 연결하고, MCP는 현재 사용자의 `/me` 범위만 조회합니다.
-
-## 리포트 원칙
-
-- 사용자가 이미 입력한 금액·금리·기간은 다시 묻지 않습니다.
-- 내 금융정보에 없고 문의에도 없는 핵심 값만 `ask`로 질문합니다.
-- RAG 검색 후보는 노드로 분리하지 않고 리포트의 `판단 근거`에 묶습니다.
-- 사용자 화면에는 검색 점수·검색 방식·내부 chunk ID를 노출하지 않습니다.
-- 근거를 클릭하면 문서명·페이지·조항·짧은 인용문을 상세 표시합니다.
-- 최종 리포트는 `민원내용 / 처리결과 / 소비자 유의사항` 형식으로 생성합니다.
+- **Decision Gate가 결정적 로직**: 법적 책임·배상 같은 판단은 규칙이 정하고 LLM은 관여하지 않습니다.
+- **LLM Policy Gateway**: 모든 LLM 호출 전후로 주민번호·계좌번호·카드번호·연락처를 마스킹하고 감사 로그를 남깁니다.
+- **컴플라이언스 후처리**: "배상 얼마 받을 수 있다" 같은 단정을 프롬프트 지시가 아니라 출력 필터로 실제 차단하고, 걸리면 안전한 문구로 대체합니다.
+- **LLM 실패 시 규칙 기반 fallback**: Gemini 장애에도 서비스가 멈추지 않습니다. 관리자 페이지에서 fallback 발생률을 모니터링합니다.
+- 사용자가 이미 말한 값은 다시 묻지 않고, 화면에 검색 점수·내부 chunk ID를 노출하지 않습니다.
 
 ## 데이터
 
-- 금융 규정·약관·상품설명서·판례: `data/`의 RAG 원천 문서
-- 민원 JSON·CSV: Issue Splitter 평가와 회귀 테스트용
-- 가상 고객·계약·거래: 서버 Mock 데이터
-- 대출 계약·상환·금리·안내 이력: 서버 Mock 데이터와 Finance MCP
+| 종류 | 출처 | 규모 |
+|---|---|---|
+| 법령·가이드라인 | 국가법령정보센터, 금융위 | 현행 12개 문서 |
+| 상품설명서·약관 | KB국민은행 | 135개 문서 |
+| 분쟁조정 사례·판례 | 금융감독원, 한국소비자원, 법제처 | 29건 |
+| 가상 고객·계약·거래 | 자체 생성 (SQLite) | 고객 1명 |
+
+실제 고객정보·계좌번호·주민번호는 사용하지 않습니다. Mock Bank는 가상 고객 `CUST-001` 한 명의 합성 데이터만 가집니다.
+
+검색 성능은 자체 평가셋 42문항 기준 **recall@5 97.6%** 입니다(`server/tests/evaluate_retrieval.py`). 상품 라우팅은 AIHub 실제 상담 데이터로 검증했습니다(`server/tests/evaluate_aihub.py`).
+
+## 실행
+
+```bash
+# 서버
+python -m pip install -r server/requirements.txt
+python -m uvicorn server.app:app --reload
+
+# 클라이언트 (별도 터미널)
+cd client && npm install && npm run dev
+```
+
+`.env`에 `GEMINI_API_KEY`가 없으면 전 단계가 규칙 기반으로 동작합니다. 자세한 실행 방법은 [server/README.md](server/README.md), [client/README.md](client/README.md)를 참고하세요.
+
+corpus를 다시 만들려면 (원천 문서를 추가·수정했을 때):
+
+```bash
+python -m server.rag.ingest --data-dir data --output server/rag/chunks.jsonl
+python -m server.rag.embed_corpus   # Gemini API 비용 발생
+python -m server.rag.build_corpus
+```
 
 ## 디렉터리
 
 ```text
-client/             React Flow 화면과 API 연동
-server/             FastAPI, 파이프라인, Mock 데이터, MCP 연결
-server/agents/       Case Builder·RAG·검증·결정·응답 모듈
+client/              React 제품 화면 (index.html)
+client/demo/         에이전트별 데모 페이지
+server/app.py        FastAPI 오케스트레이터
+server/agents/       이슈 분리·검색어·논리검증·결정·리포트
 server/policy/       LLM 호출 정책 게이트
-server/mcp/finance/  읽기 전용 금융 Tool 서버·클라이언트
-data/               RAG 원천 문서와 평가 데이터
-docs/               PRD·현재 아키텍처·구현 이력
+server/rag/          청킹·임베딩·검색
+server/mcp/finance/  읽기 전용 금융 Tool
+server/tests/        회귀 테스트 + 성능 평가 스크립트
+data/                RAG 원천 문서, corpus, 평가 데이터
+docs/                아키텍처·기술 평가·TODO
 ```
 
-## 실행
+## 문서
 
-서버 실행은 [server/README.md](server/README.md), 클라이언트 실행은 [client/README.md](client/README.md)를 참고합니다.
+- [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) — 현재 코드 기준 구조
+- [docs/TECHNICAL_EVALUATION.md](docs/TECHNICAL_EVALUATION.md) — 데이터·설계·개선 과정의 근거와 측정치
+- [docs/TODO.md](docs/TODO.md) — 앞으로 할 일
 
 ## 주의
 
-이 서비스는 금융회사나 금융감독기관의 최종 판단, 법률 자문, 민원 자동 접수를 대신하지 않습니다. 외부 제출·계약 변경·계좌 변경은 수행하지 않으며, 최종 판단은 정식 금융 민원 절차를 통해 확인해야 합니다.
+이 서비스는 금융회사나 금융감독기관의 최종 판단, 법률 자문, 민원 자동 접수를 대신하지 않습니다. 최종 판단은 정식 금융 민원 절차(금융감독원 분쟁조정 등)를 통해 확인해야 합니다.

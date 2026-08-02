@@ -4,7 +4,7 @@ import argparse
 import csv
 import hashlib
 import json
-from datetime import datetime, timezone
+from datetime import date, datetime, timezone
 from pathlib import Path
 
 from .ingest import _chunks, iter_document_chunks
@@ -170,13 +170,31 @@ def _embeddings_cache(path: Path) -> dict[str, list[float]]:
     return cache
 
 
+def _is_expired(chunk: DocumentChunk, as_of: date) -> bool:
+    return bool(chunk.effective_to and chunk.effective_to < as_of)
+
+
 def build_corpus(
     data_dir: Path,
     chunks_path: Path,
     output_dir: Path,
     *,
     embeddings_path: Path = Path("server/rag/embeddings.jsonl"),
+    keep_expired: bool = False,
 ) -> dict[str, object]:
+    """Build the retrieval corpora from ingested chunks.
+
+    By default expired regulation versions are dropped. They were 97% of the
+    corpus (64,218 of 65,764 chunks, only 1,470 still in force) and existed
+    only so a complaint about a past event could cite the rule that applied
+    back then - a case the product does not currently promise. Carrying them
+    cost ~95s of index build on every server start plus GB-scale memory, which
+    is what made the service undeployable on serverless hosting.
+
+    Pass keep_expired=True to rebuild the full historical corpus if
+    point-in-time answers become a supported feature.
+    """
+    as_of = date.today()
     chunks = load_jsonl(chunks_path) if chunks_path.exists() else list(iter_document_chunks(data_dir))
     grouped: dict[str, list[dict[str, object]]] = {
         "regulations": [],
@@ -185,10 +203,15 @@ def build_corpus(
         "guides": [],
         "glossary": [],
     }
+    dropped_expired = 0
     for chunk in chunks:
         corpus = _bucket(chunk.path)
-        if corpus in grouped:
-            grouped[corpus].append(_record(chunk, corpus))
+        if corpus not in grouped:
+            continue
+        if not keep_expired and _is_expired(chunk, as_of):
+            dropped_expired += 1
+            continue
+        grouped[corpus].append(_record(chunk, corpus))
     grouped["cases"].extend(_case_records(data_dir))
     grouped["guides"].extend(_guide_records(data_dir))
     grouped["glossary"].extend(_glossary_records(data_dir))
@@ -234,6 +257,9 @@ def build_corpus(
         "embedded_chunks": embedded_count,
         "tokenized_chunks": tokenized_count,
         "retrieval": "full_text_with_optional_vector_score",
+        "effective_scope": "as_of_build_date" if not keep_expired else "all_versions",
+        "built_as_of": as_of.isoformat(),
+        "dropped_expired_chunks": dropped_expired,
         "corpora": counts,
         "documents": documents,
         "total_chunks": len(all_records),
@@ -255,9 +281,20 @@ def main() -> None:
     parser.add_argument("--chunks", type=Path, default=Path("server/rag/chunks.jsonl"))
     parser.add_argument("--output-dir", type=Path, default=Path("data/corpus"))
     parser.add_argument("--embeddings", type=Path, default=Path("server/rag/embeddings.jsonl"))
+    parser.add_argument(
+        "--keep-expired",
+        action="store_true",
+        help="keep superseded regulation versions (needed only for point-in-time answers)",
+    )
     args = parser.parse_args()
     print(json.dumps(
-        build_corpus(args.data_dir, args.chunks, args.output_dir, embeddings_path=args.embeddings),
+        build_corpus(
+            args.data_dir,
+            args.chunks,
+            args.output_dir,
+            embeddings_path=args.embeddings,
+            keep_expired=args.keep_expired,
+        ),
         ensure_ascii=False,
         indent=2,
     ))
