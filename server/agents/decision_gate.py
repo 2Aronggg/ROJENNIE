@@ -12,7 +12,7 @@ from server.schemas import DecisionAuditLog, IssueAnalysis, Decision
 LOGGER = logging.getLogger(__name__)
 
 CONTROL_PRIORITY = {"proceed": 0, "ask": 1, "amend": 2, "hold": 3}  # PRD 12장: hold > amend > ask > proceed
-HIGH_RISK_ISSUES = {"명의도용"}
+HIGH_RISK_ISSUES = {"명의도용", "지원상품아님"}
 HOLD_RISK_FLAGS = {
     "fact_conflict",
     "identity_theft",
