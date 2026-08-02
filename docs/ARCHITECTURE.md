@@ -154,10 +154,10 @@ mock 금융 데이터에서 생성된 fact는 사용자가 말한 것이 아니�
 
 | 구분 | Recall@5 |
 | --- | --- |
-| cases | 93.8% (15/16) |
+| cases | 100.0% (16/16) |
 | products | 100.0% (20/20) |
 | guides | 100.0% (6/6) |
-| 전체 | 97.6% (41/42) |
+| 전체 | 100.0% (42/42) |
 
 ### 6-4. Logic Verification
 
@@ -267,7 +267,7 @@ LLM이 해서는 안 되는 일:
 현재 검증 요약:
 
 - retrieval 평가셋: 42문항
-- 전체 Recall@5: 97.6%
+- 전체 Recall@5: 100.0%
 - 테스트 수: 75개
 - `test_facts.py`: source_type provenance 검증
 - `test_logic_audit.py`: 근거 없음/유사 사례-only proceed 차단 검증

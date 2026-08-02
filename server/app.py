@@ -546,7 +546,31 @@ def _analyze_issue(
     # 버려진다 - 감사 가능성(체크리스트 3번)이 실제로 성립하려면 저장까지 돼야 한다.
     if gate.audit_log is not None:
         _record_audit(case_id, "decision_gate", "system", gate.audit_log.model_dump(mode="json"))
-    return result.model_copy(update={"report": compose_issue_report(result, use_llm=use_llm_report)})
+    report = compose_issue_report(result, use_llm=use_llm_report)
+    if report.compliance_blocked:
+        risk_flags = list(dict.fromkeys([*result.decision.risk_flags, "compliance_blocked"]))
+        new_decision = Decision(
+            control="ask" if result.decision.control == "proceed" else result.decision.control,
+            risk_flags=risk_flags,
+        )
+        updates: dict[str, object] = {
+            "report": report,
+            "decision": new_decision,
+        }
+        _record_audit(
+            case_id,
+            "report_compliance_blocked",
+            "system",
+            {
+                "issue_id": result.issue_id,
+                "previous_control": result.decision.control,
+                "control": new_decision.control,
+                "flags": report.compliance_flags,
+                "reason": report.compliance_reason,
+            },
+        )
+        return result.model_copy(update=updates)
+    return result.model_copy(update={"report": report})
 
 
 def _mock_issue_view(issue: IssueInput, customer_data: dict[str, object] | None) -> dict[str, object]:

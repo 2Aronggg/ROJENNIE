@@ -20,6 +20,10 @@ class PolicyDenied(RuntimeError):
     """Raised when an LLM request fails the local policy check."""
 
 
+class ComplianceViolation(ValueError):
+    """Raised when LLM output crosses legal or compensation claim boundaries."""
+
+
 @dataclass(frozen=True)
 class PolicyDecision:
     allowed: bool
@@ -221,7 +225,7 @@ class LLMPolicyGateway:
         if not safe_text.strip():
             raise ValueError("LLM returned no structured output")
         if contains_forbidden_claim(safe_text):
-            raise ValueError("LLM output failed compliance validation")
+            raise ComplianceViolation("LLM output failed compliance validation")
         try:
             json.loads(safe_text)
         except json.JSONDecodeError as exc:

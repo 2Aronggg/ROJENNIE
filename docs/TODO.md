@@ -14,7 +14,7 @@
 - Evidence-Conclusion Audit Layer 도입
 - Decision Gate에 unsupported/unverified claim 제동 추가
 - Report Composer 금지 표현 필터 추가
-- retrieval 평가 42문항 기준 97.6% 확인
+- retrieval 평가 42문항 기준 100.0% 확인
 - 주요 문서 인코딩 정상화
 
 ## 2. 제출 전 우선순위

@@ -5,8 +5,8 @@
 ## 문서 상태
 
 - RAG 평가셋: 42문항
-- 전체 Recall@5: 97.6% (41/42)
-- 사례 문서 Recall@5: 93.8% (15/16)
+- 전체 Recall@5: 100.0% (42/42)
+- 사례 문서 Recall@5: 100.0% (16/16)
 - 상품 문서 Recall@5: 100.0% (20/20)
 - 가이드 문서 Recall@5: 100.0% (6/6)
 - corpus 규모: 65,764 chunks
@@ -64,10 +64,10 @@ python -m server.tests.evaluate_retrieval
 
 | 구분 | Recall@5 |
 | --- | --- |
-| cases | 15/16 = 93.8% |
+| cases | 16/16 = 100.0% |
 | products | 20/20 = 100.0% |
 | guides | 6/6 = 100.0% |
-| 전체 | 41/42 = 97.6% |
+| 전체 | 42/42 = 100.0% |
 
 현재 놓친 케이스:
 
@@ -79,8 +79,8 @@ python -m server.tests.evaluate_retrieval
 해석:
 
 - 상품 문서와 절차 안내 문서는 현재 평가셋에서 모두 top-5 안에 들어옵니다.
-- 사례 문서는 PDF 추출 방식 개선 후 87.5%에서 93.8%로 개선됐습니다.
-- 전체 평가는 42문항 기준 97.6%입니다.
+- 사례 문서는 PDF 추출과 형태소/intent 페널티 보정 후 87.5%에서 100.0%로 개선됐습니다.
+- 전체 평가는 42문항 기준 100.0%입니다.
 - 검색 성공이 곧 판단 정확도를 뜻하지 않기 때문에, Logic Verification 단계에서 근거-결론 지지 여부를 별도로 검사합니다.
 
 ## 3. Evidence-Conclusion Audit Layer
@@ -192,7 +192,7 @@ claim
 | --- | --- |
 | `server/tests/test_facts.py` | 3 passed |
 | `server/tests/test_logic_audit.py` | 3 passed |
-| retrieval 전체 평가 | 41/42 = 97.6% |
+| retrieval 전체 평가 | 42/42 = 100.0% |
 
 `test_logic_audit.py`가 검증하는 내용:
 

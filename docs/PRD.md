@@ -275,8 +275,8 @@ EvidenceRef는 최소 다음 값을 포함합니다.
 현재 기준:
 
 - RAG 평가셋: 42문항
-- 전체 Recall@5: 97.6%
-- cases Recall@5: 93.8%
+- 전체 Recall@5: 100.0%
+- cases Recall@5: 100.0%
 - products Recall@5: 100.0%
 - guides Recall@5: 100.0%
 - 테스트 수: 75개

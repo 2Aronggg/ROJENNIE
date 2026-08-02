@@ -8,7 +8,13 @@ from typing import Any
 from pydantic import BaseModel, Field
 
 from server.agents.router import _llm_enabled
-from server.policy.gateway import LLMPolicyGateway, sanitize_llm_text, sanitize_llm_texts
+from server.policy.gateway import (
+    ComplianceViolation,
+    LLMPolicyGateway,
+    contains_forbidden_claim,
+    sanitize_llm_text,
+    sanitize_llm_texts,
+)
 from server.schemas import IssueAnalysis, IssueReport
 
 
@@ -71,6 +77,7 @@ def compose_issue_report(
         if not response.text:
             raise ValueError("Gemini returned no report result")
         draft = LLMReportDraft.model_validate_json(response.text)
+        _validate_report_draft(draft)
         processing_result = _sanitize_text(draft.processing_result)
         reasoning = _sanitize_text(draft.reasoning) or processing_result
         actions = [item.strip() for item in draft.follow_up_actions if item.strip()][:5]
@@ -93,6 +100,9 @@ def compose_issue_report(
             generated_by="llm",
             ),
         )
+    except ComplianceViolation as exc:
+        LOGGER.warning("LLM report blocked by compliance policy; using fallback: %s", exc)
+        return _compliance_blocked_report(fallback, str(exc))
     except Exception as exc:
         LOGGER.warning("LLM report generation failed; using fallback: %s", exc)
         return fallback
@@ -126,6 +136,17 @@ def _fallback_report(issue: IssueAnalysis) -> IssueReport:
     ))
 
 
+def _compliance_blocked_report(report: IssueReport, reason: str) -> IssueReport:
+    return report.model_copy(
+        update={
+            "current_decision": DECISION_LABELS["ask"],
+            "compliance_blocked": True,
+            "compliance_flags": ["llm_output_forbidden_claim"],
+            "compliance_reason": reason,
+        }
+    )
+
+
 def _complaint_content(issue: IssueAnalysis) -> str:
     statement = next((fact.value for fact in issue.facts if fact.field == "user_statement"), None)
     return str(statement or issue.issue_type)
@@ -134,6 +155,19 @@ def _complaint_content(issue: IssueAnalysis) -> str:
 # 실제 필터 구현은 server/policy/gateway.py에 있다 - PII 마스킹(redact_pii)과
 # 나란히 두어, logic_verification.py 등 다른 LLM 호출부도 같은 패턴 목록을 쓰게 한다.
 _sanitize_text = sanitize_llm_text
+
+
+def _validate_report_draft(draft: LLMReportDraft) -> None:
+    values = [
+        draft.complaint_content,
+        draft.issue,
+        draft.processing_result,
+        draft.reasoning,
+        *draft.consumer_cautions,
+        *draft.follow_up_actions,
+    ]
+    if any(contains_forbidden_claim(value) for value in values):
+        raise ComplianceViolation("LLM report crossed compliance boundary")
 
 
 def _sanitize_cautions(values: list[str]) -> list[str]:

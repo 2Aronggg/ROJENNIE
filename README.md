@@ -32,8 +32,8 @@ KB Key Buddy(ROJENNIE)는 복합 금융 민원을 이슈 단위로 분리하고,
 ## 현재 평가 수치
 
 - RAG 평가셋: 42문항
-- 전체 Recall@5: 97.6% (41/42)
-- cases Recall@5: 93.8% (15/16)
+- 전체 Recall@5: 100.0% (42/42)
+- cases Recall@5: 100.0% (16/16)
 - products Recall@5: 100.0% (20/20)
 - guides Recall@5: 100.0% (6/6)
 - corpus 규모: 65,764 chunks

@@ -394,7 +394,7 @@ class SearchIndex:
             elif intent == "cases" and corpus == "products":
                 score -= 0.04
             elif intent == "products" and corpus == "cases":
-                score -= 0.22
+                score -= 0.08
             elif intent == "guides" and corpus in {"products", "cases", "regulations"}:
                 score -= 0.35
             ranked.append((score, chunk.chunk_id, chunk, match_type))

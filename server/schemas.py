@@ -119,6 +119,9 @@ class IssueReport(BaseModel):
     reasoning: str = ""
     follow_up_actions: list[str] = Field(default_factory=list)
     generated_by: Literal["llm", "fallback"] = "fallback"
+    compliance_blocked: bool = False
+    compliance_flags: list[str] = Field(default_factory=list)
+    compliance_reason: str = ""
 
 
 class SupportChain(BaseModel):

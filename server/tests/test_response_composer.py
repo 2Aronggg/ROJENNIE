@@ -117,5 +117,80 @@ class ResponseComposerTests(unittest.TestCase):
         self.assertEqual(view.issues[0].status, "amend")
         self.assertEqual(view.issues[0].masked_fields, ["account_number"])
 
+    def test_closing_dedupes_documents_for_shared_contract(self) -> None:
+        shared_facts = [
+            Fact(field="상품명", value="2025 정기예금", source_ref="user_input"),
+            Fact(field="가입일", value="2025-03-10", source_ref="user_input"),
+        ]
+        case = CaseAnalysis(
+            case_id="case_shared_contract",
+            prompt="같은 예금 계약에서 우대금리와 중도해지 수수료가 문제입니다.",
+            issues=[
+                IssueAnalysis(
+                    issue_id="issue_001",
+                    product="예금",
+                    issue_type="우대금리설명부족",
+                    focal={"type": "notice", "product_name": "2025 정기예금", "contract_date": "2025-03-10"},
+                    target={},
+                    facts=shared_facts,
+                    missing_facts=[],
+                    fact_resolution=FactResolution(),
+                    evidence_refs=[],
+                    decision=Decision(control="proceed", risk_flags=[]),
+                    next_steps=[],
+                ),
+                IssueAnalysis(
+                    issue_id="issue_002",
+                    product="예금",
+                    issue_type="중도해지위약금",
+                    focal={"type": "contract", "product_name": "2025 정기예금", "contract_date": "2025-03-10"},
+                    target={},
+                    facts=shared_facts,
+                    missing_facts=[],
+                    fact_resolution=FactResolution(),
+                    evidence_refs=[],
+                    decision=Decision(control="proceed", risk_flags=[]),
+                    next_steps=[],
+                ),
+            ],
+        )
+
+        view = compose_case_response(case)
+
+        self.assertEqual(len(view.closing["documents"]), 1)
+        self.assertIn("2025-03-10", view.closing["documents"][0])
+        self.assertEqual(view.closing["documents"][0].count("상품설명서"), 1)
+        self.assertIn("해지 신청 내역", view.closing["documents"][0])
+        self.assertIn("수수료 산정 내역", view.closing["documents"][0])
+
+    def test_missing_questions_use_specific_natural_language_templates(self) -> None:
+        case = CaseAnalysis(
+            case_id="case_missing_templates",
+            prompt="중도해지 수수료 설명이 부족했습니다.",
+            issues=[
+                IssueAnalysis(
+                    issue_id="issue_001",
+                    product="예금",
+                    issue_type="중도해지위약금",
+                    focal={"type": "contract"},
+                    target={},
+                    facts=[],
+                    missing_facts=["설명서 수령 여부", "위약금 또는 수수료 금액"],
+                    fact_resolution=FactResolution(),
+                    evidence_refs=[],
+                    decision=Decision(control="ask", risk_flags=["missing_facts"]),
+                    next_steps=[],
+                )
+            ],
+        )
+
+        view = compose_case_response(case)
+        questions = view.issues[0].missing_questions
+
+        self.assertEqual(questions[0].question, "상품설명서를 받았거나 확인했다는 기록이 있나요?")
+        self.assertEqual(questions[1].question, "차감된 위약금이나 수수료 금액을 알려주세요.")
+        self.assertFalse(any("을(를)" in item.question for item in questions))
+        self.assertTrue(all(item.reason != "검색 근거와 사실관계를 같은 민원에 연결하기 위해 필요합니다." for item in questions))
+
 if __name__ == "__main__":
     unittest.main()
