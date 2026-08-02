@@ -1,18 +1,35 @@
 {
+<<<<<<< HEAD
   "generated_at": "2026-08-02T06:47:19.035663+00:00",
   "embedding_status": "not_generated",
   "embedded_chunks": 0,
   "stem_status": "generated",
   "stemmed_chunks": 1065,
+=======
+  "generated_at": "2026-08-02T18:03:51.644460+00:00",
+  "embedding_status": "generated",
+  "embedded_chunks": 3249,
+  "tokenized_chunks": 3249,
+>>>>>>> e11d3ba8296a3fd7ba7d6143abed7de0bbda7be6
   "retrieval": "full_text_with_optional_vector_score",
+  "effective_scope": "as_of_build_date",
+  "built_as_of": "2026-08-03",
+  "dropped_expired_chunks": 61977,
   "corpora": {
+<<<<<<< HEAD
     "regulations": 64198,
     "products": 939,
     "cases": 125,
+=======
+    "regulations": 2302,
+    "products": 886,
+    "cases": 59,
+>>>>>>> e11d3ba8296a3fd7ba7d6143abed7de0bbda7be6
     "guides": 2,
     "glossary": 538
   },
   "documents": {
+<<<<<<< HEAD
     "regulations": 143,
     "products": 139,
     "cases": 49,
@@ -20,6 +37,15 @@
     "glossary": 1
   },
   "total_chunks": 65802,
+=======
+    "regulations": 16,
+    "products": 135,
+    "cases": 29,
+    "guides": 1,
+    "glossary": 1
+  },
+  "total_chunks": 3787,
+>>>>>>> e11d3ba8296a3fd7ba7d6143abed7de0bbda7be6
   "authoritative_for_decision": [
     "regulations",
     "products",

@@ -39,7 +39,7 @@ Case Builder
 
 - `pypdf` 기본 추출에서 판례 PDF의 띄어쓰기가 사라지는 문제를 발견했습니다.
 - `server/rag/ingest.py`에서 `extract_text(extraction_mode="layout")`로 변경했습니다.
-- cases Recall@5가 87.5%에서 93.8%로 개선됐습니다.
+- cases Recall@5가 87.5%에서 100.0%로 개선됐습니다.
 
 ## 4. Dedup과 Canonical 문서 정리
 
@@ -102,8 +102,8 @@ Case Builder
 ## 8. 현재 평가 결과
 
 - RAG 평가셋: 42문항
-- 전체 Recall@5: 97.6% (41/42)
-- cases Recall@5: 93.8% (15/16)
+- 전체 Recall@5: 100.0% (42/42)
+- cases Recall@5: 100.0% (16/16)
 - products Recall@5: 100.0% (20/20)
 - guides Recall@5: 100.0% (6/6)
 - corpus 규모: 65,764 chunks

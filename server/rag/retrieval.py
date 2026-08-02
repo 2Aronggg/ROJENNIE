@@ -13,16 +13,47 @@ from .morphology import extract_stems
 from ..schemas import DocumentChunk, EvidenceRef
 
 
-TOKEN_RE = re.compile(r"[\uac00-\ud7a3A-Za-z0-9]+")
 COMMON_PRODUCT = "\uacf5\ud1b5"
 RRF_K = 60
+# _compact()/_metadata_hints()\uac00 \ubb38\uc790\uc5f4 \uc555\ucd95\uc6a9\uc73c\ub85c\ub9cc \uc0ac\uc6a9 - \uac80\uc0c9 \ud1a0\ud070\ud654\ub294 kiwipiepy(_tokens).
+TOKEN_RE = re.compile(r"[\uac00-\ud7a3A-Za-z0-9]+")
 CASE_INTENT_TOKENS = {"case", "cases", "dispute", "판례", "사례", "분쟁", "조정", "청구", "보상"}
 PRODUCT_INTENT_TOKENS = {"상품", "약관", "특약", "설명서"}
 GUIDE_INTENT_TOKENS = {"안내", "민원", "접수", "칭찬", "불만", "처리", "회신", "홈페이지", "소비자보호", "영업일"}
 
+# \uba85\uc0ac\ub958(NNG/NNP/NNB/NR)\uc640 \uc678\ub798\uc5b4\u00b7\uc22b\uc790(SL/SN)\ub9cc \ub0a8\uae34\ub2e4. \uc870\uc0ac(JKS/JX/...)\ub098 \uc5b4\ubbf8\ub97c
+# \ud3ec\ud568\ud558\uba74 "\uc801\uae08\uc744"\uacfc "\uc801\uae08"\uc774 \ub2e4\ub978 \ud1a0\ud070\uc774 \ub418\uc5b4 \uc815\ud655 \uc77c\uce58 \uac80\uc0c9\uc774 \uae68\uc9c4\ub2e4 - \uc2e4\uce21\uc73c\ub85c
+# \ud655\uc778\ub41c \uc0c1\ud488\uc124\uba85\uc11c recall \uc800\ud558\uc758 \uc8fc\ub41c \uc6d0\uc778.
+_CONTENT_TAGS = frozenset({"NNG", "NNP", "NNB", "NR", "SL", "SN"})
+_kiwi = None
+
+
+def _kiwi_instance():
+    global _kiwi
+    if _kiwi is None:
+        from kiwipiepy import Kiwi
+
+        _kiwi = Kiwi(num_workers=-1)
+    return _kiwi
+
+
+def _morphs_to_tokens(morphs) -> set[str]:
+    return {morph.form.lower() for morph in morphs if morph.tag in _CONTENT_TAGS}
+
 
 def _tokens(text: str) -> set[str]:
-    return {token.lower() for token in TOKEN_RE.findall(text)}
+    """\uc9c8\uc758 \uc2dc\uc810 \ub4f1, \uc0ac\uc804 \uacc4\uc0b0\ub41c \ud1a0\ud070\uc774 \uc5c6\uc744 \ub54c \uc4f0\ub294 \ub2e8\uac74 \ud615\ud0dc\uc18c \ubd84\uc11d."""
+    return _morphs_to_tokens(_kiwi_instance().tokenize(text))
+
+
+def tokenize_many(texts: Sequence[str]) -> list[list[str]]:
+    """corpus \ube4c\ub4dc \uc2dc \ubc30\uce58\ub85c \ubbf8\ub9ac \uacc4\uc0b0\ud574 \uce90\uc2f1\ud558\uae30 \uc704\ud55c \uba40\ud2f0\uc2a4\ub808\ub4dc \ud1a0\ud070\ud654.
+
+    65,000\uac1c \uccad\ud06c\ub97c \uac74\ubcc4\ub85c tokenize()\ud558\uba74 \uc11c\ubc84 \uae30\ub3d9\ub9c8\ub2e4 3\ubd84 \ub118\uac8c \uac78\ub9b0\ub2e4
+    (\uc2e4\uce21). corpus \ube4c\ub4dc \uc2dc \ud55c \ubc88\ub9cc \uacc4\uc0b0\ud574 DocumentChunk.tokens\uc5d0 \uc800\uc7a5\ud574\ub450\uba74
+    SearchIndex.__init__\uc740 \uadf8 \uacb0\uacfc\ub97c \uadf8\ub300\ub85c \uc77d\uae30\ub9cc \ud574\uc11c \ube60\ub974\ub2e4.
+    """
+    return [sorted(_morphs_to_tokens(result)) for result in _kiwi_instance().tokenize(list(texts))]
 
 
 def _compact(text: str) -> str:
@@ -176,6 +207,9 @@ def reindex(data_dir: Path, output: Path) -> int:
     return write_jsonl(iter_document_chunks(data_dir), output)
 
 
+_NAME_SIGNAL_DOC_TYPES = frozenset({"product_manual", "rate_table"})
+
+
 class SearchIndex:
     def __init__(self, chunks: list[DocumentChunk], *, source: str = "memory"):
         self.chunks = chunks
@@ -190,8 +224,14 @@ class SearchIndex:
         self._token_index: dict[str, set[int]] = defaultdict(set)
         self._stem_index: dict[str, set[int]] = defaultdict(set)
         self._document_frequency: Counter[str] = Counter()
+        # 상품설명서는 폴더 단위 카테고리(예금/적금)만으로는 "KB 스타적금3"처럼
+        # 같은 카테고리의 다른 상품과 구분이 안 된다. ingest.py가 파일명에서 뽑은
+        # 상품명을 section에 채워두므로, 그 상품명 자체를 토큰화해 캐싱하고
+        # search()에서 별도 가중치를 준다. 상품 문서만 대상이라(전체의 1.4%) 매
+        # 기동마다 즉석 형태소 분석해도 무시할 만한 비용이다.
+        self._name_tokens: list[set[str] | None] = []
         for index, chunk in enumerate(chunks):
-            tokens = _tokens(chunk.text)
+            tokens = set(chunk.tokens) if chunk.tokens is not None else _tokens(chunk.text)
             metadata = _metadata_text(chunk)
             self._token_sets.append(tokens)
             self._metadata_token_sets.append(_tokens(metadata))
@@ -206,8 +246,15 @@ class SearchIndex:
             for token in tokens:
                 self._token_index[token].add(index)
                 self._document_frequency[token] += 1
+<<<<<<< HEAD
             for stem in stem_set:
                 self._stem_index[stem].add(index)
+=======
+            if chunk.doc_type in _NAME_SIGNAL_DOC_TYPES and chunk.section and not chunk.section.startswith("page:"):
+                self._name_tokens.append(_tokens(chunk.section))
+            else:
+                self._name_tokens.append(None)
+>>>>>>> e11d3ba8296a3fd7ba7d6143abed7de0bbda7be6
 
     def _active_indices(self, target: date) -> frozenset[int]:
         """Indices of chunks whose effective-date bounds include `target`.
@@ -387,6 +434,13 @@ class SearchIndex:
                 score += 0.18
             elif product and COMMON_PRODUCT in chunk.product:
                 score += 0.04
+            name_tokens = self._name_tokens[index]
+            if name_tokens:
+                name_overlap = query_tokens & name_tokens
+                if name_overlap:
+                    # 카테고리(예금/적금) 보너스보다 크게 줘서, 같은 카테고리
+                    # 안에서도 정확히 이름이 겹치는 상품이 확실히 위로 온다.
+                    score += 0.35 * (len(name_overlap) / len(name_tokens))
             score += metadata_score
             score += stem_score
             if intent == corpus:
@@ -394,7 +448,7 @@ class SearchIndex:
             elif intent == "cases" and corpus == "products":
                 score -= 0.04
             elif intent == "products" and corpus == "cases":
-                score -= 0.22
+                score -= 0.08
             elif intent == "guides" and corpus in {"products", "cases", "regulations"}:
                 score -= 0.35
             ranked.append((score, chunk.chunk_id, chunk, match_type))

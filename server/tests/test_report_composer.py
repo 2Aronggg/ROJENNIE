@@ -43,6 +43,9 @@ class ReportComposerTests(unittest.TestCase):
             report = compose_issue_report(issue, use_llm=True)
 
         self.assertEqual(report.generated_by, "fallback")
+        self.assertTrue(report.compliance_blocked)
+        self.assertIn("llm_output_forbidden_claim", report.compliance_flags)
+        self.assertEqual(report.current_decision, "추가 확인 필요")
         self.assertNotIn("배상액", report.processing_result)
         self.assertNotIn("법적 결론", report.processing_result)
         self.assertNotIn("외부 제출", report.processing_result)

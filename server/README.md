@@ -89,8 +89,8 @@ RAG는 `data/`와 `data/corpus/`의 로컬 문서를 기반으로 합니다.
 현재 retrieval 평가:
 
 - 평가셋: 42문항
-- 전체 Recall@5: 97.6% (41/42)
-- cases: 93.8% (15/16)
+- 전체 Recall@5: 100.0% (42/42)
+- cases: 100.0% (16/16)
 - products: 100.0% (20/20)
 - guides: 100.0% (6/6)
 - corpus 규모: 65,764 chunks

@@ -4,7 +4,14 @@ import json
 import unittest
 from types import SimpleNamespace
 
-from server.policy.gateway import LLMPolicyGateway, PolicyDenied, redact_pii, sanitize_llm_text, sanitize_llm_texts
+from server.policy.gateway import (
+    LLMPolicyGateway,
+    PolicyDenied,
+    contains_forbidden_claim,
+    redact_pii,
+    sanitize_llm_text,
+    sanitize_llm_texts,
+)
 
 
 class _Models:
@@ -57,6 +64,29 @@ class PolicyGatewayTests(unittest.TestCase):
         self.assertEqual(sanitize_llm_text("이것은 명백히 불완전판매입니다"), "")
         self.assertEqual(sanitize_llm_text("환급될 것입니다"), "")
         self.assertEqual(sanitize_llm_text("근거 문서를 확인하세요"), "근거 문서를 확인하세요")
+
+    def test_forbidden_claim_regex_catches_softened_legal_and_amount_estimates(self) -> None:
+        self.assertTrue(contains_forbidden_claim("은행의 잘못으로 보입니다."))
+        self.assertTrue(contains_forbidden_claim("불완전판매에 해당할 수 있습니다."))
+        self.assertTrue(contains_forbidden_claim("약 100만원 환급 예상입니다."))
+        self.assertTrue(contains_forbidden_claim("환급 가능성이 높습니다."))
+        self.assertFalse(contains_forbidden_claim("확인된 사실과 근거 자료를 함께 검토했습니다."))
+
+    def test_gateway_rejects_forbidden_output_even_when_json_is_valid(self) -> None:
+        class _ForbiddenModels(_Models):
+            def generate_content(self, **kwargs: object) -> SimpleNamespace:
+                self.contents = str(kwargs["contents"])
+                return SimpleNamespace(text=json.dumps({"result": "약 100만원 환급 예상입니다."}, ensure_ascii=False))
+
+        client = _Client()
+        client.models = _ForbiddenModels()
+
+        with self.assertRaises(ValueError):
+            LLMPolicyGateway(client=client).generate_json(
+                stage="report_composer",
+                contents="근거 자료 기준으로 답변",
+                response_schema={"type": "object"},
+            )
 
     def test_sanitize_texts_filters_list_and_keeps_order(self) -> None:
         result = sanitize_llm_texts(["증빙 서류를 준비하세요", "배상액을 요구하세요", "거래일을 확인하세요"])

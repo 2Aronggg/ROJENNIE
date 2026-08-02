@@ -1,0 +1,917 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Agent 3 - Logic Verification Demo</title>
+    <style>
+      :root {
+        --green-main: #16a34a;
+        --green-deep: #166534;
+        --green-bright: #4ade80;
+        --green-soft: #dcfce7;
+        --amber-flag: #ca8a04;
+        --red: #b4232c;
+        --warm-white: #faf8f4;
+        --ivory: #fffdf8;
+        --charcoal: #242424;
+        --gray: #74716c;
+        --line: rgba(22, 163, 74, 0.32);
+        --glass: rgba(255, 253, 248, 0.76);
+        --shadow: 0 22px 62px rgba(20, 83, 45, 0.15);
+        --ease: cubic-bezier(0.2, 0.82, 0.18, 1);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        overflow: hidden;
+        color: var(--charcoal);
+        font-family: "Segoe UI", "Noto Sans KR", Arial, sans-serif;
+        background:
+          radial-gradient(circle at 11% 20%, rgba(74, 222, 128, 0.23), transparent 25%),
+          radial-gradient(circle at 86% 13%, rgba(22, 163, 74, 0.2), transparent 27%),
+          radial-gradient(circle at 72% 84%, rgba(220, 252, 231, 0.64), transparent 31%),
+          linear-gradient(135deg, #f0fdf4, var(--ivory) 48%, #d9f5df);
+      }
+
+      body::before {
+        position: fixed;
+        inset: 0;
+        opacity: 0.2;
+        background-image:
+          linear-gradient(rgba(22, 163, 74, 0.08) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(22, 163, 74, 0.08) 1px, transparent 1px);
+        background-size: 54px 54px;
+        content: "";
+        pointer-events: none;
+      }
+
+      body:not(.playing) .demo,
+      body:not(.playing) .demo *,
+      body:not(.playing) .end-popup {
+        animation-play-state: paused !important;
+      }
+
+      .demo {
+        position: relative;
+        display: grid;
+        grid-template-rows: 14% 81% 5%;
+        gap: 8px;
+        width: min(96vw, calc(96vh * 16 / 9), 1600px);
+        aspect-ratio: 16 / 9;
+        margin: 0 auto;
+        padding: 12px;
+        opacity: 0;
+        animation: fadeIn 0.8s var(--ease) forwards;
+      }
+
+      .panel {
+        position: relative;
+        z-index: 1;
+        min-height: 0;
+        overflow: hidden;
+        border: 1.5px solid var(--line);
+        border-radius: 22px;
+        background: var(--glass);
+        box-shadow: var(--shadow), inset 0 1px 0 rgba(74, 222, 128, 0.14);
+        backdrop-filter: blur(18px);
+      }
+
+      .header {
+        z-index: 3;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: center;
+        gap: 18px;
+        min-height: 98px;
+        padding: 12px 22px;
+        background: var(--ivory);
+        backdrop-filter: none;
+        opacity: 0;
+        transform: translateY(16px);
+        animation: slideIn 1s var(--ease) 0.15s forwards;
+      }
+
+      .badge-row {
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        margin-bottom: 5px;
+      }
+
+      .agent-badge,
+      .eyebrow {
+        display: inline-flex;
+        width: fit-content;
+        padding: 5px 10px;
+        border: 1.5px solid rgba(22, 163, 74, 0.38);
+        border-radius: 999px;
+        color: var(--green-deep);
+        background: rgba(220, 252, 231, 0.82);
+        font-size: 12px;
+        font-weight: 900;
+      }
+
+      .eyebrow {
+        border-color: rgba(22, 101, 52, 0.2);
+        background: rgba(255, 253, 248, 0.86);
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(28px, 2.38vw, 43px);
+        line-height: 1.07;
+      }
+
+      .subtitle {
+        margin: 6px 0 0;
+        color: #235c36;
+        font-size: clamp(13px, 0.92vw, 16px);
+        font-weight: 700;
+      }
+
+      .progress {
+        min-width: 360px;
+      }
+
+      .agent-steps {
+        display: grid;
+        grid-template-columns: 44px 28px 44px 28px 44px 28px 44px;
+        align-items: center;
+        justify-content: end;
+      }
+
+      .step-circle {
+        display: grid;
+        width: 44px;
+        height: 44px;
+        place-items: center;
+        border: 1.5px solid rgba(116, 113, 108, 0.24);
+        border-radius: 50%;
+        color: rgba(36, 36, 36, 0.42);
+        background: var(--ivory);
+        font-size: 13px;
+        font-weight: 900;
+      }
+
+      .step-circle.done {
+        color: #7f8a80;
+        background: #e7eee7;
+      }
+
+      .step-circle.active {
+        color: #fff;
+        border-color: rgba(22, 101, 52, 0.32);
+        background: linear-gradient(145deg, var(--green-bright), var(--green-main), var(--green-deep));
+        box-shadow: 0 10px 22px rgba(22, 163, 74, 0.24);
+      }
+
+      .step-line {
+        height: 2px;
+        background: rgba(116, 113, 108, 0.22);
+      }
+
+      .step-caption {
+        margin: 7px 0 0;
+        color: var(--gray);
+        font-size: 13px;
+        font-weight: 900;
+        text-align: right;
+      }
+
+      .verify-tracks {
+        display: grid;
+        grid-template-columns: 1fr 100px 1fr;
+        gap: 0;
+        min-height: 0;
+      }
+
+      .track {
+        position: relative;
+        display: flex;
+        min-width: 0;
+        min-height: 0;
+        flex-direction: column;
+        gap: 9px;
+        padding: 15px 18px;
+        opacity: 0;
+      }
+
+      .track::after {
+        position: absolute;
+        right: 14px;
+        bottom: 10px;
+        color: rgba(22, 163, 74, 0.08);
+        font-family: Consolas, "Courier New", monospace;
+        font-size: 40px;
+        font-weight: 900;
+        content: attr(data-issue-id);
+        pointer-events: none;
+      }
+
+      .track-1 {
+        background: rgba(255, 253, 248, 0.72);
+        transform: translateX(-28px);
+        animation: leftIn 0.65s var(--ease) 1.2s forwards;
+      }
+
+      .track-2 {
+        background: rgba(240, 253, 244, 0.72);
+        transform: translateX(28px);
+        animation: rightIn 0.65s var(--ease) 1.7s forwards;
+      }
+
+      .track-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+      }
+
+      .track-id-group {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        min-width: 0;
+      }
+
+      .problem-number {
+        display: grid;
+        width: 46px;
+        height: 46px;
+        flex: 0 0 46px;
+        place-items: center;
+        border-radius: 15px;
+        color: #fff;
+        background: linear-gradient(145deg, var(--green-bright), var(--green-main), var(--green-deep));
+        font-size: 27px;
+        font-weight: 950;
+        box-shadow: 0 14px 26px rgba(22, 101, 52, 0.2);
+      }
+
+      .issue-id,
+      .product-badge {
+        display: inline-flex;
+        padding: 6px 10px;
+        border-radius: 999px;
+        font-size: clamp(13px, 0.85vw, 16px);
+        font-weight: 900;
+        white-space: nowrap;
+      }
+
+      .issue-id {
+        color: #fff;
+        background: var(--green-main);
+      }
+
+      .product-badge {
+        color: var(--green-deep);
+        background: rgba(220, 252, 231, 0.85);
+      }
+
+      .track-title {
+        margin: 0;
+        color: var(--green-deep);
+        font-family: Georgia, "Times New Roman", "Noto Serif KR", serif;
+        font-size: clamp(25px, 1.7vw, 33px);
+        font-weight: 900;
+        line-height: 1.08;
+      }
+
+      .section-label {
+        margin: 0 0 6px;
+        color: var(--green-deep);
+        font-size: clamp(16px, 1.05vw, 20px);
+        font-weight: 950;
+      }
+
+      .label-bullet {
+        margin-right: 3px;
+        color: var(--gray);
+        font-family: "IBM Plex Mono", Consolas, "Courier New", monospace;
+        opacity: 0.5;
+      }
+
+      .dev-token {
+        display: inline-flex;
+        margin-left: 4px;
+        color: var(--green-deep);
+        font-family: "IBM Plex Mono", Consolas, "Courier New", monospace;
+        font-size: 0.82em;
+        font-weight: 900;
+        opacity: 0.72;
+        white-space: nowrap;
+      }
+
+      .verify-steps {
+        display: flex;
+        gap: 5px;
+        flex-wrap: wrap;
+      }
+
+      .v-step {
+        padding: 5px 8px;
+        border: 1px solid rgba(116, 113, 108, 0.25);
+        border-radius: 12px;
+        color: var(--gray);
+        background: rgba(255, 253, 248, 0.68);
+        font-family: Consolas, "Courier New", monospace;
+        font-size: clamp(10px, 0.65vw, 12px);
+        font-weight: 900;
+        opacity: 0;
+        transform: translateY(8px);
+      }
+
+      .v-step.done {
+        color: var(--green-deep);
+        border-color: transparent;
+        background: var(--green-soft);
+      }
+
+      .v-step.active {
+        color: #fff;
+        border-color: transparent;
+        background: var(--green-main);
+        box-shadow: 0 8px 18px rgba(22, 163, 74, 0.2);
+      }
+
+      .v-step:nth-child(1) { animation: stepOn 0.34s var(--ease) 2.2s forwards; }
+      .v-step:nth-child(2) { animation: stepOn 0.34s var(--ease) 2.32s forwards; }
+      .v-step:nth-child(3) { animation: stepOn 0.34s var(--ease) 2.44s forwards; }
+      .v-step:nth-child(4) { animation: stepOn 0.34s var(--ease) 2.56s forwards; }
+      .v-step:nth-child(5) { animation: stepOnMuted 0.28s var(--ease) 2.72s forwards; }
+      .v-step:nth-child(6) { animation: stepOnMuted 0.28s var(--ease) 2.84s forwards; }
+      .v-step:nth-child(7) { animation: stepOnMuted 0.28s var(--ease) 2.96s forwards; }
+
+      .conditions-list {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+      }
+
+      .condition-row {
+        display: flex;
+        align-items: flex-start;
+        gap: 9px;
+        padding: 9px 10px;
+        border: 1px solid transparent;
+        border-radius: 10px;
+        opacity: 0;
+        transform: translateY(12px);
+      }
+
+      .condition-row:nth-of-type(1) { animation: slideIn 0.45s var(--ease) 3s forwards; }
+      .condition-row:nth-of-type(2) { animation: slideIn 0.45s var(--ease) 3.8s forwards; }
+      .condition-row:nth-of-type(3) { animation: slideIn 0.45s var(--ease) 4.6s forwards; }
+
+      .status-missing:nth-of-type(2) { animation-name: missingShake; }
+      .status-missing:nth-of-type(3) { animation-name: missingShake; }
+
+      .status-met {
+        border-color: rgba(22, 163, 74, 0.3);
+        background: var(--green-soft);
+      }
+
+      .status-met .cond-badge {
+        color: var(--green-main);
+      }
+
+      .status-met .cond-status {
+        color: #fff;
+        background: var(--green-main);
+      }
+
+      .status-missing {
+        border-color: rgba(202, 138, 4, 0.34);
+        border-style: dashed;
+        background: rgba(202, 138, 4, 0.08);
+      }
+
+      .status-missing .cond-badge,
+      .status-missing .cond-status {
+        color: var(--amber-flag);
+      }
+
+      .status-missing .cond-status {
+        border: 1px solid var(--amber-flag);
+        background: transparent;
+      }
+
+      .status-not-met {
+        border-color: rgba(180, 35, 44, 0.25);
+        background: rgba(180, 35, 44, 0.06);
+      }
+
+      .status-not-met .cond-badge {
+        color: var(--red);
+      }
+
+      .status-not-met .cond-status {
+        color: #fff;
+        background: var(--red);
+      }
+
+      .cond-badge {
+        flex: 0 0 18px;
+        font-size: 17px;
+        line-height: 1.35;
+      }
+
+      .cond-body {
+        flex: 1;
+        min-width: 0;
+      }
+
+      .cond-name {
+        margin: 0 0 3px;
+        color: var(--charcoal);
+        font-size: clamp(15px, 0.98vw, 18px);
+        font-weight: 900;
+        overflow-wrap: anywhere;
+      }
+
+      .cond-refs {
+        margin: 0;
+        color: var(--gray);
+        font-family: Consolas, "Courier New", monospace;
+        font-size: clamp(11px, 0.72vw, 13px);
+        font-weight: 800;
+        overflow-wrap: anywhere;
+      }
+
+      .cond-status {
+        flex: 0 0 auto;
+        padding: 4px 8px;
+        border-radius: 999px;
+        font-family: Consolas, "Courier New", monospace;
+        font-size: clamp(10px, 0.65vw, 12px);
+        font-weight: 900;
+        letter-spacing: 0.03em;
+        white-space: nowrap;
+      }
+
+      .exceptions-block {
+        opacity: 0;
+        transform: translateY(10px);
+        animation: slideIn 0.45s var(--ease) 5.8s forwards;
+      }
+
+      .exception-line,
+      .counterpoint-line {
+        display: flex;
+        gap: 7px;
+        align-items: baseline;
+        padding: 3px 0;
+        color: var(--gray);
+        font-size: clamp(12px, 0.8vw, 14px);
+        font-weight: 800;
+        overflow-wrap: anywhere;
+      }
+
+      .ex-icon {
+        color: var(--gray);
+      }
+
+      .cp-icon {
+        color: var(--green-deep);
+      }
+
+      .finding-banner {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: auto;
+        padding: 12px 14px;
+        border-radius: 12px;
+        opacity: 0;
+        transform: translateY(14px) scale(0.98);
+        animation: findingPop 0.55s var(--ease) 7.6s forwards;
+      }
+
+      .finding-unknown {
+        border: 1px solid rgba(202, 138, 4, 0.3);
+        background: linear-gradient(90deg, rgba(202, 138, 4, 0.1), rgba(202, 138, 4, 0.18), rgba(202, 138, 4, 0.1));
+      }
+
+      .finding-unknown .finding-icon,
+      .finding-unknown .finding-label {
+        color: var(--amber-flag);
+      }
+
+      .finding-supported {
+        border: 1px solid rgba(22, 163, 74, 0.28);
+        background: rgba(22, 163, 74, 0.09);
+      }
+
+      .finding-supported .finding-icon,
+      .finding-supported .finding-label {
+        color: var(--green-deep);
+      }
+
+      .finding-unsupported {
+        border: 1px solid rgba(180, 35, 44, 0.25);
+        background: rgba(180, 35, 44, 0.07);
+      }
+
+      .finding-unsupported .finding-icon,
+      .finding-unsupported .finding-label {
+        color: var(--red);
+      }
+
+      .finding-icon {
+        flex: 0 0 auto;
+        font-size: 24px;
+        font-weight: 950;
+      }
+
+      .finding-label {
+        display: block;
+        font-family: "IBM Plex Mono", Consolas, "Courier New", monospace;
+        font-size: clamp(20px, 1.25vw, 24px);
+        font-weight: 950;
+      }
+
+      .finding-desc {
+        display: block;
+        margin-top: 2px;
+        color: var(--gray);
+        font-size: clamp(13px, 0.86vw, 16px);
+        font-weight: 850;
+      }
+
+      .thread {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 0;
+      }
+
+      .thread-line {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50%;
+        border-top: 2px dashed rgba(22, 163, 74, 0.62);
+        transform: scaleX(0);
+        transform-origin: center;
+        animation: growWidth 0.55s ease-out 6.6s forwards;
+      }
+
+      .thread-dot {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: var(--green-main);
+        box-shadow: 0 0 0 6px rgba(74, 222, 128, 0.16);
+        opacity: 0;
+        animation: fadeIn 0.35s ease-out 6.85s forwards;
+      }
+
+      .thread-dot.top {
+        top: 32%;
+      }
+
+      .thread-dot.bottom {
+        bottom: 32%;
+      }
+
+      .thread-chip {
+        position: relative;
+        z-index: 1;
+        padding: 8px 10px;
+        border: 1px solid rgba(22, 163, 74, 0.44);
+        border-radius: 18px;
+        background: var(--warm-white);
+        box-shadow: 0 10px 24px rgba(20, 83, 45, 0.12);
+        text-align: center;
+        opacity: 0;
+        transform: translateY(8px);
+        animation: slideIn 0.35s ease-out 6.85s forwards;
+      }
+
+      .thread-chip .en {
+        display: block;
+        color: var(--green-deep);
+        font-family: Consolas, "Courier New", monospace;
+        font-size: 8px;
+        font-weight: 900;
+        white-space: nowrap;
+      }
+
+      .thread-chip .ko {
+        display: block;
+        color: var(--gray);
+        font-size: 10px;
+        font-weight: 900;
+        white-space: nowrap;
+      }
+
+      .meta {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 14px;
+        padding: 0 12px;
+        color: rgba(116, 113, 108, 0.92);
+        background: rgba(255, 253, 248, 0.74);
+        font-size: 10px;
+        font-weight: 800;
+      }
+
+      .meta b {
+        color: var(--green-deep);
+      }
+
+      .meta-trace {
+        margin-left: auto;
+        color: #166534;
+        font-family: "IBM Plex Mono", Consolas, "Courier New", monospace;
+        opacity: 0.7;
+        white-space: nowrap;
+      }
+
+      .end-popup {
+        position: fixed;
+        inset: 24px;
+        z-index: 9;
+        display: grid;
+        place-items: center;
+        padding: 42px;
+        border: 1px solid rgba(22, 163, 74, 0.38);
+        border-radius: 40px;
+        background:
+          radial-gradient(circle at 50% 35%, rgba(74, 222, 128, 0.24), transparent 36%),
+          rgba(255, 253, 248, 0.94);
+        text-align: center;
+        box-shadow: 0 34px 110px rgba(22, 101, 52, 0.26);
+        opacity: 0;
+        transform: scale(0.97);
+        backdrop-filter: blur(18px);
+        animation: endPopup 0.9s var(--ease) 9.3s forwards;
+        pointer-events: none;
+      }
+
+      .end-popup strong {
+        display: block;
+        color: transparent;
+        background: linear-gradient(180deg, #bbf7d0 0%, var(--green-bright) 32%, var(--green-main) 68%, var(--green-deep) 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        font-size: clamp(48px, 5.8vw, 92px);
+        font-weight: 950;
+        line-height: 0.96;
+        text-shadow: 0 10px 24px rgba(22, 101, 52, 0.2);
+        filter: drop-shadow(0 8px 0 rgba(22, 163, 74, 0.12));
+      }
+
+      .replay {
+        position: fixed;
+        right: 18px;
+        bottom: 18px;
+        z-index: 10;
+        border: 1px solid rgba(22, 163, 74, 0.28);
+        border-radius: 999px;
+        padding: 9px 13px;
+        color: var(--green-deep);
+        background: rgba(255, 253, 248, 0.86);
+        font: inherit;
+        font-size: 12px;
+        font-weight: 900;
+        cursor: pointer;
+      }
+
+      @keyframes fadeIn { to { opacity: 1; } }
+      @keyframes slideIn { to { opacity: 1; transform: translateY(0); } }
+      @keyframes leftIn { to { opacity: 1; transform: translateX(0); } }
+      @keyframes rightIn { to { opacity: 1; transform: translateX(0); } }
+      @keyframes growWidth { to { transform: scaleX(1); } }
+      @keyframes stepOn {
+        65% { opacity: 1; transform: translateY(0) scale(1.05); }
+        100% { opacity: 1; transform: translateY(0) scale(1); }
+      }
+      @keyframes stepOnMuted { to { opacity: 0.62; transform: translateY(0); } }
+      @keyframes missingShake {
+        0% { opacity: 0; transform: translateY(12px); }
+        55% { opacity: 1; transform: translate(2px, 0); }
+        72% { opacity: 1; transform: translate(-2px, 0); }
+        100% { opacity: 1; transform: translate(0, 0); }
+      }
+      @keyframes findingPop {
+        68% { opacity: 1; transform: translateY(0) scale(1.015); }
+        100% { opacity: 1; transform: translateY(0) scale(1); }
+      }
+      @keyframes endPopup { to { opacity: 1; transform: scale(1); } }
+    </style>
+  </head>
+  <body>
+    <main class="demo" id="demo">
+      <header class="header panel">
+        <section>
+          <div class="badge-row">
+            <span class="agent-badge">&lt;/&gt; AGENT 3 / 4</span>
+            <span class="eyebrow">Logic Verification</span>
+          </div>
+          <h1>RAG 근거와 고객 사실을 대조해 처리 방향을 가림</h1>
+          <p class="subtitle">상품설명서·약관의 직접근거와 조회된 금융정보를 연결하고, 빠진 증빙은 추가 확인으로 남깁니다.</p>
+        </section>
+        <aside class="progress">
+          <div class="agent-steps" aria-label="Agent progress">
+            <span class="step-circle done">01</span><span class="step-line"></span>
+            <span class="step-circle done">02</span><span class="step-line"></span>
+            <span class="step-circle active">03</span><span class="step-line"></span>
+            <span class="step-circle">04</span>
+          </div>
+          <p class="step-caption"><b>Logic Verification</b> · STEP 3 OF 4</p>
+        </aside>
+      </header>
+
+      <section class="verify-tracks">
+        <article class="track track-1 panel" data-issue-id="001">
+          <div class="track-header">
+            <div class="track-id-group">
+              <span class="problem-number">1</span>
+              <span class="issue-id">PROBLEM 001</span>
+            </div>
+            <span class="product-badge">정기예금</span>
+          </div>
+          <p class="track-title">만기 이자 지급액 차이</p>
+
+          <div class="verify-steps">
+            <span class="v-step done">1 시행일</span>
+            <span class="v-step done">2 적용대상</span>
+            <span class="v-step done">3 요건목록</span>
+            <span class="v-step active">4 요건연결</span>
+            <span class="v-step">5 예외확인</span>
+            <span class="v-step">6 사례대조</span>
+            <span class="v-step">7 다음단계</span>
+          </div>
+
+          <div class="conditions-list">
+            <p class="section-label"><span class="label-bullet">▸</span>요건별 판단 <code class="dev-token">rule_check</code></p>
+            <div class="condition-row status-met">
+              <span class="cond-badge">●</span>
+              <div class="cond-body">
+                <p class="cond-name">만기이자는 가입 당시 약정이율로 계산</p>
+                <p class="cond-refs">근거 deposit_terms_p2 · 직접근거</p>
+              </div>
+              <span class="cond-status">MET</span>
+            </div>
+            <div class="condition-row status-met">
+              <span class="cond-badge">●</span>
+              <div class="cond-body">
+                <p class="cond-name">실제 지급 이자와 세금 공제 내역</p>
+                <p class="cond-refs">사실 account_DEP-001 · 지급액 확인</p>
+              </div>
+              <span class="cond-status">MET</span>
+            </div>
+            <div class="condition-row status-missing">
+              <span class="cond-badge">○</span>
+              <div class="cond-body">
+                <p class="cond-name">가입 시 안내받은 예상 이자</p>
+                <p class="cond-refs">고객 안내자료 미제출 · 차액 검증 보류</p>
+              </div>
+              <span class="cond-status">MISSING</span>
+            </div>
+          </div>
+
+          <div class="exceptions-block">
+            <p class="section-label"><span class="label-bullet">▸</span>예외 · 반대사실 <code class="dev-token">counter</code></p>
+            <div class="exception-line"><span class="ex-icon">—</span><span>세금 공제 전후 금액 구분 필요</span></div>
+            <div class="counterpoint-line"><span class="cp-icon">◆</span><span>지급액은 확인, 안내받은 금액은 아직 미확인</span></div>
+          </div>
+
+          <div class="finding-banner finding-unknown">
+            <span class="finding-icon">○</span>
+            <div class="finding-text">
+              <span class="finding-label">UNKNOWN</span>
+              <span class="finding-desc">예상 이자 안내자료가 없어 차액 사유는 추가 확인</span>
+            </div>
+          </div>
+        </article>
+
+        <div class="thread">
+          <span class="thread-dot top"></span>
+          <span class="thread-line"></span>
+          <span class="thread-chip">
+            <span class="en">SAME CONTRACT BASIS</span>
+            <span class="ko">직접근거 기준 검증</span>
+          </span>
+          <span class="thread-dot bottom"></span>
+        </div>
+
+        <article class="track track-2 panel" data-issue-id="002">
+          <div class="track-header">
+            <div class="track-id-group">
+              <span class="problem-number">2</span>
+              <span class="issue-id">PROBLEM 002</span>
+            </div>
+            <span class="product-badge">적금</span>
+          </div>
+          <p class="track-title">자동이체 우대금리 미적용</p>
+
+          <div class="verify-steps">
+            <span class="v-step done">1 시행일</span>
+            <span class="v-step done">2 적용대상</span>
+            <span class="v-step done">3 요건목록</span>
+            <span class="v-step active">4 요건연결</span>
+            <span class="v-step">5 예외확인</span>
+            <span class="v-step">6 사례대조</span>
+            <span class="v-step">7 다음단계</span>
+          </div>
+
+          <div class="conditions-list">
+            <p class="section-label"><span class="label-bullet">▸</span>요건별 판단 <code class="dev-token">rule_check</code></p>
+            <div class="condition-row status-met">
+              <span class="cond-badge">●</span>
+              <div class="cond-body">
+                <p class="cond-name">우대이율은 조건 충족 시 적용</p>
+                <p class="cond-refs">근거 saving_terms_p2 · 직접근거</p>
+              </div>
+              <span class="cond-status">MET</span>
+            </div>
+            <div class="condition-row status-not-met">
+              <span class="cond-badge">✕</span>
+              <div class="cond-body">
+                <p class="cond-name">자동이체 우대조건 충족</p>
+                <p class="cond-refs">사실 account_SAV-001 · 2026-06-10 실패</p>
+              </div>
+              <span class="cond-status">NOT MET</span>
+            </div>
+            <div class="condition-row status-met">
+              <span class="cond-badge">●</span>
+              <div class="cond-body">
+                <p class="cond-name">기본금리만 적용된 계좌 상태</p>
+                <p class="cond-refs">사실 applied_rate=base_rate · 확인</p>
+              </div>
+              <span class="cond-status">MET</span>
+            </div>
+          </div>
+
+          <div class="exceptions-block">
+            <p class="section-label"><span class="label-bullet">▸</span>예외 · 반대사실 <code class="dev-token">counter</code></p>
+            <div class="exception-line"><span class="ex-icon">—</span><span>중도해지나 예외 적용 근거 없음</span></div>
+            <div class="counterpoint-line"><span class="cp-icon">◆</span><span>자동이체 실패 사실이 기본금리 적용과 연결됨</span></div>
+          </div>
+
+          <div class="finding-banner finding-supported">
+            <span class="finding-icon">●</span>
+            <div class="finding-text">
+              <span class="finding-label">SUPPORTED</span>
+              <span class="finding-desc">우대조건 미충족으로 기본금리 적용 안내 가능</span>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <footer class="meta panel">
+        <span><b>구현</b> server/agents/logic_verification.py</span>
+        <span><b>출력 연결</b> server.schemas.LogicVerification</span>
+        <span><b>다음 단계</b> server/agents/decision_gate.py</span>
+        <span class="meta-trace">trace 62e8fa10 · 61ms · exit 0</span>
+      </footer>
+    </main>
+
+    <div class="end-popup" aria-label="Agent 4 종료">
+      <strong>Agent3<br />Logic Verification<br />완료</strong>
+    </div>
+
+    <button class="replay" type="button" id="replay">Replay</button>
+
+    <script src="../agent-api.js"></script>
+    <script>
+      const replay = document.querySelector("#replay");
+      let playTimer = null;
+
+      function startPlayback() {
+        window.KBAgentDemo?.renderAgent3(document);
+        window.clearTimeout(playTimer);
+        document.body.classList.remove("playing");
+        playTimer = window.setTimeout(() => {
+          document.body.classList.add("playing");
+        }, 5000);
+      }
+
+      startPlayback();
+
+      replay.addEventListener("click", () => {
+        const demo = document.querySelector("#demo");
+        const popup = document.querySelector(".end-popup");
+        const clone = demo.cloneNode(true);
+        const popupClone = popup.cloneNode(true);
+        demo.replaceWith(clone);
+        clone.id = "demo";
+        popup.replaceWith(popupClone);
+        startPlayback();
+      });
+    </script>
+  </body>
+</html>
