@@ -22,15 +22,15 @@ class ResolveFactsConflictTest(unittest.TestCase):
     def test_conflicts_record_provenance_for_audit_trails(self) -> None:
         resolution = resolve_facts(
             [
-                Fact(field="product_name", value="예금", source_ref="user_input", confidence=0.9),
-                Fact(field="product_name", value="적금", source_ref="mock_data", confidence=0.8),
+                Fact(field="product_name", value="예금", source_type="USER_STATED", source_ref="user_input", confidence=0.9),
+                Fact(field="product_name", value="적금", source_type="SYSTEM_INFERRED", source_ref="mock_data", confidence=0.8),
             ]
         )
 
         self.assertIn("product_name", resolution.provenance)
         self.assertEqual(resolution.conflicts["product_name"], ["\"예금\"", "\"적금\""])
         self.assertEqual(resolution.provenance["product_name"][0].status, "conflict")
-        self.assertEqual(resolution.provenance["product_name"][0].source_type, "user_input")
+        self.assertEqual(resolution.provenance["product_name"][0].source_type, "USER_STATED")
 
 
 if __name__ == "__main__":

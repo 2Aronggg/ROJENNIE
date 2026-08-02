@@ -1,76 +1,106 @@
 # TODO
 
-## 협업 원칙
+현재 문서는 제출/발표 전 남은 작업을 우선순위별로 정리합니다.
 
-두 사람이 같은 파일을 동시에 수정하지 않는다. 각자 담당 디렉터리에서 작업하고, 공통 계약 변경은 PR 전에 공유한다.
+## 1. 완료된 핵심 작업
 
-| 담당 | 담당 파일 | 책임 |
-|---|---|---|
-| A: 데이터·서버·MCP | `data/`, `server/`, `docs/todo/A_DATA_SERVER.md` | Mock 금융정보, RAG, Finance MCP, FastAPI, API·Tool 계약 |
-| B: 에이전트·클라이언트 | `server/agents/`, `client/`, `docs/todo/B_AGENT_CLIENT.md` | 3개 에이전트, Policy Gate 연동, React Flow, 채팅·리포트 UI |
-| 공동 | `README.md`, `docs/PRD.md`, `docs/TODO.md` | 구조 확정 후 한 명이 통합 수정 |
+- 복합 민원 이슈 분리 파이프라인 구성
+- mock bank / Finance MCP 조회 구조 구성
+- RAG corpus 구축
+- guides corpus 추가
+- PDF `extraction_mode="layout"` 적용
+- `Fact.source_type` 기반 provenance 정리
+- mock bank fact를 `SYSTEM_INFERRED`로 태깅
+- Evidence-Conclusion Audit Layer 도입
+- Decision Gate에 unsupported/unverified claim 제동 추가
+- Report Composer 금지 표현 필터 추가
+- retrieval 평가 42문항 기준 97.6% 확인
+- 주요 문서 인코딩 정상화
 
-### Git 규칙
+## 2. 제출 전 우선순위
 
-```text
-A: feat/data-server
-B: feat/agent-client
-```
+### P0. 발표 자료 반영
 
-- A와 B는 각자 브랜치에서 작업한다.
-- `main`에 직접 push하지 않는다.
-- 공통 schema·API·MCP Tool 계약은 A가 먼저 제안하고 B가 사용한다.
-- 공통 문서는 충돌 방지를 위해 한 번에 한 명만 수정한다.
-- 통합 순서는 `A PR → 계약 확인 → B PR → 전체 테스트`다.
-- 최신 원격 변경을 먼저 fetch하고, 충돌 해결 후 테스트한다.
+- [ ] 기술 아키텍처 PPT에 최신 수치 반영
+- [ ] Agent 1~4가 “논리적 pipeline role”임을 명확히 표기
+- [ ] 실제 데이터와 데모 데이터 경계 표기
+- [ ] `proceed`가 결론 확정이 아니라 다음 단계 안내 가능 상태임을 표기
+- [ ] 분쟁조정 사례는 직접 근거가 아니라 참고 근거임을 표기
 
-## 구조 확정 사항
+### P1. 백엔드 검증
 
-- 실제 LLM 에이전트는 `Case Builder`, `Evidence & Decision`, `Response` 3개다.
-- Issue Splitter와 Focal Builder는 Case Builder 내부 단계다.
-- My Info Resolver, RAG Retriever, Calculator, Logic Graph, Policy Gate는 일반 모듈 또는 MCP Tool이다.
-- MCP는 새 데이터를 보관하지 않고 기존 함수와 RAG를 Tool로 노출한다.
-- 브라우저는 MCP를 직접 호출하지 않고 FastAPI만 호출한다.
-- 고객 ID는 LLM이 추측하지 않고 서버 세션에서 연결한다.
-- 예금·적금·대출을 정식 지원한다.
+- [ ] `pytest` core 범위 재확인
+- [ ] `test_facts.py` 통과 확인
+- [ ] `test_logic_audit.py` 통과 확인
+- [ ] retrieval 평가 결과를 발표 자료에 반영
+- [ ] 전체 pytest 실패 원인이 외부 의존성인지 구분
 
-## 통합 체크리스트
+### P2. 데이터/RAG
 
-- [ ] `customer_ref`와 조회 동의 상태가 API에 포함됨
-- [ ] `get_my_products` 결과가 issue별 account에 연결됨
-- [ ] 사용자가 이미 입력한 사실을 재질문하지 않음
-- [x] 로컬 `retrieval.py`가 기존 RAG를 호출하고 구조화된 결과를 반환함
-- [ ] RAG 후보가 Logic Verification 이후에만 처리 결과에 반영됨
-- [ ] 근거 후보가 별도 트리가 아니라 리포트 판단 근거에 표시됨
-- [ ] 근거 상세 클릭 시 문서명·페이지·조항·인용문이 표시됨
-- [ ] 검색 점수·검색 방식·내부 chunk ID가 기본 화면에 노출되지 않음
-- [ ] `proceed / ask / amend / hold`가 모든 계층에서 동일함
-- [ ] `issue_id`가 MCP 조회·검색·검증·리포트까지 유지됨
-- [ ] 복합 민원 결과가 서로 섞이지 않음
-- [ ] 사용자가 제공한 금액·금리·거래 사실을 다시 질문하지 않음
-- [ ] `complex_issue_75.json` end-to-end 테스트 통과
-- [ ] MCP 장애 시 근거 없는 proceed가 발생하지 않음
-- [ ] 개인정보 원문이 기본 답변에 노출되지 않음
+- [ ] 놓친 retrieval 케이스 1개 분석
+- [ ] canonical_doc_id mapping 확대
+- [ ] 사례/판례 데이터 추가 확충
+- [ ] 기관별 절차 안내 데이터 추가
+- [ ] Support Accuracy 지표 정의
 
-## 데이터 추가 기준
+### P3. Client/API 연동
 
-현재 MVP 구현에 필수 데이터는 추가하지 않는다. 다음은 기능 확장 시에만 수집한다.
+- [ ] 실제 client가 `POST /api/v1/cases/analyze` 응답을 카드로 렌더링하도록 연결
+- [ ] `GET /api/v1/cases/{case_id}` 결과 조회 연결
+- [ ] missing_facts 질문 UI 정리
+- [ ] evidence_refs 상세 보기 UI 정리
 
-- [ ] 공식 금융 분쟁조정·민원 사례 원문
-- [ ] 공식 민원 접수 절차·제출 서류 정보
-- [ ] 첨부 HWP·PDF 문서 추출용 테스트 파일
-- [ ] 추가 예금·적금 상품 설명서
+## 3. 안전성 체크리스트
 
-실제 고객정보, 실제 계좌번호, 주민번호는 수집하지 않는다.
+- [x] 검색 결과와 최종 결론을 분리
+- [x] 직접 근거와 유사 사례를 구분
+- [x] 근거 없음 + proceed 차단
+- [x] 유사 사례-only + proceed 차단
+- [x] mock 금융 데이터 source_type 정리
+- [x] report 금지 표현 필터
+- [ ] 개인정보 마스킹 테스트 확대
+- [ ] 운영용 audit log 저장소 정리
+- [ ] human review queue 구체화
 
-## 완료 기준
+## 4. 데이터 경계
 
-- [ ] 사용자가 내 금융정보 조회 동의 후 문의를 입력할 수 있음
-- [ ] Case Builder가 복합 문의를 issue별 Case로 변환함
-- [x] Finance MCP가 내 금융정보·계산 Tool을 제공함
-- [ ] Evidence & Decision Agent가 MCP 결과와 사용자 진술을 함께 검증함
-- [ ] Response Agent가 세 가지 리포트 섹션을 생성함
-- [ ] React Flow에서 민원 분기와 사용자 답변 노드를 확인할 수 있음
-- [ ] 추가 정보가 필요한 단계만 채팅 질문과 빨간 표시를 가짐
-- [ ] 서버 재시작 이후 민원 기록 보존 여부가 명확함
-- [ ] 서버·클라이언트·MCP·회귀 테스트가 모두 통과함
+실제/공개 reference:
+
+- 약관
+- 상품설명서
+- 규정/법령
+- 분쟁조정/판례 사례
+- 민원 접수/처리 절차 안내
+
+시연/합성:
+
+- mock 고객 `CUST-001`
+- demo HTML의 화면 텍스트
+- 평가셋의 테스트 민원
+
+금지:
+
+- demo 데이터를 실제 고객 사례처럼 설명
+- mock bank를 실제 은행 API처럼 설명
+- 분쟁조정 사례를 사용자 사안의 직접 결론처럼 설명
+
+## 5. 커밋 전 확인
+
+커밋할 때 제외할 파일:
+
+- Python installer `.exe`
+- Python install log
+- `.pytest_cache`
+- 개인 로컬 설정
+- unrelated UI 변경
+
+권장 커밋 단위:
+
+- data/RAG 수정
+- logic audit 수정
+- 문서 정상화
+- UI/HTML 수정
+
+## 6. 발표용 마지막 문장
+
+> 우리는 검색 정확도를 높이는 데서 멈추지 않고, 검색된 근거가 결론을 실제로 지지하는지 검증하는 감사 레이어를 추가했습니다. 그래서 시스템은 근거가 부족한 사안에서 무리하게 답하지 않고, 추가 질문이나 사람 검토로 안전하게 전환합니다.

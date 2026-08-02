@@ -9,6 +9,7 @@ from pathlib import Path
 from typing import Iterable, Sequence
 
 from .ingest import iter_document_chunks, write_jsonl
+from .morphology import extract_stems
 from ..schemas import DocumentChunk, EvidenceRef
 
 
@@ -185,7 +186,9 @@ class SearchIndex:
         self._compact_metadata: list[str] = []
         self._metadata_hints: list[set[str]] = []
         self._compact_text: list[str] = []
+        self._stem_sets: list[set[str]] = []
         self._token_index: dict[str, set[int]] = defaultdict(set)
+        self._stem_index: dict[str, set[int]] = defaultdict(set)
         self._document_frequency: Counter[str] = Counter()
         for index, chunk in enumerate(chunks):
             tokens = _tokens(chunk.text)
@@ -195,9 +198,16 @@ class SearchIndex:
             self._compact_metadata.append(_compact(metadata))
             self._metadata_hints.append(_metadata_hints(metadata))
             self._compact_text.append(_compact(chunk.text))
+            # chunk.stems는 오프라인 precompute(stem_corpus.py)로 채워지며 cases/
+            # products/guides 청크만 값을 갖는다 - regulations는 빈 리스트라 이
+            # 보너스가 그냥 0으로 남는다 (형태소 분석기가 없거나 미실행이어도 동일).
+            stem_set = set(chunk.stems)
+            self._stem_sets.append(stem_set)
             for token in tokens:
                 self._token_index[token].add(index)
                 self._document_frequency[token] += 1
+            for stem in stem_set:
+                self._stem_index[stem].add(index)
 
     def _active_indices(self, target: date) -> frozenset[int]:
         """Indices of chunks whose effective-date bounds include `target`.
@@ -282,6 +292,16 @@ class SearchIndex:
                 if compact_text and any(term in compact_text for term in compact_terms):
                     candidate_indices.add(index)
 
+        # "연장했더니"(질의) vs "연장시"(문서), "금리가" vs "금리를" 처럼 조사·어미만
+        # 다른 형태는 _tokens()의 정규식 매칭으로는 절대 겹치지 않는다. 어간만 뽑은
+        # stems로 한 번 더 겹침을 본다 - 코퍼스 쪽은 stem_corpus.py가 미리 계산해
+        # chunk.stems에 넣어둔 값이라 여기서는 질의만 실시간으로 분석하면 된다.
+        query_stems = set(extract_stems(query))
+        if query_stems:
+            candidate_indices.update(
+                set().union(*(self._stem_index.get(stem, set()) for stem in query_stems))
+            )
+
         intent = _intent(query, query_tokens)
         if intent == "guides":
             candidate_indices.update(
@@ -343,10 +363,15 @@ class SearchIndex:
             compact_overlap = sum(1 for term in compact_terms if term in self._compact_text[index])
             if compact_overlap:
                 metadata_score += min(0.24, compact_overlap * 0.045)
+            stem_score = 0.0
+            if query_stems:
+                stem_overlap = len(query_stems & self._stem_sets[index])
+                if stem_overlap:
+                    stem_score = min(0.3, (stem_overlap / len(query_stems)) * 0.4)
             vector_score = 0.0
             if query_embedding and chunk.embedding:
                 vector_score = max(0.0, _cosine(query_embedding, chunk.embedding))
-            if not text_score and not vector_score and not metadata_score:
+            if not text_score and not vector_score and not metadata_score and not stem_score:
                 continue
 
             if text_score and vector_score:
@@ -363,6 +388,7 @@ class SearchIndex:
             elif product and COMMON_PRODUCT in chunk.product:
                 score += 0.04
             score += metadata_score
+            score += stem_score
             if intent == corpus:
                 score += 0.45 if intent == "guides" else 0.14
             elif intent == "cases" and corpus == "products":

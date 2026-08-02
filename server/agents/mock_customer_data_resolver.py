@@ -180,9 +180,14 @@ class MockCustomerDataResolver:
         # 그 값이 가리키는 사건 자체의 날짜(가입일이면 가입일 그 값)로, 필드값 자체가
         # 날짜인 경우에만 넘겨준다. 없으면 resolve_facts()의 최신값 비교가 date.min끼리
         # 비교돼 사실상 무작위 순서에 의존하게 된다.
+        # Finance MCP/mock 원장에서 읽은 값은 사용자 발언이 아니라 시스템이 조회해
+        # 확인한 사실이다. source_type 기본값(USER_STATED)을 그대로 두면 이 값이
+        # verified_facts와 user_statements를 구분하는 규칙(00_SHARED_RULES 1번)을
+        # 스키마 레벨에서 어기게 된다.
         return Fact(
             field=field,
             value=value,
+            source_type="SYSTEM_INFERRED",
             source_ref=source_ref,
             confidence=1.0,
             event_date=event_date,

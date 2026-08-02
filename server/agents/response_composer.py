@@ -5,6 +5,7 @@ from typing import Any
 from pydantic import BaseModel, Field
 
 from server.agents.decision_gate import apply_decision_gate
+from server.agents.focal_builder import REQUIRED_FACTS_BY_ISSUE
 from server.agents.question_builder import expected_interest_question
 from server.schemas import CaseAnalysis, EvidenceRef, Fact, IssueAnalysis
 
@@ -53,6 +54,69 @@ DOCUMENTS_BY_ISSUE = {
     "배상비율불만": ["배상 안내문", "산정 근거 자료", "금융회사 답변"],
     "중도해지손실": ["중도해지 또는 상환 요청 내역", "손실 산정 내역", "상품설명서"],
     "분쟁조정안내부족": ["민원 접수 내역", "금융회사 답변", "분쟁조정 안내 자료"],
+}
+
+QUESTION_TEMPLATES_BY_FIELD: dict[str, tuple[str, str]] = {
+    "가입일": ("상품에 가입한 날짜가 언제인지 알려주세요.", "가입 당시 적용된 약관과 안내 자료를 같은 기준일로 맞춰 확인하기 위해 필요합니다."),
+    "상품명": ("가입한 상품의 정확한 이름을 알려주세요.", "상품별 약관과 우대조건이 달라서 근거 문서를 정확히 좁히기 위해 필요합니다."),
+    "고객 인증·동의 데이터": ("본인 인증과 데이터 조회 동의를 완료했나요?", "고객 데이터를 조회해도 되는 상태인지 확인해야 실제 계약 정보와 민원을 연결할 수 있습니다."),
+    "가상 계약 데이터": ("확인할 예금·적금 계좌번호를 알려주세요.", "시연용 계약 데이터와 사용자가 말한 상품을 정확히 연결하기 위해 필요합니다."),
+    "금융회사명": ("거래한 금융회사 이름을 알려주세요.", "해당 금융회사 약관, 답변, 민원 접수 경로를 정확히 연결하기 위해 필요합니다."),
+    "금융회사 답변": ("금융회사에서 받은 답변이나 안내 문구가 있다면 알려주세요.", "회사 측 설명과 약관 근거가 서로 맞는지 대조하기 위해 필요합니다."),
+    "금융회사 답변 여부": ("금융회사에 문의한 적이 있다면 답변을 받았는지 알려주세요.", "회사 답변 전 단계인지, 분쟁조정 안내가 필요한 단계인지 구분하기 위해 필요합니다."),
+    "금융회사 안내 내용": ("금융회사에서 안내받은 내용을 그대로 적어주세요.", "안내 내용이 약관이나 절차와 다른지 확인하기 위해 필요합니다."),
+    "거래일": ("문제가 된 거래가 일어난 날짜를 알려주세요.", "거래일 기준으로 적용 약관과 처리 기한을 확인하기 위해 필요합니다."),
+    "거래 금액": ("문제가 된 거래 금액이 얼마인지 알려주세요.", "피해 규모와 적용 가능한 처리 절차를 구분하기 위해 필요합니다."),
+    "거부 사유 안내": ("거래가 거절되었을 때 받은 사유 안내가 있었나요?", "거절 사유가 약관상 제한 사유와 맞는지 확인하기 위해 필요합니다."),
+    "거래 또는 계좌번호 마스킹본": ("거래내역이나 계좌번호는 뒷자리를 가린 상태로 알려주세요.", "본인 거래인지 확인하되 민감정보 노출을 줄이기 위해 필요합니다."),
+    "인증 기록": ("본인인증 문자, 앱 알림, 로그인 기록이 있었는지 알려주세요.", "명의도용이나 비정상 인증 가능성을 먼저 확인하기 위해 필요합니다."),
+    "인증일": ("본인인증이나 거래 인증이 이루어진 날짜를 알려주세요.", "인증 시점과 문제 발생 시점을 대조하기 위해 필요합니다."),
+    "만기일": ("상품의 만기일이 언제인지 알려주세요.", "만기일 기준 지급 여부와 지연 여부를 판단하기 위해 필요합니다."),
+    "안내 금액": ("예상하신 이자 금액은 얼마인가요?", "안내받은 금액과 실제 지급액의 차이를 계산하기 위해 필요합니다."),
+    "안내받은 금리": ("가입할 때 안내받은 금리가 몇 퍼센트였는지 알려주세요.", "안내 금리와 실제 적용 금리가 다른지 확인하기 위해 필요합니다."),
+    "실제 적용 금리": ("실제로 적용된 금리가 몇 퍼센트인지 알려주세요.", "적용 금리 오류 여부를 계산하기 위해 필요합니다."),
+    "기본금리": ("상품의 기본금리가 몇 퍼센트였는지 알려주세요.", "기본금리와 우대금리 적용 여부를 나누어 확인하기 위해 필요합니다."),
+    "우대금리": ("안내받은 우대금리가 몇 퍼센트였는지 알려주세요.", "우대조건 충족 시 받을 수 있었던 금리를 확인하기 위해 필요합니다."),
+    "우대금리 조건": ("우대금리를 받기 위한 조건이 무엇이었는지 알려주세요.", "조건 충족 여부와 실제 적용 결과를 대조하기 위해 필요합니다."),
+    "우대조건 상태": ("우대조건을 충족했다고 볼 만한 내역이 있는지 알려주세요.", "우대금리 미적용이 정당한지 판단하기 위해 필요합니다."),
+    "설명서 수령 여부": ("상품설명서를 받았거나 확인했다는 기록이 있나요?", "중요 사항 설명과 교부 여부를 확인하기 위해 필요합니다."),
+    "위험등급 안내 여부": ("상품 위험등급을 안내받았는지 알려주세요.", "위험상품 설명 의무가 지켜졌는지 확인하기 위해 필요합니다."),
+    "원금손실 구조 안내 여부": ("원금 손실 가능성이나 구조를 안내받았는지 알려주세요.", "손실 가능성 설명이 충분했는지 확인하기 위해 필요합니다."),
+    "금리 변경 이력": ("금리 변경 안내를 받은 날짜나 메시지가 있나요?", "변경 통지 여부와 실제 적용 시점을 대조하기 위해 필요합니다."),
+    "안내 이력": ("금리 또는 우대조건 안내를 받은 기록이 있나요?", "사용자가 받은 안내와 상품 문서의 차이를 확인하기 위해 필요합니다."),
+    "안내 수신 여부": ("문자, 앱 알림, 이메일 등으로 안내를 받았는지 알려주세요.", "통지 의무 이행 여부를 확인하기 위해 필요합니다."),
+    "자동이체 실패일": ("자동이체가 실패한 날짜를 알려주세요.", "우대조건 미충족의 원인이 자동이체 실패인지 확인하기 위해 필요합니다."),
+    "해지일": ("해지를 신청하거나 처리한 날짜를 알려주세요.", "중도해지 기준일과 적용 수수료를 확인하기 위해 필요합니다."),
+    "해지 신청일": ("해지를 신청한 날짜를 알려주세요.", "신청일과 실제 처리일 사이 지연 여부를 확인하기 위해 필요합니다."),
+    "해지 신청 내역": ("해지를 신청한 화면, 문자, 영업점 접수 기록이 있나요?", "해지 요청이 실제로 접수됐는지 확인하기 위해 필요합니다."),
+    "위약금 또는 수수료 금액": ("차감된 위약금이나 수수료 금액을 알려주세요.", "약관상 수수료율과 실제 차감액이 맞는지 계산하기 위해 필요합니다."),
+    "수수료 금액": ("차감된 수수료 금액을 알려주세요.", "수수료 고지와 실제 차감 내역을 비교하기 위해 필요합니다."),
+    "수수료 안내 여부": ("수수료가 발생한다는 안내를 받았는지 알려주세요.", "수수료 고지 여부를 확인하기 위해 필요합니다."),
+    "민원 접수일": ("민원을 접수한 날짜를 알려주세요.", "처리 기한이 지났는지 확인하기 위해 필요합니다."),
+    "접수 채널": ("민원을 어디로 접수했는지 알려주세요.", "은행, 금감원, 소비자원 등 다음 안내 경로를 구분하기 위해 필요합니다."),
+    "접수번호": ("민원 접수번호가 있다면 알려주세요.", "기존 접수 건과 후속 문의를 연결하기 위해 필요합니다."),
+    "분쟁조정 안내 여부": ("분쟁조정 절차를 안내받았는지 알려주세요.", "다음 행동 안내가 누락됐는지 확인하기 위해 필요합니다."),
+    "환매 신청일": ("환매를 신청한 날짜를 알려주세요.", "환매 기준일과 예정 지급일을 확인하기 위해 필요합니다."),
+    "예정 지급일": ("안내받은 예정 지급일이 언제인지 알려주세요.", "지연 여부를 판단하기 위해 필요합니다."),
+    "실제 지급일": ("실제로 돈이 지급된 날짜를 알려주세요.", "예정일과 실제 지급일 차이를 확인하기 위해 필요합니다."),
+    "실제 지급 금액": ("실제로 지급받은 금액을 알려주세요.", "예상 금액과 실제 지급액 차이를 계산하기 위해 필요합니다."),
+    "예상 상환금": ("안내받은 예상 상환금이 얼마였는지 알려주세요.", "안내 금액과 실제 상환 금액을 비교하기 위해 필요합니다."),
+    "실제 상환금": ("실제로 상환받은 금액을 알려주세요.", "과소 지급 여부를 계산하기 위해 필요합니다."),
+    "상환 내역": ("상환 내역이나 입금 내역을 알려주세요.", "상환 금액과 지급 시점을 확인하기 위해 필요합니다."),
+    "배상 안내일": ("배상 안내를 받은 날짜를 알려주세요.", "배상 안내 기준과 이의제기 가능 시점을 확인하기 위해 필요합니다."),
+    "제시 배상비율": ("제시받은 배상비율이 몇 퍼센트인지 알려주세요.", "배상 산정 근거와 적정성을 검토하기 위해 필요합니다."),
+    "산정 근거 안내": ("배상비율 산정 근거를 안내받았는지 알려주세요.", "비율만 제시됐는지, 근거가 함께 제공됐는지 확인하기 위해 필요합니다."),
+    "손실 금액": ("발생한 손실 금액을 알려주세요.", "손실 규모와 요구 조치를 구체화하기 위해 필요합니다."),
+    "손실 산정 내역": ("손실 금액이 어떻게 계산됐는지 알 수 있는 내역이 있나요?", "손실 계산 방식과 약관 근거를 대조하기 위해 필요합니다."),
+    "연체 발생일": ("연체가 발생한 날짜를 알려주세요.", "연체이자 적용 시작일을 확인하기 위해 필요합니다."),
+    "연체이자": ("부과된 연체이자 금액을 알려주세요.", "연체이자 산정 방식이 맞는지 확인하기 위해 필요합니다."),
+    "연체 내역": ("연체 내역이나 상환 기록을 알려주세요.", "연체 발생 원인과 기간을 확인하기 위해 필요합니다."),
+    "대출 실행일": ("대출이 실행된 날짜를 알려주세요.", "대출 약정과 적용 금리를 기준일에 맞춰 확인하기 위해 필요합니다."),
+    "기존 금리": ("변경 전 적용되던 금리를 알려주세요.", "금리 변경 전후 차이를 비교하기 위해 필요합니다."),
+    "상환 예정 금액": ("안내받은 상환 예정 금액을 알려주세요.", "예정 금액과 실제 상환액 차이를 계산하기 위해 필요합니다."),
+    "실제 상환 금액": ("실제로 상환한 금액을 알려주세요.", "상환금액 오류 여부를 확인하기 위해 필요합니다."),
+    "중도상환일": ("중도상환한 날짜를 알려주세요.", "수수료 적용 기준일을 확인하기 위해 필요합니다."),
+    "중도상환수수료": ("부과된 중도상환수수료 금액을 알려주세요.", "약정 수수료율과 실제 부과액을 비교하기 위해 필요합니다."),
 }
 
 PRIVACY_NOTICE = "주민등록번호, 전체 계좌번호, 카드번호, 인증번호, 비밀번호는 입력하거나 그대로 제출하지 마세요."
@@ -156,7 +220,7 @@ def compose_case_response(case: CaseAnalysis) -> CaseResponseView:
         issues=issues,
         closing={
             "now": _collect_by_issue(issues, "next_steps"),
-            "documents": _collect_by_issue(issues, "documents_to_prepare"),
+            "documents": _collect_documents_by_contract(case.issues, issues),
             "unconfirmed": _collect_questions(issues),
             "disclaimer": DISCLAIMER,
         },
@@ -219,21 +283,31 @@ def _confirmed_facts(facts: list[Fact]) -> list[str]:
 
 def _missing_questions(issue: IssueAnalysis) -> list[QuestionItem]:
     missing_facts = issue.missing_facts
-    question_by_field = {
-        "안내 금액": "예상하신 이자 금액은 얼마인가요?",
-        "금리 변경 이력": "금리 변경 안내를 받은 날짜나 메시지가 있나요?",
-        "안내 이력": "금리 또는 우대조건 안내를 받은 기록이 있나요?",
-        "고객 인증·동의 데이터": "본인 인증과 데이터 조회 동의를 완료했나요?",
-        "가상 계약 데이터": "확인할 예금·적금 계좌번호를 알려주세요.",
-    }
-    return [
-        QuestionItem(
-            field=field,
-            question=expected_interest_question(issue.facts) if field == "안내 금액" else question_by_field.get(field, f"{field}을(를) 알려주세요."),
-            reason="검색 근거와 사실관계를 같은 민원에 연결하기 위해 필요합니다.",
+    questions: list[QuestionItem] = []
+    for field in missing_facts[:3]:
+        question, reason = _question_for_missing_field(field, issue)
+        questions.append(QuestionItem(field=field, question=question, reason=reason))
+    return questions
+
+
+def _question_for_missing_field(field: str, issue: IssueAnalysis) -> tuple[str, str]:
+    if field == "안내 금액":
+        question, reason = QUESTION_TEMPLATES_BY_FIELD[field]
+        return expected_interest_question(issue.facts) or question, reason
+
+    if field in QUESTION_TEMPLATES_BY_FIELD:
+        return QUESTION_TEMPLATES_BY_FIELD[field]
+
+    if field in REQUIRED_FACTS_BY_ISSUE.get(issue.issue_type, []):
+        return (
+            f"{field} 정보를 확인할 수 있는 내용이나 자료가 있나요?",
+            f"{issue.issue_type} 쟁점에서 사실관계와 근거 문서를 연결하기 위해 필요합니다.",
         )
-        for field in missing_facts[:3]
-    ]
+
+    return (
+        f"{field} 정보를 추가로 알려주세요.",
+        "누락된 사실을 확인해야 현재 근거로 안내 가능한 범위를 정할 수 있습니다.",
+    )
 
 def _evidence_item(ref: EvidenceRef) -> EvidenceItem:
     return EvidenceItem(
@@ -283,6 +357,78 @@ def _collect_by_issue(issues: list[IssueResponseView], field: str) -> list[str]:
         for value in getattr(issue, field):
             values.append(f"{issue.issue_id}: {value}")
     return values
+
+
+def _collect_documents_by_contract(source_issues: list[IssueAnalysis], response_issues: list[IssueResponseView]) -> list[str]:
+    grouped: dict[str, list[str]] = {}
+    labels: dict[str, str] = {}
+
+    for source, response in zip(source_issues, response_issues):
+        key, label = _contract_group(source)
+        labels[key] = label
+        grouped.setdefault(key, [])
+        for document in response.documents_to_prepare:
+            _add_document(grouped[key], document)
+
+    values: list[str] = []
+    for key, documents in grouped.items():
+        values.append(f"{labels[key]}: {', '.join(documents)}")
+    return values
+
+
+def _add_document(documents: list[str], candidate: str) -> None:
+    """Add `candidate` unless it's already covered by an existing entry.
+
+    DOCUMENTS_BY_ISSUE entries for different issue_types often name the same
+    paperwork with different specificity ("상품설명서" vs "계약서 또는
+    상품설명서") - exact-string dedup lets both through and the same document
+    shows up twice in one contract's checklist. Treat substring containment
+    either direction as the same requirement, keeping the more specific phrasing.
+    """
+    for index, existing in enumerate(documents):
+        if candidate == existing or candidate in existing:
+            return
+        if existing in candidate:
+            documents[index] = candidate
+            return
+    documents.append(candidate)
+
+
+def _contract_group(issue: IssueAnalysis) -> tuple[str, str]:
+    focal = issue.focal if isinstance(issue.focal, dict) else {}
+    candidates = [
+        focal.get("contract_id"),
+        focal.get("account_id"),
+        focal.get("account_number"),
+        focal.get("product_name"),
+        focal.get("shared_contract"),
+        focal.get("contract"),
+    ]
+    identifier = next((str(value).strip() for value in candidates if str(value or "").strip()), "")
+
+    date_value = (
+        focal.get("contract_date")
+        or focal.get("opened_at")
+        or focal.get("가입일")
+        or focal.get("date")
+        or _fact_value(issue.facts, {"가입일", "contract_date", "date_or_duration"})
+    )
+    product_name = identifier or _fact_value(issue.facts, {"상품명", "product_name"}) or issue.product
+    date_label = str(date_value).strip() if date_value else ""
+
+    if identifier or date_label:
+        key = f"{issue.product}|{product_name}|{date_label}"
+        label = " / ".join(part for part in [issue.product, date_label, product_name] if part)
+        return key, label
+
+    return issue.issue_id, f"{issue.issue_id} {issue.product}"
+
+
+def _fact_value(facts: list[Fact], fields: set[str]) -> str | None:
+    for fact in facts:
+        if fact.field in fields and str(fact.value).strip():
+            return str(fact.value).strip()
+    return None
 
 
 def _collect_questions(issues: list[IssueResponseView]) -> list[str]:

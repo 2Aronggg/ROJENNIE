@@ -70,7 +70,7 @@ def redact_pii(value: str) -> tuple[str, int]:
 # 프롬프트에 "단정적 결론·보상액 추정을 쓰지 마라"고 지시하는 것만으로는 LLM이 그
 # 지시를 어겨도 걸러낼 방법이 없다. PII처럼 후처리 시점에 실제로 걸러낸다 - 이 목록에
 # 걸리면 해당 텍스트 전체를 버리고 호출부가 자기 fallback으로 대체하게 한다.
-# 13개 규칙 + 확장 규칙을 모든 LLM 출력에 적용
+# 00_SHARED_RULES.md의 15개 공통 규칙 + 확장 컴플라이언스 규칙을 모든 LLM 출력에 적용
 FORBIDDEN_CLAIM_PATTERNS: tuple[str, ...] = (
     # 금지된 법적 결론
     "법적 결론",
@@ -110,6 +110,26 @@ FORBIDDEN_CLAIM_PATTERNS: tuple[str, ...] = (
     "100% 받을",
 )
 
+FORBIDDEN_CLAIM_REGEXES: tuple[re.Pattern[str], ...] = (
+    re.compile(r"(?:불완전\s*판매|위법|계약\s*위반|은행(?:의)?\s*잘못)(?:입니다|이다|으로\s*보입니다|로\s*판단|에\s*해당)", re.IGNORECASE),
+    re.compile(r"(?:약\s*)?\d[\d,]*(?:만\s*)?원(?:\s*(?:정도|가량|내외))?\s*(?:환급|배상|보상)(?:\s*(?:예상|가능|가능성|받을|됩니다|될\s*것))", re.IGNORECASE),
+    re.compile(r"(?:환급|배상|보상)(?:액|금|비율)?\s*(?:은|이|으로)?\s*(?:약\s*)?\d[\d,]*(?:만\s*)?원", re.IGNORECASE),
+    re.compile(r"(?:환급|배상|보상)\s*(?:될\s*것|됩니다|받을\s*수|가능성이\s*높)", re.IGNORECASE),
+    re.compile(r"(?:민원|신청서|분쟁조정|소송|고소).{0,12}(?:자동\s*)?(?:제출|접수|신청)하겠습니다", re.IGNORECASE),
+    re.compile(r"(?:반드시|확실히|100%)\s*(?:성공|환급|배상|보상|받을)", re.IGNORECASE),
+)
+
+
+def contains_forbidden_claim(value: str) -> bool:
+    """Return True when LLM output asserts legal liability or compensation."""
+    text = value.strip()
+    if not text:
+        return False
+    lowered = text.lower()
+    return any(pattern.lower() in lowered for pattern in FORBIDDEN_CLAIM_PATTERNS) or any(
+        pattern.search(text) for pattern in FORBIDDEN_CLAIM_REGEXES
+    )
+
 
 def sanitize_llm_text(value: str) -> str:
     """Drop LLM-authored text that crosses into legal conclusions or compensation estimates.
@@ -127,8 +147,7 @@ def sanitize_llm_text(value: str) -> str:
     text = value.strip()
     if not text:
         return ""
-    lowered = text.lower()
-    if any(pattern.lower() in lowered for pattern in FORBIDDEN_CLAIM_PATTERNS):
+    if contains_forbidden_claim(text):
         return ""
     return text
 
@@ -201,6 +220,8 @@ class LLMPolicyGateway:
         safe_text, output_redactions = redact_pii(text)
         if not safe_text.strip():
             raise ValueError("LLM returned no structured output")
+        if contains_forbidden_claim(safe_text):
+            raise ValueError("LLM output failed compliance validation")
         try:
             json.loads(safe_text)
         except json.JSONDecodeError as exc:

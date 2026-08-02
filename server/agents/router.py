@@ -50,7 +50,7 @@ ROUTER_SYSTEM_PROMPT = """당신은 금융 소비자 민원 Issue Splitter다.
 PRODUCT_KEYWORDS: tuple[tuple[str, tuple[str, ...]], ...] = (
     ("ELS", ("ELS", "지수연계")),
     ("펀드", ("펀드", "환매", "운용보수", "보수")),
-    ("대출", ("대출", "대출금", "대출금리", "원리금", "중도상환수수료", "대출 잔액")),
+    ("대출", ("대출", "대출금", "대출금리", "원리금", "중도상환수수료", "대출 잔액", "연체", "상환")),
     ("적금", ("적금", "자동이체", "우대조건")),
     ("예금", ("예금", "정기예금", "계좌", "통장", "지급정지")),
 )
@@ -248,22 +248,33 @@ def _llm_enabled(use_llm: bool | None) -> bool:
 
 def _split_prompt_to_issues_rules(prompt: str) -> list[IssueInput]:
     spans = _issue_spans(prompt)
-    return [_build_issue(index, span) for index, span in enumerate(spans, start=1)]
+    issues: list[IssueInput] = []
+    previous_product: str | None = None
+    for index, span in enumerate(spans, start=1):
+        issue, previous_product = _build_issue(index, span, previous_product)
+        issues.append(issue)
+    return issues
 
 
-def _build_issue(index: int, text: str) -> IssueInput:
+def _build_issue(index: int, text: str, previous_product: str | None = None) -> tuple[IssueInput, str | None]:
     raw_product = _classify_product(text)
     issue_type = _classify_issue_type(text, raw_product)
-    raw_product = raw_product or _infer_product_from_issue(issue_type)
-    return build_issue_input(
+    # 이 span 단독으로는 상품 키워드가 안 잡히면, issue_type만 보고 상품을 되짚어
+    # 추측하는 _infer_product_from_issue보다 "직전 span에서 실제로 확인된 상품"을
+    # 먼저 우선한다. "정기예금에 가입했는데... 그리고 중도해지 수수료가 다르대요"처럼
+    # 복합 민원의 뒤 절이 상품명을 생략하는 게 자연스러운 한국어 화법이라, 문맥을
+    # 버리고 하드코딩된 매핑(중도해지위약금 -> 적금 등)으로 넘어가면 오분류가 난다.
+    resolved_product = raw_product or previous_product or _infer_product_from_issue(issue_type)
+    issue = build_issue_input(
         issue_id=f"issue_{index:03d}",
-        product=raw_product or "공통",
+        product=resolved_product or "공통",
         issue_type=issue_type,
         text=text,
-        raw_product=raw_product,
+        raw_product=resolved_product,
         routing_method="rules",
-        routing_confidence=0.8 if raw_product else 0.6,
+        routing_confidence=0.8 if raw_product else (0.7 if previous_product else 0.6),
     )
+    return issue, (raw_product or previous_product)
 
 
 def _issue_spans(prompt: str) -> list[str]:
@@ -281,6 +292,16 @@ def _issue_spans(prompt: str) -> list[str]:
             current = f"{current}. {part}" if current else part
     if current:
         spans.append(current)
+
+    # raw_parts[0]은 첫 조각이라는 이유만으로 무조건 current에 들어가고 신호
+    # 유무를 검사받지 않는다(위 루프의 `if current and ...`가 current가 아직
+    # 비어 있을 때는 항상 거짓). "아니 진짜 너무 화나서 미치겠는데요!!!" 같은
+    # 감정 표현만 있는 서두 뒤에 실제 상품/쟁점 신호가 오면, 그 경계에서
+    # 분리되면서 신호 없는 서두가 "공통/미분류" 카드로 따로 떨어져 나간다.
+    # 뒤 span에 흡수시켜 하나의 이슈로 합친다.
+    if len(spans) > 1 and _classify_product(spans[0]) is None and _classify_issue_type(spans[0], None) == "미분류":
+        spans[1] = f"{spans[0]}. {spans[1]}"
+        spans = spans[1:]
     return spans
 
 
@@ -291,7 +312,18 @@ def _has_new_issue_signal(text: str) -> bool:
 
 
 def _classify_product(text: str) -> str | None:
-    return next((product for product, keywords in PRODUCT_KEYWORDS if any(keyword in text for keyword in keywords)), None)
+    # 이전에는 PRODUCT_KEYWORDS 순서상 처음 매칭되는 상품을 무조건 채택했다
+    # (ELS > 펀드 > 대출 > 적금 > 예금). 그러면 "대출 갚으려고 예금을 깼는데"처럼
+    # 실제로는 예금이 중심인 문장도 앞쪽에 있는 "대출" 키워드 하나 때문에 대출로
+    # 잘못 분류됐다. 키워드 매치 개수로 채점하고, 동점일 때만 기존 우선순위를 쓴다.
+    scored = [
+        (sum(1 for keyword in keywords if keyword in text), -order, product)
+        for order, (product, keywords) in enumerate(PRODUCT_KEYWORDS)
+        if any(keyword in text for keyword in keywords)
+    ]
+    if not scored:
+        return None
+    return max(scored)[2]
 
 
 def _classify_issue_type(text: str, product: str | None) -> str:

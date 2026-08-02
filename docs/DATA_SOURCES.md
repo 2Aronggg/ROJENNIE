@@ -1,19 +1,37 @@
-# Data Sources
+# 데이터 출처
 
-This project mixes real reference data, normalized public-data extracts, and synthetic/demo cases. The boundary must stay visible in demos and reports.
+이 프로젝트는 실제/공개 reference 데이터, 정규화한 공개 데이터, 합성/데모 데이터를 함께 사용합니다. 발표와 리포트에서는 이 경계를 명확히 표시해야 합니다.
 
-## Real Or Public Reference Data
+## 실제 또는 공개 Reference 데이터
 
-- KB product manuals, product terms, and related financial documents under `data/corpus` / generated RAG chunks.
-- KB complaint process guide data derived from the user-provided KB 민원 접수/처리 text.
-- Consumer dispute/case materials added to the corpus where source text was provided or normalized.
+- KB 상품설명서, 상품 약관, 관련 금융 문서
+- KB 민원 접수/처리 절차 안내
+- 소비자 분쟁조정/판례/사례 자료 중 원문 또는 정규화 텍스트가 확보된 자료
+- 금융 규정/법령 자료
 
-## Synthetic Or Demo Data
+이 데이터는 RAG 검색과 절차 안내, 제한된 근거 제시에 사용할 수 있습니다.
 
-- User-flow HTML demo text and staged mobile screens.
-- Evaluation complaints in `data/evaluation/service_eval_dataset.json`; these are test prompts with ground-truth labels for system behavior, not real customer records.
-- Agent demo HTML files and visual traces.
+## 합성 또는 데모 데이터
 
-## Operational Rule
+- `flow.html` 및 agent demo HTML의 화면 텍스트
+- mock 고객 `CUST-001`
+- `server/finance/mock_bank.sqlite3`
+- `data/evaluation/service_eval_dataset.json`의 평가용 민원
 
-Real reference data may support retrieval and procedural guidance. Synthetic/demo data may support evaluation and presentation only. Demo data must not be presented as a real customer case or real institution decision.
+이 데이터는 시연, 평가, UI 플로우 검증에만 사용합니다. 실제 고객 사례나 실제 은행 판단처럼 설명하면 안 됩니다.
+
+## 문서 유형별 사용 원칙
+
+| 문서 유형 | 사용 가능 범위 |
+| --- | --- |
+| 약관/상품설명서/규정 | 직접 근거 |
+| 분쟁조정 사례/판례 | 유사 사례 참고 |
+| 민원 접수/처리 안내 | 다음 행동/절차 안내 |
+| 평가셋/데모 텍스트 | 품질 검증 및 발표 시연 |
+
+## 금지 사항
+
+- mock 데이터를 실제 고객 데이터처럼 표현
+- 데모 HTML을 실제 API 연동 앱처럼 표현
+- 분쟁조정 사례를 사용자 사안의 직접 결론처럼 표현
+- 평가셋 점수를 실제 운영 성능처럼 과장

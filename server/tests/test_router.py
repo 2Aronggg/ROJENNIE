@@ -77,6 +77,52 @@ class RouterTests(unittest.TestCase):
         self.assertEqual(issues[0].facts[1].value, "12만원")
         self.assertEqual(issues[1].facts[1].value, "10일째")
 
+    def test_emotional_preamble_does_not_become_its_own_unclassified_issue(self) -> None:
+        # "아니 진짜 너무 화나서 미치겠는데요!!!"처럼 상품/쟁점 신호가 전혀 없는
+        # 서두는 첫 조각이라는 이유만으로 신호 검사를 건너뛰고 무조건 하나의
+        # span으로 굳어진다. 뒤에 실제 신호("예금 이자를...")가 오면 그 경계에서
+        # 분리돼 감정 표현만 있는 "공통/미분류" 카드가 실제 민원과 별도로 뜨던
+        # 문제 - 하나의 이슈로 합쳐져야 한다.
+        issues = split_prompt_to_issues(
+            "아니 진짜 너무 화나서 미치겠는데요!!! 은행이 대체 왜 이러는지 모르겠어요 "
+            "저 지금 완전 스트레스받아서 죽을것같은데 예금 이자를 왜 이렇게 적게 주는거예요??? "
+            "말이 되나요 진짜???",
+            use_llm=False,
+        )
+
+        self.assertEqual(len(issues), 1)
+        self.assertEqual(issues[0].product, "예금")
+        self.assertIn("예금 이자", issues[0].text)
+
+    def test_second_clause_inherits_product_from_prior_clause_when_unstated(self) -> None:
+        # "정기예금에 가입했는데... 그리고 중도해지 수수료가..."처럼 두 번째 절이
+        # 상품명을 생략하면, 예전에는 issue_type만 보고 하드코딩된 매핑
+        # (중도해지위약금 -> 적금)으로 잘못 넘어갔다. 직전 절에서 확인된 "예금"을
+        # 이어받아야 한다.
+        issues = split_prompt_to_issues(
+            "KB 정기예금에 작년 3월 10일 1년 만기로 가입했습니다. 만기 후 이자를 확인해보니, "
+            "가입 당시 안내받았던 우대금리 3.5%가 아니라 기본금리 2.1%로만 이자가 계산되어 있었습니다. "
+            "그리고 이 건과 별개로 지금 급하게 돈이 필요해 중도해지를 하려는데, "
+            "가입할 때 안내받은 중도해지 수수료율과 현재 창구에서 안내받은 수수료율이 다릅니다.",
+            use_llm=False,
+        )
+
+        self.assertGreaterEqual(len(issues), 2)
+        self.assertEqual(issues[0].product, "예금")
+        last_issue = issues[-1]
+        self.assertEqual(last_issue.issue_type, "중도해지위약금")
+        self.assertEqual(last_issue.product, "예금")
+
+    def test_multi_product_keyword_conflict_picks_the_stronger_match(self) -> None:
+        # "예금"은 한 번, "대출"도 한 번 나오면 기존 우선순위(대출이 앞순위)를 따르는
+        # 게 맞지만, 한쪽 키워드가 여러 번 반복되면 그쪽이 더 강한 신호다.
+        issues = split_prompt_to_issues(
+            "정기예금 계좌 정기예금 상품 예금 통장에서 대출 상환하려는데 위약금이 이상해요",
+            use_llm=False,
+        )
+
+        self.assertEqual(issues[0].product, "예금")
+
     def test_els_and_fund_routes_are_preserved(self) -> None:
         issues = split_prompt_to_issues(
             "ELS 조기해지 시 손실 규모 12만원에 대한 설명이 부족했어요. "

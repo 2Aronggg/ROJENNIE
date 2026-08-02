@@ -106,7 +106,12 @@ def _chunks(text: str, max_chars: int = 1400) -> Iterable[str]:
 def extract_pdf_chunks(pdf_path: Path, data_dir: Path, max_chars: int = 1400) -> list[DocumentChunk]:
     doc_id, doc_type, products, source, published_at = _metadata(pdf_path, data_dir)
     reader = PdfReader(str(pdf_path))
-    pages = [_clean_text(page.extract_text() or "") for page in reader.pages]
+    # 기본 추출 모드는 일부 PDF(특히 판례 원문)에서 단어 사이 공백을 통째로
+    # 누락시켜 토크나이저가 문장 전체를 거대한 토큰 하나로 묶어버린다 -
+    # 그러면 어떤 검색어와도 매칭되지 않는다. layout 모드는 15개 샘플
+    # 문서에서 토큰 수·최대 토큰 길이가 동일하거나 더 나았고, 깨진
+    # 문서(판례_98다46082.pdf)는 최대 토큰 137자 -> 12자로 정상화됐다.
+    pages = [_clean_text(page.extract_text(extraction_mode="layout") or "") for page in reader.pages]
     document_text = "\n".join(pages)
 
     # 파일명에 날짜가 없으면 본문 날짜를 보조값으로 사용한다.

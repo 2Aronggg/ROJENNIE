@@ -170,12 +170,26 @@ def _embeddings_cache(path: Path) -> dict[str, list[float]]:
     return cache
 
 
+def _stems_cache(path: Path) -> dict[str, list[str]]:
+    if not path.exists():
+        return {}
+    cache: dict[str, list[str]] = {}
+    with path.open(encoding="utf-8") as handle:
+        for line in handle:
+            if not line.strip():
+                continue
+            row = json.loads(line)
+            cache[row["chunk_id"]] = row["stems"]
+    return cache
+
+
 def build_corpus(
     data_dir: Path,
     chunks_path: Path,
     output_dir: Path,
     *,
     embeddings_path: Path = Path("server/rag/embeddings.jsonl"),
+    stems_path: Path = Path("server/rag/stems.jsonl"),
 ) -> dict[str, object]:
     chunks = load_jsonl(chunks_path) if chunks_path.exists() else list(iter_document_chunks(data_dir))
     grouped: dict[str, list[dict[str, object]]] = {
@@ -205,6 +219,18 @@ def build_corpus(
                     record["embedding"] = vector
                     embedded_count += 1
 
+    stems = _stems_cache(stems_path)
+    stemmed_count = 0
+    if stems:
+        for corpus, records in grouped.items():
+            if corpus not in ("cases", "products", "guides"):
+                continue  # server/rag/stem_corpus.py only computes these
+            for record in records:
+                values = stems.get(str(record["chunk_id"]))
+                if values:
+                    record["stems"] = values
+                    stemmed_count += 1
+
     output_dir.mkdir(parents=True, exist_ok=True)
     all_records: list[dict[str, object]] = []
     counts: dict[str, int] = {}
@@ -220,6 +246,8 @@ def build_corpus(
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "embedding_status": "generated" if embeddings else "not_generated",
         "embedded_chunks": embedded_count,
+        "stem_status": "generated" if stems else "not_generated",
+        "stemmed_chunks": stemmed_count,
         "retrieval": "full_text_with_optional_vector_score",
         "corpora": counts,
         "documents": documents,

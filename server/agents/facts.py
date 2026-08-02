@@ -46,7 +46,7 @@ def resolve_facts(facts: list[Fact]) -> FactResolution:
             FactProvenanceEntry(
                 field=fact.field,
                 value=fact.value,
-                source_type=_source_type(fact.source_ref),
+                source_type=fact.source_type,
                 source_ref=fact.source_ref,
                 status=status,
                 confidence=fact.confidence,
@@ -54,16 +54,6 @@ def resolve_facts(facts: list[Fact]) -> FactResolution:
             for fact in sorted(candidates, key=lambda fact: (fact.recorded_date or fact.event_date or date.min, fact.event_date or date.min), reverse=True)
         ]
     return FactResolution(latest=latest, conflicts=conflicts, provenance=provenance)
-
-
-def _source_type(source_ref: str | None) -> str:
-    if source_ref is None:
-        return "unknown"
-    if source_ref.startswith("mock"):
-        return "mock_data"
-    if source_ref.startswith("user"):
-        return "user_input"
-    return source_ref
 
 
 def missing_facts(required: list[str], resolution: FactResolution) -> list[str]:
