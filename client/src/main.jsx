@@ -13,10 +13,19 @@ import {
 import "@xyflow/react/dist/style.css";
 import "./style.css";
 
-const API_BASE = import.meta.env.VITE_API_BASE || window.API_BASE || "http://localhost:8000";
+// 배포본은 클라이언트와 API가 같은 도메인이라 상대 경로로 호출한다(동일 출처라 CORS 자체가
+// 발생하지 않음). 개발 중에는 vite가 :5173, API가 :8000이라 절대 주소가 필요하다.
+// ?? 를 쓰는 이유: VITE_API_BASE=""(상대 경로 강제)를 || 로 받으면 falsy라 무시된다.
+const API_BASE =
+  import.meta.env.VITE_API_BASE ??
+  window.API_BASE ??
+  (import.meta.env.PROD ? "" : "http://localhost:8000");
 const DEMO_ONLY = new URLSearchParams(window.location.search).get("demo") === "1";
-const CONTROL_LABEL = {proceed: "처리 완료", ask: "확인 필요", amend: "보완 필요", hold: "검토 대기"};
-const DECISION_LABEL = {proceed: "진행", ask: "추가 확인 필요", amend: "보완 필요", hold: "검토 대기"};
+// 소비자에게 보이는 화면(채팅·리포트·마이페이지 이력)은 같은 민원을 같은 사람이 보므로
+// 한 단어만 쓴다. 예전에는 화면마다 "처리 완료"/"진행"/"승인"으로 갈렸는데, proceed의 실제
+// 뜻은 "확인된 범위 안에서 다음 안내가 가능하다"이지 민원이 인정됐거나 끝났다는 게 아니다.
+// 관리자 화면은 대상이 내부 담당자라 ADMIN_CONTROL_LABEL을 따로 둔다.
+const CONTROL_LABEL = {proceed: "안내 가능", ask: "추가 확인 필요", amend: "보완 필요", hold: "검토 대기"};
 const NODE_LABEL = {user_answer: "사용자 진술", verified_fact: "내 금융정보", decision: "사용자 선택", derived: "계산 결과", evidence: "근거 자료"};
 
 const DEMO_ANALYSIS = {
@@ -53,7 +62,6 @@ const DEMO_ANALYSIS = {
 
 const EMPTY_ANALYSIS = {case_id: "new_case", issues: []};
 const HISTORY_KEY = "kb-key-buddy-case-history";
-const CASE_STATUS_LABEL = {proceed: "승인", ask: "확인중", amend: "보완 필요", hold: "검토 대기"};
 const RISK_LABEL = {low: "낮음", medium: "주의", high: "높음", critical: "긴급"};
 const ROUTING_LABEL = {llm: "LLM 분류", rules: "규칙 보완", manual: "수동 분류"};
 const TERM_DICTIONARY = {
@@ -184,7 +192,7 @@ function label(control) {
 }
 
 function decisionLabel(control) {
-  return DECISION_LABEL[control] || control || "미확인";
+  return CONTROL_LABEL[control] || control || "미확인";
 }
 
 function issueLetter(index) {
@@ -1166,7 +1174,7 @@ function MyPage({history, onNavigate, onOpenCase}) {
         {records.length === 0 ? <div className="empty-state">아직 접수한 민원이 없습니다.<button type="button" onClick={function() { onNavigate("chat"); }}>민원 작성하기</button></div> : <div className="history-list">{records.map(function(record) {
           const status = caseStatus(record.analysis);
           const issues = record.analysis?.issues || [];
-          return <article className="history-item" key={record.case_id}><div className="history-item-head"><span>{formatDate(record.created_at)}</span><b className={status}>{CASE_STATUS_LABEL[status]}</b></div><strong>{record.prompt || "복합 금융 문의"}</strong><div className="history-issues">{issues.map(function(issue) { const issueStatus = issue.decision?.control || "ask"; return <span key={issue.issue_id}>{issue.product} · {issue.issue_type} <em className={issueStatus}>{CASE_STATUS_LABEL[issueStatus]}</em></span>; })}</div><div className="history-actions"><button className="history-action" type="button" disabled={issues.length === 0} onClick={function() { onOpenCase(record, issues[0]?.issue_id); }}>분석 리포트 보기</button><button className="history-action" type="button" onClick={function() { onOpenCase(record); }}>민원 트리</button></div><small>{record.case_id}</small></article>;
+          return <article className="history-item" key={record.case_id}><div className="history-item-head"><span>{formatDate(record.created_at)}</span><b className={status}>{CONTROL_LABEL[status]}</b></div><strong>{record.prompt || "복합 금융 문의"}</strong><div className="history-issues">{issues.map(function(issue) { const issueStatus = issue.decision?.control || "ask"; return <span key={issue.issue_id}>{issue.product} · {issue.issue_type} <em className={issueStatus}>{CONTROL_LABEL[issueStatus]}</em></span>; })}</div><div className="history-actions"><button className="history-action" type="button" disabled={issues.length === 0} onClick={function() { onOpenCase(record, issues[0]?.issue_id); }}>분석 리포트 보기</button><button className="history-action" type="button" onClick={function() { onOpenCase(record); }}>민원 트리</button></div><small>{record.case_id}</small></article>;
         })}</div>}
       </div>
       <div className="panel finance-status"><div className="card-head"><div><h2>내 금융 상황</h2><p>가상 금융 데이터 연결 기준</p></div><span className="connected-dot">연결됨</span></div>{financial.loading ? <div className="empty-state compact">금융 정보를 불러오는 중입니다.</div> : <div className="finance-groups">

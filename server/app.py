@@ -25,7 +25,7 @@ from .agents.facts import missing_facts, resolve_facts
 from .finance.mock_data import MockBankClient
 from .agents.logic_graph import build_logic_graph
 from .mcp.finance.client import FinanceMCPClient
-from .rag.retrieval import SearchIndex
+from .rag.retrieval import SearchIndex, corpus_for
 from .schemas import (
     AuditEvent,
     CaseAnalysis,
@@ -96,20 +96,6 @@ def get_dictionary() -> list[dict[str, object]]:
     return _DICTIONARY
 
 
-def _admin_corpus(chunk: object) -> str:
-    doc_type = str(getattr(chunk, "doc_type", ""))
-    path = str(getattr(chunk, "path", "")).split(":", 1)[-1].replace("\\", "/")
-    if doc_type == "glossary" or path.startswith("dictionary/"):
-        return "glossary"
-    if doc_type == "case" or path.startswith("cases/"):
-        return "cases"
-    if doc_type == "law" or path.startswith(("regulations/", "공통규정/")):
-        return "regulations"
-    if path.startswith("products/"):
-        return "products"
-    return "other"
-
-
 def _admin_date_status(effective_from: date | None, effective_to: date | None) -> str:
     today = date.today()
     if effective_from and effective_from > today:
@@ -137,7 +123,7 @@ def _admin_document_rows() -> list[dict[str, object]]:
                 "doc_id": doc_id,
                 "path": first.path,
                 "doc_type": first.doc_type,
-                "corpus": _admin_corpus(first),
+                "corpus": corpus_for(first),
                 "products": sorted({product for chunk in chunks for product in chunk.product}),
                 "source": first.source,
                 "published_at": first.published_at,
@@ -250,7 +236,7 @@ def get_admin_document(doc_id: str, limit: int = 100) -> dict[str, object]:
         "doc_id": doc_id,
         "path": first.path,
         "doc_type": first.doc_type,
-        "corpus": _admin_corpus(first),
+        "corpus": corpus_for(first),
         "products": sorted({product for chunk in chunks for product in chunk.product}),
         "source": first.source,
         "published_at": first.published_at,

@@ -75,7 +75,13 @@ def _cosine(left: list[float], right: list[float]) -> float:
     return sum(a * b for a, b in zip(left, right)) / (left_norm * right_norm)
 
 
-def _corpus_for(chunk: DocumentChunk) -> str:
+def corpus_for(chunk: DocumentChunk) -> str:
+    """Which corpus a chunk belongs to.
+
+    Public because the admin API needs the same answer. It used to keep its own
+    copy of this mapping and drifted - guide documents were reported as "other"
+    there while search treated them as "guides".
+    """
     path = chunk.path.split(":", 1)[-1].replace("\\", "/")
     if chunk.doc_type == "glossary" or path.startswith("dictionary/"):
         return "glossary"
@@ -349,7 +355,7 @@ class SearchIndex:
         intent = _intent(query, query_tokens)
         if intent == "guides":
             candidate_indices.update(
-                index for index, chunk in enumerate(self.chunks) if _corpus_for(chunk) == "guides"
+                index for index, chunk in enumerate(self.chunks) if corpus_for(chunk) == "guides"
             )
 
         # as_of=None disables date filtering entirely below (`if as_of and ...`
@@ -370,7 +376,7 @@ class SearchIndex:
         ranked: list[tuple[float, str, DocumentChunk, str]] = []
         for index in candidate_indices:
             chunk = self.chunks[index]
-            corpus = _corpus_for(chunk)
+            corpus = corpus_for(chunk)
             # Glossary is a display corpus, not a legal or contractual decision source.
             if corpus == "glossary":
                 continue
@@ -486,7 +492,7 @@ class SearchIndex:
         if intent:
             quota = max(1, math.ceil(top_k * 0.4))
             for score, _, chunk, match_type in ranked:
-                if _corpus_for(chunk) != intent:
+                if corpus_for(chunk) != intent:
                     continue
                 if add_result(score, chunk, match_type) or len(results) >= quota:
                     break
