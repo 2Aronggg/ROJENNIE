@@ -49,6 +49,24 @@ POST /api/v1/cases/analyze
 | `server/agents/report_composer.py` | issue별 안전 리포트 생성 |
 | `server/policy/gateway.py` | LLM 호출 전후 정책 게이트, PII 마스킹, 금지 표현 필터 |
 
+## 수동 실행 스크립트 (`server/scripts/`)
+
+서버가 부르지 않고 사람이 필요할 때 직접 돌리는 도구입니다. 데이터를 새로 넣거나 검색 품질을 확인할 때만 쓰면 되고, 평소 실행에는 필요 없습니다.
+
+| 스크립트 | 언제 쓰나 | 결과 |
+|---|---|---|
+| `fetch_law_data.py` | 법령 원문을 새로 받을 때 | 국가법령정보센터 API → `data/regulations/law_api/*.json` |
+| `extract_cases.py` | 분쟁조정 사례 HWP/HWPX를 받았을 때 | 본문 추출 + 내용 기반 상품 분류 → `data/cases/cases.csv` |
+| `crawl_kca_cases.py` | 한국소비자원 분쟁조정 사례를 수집할 때 | → `data/cases/kca_cases.jsonl` |
+| `crawl_fss_decisions.py` | 금융감독원 분쟁조정 결정을 수집할 때 | → `data/cases/fss_decisions.jsonl` |
+| `merge_complaints.py` | AIHub 상담 데이터의 원문·라벨 JSON을 합칠 때 | → `data/complaints/**/complaints.jsonl` |
+| `report_retrieval_failures.py` | 검색 평가에서 놓친 건의 원인을 볼 때 | 질의별 상위 결과와 정답 문서 순위를 출력 |
+| `evaluate_service_pipeline.py` | UI 없이 파이프라인 전체를 한 번에 돌려볼 때 | 시나리오별 상태·근거 요약 출력 |
+
+크롤러는 대상 사이트를 그대로 긁어오므로 상품 분류가 느슨할 수 있습니다. 실제로 한국소비자원 수집분 33건 중 17건이 보험·상조·카드 사례였고, 원본을 고치는 대신 `status`를 `out_of_scope`로 표시해 corpus 빌드에서 빠지게 했습니다. 새로 수집할 때도 그대로 넣지 말고 건별로 확인해야 합니다.
+
+수집·추출 후에는 corpus를 다시 만들어야 반영됩니다(루트 `README.md`의 재빌드 절차 참고).
+
 ## Finance MCP / Mock Bank
 
 Finance MCP는 실제 금융회사 API가 아니라, mock bank 데이터를 읽기 전용 tool 형태로 노출하는 연결 계층입니다.
