@@ -1086,6 +1086,50 @@ function AdminCases({cases, history, onSelect, selectedCase, loading}) {
 // hold로 세워진 민원은 사람이 풀어주기 전까지 그대로 멈춰 있다. 서버에는 큐 조회와
 // 결정 제출 API가 모두 있었는데 이걸 부르는 화면이 없어서, 대기 건수만 보이고 처리할
 // 방법이 없는 상태였다.
+// 처음 들어온 사용자는 빈 트리 화면만 보고 "여기서 뭘 하는 건지" 알 수 없다. 민원이
+// 하나라도 분석되면 트리가 그 자리를 채우므로, 비어 있는 동안만 서비스가 무엇을 해주는지
+// 흐름으로 보여준다. 상태 이름은 CONTROL_LABEL과 같은 단어를 쓴다 - 여기서 "안내 가능"을
+// 봤는데 결과 화면에서 다른 말이 나오면 같은 상태인 줄 모른다.
+const SERVICE_STEPS = [
+  {n: "1", title: "문의를 그대로 입력", body: "예금·적금·대출에서 겪은 일을 여러 건 한 번에 적어도 민원별로 나눠 드립니다."},
+  {n: "2", title: "내 계좌 기록과 대조", body: "말씀하신 내용을 실제 계약·거래·금리·안내 이력과 맞춰 확인합니다."},
+  {n: "3", title: "현행 규정에서 근거 검색", body: "약관·상품설명서·법령과 비슷한 분쟁 사례를 찾아 판단 근거로 붙입니다."},
+];
+
+const SERVICE_OUTCOMES = [
+  {control: "proceed", body: "확인된 범위에서 다음 절차와 준비할 서류를 안내합니다."},
+  {control: "ask", body: "부족한 사실을 질문드리고, 답하시면 다시 분석합니다."},
+  {control: "amend", body: "개인정보가 노출됐다면 정리 범위를 먼저 확인합니다."},
+  {control: "hold", body: "위험하거나 불확실하면 단정하지 않고 상담원이 확인합니다."},
+];
+
+function ServiceLoop() {
+  return <div className="service-loop">
+    <div className="service-loop-head">
+      <strong>예금·적금·대출 민원을 근거와 함께 정리해 드립니다</strong>
+      <span>내 계좌 기록과 현행 규정을 대조해, 무엇이 확인됐고 무엇이 부족한지 알려드립니다.</span>
+    </div>
+    <ol className="service-steps">
+      {SERVICE_STEPS.map(function(step) {
+        return <li key={step.n}><b>{step.n}</b><div><strong>{step.title}</strong><p>{step.body}</p></div></li>;
+      })}
+    </ol>
+    <div className="service-outcomes">
+      <p className="service-outcomes-label">그다음, 민원마다 네 가지 중 하나로 안내합니다</p>
+      {SERVICE_OUTCOMES.map(function(item) {
+        return <div className="service-outcome" key={item.control}>
+          <b className={item.control}>{CONTROL_LABEL[item.control]}</b>
+          <span>{item.body}</span>
+        </div>;
+      })}
+      <p className="service-loop-note">
+        추가 확인 필요는 되묻고 답하는 과정을 반복해 사실이 충분해지면 안내로 넘어갑니다.
+        법적 책임이나 배상 여부를 확정하지는 않습니다.
+      </p>
+    </div>
+  </div>;
+}
+
 function AdminReviewQueue({queue, onSubmit, loading}) {
   const [pending, setPending] = useState("");
   const [error, setError] = useState("");
@@ -1428,7 +1472,7 @@ function App() {
     <header className="topbar"><div className="brand"><img src="/images.png" alt="KB" /><div><strong>KB Key Buddy</strong><span>금융 소비자 보호 에이전트</span></div></div><PageNav page={page} onNavigate={navigate} /><div className="case-id">{session.analysis.case_id !== "new_case" ? session.analysis.case_id : "내 금융"}</div></header>
     {page === "admin" ? <AdminPage history={history} /> : page === "mypage" ? <MyPage history={history} onNavigate={navigate} onOpenCase={openCase} /> : page === "reports" ? <GeneratedComplaintsPage history={history} onNavigate={navigate} /> : <>
       <main className="workspace">
-         <section className="panel case-panel"><div className="section-head"><div><h2>민원 흐름 트리</h2><p>노드를 드래그하고, 화면을 이동하거나 확대·축소할 수 있습니다.</p></div><StatusSummary session={session} reviewQueue={reviewQueue} /></div><div className="flow-shell">{flowNodes.length === 0 && <div className="flow-empty"><strong>아직 분석된 민원이 없습니다.</strong><span>오른쪽 입력창에 문의를 작성해 주세요.</span></div>}<ReactFlow nodes={flowNodes} edges={flowEdges} nodeTypes={nodeTypes} onNodesChange={onNodesChange} onNodeClick={onNodeClick} onNodeDoubleClick={onNodeDoubleClick} fitView fitViewOptions={{padding: .18}} minZoom={.2} maxZoom={2} panOnDrag zoomOnScroll nodesConnectable={false} defaultEdgeOptions={{selectable: false, focusable: false}} selectionOnDrag><MiniMap pannable zoomable /><Controls /><Background gap={22} size={1} color="#eadfca" /></ReactFlow></div></section>
+         <section className="panel case-panel"><div className="section-head"><div><h2>민원 흐름 트리</h2><p>노드를 드래그하고, 화면을 이동하거나 확대·축소할 수 있습니다.</p></div><StatusSummary session={session} reviewQueue={reviewQueue} /></div><div className="flow-shell">{flowNodes.length === 0 && <div className="flow-empty"><ServiceLoop /><span className="service-loop-cta">오른쪽 입력창에 문의를 작성하면 이 자리에 판단 흐름이 그려집니다.</span></div>}<ReactFlow nodes={flowNodes} edges={flowEdges} nodeTypes={nodeTypes} onNodesChange={onNodesChange} onNodeClick={onNodeClick} onNodeDoubleClick={onNodeDoubleClick} fitView fitViewOptions={{padding: .18}} minZoom={.2} maxZoom={2} panOnDrag zoomOnScroll nodesConnectable={false} defaultEdgeOptions={{selectable: false, focusable: false}} selectionOnDrag>{flowNodes.length > 0 && <><MiniMap pannable zoomable /><Controls /></>}<Background gap={22} size={1} color="#eadfca" /></ReactFlow></div></section>
          <ChatPanel issue={selectedIssue} state={selectedState} index={selectedIssueIndex < 0 ? 0 : selectedIssueIndex} draft={draft} setDraft={setDraft} dispatch={dispatch} onAnalyze={analyze} reviewQueue={reviewQueue} />
       </main>
       <DetailDrawer node={selectedNode} onClose={function() { dispatch({type: "CLOSE_DRAWER"}); }} onEdit={editAnswer} />

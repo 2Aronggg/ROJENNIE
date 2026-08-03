@@ -402,3 +402,25 @@ button:focus-visible, input:focus-visible, textarea:focus-visible { outline: 3px
 .doc-check input { width: 14px; height: 14px; accent-color: #6b5b3e; cursor: pointer; flex: 0 0 auto; }
 .doc-check.done span { text-decoration: line-through; opacity: .55; }
 .doc-progress { margin-top: 2px; font-size: 11px; opacity: .7; }
+
+/* 빈 트리 자리에 서비스 흐름 안내. 민원이 분석되면 트리가 이 자리를 덮는다. */
+.flow-empty { overflow-y: auto; padding: 22px 18px; }
+.service-loop { width: min(560px, 100%); display: flex; flex-direction: column; gap: 14px; text-align: left; }
+.service-loop-head { display: flex; flex-direction: column; gap: 4px; }
+.service-loop-head strong { font-size: 15px; line-height: 1.45; color: var(--text); }
+.service-loop-head span { font-size: 12px; line-height: 1.55; color: var(--muted); }
+.service-steps { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+.service-steps li { display: flex; gap: 10px; align-items: flex-start; padding: 10px 12px; border: 1px solid var(--line); border-radius: 12px; background: var(--panel); }
+.service-steps li b { flex: 0 0 20px; height: 20px; border-radius: 50%; background: var(--gold-soft); color: var(--text); font-size: 11px; display: grid; place-content: center; }
+.service-steps li strong { display: block; font-size: 12.5px; color: var(--text); }
+.service-steps li p { margin: 2px 0 0; font-size: 11.5px; line-height: 1.5; color: var(--muted); }
+.service-outcomes { display: flex; flex-direction: column; gap: 6px; padding: 12px; border: 1px dashed var(--line); border-radius: 12px; }
+.service-outcomes-label { margin: 0 0 2px; font-size: 11.5px; color: var(--muted); }
+.service-outcome { display: flex; gap: 8px; align-items: baseline; font-size: 11.5px; line-height: 1.5; color: var(--muted); }
+.service-outcome b { flex: 0 0 auto; padding: 1px 7px; border-radius: 999px; font-size: 11px; }
+.service-outcome b.proceed { background: var(--green-soft); color: var(--green); }
+.service-outcome b.ask { background: var(--gold-soft); color: var(--orange); }
+.service-outcome b.amend { background: var(--orange-soft); color: var(--orange); }
+.service-outcome b.hold { background: var(--red-soft); color: var(--red); }
+.service-loop-note { margin: 6px 0 0; font-size: 11px; line-height: 1.55; color: var(--muted); opacity: .85; }
+.service-loop-cta { margin-top: 14px; font-size: 11.5px; color: var(--muted); }
