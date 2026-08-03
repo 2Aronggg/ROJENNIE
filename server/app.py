@@ -341,12 +341,6 @@ def _require_mock_customer(customer_id: str) -> None:
         raise HTTPException(status_code=404, detail="mock customer not found")
 
 
-@app.get("/mock/customers/{customer_id}/products")
-def get_mock_products(customer_id: str) -> dict[str, list[dict[str, object]]]:
-    _require_mock_customer(customer_id)
-    return MOCK_BANK_CLIENT.get_products(customer_id)
-
-
 @app.get("/mock/customers/{customer_id}/profile")
 def get_mock_profile(customer_id: str) -> dict[str, object]:
     customer = MOCK_BANK_CLIENT.get_customer(customer_id)
@@ -371,38 +365,6 @@ def get_mock_savings(customer_id: str) -> list[dict[str, object]]:
 def get_mock_loans(customer_id: str) -> list[dict[str, object]]:
     _require_mock_customer(customer_id)
     return MOCK_BANK_CLIENT.get_loans(customer_id)
-
-
-@app.get("/mock/accounts/{account_id}/transactions")
-def get_mock_transactions(account_id: str) -> list[dict[str, object]]:
-    if MOCK_BANK_CLIENT.get_account(account_id) is None:
-        raise HTTPException(status_code=404, detail="mock account not found")
-    return MOCK_BANK_CLIENT.get_transactions(account_id)
-
-
-@app.get("/mock/accounts/{account_id}/repayments")
-def get_mock_repayments(account_id: str) -> list[dict[str, object]]:
-    if MOCK_BANK_CLIENT.get_account(account_id) is None:
-        raise HTTPException(status_code=404, detail="mock account not found")
-    return MOCK_BANK_CLIENT.get_repayments(account_id)
-
-
-@app.get("/mock/accounts/{account_id}/rate-history")
-def get_mock_rate_history(account_id: str) -> list[dict[str, object]]:
-    if MOCK_BANK_CLIENT.get_account(account_id) is None:
-        raise HTTPException(status_code=404, detail="mock account not found")
-    return MOCK_BANK_CLIENT.get_rate_history(account_id)
-
-
-@app.get("/mock/accounts/{account_id}/notice-history")
-def get_mock_notice_history(account_id: str) -> list[dict[str, object]]:
-    if MOCK_BANK_CLIENT.get_account(account_id) is None:
-        raise HTTPException(status_code=404, detail="mock account not found")
-    return MOCK_BANK_CLIENT.get_notice_history(account_id)
-
-@app.get("/health")
-def health() -> dict[str, str]:
-    return {"status": "ok"}
 
 
 # issue_type 키워드 분류(server/agents/router.py)가 자연스러운 표현("제 명의로 대출이

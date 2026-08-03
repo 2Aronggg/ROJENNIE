@@ -58,8 +58,12 @@
 - [ ] 데모 HTML 중복 통합: `demo/agent2~4`는 정적판과 라이브판이 `agent-api.js` 로드 2줄만
       다르고 agent1은 레이아웃이 252줄 갈라졌다. `agent-api.js` 유무로 동작을 나눠 파일 하나로
       합친다. (agent-client 브랜치가 같은 파일을 수정 중이라 머지 이후)
-- [ ] 사용되지 않는 엔드포인트 제거: `/api/v1/cases/{id}/review`, `/api/v1/cases/{id}/audit`,
-      `/mock/accounts/*` 4개, `/mock/customers/{id}/products`. 클라이언트도 MCP도 호출하지 않는다.
+- [x] 중복 엔드포인트 제거: `/mock/accounts/*` 4개와 `/mock/customers/{id}/products`.
+      같은 데이터를 Finance MCP의 `get_my_*` tool이 제공하고 파이프라인은 그쪽을 쓴다.
+      `review`/`audit`은 처음에 같이 지우려 했으나, hold 민원을 사람이 푸는 유일한 경로라
+      남기고 상담원 화면을 만들었다.
+- [ ] `server/scripts/` 8개 스크립트의 용도를 README에 한 줄씩 적는다. 전부 수동 실행용인데
+      어디에도 설명이 없어 언제 무엇을 돌려야 하는지 알 수 없다.
 
 ---
 

@@ -81,6 +81,44 @@ function readCaseHistory() {
   }
 }
 
+// 준비할 서류는 사용자가 며칠에 걸쳐 모으는 것이라 체크 상태가 새로고침을 넘겨
+// 살아남아야 한다. 서버에 둘 값은 아니어서(개인 진행 상황이지 민원 사실이 아님)
+// 민원 이력과 같은 방식으로 localStorage에 남긴다.
+const DOC_CHECK_KEY = "kb-key-buddy-doc-checklist";
+
+function readDocChecks() {
+  try {
+    const value = JSON.parse(window.localStorage.getItem(DOC_CHECK_KEY) || "{}");
+    return value && typeof value === "object" ? value : {};
+  } catch (_) {
+    return {};
+  }
+}
+
+function DocumentChecklist({issueId, documents}) {
+  const [checked, setChecked] = useState(function() { return readDocChecks()[issueId] || []; });
+  useEffect(function() { setChecked(readDocChecks()[issueId] || []); }, [issueId]);
+
+  function toggle(document) {
+    const next = checked.includes(document)
+      ? checked.filter(function(item) { return item !== document; })
+      : [...checked, document];
+    setChecked(next);
+    window.localStorage.setItem(DOC_CHECK_KEY, JSON.stringify({...readDocChecks(), [issueId]: next}));
+  }
+
+  return <div className="doc-checklist">
+    {documents.map(function(document) {
+      const done = checked.includes(document);
+      return <label className={"doc-check" + (done ? " done" : "")} key={document}>
+        <input type="checkbox" checked={done} onChange={function() { toggle(document); }} />
+        <span>{document}</span>
+      </label>;
+    })}
+    <small className="doc-progress">{checked.filter(function(item) { return documents.includes(item); }).length}/{documents.length} 준비됨</small>
+  </div>;
+}
+
 function rememberCase(analysis, prompt = "") {
   const current = readCaseHistory();
   const previous = current.find(function(item) { return item.case_id === analysis.case_id; });
@@ -787,7 +825,7 @@ function IssueReportDrawer({issue, state, index, onClose}) {
         <p className="report-copy report-reasoning">{report.processing_result || report.reasoning}</p>
         <h3>소비자 유의사항</h3>
         {(report.consumer_cautions || report.follow_up_actions || []).map(function(caution, cautionIndex) { return <p className="report-bullet" key={cautionIndex}>• {caution}</p>; })}
-        {(report.documents_to_prepare || []).length > 0 && <><h3>준비할 서류</h3>{report.documents_to_prepare.map(function(document, documentIndex) { return <p className="report-bullet" key={documentIndex}>• {document}</p>; })}</>}
+        {(report.documents_to_prepare || []).length > 0 && <><h3>준비할 서류</h3><DocumentChecklist issueId={issue.issue_id} documents={report.documents_to_prepare} /></>}
         {(issue.decision?.risk_flags || []).length > 0 && <p className="report-risk">위험 신호: {issue.decision.risk_flags.join(", ")}</p>}
       </div>
       <div className="drawer-section">
@@ -1045,6 +1083,51 @@ function AdminCases({cases, history, onSelect, selectedCase, loading}) {
   </div>;
 }
 
+// hold로 세워진 민원은 사람이 풀어주기 전까지 그대로 멈춰 있다. 서버에는 큐 조회와
+// 결정 제출 API가 모두 있었는데 이걸 부르는 화면이 없어서, 대기 건수만 보이고 처리할
+// 방법이 없는 상태였다.
+function AdminReviewQueue({queue, onSubmit, loading}) {
+  const [pending, setPending] = useState("");
+  const [error, setError] = useState("");
+
+  async function decide(item, control) {
+    const key = item.case_id + item.issue_id;
+    setPending(key);
+    setError("");
+    try {
+      await onSubmit(item.case_id, item.issue_id, control);
+    } catch (_) {
+      setError("검토 결과를 저장하지 못했습니다. 서버 상태를 확인해 주세요.");
+    }
+    setPending("");
+  }
+
+  return <section className="panel admin-panel">
+    <div className="card-head"><div><h2>검토 대기</h2><p>자동 판단을 보류하고 사람 확인을 기다리는 민원입니다.</p></div><span>{queue.length}건</span></div>
+    {error && <p className="admin-table-empty">{error}</p>}
+    {loading && <p className="admin-table-empty">불러오는 중입니다.</p>}
+    {!loading && queue.length === 0 && <p className="admin-table-empty">검토 대기 중인 민원이 없습니다.</p>}
+    {queue.map(function(item) {
+      const key = item.case_id + item.issue_id;
+      const busy = pending === key;
+      return <article className="admin-issue-detail" key={key}>
+        <div className="admin-result-head">
+          <strong>{item.product} · {item.issue_type}</strong>
+          <b className={"admin-status " + item.control}>{ADMIN_CONTROL_LABEL[item.control] || item.control}</b>
+        </div>
+        <p><b>위험도:</b> {riskLabel(item.risk_level)}{(item.risk_reasons || []).length > 0 && " · " + item.risk_reasons.join(", ")}</p>
+        <p><b>분류:</b> {ROUTING_LABEL[item.routing_method] || "미측정"} · {confidenceText(item.routing_confidence)}</p>
+        <div className="history-actions">
+          <button className="history-action" type="button" disabled={busy} onClick={function() { decide(item, "proceed"); }}>안내 가능으로 변경</button>
+          <button className="history-action" type="button" disabled={busy} onClick={function() { decide(item, "ask"); }}>추가 확인 필요</button>
+          <button className="history-action" type="button" disabled={busy} onClick={function() { decide(item, "hold"); }}>계속 보류</button>
+        </div>
+        <small>{item.case_id} · {item.issue_id}</small>
+      </article>;
+    })}
+  </section>;
+}
+
 function AdminAudit({audit}) {
   return <div className="admin-content"><section className="panel admin-card"><div className="admin-card-head"><div><h2>실행 기록·감사 로그</h2><p>원문 개인정보 없이 시스템 이벤트만 표시합니다.</p></div><span>{audit.length}건</span></div><div className="admin-audit-list admin-audit-table">{audit.length === 0 ? <p className="admin-table-empty">기록이 없습니다. 민원을 분석하면 이벤트가 쌓입니다.</p> : audit.map(function(event) { return <article key={event.event_id}><div><b>{event.event_type}</b><span>{event.case_id}</span></div><div><span>{event.actor}</span><small>{formatDate(event.created_at)}</small></div><pre>{JSON.stringify(event.payload || {}, null, 2)}</pre></article>; })}</div></section></div>;
 }
@@ -1058,6 +1141,7 @@ function AdminPage({history}) {
   const [cases, setCases] = useState([]);
   const [selectedCase, setSelectedCase] = useState(null);
   const [audit, setAudit] = useState([]);
+  const [queue, setQueue] = useState([]);
   const [loading, setLoading] = useState(true);
 
   const refresh = useCallback(async function() {
@@ -1068,13 +1152,25 @@ function AdminPage({history}) {
       adminJson("/api/v1/admin/documents").catch(function() { return []; }),
       adminJson("/api/v1/admin/cases").catch(function() { return localCases; }),
       adminJson("/api/v1/admin/audit").catch(function() { return []; }),
+      adminJson("/api/v1/reviews/queue").catch(function() { return []; }),
     ]);
     setOverview(values[0]);
     setDocuments(values[1]);
     setCases(values[2]);
     setAudit(values[3]);
+    setQueue(values[4]);
     setLoading(false);
   }, [history]);
+
+  async function submitReview(caseId, issueId, control) {
+    const response = await fetch(API_BASE + "/api/v1/cases/" + encodeURIComponent(caseId) + "/review", {
+      method: "POST",
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify({reviewer_id: "admin", issue_decisions: {[issueId]: {control, risk_flags: ["manual_review"]}}}),
+    });
+    if (!response.ok) throw new Error("review failed: " + response.status);
+    await refresh();
+  }
 
   useEffect(function() { refresh(); }, [refresh]);
 
@@ -1108,6 +1204,7 @@ function AdminPage({history}) {
     ["knowledge", "지식 문서"],
     ["search", "검색 테스트"],
     ["cases", "민원 검토"],
+    ["review", "검토 대기" + (queue.length ? " (" + queue.length + ")" : "")],
     ["audit", "실행·감사"],
   ];
   return <main className="page-shell admin-page">
@@ -1119,6 +1216,7 @@ function AdminPage({history}) {
         {tab === "knowledge" && <AdminKnowledge documents={documents} selectedDocument={selectedDocument} query={documentQuery} setQuery={setDocumentQuery} onSelect={selectDocument} onRefresh={refresh} loading={loading} />}
         {tab === "search" && <AdminSearch />}
         {tab === "cases" && <AdminCases cases={cases} history={history} onSelect={selectCase} selectedCase={selectedCase} loading={loading} />}
+        {tab === "review" && <AdminReviewQueue queue={queue} onSubmit={submitReview} loading={loading} />}
         {tab === "audit" && <AdminAudit audit={audit} />}
       </div>
     </div>
@@ -1226,7 +1324,7 @@ function GeneratedComplaintsPage({history, onNavigate}) {
         <ReportBlock title="민원내용"><p>{report.complaint_content || selected.issue_type}</p></ReportBlock>
         <ReportBlock title="처리결과"><p className="report-result">{report.processing_result || report.reasoning || "검색된 근거자료를 바탕으로 처리 결과를 생성했습니다."}</p></ReportBlock>
         <ReportBlock title="소비자 유의사항">{(report.consumer_cautions || report.follow_up_actions || selected.next_steps || []).map(function(item, index) { return <p className="report-bullet" key={index}>• {item}</p>; })}</ReportBlock>
-        {(report.documents_to_prepare || []).length > 0 && <ReportBlock title="준비할 서류">{report.documents_to_prepare.map(function(item, index) { return <p className="report-bullet" key={index}>• {item}</p>; })}</ReportBlock>}
+        {(report.documents_to_prepare || []).length > 0 && <ReportBlock title="준비할 서류"><DocumentChecklist issueId={selected.issue_id} documents={report.documents_to_prepare} /></ReportBlock>}
       </article>
       <aside className="panel report-insights"><section><div className="card-head"><div><h2>금융 용어</h2><p>사전에서 쉽게 풀어쓴 설명</p></div><span>{terms.length}개</span></div>{terms.map(function(term) { return <div className="term-card" key={term}><strong>{term}</strong><p>{dictionaryTerms[term] || TERM_DICTIONARY[term]}</p></div>; })}</section><section className="evidence-summary"><div className="card-head"><div><h2>근거 기반 결론</h2><p>RAG가 검색한 자료 기반</p></div><span>{candidates.length}건</span></div><p className="insight-conclusion">{report.processing_result || report.reasoning || "검색된 근거자료를 바탕으로 처리 결과를 생성했습니다."}</p>{candidates.length === 0 ? <p className="empty-copy">연결된 근거자료가 없습니다.</p> : candidates.map(function(ref, index) { return <article className="evidence-card" key={(ref.chunk_id || ref.doc_id || "ref") + index}><strong>[{sourceLabel(ref)}]</strong><p>{ref.snippet || "관련 조항의 적용 내용을 확인했습니다."}</p><small>{ref.page ? "p." + ref.page : "관련 문서"}</small></article>; })}</section></aside>
     </div>

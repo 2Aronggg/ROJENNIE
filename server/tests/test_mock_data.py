@@ -45,18 +45,22 @@ class MockDataTests(unittest.TestCase):
         self.assertEqual(context["accounts"][0]["net_interest"], 279180)
 
     def test_mock_read_apis(self) -> None:
+        """마이 페이지가 실제로 호출하는 4개 엔드포인트만 검증한다.
+
+        계좌 단위 조회(거래·상환·금리·안내 이력)는 HTTP로 노출하지 않는다. 같은
+        데이터를 Finance MCP의 get_my_* tool이 제공하고 파이프라인은 그쪽을 쓰기
+        때문에, HTTP 사본은 테스트만 부르는 중복이었다. 아래 계좌 단위 단언은
+        test_mcp_finance.py와 MockBankClient 직접 호출로 옮겼다.
+        """
         client = TestClient(app_module.app)
 
-        products = client.get("/mock/customers/CUST-001/products")
-        self.assertEqual(products.status_code, 200)
-        self.assertEqual(products.json()["deposits"][0]["account_id"], "DEP-001")
-        self.assertEqual(products.json()["savings"][0]["account_id"], "SAV-001")
+        profile = client.get("/mock/customers/CUST-001/profile")
+        self.assertEqual(profile.status_code, 200)
+        self.assertEqual(profile.json()["products"]["deposits"][0]["account_id"], "DEP-001")
+        self.assertEqual(profile.json()["products"]["savings"][0]["account_id"], "SAV-001")
 
         deposits = client.get("/mock/customers/CUST-001/deposits")
         self.assertEqual(deposits.json()[0]["net_interest"], 279180)
-        self.assertEqual(client.get("/mock/accounts/SAV-001/rate-history").json(), [])
-        self.assertEqual(client.get("/mock/accounts/SAV-001/notice-history").json(), [])
-        self.assertEqual(client.get("/mock/accounts/DEP-001/transactions").json()[0]["amount"], 279180)
 
         loans = client.get("/mock/customers/CUST-001/loans")
         self.assertEqual(loans.status_code, 200)
@@ -65,8 +69,14 @@ class MockDataTests(unittest.TestCase):
         self.assertEqual(loans.json()[0]["executed_at"], "2025-03-15")
         self.assertEqual(loans.json()[0]["rate_index"], "MOR 6개월")
         self.assertEqual(loans.json()[0]["outstanding_balance"], 24_180_000)
-        self.assertEqual(client.get("/mock/accounts/LOAN-001/repayments").json()[0]["amount"], 565_000)
-        self.assertEqual(client.get("/mock/accounts/LOAN-001/notice-history").json(), [])
+
+    def test_account_level_history_reads(self) -> None:
+        bank = MockBankClient()
+        self.assertEqual(bank.get_transactions("DEP-001")[0]["amount"], 279180)
+        self.assertEqual(bank.get_repayments("LOAN-001")[0]["amount"], 565_000)
+        self.assertEqual(bank.get_rate_history("SAV-001"), [])
+        self.assertEqual(bank.get_notice_history("SAV-001"), [])
+        self.assertEqual(bank.get_notice_history("LOAN-001"), [])
 
     def test_resolver_facts_carry_event_and_recorded_dates(self) -> None:
         # opened_at/maturity_at 등 필드값 자체가 날짜인 사실은 event_date로도 남아야

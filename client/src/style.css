@@ -396,3 +396,9 @@ button:focus-visible, input:focus-visible, textarea:focus-visible { outline: 3px
   .admin-search-fields { justify-content: stretch; }
   .admin-search-fields .primary-action { width: 100%; }
 }
+
+.doc-checklist { display: flex; flex-direction: column; gap: 6px; margin-top: 8px; }
+.doc-check { display: flex; align-items: center; gap: 8px; font-size: 12px; line-height: 1.5; cursor: pointer; }
+.doc-check input { width: 14px; height: 14px; accent-color: #6b5b3e; cursor: pointer; flex: 0 0 auto; }
+.doc-check.done span { text-decoration: line-through; opacity: .55; }
+.doc-progress { margin-top: 2px; font-size: 11px; opacity: .7; }
