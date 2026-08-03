@@ -124,7 +124,9 @@ python -m server.rag.build_corpus
 
 `vercel.json`과 `api/index.py`가 준비돼 있습니다. 클라이언트는 정적 빌드로, FastAPI는 서버리스 함수로 나갑니다.
 
-> **현재 배포본은 동작하지 않습니다.** 함수는 기동하지만 라우팅이 맞지 않아 모든 경로가 404입니다. 원인과 수정 방향은 [docs/TODO.md](docs/TODO.md) 2절에 있습니다.
+**배포 주소: https://keybuddy-ten.vercel.app**
+
+배포는 **Git 연동**으로 합니다. `main`에 push하면 Vercel이 저장소를 직접 clone해서 빌드하고 프로덕션에 반영합니다. `vercel --prod`(CLI 업로드)는 총량 10MB 한도가 있어 37.5MB인 corpus를 못 올리므로 쓰지 않습니다.
 
 환경변수를 먼저 설정하세요:
 
@@ -132,7 +134,9 @@ python -m server.rag.build_corpus
 |---|---|---|
 | `GEMINI_API_KEY` | 발급받은 키 | 없으면 전 단계가 규칙 기반으로 동작 |
 | `MOCK_BANK_DB` | `:memory:` | 서버리스는 파일시스템이 읽기 전용 |
-| `CORS_ORIGINS` | 배포 도메인 | 기본값은 localhost만 허용 |
+| `SUPABASE_RAG_ENABLED` | `false` | 로컬 하이브리드 인덱스를 쓴다. `true`면 pgvector RPC로 가는데 순수 벡터 유사도뿐이라 형태소 텍스트 점수·상품명 가중치·intent 보정이 빠진다 |
+
+클라이언트와 API가 같은 도메인이라 `CORS_ORIGINS`는 배포에 필요 없습니다(FastAPI가 `client/dist`를 직접 서빙합니다). 로컬 개발에서만 기본값 localhost가 쓰입니다.
 
 `data/corpus/all.jsonl`(37.5MB)은 저장소에 포함돼 있어야 합니다. 서버가 읽는 유일한 corpus 파일이고, 없으면 근거 검색이 빈 인덱스로 시작합니다.
 

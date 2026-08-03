@@ -49,8 +49,22 @@
       가중치·intent 보정이 전부 빠진다. 문서의 recall@5 = 100%는 로컬 하이브리드 경로에서
       측정한 값이라, pgvector로 배포하면 그 수치가 배포 환경을 설명하지 못한다.
       corpus가 3,698청크까지 줄어 인메모리로 충분하다.
-- [ ] 배포 후 `/api/v1/cases/analyze`가 실제 근거를 반환하는지, 콜드 스타트가 몇 초인지 잰다.
-      인덱스가 로컬에서 855MB를 쓰는데 함수 메모리는 2048MB다. 여유가 크지 않다.
+- [x] **CLI 배포를 포기하고 Git 연동으로 바꿨다.** `vercel --prod`는 업로드 총량 10MB 한도가
+      있어서 `data/corpus/all.jsonl`(37.5MB)을 못 올린다. `.vercelignore`를 아무리 조여도
+      corpus 자체가 한도를 넘어 CLI로는 하이브리드 배포가 불가능하다. `vercel git connect`로
+      저장소를 연결하면 Vercel이 직접 clone해서 빌드하므로 한도가 없다.
+      → **이제 main에 push하면 프로덕션이 자동 배포된다.** 팀원도 알아야 한다.
+- [x] **배포 검증 완료** (`keybuddy-ten.vercel.app`).
+      `/health` 200, `/`와 정적 자산 200(0.4초), `/dictionary/search` 정상,
+      `/api/v1/admin/overview`가 문서 171개·3,160청크를 보고해 corpus가 실제로 실렸음을 확인.
+      `/api/v1/cases/analyze`는 근거 5건에 `proceed`, routing과 report 모두 `llm` 경로,
+      support_chain은 `direct_match`.
+- [ ] **배포 응답이 로컬보다 훨씬 느리다 — 콜드 66.7초 / 웜 28~51초** (로컬 12~20초).
+      `maxDuration`을 60에서 300으로 올려놨기에 망정이지 60초였으면 타임아웃이었다.
+      인스턴스가 새로 뜰 때마다 37.5MB corpus를 파싱해 인덱스를 다시 만드는 비용이 크다.
+      4절의 `rag_query` 단계 제거가 여기서도 우선 후보다.
+- [ ] 인덱스가 로컬에서 855MB를 쓰는데 함수 메모리는 2048MB다. 여유가 크지 않아
+      corpus가 커지면 먼저 터질 곳이다.
 
 ## 3. 로컬 기동이 갑자기 10분 넘게 걸릴 때
 
