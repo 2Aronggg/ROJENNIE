@@ -228,19 +228,21 @@ const RISK_FLAG_LABEL = {
 function factLabel(field) { return FACT_FIELD_LABEL[field] || field; }
 function riskFlagLabel(flag) { return RISK_FLAG_LABEL[flag] || flag; }
 
-// corpus에는 같은 약관이 파일명만 다른 사본으로 여러 벌 들어 있어(102종 확인), 검색이
-// 동일한 조항을 5건까지 그대로 돌려준다. 검색 단계 dedup은 추출 텍스트가 미세하게 달라
-// 걸러내지 못하므로, 화면에서는 같은 문서·같은 조항을 한 번만 보여주고 나머지는 사본 수로
-// 접는다. 근본 해결은 corpus에서 중복 PDF를 정리하는 것이다(docs/TODO.md).
+// data/products에는 같은 약관이 이름만 다른 파일로 여러 벌 있다 - 예금거래기본약관은
+// 6개 파일이 본문까지 완전히 같아서, 검색이 같은 조항을 그만큼 돌려준다.
+//
+// 파일명으로 묶으면 안 된다. "약관 및 상품설명서 (1)~(12)"는 브라우저가 붙인 기본 이름일
+// 뿐 속은 KB모임금고 특약, KB Star 정기예금 설명서처럼 서로 다른 문서라서, 이름으로
+// 합치면 진짜 다른 근거가 사라진다. 본문(snippet)이 같을 때만 한 건으로 접는다.
 function dedupeEvidence(refs) {
-  const byClause = new Map();
+  const byText = new Map();
   refs.forEach(function(ref) {
-    const key = documentName(ref) + "|" + (ref.section || ref.doc_id);
-    const found = byClause.get(key);
+    const key = String(ref.snippet || "").replace(/\s+/g, " ").trim() || ref.chunk_id;
+    const found = byText.get(key);
     if (found) found.copies += 1;
-    else byClause.set(key, {ref, copies: 1});
+    else byText.set(key, {ref, copies: 1});
   });
-  return [...byClause.values()];
+  return [...byText.values()];
 }
 
 function sourceLabel(ref) {
