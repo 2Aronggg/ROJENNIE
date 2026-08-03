@@ -65,6 +65,7 @@ class SupabaseStore:
         params: dict[str, str] | None = None,
         body: Any | None = None,
         prefer: str | None = None,
+        timeout: float = 10,
     ) -> list[dict[str, Any]]:
         query = f"?{urlencode(params)}" if params else ""
         request = Request(
@@ -75,7 +76,7 @@ class SupabaseStore:
             method=method,
         )
         try:
-            with urlopen(request, timeout=10) as response:
+            with urlopen(request, timeout=timeout) as response:
                 raw = response.read()
         except (HTTPError, URLError, TimeoutError) as exc:
             detail = ""
@@ -86,6 +87,10 @@ class SupabaseStore:
             return []
         result = json.loads(raw.decode("utf-8"))
         return result if isinstance(result, list) else [result]
+
+    def rpc(self, function: str, body: dict[str, Any]) -> list[dict[str, Any]]:
+        """Call a server-side Supabase function through PostgREST."""
+        return self._request(f"rpc/{function}", method="POST", body=body)
 
     def _safe(self, operation: str, callback: Any, fallback: Any) -> Any:
         if not self.enabled:

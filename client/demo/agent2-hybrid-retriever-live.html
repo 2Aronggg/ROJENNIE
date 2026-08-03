@@ -1,0 +1,1215 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Agent 2 - Hybrid Retriever Demo</title>
+    <style>
+      :root {
+        --amber-main: #ca8a04;
+        --amber-deep: #854d0e;
+        --amber-bright: #facc15;
+        --amber-soft: #fef3c7;
+        --warm-white: #faf8f4;
+        --ivory: #fffdf8;
+        --cream: #f4ede2;
+        --charcoal: #242424;
+        --gray: #74716c;
+        --line: rgba(202, 138, 4, 0.34);
+        --glass: rgba(255, 253, 248, 0.76);
+        --green: #1f7a6c;
+        --shadow: 0 22px 62px rgba(91, 58, 10, 0.16);
+        --ease: cubic-bezier(0.2, 0.82, 0.18, 1);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        overflow: hidden;
+        color: var(--charcoal);
+        font-family: "Segoe UI", "Noto Sans KR", Arial, sans-serif;
+        background:
+          radial-gradient(circle at 10% 20%, rgba(250, 204, 21, 0.22), transparent 25%),
+          radial-gradient(circle at 87% 13%, rgba(202, 138, 4, 0.23), transparent 27%),
+          radial-gradient(circle at 72% 85%, rgba(254, 243, 199, 0.7), transparent 31%),
+          linear-gradient(135deg, #fff8e1, var(--ivory) 48%, #f1dfb8);
+      }
+
+      body::before {
+        position: fixed;
+        inset: 0;
+        opacity: 0.22;
+        background-image:
+          linear-gradient(rgba(202, 138, 4, 0.09) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(202, 138, 4, 0.09) 1px, transparent 1px);
+        background-size: 54px 54px;
+        content: "";
+        pointer-events: none;
+      }
+
+      body:not(.playing) .demo,
+      body:not(.playing) .demo *,
+      body:not(.playing) .end-popup {
+        animation-play-state: paused !important;
+      }
+
+      .demo {
+        position: relative;
+        display: grid;
+        grid-template-rows: 13.5% 82% 4.5%;
+        gap: 8px;
+        width: min(96vw, calc(96vh * 16 / 9), 1600px);
+        aspect-ratio: 16 / 9;
+        margin: 0 auto;
+        padding: 12px;
+        opacity: 0;
+        animation: fadeIn 0.8s var(--ease) forwards;
+      }
+
+      .panel {
+        position: relative;
+        z-index: 1;
+        min-height: 0;
+        overflow: hidden;
+        border: 1.5px solid var(--line);
+        border-radius: 22px;
+        background: var(--glass);
+        box-shadow: var(--shadow), inset 0 1px 0 rgba(250, 204, 21, 0.16);
+        backdrop-filter: blur(18px);
+      }
+
+      .header {
+        z-index: 3;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: center;
+        gap: 18px;
+        min-height: 96px;
+        padding: 12px 22px;
+        background: var(--ivory);
+        backdrop-filter: none;
+        opacity: 0;
+        transform: translateY(16px);
+        animation: slideIn 1s var(--ease) 0.15s forwards;
+      }
+
+      .badge-row {
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        margin-bottom: 5px;
+      }
+
+      .agent-badge,
+      .eyebrow {
+        display: inline-flex;
+        width: fit-content;
+        padding: 5px 10px;
+        border: 1.5px solid rgba(202, 138, 4, 0.42);
+        border-radius: 999px;
+        color: var(--amber-deep);
+        background: rgba(254, 243, 199, 0.8);
+        font-size: 12px;
+        font-weight: 900;
+      }
+
+      .eyebrow {
+        border-color: rgba(133, 77, 14, 0.2);
+        color: #6a420d;
+        background: rgba(255, 253, 248, 0.85);
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(28px, 2.45vw, 44px);
+        line-height: 1.06;
+      }
+
+      .subtitle {
+        margin: 6px 0 0;
+        color: #76520e;
+        font-size: clamp(13px, 0.92vw, 16px);
+        font-weight: 700;
+      }
+
+      .progress {
+        min-width: 360px;
+      }
+
+      .agent-steps {
+        display: grid;
+        grid-template-columns: 44px 28px 44px 28px 44px 28px 44px;
+        align-items: center;
+        justify-content: end;
+        gap: 0;
+      }
+
+      .step-circle {
+        display: grid;
+        width: 44px;
+        height: 44px;
+        place-items: center;
+        border: 1.5px solid rgba(116, 113, 108, 0.24);
+        border-radius: 50%;
+        color: rgba(36, 36, 36, 0.42);
+        background: var(--ivory);
+        font-size: 13px;
+        font-weight: 900;
+      }
+
+      .step-circle.done {
+        color: #8a8278;
+        background: #eee9e1;
+      }
+
+      .step-circle.active {
+        color: #fff;
+        border-color: rgba(133, 77, 14, 0.36);
+        background: linear-gradient(145deg, var(--amber-bright), var(--amber-main), var(--amber-deep));
+        box-shadow: 0 10px 22px rgba(202, 138, 4, 0.24);
+      }
+
+      .step-line {
+        height: 2px;
+        background: rgba(116, 113, 108, 0.22);
+      }
+
+      .step-caption {
+        margin: 7px 0 0;
+        color: var(--gray);
+        font-size: 13px;
+        font-weight: 900;
+        text-align: right;
+      }
+
+      .retrieval-tracks {
+        display: grid;
+        grid-template-columns: 1fr 100px 1fr;
+        gap: 0;
+        min-height: 0;
+      }
+
+      .track {
+        position: relative;
+        display: flex;
+        min-width: 0;
+        min-height: 0;
+        flex-direction: column;
+        gap: 8px;
+        padding: 14px 18px;
+        opacity: 0;
+      }
+
+      .track::after {
+        position: absolute;
+        right: 14px;
+        bottom: 10px;
+        color: rgba(202, 138, 4, 0.08);
+        font-family: Consolas, "Courier New", monospace;
+        font-size: 40px;
+        font-weight: 900;
+        content: attr(data-issue-id);
+        pointer-events: none;
+      }
+
+      .track-1 {
+        background: rgba(255, 253, 248, 0.72);
+        transform: translateX(-28px);
+        animation: leftIn 0.65s var(--ease) 1.2s forwards;
+      }
+
+      .track-2 {
+        background: rgba(255, 250, 236, 0.86);
+        transform: translateX(28px);
+        animation: rightIn 0.65s var(--ease) 1.7s forwards;
+      }
+
+      .track-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+      }
+
+      .track-id-group {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        min-width: 0;
+      }
+
+      .problem-number {
+        display: grid;
+        width: 46px;
+        height: 46px;
+        flex: 0 0 46px;
+        place-items: center;
+        border-radius: 15px;
+        color: #fff;
+        background: linear-gradient(145deg, var(--amber-bright), var(--amber-main), var(--amber-deep));
+        font-size: 27px;
+        font-weight: 950;
+        box-shadow: 0 14px 26px rgba(133, 77, 14, 0.2);
+      }
+
+      .issue-id,
+      .product-badge {
+        display: inline-flex;
+        padding: 6px 10px;
+        border-radius: 999px;
+        font-size: clamp(13px, 0.85vw, 16px);
+        font-weight: 900;
+        white-space: nowrap;
+      }
+
+      .issue-id {
+        color: #fff;
+        background: var(--amber-main);
+      }
+
+      .product-badge {
+        color: var(--amber-deep);
+        background: rgba(254, 243, 199, 0.85);
+      }
+
+      .track-title {
+        margin: 0;
+        color: var(--amber-deep);
+        font-family: Georgia, "Times New Roman", "Noto Serif KR", serif;
+        font-size: clamp(25px, 1.72vw, 33px);
+        font-weight: 900;
+        line-height: 1.08;
+      }
+
+      .section-label {
+        margin: 0 0 6px;
+        color: var(--amber-deep);
+        font-size: clamp(16px, 1.08vw, 20px);
+        font-weight: 950;
+      }
+
+      .label-bullet {
+        margin-right: 3px;
+        color: var(--gray);
+        font-family: "IBM Plex Mono", Consolas, "Courier New", monospace;
+        opacity: 0.5;
+      }
+
+      .query-line {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        flex-wrap: wrap;
+        padding: 11px 12px;
+        border: 1px solid rgba(202, 138, 4, 0.3);
+        border-radius: 10px;
+        background: var(--amber-soft);
+        font-family: Consolas, "Courier New", monospace;
+        font-size: clamp(14px, 0.92vw, 17px);
+        overflow: hidden;
+      }
+
+      .query-line::after {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(100deg, transparent 0%, rgba(255, 255, 255, 0.52) 48%, transparent 100%);
+        content: "";
+        opacity: 0;
+        transform: translateX(-120%);
+        animation: scanAcross 1.25s ease-out 2.15s forwards;
+        pointer-events: none;
+      }
+
+      .query-label {
+        color: var(--amber-deep);
+        font-size: clamp(11px, 0.72vw, 13px);
+        font-weight: 900;
+        letter-spacing: 0.08em;
+      }
+
+      .dev-token {
+        display: inline-flex;
+        margin-left: 4px;
+        color: var(--amber-deep);
+        font-family: "IBM Plex Mono", Consolas, "Courier New", monospace;
+        font-size: 0.82em;
+        font-weight: 900;
+        opacity: 0.72;
+        white-space: nowrap;
+      }
+
+      .qp,
+      .qp-sep {
+        opacity: 0;
+        transform: translateY(6px);
+        animation: queryPop 0.36s var(--ease) forwards;
+      }
+
+      .qp {
+        color: var(--charcoal);
+        font-weight: 800;
+      }
+
+      .qp.date {
+        color: var(--amber-deep);
+        font-weight: 950;
+      }
+
+      .qp-sep {
+        color: var(--gray);
+      }
+
+      .query-line span:nth-child(2) { animation-delay: 2.25s; }
+      .query-line span:nth-child(3) { animation-delay: 2.46s; }
+      .query-line span:nth-child(4) { animation-delay: 2.67s; }
+      .query-line span:nth-child(5) { animation-delay: 2.88s; }
+      .query-line span:nth-child(6) { animation-delay: 3.09s; }
+      .query-line span:nth-child(7) { animation-delay: 3.3s; }
+      .query-line span:nth-child(8) { animation-delay: 3.51s; }
+      .query-line span:nth-child(9) { animation-delay: 3.72s; }
+      .query-line span:nth-child(10) { animation-delay: 3.93s; }
+
+      .retrieval-cascade {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+      }
+
+      .cascade-tier,
+      .cascade-arrow,
+      .meta-filters,
+      .evidence-card {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+
+      .cascade-tier {
+        position: relative;
+        border-left: 3px solid var(--amber-deep);
+        padding: 6px 0 6px 11px;
+        overflow: hidden;
+      }
+
+      .cascade-tier::before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 3px;
+        height: 100%;
+        background: linear-gradient(180deg, var(--amber-bright), var(--amber-main), var(--amber-deep));
+        content: "";
+        transform: scaleY(0);
+        transform-origin: top;
+        animation: tierTrace 0.7s ease-out forwards;
+      }
+
+      .track-1 .tier-1::before { animation-delay: 3s; }
+      .track-1 .tier-2::before { animation-delay: 3.7s; }
+      .track-1 .tier-3::before { animation-delay: 4.6s; }
+      .track-2 .tier-1::before { animation-delay: 3.2s; }
+      .track-2 .tier-2::before { animation-delay: 3.9s; }
+      .track-2 .tier-3::before { animation-delay: 4.8s; }
+      
+      .cascade-tier::after {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(90deg, rgba(250, 204, 21, 0.14), transparent 64%);
+        content: "";
+        opacity: 0;
+        animation: softFlash 0.55s ease-out forwards;
+      }
+
+      .track-1 .tier-1::after { animation-delay: 3.18s; }
+      .track-1 .tier-2::after { animation-delay: 3.88s; }
+      .track-1 .tier-3::after { animation-delay: 4.78s; }
+      .track-2 .tier-1::after { animation-delay: 3.38s; }
+      .track-2 .tier-2::after { animation-delay: 4.08s; }
+      .track-2 .tier-3::after { animation-delay: 4.98s; }
+
+      .tier-head {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        margin-bottom: 4px;
+      }
+
+      .tier-num {
+        display: flex;
+        width: 23px;
+        height: 23px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        color: #fff;
+        background: var(--amber-main);
+        font-family: Consolas, "Courier New", monospace;
+        font-size: 13px;
+        font-weight: 900;
+      }
+
+      .tier-name {
+        color: var(--charcoal);
+        font-size: clamp(17px, 1.12vw, 21px);
+        font-weight: 900;
+      }
+
+      .tier-result {
+        position: relative;
+        display: flex;
+        align-items: baseline;
+        gap: 10px;
+        padding: 4px 0 4px 29px;
+        font-size: clamp(14px, 0.94vw, 17px);
+      }
+
+      .tier-result.found::before {
+        position: absolute;
+        left: 8px;
+        top: 50%;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: var(--green);
+        box-shadow: 0 0 0 0 rgba(31, 122, 108, 0.28);
+        content: "";
+        transform: translateY(-50%) scale(0);
+        animation: pingDot 0.72s ease-out forwards;
+      }
+
+      .track-1 .tier-1 .tier-result::before { animation-delay: 3.35s; }
+      .track-1 .tier-2 .tier-result:nth-of-type(2)::before { animation-delay: 4.1s; }
+      .track-1 .tier-2 .tier-result:nth-of-type(3)::before { animation-delay: 4.28s; }
+      .track-2 .tier-1 .tier-result::before { animation-delay: 3.55s; }
+      .track-2 .tier-2 .tier-result:nth-of-type(2)::before { animation-delay: 4.3s; }
+      .track-2 .tier-2 .tier-result:nth-of-type(3)::before { animation-delay: 4.48s; }
+
+      .doc-id,
+      .insuff-badge,
+      .ev-doc-id,
+      .filter-chip {
+        font-family: Consolas, "Courier New", monospace;
+      }
+
+      .doc-id {
+        color: var(--amber-deep);
+        font-size: clamp(12px, 0.78vw, 14px);
+        font-weight: 900;
+        white-space: nowrap;
+      }
+
+      .doc-title {
+        color: var(--charcoal);
+        font-weight: 750;
+        overflow-wrap: anywhere;
+      }
+
+      .insufficient {
+        color: var(--gray);
+      }
+
+      .insuff-badge {
+        padding: 3px 8px;
+        border: 1px dashed rgba(116, 113, 108, 0.35);
+        border-radius: 10px;
+        background: rgba(116, 113, 108, 0.12);
+        color: var(--gray);
+        font-size: clamp(10px, 0.65vw, 12px);
+        font-weight: 900;
+        white-space: nowrap;
+      }
+
+      .insuff-note {
+        color: var(--gray);
+        font-size: clamp(11px, 0.72vw, 13px);
+        font-style: italic;
+        font-weight: 700;
+      }
+
+      .case-scanning {
+        position: relative;
+        display: flex;
+        height: 0;
+        align-items: center;
+        gap: 8px;
+        overflow: hidden;
+        padding: 0 10px 0 29px;
+        opacity: 0;
+        transition:
+          height 0.22s ease-out,
+          padding 0.22s ease-out,
+          opacity 0.22s ease-out;
+      }
+
+      .case-scanning.active {
+        height: 30px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        opacity: 1;
+      }
+
+      .scan-line {
+        width: 74px;
+        height: 3px;
+        border-radius: 999px;
+        background: linear-gradient(90deg, transparent, var(--amber-main), var(--amber-bright), transparent);
+        background-size: 220% 100%;
+        animation: scanSweep 0.9s linear infinite;
+      }
+
+      .scan-label {
+        color: var(--gray);
+        font-family: Consolas, "Courier New", monospace;
+        font-size: clamp(11px, 0.72vw, 13px);
+        font-weight: 900;
+        letter-spacing: 0.04em;
+      }
+
+      .case-result {
+        position: relative;
+        margin-top: 4px;
+        margin-left: 29px;
+        padding: 10px 12px;
+        border: 1px solid rgba(202, 138, 4, 0.35);
+        border-left: 4px solid var(--amber-main);
+        border-radius: 9px;
+        background: rgba(255, 253, 248, 0.9);
+        opacity: 0;
+        transform: scale(0.96);
+        overflow: hidden;
+      }
+
+      .case-result.confirmed {
+        animation: caseStamp 0.48s var(--ease) forwards;
+      }
+
+      .case-result.confirmed::after {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(100deg, transparent 0%, rgba(250, 204, 21, 0.22) 48%, transparent 100%);
+        content: "";
+        opacity: 0;
+        transform: translateX(-130%);
+        animation: cardSweep 0.8s ease-out 0.18s forwards;
+      }
+
+      .case-head,
+      .case-article,
+      .case-summary,
+      .case-meta {
+        opacity: 0;
+        transform: translateY(7px);
+      }
+
+      .case-result.confirmed .case-head { animation: slideIn 0.28s var(--ease) 0.1s forwards; }
+      .case-result.confirmed .case-article { animation: slideIn 0.28s var(--ease) 0.2s forwards; }
+      .case-result.confirmed .case-summary { animation: slideIn 0.28s var(--ease) 0.3s forwards; }
+      .case-result.confirmed .case-meta { animation: slideIn 0.28s var(--ease) 0.4s forwards; }
+
+      .case-head {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        margin-bottom: 5px;
+      }
+
+      .case-seal {
+        color: var(--amber-deep);
+        font-size: 15px;
+      }
+
+      .case-id {
+        color: var(--amber-deep);
+        font-family: Consolas, "Courier New", monospace;
+        font-size: clamp(11px, 0.72vw, 13px);
+        font-weight: 900;
+        overflow-wrap: anywhere;
+      }
+
+      .case-article {
+        margin: 0 0 5px;
+        color: var(--charcoal);
+        font-size: clamp(13px, 0.86vw, 15px);
+        font-weight: 900;
+      }
+
+      .case-summary {
+        margin: 0 0 7px;
+        padding-left: 9px;
+        border-left: 2px solid rgba(202, 138, 4, 0.26);
+        color: var(--gray);
+        font-size: clamp(12px, 0.78vw, 14px);
+        font-style: italic;
+        font-weight: 750;
+        line-height: 1.38;
+      }
+
+      .case-meta {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px;
+        color: var(--gray);
+        font-size: clamp(11px, 0.72vw, 13px);
+        font-weight: 800;
+      }
+
+      .case-outcome {
+        padding: 2px 8px;
+        border-radius: 999px;
+        color: var(--green);
+        background: rgba(31, 122, 108, 0.1);
+        font-weight: 950;
+        white-space: nowrap;
+      }
+
+      .cascade-arrow {
+        margin-left: 12px;
+        color: var(--amber-main);
+        font-size: 13px;
+        font-weight: 900;
+      }
+
+      .track-1 .tier-1 { animation: slideIn 0.5s var(--ease) 3s forwards; }
+      .track-1 .arrow-1 { animation: slideIn 0.35s var(--ease) 3.48s forwards; }
+      .track-1 .tier-2 { animation: slideIn 0.5s var(--ease) 3.7s forwards; }
+      .track-1 .arrow-2 { animation: slideIn 0.35s var(--ease) 4.28s forwards; }
+      .track-1 .tier-3 { animation: slideIn 0.5s var(--ease) 4.6s forwards; }
+      .track-2 .tier-1 { animation: slideIn 0.5s var(--ease) 3.2s forwards; }
+      .track-2 .arrow-1 { animation: slideIn 0.35s var(--ease) 3.68s forwards; }
+      .track-2 .tier-2 { animation: slideIn 0.5s var(--ease) 3.9s forwards; }
+      .track-2 .arrow-2 { animation: slideIn 0.35s var(--ease) 4.48s forwards; }
+      .track-2 .tier-3 { animation: slideIn 0.5s var(--ease) 4.8s forwards; }
+
+      .meta-filters {
+        display: flex;
+        gap: 6px;
+        flex-wrap: wrap;
+        margin: 2px 0;
+        animation: slideIn 0.45s var(--ease) 6.1s forwards;
+      }
+
+      .filter-chip {
+        padding: 5px 9px;
+        border: 1px solid rgba(202, 138, 4, 0.3);
+        border-radius: 12px;
+        color: var(--amber-deep);
+        background: rgba(202, 138, 4, 0.08);
+        font-size: clamp(11px, 0.72vw, 13px);
+        font-weight: 900;
+      }
+
+      .evidence-cards {
+        display: flex;
+        min-height: 0;
+        flex-direction: column;
+        gap: 7px;
+      }
+
+      .evidence-card {
+        position: relative;
+        padding: 9px 11px;
+        border: 1px solid rgba(202, 138, 4, 0.35);
+        border-left: 4px solid var(--amber-main);
+        border-radius: 8px;
+        background: rgba(255, 253, 248, 0.88);
+        overflow: hidden;
+      }
+
+      .evidence-card::after {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(100deg, transparent 0%, rgba(250, 204, 21, 0.2) 48%, transparent 100%);
+        content: "";
+        opacity: 0;
+        transform: translateX(-130%);
+        animation: cardSweep 0.8s ease-out forwards;
+      }
+
+      .evidence-card:nth-child(1) { animation: slideIn 0.45s var(--ease) 6.6s forwards; }
+      .evidence-card:nth-child(2) { animation: slideIn 0.45s var(--ease) 7.25s forwards; }
+      .evidence-card:nth-child(3) { animation: slideIn 0.45s var(--ease) 7.9s forwards; }
+      .evidence-card:nth-child(1)::after { animation-delay: 6.86s; }
+      .evidence-card:nth-child(2)::after { animation-delay: 7.51s; }
+      .evidence-card:nth-child(3)::after { animation-delay: 8.16s; }
+
+      .ev-doc-id {
+        color: var(--gray);
+        font-size: clamp(12px, 0.78vw, 14px);
+        font-weight: 900;
+      }
+
+      .ev-title {
+        margin: 2px 0 4px;
+        color: var(--charcoal);
+        font-size: clamp(17px, 1.12vw, 21px);
+        font-weight: 900;
+      }
+
+      .ev-meta {
+        display: flex;
+        justify-content: space-between;
+        gap: 8px;
+        color: var(--gray);
+        font-size: clamp(12px, 0.78vw, 14px);
+        font-weight: 750;
+      }
+
+      .ev-date-check {
+        display: inline-block;
+        color: var(--green);
+        font-weight: 900;
+        white-space: nowrap;
+        opacity: 0;
+        transform: scale(0.9);
+        animation: checkPop 0.38s var(--ease) forwards;
+      }
+
+      .evidence-card:nth-child(1) .ev-date-check { animation-delay: 7.1s; }
+      .evidence-card:nth-child(2) .ev-date-check { animation-delay: 7.75s; }
+      .evidence-card:nth-child(3) .ev-date-check { animation-delay: 8.4s; }
+
+      .thread {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 0;
+      }
+
+      .thread-line {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50%;
+        border-top: 2px dashed rgba(202, 138, 4, 0.62);
+        transform: scaleX(0);
+        transform-origin: center;
+        animation: growWidth 0.55s ease-out 5.6s forwards;
+      }
+
+      .thread-dot {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: var(--amber-main);
+        box-shadow: 0 0 0 6px rgba(250, 204, 21, 0.16);
+        opacity: 0;
+        animation: fadeIn 0.35s ease-out 5.85s forwards;
+      }
+
+      .thread-dot.top {
+        top: 32%;
+      }
+
+      .thread-dot.bottom {
+        bottom: 32%;
+      }
+
+      .thread-chip {
+        position: relative;
+        z-index: 1;
+        padding: 8px 10px;
+        border: 1px solid rgba(202, 138, 4, 0.5);
+        border-radius: 18px;
+        background: var(--warm-white);
+        box-shadow: 0 10px 24px rgba(91, 58, 10, 0.12);
+        text-align: center;
+        opacity: 0;
+        transform: translateY(8px);
+        animation: slideIn 0.35s ease-out 5.85s forwards;
+      }
+
+      .thread-chip .en {
+        display: block;
+        color: var(--amber-deep);
+        font-family: Consolas, "Courier New", monospace;
+        font-size: 8px;
+        font-weight: 900;
+        white-space: nowrap;
+      }
+
+      .thread-chip .ko {
+        display: block;
+        color: var(--gray);
+        font-size: 10px;
+        font-weight: 900;
+        white-space: nowrap;
+      }
+
+      .meta {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 14px;
+        padding: 0 12px;
+        color: rgba(116, 113, 108, 0.92);
+        background: rgba(255, 253, 248, 0.74);
+        font-size: 10px;
+        font-weight: 800;
+      }
+
+      .meta b {
+        color: var(--amber-deep);
+      }
+
+      .meta-trace {
+        margin-left: auto;
+        color: #166534;
+        font-family: "IBM Plex Mono", Consolas, "Courier New", monospace;
+        opacity: 0.7;
+        white-space: nowrap;
+      }
+
+      .end-popup {
+        position: fixed;
+        inset: 24px;
+        z-index: 9;
+        display: grid;
+        place-items: center;
+        padding: 42px;
+        border: 1px solid rgba(202, 138, 4, 0.38);
+        border-radius: 40px;
+        background:
+          radial-gradient(circle at 50% 35%, rgba(250, 204, 21, 0.24), transparent 36%),
+          rgba(255, 253, 248, 0.94);
+        text-align: center;
+        box-shadow: 0 34px 110px rgba(133, 77, 14, 0.28);
+        opacity: 0;
+        transform: scale(0.97);
+        backdrop-filter: blur(18px);
+        animation: endPopup 0.9s var(--ease) 9.3s forwards;
+        pointer-events: none;
+      }
+
+      .end-popup strong {
+        display: block;
+        color: transparent;
+        background: linear-gradient(180deg, #fde68a 0%, var(--amber-bright) 32%, var(--amber-main) 68%, var(--amber-deep) 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        font-size: clamp(48px, 5.8vw, 92px);
+        font-weight: 950;
+        line-height: 0.96;
+        text-shadow: 0 10px 24px rgba(133, 77, 14, 0.22);
+        filter: drop-shadow(0 8px 0 rgba(202, 138, 4, 0.13));
+      }
+
+      .replay {
+        position: fixed;
+        right: 18px;
+        bottom: 18px;
+        z-index: 10;
+        border: 1px solid rgba(202, 138, 4, 0.28);
+        border-radius: 999px;
+        padding: 9px 13px;
+        color: var(--amber-deep);
+        background: rgba(255, 253, 248, 0.86);
+        font: inherit;
+        font-size: 12px;
+        font-weight: 900;
+        cursor: pointer;
+      }
+
+      @keyframes fadeIn { to { opacity: 1; } }
+      @keyframes slideIn { to { opacity: 1; transform: translateY(0); } }
+      @keyframes queryPop {
+        70% { opacity: 1; transform: translateY(0) scale(1.04); }
+        100% { opacity: 1; transform: translateY(0) scale(1); }
+      }
+      @keyframes leftIn { to { opacity: 1; transform: translateX(0); } }
+      @keyframes rightIn { to { opacity: 1; transform: translateX(0); } }
+      @keyframes growWidth { to { transform: scaleX(1); } }
+      @keyframes scanAcross {
+        20% { opacity: 1; }
+        100% { opacity: 0; transform: translateX(120%); }
+      }
+      @keyframes scanSweep {
+        from { background-position: 220% 0; }
+        to { background-position: -220% 0; }
+      }
+      @keyframes tierTrace { to { transform: scaleY(1); } }
+      @keyframes softFlash {
+        20% { opacity: 1; }
+        100% { opacity: 0; }
+      }
+      @keyframes pingDot {
+        45% { transform: translateY(-50%) scale(1); box-shadow: 0 0 0 8px rgba(31, 122, 108, 0.16); }
+        100% { transform: translateY(-50%) scale(1); box-shadow: 0 0 0 0 rgba(31, 122, 108, 0); }
+      }
+      @keyframes cardSweep {
+        25% { opacity: 1; }
+        100% { opacity: 0; transform: translateX(130%); }
+      }
+      @keyframes checkPop { to { opacity: 1; transform: scale(1); } }
+      @keyframes caseStamp {
+        70% { opacity: 1; transform: scale(1.015); }
+        100% { opacity: 1; transform: scale(1); }
+      }
+      @keyframes endPopup { to { opacity: 1; transform: scale(1); } }
+    </style>
+  </head>
+  <body>
+    <main class="demo" id="demo">
+      <header class="header panel">
+        <section>
+          <div class="badge-row">
+            <span class="agent-badge">&lt;/&gt; AGENT 2 / 4</span>
+            <span class="eyebrow">Hybrid Retriever</span>
+          </div>
+          <h1>확정된 focal로 근거 문서를 검색</h1>
+          <p class="subtitle">공통 규정 → 상품 문서 → 사례 순으로 검색하고, 문서명·조항·시행일까지 반환합니다.</p>
+        </section>
+        <aside class="progress">
+          <div class="agent-steps" aria-label="Agent progress">
+            <span class="step-circle done">01</span><span class="step-line"></span>
+            <span class="step-circle active">02</span><span class="step-line"></span>
+            <span class="step-circle">03</span><span class="step-line"></span>
+            <span class="step-circle">04</span>
+          </div>
+          <p class="step-caption"><b>Hybrid Retriever</b> · STEP 2 OF 4</p>
+        </aside>
+      </header>
+
+      <section class="retrieval-tracks">
+        <article class="track track-1 panel" data-issue-id="001">
+          <div class="track-header">
+            <div class="track-id-group">
+              <span class="problem-number">1</span>
+              <span class="issue-id">PROBLEM 001</span>
+            </div>
+            <span class="product-badge">정기예금</span>
+          </div>
+          <p class="track-title">우대금리 미적용</p>
+
+          <div>
+            <p class="section-label"><span class="label-bullet">▸</span>검색 쿼리 조합</p>
+            <div class="query-line">
+              <span class="query-label">QUERY <code class="dev-token">top_k=5</code></span>
+              <span class="qp">정기예금</span><span class="qp-sep">+</span>
+              <span class="qp">우대금리미적용</span><span class="qp-sep">+</span>
+              <span class="qp">계약서·약관</span><span class="qp-sep">+</span>
+              <span class="qp">우대금리 3.5%/2.1%</span><span class="qp-sep">+</span>
+              <span class="qp date">2025-03-10</span>
+            </div>
+          </div>
+
+          <div>
+            <p class="section-label"><span class="label-bullet">▸</span>검색 순서</p>
+            <div class="retrieval-cascade">
+              <div class="cascade-tier tier-1">
+                <div class="tier-head"><span class="tier-num">1</span><span class="tier-name">공통 규정 <code class="dev-token">tier_1</code></span></div>
+                <div class="tier-result found"><span class="doc-id">law_fsc_001</span><span class="doc-title">금융소비자보호법 제10조 · 설명의무</span></div>
+              </div>
+              <div class="cascade-arrow arrow-1">↓</div>
+              <div class="cascade-tier tier-2">
+                <div class="tier-head"><span class="tier-num">2</span><span class="tier-name">상품·쟁점별 문서 <code class="dev-token">tier_2</code></span></div>
+                <div class="tier-result found"><span class="doc-id">prod_deposit_001</span><span class="doc-title">KB 우량우대예금 약관</span></div>
+                <div class="tier-result found"><span class="doc-id">notice_2026_003</span><span class="doc-title">우대금리 변경 안내</span></div>
+              </div>
+              <div class="cascade-arrow arrow-2">↓</div>
+              <div class="cascade-tier tier-3">
+                <div class="tier-head"><span class="tier-num">3</span><span class="tier-name">분쟁조정·민원 사례</span></div>
+                <div class="case-scanning">
+                  <span class="scan-line"></span>
+                  <span class="scan-label">사례 검색 중...</span>
+                </div>
+                <div class="case-result">
+                  <div class="case-head">
+                    <span class="case-seal">◈</span>
+                    <span class="case-id">금융위원회 분쟁조정위원회 · 제2024-15호</span>
+                  </div>
+                  <p class="case-article">예금거래기본약관 제12조 제2항 · 우대금리 조건</p>
+                  <p class="case-summary">우대금리 조건을 계약 체결 시 구체적으로 고지하지 않은 경우, 소비자에게 불리하게 해석해서는 안 된다는 취지</p>
+                  <div class="case-meta"><span>조정일 2024-09-12</span><span class="case-outcome">일부 인용</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="meta-filters">
+            <span class="filter-chip">상품: 정기예금</span>
+            <span class="filter-chip">쟁점: 우대금리미적용</span>
+            <span class="filter-chip">시행일 ≤ 사건일 2025-03-10</span>
+          </div>
+
+          <div class="evidence-cards">
+            <div class="evidence-card">
+              <span class="ev-doc-id">prod_deposit_001</span>
+              <p class="ev-title">KB 우량우대예금 약관</p>
+              <div class="ev-meta"><span>4페이지 · 제3조 우대금리</span><span class="ev-date-check">✓ 2025-01-01 시행</span></div>
+            </div>
+            <div class="evidence-card">
+              <span class="ev-doc-id">notice_2026_003</span>
+              <p class="ev-title">우대금리 변경 안내</p>
+              <div class="ev-meta"><span>1페이지 · 변경 공지</span><span class="ev-date-check">✓ 2026-01-05 시행</span></div>
+            </div>
+          </div>
+        </article>
+
+        <div class="thread">
+          <span class="thread-dot top"></span>
+          <span class="thread-line"></span>
+          <span class="thread-chip">
+            <span class="en">SAME SOURCE CONTRACT</span>
+            <span class="ko">근거 문서 일부 공유</span>
+          </span>
+          <span class="thread-dot bottom"></span>
+        </div>
+
+        <article class="track track-2 panel" data-issue-id="002">
+          <div class="track-header">
+            <div class="track-id-group">
+              <span class="problem-number">2</span>
+              <span class="issue-id">PROBLEM 002</span>
+            </div>
+            <span class="product-badge">정기예금</span>
+          </div>
+          <p class="track-title">중도해지 수수료 안내 불일치</p>
+
+          <div>
+            <p class="section-label"><span class="label-bullet">▸</span>검색 쿼리 조합</p>
+            <div class="query-line">
+              <span class="query-label">QUERY <code class="dev-token">top_k=5</code></span>
+              <span class="qp">정기예금</span><span class="qp-sep">+</span>
+              <span class="qp">중도해지수수료불일치</span><span class="qp-sep">+</span>
+              <span class="qp">계약서·약관</span><span class="qp-sep">+</span>
+              <span class="qp">중도해지 수수료율</span><span class="qp-sep">+</span>
+              <span class="qp date">2025-03-10</span>
+            </div>
+          </div>
+
+          <div>
+            <p class="section-label"><span class="label-bullet">▸</span>검색 순서</p>
+            <div class="retrieval-cascade">
+              <div class="cascade-tier tier-1">
+                <div class="tier-head"><span class="tier-num">1</span><span class="tier-name">공통 규정 <code class="dev-token">tier_1</code></span></div>
+                <div class="tier-result found"><span class="doc-id">law_fsc_001</span><span class="doc-title">금융소비자보호법 제10조 · 설명의무</span></div>
+              </div>
+              <div class="cascade-arrow arrow-1">↓</div>
+              <div class="cascade-tier tier-2">
+                <div class="tier-head"><span class="tier-num">2</span><span class="tier-name">상품·쟁점별 문서 <code class="dev-token">tier_2</code></span></div>
+                <div class="tier-result found"><span class="doc-id">prod_deposit_002</span><span class="doc-title">예금거래기본약관 중도해지 조항</span></div>
+                <div class="tier-result found"><span class="doc-id">notice_2025_011</span><span class="doc-title">중도해지 수수료율 고시 변경 이력</span></div>
+              </div>
+              <div class="cascade-arrow arrow-2">↓</div>
+              <div class="cascade-tier tier-3">
+                <div class="tier-head"><span class="tier-num">3</span><span class="tier-name">분쟁조정·민원 사례</span></div>
+                <div class="case-scanning">
+                  <span class="scan-line"></span>
+                  <span class="scan-label">사례 검색 중...</span>
+                </div>
+                <div class="case-result">
+                  <div class="case-head">
+                    <span class="case-seal">◈</span>
+                    <span class="case-id">금융위원회 분쟁조정위원회 · 제2023-88호</span>
+                  </div>
+                  <p class="case-article">예금거래기본약관 제18조 · 중도해지 수수료</p>
+                  <p class="case-summary">가입 시 안내된 수수료율과 해지 시점 적용 수수료율이 다른 경우, 가입 시점 안내 기준으로 정산해야 한다는 취지</p>
+                  <div class="case-meta"><span>조정일 2023-11-30</span><span class="case-outcome">인용</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="meta-filters">
+            <span class="filter-chip">상품: 정기예금</span>
+            <span class="filter-chip">쟁점: 중도해지수수료</span>
+            <span class="filter-chip">시행일 ≤ 사건일 2025-03-10</span>
+          </div>
+
+          <div class="evidence-cards">
+            <div class="evidence-card">
+              <span class="ev-doc-id">prod_deposit_002</span>
+              <p class="ev-title">예금거래기본약관</p>
+              <div class="ev-meta"><span>7페이지 · 중도해지 조항</span><span class="ev-date-check">✓ 2024-12-20 시행</span></div>
+            </div>
+            <div class="evidence-card">
+              <span class="ev-doc-id">notice_2025_011</span>
+              <p class="ev-title">중도해지 수수료율 고시 변경 이력</p>
+              <div class="ev-meta"><span>2페이지 · 수수료율 표</span><span class="ev-date-check">✓ 2025-02-01 시행</span></div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <footer class="meta panel">
+        <span><b>구현</b> agent/retrieval.py</span>
+        <span><b>출력 연결</b> server.schemas.RetrievalOutput</span>
+        <span><b>다음 단계</b> agent/logic_verifier.py</span>
+        <span class="meta-trace">trace 91bc2d0a · 118ms · exit 0</span>
+      </footer>
+    </main>
+
+    <div class="end-popup" aria-label="Agent 3 종료">
+      <strong>Agent2<br />Hybrid Retriever<br />완료</strong>
+    </div>
+
+    <button class="replay" type="button" id="replay">Replay</button>
+
+    <script src="../agent-api.js"></script>
+    <script>
+      const replay = document.querySelector("#replay");
+      let playTimer = null;
+      let caseTimers = [];
+
+      function clearCaseTimers() {
+        caseTimers.forEach((timer) => window.clearTimeout(timer));
+        caseTimers = [];
+      }
+
+      function resetCaseSearch(root = document) {
+        root.querySelectorAll(".case-scanning").forEach((scanEl) => scanEl.classList.remove("active"));
+        root.querySelectorAll(".case-result").forEach((resultEl) => resultEl.classList.remove("confirmed"));
+      }
+
+      function runCaseSearch(root, trackSelector, startDelayMs) {
+        const scanEl = root.querySelector(`${trackSelector} .case-scanning`);
+        const resultEl = root.querySelector(`${trackSelector} .case-result`);
+        if (!scanEl || !resultEl) return;
+
+        caseTimers.push(window.setTimeout(() => {
+          scanEl.classList.add("active");
+        }, startDelayMs));
+
+        caseTimers.push(window.setTimeout(() => {
+          scanEl.classList.remove("active");
+          resultEl.classList.add("confirmed");
+        }, startDelayMs + 900));
+      }
+
+      function startPlayback(root = document) {
+        window.KBAgentDemo?.renderAgent2(root);
+        window.clearTimeout(playTimer);
+        clearCaseTimers();
+        resetCaseSearch(root);
+        document.body.classList.remove("playing");
+        playTimer = window.setTimeout(() => {
+          document.body.classList.add("playing");
+          runCaseSearch(root, ".track-1", 4600);
+          runCaseSearch(root, ".track-2", 4800);
+        }, 5000);
+      }
+
+      startPlayback();
+
+      replay.addEventListener("click", () => {
+        const demo = document.querySelector("#demo");
+        const popup = document.querySelector(".end-popup");
+        const clone = demo.cloneNode(true);
+        const popupClone = popup.cloneNode(true);
+        demo.replaceWith(clone);
+        clone.id = "demo";
+        popup.replaceWith(popupClone);
+        startPlayback(clone);
+      });
+    </script>
+  </body>
+</html>

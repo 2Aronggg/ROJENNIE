@@ -63,6 +63,10 @@ class DocumentChunk(BaseModel):
     section: str | None = None
     text: str
     embedding: list[float] | None = None
+    # tokens: 전체 청크를 corpus 빌드 시점에 형태소 분석한 결과(검색 인덱스의 기준).
+    # stems: cases/products/guides 청크만 오프라인 precompute한 어간 부스트 신호.
+    # tokens가 이미 형태소라 stems가 추가로 기여하는지는 아직 측정하지 않았다.
+    tokens: list[str] | None = None
     stems: list[str] = Field(default_factory=list)
 
 

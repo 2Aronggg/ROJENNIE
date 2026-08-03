@@ -16,6 +16,6 @@ server/rag/embeddings.jsonl
 server/rag/chunks.jsonl
 
 # Stray Python installer artifacts
-python-3.12.10-*.exe
-python-3.12.10-install*.log
+python-3.12.*.exe
+python-*install*.log
 python-msi-uninstall.log

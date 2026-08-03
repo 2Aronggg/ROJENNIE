@@ -5,15 +5,31 @@ the functional React client in `feat/data-server`.
 
 ## Files
 
-- `agent1-case-builder.html`: Agent 1 case-splitting demo.
-- `agent2-hybrid-retriever.html`: Agent 2 retrieval demo.
-- `agent3-logic-verification.html`: Agent 3 logic verification demo.
-- `agent4-response-composer.html`: Agent 4 response composition demo.
-- `kb-key-buddy-mobile-flow.html`: Mobile app user-flow video mockup.
+Each agent demo exists in two variants:
 
-Open any file directly in a browser. The files are self-contained HTML/CSS/JS
-except for image and font assets referenced from `client/assets` or remote font
-CDNs.
+| Agent | Static (`*.html`) | Live (`*-live.html`) |
+|---|---|---|
+| 1 case builder | `agent1-case-builder.html` | `agent1-case-builder-live.html` |
+| 2 hybrid retriever | `agent2-hybrid-retriever.html` | `agent2-hybrid-retriever-live.html` |
+| 3 logic verification | `agent3-logic-verification.html` | `agent3-logic-verification-live.html` |
+| 4 response composer | `agent4-response-composer.html` | `agent4-response-composer-live.html` |
+
+- **Static**: fully self-contained, scripted visuals. Open directly in a browser.
+- **Live**: same screens, but they load `../agent-api.js` and call the running
+  FastAPI server. Start the server first, then serve this folder over HTTP
+  (opening via `file://` blocks the API calls).
+
+`kb-key-buddy-mobile-flow.html` is a mobile user-flow video mockup (static).
+
+The `-live.html` files were previously `client/index1.html`~`index4.html` in the
+client root. They moved here so the root keeps a single product entry point
+(`index.html`).
+
+**Known duplication**: the static and live variants of agents 2-4 are identical
+except for the `agent-api.js` script tag, and agent 1's two copies have drifted
+apart in layout. They are currently maintained as separate files. Consolidating
+to one file per agent (loading `agent-api.js` optionally) is tracked in
+`docs/TODO.md`.
 
 ## Difference From The Functional Client
 
