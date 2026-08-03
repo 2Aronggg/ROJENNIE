@@ -41,6 +41,7 @@ class EvidenceRef(BaseModel):
     path: str
     page: int
     section: str | None = None
+    doc_title: str | None = None
     score: float
     snippet: str
     effective_from: date | None = None
@@ -61,6 +62,9 @@ class DocumentChunk(BaseModel):
     effective_to: date | None = None
     page: int
     section: str | None = None
+    # 문서가 본문에서 밝히는 제목. 파일명이 "약관 및 상품설명서 (3)"처럼 내용을 설명하지
+    # 못할 때 화면에 대신 보여준다(server/rag/ingest.py의 _document_title).
+    doc_title: str | None = None
     text: str
     embedding: list[float] | None = None
     # tokens: 전체 청크를 corpus 빌드 시점에 형태소 분석한 결과(검색 인덱스의 기준).
@@ -164,6 +168,7 @@ class IssueAnalysis(BaseModel):
     missing_facts: list[str] = Field(default_factory=list)
     fact_resolution: FactResolution
     retrieval_query: str = ""
+    retrieval_as_of: date | None = None
     evidence_refs: list[EvidenceRef] = Field(default_factory=list)
     decision: Decision
     risk_level: RiskLevel = "low"

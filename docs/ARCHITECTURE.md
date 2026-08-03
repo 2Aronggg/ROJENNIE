@@ -1,6 +1,6 @@
 # KB Key Buddy 기술 아키텍처
 
-문서 기준: 2026-08-02
+문서 기준: 2026-08-03
 범위: 현재 구현된 백엔드, 데이터, RAG, 평가/안전성 구조를 기준으로 작성합니다. UI 시연 HTML은 발표용 데모이며, 본 문서에서는 핵심 기술 구조만 다룹니다.
 
 ## 1. 시스템 개요
@@ -53,11 +53,13 @@ Client / Demo UI
 | 분쟁조정/판례 사례 | `data/cases`, `data/corpus/cases.jsonl` | 유사 사례 참고 |
 | 절차 안내 | `data/guides`, `data/corpus/guides.jsonl` | 민원 접수, 분쟁조정, 반환지원 등 다음 행동 안내 |
 | 평가 데이터 | `data/evaluation` | retrieval 및 pipeline 검증 |
+| case/review/audit 영속 | Supabase (`server/supabase_store.py`) | `SUPABASE_PERSISTENCE=true`일 때만 사용 |
+| pgvector 근거 검색 | Supabase `rag_chunks` (`server/rag/pgvector.py`) | `SUPABASE_RAG_ENABLED=true`면 로컬 인덱스 대신 사용 |
 
-현재 corpus 규모:
+현재 corpus 규모 (`data/corpus/manifest.json`):
 
-- 65,764 chunks
-- guides corpus 신설 반영
+- 3,698 chunks / 172 문서 — regulations 2,302, products 796, cases 60, guides 2, glossary 538
+- 만료된 개정판 61,977 chunks는 빌드에서 제외(현행 시행 규정만)
 - glossary는 판단 근거 검색에서 제외하고 표시/설명 데이터로 분리
 
 ## 4. API 레이어
@@ -146,7 +148,10 @@ mock 금융 데이터에서 생성된 fact는 사용자가 말한 것이 아니�
 최근 개선:
 
 - pypdf PDF 추출을 `extraction_mode="layout"`으로 변경해 판례 PDF 토큰 깨짐 수정
-- canonical doc_id 기반 중복 정리
+- 본문 해시로 판별한 중복 PDF 10개를 삭제(파일명이 아니라 내용 기준). 평가셋에서
+  중복 doc_id를 모두 정답으로 인정하던 `CANONICAL_DOC_IDS` 우회도 함께 제거
+- 표시용 제목을 본문에서 추출해 `DocumentChunk.doc_title`에 담음 — 파일명을 바꾸면
+  경로 해시인 `doc_id`가 깨져 평가셋 정답이 전부 무효가 되기 때문
 - guides corpus 추가
 - glossary는 판단 검색에서 제외
 
@@ -268,7 +273,9 @@ LLM이 해서는 안 되는 일:
 
 - retrieval 평가셋: 42문항
 - 전체 Recall@5: 100.0%
-- 테스트 수: 75개
+- Decision Gate 시나리오: 5/6 (LLM 판정 편차로 실행마다 흔들림 — `TECHNICAL_EVALUATION.md` 5-1절)
+- 리포트 grounding: 5/5, 근거 조작 0건
+- 테스트 수: 80개
 - `test_facts.py`: source_type provenance 검증
 - `test_logic_audit.py`: 근거 없음/유사 사례-only proceed 차단 검증
 
@@ -280,22 +287,26 @@ LLM이 해서는 안 되는 일:
 
 ## 9. 배포 관점
 
-현재 구조는 로컬/시연 환경에 적합합니다.
-
 로컬:
 
 - FastAPI
-- local JSONL corpus
+- local JSONL corpus (`data/corpus/all.jsonl`)
 - mock SQLite bank
 - optional Gemini API
 
-향후 production 방향:
+Vercel + Supabase (진행 중):
 
-- Supabase 또는 PostgreSQL에 case/review/audit log 저장
-- RAG corpus는 object storage 또는 별도 retrieval service로 분리
+- `api/index.py`가 `server.app:app`을 그대로 노출하고, `vercel.json`이 클라이언트 정적 빌드와 함수를 함께 배포합니다.
+- `MOCK_BANK_DB=:memory:` — 서버리스 파일시스템이 읽기 전용이라 Mock Bank를 인메모리로 띄웁니다.
+- `SUPABASE_PERSISTENCE=true`면 case/review/audit이 Supabase에 남고, `SUPABASE_RAG_ENABLED=true`면 근거 검색이 pgvector RPC로 갑니다(`docs/RAG_PGVECTOR.md`).
+- **현재 상태: 미완.** 배포본이 모든 경로에서 404입니다. 프로젝트 framework 프리셋이 `python`이라 FastAPI 함수가 도메인 전체를 잡는데, `vercel.json` rewrite는 함수가 `/api/*` 아래 있다고 가정하고 경로 앞에 `/api`를 덧붙입니다. 그래서 `/health`가 `/api/health`로 바뀌어 FastAPI에 라우트가 없습니다.
+
+남은 production 과제:
+
 - 운영용 vector DB/semantic rerank 도입
 - 개인정보 마스킹/저장 정책 강화
 - 실제 금융기관 API 연동 시 읽기/쓰기 권한 분리
+- 세션 기반 인증(현재 `customer_id`가 URL 파라미터이고 관리자 엔드포인트가 열려 있음)
 
 ## 10. 알려진 한계
 

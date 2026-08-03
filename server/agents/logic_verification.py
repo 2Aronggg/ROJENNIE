@@ -27,6 +27,7 @@ Rules:
 - Separate user-stated facts, system-inferred facts, document evidence, and precedent references.
 - Do not turn similar cases or precedents into a direct conclusion.
 - Do not create legal conclusions, compensation amounts, or final fault judgments.
+- summary, checks, unresolved는 모두 한국어로 쓴다. 사용자에게 그대로 보이는 문장이다.
 - Return JSON only with summary, checks, and unresolved.
 """
 
@@ -106,7 +107,7 @@ def _build_support_chains(issue: IssueAnalysis) -> list[SupportChain]:
     if missing_source_tags:
         chains.append(
             SupportChain(
-                claim="fact_source_tag_required",
+                claim="출처가 기록되지 않은 사실이 있어 그대로 결론에 쓸 수 없습니다",
                 supporting_evidence=missing_source_tags,
                 inference_type="unverified",
                 evidence_role="unknown",
@@ -121,7 +122,7 @@ def _build_support_chains(issue: IssueAnalysis) -> list[SupportChain]:
     if direct_refs:
         chains.append(
             SupportChain(
-                claim=f"{issue.issue_type}: direct product/regulatory evidence supports bounded next-step guidance",
+                claim=f"{issue.issue_type} 판단을 약관·규정 원문이 직접 뒷받침합니다",
                 supporting_evidence=[ref.chunk_id for ref in direct_refs[:5]],
                 inference_type="direct_match",
                 evidence_role="direct_evidence",
@@ -131,7 +132,7 @@ def _build_support_chains(issue: IssueAnalysis) -> list[SupportChain]:
     if precedent_refs:
         chains.append(
             SupportChain(
-                claim=f"{issue.issue_type}: precedent can be used only as a similar-case reference",
+                claim=f"{issue.issue_type} 관련 분쟁 사례가 있으나 참고용으로만 쓸 수 있습니다",
                 supporting_evidence=[ref.chunk_id for ref in precedent_refs[:5]],
                 inference_type="analogical",
                 evidence_role="precedent_reference",
@@ -141,7 +142,7 @@ def _build_support_chains(issue: IssueAnalysis) -> list[SupportChain]:
     if guide_refs:
         chains.append(
             SupportChain(
-                claim=f"{issue.issue_type}: procedural guide supports external/next-step instructions only",
+                claim=f"{issue.issue_type}의 다음 절차는 안내 문서로 확인됩니다",
                 supporting_evidence=[ref.chunk_id for ref in guide_refs[:5]],
                 inference_type="direct_match",
                 evidence_role="procedure_guide",

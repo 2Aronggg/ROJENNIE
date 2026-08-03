@@ -159,6 +159,9 @@ function completedIssues(history) {
 // 소비자에게 "local:products/deposit/예금거래기본약관_5586329411498782 (1).pdf"를 보여줄
 // 수는 없다. 경로에서 파일명만 남기고 확장자·해시·중복 사본 번호를 떼어 문서 이름으로 만든다.
 function documentName(ref) {
+  // 서버가 본문에서 뽑아준 제목이 있으면 그게 정확하다. 파일명은 "약관 및 상품설명서 (3)"
+  // 처럼 내용을 설명하지 못하는 경우가 많아 마지막 수단으로만 쓴다.
+  if (ref.doc_title) return ref.doc_title;
   const file = String(ref.path || "").split(":").pop().replace(/\\/g, "/").split("/").pop();
   if (!file) return ref.doc_id || "관련 문서";
   return file
@@ -243,6 +246,73 @@ function dedupeEvidence(refs) {
     else byText.set(key, {ref, copies: 1});
   });
   return [...byText.values()];
+}
+
+// 이 서비스의 핵심 주장이 "검색 결과를 곧바로 결론으로 쓰지 않는다"인데, 그걸 실제로
+// 판별한 결과(support_chains)를 서버가 내려보내면서도 화면에서 버리고 있었다. 근거가
+// 결론을 직접 뒷받침하는지, 유사 사례일 뿐인지, 아예 뒷받침이 없는지를 그대로 보여준다.
+const INFERENCE_LABEL = {
+  direct_match: {text: "직접 근거", tone: "direct"},
+  analogical: {text: "유사 사례 참고", tone: "analog"},
+  unverified: {text: "근거 부족", tone: "weak"},
+};
+
+const COMPLIANCE_FLAG_LABEL = {
+  llm_output_forbidden_claim: "단정적인 법적 표현",
+  pii_detected: "개인정보 포함",
+  policy_blocked: "정책 검사 차단",
+};
+
+function LogicSupport({verification, evidenceRefs = []}) {
+  const chains = verification?.support_chains || [];
+  const unsupported = verification?.unsupported_claims || [];
+  if (chains.length === 0 && unsupported.length === 0) return null;
+  const evidenceById = new Map(evidenceRefs.map(function(ref) { return [ref.chunk_id, ref]; }));
+
+  return <div className="logic-support">
+    <div className="report-section-head"><h3>근거가 결론을 뒷받침하는지</h3><span>{chains.length}건</span></div>
+    {chains.map(function(chain, index) {
+      const kind = INFERENCE_LABEL[chain.inference_type] || {text: chain.inference_type, tone: "weak"};
+      return <div className={"logic-chain " + kind.tone} key={index}>
+        <div className="logic-chain-head">
+          <b className={"logic-badge " + kind.tone}>{kind.text}</b>
+          {!chain.allowed_in_final && <em>결론에 직접 쓰지 않음</em>}
+        </div>
+        <p>{chain.claim}</p>
+        {(chain.supporting_evidence || []).length > 0 && <div className="logic-evidence">
+          <small>연결된 근거</small>
+          {chain.supporting_evidence.map(function(chunkId) {
+            const ref = evidenceById.get(chunkId);
+            return ref ? <span key={chunkId}>{documentName(ref)}{ref.section ? " · " + ref.section : ""}</span> : null;
+          })}
+        </div>}
+      </div>;
+    })}
+    {unsupported.length > 0 && <div className="logic-unsupported">
+      <strong>뒷받침되지 않은 내용</strong>
+      {unsupported.map(function(claim, index) { return <p key={index}>• {claim}</p>; })}
+    </div>}
+  </div>;
+}
+
+function TemporalEvidenceNote({issue}) {
+  if (!issue?.retrieval_as_of) return null;
+  const dated = (issue.evidence_refs || []).filter(function(ref) { return ref.effective_from || ref.effective_to; }).length;
+  return <div className="temporal-note" role="note">
+    <strong>시점 기준 검색 적용</strong>
+    <span>검색 기준일 {issue.retrieval_as_of}을 기준으로 문서 시행기간을 확인했습니다.</span>
+    <small>후보 {issue.evidence_refs?.length || 0}건 · 시행일 표시 {dated}건</small>
+  </div>;
+}
+
+function ComplianceNotice({report}) {
+  const flags = (report?.compliance_flags || []).map(function(flag) { return COMPLIANCE_FLAG_LABEL[flag] || "안전 정책"; });
+  if (!report?.compliance_blocked && flags.length === 0) return null;
+  return <div className="compliance-note" role="status">
+    <strong>안전을 위해 표현을 조정했습니다.</strong>
+    <p>법적 책임이나 배상 가능성을 단정하는 문장은 자동으로 제외했습니다.</p>
+    {flags.length > 0 && <small>조정 사유: {flags.join(", ")}</small>}
+  </div>;
 }
 
 function sourceLabel(ref) {
@@ -929,6 +999,9 @@ function IssueReportDrawer({issue, state, index, onClose}) {
           : <p className="report-copy">검색 상위 자료이며, 모두 최종 판단 근거로 확정된 것은 아닙니다.</p>}
         {candidates.length === 0 && <p className="report-empty">검색된 후보자료가 없습니다.</p>}
         {candidates.length > 0 && <p className="report-evidence-note">아래는 위 설명의 출처가 된 원문입니다. 펼치면 해당 조항을 그대로 볼 수 있습니다.</p>}
+        <TemporalEvidenceNote issue={issue} />
+        <LogicSupport verification={issue.logic_verification} evidenceRefs={candidates} />
+        <ComplianceNotice report={report} />
         <TermGlossary issue={issue} compact />
         <ol className="candidate-list">
           {dedupeEvidence(candidates).map(function(entry, refIndex) {
@@ -1450,11 +1523,11 @@ function GeneratedComplaintsPage({history, onNavigate}) {
       <aside className="panel report-list"><div className="card-head"><h2>완료 목록</h2></div>{reports.map(function(issue) { return <button className={"report-list-item" + (issue.issue_id === selected.issue_id ? " active" : "")} type="button" key={issue.issue_id} onClick={function() { setSelectedId(issue.issue_id); }}><span>{issue.product}</span><strong>{issue.issue_type}</strong><small>{formatDate(issue.created_at)}</small></button>; })}</aside>
       <article className="panel generated-report"><div className="generated-report-head"><div><span className="eyebrow">민원 리포트 · {selected.product}</span><h2>{selected.issue_type}</h2><p>{formatDate(selected.created_at)} · {selected.case_id}</p></div><b className="complete-badge">처리 완료</b></div>
         <ReportBlock title="민원내용"><p>{report.complaint_content || selected.issue_type}</p></ReportBlock>
-        <ReportBlock title="처리결과"><p className="report-result">{report.processing_result || report.reasoning || "검색된 근거자료를 바탕으로 처리 결과를 생성했습니다."}</p></ReportBlock>
+        <ReportBlock title="처리결과"><p className="report-result">{report.processing_result || report.reasoning || "검색된 근거자료를 바탕으로 처리 결과를 생성했습니다."}</p><ComplianceNotice report={report} /></ReportBlock>
         <ReportBlock title="소비자 유의사항">{(report.consumer_cautions || report.follow_up_actions || selected.next_steps || []).map(function(item, index) { return <p className="report-bullet" key={index}>• {item}</p>; })}</ReportBlock>
         {(report.documents_to_prepare || []).length > 0 && <ReportBlock title="준비할 서류"><DocumentChecklist issueId={selected.issue_id} documents={report.documents_to_prepare} /></ReportBlock>}
       </article>
-      <aside className="panel report-insights"><section><div className="card-head"><div><h2>금융 용어</h2><p>사전에서 쉽게 풀어쓴 설명</p></div><span>{terms.length}개</span></div><TermGlossary issue={selected} /></section><section className="evidence-summary"><div className="card-head"><div><h2>근거 기반 결론</h2><p>검색된 자료를 풀어 쓴 설명</p></div><span>{candidates.length}건</span></div><p className="insight-conclusion">{report.evidence_summary || report.processing_result || report.reasoning || "검색된 근거자료를 바탕으로 처리 결과를 생성했습니다."}</p>{candidates.length === 0 ? <p className="empty-copy">연결된 근거자료가 없습니다.</p> : candidates.map(function(ref, index) { return <article className="evidence-card" key={(ref.chunk_id || ref.doc_id || "ref") + index}><strong>[{documentName(ref)}]</strong><p>{ref.snippet || "관련 조항의 적용 내용을 확인했습니다."}</p><small>{ref.section ? ref.section + " · " : ""}{ref.page ? "p." + ref.page : "관련 문서"}</small></article>; })}</section></aside>
+      <aside className="panel report-insights"><section><div className="card-head"><div><h2>금융 용어</h2><p>사전에서 쉽게 풀어쓴 설명</p></div><span>{terms.length}개</span></div><TermGlossary issue={selected} /></section><section className="evidence-summary"><div className="card-head"><div><h2>근거 기반 결론</h2><p>검색된 자료를 풀어 쓴 설명</p></div><span>{candidates.length}건</span></div><TemporalEvidenceNote issue={selected} /><p className="insight-conclusion">{report.evidence_summary || report.processing_result || report.reasoning || "검색된 근거자료를 바탕으로 처리 결과를 생성했습니다."}</p>{candidates.length === 0 ? <p className="empty-copy">연결된 근거자료가 없습니다.</p> : candidates.map(function(ref, index) { return <article className="evidence-card" key={(ref.chunk_id || ref.doc_id || "ref") + index}><strong>[{documentName(ref)}]</strong><p>{ref.snippet || "관련 조항의 적용 내용을 확인했습니다."}</p><small>{ref.section ? ref.section + " · " : ""}{ref.page ? "p." + ref.page : "관련 문서"}</small></article>; })}</section><section><LogicSupport verification={selected?.logic_verification} evidenceRefs={candidates} /></section></aside>
     </div>
   </main>;
 }

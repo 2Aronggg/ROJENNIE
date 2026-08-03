@@ -41,7 +41,7 @@ CASES = [
 ]
 
 PRODUCTS = [
-    ("예금거래기본약관에서 예금주는 어떻게 정의되나요", "41b2b8383a71"),
+    ("예금거래기본약관에서 예금주는 어떻게 정의되나요", "4e8137fa6fa6"),
     ("KB국민행복적금 특약 내용이 궁금해요", "f1eab7b0f8c4"),
     ("KB 생계비계좌는 어떤 조건으로 거래되나요", "0776582200e2"),
     ("KB 주거행복 월세통장 상품 내용을 알고 싶어요", "ba70f17bcfbb"),
@@ -74,27 +74,13 @@ GUIDES = [
 ]
 
 
-CANONICAL_DOC_IDS = {
-    "41b2b8383a71": {
-        "41b2b8383a71",
-        "4e8137fa6fa6",
-        "c96654dd4ae6",
-        "f881da33b78f",
-    },
-}
-
-
-def acceptable_doc_ids(expected_doc_id: str) -> set[str]:
-    return CANONICAL_DOC_IDS.get(expected_doc_id, {expected_doc_id})
-
-
 def evaluate(index: SearchIndex, items: list[tuple[str, str]], *, use_hybrid: bool, top_k: int = 5) -> dict[str, object]:
     hits = 0
     misses: list[tuple[str, str]] = []
     for query, expected_doc_id in items:
         vector = embed_query(query) if use_hybrid else None
         results = index.search(query, as_of=date.today(), top_k=top_k, query_embedding=vector)
-        found = any(r.doc_id in acceptable_doc_ids(expected_doc_id) for r in results)
+        found = any(r.doc_id == expected_doc_id for r in results)
         hits += found
         if not found:
             misses.append((query, expected_doc_id))

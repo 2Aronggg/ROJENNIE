@@ -480,6 +480,7 @@ class SearchIndex:
                     path=chunk.path,
                     page=chunk.page,
                     section=chunk.section,
+                    doc_title=chunk.doc_title,
                     score=round(score, 4),
                     snippet=chunk.text[:280],
                     effective_from=chunk.effective_from,

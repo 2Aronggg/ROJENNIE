@@ -539,6 +539,7 @@ def _analyze_issue(
         missing_facts=list(dict.fromkeys(missing)),
         fact_resolution=resolution,
         retrieval_query=rag_query.text,
+        retrieval_as_of=request.as_of or date.today(),
         evidence_refs=evidence,
         decision=Decision(control=control, risk_flags=risk_flags),
         risk_level=risk_level,

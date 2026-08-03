@@ -42,6 +42,35 @@ PAREN_RE = re.compile(r"\([^)]*\)")
 TRAILING_NOISE_RE = re.compile(r"[_\-\s]*\d{4,}[\d_\-\s]*$")
 NAME_NOISE_SUFFIXES = ("상품설명서", "설명서", "특약", "약관", "상품")
 
+# 파일명이 문서를 설명하지 못하는 경우가 많다. "약관 및 상품설명서 (1)~(12)"는 브라우저가
+# 붙인 기본 이름일 뿐이고 속은 거치식예금 약관, KB모임금고 특약처럼 전부 다른 문서다.
+# 그래서 표시용 제목은 파일명이 아니라 본문 첫머리에서 뽑는다. 파일명을 고치는 방법도
+# 있지만 doc_id가 경로 해시라 평가셋 정답이 전부 깨진다.
+_TITLE_PAGE_MARK = re.compile(r"^\s*(?:-\s*)?(?:페이지\s*)?\d+\s*(?:/\s*\d+)?\s*(?:-\s*)?")
+_TITLE_COMPLIANCE = re.compile(r"^\s*KB\s*국민은행\s*준법감시인\s*심의필[^)]*\)\s*")
+_TITLE_BRACKETED = re.compile(r"[「『]\s*([^」』]{2,40}?)\s*[」』]\s*(특약|상품설명서|약관|설명서)?")
+_TITLE_PLAIN = re.compile(r"^([가-힣A-Za-z0-9·\s]{3,40}?(?:기본약관|약관|상품설명서|설명서|특약))")
+_TITLE_PRODUCT_FIELD = re.compile(r"상\s*품\s*명\s*[:：]\s*([^\n▪]{2,40})")
+_TITLE_TRUST = re.compile(r"(KB\s*[가-힣A-Za-z0-9\s]{2,30}?증권\s*투자신탁\s*\d+호\s*\([^)]{2,20}\))")
+
+
+def _document_title(text: str) -> str:
+    """문서가 스스로 밝히는 제목. 못 찾으면 빈 문자열(호출부가 파일명으로 떨어진다)."""
+    title = " ".join(text.split())
+    for _ in range(3):
+        stripped = _TITLE_COMPLIANCE.sub("", _TITLE_PAGE_MARK.sub("", title))
+        if stripped == title:
+            break
+        title = stripped
+    match = _TITLE_BRACKETED.search(title[:120])
+    if match:
+        return (match.group(1) + (" " + match.group(2) if match.group(2) else "")).strip()
+    for pattern, window in ((_TITLE_PLAIN, 200), (_TITLE_PRODUCT_FIELD, 200), (_TITLE_TRUST, 260)):
+        match = pattern.search(title[:window])
+        if match:
+            return re.sub(r"\s+", " ", match.group(1)).strip()
+    return ""
+
 
 def _to_date(year: str, month: str, day: str) -> date | None:
     try:
@@ -163,6 +192,7 @@ def extract_pdf_chunks(pdf_path: Path, data_dir: Path, max_chars: int = 1400) ->
         if doc_type in {"product_manual", "rate_table"}
         else None
     )
+    doc_title = _document_title(document_text[:600]) or product_name
 
     chunks: list[DocumentChunk] = []
     for page_number, text in enumerate(pages, start=1):
@@ -187,6 +217,7 @@ def extract_pdf_chunks(pdf_path: Path, data_dir: Path, max_chars: int = 1400) ->
                     effective_to=effective_to,
                     page=page_number,
                     section=section,
+                    doc_title=doc_title,
                     text=chunk_text,
                 )
             )

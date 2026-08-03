@@ -1,39 +1,49 @@
 # TODO
 
-앞으로 할 일만 적는다. 완료된 작업 이력은 git log에 있으므로 여기 남기지 않는다.
+앞으로 할 일만 적는다. 완료된 항목은 다음 작업의 전제가 될 때만 `[x]`로 남기고, 나머지 이력은 git log에 있다.
 
-## 1. 브랜치 합치기 (먼저 해야 나머지가 안 꼬임)
+## 1. 화면에 안 나오는 서버 결과 연결
 
-- [ ] **`feat/data-server`와 `feat/agent-client`를 main으로 합치기.** 두 브랜치가 main 기준으로
-      각자 앞서 있고 `retrieval.py`에서 형태소 분석을 서로 다르게 구현해 충돌이 예약돼 있다.
-      합친 뒤에는 main에서 작업한다.
-  - 형태소 분석 **구조는 data-server 쪽**: 전체 청크를 corpus 빌드 시점에 토큰화해
-    `DocumentChunk.tokens`로 캐싱, 인덱스·IDF 전부 형태소 기반. agent-client 쪽(정규식 인덱스
-    유지 + 일부 청크만 stems 부스트)은 규정 문서에 조사 문제가 그대로 남는다.
-  - 형태소 **품사 세트는 agent-client 쪽 흡수**: VV(동사 어간)/VA(형용사 어간)/XR/SH를 추가해
-    "올랐어요→오르" 같은 활용형도 매칭한다.
-  - 단 agent-client의 **2글자 미만 필터를 숫자(SN)에는 적용하지 않는다** — "스타적금3"의 "3"이
-    사라져 상품명 구분 신호가 깨진다.
-  - 그 외: 컴플라이언스 레이어·facts source_type·라우터 previous_product 승계·Decision Gate
-    기대값은 agent-client 쪽, 지원상품아님 조기거절·상품명 section 신호는 data-server 쪽.
-- [ ] 머지 후 재측정: retrieval 42문항, Decision Gate 6시나리오, 리포트 grounding 5건, 전체 테스트.
+서버가 계산해서 내려보내는데 클라이언트가 버리는 값들이다. 데이터가 이미 있어서 렌더링만 붙이면 된다.
 
-## 2. 배포 (Vercel + Supabase) — 지금 상태로는 배포되지 않음
+- [x] **논리 검증 결과(`support_chains`, `unsupported_claims`)를 리포트에 표시한다.**
+      "검색 결과를 곧바로 결론으로 쓰지 않는다"가 이 서비스의 핵심인데, 그걸 증명하는 화면이
+      없었다. 이제 claim별 연결 근거와 유형(`direct_match`/`analogical`/`unverified`),
+      뒷받침되지 않은 주장을 리포트와 생성된 민원 화면에 보여준다.
+- [x] 컴플라이언스 차단 표시(`compliance_blocked`, `compliance_flags`). LLM이 단정 표현을 써서
+      차단되면 사용자는 답변이 왜 조정됐는지 모른다. 차단 메시지와 조정 사유를 표시한다.
+- [x] 시점 필터가 작동했다는 표시. 사건 당시 시행 중이던 규정만 썼다는 건 강한 근거인데
+      이제 이슈별 검색 기준일과 후보자료의 시행일 표시 여부를 함께 보여준다.
 
-코드 쪽 준비는 끝났다. 남은 것은 실제 배포와 그 검증이다.
+## 2. 배포 (Vercel + Supabase)
 
+- [x] **브랜치 통합 완료.** `feat/data-server`와 `feat/agent-client`를 main으로 합쳤다.
+      형태소 분석은 data-server 구조(전체 청크 빌드타임 토큰화) + agent-client 품사 세트를
+      채택했고, 원격 main에 미해결 충돌 마커가 커밋돼 있던 것도 복구했다. 이후 작업은 main에서 한다.
 - [x] corpus를 배포 번들에 포함 — `.gitignore`가 `data/corpus/all.jsonl`만 예외로 추적한다
-      (36.8MB, 서버가 읽는 유일한 corpus 파일). 나머지 per-corpus 파일은 중복이라 계속 제외.
+      (37.5MB, 서버가 읽는 유일한 corpus 파일). 나머지 per-corpus 파일은 중복이라 계속 제외.
 - [x] Mock Bank의 읽기 전용 파일시스템 대응 — `MOCK_BANK_DB=:memory:`로 인메모리 SQLite를
       쓰고, 파일 쓰기가 실패하면 자동으로 인메모리로 넘어간다. 시드 데이터를 매번 상수에서
       다시 쓰기 때문에 파일이 없어도 동작이 같다.
 - [x] `vercel.json` + `api/index.py` 진입점 추가. 번들 크기는 문제가 아니었다 — Fluid Compute는
       5GB까지 지원하고 현재 의존성은 약 214MB(kiwipiepy 모델 105MB 포함)다.
-- [ ] **실제로 배포해서 확인한다.** 로컬에서 검증한 것은 진입점 import와 `/health`뿐이다.
-      배포 후 `/api/v1/cases/analyze`가 실제 근거를 반환하는지, 콜드 스타트가 몇 초인지 잰다.
-- [ ] Vercel 환경변수 설정: `GEMINI_API_KEY`, `MOCK_BANK_DB=:memory:`,
-      `CORS_ORIGINS`(배포 도메인), 필요 시 `SUPABASE_URL`/`SUPABASE_SECRET_KEY`.
-- [ ] 배포 후 pgvector 사용 여부 결정. corpus가 3,787청크/인덱스 6.2초까지 줄어서 인메모리로
+- [x] Vercel 환경변수 설정과 실제 배포 실행. `keybuddy-ten.vercel.app`에 올라갔고 함수는 기동한다.
+
+배포는 됐지만 **아직 동작하지 않는다.** 아래가 남은 것이다.
+
+- [ ] **모든 경로가 404다 — rewrite가 경로를 망가뜨린다.** 프로젝트 framework 프리셋이
+      `python`이라(`.vercel/output/builds.json`) FastAPI 함수가 도메인 전체를 잡는데,
+      `vercel.json` rewrite는 함수가 `/api/*` 아래 있다고 가정하고 경로 앞에 `/api`를 붙인다.
+      `/health` → `/api/health`, `/api/v1/x` → `/api/api/v1/x`가 되어 매칭이 안 되고,
+      FastAPI가 직접 `{"detail":"Not Found"}`를 돌려준다(Vercel 404 페이지가 아니다).
+      → rewrite를 걷어내고, 정적 SPA는 FastAPI가 `StaticFiles(html=True)`로 서빙하는 쪽이
+      가장 작은 수정이다. catch-all과 SPA fallback이 같은 `/(.*)`를 두고 싸우지 않게 된다.
+- [ ] **`.vercelignore`가 `data`를 통째로 뺐다.** 10MB 초과의 진범은 `server/rag/embeddings.jsonl`
+      (510MB)과 `chunks.jsonl`(104MB)이었고 그건 따로 제외했는데, 먼저 넣은 `data` 제외가 남았다.
+      그 결과 `/dictionary/search`가 빈 배열(용어 설명 죽음), `/api/v1/admin/*`이 문서 0건이다.
+      `data` 제외만 되돌리고 `server/rag/*.jsonl` 제외는 유지한다.
+- [ ] 배포 후 `/api/v1/cases/analyze`가 실제 근거를 반환하는지, 콜드 스타트가 몇 초인지 잰다.
+- [ ] 배포 후 pgvector 사용 여부 결정. corpus가 3,698청크/인덱스 6.2초까지 줄어서 인메모리로
       충분할 가능성이 높고, 그러면 pgvector 경로를 유지할 이유가 없다.
 - [ ] pgvector를 계속 쓴다면 배포 전 42문항을 **pgvector 경로로** 재측정할 것. SQL
       (`match_rag_chunks`)은 순수 벡터 유사도만 쓰고 로컬의 텍스트 점수·상품명 가중치·intent
@@ -55,15 +65,16 @@
 
 ## 5. 데이터 품질
 
-- [ ] **`data/products/`에 내용이 같은 PDF가 10개 있다.** 본문 해시로 확인한 결과
-      상품 문서 135개 중 고유 문서는 125개이고, 5종이 여러 벌씩 들어 있다. 가장 심한 건
-      예금거래기본약관으로 **6개 파일이 본문까지 동일**하다(`약관 및 상품설명서 (3)/(6)/(9)`
-      + `예금거래기본약관*` 3개). 중복이 차지한 청크는 886개 중 82개.
-      → 검색이 같은 조항을 여러 건 돌려줘 근거 슬롯을 낭비한다. 화면에서는 본문이 같을 때만
-      "사본 n건"으로 접었고, 근본 해결은 중복 파일을 지우고 corpus를 다시 만드는 것이다.
-      **파일명으로 지우면 안 된다** — `약관 및 상품설명서 (1)~(12)`는 브라우저 기본 이름일
-      뿐 속은 KB모임금고 특약, KB Star 정기예금 설명서 등 서로 다른 문서다. 반드시 본문
-      해시로 판단할 것.
+- [x] **중복 PDF 10개 삭제 완료.** 본문 해시로 판별해 5종의 사본만 지웠다(예금거래기본약관은
+      6개 파일이 본문까지 동일했다). 상품 문서 135 → 125개, 청크 886 → 796개.
+      삭제 후에도 retrieval 42/42 = 100%가 유지된다. 이걸 우회하려고 평가셋에 있던
+      `CANONICAL_DOC_IDS`(중복 doc_id를 모두 정답으로 인정)도 함께 제거했다.
+      → **다음에 정리할 때도 파일명으로 지우면 안 된다.** `약관 및 상품설명서 (1)~(12)`는
+      브라우저 기본 이름일 뿐 속은 거치식예금 약관, KB모임금고 특약처럼 서로 다른 문서다.
+      반드시 본문 해시로 판단할 것.
+- [x] 표시용 문서 제목을 본문에서 추출(`ingest._document_title`). 파일명을 바꾸면 `doc_id`가
+      경로 해시라 평가셋 정답이 전부 깨지므로, 파일은 두고 제목만 뽑아 `DocumentChunk.doc_title`에
+      담는다. 상품 청크 796개 전부 제목이 채워졌다.
 
 ## 6. 정리
 
@@ -86,8 +97,9 @@
 
 ## 결정 사항 (다시 논의하지 않기)
 
-- **라우팅(`issue_splitter`)은 LLM 유지.** 실데이터 기준 LLM 91.4% vs 규칙 65.5%로 격차가 크고,
-  첫 단계라 여기서 틀리면 이후가 전부 오염된다(`server/tests/evaluate_aihub.py`).
+- **라우팅(`issue_splitter`)은 LLM 유지.** 2026-08-03 재측정으로 LLM 49.6% vs 규칙 43.2%
+  (`server/tests/evaluate_aihub.py`). 예전에 적었던 91.4% vs 65.5%는 재현되지 않아 철회했다.
+  격차는 6.4%p로 줄었지만 방향은 그대로고, 첫 단계라 여기서 틀리면 이후가 전부 오염된다.
 - **관리자 페이지 유지.** 민원 유입량과 에이전트별 fallback 발생률 모니터링이 목적. 자기
   시스템이 언제 LLM 대신 규칙으로 떨어지는지 감시한다는 점에서 유지 가치가 있다.
 - **Finance MCP 레이어 유지.** in-process 기본 transport라 코드 층이 한 겹 늘지만, `stdio`

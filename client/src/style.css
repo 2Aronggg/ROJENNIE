@@ -434,3 +434,31 @@ button:focus-visible, input:focus-visible, textarea:focus-visible { outline: 3px
 .term-glossary.compact .term-card strong { font-size: 12px; }
 .term-glossary.compact .term-card p { margin: 3px 0 0; font-size: 11.5px; line-height: 1.5; color: var(--muted); }
 .candidate-copies { opacity: .7; }
+
+/* 근거-결론 지지 검증 결과 */
+.logic-support { margin-top: 16px; padding-top: 14px; border-top: 1px dashed var(--line); }
+.logic-chain { padding: 9px 11px; margin-top: 7px; border-radius: 9px; border: 1px solid var(--line); background: var(--panel); }
+.logic-chain.direct { border-left: 3px solid var(--green); }
+.logic-chain.analog { border-left: 3px solid var(--orange); }
+.logic-chain.weak { border-left: 3px solid var(--red); }
+.logic-chain-head { display: flex; align-items: center; gap: 7px; }
+.logic-badge { padding: 1px 7px; border-radius: 999px; font-size: 10.5px; }
+.logic-badge.direct { background: var(--green-soft); color: var(--green); }
+.logic-badge.analog { background: var(--orange-soft); color: var(--orange); }
+.logic-badge.weak { background: var(--red-soft); color: var(--red); }
+.logic-chain-head em { font-size: 10.5px; color: var(--muted); font-style: normal; }
+.logic-chain p { margin: 5px 0 0; font-size: 12px; line-height: 1.5; }
+.logic-chain small { display: block; margin-top: 3px; font-size: 10.5px; color: var(--muted); }
+.logic-evidence { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 7px; align-items: center; }
+.logic-evidence small { margin: 0 3px 0 0; }
+.logic-evidence span { padding: 2px 6px; border-radius: 999px; background: var(--gold-soft); color: var(--muted); font-size: 10.5px; }
+.logic-unsupported { margin-top: 9px; padding: 9px 11px; border-radius: 9px; background: var(--red-soft); }
+.logic-unsupported strong { font-size: 11.5px; color: var(--red); }
+.logic-unsupported p { margin: 4px 0 0; font-size: 11.5px; line-height: 1.5; }
+.compliance-note { margin-top: 12px; padding: 9px 11px; border-radius: 9px; background: var(--gold-soft); font-size: 11.5px; line-height: 1.5; }
+.compliance-note strong { display: block; color: var(--orange); }
+.compliance-note p { margin: 3px 0 0; }
+.compliance-note small { display: block; margin-top: 5px; color: var(--muted); }
+.temporal-note { display: grid; gap: 2px; margin: 10px 0; padding: 9px 11px; border: 1px solid var(--line); border-radius: 9px; background: var(--panel); font-size: 11.5px; line-height: 1.45; }
+.temporal-note strong { color: var(--text); }
+.temporal-note span, .temporal-note small { color: var(--muted); }

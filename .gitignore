@@ -27,3 +27,5 @@ python-3.12.5-amd64.exe
 python-install.log
 
 .claude/settings.local.json
+.vercel
+.env*
