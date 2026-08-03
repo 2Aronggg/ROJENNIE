@@ -1,17 +1,10 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "buildCommand": "cd client && npm install && npm run build && mkdir -p ../public && cp -R dist/. ../public",
+  "buildCommand": "cd client && npm install && npm run build",
   "functions": {
     "api/index.py": {
       "memory": 2048,
-      "maxDuration": 60
+      "maxDuration": 300
     }
-  },
-  "rewrites": [
-    { "source": "/api/v1/(.*)", "destination": "/api/api/v1/$1" },
-    { "source": "/mock/(.*)", "destination": "/api/mock/$1" },
-    { "source": "/dictionary/(.*)", "destination": "/api/dictionary/$1" },
-    { "source": "/health", "destination": "/api/health" },
-    { "source": "/(.*)", "destination": "/index.html" }
-  ]
+  }
 }

@@ -29,33 +29,50 @@
       5GB까지 지원하고 현재 의존성은 약 214MB(kiwipiepy 모델 105MB 포함)다.
 - [x] Vercel 환경변수 설정과 실제 배포 실행. `keybuddy-ten.vercel.app`에 올라갔고 함수는 기동한다.
 
-배포는 됐지만 **아직 동작하지 않는다.** 아래가 남은 것이다.
-
-- [ ] **모든 경로가 404다 — rewrite가 경로를 망가뜨린다.** 프로젝트 framework 프리셋이
-      `python`이라(`.vercel/output/builds.json`) FastAPI 함수가 도메인 전체를 잡는데,
-      `vercel.json` rewrite는 함수가 `/api/*` 아래 있다고 가정하고 경로 앞에 `/api`를 붙인다.
-      `/health` → `/api/health`, `/api/v1/x` → `/api/api/v1/x`가 되어 매칭이 안 되고,
-      FastAPI가 직접 `{"detail":"Not Found"}`를 돌려준다(Vercel 404 페이지가 아니다).
-      → rewrite를 걷어내고, 정적 SPA는 FastAPI가 `StaticFiles(html=True)`로 서빙하는 쪽이
-      가장 작은 수정이다. catch-all과 SPA fallback이 같은 `/(.*)`를 두고 싸우지 않게 된다.
-- [ ] **`.vercelignore`가 `data`를 통째로 뺐다.** 10MB 초과의 진범은 `server/rag/embeddings.jsonl`
-      (510MB)과 `chunks.jsonl`(104MB)이었고 그건 따로 제외했는데, 먼저 넣은 `data` 제외가 남았다.
-      그 결과 `/dictionary/search`가 빈 배열(용어 설명 죽음), `/api/v1/admin/*`이 문서 0건이다.
-      `data` 제외만 되돌리고 `server/rag/*.jsonl` 제외는 유지한다.
+- [x] **모든 경로가 404였던 것 수정.** 프로젝트 framework 프리셋이 `python`이라
+      (`.vercel/output/builds.json`) FastAPI 함수가 도메인 전체를 잡는데, `vercel.json`
+      rewrite는 함수가 `/api/*` 아래 있다고 가정하고 경로 앞에 `/api`를 붙이고 있었다.
+      `/health` → `/api/health`, `/api/v1/x` → `/api/api/v1/x`가 되어 매칭이 안 됐다
+      (FastAPI가 직접 `{"detail":"Not Found"}`를 돌려준 것이지 Vercel 404 페이지가 아니었다).
+      → rewrite를 전부 걷어내고 정적 SPA는 `server/app.py` 끝에서 `StaticFiles(html=True)`로
+      mount한다. catch-all과 SPA fallback이 같은 `/(.*)`를 두고 싸우지 않는다.
+      **mount는 반드시 모든 API 라우트 등록 뒤에 와야 한다** — Starlette는 등록 순서로 매칭해서
+      `/`에 먼저 걸면 API 경로를 전부 가로챈다.
+- [x] **`.vercelignore`의 `data` 통째 제외 수정.** 10MB 초과의 진범은
+      `server/rag/embeddings.jsonl`(510MB)과 `chunks.jsonl`(104MB)이었다. 이제 원천 문서는
+      계속 빼되 서버가 런타임에 읽는 3개(`corpus/all.jsonl`, `corpus/manifest.json`,
+      `dictionary/fine_financial_glossary.json`)만 되살린다. gitignore 규칙상 부모 디렉터리가
+      제외되면 안쪽 파일을 되살릴 수 없어서 `data/*` → `!data/corpus` → `data/corpus/*` →
+      `!data/corpus/all.jsonl` 식으로 단계별로 열어야 한다.
+- [x] **pgvector 대신 로컬 하이브리드 인덱스를 쓴다.** `SUPABASE_RAG_ENABLED=false`.
+      pgvector RPC(`match_rag_chunks`)는 순수 벡터 유사도만 써서 형태소 텍스트 점수·상품명
+      가중치·intent 보정이 전부 빠진다. 문서의 recall@5 = 100%는 로컬 하이브리드 경로에서
+      측정한 값이라, pgvector로 배포하면 그 수치가 배포 환경을 설명하지 못한다.
+      corpus가 3,698청크까지 줄어 인메모리로 충분하다.
 - [ ] 배포 후 `/api/v1/cases/analyze`가 실제 근거를 반환하는지, 콜드 스타트가 몇 초인지 잰다.
-- [ ] 배포 후 pgvector 사용 여부 결정. corpus가 3,698청크/인덱스 6.2초까지 줄어서 인메모리로
-      충분할 가능성이 높고, 그러면 pgvector 경로를 유지할 이유가 없다.
-- [ ] pgvector를 계속 쓴다면 배포 전 42문항을 **pgvector 경로로** 재측정할 것. SQL
-      (`match_rag_chunks`)은 순수 벡터 유사도만 쓰고 로컬의 텍스트 점수·상품명 가중치·intent
-      보정이 없어서, 문서의 recall 수치가 배포 환경을 설명하지 못한다.
+      인덱스가 로컬에서 855MB를 쓰는데 함수 메모리는 2048MB다. 여유가 크지 않다.
 
-## 3. 응답 속도 (현재 12~20초)
+## 3. 로컬 기동이 갑자기 10분 넘게 걸릴 때
+
+`retrieval.needs_reindex`가 원천 문서의 mtime을 `data/corpus/all.jsonl`의 mtime과 비교해서,
+하나라도 더 새것이면 PDF 307개 + 법령 JSON 7만여 개를 **전부 다시 파싱한다.** 문제는 git이
+checkout·rebase·stash pop 때 파일 mtime을 그 시각으로 새로 찍는다는 것이다. 실제로 rebase
+직후 PDF 한 개가 all.jsonl보다 13밀리초 새것이 되어 전체 재색인이 돌았고, 85초짜리 테스트가
+15분 넘게 멈춰 있었다. 내용은 하나도 안 바뀐 상태였다.
+
+- [ ] mtime 비교를 내용 기준으로 바꾼다. `manifest.json`에 원천 파일 목록의 해시나 크기를
+      적어 두고 그걸 비교하면 git이 mtime을 건드려도 오탐하지 않는다.
+- 당장 막혔으면 `all.jsonl`의 mtime만 현재로 올리면 된다(내용이 최신인 게 확실할 때).
+- 배포본은 영향이 없다. `.vercelignore`가 원천 문서를 빼서 비교 대상이 0개라 항상 all.jsonl을
+  그대로 읽는다.
+
+## 4. 응답 속도 (현재 12~20초)
 
 - [ ] **`rag_query` LLM 단계 제거 검토.** 측정 결과 LLM 검색어가 원문·규칙보다 오히려 나빴다
       (사례 8건: 원문 8/8, 규칙 8/8, LLM 6/8). 이슈당 2초를 쓰고 품질이 떨어진다. 42문항
       전체로 재확인한 뒤 규칙 기반으로 고정하거나 단계 자체를 뺀다.
 
-## 4. 시연 품질
+## 5. 시연 품질
 
 - [ ] **`notice_history`가 0건이다.** 대표 민원이 "금리 인상 안내를 못 받았다"인데 안내 이력
       테이블이 비어 있어 "안내 기록 없음"을 근거로 제시할 수 없다. `transactions`도 3건뿐.
@@ -63,7 +80,7 @@
 - [ ] 대조군 고객 1명 추가(CUST-002 = 안내를 제대로 받은 고객). 같은 질문에 다른 답이 나오는
       시연이 "내 금융정보와 대조한다"는 차별점을 가장 직접적으로 보여준다.
 
-## 5. 데이터 품질
+## 6. 데이터 품질
 
 - [x] **중복 PDF 10개 삭제 완료.** 본문 해시로 판별해 5종의 사본만 지웠다(예금거래기본약관은
       6개 파일이 본문까지 동일했다). 상품 문서 135 → 125개, 청크 886 → 796개.
@@ -76,7 +93,7 @@
       경로 해시라 평가셋 정답이 전부 깨지므로, 파일은 두고 제목만 뽑아 `DocumentChunk.doc_title`에
       담는다. 상품 청크 796개 전부 제목이 채워졌다.
 
-## 6. 정리
+## 7. 정리
 
 - [ ] 데모 HTML 중복 통합: `demo/agent2~4`는 정적판과 라이브판이 `agent-api.js` 로드 2줄만
       다르고 agent1은 레이아웃이 252줄 갈라졌다. `agent-api.js` 유무로 동작을 나눠 파일 하나로

@@ -10,6 +10,7 @@ from uuid import uuid4
 
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 
 from .agents.mock_customer_data_resolver import MockCustomerDataResolver
 from .agents.issue_validator import validate_issues
@@ -829,3 +830,18 @@ def get_case_audit(case_id: str) -> list[AuditEvent]:
         CASE_STORE[case_id] = case
     events = [event for event in AUDIT_LOG if event.case_id == case_id]
     return events or SUPABASE_STORE.list_audits(case_id)
+
+
+# 정적 클라이언트는 이 앱이 직접 서빙한다. Vercel 프로젝트의 framework 프리셋이
+# python이라 FastAPI 함수가 도메인 전체(/(.*))를 잡기 때문에, 정적 파일을 별도
+# 라우트로 빼려면 rewrite로 경로를 돌려야 하는데 그 rewrite가 함수에 전달되는
+# 경로까지 바꿔버린다(/health -> /api/health가 되어 매칭 실패). 그래서 rewrite를
+# 아예 쓰지 않고 여기서 mount한다.
+#
+# 반드시 모든 API 라우트 등록 뒤에 와야 한다. Starlette는 등록 순서로 매칭해서
+# "/"에 mount를 먼저 걸면 그 아래 모든 API 경로를 가로챈다.
+_CLIENT_DIST = ROOT / "client" / "dist"
+if _CLIENT_DIST.is_dir():
+    # html=True: 없는 경로는 index.html로 떨어뜨린다. 클라이언트에 라우터가 없어
+    # 실제로는 "/" 하나뿐이지만, 새로고침·딥링크가 404가 되지 않게 해준다.
+    app.mount("/", StaticFiles(directory=_CLIENT_DIST, html=True), name="client")

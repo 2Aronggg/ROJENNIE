@@ -1,19 +1,36 @@
-client/node_modules/**
-client/node_modules
+# 업로드 대상은 "서버가 런타임에 실제로 읽는 것"만이다.
+# 원천 문서(PDF 307개, 법령 JSON 7만여 개)는 corpus를 빌드할 때만 필요하고
+# 배포본은 이미 만들어진 corpus만 읽는다.
+
+.git
 .venv
-data
-server/rag/embeddings.jsonl
-server/rag/chunks.jsonl
-server/rag/stems.jsonl
-.env*
-.git/**
-.vercel/**
-data/**
-docs/**
-server/tests/**
-client/demo/**
-server/rag/*.jsonl
-server/**/__pycache__/**
-.venv/**
-__pycache__/**
+node_modules
+client/node_modules
+client/demo
+docs
+server/tests
+server/scripts
+__pycache__
 *.pyc
+*.pyo
+.env*
+.vercel
+python-*.exe
+python-*.log
+
+# 로컬 인덱스 원본. embeddings.jsonl 510MB + chunks.jsonl 104MB로
+# 배포 업로드 한도를 넘긴 진범이다. 배포본은 data/corpus/all.jsonl만 읽는다
+# (server/app.py CHUNKS_PATH).
+server/rag/*.jsonl
+
+# data/ 아래는 통째로 빼고 서버가 런타임에 읽는 3개만 되살린다.
+# gitignore 규칙상 부모 디렉터리가 제외되면 안쪽 파일을 되살릴 수 없어서
+# 단계별로 열어준다.
+data/*
+!data/corpus
+!data/dictionary
+data/corpus/*
+!data/corpus/all.jsonl
+!data/corpus/manifest.json
+data/dictionary/*
+!data/dictionary/fine_financial_glossary.json
