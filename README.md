@@ -96,7 +96,7 @@ KB Key Buddy는 사용자가 입력한 예금·적금·대출 관련 민원을 �
 
 실제 고객정보·계좌번호·주민번호는 사용하지 않습니다. Mock Bank는 가상 고객 `CUST-001` 한 명의 합성 데이터만 가집니다.
 
-검색 성능은 자체 평가셋 42문항 기준 **recall@5 97.6%** 입니다(`server/tests/evaluate_retrieval.py`). 상품 라우팅은 AIHub 실제 상담 데이터로 검증했습니다(`server/tests/evaluate_aihub.py`).
+검색 성능은 자체 평가셋 42문항 기준 **recall@5 100%** 입니다(`server/tests/evaluate_retrieval.py`). 상품 라우팅은 AIHub 실제 상담 데이터 139건으로 검증했고 LLM 49.6% / 규칙 43.2%입니다(`server/tests/evaluate_aihub.py`). 채점 문장이 상담 대화 중간 발화라 상품명이 앞 턴에 있는 경우가 많으므로, 이 절대 수치를 서비스 정확도로 읽으면 안 됩니다 — 측정 조건과 한계는 [docs/TECHNICAL_EVALUATION.md](docs/TECHNICAL_EVALUATION.md) 3절에 있습니다.
 
 
 ## 실행
@@ -124,6 +124,8 @@ python -m server.rag.build_corpus
 
 `vercel.json`과 `api/index.py`가 준비돼 있습니다. 클라이언트는 정적 빌드로, FastAPI는 서버리스 함수로 나갑니다.
 
+> **현재 배포본은 동작하지 않습니다.** 함수는 기동하지만 라우팅이 맞지 않아 모든 경로가 404입니다. 원인과 수정 방향은 [docs/TODO.md](docs/TODO.md) 2절에 있습니다.
+
 환경변수를 먼저 설정하세요:
 
 | 변수 | 값 | 이유 |
@@ -132,7 +134,7 @@ python -m server.rag.build_corpus
 | `MOCK_BANK_DB` | `:memory:` | 서버리스는 파일시스템이 읽기 전용 |
 | `CORS_ORIGINS` | 배포 도메인 | 기본값은 localhost만 허용 |
 
-`data/corpus/all.jsonl`(36.8MB)은 저장소에 포함돼 있어야 합니다. 서버가 읽는 유일한 corpus 파일이고, 없으면 근거 검색이 빈 인덱스로 시작합니다.
+`data/corpus/all.jsonl`(37.5MB)은 저장소에 포함돼 있어야 합니다. 서버가 읽는 유일한 corpus 파일이고, 없으면 근거 검색이 빈 인덱스로 시작합니다.
 
 ## 실행 방법
 
