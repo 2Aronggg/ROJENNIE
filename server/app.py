@@ -367,6 +367,11 @@ def get_mock_loans(customer_id: str) -> list[dict[str, object]]:
     return MOCK_BANK_CLIENT.get_loans(customer_id)
 
 
+@app.get("/health")
+def health() -> dict[str, str]:
+    return {"status": "ok"}
+
+
 # issue_type 키워드 분류(server/agents/router.py)가 자연스러운 표현("제 명의로 대출이
 # 나간 걸 몰랐어요")을 놓치면, 명의도용은 HIGH_RISK_ISSUES 하나에만 의존하던 이전에는
 # hold로 가지 못하고 그대로 통과했다. 여기서는 issue_type 분류와 별개로 원문 자체에서

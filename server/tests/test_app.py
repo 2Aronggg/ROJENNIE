@@ -51,5 +51,14 @@ class FraudDetectionEndToEndTests(unittest.TestCase):
         self.assertTrue(issue.human_review_required)
 
 
+class HealthTests(unittest.TestCase):
+    def test_health_endpoint_is_registered(self) -> None:
+        # 배포 헬스체크가 부르는 경로다. 다른 엔드포인트를 일괄 정리하다 함께
+        # 지워진 적이 있어(정규식이 뒤따르는 정의까지 삼킴) 회귀 테스트를 둔다.
+        response = TestClient(app_module.app).get("/health")
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.json(), {"status": "ok"})
+
+
 if __name__ == "__main__":
     unittest.main()

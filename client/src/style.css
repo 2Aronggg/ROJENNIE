@@ -424,3 +424,13 @@ button:focus-visible, input:focus-visible, textarea:focus-visible { outline: 3px
 .service-outcome b.hold { background: var(--red-soft); color: var(--red); }
 .service-loop-note { margin: 6px 0 0; font-size: 11px; line-height: 1.55; color: var(--muted); opacity: .85; }
 .service-loop-cta { margin-top: 14px; font-size: 11.5px; color: var(--muted); }
+
+/* 판단 근거: 줄글 설명이 먼저, 원문 목록은 그 출처로 뒤따른다. */
+.report-evidence-summary { padding: 10px 12px; border-left: 3px solid var(--gold); background: var(--gold-soft); border-radius: 0 8px 8px 0; }
+.report-evidence-note { margin: 10px 0 6px; font-size: 11px; color: var(--muted); }
+.term-glossary { display: flex; flex-direction: column; gap: 8px; margin-top: 12px; }
+.term-glossary.compact { margin-top: 14px; padding-top: 12px; border-top: 1px dashed var(--line); }
+.term-glossary.compact .term-card { padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--panel); }
+.term-glossary.compact .term-card strong { font-size: 12px; }
+.term-glossary.compact .term-card p { margin: 3px 0 0; font-size: 11.5px; line-height: 1.5; color: var(--muted); }
+.candidate-copies { opacity: .7; }

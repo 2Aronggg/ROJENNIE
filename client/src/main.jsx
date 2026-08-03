@@ -156,6 +156,93 @@ function completedIssues(history) {
   });
 }
 
+// 소비자에게 "local:products/deposit/예금거래기본약관_5586329411498782 (1).pdf"를 보여줄
+// 수는 없다. 경로에서 파일명만 남기고 확장자·해시·중복 사본 번호를 떼어 문서 이름으로 만든다.
+function documentName(ref) {
+  const file = String(ref.path || "").split(":").pop().replace(/\\/g, "/").split("/").pop();
+  if (!file) return ref.doc_id || "관련 문서";
+  return file
+    .replace(/\.(pdf|json|jsonl|csv|md|hwpx?)$/i, "")
+    .replace(/\s*\(\d+\)\s*$/, "")
+    .replace(/[_\-\s]*\d{6,}\s*$/, "")
+    .trim() || ref.doc_id || "관련 문서";
+}
+
+// 리포트에 나오는 금융 용어를 사전에서 찾아 옆에 풀어 준다. 서버 사전을 먼저 쓰고,
+// 조회에 실패하면 클라이언트에 내장된 설명으로 떨어진다(서버가 없어도 화면이 비지 않게).
+function TermGlossary({issue, compact = false}) {
+  const terms = issue ? termsForIssue(issue) : [];
+  const [definitions, setDefinitions] = useState({});
+  const key = terms.join(",");
+
+  useEffect(function() {
+    let alive = true;
+    if (terms.length === 0) return;
+    Promise.all(terms.map(function(term) {
+      return fetch(API_BASE + "/dictionary/search?q=" + encodeURIComponent(term) + "&limit=1")
+        .then(function(response) { return response.ok ? response.json() : []; })
+        .then(function(items) { return [term, items[0]?.definition || ""]; })
+        .catch(function() { return [term, ""]; });
+    })).then(function(entries) { if (alive) setDefinitions(Object.fromEntries(entries)); });
+    return function() { alive = false; };
+  }, [key]);
+
+  if (terms.length === 0) return null;
+  return <div className={"term-glossary" + (compact ? " compact" : "")}>
+    {terms.map(function(term) {
+      return <div className="term-card" key={term}>
+        <strong>{term}</strong>
+        <p>{definitions[term] || TERM_DICTIONARY[term] || "설명을 불러오는 중입니다."}</p>
+      </div>;
+    })}
+  </div>;
+}
+
+// 내부 식별자를 그대로 화면에 내보내면 소비자는 "user_statement"나 "missing_facts"가
+// 뭔지 알 수 없다. 사전에 없는 값은 원문을 그대로 두어(새 필드가 생겨도 빈칸이 되지 않게)
+// 최소한 무엇인지는 보이게 한다.
+const FACT_FIELD_LABEL = {
+  user_statement: "민원 내용", amount: "금액", rate: "금리", date_or_duration: "날짜·기간",
+  product_name: "상품명", institution: "금융회사", requested_action: "요청 사항",
+  customer_id: "고객번호", account_id: "계좌번호",
+};
+
+const RISK_FLAG_LABEL = {
+  missing_facts: "확인이 필요한 사실이 남아 있음",
+  fact_conflict: "진술과 기록이 서로 다름",
+  evidence_insufficient: "직접 근거 자료가 부족함",
+  customer_data_unavailable: "금융정보 조회 동의가 필요함",
+  identity_theft: "명의도용 의심",
+  unauthorized_transaction: "본인이 하지 않은 거래 의심",
+  fraud_suspected: "사기 정황 의심",
+  suspicious_input: "확인이 필요한 표현이 포함됨",
+  prompt_injection: "비정상 입력 감지",
+  legal_uncertainty: "법적 판단이 필요한 쟁점",
+  unsupported_claim: "근거가 뒷받침하지 못하는 주장",
+  unverified_claim: "검증되지 않은 주장",
+  pii_detected: "개인정보가 포함됨",
+  masking_required: "개인정보 정리가 필요함",
+  unsupported_product: "지원하지 않는 상품",
+};
+
+function factLabel(field) { return FACT_FIELD_LABEL[field] || field; }
+function riskFlagLabel(flag) { return RISK_FLAG_LABEL[flag] || flag; }
+
+// corpus에는 같은 약관이 파일명만 다른 사본으로 여러 벌 들어 있어(102종 확인), 검색이
+// 동일한 조항을 5건까지 그대로 돌려준다. 검색 단계 dedup은 추출 텍스트가 미세하게 달라
+// 걸러내지 못하므로, 화면에서는 같은 문서·같은 조항을 한 번만 보여주고 나머지는 사본 수로
+// 접는다. 근본 해결은 corpus에서 중복 PDF를 정리하는 것이다(docs/TODO.md).
+function dedupeEvidence(refs) {
+  const byClause = new Map();
+  refs.forEach(function(ref) {
+    const key = documentName(ref) + "|" + (ref.section || ref.doc_id);
+    const found = byClause.get(key);
+    if (found) found.copies += 1;
+    else byClause.set(key, {ref, copies: 1});
+  });
+  return [...byClause.values()];
+}
+
 function sourceLabel(ref) {
   const source = String(ref.path || ref.doc_id || "");
   if (ref.section) return ref.section;
@@ -791,7 +878,7 @@ function IssueReportDrawer({issue, state, index, onClose}) {
   if (!issue || !state) return null;
   const decision = state.decision || issue.decision?.control || "ask";
   const facts = (issue.facts || []).map(function(fact) {
-    return {title: fact.field, value: valueText(fact.value), source: fact.source_ref ? "검증된 사실" : "분석 입력"};
+    return {title: factLabel(fact.field), value: valueText(fact.value), source: fact.source_ref ? "검증된 사실" : "분석 입력"};
   });
   const sessionFacts = (state.nodes || [])
     .filter(function(node) { return node.type !== "evidence"; })
@@ -826,7 +913,7 @@ function IssueReportDrawer({issue, state, index, onClose}) {
         <h3>소비자 유의사항</h3>
         {(report.consumer_cautions || report.follow_up_actions || []).map(function(caution, cautionIndex) { return <p className="report-bullet" key={cautionIndex}>• {caution}</p>; })}
         {(report.documents_to_prepare || []).length > 0 && <><h3>준비할 서류</h3><DocumentChecklist issueId={issue.issue_id} documents={report.documents_to_prepare} /></>}
-        {(issue.decision?.risk_flags || []).length > 0 && <p className="report-risk">위험 신호: {issue.decision.risk_flags.join(", ")}</p>}
+        {(issue.decision?.risk_flags || []).length > 0 && <p className="report-risk">위험 신호: {issue.decision.risk_flags.map(riskFlagLabel).join(", ")}</p>}
       </div>
       <div className="drawer-section">
         <h3>확인된 사실</h3>
@@ -834,25 +921,30 @@ function IssueReportDrawer({issue, state, index, onClose}) {
         {[...facts, ...sessionFacts].map(function(fact, factIndex) { return <div className="report-fact" key={fact.title + factIndex}><div><strong>{fact.title}</strong><p>{fact.value}</p></div><span>{fact.source}</span></div>; })}
       </div>
       <div className="drawer-section">
-        <div className="report-section-head"><h3>RAG 검색 후보자료</h3><span>{candidates.length}건</span></div>
-        <p className="report-copy">검색 상위 자료이며, 모두 최종 판단 근거로 확정된 것은 아닙니다.</p>
+        <div className="report-section-head"><h3>판단 근거</h3><span>{candidates.length}건</span></div>
+        {report.evidence_summary
+          ? <p className="report-copy report-evidence-summary">{report.evidence_summary}</p>
+          : <p className="report-copy">검색 상위 자료이며, 모두 최종 판단 근거로 확정된 것은 아닙니다.</p>}
         {candidates.length === 0 && <p className="report-empty">검색된 후보자료가 없습니다.</p>}
+        {candidates.length > 0 && <p className="report-evidence-note">아래는 위 설명의 출처가 된 원문입니다. 펼치면 해당 조항을 그대로 볼 수 있습니다.</p>}
+        <TermGlossary issue={issue} compact />
         <ol className="candidate-list">
-          {candidates.map(function(ref, refIndex) {
+          {dedupeEvidence(candidates).map(function(entry, refIndex) {
+            const ref = entry.ref;
             const candidateId = ref.chunk_id || ref.doc_id + refIndex;
             const expanded = openCandidate === candidateId;
             const usedForResult = (report.used_evidence_chunk_ids || []).includes(ref.chunk_id);
             return <li key={candidateId}>
               <button className="candidate-toggle" type="button" onClick={function() { setOpenCandidate(expanded ? null : candidateId); }} aria-expanded={expanded}>
                 <span>
-                  <span className="candidate-head"><strong>후보 {refIndex + 1}</strong><em>{usedForResult ? "판단 근거" : "검토 후보"}</em></span>
+                  <span className="candidate-head"><strong>{documentName(ref)}</strong><em>{usedForResult ? "판단 근거" : "검토 후보"}</em>{entry.copies > 1 && <em className="candidate-copies">사본 {entry.copies}건</em>}</span>
                   <strong>{ref.section || ref.doc_id}</strong>
-                  <small>{ref.path || ref.doc_id} · p.{ref.page}</small>
+                  <small>{ref.page ? "p." + ref.page : "문서 전체"}{ref.effective_from ? " · " + ref.effective_from + " 시행" : ""}</small>
                 </span>
                 <b>{expanded ? "−" : "+"}</b>
               </button>
               {expanded && <div className="candidate-detail">
-                <div><span>문서</span><strong>{ref.path || ref.doc_id}</strong></div>
+                <div><span>문서</span><strong>{documentName(ref)}</strong></div>
                 <div><span>페이지</span><strong>p.{ref.page}</strong></div>
                  {ref.section && <div><span>조항</span><strong>{ref.section}</strong></div>}
                  {ref.effective_from && <div><span>시행 시작</span><strong>{ref.effective_from}</strong></div>}
@@ -1342,19 +1434,9 @@ function ReportBlock({title, children}) {
 function GeneratedComplaintsPage({history, onNavigate}) {
   const reports = completedIssues(history);
   const [selectedId, setSelectedId] = useState(reports[0]?.issue_id || null);
-  const [dictionaryTerms, setDictionaryTerms] = useState({});
   const selected = reports.find(function(issue) { return issue.issue_id === selectedId; }) || reports[0];
   useEffect(function() { if (!selected && reports[0]) setSelectedId(reports[0].issue_id); }, [reports, selected]);
   const terms = selected ? termsForIssue(selected) : [];
-  useEffect(function() {
-    if (!selected) return;
-    Promise.all(terms.map(function(term) {
-      return fetch(API_BASE + "/dictionary/search?q=" + encodeURIComponent(term) + "&limit=1")
-        .then(function(response) { return response.ok ? response.json() : []; })
-        .then(function(items) { return [term, items[0]?.definition || ""]; })
-        .catch(function() { return [term, ""]; });
-    })).then(function(entries) { setDictionaryTerms(Object.fromEntries(entries)); });
-  }, [selected?.issue_id]);
 
   if (!selected) return <main className="page-shell generated-page"><div className="page-title"><div><span className="eyebrow">COMPLETED CASES</span><h1>생성된 민원</h1><p>처리가 완료된 민원 리포트만 표시합니다.</p></div></div><div className="panel empty-page"><strong>완료된 민원 리포트가 없습니다.</strong><span>민원 상담을 완료하면 이곳에 처리 결과가 저장됩니다.</span><button className="primary-action" type="button" onClick={function() { onNavigate("chat"); }}>민원 상담 시작</button></div></main>;
 
@@ -1370,7 +1452,7 @@ function GeneratedComplaintsPage({history, onNavigate}) {
         <ReportBlock title="소비자 유의사항">{(report.consumer_cautions || report.follow_up_actions || selected.next_steps || []).map(function(item, index) { return <p className="report-bullet" key={index}>• {item}</p>; })}</ReportBlock>
         {(report.documents_to_prepare || []).length > 0 && <ReportBlock title="준비할 서류"><DocumentChecklist issueId={selected.issue_id} documents={report.documents_to_prepare} /></ReportBlock>}
       </article>
-      <aside className="panel report-insights"><section><div className="card-head"><div><h2>금융 용어</h2><p>사전에서 쉽게 풀어쓴 설명</p></div><span>{terms.length}개</span></div>{terms.map(function(term) { return <div className="term-card" key={term}><strong>{term}</strong><p>{dictionaryTerms[term] || TERM_DICTIONARY[term]}</p></div>; })}</section><section className="evidence-summary"><div className="card-head"><div><h2>근거 기반 결론</h2><p>RAG가 검색한 자료 기반</p></div><span>{candidates.length}건</span></div><p className="insight-conclusion">{report.processing_result || report.reasoning || "검색된 근거자료를 바탕으로 처리 결과를 생성했습니다."}</p>{candidates.length === 0 ? <p className="empty-copy">연결된 근거자료가 없습니다.</p> : candidates.map(function(ref, index) { return <article className="evidence-card" key={(ref.chunk_id || ref.doc_id || "ref") + index}><strong>[{sourceLabel(ref)}]</strong><p>{ref.snippet || "관련 조항의 적용 내용을 확인했습니다."}</p><small>{ref.page ? "p." + ref.page : "관련 문서"}</small></article>; })}</section></aside>
+      <aside className="panel report-insights"><section><div className="card-head"><div><h2>금융 용어</h2><p>사전에서 쉽게 풀어쓴 설명</p></div><span>{terms.length}개</span></div><TermGlossary issue={selected} /></section><section className="evidence-summary"><div className="card-head"><div><h2>근거 기반 결론</h2><p>검색된 자료를 풀어 쓴 설명</p></div><span>{candidates.length}건</span></div><p className="insight-conclusion">{report.evidence_summary || report.processing_result || report.reasoning || "검색된 근거자료를 바탕으로 처리 결과를 생성했습니다."}</p>{candidates.length === 0 ? <p className="empty-copy">연결된 근거자료가 없습니다.</p> : candidates.map(function(ref, index) { return <article className="evidence-card" key={(ref.chunk_id || ref.doc_id || "ref") + index}><strong>[{documentName(ref)}]</strong><p>{ref.snippet || "관련 조항의 적용 내용을 확인했습니다."}</p><small>{ref.section ? ref.section + " · " : ""}{ref.page ? "p." + ref.page : "관련 문서"}</small></article>; })}</section></aside>
     </div>
   </main>;
 }

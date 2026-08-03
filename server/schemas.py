@@ -125,6 +125,9 @@ class IssueReport(BaseModel):
     # 민원 유형별 고정 목록(report_composer.DOCUMENTS_BY_ISSUE). LLM이 아니라
     # 사람이 검토한 값만 나가야 사용자가 없는 서류를 찾아 헛걸음하지 않는다.
     documents_to_prepare: list[str] = Field(default_factory=list)
+    # 검색된 근거가 이 민원에 어떤 의미인지 설명하는 줄글. 화면에 chunk 목록과 파일
+    # 경로만 나열하면 소비자가 읽을 수 없어서, 사람이 부르는 문서 이름으로 풀어 쓴다.
+    evidence_summary: str = ""
     generated_by: Literal["llm", "fallback"] = "fallback"
     compliance_blocked: bool = False
     compliance_flags: list[str] = Field(default_factory=list)

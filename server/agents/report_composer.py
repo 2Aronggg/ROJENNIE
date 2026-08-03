@@ -64,6 +64,7 @@ class LLMReportDraft(BaseModel):
     used_evidence_chunk_ids: list[str] = Field(default_factory=list)
     reasoning: str = ""
     follow_up_actions: list[str] = Field(default_factory=list)
+    evidence_summary: str = ""
 
 
 REPORT_SYSTEM_PROMPT = """너는 금융소비자 보호 민원 리포트 작성자다.
@@ -76,6 +77,10 @@ REPORT_SYSTEM_PROMPT = """너는 금융소비자 보호 민원 리포트 작성�
 - RAG 후보자료가 민원과 직접 관련이 낮으면 판단 근거로 단정하지 않는다.
 - reasoning은 2~4문장으로, 확인된 사실과 부족한 사실을 구분해 작성한다.
 - follow_up_actions는 실제로 확인할 수 있는 후속 조치 2~5개를 작성한다.
+- evidence_summary는 검색된 자료가 이 민원에 어떤 의미인지 2~4문장 줄글로 쓴다.
+  chunk id나 파일 경로를 쓰지 말고 "예금거래기본약관 제7조"처럼 사람이 부르는 이름으로
+  인용한다. 같은 조항이 여러 문서에서 중복 검색되면 한 번만 언급한다. 관련 자료가 없으면
+  빈 문자열을 반환한다.
 - 반드시 JSON만 반환한다.
 """
 
@@ -97,7 +102,7 @@ def compose_issue_report(
             contents=REPORT_SYSTEM_PROMPT
             + "\n\n현재 결정 상태: "
             + DECISION_LABELS.get(issue.decision.control, issue.decision.control)
-            + "\n\nReturn JSON fields complaint_content, issue, processing_result, consumer_cautions, used_evidence_chunk_ids, reasoning, and follow_up_actions. Ground processing_result in the supplied RAG evidence, and use only supplied chunk_id values."
+            + "\n\nReturn JSON fields complaint_content, issue, processing_result, consumer_cautions, used_evidence_chunk_ids, reasoning, follow_up_actions, and evidence_summary. Ground processing_result in the supplied RAG evidence, and use only supplied chunk_id values."
             + "\n\n분석 데이터:\n"
             + json.dumps(context, ensure_ascii=False),
             response_schema=LLMReportDraft.model_json_schema(),
@@ -125,6 +130,7 @@ def compose_issue_report(
             current_decision=DECISION_LABELS.get(issue.decision.control, issue.decision.control),
             reasoning=reasoning,
             follow_up_actions=_sanitize_actions(actions or fallback.follow_up_actions),
+            evidence_summary=_sanitize_text(draft.evidence_summary),
             generated_by="llm",
             ),
         )
