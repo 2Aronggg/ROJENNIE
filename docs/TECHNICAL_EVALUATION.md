@@ -243,7 +243,7 @@ Gemini가 503을 반환하거나 스키마 검증에 실패하면 각 단계가 
 
 ## 7. 테스트
 
-85개 회귀 테스트가 통과합니다(`python -m unittest discover -s server/tests`).
+78개 회귀 테스트가 통과합니다(`python -m unittest discover -s server/tests`).
 
 | 영역 | 테스트 |
 |---|---|
@@ -252,8 +252,8 @@ Gemini가 503을 반환하거나 스키마 검증에 실패하면 각 단계가 
 | 정책·안전 | `test_policy_gateway.py` (7), `test_content_scope.py` (3) |
 | 검색·인덱싱 | `test_embeddings.py` (6), `test_ingest.py` (3), `test_morphology.py` (3), `test_pgvector.py` (2) |
 | 데이터·MCP | `test_mock_data.py` (6), `test_mcp_finance.py` (2) |
-| 응답 구성 | `test_response_composer.py` (5), `test_report_composer.py` (1) |
-| 파이프라인 | `test_app.py` (5), `test_p0.py` (4), `test_focal_builder.py` (4), `test_p1.py` (3), `test_facts.py` (3), `test_pipeline.py` (2) |
+| 응답 구성 | `test_report_composer.py` (1) |
+| 파이프라인 | `test_app.py` (5), `test_p0.py` (4), `test_focal_builder.py` (4), `test_p1.py` (3), `test_facts.py` (3) |
 
 테스트는 Supabase 쓰기를 자동으로 차단합니다(`SupabaseStore.enabled`가 `unittest` 로드 여부를 확인). 엔드포인트를 직접 호출하는 평가 스크립트는 `SUPABASE_PERSISTENCE=false`를 명시적으로 설정합니다.
 

@@ -95,7 +95,7 @@ CaseAnalysis
 | Agent 1 Case Builder | 복합 민원을 이슈와 fact 구조로 분리 | `router.py`, `focal_builder.py`, `facts.py` |
 | Agent 2 Evidence/RAG | 검색 쿼리 생성 및 근거 문서 검색 | `rag_query.py`, `server/rag/retrieval.py` |
 | Agent 3 Logic/Decision | 근거-결론 지지 검증 및 상태 결정 | `logic_verification.py`, `decision_gate.py` |
-| Agent 4 Response | 안전 리포트와 사용자 응답 구성 | `report_composer.py`, `response_composer.py` |
+| Agent 4 Response | 안전 리포트와 사용자 응답 구성 | `report_composer.py` |
 
 권장 발표 표현:
 

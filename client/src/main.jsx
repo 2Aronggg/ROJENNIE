@@ -787,6 +787,7 @@ function IssueReportDrawer({issue, state, index, onClose}) {
         <p className="report-copy report-reasoning">{report.processing_result || report.reasoning}</p>
         <h3>소비자 유의사항</h3>
         {(report.consumer_cautions || report.follow_up_actions || []).map(function(caution, cautionIndex) { return <p className="report-bullet" key={cautionIndex}>• {caution}</p>; })}
+        {(report.documents_to_prepare || []).length > 0 && <><h3>준비할 서류</h3>{report.documents_to_prepare.map(function(document, documentIndex) { return <p className="report-bullet" key={documentIndex}>• {document}</p>; })}</>}
         {(issue.decision?.risk_flags || []).length > 0 && <p className="report-risk">위험 신호: {issue.decision.risk_flags.join(", ")}</p>}
       </div>
       <div className="drawer-section">
@@ -1225,6 +1226,7 @@ function GeneratedComplaintsPage({history, onNavigate}) {
         <ReportBlock title="민원내용"><p>{report.complaint_content || selected.issue_type}</p></ReportBlock>
         <ReportBlock title="처리결과"><p className="report-result">{report.processing_result || report.reasoning || "검색된 근거자료를 바탕으로 처리 결과를 생성했습니다."}</p></ReportBlock>
         <ReportBlock title="소비자 유의사항">{(report.consumer_cautions || report.follow_up_actions || selected.next_steps || []).map(function(item, index) { return <p className="report-bullet" key={index}>• {item}</p>; })}</ReportBlock>
+        {(report.documents_to_prepare || []).length > 0 && <ReportBlock title="준비할 서류">{report.documents_to_prepare.map(function(item, index) { return <p className="report-bullet" key={index}>• {item}</p>; })}</ReportBlock>}
       </article>
       <aside className="panel report-insights"><section><div className="card-head"><div><h2>금융 용어</h2><p>사전에서 쉽게 풀어쓴 설명</p></div><span>{terms.length}개</span></div>{terms.map(function(term) { return <div className="term-card" key={term}><strong>{term}</strong><p>{dictionaryTerms[term] || TERM_DICTIONARY[term]}</p></div>; })}</section><section className="evidence-summary"><div className="card-head"><div><h2>근거 기반 결론</h2><p>RAG가 검색한 자료 기반</p></div><span>{candidates.length}건</span></div><p className="insight-conclusion">{report.processing_result || report.reasoning || "검색된 근거자료를 바탕으로 처리 결과를 생성했습니다."}</p>{candidates.length === 0 ? <p className="empty-copy">연결된 근거자료가 없습니다.</p> : candidates.map(function(ref, index) { return <article className="evidence-card" key={(ref.chunk_id || ref.doc_id || "ref") + index}><strong>[{sourceLabel(ref)}]</strong><p>{ref.snippet || "관련 조항의 적용 내용을 확인했습니다."}</p><small>{ref.page ? "p." + ref.page : "관련 문서"}</small></article>; })}</section></aside>
     </div>

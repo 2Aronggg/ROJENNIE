@@ -122,6 +122,9 @@ class IssueReport(BaseModel):
     current_decision: str = "추가 확인 필요"
     reasoning: str = ""
     follow_up_actions: list[str] = Field(default_factory=list)
+    # 민원 유형별 고정 목록(report_composer.DOCUMENTS_BY_ISSUE). LLM이 아니라
+    # 사람이 검토한 값만 나가야 사용자가 없는 서류를 찾아 헛걸음하지 않는다.
+    documents_to_prepare: list[str] = Field(default_factory=list)
     generated_by: Literal["llm", "fallback"] = "fallback"
     compliance_blocked: bool = False
     compliance_flags: list[str] = Field(default_factory=list)

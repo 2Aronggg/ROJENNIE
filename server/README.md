@@ -47,7 +47,6 @@ POST /api/v1/cases/analyze
 | `server/agents/logic_verification.py` | 근거-결론 지지 검증 |
 | `server/agents/decision_gate.py` | 비LLM 정책 기반 최종 상태 결정 |
 | `server/agents/report_composer.py` | issue별 안전 리포트 생성 |
-| `server/agents/response_composer.py` | 클라이언트 응답 view 구성 |
 | `server/policy/gateway.py` | LLM 호출 전후 정책 게이트, PII 마스킹, 금지 표현 필터 |
 
 ## Finance MCP / Mock Bank

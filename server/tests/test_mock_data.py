@@ -1,18 +1,36 @@
 from __future__ import annotations
 
+import os
 import tempfile
 import unittest
 from pathlib import Path
+from unittest import mock
 
 from fastapi.testclient import TestClient
 
 from server import app as app_module
 from server.agents.facts import missing_facts, resolve_facts
 from server.agents.mock_customer_data_resolver import MockCustomerDataResolver
-from server.agents.pipeline import run_analysis
 from server.agents.router import build_case_request
 from server.finance.mock_data import MockBankClient
 from server.rag.retrieval import SearchIndex
+from server.schemas import CaseAnalysis
+
+
+def _analyze(prompt: str, *, case_id: str) -> CaseAnalysis:
+    """Run a prompt through the real endpoint and return the stored analysis.
+
+    Routing is pinned to rules because these tests assert exact issue_type and
+    control lists. Those are stable for the keyword router but not for the LLM
+    one, which is free to split the same prompt differently between runs - the
+    subject here is how mock bank facts flow through, not routing quality.
+    """
+    with mock.patch.dict(os.environ, {"ROUTER_MODE": "rules"}):
+        response = TestClient(app_module.app).post(
+            "/api/v1/cases/analyze", json={"case_id": case_id, "prompt": prompt}
+        )
+    response.raise_for_status()
+    return app_module.CASE_STORE[case_id]
 
 
 class MockDataTests(unittest.TestCase):
@@ -95,36 +113,30 @@ class MockDataTests(unittest.TestCase):
             app_module.DATA_DIR,
             chunks_path=app_module.CHUNKS_PATH,
         )
-        result = run_analysis(
+        analysis = _analyze(
             "예금 만기 이자 금액이 예상과 다르고, 적금 금리 변경 안내도 받지 못했습니다.",
             case_id="case_mock_demo",
-            use_llm=False,
         )
 
-        self.assertEqual([issue.issue_type for issue in result.analysis.issues], ["거래오류", "금리변경미통지"])
-        self.assertEqual([issue.decision.control for issue in result.analysis.issues], ["ask", "proceed"])
-        self.assertIn("안내 금액", result.analysis.issues[0].missing_facts)
+        self.assertEqual([issue.issue_type for issue in analysis.issues], ["거래오류", "금리변경미통지"])
+        self.assertEqual([issue.decision.control for issue in analysis.issues], ["ask", "proceed"])
+        self.assertIn("안내 금액", analysis.issues[0].missing_facts)
         expected_question = "현재 확인된 정보는 실제 입금액은 279,180원, 가입금액은 10,000,000원, 적용금리는 연 3.3%입니다. 얼마로 예상하셨나요?"
-        self.assertIn(expected_question, result.analysis.issues[0].next_steps)
-        self.assertEqual(result.response_view.issues[0].missing_questions[0].question, expected_question)
+        self.assertIn(expected_question, analysis.issues[0].next_steps)
         self.assertEqual(
-            next(fact.value for fact in result.analysis.issues[0].facts if fact.field == "실제 지급 금액"),
+            next(fact.value for fact in analysis.issues[0].facts if fact.field == "실제 지급 금액"),
             279180,
         )
-        self.assertEqual(result.analysis.issues[1].mock_data["account"]["rate_change_history"], [])
+        self.assertEqual(analysis.issues[1].mock_data["account"]["rate_change_history"], [])
 
     def test_missing_expected_amount_uses_mcp_facts_first(self) -> None:
         app_module._INDEX = SearchIndex.from_data_dir(
             app_module.DATA_DIR,
             chunks_path=app_module.CHUNKS_PATH,
         )
-        result = run_analysis(
-            "예금 만기 이자 금액이 예상과 다릅니다.",
-            case_id="case_known_facts_first",
-            use_llm=False,
-        )
+        analysis = _analyze("예금 만기 이자 금액이 예상과 다릅니다.", case_id="case_known_facts_first")
 
-        issue = result.analysis.issues[0]
+        issue = analysis.issues[0]
         self.assertIn("안내 금액", issue.missing_facts)
         self.assertIn("실제 지급 금액", {fact.field for fact in issue.facts})
         self.assertIn("가입금액", {fact.field for fact in issue.facts})
