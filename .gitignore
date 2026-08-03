@@ -19,3 +19,7 @@ server/rag/chunks.jsonl
 python-3.12.*.exe
 python-*install*.log
 python-msi-uninstall.log
+python-3.12.5-amd64.exe
+python-install.log
+
+.claude/settings.local.json

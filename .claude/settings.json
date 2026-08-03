@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git merge *)",
+      "Bash(git commit *)",
+      "Bash(echo \"EXIT:$?\")",
+      "Bash(git diff *)",
+      "Bash(git push *)",
+      "Bash(chromium-cli --help)",
+      "Bash(echo \"exit:$?\")",
+      "Bash(npm ls *)",
+      "Bash(where chromium-cli *)",
+      "Bash(node -e \"require.resolve\\('playwright'\\)\")",
+      "Bash(mkdir -p /c/Users/achim/AppData/Local/Temp/claude/c--Users-achim-ROJENNIE/64eb2813-3790-443c-b6fc-08fcb815123a/scratchpad)",
+      "Bash(sed 's/<body>/<body class=\"playing\">/' client/index1.html)",
+      "Read(//c/Users/achim/AppData/Local/Temp/claude/c--Users-achim-ROJENNIE/64eb2813-3790-443c-b6fc-08fcb815123a/scratchpad/**)",
+      "Bash(python3 - /c/Users/achim/AppData/Local/Temp/claude/c--Users-achim-ROJENNIE/64eb2813-3790-443c-b6fc-08fcb815123a/scratchpad/index1-playing.html)",
+      "Bash(python - /c/Users/achim/AppData/Local/Temp/claude/c--Users-achim-ROJENNIE/64eb2813-3790-443c-b6fc-08fcb815123a/scratchpad/index1-playing.html)",
+      "Read(//c/Users/achim/**)",
+      "Read(//c/Users/achim/Downloads/**)",
+      "Bash(PYTHONIOENCODING=utf-8 python -c ' *)"
+    ]
+  }
+}
