@@ -74,6 +74,20 @@ python -m server.rag.embed_corpus   # Gemini API 비용 발생
 python -m server.rag.build_corpus
 ```
 
+## 배포 (Vercel)
+
+`vercel.json`과 `api/index.py`가 준비돼 있습니다. 클라이언트는 정적 빌드로, FastAPI는 서버리스 함수로 나갑니다.
+
+환경변수를 먼저 설정하세요:
+
+| 변수 | 값 | 이유 |
+|---|---|---|
+| `GEMINI_API_KEY` | 발급받은 키 | 없으면 전 단계가 규칙 기반으로 동작 |
+| `MOCK_BANK_DB` | `:memory:` | 서버리스는 파일시스템이 읽기 전용 |
+| `CORS_ORIGINS` | 배포 도메인 | 기본값은 localhost만 허용 |
+
+`data/corpus/all.jsonl`(36.8MB)은 저장소에 포함돼 있어야 합니다. 서버가 읽는 유일한 corpus 파일이고, 없으면 근거 검색이 빈 인덱스로 시작합니다.
+
 ## 디렉터리
 
 ```text

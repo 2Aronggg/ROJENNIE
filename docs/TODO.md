@@ -20,21 +20,21 @@
 
 ## 2. 배포 (Vercel + Supabase) — 지금 상태로는 배포되지 않음
 
-아래 3개는 "나중에"가 아니라 **배포하는 순간 막히는** 것들이다.
+코드 쪽 준비는 끝났다. 남은 것은 실제 배포와 그 검증이다.
 
-- [ ] **corpus가 배포 번들에 없다.** `.gitignore:11`이 `data/corpus/*.jsonl`을 제외하는데
-      런타임은 `data/corpus/all.jsonl`을 읽는다(`server/app.py:67`). 배포하면 근거 문서가 0건이다.
-      만료 법령 제거로 `all.jsonl`이 35MB까지 줄어 커밋이 가능해졌으니, `all.jsonl`만 추적
-      대상으로 되돌린다(나머지 per-corpus 파일은 중복이라 계속 제외).
-- [ ] **Mock Bank가 시작할 때마다 파일에 쓴다.** `MockBankClient._initialize()`가
-      `mkdir` + `INSERT OR REPLACE`를 실행하는데(`server/finance/mock_data.py:180`), 서버리스는
-      파일시스템이 읽기 전용이라 기동에 실패한다. sqlite 파일도 gitignore돼 있어 번들에 없다.
-      → 메모리 SQLite(`:memory:`)로 매 요청 시드하거나, 고객 데이터를 Supabase로 옮긴다.
-- [ ] **`vercel.json`과 진입점이 없다.** FastAPI를 Vercel에 올리려면 `api/` 진입점 구성이 필요하다.
-      `kiwipiepy` 모델이 105MB라 서버리스 번들 한도(압축 250MB)에 여유가 크지 않으니, 배포 전에
-      번들 크기를 한 번 확인한다.
-- [ ] 위 3개 해결 후 pgvector 사용 여부 결정. corpus가 3,787청크/인덱스 8.4초까지 줄어서
-      인메모리로도 배포 가능할 수 있고, 그러면 pgvector 경로를 유지할 이유가 없다.
+- [x] corpus를 배포 번들에 포함 — `.gitignore`가 `data/corpus/all.jsonl`만 예외로 추적한다
+      (36.8MB, 서버가 읽는 유일한 corpus 파일). 나머지 per-corpus 파일은 중복이라 계속 제외.
+- [x] Mock Bank의 읽기 전용 파일시스템 대응 — `MOCK_BANK_DB=:memory:`로 인메모리 SQLite를
+      쓰고, 파일 쓰기가 실패하면 자동으로 인메모리로 넘어간다. 시드 데이터를 매번 상수에서
+      다시 쓰기 때문에 파일이 없어도 동작이 같다.
+- [x] `vercel.json` + `api/index.py` 진입점 추가. 번들 크기는 문제가 아니었다 — Fluid Compute는
+      5GB까지 지원하고 현재 의존성은 약 214MB(kiwipiepy 모델 105MB 포함)다.
+- [ ] **실제로 배포해서 확인한다.** 로컬에서 검증한 것은 진입점 import와 `/health`뿐이다.
+      배포 후 `/api/v1/cases/analyze`가 실제 근거를 반환하는지, 콜드 스타트가 몇 초인지 잰다.
+- [ ] Vercel 환경변수 설정: `GEMINI_API_KEY`, `MOCK_BANK_DB=:memory:`,
+      `CORS_ORIGINS`(배포 도메인), 필요 시 `SUPABASE_URL`/`SUPABASE_SECRET_KEY`.
+- [ ] 배포 후 pgvector 사용 여부 결정. corpus가 3,787청크/인덱스 6.2초까지 줄어서 인메모리로
+      충분할 가능성이 높고, 그러면 pgvector 경로를 유지할 이유가 없다.
 - [ ] pgvector를 계속 쓴다면 배포 전 42문항을 **pgvector 경로로** 재측정할 것. SQL
       (`match_rag_chunks`)은 순수 벡터 유사도만 쓰고 로컬의 텍스트 점수·상품명 가중치·intent
       보정이 없어서, 문서의 recall 수치가 배포 환경을 설명하지 못한다.

@@ -7,8 +7,12 @@ __pycache__/
 client/node_modules/
 client/dist/
 
-# Regenerate these local RAG artifacts with server.build_corpus.
+# Per-corpus files are redundant with all.jsonl, which the server actually
+# loads (server/app.py CHUNKS_PATH). all.jsonl is tracked so a deployment
+# built from a clone has evidence to search - without it the service starts
+# with an empty index.
 data/corpus/*.jsonl
+!data/corpus/all.jsonl
 data/complaints/**/complaints.jsonl
 
 # Regenerate with server.rag.embed_corpus. Real Gemini API cost to rebuild.

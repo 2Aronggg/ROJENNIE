@@ -1,12 +1,15 @@
 from __future__ import annotations
 
 import json
+import logging
+import os
 import sqlite3
 from contextlib import closing
 from pathlib import Path
 from typing import Any
 
 
+LOGGER = logging.getLogger(__name__)
 DEFAULT_DB_PATH = Path(__file__).with_name("mock_bank.sqlite3")
 
 
@@ -166,19 +169,50 @@ LOAN_NOTICE_HISTORY: list[dict[str, Any]] = []
 
 
 class MockBankClient:
-    """SQLite-backed stand-in for a bank's internal read APIs."""
+    """SQLite-backed stand-in for a bank's internal read APIs.
 
-    def __init__(self, db_path: str | Path = DEFAULT_DB_PATH) -> None:
-        self.db_path = Path(db_path)
-        self._initialize()
+    The seed data lives in the module constants above and `_initialize` writes
+    all of it on every construction, so the database file holds nothing that
+    outlives the process. That makes the on-disk copy optional, which matters
+    because serverless hosts give the app a read-only filesystem - creating
+    the file there fails and the server never starts. Set MOCK_BANK_DB to
+    ":memory:" (or leave the default unwritable) to keep everything in memory.
+    """
+
+    def __init__(self, db_path: str | Path | None = None) -> None:
+        raw = str(db_path) if db_path is not None else os.getenv("MOCK_BANK_DB", str(DEFAULT_DB_PATH))
+        self.in_memory = raw == ":memory:"
+        self.db_path = Path(raw) if not self.in_memory else None
+        # A shared-cache in-memory database is discarded once the last
+        # connection to it closes, and _connect() opens a new one per call, so
+        # hold one open for the client's lifetime to keep the data alive.
+        self._keepalive: sqlite3.Connection | None = None
+        try:
+            self._initialize()
+        except (OSError, sqlite3.Error):
+            # Read-only filesystem, missing parent, permission denied - the
+            # seed data is rebuilt from constants anyway, so memory works.
+            if self.in_memory:
+                raise
+            LOGGER.warning("mock bank db at %s is not writable; using in-memory", self.db_path)
+            self.in_memory = True
+            self.db_path = None
+            self._initialize()
 
     def _connect(self) -> sqlite3.Connection:
-        connection = sqlite3.connect(self.db_path)
+        if self.in_memory:
+            connection = sqlite3.connect("file:mock_bank?mode=memory&cache=shared", uri=True)
+        else:
+            connection = sqlite3.connect(self.db_path)
         connection.row_factory = sqlite3.Row
         return connection
 
     def _initialize(self) -> None:
-        self.db_path.parent.mkdir(parents=True, exist_ok=True)
+        if self.in_memory:
+            if self._keepalive is None:
+                self._keepalive = self._connect()
+        else:
+            self.db_path.parent.mkdir(parents=True, exist_ok=True)
         with closing(self._connect()) as connection:
             connection.executescript(
                 """
