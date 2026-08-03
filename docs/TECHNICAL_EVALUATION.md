@@ -1,213 +1,277 @@
 # 기술 평가 문서
 
-이 문서는 KB Key Buddy(ROJENNIE)의 기술 평가 항목을 코드 경로, 데이터 수치, 평가 결과 중심으로 정리합니다. UI 시연 화면이 아니라 백엔드 분석 파이프라인, RAG, 안전성 검증 체계를 기준으로 작성했습니다.
+KB Key Buddy의 기술 항목을 코드 경로·실측 수치·평가 결과 중심으로 정리합니다. UI 시연이 아니라 백엔드 분석 파이프라인, RAG, 안전성 검증 체계가 기준입니다. 이 문서의 모든 수치는 재현 명령과 함께 적었습니다.
 
-## 문서 상태
+## 요약 (2026-08-03 실측)
 
-- RAG 평가셋: 42문항
-- 전체 Recall@5: 100.0% (42/42)
-- 사례 문서 Recall@5: 100.0% (16/16)
-- 상품 문서 Recall@5: 100.0% (20/20)
-- 가이드 문서 Recall@5: 100.0% (6/6)
-- corpus 규모: 65,764 chunks
-- 테스트 수: 75개
-- guides corpus 신설 반영
-- Evidence-Conclusion Audit Layer 도입 반영
+| 항목 | 수치 | 재현 |
+|---|---|---|
+| RAG Recall@5 | **42/42 = 100%** (사례 16/16, 상품 20/20, 가이드 6/6) | `python -m server.tests.evaluate_retrieval` |
+| Decision Gate 시나리오 | **6/6 = 100%** | `python -m server.tests.evaluate_decision_gate` |
+| 리포트 근거 grounding | **5/5**, 근거 조작 0건 | `python -m server.tests.evaluate_report_grounding` |
+| 상품 라우팅 (외부 실데이터) | LLM **91.4%** / 규칙 65.5% | `python -m server.tests.evaluate_aihub` |
+| 회귀 테스트 | **85개 통과** | `python -m unittest discover -s server/tests` |
+| corpus | 3,787 chunks / 182 문서 | `data/corpus/manifest.json` |
+| 인덱스 로딩 | 6.2초 | 서버 기동 1회 |
 
 ## 1. 데이터 적절성
 
-### 1-1. 데이터 출처
+### 1-1. 출처와 역할 분리
 
-| 데이터 종류 | 위치 | 역할 |
-| --- | --- | --- |
-| 법령/규정 | `data/regulations`, `data/corpus/regulations.jsonl` | 직접 판단 근거 |
-| 상품설명서/약관 | `data/products`, `data/corpus/products.jsonl` | 상품 조건, 금리, 수수료 등 직접 근거 |
-| 분쟁조정/판례 사례 | `data/cases`, `data/corpus/cases.jsonl` | 유사 사례 참고 |
-| 절차 안내 | `data/guides`, `data/corpus/guides.jsonl` | 민원 접수, 분쟁조정, 반환지원 등 다음 행동 안내 |
-| 평가셋 | `data/evaluation` | 검색/파이프라인 품질 검증 |
-| mock 금융 데이터 | `server/finance/mock_bank.sqlite3`, `server/finance/mock_data.py` | 고객 계약·거래·금리·안내 이력 조회 시뮬레이션 |
+| 데이터 | 위치 | 역할 |
+|---|---|---|
+| 법령·가이드라인 | `data/regulations` → `corpus/regulations.jsonl` | **직접 판단 근거** |
+| 상품설명서·약관 | `data/products` → `corpus/products.jsonl` | **직접 판단 근거** (금리·수수료·조건) |
+| 분쟁조정 사례·판례 | `data/cases` → `corpus/cases.jsonl` | 유사 사례 **참고만** |
+| 절차 안내 | `data/guides` → `corpus/guides.jsonl` | 다음 행동 안내만, 사실 판단 근거 아님 |
+| 용어사전 | `data/dictionary` | 표시 전용, 검색 인덱스에서 제외 |
+| mock 금융 데이터 | `server/finance/mock_bank.sqlite3` | 계약·거래·금리·안내 이력 조회 |
+| 평가셋 | `data/evaluation`, `data/complaints` | 검증 전용 |
 
-운영 원칙:
+역할 분리가 코드로 강제됩니다. `corpus/manifest.json`의 `authoritative_for_decision`(규정·상품·사례)과 `action_guides`(가이드), `display_only`(용어사전)가 그 선언이고, Decision Gate가 근거 종류에 따라 결론 강도를 다르게 적용합니다(5절).
 
-- 약관/상품설명서/규정은 직접 근거로 사용합니다.
-- 분쟁조정 사례와 판례는 유사 사례 참고로만 사용합니다.
-- 절차 안내 문서는 다음 행동 안내에만 사용하고, 사실 판단 근거로 사용하지 않습니다.
-- 데모 HTML과 평가셋은 실제 고객 데이터가 아니라 시연/검증용 데이터입니다.
+실제 고객정보·계좌번호·주민번호는 사용하지 않습니다. Mock Bank는 가상 고객 `CUST-001` 한 명의 합성 데이터입니다.
 
-### 1-2. Corpus 및 Chunking
+### 1-2. Corpus 구성
 
-현재 corpus는 총 65,764 chunks입니다. 문서 유형별로 chunking 기준을 달리합니다.
+현재 3,787 chunks / 182 문서입니다.
 
-- 법령: 조문 단위 중심
-- 상품설명서/약관: 페이지 및 섹션 단위
-- 사례 문서: 사례 단위 보존
-- 가이드 문서: 절차 항목 단위
+| corpus | chunks | 문서 |
+|---|---|---|
+| regulations | 2,302 | 16 |
+| products | 886 | 135 |
+| cases | 59 | 29 |
+| guides | 2 | 1 |
+| glossary (표시 전용) | 538 | 1 |
 
-최근 반영된 중요 수정:
+chunking은 문서 유형별로 다릅니다 — 법령은 조문 단위, 상품설명서는 페이지·섹션 단위, 사례는 사례 1건 = 문서 1건(짧은 문서를 인위로 쪼개 문맥을 깨지 않음), 가이드는 절차 항목 단위.
 
-| 문제 | 수정 |
-| --- | --- |
-| 판례 PDF 2개에서 pypdf 기본 추출 시 단어 사이 공백이 사라져 토큰 매칭 불가 | `server/rag/ingest.py`에서 `extract_text(extraction_mode="layout")` 적용 |
-| 동일 약관/유사 문구가 여러 doc_id로 반복되어 근거 슬롯 낭비 | canonical doc_id 및 본문 정규화 기반 dedup 적용 |
-| 가이드성 문서가 RAG 대상에 충분히 반영되지 않음 | guides corpus 신설 및 검색 평가셋에 guides 6문항 추가 |
-| 용어사전이 판단 근거 검색에 섞일 위험 | glossary는 결정 검색에서 제외하고 별도 표시/설명 데이터로 분리 |
+### 1-3. 시점 범위를 명시적으로 좁힌 결정
 
-## 2. 검색/RAG 성능
+**현행 규정만 corpus에 넣습니다.** 만료된 개정판 61,977 chunks를 제외했고, 이는 전체의 94%였습니다.
 
-평가 스크립트:
+과거 사건일 민원이 "그때 시행되던 규정"을 인용하려면 옛 개정판이 필요하지만, 제품이 약속하는 범위가 아닙니다. 유지 비용은 실측으로 확인됐습니다 — 인덱스 로딩 95초, GB 단위 메모리, 서버리스 배포 불가.
 
-```powershell
-python -m server.tests.evaluate_retrieval
+| | 이전 | 이후 |
+|---|---|---|
+| corpus | 65,764 chunks | **3,787** |
+| 인덱스 로딩 | 95.1초 | **6.2초** |
+| 테스트 스위트 | 218초 | 37초 |
+| Recall@5 | 97.6% | **100%** (품질 손실 없음) |
+
+현행 법령은 전부 유지됩니다(은행법·금융소비자보호법·자본시장법·개인금융채권법과 각 시행령, 금융위 온라인 설명의무 가이드라인, 은행여신거래기본약관). 문서 수가 준 것은 같은 법의 과거 버전이 사라진 것입니다. 과거 시점 판단이 필요해지면 `build_corpus --keep-expired`로 되돌립니다.
+
+### 1-4. 데이터 신뢰성 검증 사례
+
+수집한 데이터를 그대로 넣지 않고 건별로 확인한 기록입니다.
+
+- 한국소비자원 크롤링 33건 중 **17건 제외**: 크롤러의 상품 분류가 본문에 "투자"·"주식"이 있으면 펀드로 태깅하는 느슨한 fallback이라, 실제로는 보험·상조·카드·법률서비스인 사례가 섞였습니다. 원본을 수정하지 않고 `status`만 `out_of_scope`로 표시해 빌드에서 자동 제외되게 했습니다.
+- 191페이지 협회 안내 PDF: pypdf 추출 시 폰트 인코딩이 깨져 판독 불가 → 제외
+- "소비자보호원 사례 6건" PDF: 웹 화면을 AI로 전사한 2차 가공물("이미지 내용을 텍스트로 정리해 드립니다"라는 문구가 본문에 잔존, 원문 대조 불가) → 제외
+- 판례 PDF 2건: pypdf 기본 추출에서 단어 사이 공백이 사라져 토큰 매칭 불가 → `extraction_mode="layout"`으로 수정
+
+## 2. 검색 성능
+
+```bash
+python -m server.tests.evaluate_retrieval           # 텍스트
+python -m server.tests.evaluate_retrieval --hybrid  # 텍스트+벡터
 ```
 
-최종 평가 결과:
-
 | 구분 | Recall@5 |
-| --- | --- |
+|---|---|
 | cases | 16/16 = 100.0% |
 | products | 20/20 = 100.0% |
 | guides | 6/6 = 100.0% |
-| 전체 | 42/42 = 100.0% |
+| **전체** | **42/42 = 100.0%** |
 
-현재 놓친 케이스:
+평가셋 정답은 사람이 지어낸 문서가 아니라 corpus에 실제 존재하는 `doc_id`입니다. 질의는 문서 제목을 베끼지 않고 구어체로 새로 작성했습니다(`server/tests/evaluate_retrieval.py`).
+
+### 2-1. 근본 원인이었던 토큰화 결함
+
+검색 품질을 끌어올린 것은 가중치 조정이 아니라 토큰화 교체였습니다.
+
+기존 토큰화는 정규식 `[가-힣A-Za-z0-9]+` 하나로, 한글 연속 구간을 통째로 한 토큰으로 잘랐습니다. 한국어는 조사가 명사에 띄어쓰기 없이 붙기 때문에:
 
 ```text
-대출 만기 연장했더니 금리가 갑자기 너무 많이 올랐어요
-정답 doc_id=01c1817ae095
+질의: "KB 스타적금3 상품 특징이"   → {스타적금3, 상품, 특징이}
+문서: "KB 스타적금3은 자유롭게…"    → {스타적금3은, 자유롭게}
+교집합: {kb} 뿐
 ```
 
-해석:
+`_token_index`가 문자열 정확 일치로 후보를 만들기 때문에, 이 문서는 **점수가 낮은 게 아니라 후보에도 들지 못했습니다.** 같은 단어가 조사별로 흩어져 IDF 통계도 왜곡됐습니다.
 
-- 상품 문서와 절차 안내 문서는 현재 평가셋에서 모두 top-5 안에 들어옵니다.
-- 사례 문서는 PDF 추출과 형태소/intent 페널티 보정 후 87.5%에서 100.0%로 개선됐습니다.
-- 전체 평가는 42문항 기준 100.0%입니다.
-- 검색 성공이 곧 판단 정확도를 뜻하지 않기 때문에, Logic Verification 단계에서 근거-결론 지지 여부를 별도로 검사합니다.
+kiwipiepy 형태소 분석으로 교체해 명사·용언 어간·외래어·숫자만 남기고 조사·어미를 버립니다. 텍스트 전용 검색만으로 63.9% → 94.4%로 올랐고, 이는 그동안 벡터 검색이 메우던 손실의 대부분이 이 결함이었다는 뜻입니다.
 
-## 3. Evidence-Conclusion Audit Layer
+전체 corpus를 매 기동마다 형태소 분석하면 실측 210초가 걸려, corpus 빌드 시점에 한 번만 배치로 계산해 `DocumentChunk.tokens`에 캐싱합니다(`retrieval.tokenize_many`). 질의 토큰화는 문장 하나라 워밍업 후 0.2ms 수준입니다.
 
-가장 중요한 구조 보강은 “검색된 근거가 결론을 실제로 지지하는가”를 별도 검증하는 감사 레이어입니다.
+### 2-2. 상품 식별 신호
 
-관련 코드:
+상품설명서는 폴더 단위 카테고리(예금/적금)로만 태깅돼 `KB 스타적금3`과 `KB 미소드림적금`이 검색에서 구분되지 않았습니다. PDF 파일명이 상품명을 담고 있어(`KB스타적금3상품_2604.pdf`) 날짜·문서ID만 제거해 상품명을 뽑고, 질의와 겹치면 카테고리 일치 보너스보다 큰 가중치를 부여합니다. 상품 Recall 90% → 95%로 올랐고 이후 100%에 도달했습니다.
 
-- `server/schemas.py`
-- `server/agents/logic_verification.py`
-- `server/agents/decision_gate.py`
-- `server/agents/report_composer.py`
-- `server/tests/test_logic_audit.py`
+### 2-3. 검색 방식
 
-### 3-1. Fact 출처 태깅
+- IDF 가중 텍스트 검색 + 선택적 벡터 코사인 유사도(`gemini-embedding-001`, 768차원 Matryoshka 축소)
+- 다중 질의 변형을 Reciprocal Rank Fusion으로 융합
+- 상품 필터, 시점 필터(사건 당시 유효한 규정만), 본문 정규화 기반 중복 제거
+- corpus 유형별 intent 가중치(가이드 질의에 상품 문서가 올라오는 것을 억제)
 
-모든 fact는 다음 중 하나의 출처를 가져야 합니다.
+LangChain 등 프레임워크는 도입하지 않았습니다. 상품·시점 필터, RRF, 중복 제거 같은 도메인 규칙이 이미 커스텀이라 범용 Retriever 추상화로 코드가 줄지 않고, PII 마스킹을 단일 관문에서 강제하는 원칙과 체인 패턴이 상충합니다.
+
+### 2-4. 측정으로 확인한 역효과
+
+LLM 검색어 생성 단계(`rag_query`)는 **품질을 떨어뜨립니다.**
+
+| 검색어 | 사례 8건 Recall | 소요 |
+|---|---|---|
+| 사용자 원문 | 8/8 | 0초 |
+| 규칙 생성 | 8/8 | 0.00초 |
+| LLM 생성 | **6/8** | 1.96초 |
+
+LLM이 원문을 키워드 나열로 바꾸면서 문맥을 잃습니다. 형태소 검색이 원문을 이미 잘 처리하기 때문에 이 단계의 이득이 사라진 것으로 보입니다. 이슈당 2초를 쓰고 손해라 제거 대상으로 `docs/TODO.md`에 올렸습니다.
+
+반대로 라우팅(`issue_splitter`)은 LLM을 유지합니다 — 외부 실데이터 기준 격차가 크고(다음 절), 첫 단계라 오류가 이후 전체로 전파됩니다.
+
+## 3. 외부 실데이터 검증
+
+1~2절 수치는 자체 평가셋 기반입니다. 자체 데이터로 자체 시스템을 검증하는 것만으로는 근거가 약해, AIHub 하나은행 실제 상담 30,156건을 라우터에 직접 연결했습니다(`server/tests/evaluate_aihub.py`).
+
+원본 대부분은 일반 문의이고 실제 민원 상황은 2,069건, 그중 상품이 모호함 없이 매핑되는 주제는 "대출문의" 139건입니다(나머지는 여러 상품에 걸치는 범용 주제라 임의 라벨링하면 근거 없는 정답이 되어 제외).
+
+| | 고립 발화 | 전체 상담 원문 |
+|---|---|---|
+| 규칙 기반 | 37.4% (52/139) | 65.5% (91/139) |
+| LLM 기반 | 50.4% (70/139) | **91.4% (127/139)** |
+
+처음에는 "corpus가 KB 위주라 하나은행 데이터에 약한 것 아니냐"를 검토했으나, 상품 분류기(`PRODUCT_KEYWORDS`)는 corpus나 은행명을 참조하지 않는 순수 텍스트 매칭이라 기각됩니다. 실제 원인은 입력 형식이었습니다 — AIHub 라벨의 "질문"은 대화 중간 후속 발화라 "대출"이 이전 턴에서 이미 나왔다는 이유로 생략된 경우가 많았습니다. 같은 분류기에 전체 대화를 넣자 두 방식 모두 크게 올랐습니다.
+
+실제 서비스는 사용자가 문의를 한 번에 입력해 완전한 맥락에 가깝고, `ROUTER_MODE=auto`에서 API 키가 있으면 LLM을 우선 사용하므로 91.4%가 운영 조건에 가깝습니다.
+
+**한계**: 하나은행 단일 기관 데이터이고, 검증 대상이 대출 상품 분류에 한정됩니다. issue_type이나 RAG 검색 품질까지는 이 데이터로 검증하지 못합니다(해당 정답이 라벨에 없음).
+
+## 4. Evidence-Conclusion Audit Layer
+
+검색이 성공해도 그 근거가 결론을 실제로 지지하는지는 별개 문제입니다. 이를 검증하는 감사 레이어를 두었습니다.
+
+관련 코드: `server/schemas.py`, `server/agents/logic_verification.py`, `server/agents/decision_gate.py`, `server/agents/report_composer.py`, `server/tests/test_logic_audit.py`
+
+### 4-1. Fact 출처 태깅
+
+모든 fact가 출처 유형을 갖습니다.
 
 | Source Type | 의미 |
-| --- | --- |
+|---|---|
 | `USER_STATED` | 사용자가 직접 말한 사실 |
-| `SYSTEM_INFERRED` | 시스템이 mock 금융 데이터나 규칙으로 확인/추론한 사실 |
+| `SYSTEM_INFERRED` | mock 금융 데이터·규칙으로 확인한 사실 |
 | `DOCUMENT_EVIDENCE` | 문서에서 확인된 근거 |
-| `PRECEDENT_REFERENCE` | 분쟁조정 사례/판례 참고 |
+| `PRECEDENT_REFERENCE` | 분쟁조정 사례·판례 참고 |
 
-최근 수정:
+`mock_customer_data_resolver.py`는 은행 원장에서 읽은 값을 기본값(`USER_STATED`)이 아니라 `SYSTEM_INFERRED`로 생성합니다 — 사용자 진술과 시스템 확인 사실을 스키마 레벨에서 구분하기 위해서입니다.
 
-- `server/agents/facts.py`: 과거 `source_ref` 기반 소문자 source type 변환 제거, `fact.source_type` 직접 사용
-- `server/agents/mock_customer_data_resolver.py`: 은행 mock 데이터 fact를 기본 `USER_STATED`가 아니라 `SYSTEM_INFERRED`로 생성
-
-### 3-2. Support Chain
-
-`LogicVerification.support_chains[]`는 다음 구조를 기록합니다.
+### 4-2. Support Chain
 
 ```text
-claim
-  -> supporting_evidence[]
-  -> inference_type
-  -> evidence_role
-  -> allowed_in_final
+claim → supporting_evidence[] → inference_type → evidence_role → allowed_in_final
 ```
 
-`inference_type`:
+`inference_type`: `direct_match`(직접 근거) / `analogical`(유사 사례) / `unverified`(근거 부족)
 
-- `direct_match`: 약관/규정/상품설명서 등 직접 근거
-- `analogical`: 유사 사례 기반 참고
-- `unverified`: 근거 부족
+`evidence_role`: `direct_evidence` / `precedent_reference` / `procedure_guide` / `unknown`
 
-`evidence_role`:
+## 5. Decision Gate
 
-- `direct_evidence`
-- `precedent_reference`
-- `procedure_guide`
-- `unknown`
-
-## 4. Decision Gate 기준 변경
-
-기존 Decision Gate는 주로 missing facts, high-risk issue, PII, routing confidence를 기준으로 `proceed/ask/amend/hold`를 정했습니다.
-
-감사 레이어 도입 후 변경된 기준:
+**LLM이 아닌 결정적 규칙**이 최종 상태를 정합니다. LLM은 문장을 구성할 뿐 상태를 뒤집지 못합니다.
 
 | 상황 | 처리 |
-| --- | --- |
-| 직접 근거 없음 + `proceed` | `ask`로 강등 |
-| 유사 사례만 있음 + `proceed` | `ask`로 강등 |
-| `unverified` claim 존재 | `unsupported_claim` / `unverified_claim` risk flag 기록 |
-| 직접 약관/규정/상품설명서 근거 있음 | 다른 위험이 없으면 제한된 `proceed` 가능 |
-| 판례/분쟁사례 참고 | “유사 사례에서는” 수준으로만 표현, 결론 직접 인용 금지 |
+|---|---|
+| 직접 근거 없이 `proceed` | `ask`로 강등 |
+| 유사 사례만 있고 `proceed` | `ask`로 강등 |
+| `unverified` claim 존재 | risk flag 기록 |
+| 명의도용·지원 제외 상품 | `hold` (어떤 조건에서도 자동 확정 안 함) |
+| PII 노출 | `amend` |
 
-상태 의미:
+우선순위는 `hold > amend > ask > proceed`입니다. 이 순서가 코드에서 뒤집혀 있어 사실관계도 부족하고 PII도 노출된 민원에서 `ask`가 `amend`를 이겨 PII 확인이 조용히 생략되던 버그를 수정하고 회귀 테스트를 추가했습니다.
 
-| 상태 | 의미 |
-| --- | --- |
-| `proceed` | 확인된 사실과 직접 근거 범위 안에서 다음 단계 안내 가능 |
-| `ask` | 추가 사실 또는 직접 근거 필요 |
-| `amend` | 마스킹/입력 보완/표현 범위 조정 필요 |
-| `hold` | 자동 판단 중지, 사람 검토 필요 |
+`proceed`는 "은행 잘못 확정"이나 "배상 가능 확정"이 아니라 **"확인된 범위 안에서 다음 단계 안내 가능"**을 뜻합니다.
 
-중요: `proceed`는 “은행 잘못 확정”, “배상 가능 확정”이 아니라 “확인된 범위 안에서 다음 단계 안내 가능”이라는 의미입니다.
+### 5-1. 시나리오 평가
 
-## 5. Report Composer 안전장치
+```bash
+python -m server.tests.evaluate_decision_gate
+```
 
-`server/agents/report_composer.py`는 최종 리포트에서 단정 표현을 제한합니다.
+4개 상태를 모두 발생시키는 6개 시나리오를 실제 `/api/v1/cases/analyze` 엔드포인트로 전체 파이프라인을 태워 검증합니다. 결과 **6/6 = 100%**.
 
-차단/완화 대상 표현:
+이 평가셋을 만드는 과정에서 실제 운영 버그 2건을 발견해 수정했습니다:
 
-- 배상 가능
-- 배상액
-- 보상받을 수 있음
-- 은행 잘못
-- 위법
-- 책임 인정
-- 반드시 지급
+- **PII 노출이 LLM 경로에서 `amend`를 못 띄움**: `LLMPolicyGateway`가 원문의 계좌번호를 `[계좌번호]` 플레이스홀더로 이미 치환한 뒤에야 `content_scope.py`가 정규식으로 PII를 찾으려 해서, 치환된 자리에는 원본 패턴이 없어 탐지가 실패했습니다. Gateway가 남긴 플레이스홀더 자체를 인식하도록 수정.
+- **`CONTROL_PRIORITY` 순서 역전** (위 참조)
 
-허용 표현 범위:
+자체 제작 평가라도 실제 파이프라인을 태우면 진짜 결함을 찾아낸다는 근거입니다.
 
-- 확인된 사실 기준
-- 추가 확인 필요
-- 유사 사례 참고
-- 접수/분쟁조정/반환지원 등 다음 행동 안내
+## 6. 출력 안전장치
 
-## 6. 테스트 및 검증
+### 6-1. LLM Policy Gateway
 
-현재 테스트 수는 75개입니다.
+모든 LLM 호출이 `server/policy/gateway.py` 한 곳을 통과합니다. 호출 전후로 주민번호·계좌번호·카드번호·전화번호·이메일을 마스킹하고, 호출 단계·정책 버전·마스킹 수를 감사 로그로 남깁니다. 허용된 4단계(issue_splitter, rag_query, logic_verification, report_composer) 외의 호출은 거부됩니다.
 
-대표 검증:
+### 6-2. 컴플라이언스 후처리
 
-| 테스트 | 결과 |
-| --- | --- |
-| `server/tests/test_facts.py` | 3 passed |
-| `server/tests/test_logic_audit.py` | 3 passed |
-| retrieval 전체 평가 | 42/42 = 100.0% |
+"배상 얼마 받을 수 있다" 같은 단정을 **프롬프트 지시가 아니라 출력 필터로 차단**합니다. 프롬프트로 "쓰지 마라"고 지시하는 것만으로는 LLM이 어겨도 걸러낼 방법이 없기 때문입니다.
 
-`test_logic_audit.py`가 검증하는 내용:
+문자열 패턴과 정규식 두 계층으로 검사하며(`contains_forbidden_claim`), 걸리면 `ComplianceViolation`을 던져 해당 텍스트를 버리고 안전한 fallback 리포트로 대체합니다.
 
-- 근거 없음 + `proceed`는 `ask`로 강등
-- 유사 사례만 있음 + `proceed`는 `ask`로 강등
-- 직접 상품/규정 근거가 있으면 다른 위험이 없을 때 `proceed` 유지 가능
+차단 대상: 배상 가능·배상액 추정, 은행 잘못·위법·책임 인정 단정, 자동 접수 약속, "반드시/100% 지급" 류.
+허용 범위: 확인된 사실 기준 서술, 추가 확인 필요, 유사 사례 참고, 다음 행동 안내.
 
-## 7. 현재 한계
+### 6-3. 리포트 근거 grounding
 
-- 실제 금융기관 API 연동은 아직 아니며, mock SQLite 기반입니다.
-- RAG는 로컬 corpus 기반 검색이며, 운영용 벡터 DB/semantic rerank는 추가 개선 영역입니다.
-- 분쟁조정 사례/판례 수는 아직 충분하지 않습니다.
-- 개인정보 마스킹과 저장 정책은 production 수준으로 추가 구현해야 합니다.
-- 검색 Recall은 높아졌지만, 최종 판단 정확도는 별도 Support Accuracy 지표로 계속 검증해야 합니다.
+```bash
+python -m server.tests.evaluate_report_grounding
+```
 
-## 8. 발표용 핵심 문장
+리포트가 인용한 근거가 실제로 검색된 근거 안에 있는지, 즉 존재하지 않는 근거를 지어내지 않는지 검증합니다.
 
-> KB Key Buddy는 검색 결과를 곧바로 결론으로 쓰지 않습니다. 약관·규정·상품설명서는 직접 근거로, 분쟁조정 사례는 유사 사례 참고로, 민원 절차 문서는 다음 행동 안내로 분리합니다. 이후 Logic Verification과 Decision Gate가 근거 없는 결론을 `ask` 또는 `hold`로 막아 금융 민원 도메인에서 안전한 분석 흐름을 제공합니다.
+- 근거 조작 **0건** — 인용된 근거가 전부 실제 evidence 안에 존재 (5/5)
+- 필수 필드 누락 0건
+- `current_decision` 라벨과 실제 `decision.control` 불일치 0건
+
+`report_composer.py`가 초안의 인용 목록을 실제 evidence id 집합으로 한 번 더 필터링하는데, 그 필터가 엔드투엔드로 작동함을 확인한 것입니다.
+
+### 6-4. LLM 실패 시 fallback
+
+Gemini가 503을 반환하거나 스키마 검증에 실패하면 각 단계가 규칙 기반으로 대체됩니다. 세션 중 실제 503을 겪었고 서비스는 죽지 않았습니다. 관리자 페이지에서 에이전트별 fallback 발생률을 모니터링합니다.
+
+## 7. 테스트
+
+85개 회귀 테스트가 통과합니다(`python -m unittest discover -s server/tests`).
+
+| 영역 | 테스트 |
+|---|---|
+| 라우팅 | `test_router.py` (9) |
+| 위험 판단·게이트 | `test_risk_improvements.py` (7), `test_decision_gate.py` (6), `test_logic_audit.py` (3) |
+| 정책·안전 | `test_policy_gateway.py` (7), `test_content_scope.py` (3) |
+| 검색·인덱싱 | `test_embeddings.py` (6), `test_ingest.py` (3), `test_morphology.py` (3), `test_pgvector.py` (2) |
+| 데이터·MCP | `test_mock_data.py` (6), `test_mcp_finance.py` (2) |
+| 응답 구성 | `test_response_composer.py` (5), `test_report_composer.py` (1) |
+| 파이프라인 | `test_app.py` (5), `test_p0.py` (4), `test_focal_builder.py` (4), `test_p1.py` (3), `test_facts.py` (3), `test_pipeline.py` (2) |
+
+테스트는 Supabase 쓰기를 자동으로 차단합니다(`SupabaseStore.enabled`가 `unittest` 로드 여부를 확인). 엔드포인트를 직접 호출하는 평가 스크립트는 `SUPABASE_PERSISTENCE=false`를 명시적으로 설정합니다.
+
+## 8. 현재 한계
+
+솔직하게 밝히는 미완성 영역입니다.
+
+- **인증이 없습니다.** `customer_id`가 URL 파라미터이고 관리자 엔드포인트가 열려 있습니다. 현재는 가상 고객 1명이라 실질 위험이 없지만, 실 서비스에는 세션 기반 인증이 필요합니다.
+- **개인화 데이터가 얕습니다.** 고객 1명·계좌 5개·거래 3건이고 안내 이력 테이블이 비어 있습니다. "내 금융정보와 대조"가 서비스의 차별점인데 시연 가능한 데이터가 부족합니다.
+- **응답이 12~20초입니다.** LLM 4단계를 직렬로 태웁니다. 2-4절 근거로 `rag_query` 단계 제거가 우선 후보입니다.
+- **배포 준비가 안 됐습니다.** corpus JSONL이 gitignore돼 배포 번들에 없고, Mock Bank가 기동 시 파일에 쓰기 때문에 읽기 전용 파일시스템에서 실패합니다.
+- **과거 시점 규정 기준 판단은 범위 밖입니다**(1-3절).
+- **검색 성공 ≠ 판단 정확도**입니다. Recall 100%는 정답 문서가 상위 5건에 든다는 뜻일 뿐이며, 최종 판단 품질은 Support Chain 기반 지표로 별도 검증해야 합니다.
+- 평가셋 규모가 작습니다(retrieval 42문항, 게이트 6시나리오, grounding 5건). 100%라는 수치가 통계적 확신을 주기엔 표본이 얇습니다.
+- 규칙 기반 fallback은 실데이터에서 뚜렷이 약합니다(65.5%). Gemini 장애 시 정확도가 떨어진 채로 서비스가 계속됩니다.
+
+## 9. 요약
+
+KB Key Buddy는 검색 결과를 곧바로 결론으로 쓰지 않습니다. 약관·규정·상품설명서는 직접 근거로, 분쟁조정 사례는 유사 사례 참고로, 절차 문서는 다음 행동 안내로 역할을 분리합니다. Logic Verification과 Decision Gate가 근거 없는 결론을 `ask`나 `hold`로 막고, 출력 필터가 법적 단정과 배상액 추정을 실제로 차단합니다.
+
+성능 개선은 파라미터 조정이 아니라 근본 원인 제거로 이뤄졌습니다 — 한국어 조사를 처리하지 못하던 토큰화를 형태소 분석으로 교체했고(Recall 63.9%→94.4%), 검색에 쓰이지 않는 만료 법령 94%를 걷어냈으며(기동 95초→6.2초, 품질 손실 없음), LLM 단계 중 실제로 손해인 것을 측정으로 찾아냈습니다.
