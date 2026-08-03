@@ -181,7 +181,7 @@ docs/                아키텍처·기술 평가·TODO
 
 ## 팀 역할 분담
 
-팀원 1 — Data Server / RAG / 배포
+yvz1225 — Data Server / RAG / 배포
 
 RAG corpus 구축
 약관·상품설명서·규정·사례 데이터 정리
@@ -192,7 +192,7 @@ Vercel 배포 구성
 검색 성능 평가 및 개선
 
 
-2Arongg — Agent Client / 서비스 안전성 / 데모
+2Aronggg — Agent Client / 서비스 안전성 / 데모
 
 복합 민원 이슈 분리 흐름 구현
 Decision Gate 안전 로직 보강
