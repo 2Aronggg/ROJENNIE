@@ -29,3 +29,6 @@ python-install.log
 .claude/settings.local.json
 .vercel
 .env*
+
+# AIHub 원본 데이터. 재배포 불가 라이선스라 저장소에 두지 않는다.
+data/실제 민원/
