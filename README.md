@@ -192,7 +192,7 @@ Vercel 배포 구성
 검색 성능 평가 및 개선
 
 
-팀원 2 — Agent Client / 서비스 안전성 / 데모
+2Arongg — Agent Client / 서비스 안전성 / 데모
 
 복합 민원 이슈 분리 흐름 구현
 Decision Gate 안전 로직 보강
