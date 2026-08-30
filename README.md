@@ -1,5 +1,7 @@
 # KB Key Buddy
 
+<img src="docs/Future Finance AI Challenge_로제니_page-0001.jpg" width="70%">
+
 **복합 금융 민원을 사건 단위로 나누고, 내 금융정보와 규정 근거를 연결해 다음 행동을 안내하는 금융 민원 지원 에이전트입니다.**
 
 KB Key Buddy는 사용자가 입력한 예금·적금·대출 관련 민원을 분석해 여러 쟁점으로 분리하고, 각 쟁점마다 필요한 사실관계와 근거 문서를 연결해 안내합니다.  
@@ -11,6 +13,8 @@ KB Key Buddy는 사용자가 입력한 예금·적금·대출 관련 민원을 �
 
 ## 서비스 개요
 
+<img src="docs/Future Finance AI Challenge_로제니_page-0003.jpg" width="70%">
+
 금융 민원은 한 문장처럼 보이더라도 실제로는 여러 사건이 섞여 있는 경우가 많습니다.
 
 예를 들어 사용자가 다음과 같이 입력할 수 있습니다.
@@ -18,6 +22,8 @@ KB Key Buddy는 사용자가 입력한 예금·적금·대출 관련 민원을 �
 > “적금 우대금리가 적용되지 않았고, 중도해지 수수료도 안내받은 것과 다르게 나온 것 같습니다.”
 
 이 경우 KB Key Buddy는 이를 하나의 답변으로 뭉개지 않고 다음처럼 분리합니다.
+
+<img src="docs/Future Finance AI Challenge_로제니_page-0004.jpg" width="70%">
 
 1. 적금 우대금리 미적용 이슈
 2. 중도해지 수수료 안내 불일치 이슈
@@ -32,11 +38,15 @@ KB Key Buddy는 사용자가 입력한 예금·적금·대출 관련 민원을 �
 - 추가로 필요한 서류나 확인 질문은 무엇인지
 - 지금 단계에서 안내 가능한지, 사람 검토가 필요한지
 
+<img src="docs/Future Finance AI Challenge_로제니_page-0005.jpg" width="70%">
+<img src="docs/Future Finance AI Challenge_로제니_page-0006.jpg" width="70%">
+
 ---
 
 ## 핵심 기능
 
 ### 1. 복합 민원 이슈 분리
+
 
 사용자가 하나의 문장에 여러 금융 문제를 함께 입력해도, Case Builder가 민원을 상품별·쟁점별로 분리합니다.
 
@@ -44,8 +54,6 @@ KB Key Buddy는 사용자가 입력한 예금·적금·대출 관련 민원을 �
 
 ```text
 예금 만기 이자가 예상보다 적고, 대출 금리 인상 안내도 못 받았습니다.
-
-
 
 
 
@@ -100,6 +108,9 @@ KB Key Buddy는 사용자가 입력한 예금·적금·대출 관련 민원을 �
 
 
 ## 실행
+
+<img src="docs/Future Finance AI Challenge_로제니_page-0012.jpg" width="70%">
+<img src="docs/Future Finance AI Challenge_로제니_page-0013.jpg" width="70%">
 
 ```bash
 # 서버
@@ -207,6 +218,8 @@ case-level high-risk 전파 구현
 에이전트별 데모 화면 구성
 발표 시나리오 정리
 사용자 응답 리포트 구조 개선
+
+<img src="docs/Future Finance AI Challenge_로제니_page-0019.jpg" width="70%">
 
 
 ## 주의
